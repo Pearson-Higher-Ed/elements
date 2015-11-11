@@ -1,0 +1,34 @@
+// Variables
+//
+
+// Type
+//
+
+$font-size-base: 16px;
+$font-families: (
+  default-sans-serif: ('Helvetica Neue', Helvetica, Arial, sans-serif),
+  default-serif: (Georgia, Times, 'Times New Roman', serif),
+  default-monospace: ('Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace)
+);
+
+// Colors
+//
+// Foundational color palettes
+
+$primary-color: #00BBAD;
+$primary-color-lightest: #62D3CB;
+$primary-color-lighter: #2CC2B7;
+$primary-color-darker: #00847A;
+$primary-color-darkest: #005D56;
+
+$secondary-color: #FFCB00;
+$secondary-color-lightest: #FFE377;
+$secondary-color-lighter: #FFD73A;
+$secondary-color-darker: #D6AB00;
+$secondary-color-darkest: #977900;
+
+$accent-color: #E00072;
+$accent-color-lightest: #EA6DAD;
+$accent-color-lighter: #E3338D;
+$accent-color-darker: #B0005A;
+$accent-color-darkest: #7C003F;

@@ -1,0 +1,28 @@
+// Reset
+//
+// Base CSS styles and normalize.css overrides
+
+// Box sizing
+//
+// Apply a natural box layout model to all elements.
+// See http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Type
+//
+
+html {
+  font-family: map-get($font-families, default-sans-serif);
+  // Set a base font size for all elements. Font sizes for
+  // other elements should be relative, using `rem` units.
+  font-size: $font-size-base;
+}
