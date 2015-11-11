@@ -1,0 +1,15 @@
+{
+  "name": "@pearson/elements",
+  "version": "1.0.0",
+  "description": "Pearson web UI elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Pearson UI components team",
+  "license": "MIT",
+  "peerDependencies": {
+    "normalize.css": "^3.0.3"
+  }
+}
