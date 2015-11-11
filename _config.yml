@@ -1,0 +1,15 @@
+# Jekyll configuration for ./docs
+
+# Build settings
+source: docs
+destination: _gh_pages
+keep_files: ['css']
+
+# Site settings
+title: Pearson Elements
+description: Pearson Elements
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
