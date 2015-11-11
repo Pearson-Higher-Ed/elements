@@ -9,6 +9,12 @@ const spawn = require('child_process').spawn;
 
 gulp.task('build-docs', (done) => {
   browserSync.notify('Running: <kbd>$ jekyll build</kbd>');
+
+  gulp.src('./docs/assets/scss/docs.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest('./_gh_pages/css'));
+
   spawn('jekyll', ['build'], { stdio: 'inherit' })
     .on('close', done);
 });
@@ -37,7 +43,7 @@ gulp.task('sass', () => {
 
 gulp.task('watch', () => {
   gulp.watch('./scss/**/*.scss', ['sass']);
-  gulp.watch(['./docs/**/*.html', './docs/**/*.md'], ['rebuild-docs']);
+  gulp.watch(['./docs/**/*.html', './docs/**/*.md', './docs/assets/scss/*.scss'], ['rebuild-docs']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
