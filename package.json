@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Pearson web UI elements",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
