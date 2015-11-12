@@ -1,0 +1,13 @@
+.pe-card {
+  border: $card-border;
+}
+
+.pe-card__heading,
+.pe-card__content {
+  padding: $card-heading-padding;
+}
+
+.pe-card__heading {
+  border-bottom: $card-border;
+}
+
