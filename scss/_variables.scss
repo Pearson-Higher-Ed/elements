@@ -4,37 +4,56 @@
 // Type
 //
 
-$font-size-base: 16px;
+$font-size-base: 16px !default;
 $font-families: (
   default-sans-serif: ('Helvetica Neue', Helvetica, Arial, sans-serif),
   default-serif: (Georgia, Times, 'Times New Roman', serif),
   default-monospace: ('Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace)
-);
+) !default;
 
 // Colors
 //
 // Foundational color palettes
 
-$primary-color: #00bbad;
-$primary-color-lightest: #62d3cb;
-$primary-color-lighter: #2cc2b7;
-$primary-color-darker: #00847a;
-$primary-color-darkest: #005d56;
+$primary-color: #00bbad !default;
+$primary-color-lightest: #62d3cb !default;
+$primary-color-lighter: #2cc2b7 !default;
+$primary-color-darker: #00847a !default;
+$primary-color-darkest: #005d56 !default;
 
-$secondary-color: #ffcb00;
-$secondary-color-lightest: #ffe377;
-$secondary-color-lighter: #ffd73a;
-$secondary-color-darker: #d6ab00;
-$secondary-color-darkest: #977900;
+$secondary-color: #ffcb00 !default;
+$secondary-color-lightest: #ffe377 !default;
+$secondary-color-lighter: #ffd73a !default;
+$secondary-color-darker: #d6ab00 !default;
+$secondary-color-darkest: #977900 !default;
 
-$accent-color: #e00072;
-$accent-color-lightest: #ea6dad;
-$accent-color-lighter: #e3338d;
-$accent-color-darker: #b0005a;
-$accent-color-darkest: #7c003f;
+$accent-color: #e00072 !default;
+$accent-color-lightest: #ea6dad !default;
+$accent-color-lighter: #e3338d !default;
+$accent-color-darker: #b0005a !default;
+$accent-color-darkest: #7c003f !default;
+
+// Buttons
+//
+
+$btn-default-bg: #f8f8f8 !default;
+$btn-default-border: #d0d0d0 !default;
+$btn-default-text: #666666 !default;
+$btn-default-disabled-bg: #cccccc !default;
+$btn-default-disabled-text: #888888 !default;
+
+$btn-primary-bg: #107aca !default;
+$btn-primary-border: #0e6ab0 !default;
+$btn-primary-text: #ffffff !default;
+$btn-primary-disabled-bg: #9dc0db !default;
+$btn-primary-disabled-text: #ffffff !default;
+
+$btn-font-size: 0.875rem !default;
+$btn-line-height: 1.75rem !default;
+$btn-padding: 12px !default;
 
 // Card
 //
 
-$card-border: solid 1px #cccccc;
-$card-heading-padding: 15px;
+$card-border: solid 1px #cccccc !default;
+$card-heading-padding: 15px !default;

@@ -1,0 +1,25 @@
+.pe-btn {
+  @include button($btn-default-bg, $btn-default-border, $btn-default-text,
+    $btn-default-disabled-bg, $btn-default-disabled-text);
+  font-size: $btn-font-size;
+  line-height: $btn-line-height;
+  padding: 0 $btn-padding;
+}
+
+.pe-btn--primary {
+  @include button($btn-primary-bg, $btn-primary-border, $btn-primary-text,
+    $btn-primary-disabled-bg, $btn-primary-disabled-text);
+}
+
+.pe-btn--small {
+  font-size: $btn-font-size * 0.928571;
+  line-height: $btn-line-height * 0.857143;
+  padding: 0 ($btn-padding * 0.833333);
+}
+
+.pe-btn--large {
+  font-size: $btn-font-size * 1.285714;
+  line-height: $btn-line-height * 1.5;
+  padding: 0 ($btn-padding * 1.666667);
+}
+

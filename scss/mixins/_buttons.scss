@@ -1,0 +1,13 @@
+@mixin button($bg-color, $border-color, $text-color, $disabled-bg-color, $disabled-text-color) {
+  display: inline-block;
+  color: $text-color;
+  background-color: $bg-color;
+  border: solid 1px $border-color;
+
+  &:disabled,
+  &.pe-btn--disabled {
+    border: 0;
+    color: $disabled-text-color;
+    background-color: $disabled-bg-color;
+  }
+}
