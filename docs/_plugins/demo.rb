@@ -9,18 +9,23 @@ module Jekyll
       end
 
       def render(context)
-        code = "<div class=\"d-demo__live\">" + super.to_s.strip + "</div>"
+        code = super.to_s.strip
 
         code_example = case context.registers[:site].highlighter
           when 'rouge'
             render_rouge(code)
           end
 
-        demo(code + code_example)
+        demo(code, code_example)
       end
 
-      def demo(output)
-        "<div class=\"d-demo__container\">\n#{output}\n</div>"
+      def demo(code, code_example)
+        [
+          "<div class=\"d-demo pe-card\">",
+          "  <div class=\"pe-card__heading\">#{code}</div>",
+          "  <div class=\"pe-card__content\">#{code_example}</div>",
+          "</div>"
+        ].join("\n")
       end
 
       def render_rouge(code)
@@ -28,7 +33,7 @@ module Jekyll
         formatter = Rouge::Formatters::HTML.new(line_numbers: false, wrap: false)
         lexer = Rouge::Lexer.find_fancy(@lang, code) || Rouge::Lexers::PlainText
         code = formatter.format(lexer.lex(code))
-        "<div class=\"d-demo__code\"><pre>#{code}</pre></div>"
+        "<pre>#{code}</pre>"
       end
 
     end
