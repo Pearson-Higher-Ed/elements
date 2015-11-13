@@ -10,20 +10,14 @@ const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
 
 gulp.task('build-docs', ['sass'], (done) => {
-  browserSync.notify('Running: <kbd>$ jekyll build</kbd>');
+  browserSync.notify('Running: <kbd>$ metalsmith</kbd>');
 
   gulp.src('./docs/assets/scss/docs.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-  let jekyllArgs = ['build'];
-
-  if (process.env.GH_PAGES) {
-    jekyllArgs = jekyllArgs.concat(['--config', '_config.yml,_config.gh-pages.yml']);
-  }
-
-  spawn('jekyll', jekyllArgs, { stdio: 'inherit' })
+  spawn('./node_modules/.bin/metalsmith', ['metalsmith'], { stdio: 'inherit' })
     .on('close', done);
 });
 

@@ -1,0 +1,41 @@
+{
+  "source": "./docs",
+  "destination": "./_gh_pages",
+  "clean": false,
+  "plugins": {
+    "metalsmith-register-helpers": {
+      "directory": "./docs/_helpers"
+    },
+    "./metalsmith_plugins/node-env.js": {
+      "development": {
+        "site": {
+          "baseUrl": ""
+        }
+      },
+      "gh-pages": {
+        "site": {
+          "baseUrl": "/elements"
+        }
+      }
+    },
+    "metalsmith-metadata": {
+      "nav": "_data/nav.yaml"
+    },
+    "metalsmith-in-place": {
+      "engine": "handlebars",
+      "partials": "./docs/_includes"
+    },
+    "./metalsmith_plugins/markdown.js": {
+      "html": true
+    },
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "directory": "./docs/_layouts",
+      "partials": "./docs/_includes",
+      "default": "default.html"
+    },
+    "metalsmith-permalinks": {
+      "pattern": ":section/:title"
+    }
+  }
+}

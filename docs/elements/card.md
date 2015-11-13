@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: docs.html
 title: Card
 section: elements
 permalink: /elements/card/
@@ -7,7 +7,7 @@ permalink: /elements/card/
 
 A card represents a set of related information, serving as an entry point for a more detailed view of that information.
 
-{% demo %}
+{{#demo}}
 <div class="pe-card">
   <div class="pe-card__heading">
     <h1>Jane Doe</h1>
@@ -19,4 +19,4 @@ A card represents a set of related information, serving as an entry point for a 
     </address>
   </div>
 </div>
-{% enddemo %}
+{{/demo}}
