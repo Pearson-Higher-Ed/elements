@@ -1,3 +1,5 @@
+'use strict';
+
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
@@ -15,7 +17,13 @@ gulp.task('build-docs', (done) => {
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-  spawn('jekyll', ['build'], { stdio: 'inherit' })
+  let jekyllArgs = ['build'];
+
+  if (process.env.GH_PAGES) {
+    jekyllArgs = jekyllArgs.concat(['--config', '_config.yml,_config.gh-pages.yml']);
+  }
+
+  spawn('jekyll', jekyllArgs, { stdio: 'inherit' })
     .on('close', done);
 });
 
