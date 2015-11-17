@@ -1,13 +1,13 @@
 {
-  "name": "@pearson/elements",
-  "version": "1.0.0",
-  "description": "Pearson web UI elements",
+  "name": "pearson-elements",
+  "version": "0.0.0",
+  "description": "CSS building blocks for Pearson UIs",
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Pearson UI components team",
+  "author": "Pearson Platform UI team",
   "license": "MIT",
   "engines": {
     "node": "^4.0.0"
@@ -15,10 +15,16 @@
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "browser-sync": "^2.10.0",
+    "cz-conventional-changelog": "^1.1.4",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.0.0",
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
