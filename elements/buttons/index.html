@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/css/elements.css">
+<link rel="stylesheet" href="/css/docs.css">
+
+  </head>
+  <body>
+    <div class="d-sidebar">
+  <nav>
+    <ul>
+      
+        <li>
+          <a href="/getting-started/">Getting Started</a>
+          
+            <ul>
+              
+                <li><a href="/getting-started/overview/">Overview</a></li>
+              
+                <li><a href="/getting-started/installation/">Installation</a></li>
+              
+            </ul>
+          
+        </li>
+      
+        <li>
+          <a href="/elements/">Elements</a>
+          
+            <ul>
+              
+                <li><a href="/elements/color/">Color</a></li>
+              
+                <li><a href="/elements/typography/">Typography</a></li>
+              
+                <li><a href="/elements/buttons/">Buttons</a></li>
+              
+                <li><a href="/elements/card/">Card</a></li>
+              
+            </ul>
+          
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+
+
+    <h1>Buttons</h1>
+
+    <p>MAKE A CHANGE
+Use a button to represent a user action.</p>
+
+<div class="d-demo pe-card">
+  <div class="pe-card__heading"><!-- The default button style -->
+<button class="pe-btn">Default</button>
+
+<!-- The primary action for a given context, such as
+the default action in a dialog -->
+<button class="pe-btn pe-btn--primary">Primary</button></div>
+  <div class="pe-card__content"><pre><span class="c">&lt;!-- The default button style --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- The primary action for a given context, such as
+the default action in a dialog --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn pe-btn--primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span></pre></div>
+</div>
+
+<h3 id="disabled">Disabled</h3>
+
+<p>Buttons can be disabled when an action is not available to the user for the current context.</p>
+
+<div class="d-demo pe-card">
+  <div class="pe-card__heading"><button class="pe-btn" disabled="">Default</button>
+<button class="pe-btn pe-btn--primary" disabled="">Primary</button></div>
+  <div class="pe-card__content"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn pe-btn--primary"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span></pre></div>
+</div>
+
+<p>For non-<code>button</code> elements, use <code>pe-btn--disabled</code>.</p>
+
+<div class="d-demo pe-card">
+  <div class="pe-card__heading"><div class="pe-btn pe-btn--disabled">Not a &lt;button&gt;</div></div>
+  <div class="pe-card__content"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pe-btn pe-btn--disabled"</span><span class="nt">&gt;</span>Not a <span class="ni">&amp;lt;</span>button<span class="ni">&amp;gt;</span><span class="nt">&lt;/div&gt;</span></pre></div>
+</div>
+
+<h3 id="sizes">Sizes</h3>
+
+<p>Buttons can be made smaller or larger.</p>
+
+<div class="d-demo pe-card">
+  <div class="pe-card__heading"><button class="pe-btn pe-btn--small">Small</button>
+<button class="pe-btn pe-btn--large">Large</button></div>
+  <div class="pe-card__content"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn pe-btn--small"</span><span class="nt">&gt;</span>Small<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn pe-btn--large"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span></pre></div>
+</div>
+
+<h3 id="links">Links</h3>
+
+<p>In some cases, it may be necessary to style a button as a link.</p>
+
+<div class="d-demo pe-card">
+  <div class="pe-card__heading"><button class="pe-btn pe-btn--link">Link</button></div>
+  <div class="pe-card__content"><pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"pe-btn pe-btn--link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></pre></div>
+</div>
+
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+  </body>
+</html>
