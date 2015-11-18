@@ -2,6 +2,10 @@
   "name": "pearson-elements",
   "version": "0.0.0",
   "description": "CSS building blocks for Pearson UIs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pearson-Higher-Ed/elements.git"
+  },
   "scripts": {
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
