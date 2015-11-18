@@ -22,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "browser-sync": "^2.10.0",
+    "conventional-changelog": "^0.5.1",
     "cz-conventional-changelog": "^1.1.4",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.0.0",
