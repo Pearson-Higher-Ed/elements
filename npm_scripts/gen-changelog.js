@@ -7,7 +7,13 @@ const REGENERATE_ALL = 0;
 
 const outStream = fs.createWriteStream(FILENAME);
 
-changelog({
+const changelogStream = changelog({
   preset: 'angular',
   releaseCount: REGENERATE_ALL
-}).pipe(outStream);
+})
+
+changelogStream.pipe(outStream);
+
+changelogStream.on('end', () => {
+  console.log('Changelog saved to', FILENAME);
+});
