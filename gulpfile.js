@@ -1,3 +1,5 @@
+'use strict';
+
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
@@ -7,7 +9,7 @@ const nano = require('gulp-cssnano');
 const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
 
-gulp.task('build-docs', (done) => {
+gulp.task('build-docs', ['sass'], (done) => {
   browserSync.notify('Running: <kbd>$ jekyll build</kbd>');
 
   gulp.src('./docs/assets/scss/docs.scss')
@@ -15,13 +17,19 @@ gulp.task('build-docs', (done) => {
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-  spawn('jekyll', ['build'], { stdio: 'inherit' })
+  let jekyllArgs = ['build'];
+
+  if (process.env.GH_PAGES) {
+    jekyllArgs = jekyllArgs.concat(['--config', '_config.yml,_config.gh-pages.yml']);
+  }
+
+  spawn('jekyll', jekyllArgs, { stdio: 'inherit' })
     .on('close', done);
 });
 
 gulp.task('rebuild-docs', ['build-docs'], () => browserSync.reload());
 
-gulp.task('browser-sync', ['sass', 'build-docs'], () => {
+gulp.task('browser-sync', ['build-docs'], () => {
   browserSync({
     server: {
       baseDir: '_gh_pages'
