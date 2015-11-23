@@ -26,7 +26,7 @@ gulp.task('build-docs', ['sass'], (done) => {
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-  spawn('./node_modules/.bin/metalsmith', ['metalsmith'], { stdio: 'inherit' })
+  spawn('./node_modules/.bin/metalsmith', { stdio: 'inherit' })
     .on('close', done);
 });
 
