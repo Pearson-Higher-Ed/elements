@@ -3,9 +3,6 @@
   "destination": "./_gh_pages",
   "clean": false,
   "plugins": {
-    "metalsmith-register-helpers": {
-      "directory": "./docs/_helpers"
-    },
     "./metalsmith_plugins/node-env.js": {
       "development": {
         "site": {
@@ -20,6 +17,9 @@
     },
     "metalsmith-metadata": {
       "nav": "_data/nav.yaml"
+    },
+    "metalsmith-register-helpers": {
+      "directory": "./docs/_helpers"
     },
     "metalsmith-in-place": {
       "engine": "handlebars",

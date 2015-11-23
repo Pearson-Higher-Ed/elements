@@ -3,11 +3,11 @@
     <ul>
       {{#each nav as |section|}}
         <li>
-          <a href="{{site.baseUrl}}/{{normalizeUrlPathPart section.title}}">{{section.title}}</a>
+          <a href="{{../site.baseUrl}}/{{normalizeUrlPathPart section.title}}">{{section.title}}</a>
           {{#if section.items}}
             <ul>
             {{#each section.items}}
-              <li><a href="{{site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">{{title}}</a></li>
+              <li><a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">{{title}}</a></li>
             {{/each}}
             </ul>
           {{/if}}
