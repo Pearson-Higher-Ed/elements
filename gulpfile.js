@@ -6,8 +6,17 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const nano = require('gulp-cssnano');
+const del = require('del');
 const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
+
+gulp.task('clean', () => {
+  return del([
+    'dist',
+    '_gh_pages',
+    'npm-debug.log'
+  ]);
+});
 
 gulp.task('build-docs', ['sass'], (done) => {
   browserSync.notify('Running: <kbd>$ metalsmith</kbd>');

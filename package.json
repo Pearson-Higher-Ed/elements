@@ -25,6 +25,7 @@
     "browser-sync": "^2.10.0",
     "conventional-changelog": "^0.5.1",
     "cz-conventional-changelog": "^1.1.4",
+    "del": "^2.1.0",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.0.0",
     "gulp-postcss": "^6.0.1",
