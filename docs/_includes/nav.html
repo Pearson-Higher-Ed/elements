@@ -1,18 +1,18 @@
 <div class="d-sidebar">
   <nav>
     <ul>
-      {% for item in site.data.nav %}
+      {{#each nav as |section|}}
         <li>
-          <a href="{{ site.baseurl }}/{{ item.title | downcase | replace:' ','-' }}/">{{ item.title }}</a>
-          {% if item.items %}
+          <a href="{{../site.baseUrl}}/{{normalizeUrlPathPart section.title}}">{{section.title}}</a>
+          {{#if section.items}}
             <ul>
-              {% for section in item.items %}
-                <li><a href="{{ site.baseurl }}/{{ item.title | downcase | replace:' ','-' }}/{{ section.title | downcase | replace:' ','-' }}/">{{ section.title }}</a></li>
-              {% endfor %}
+            {{#each section.items}}
+              <li><a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">{{title}}</a></li>
+            {{/each}}
             </ul>
-          {% endif %}
+          {{/if}}
         </li>
-      {% endfor %}
+      {{/each}}
     </ul>
   </nav>
 </div>

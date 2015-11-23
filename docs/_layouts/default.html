@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include head.html %}
+    {{> head}}
   </head>
   <body>
-    {{ content }}
-    {% include scripts.html %}
+    {{{contents}}}
+    {{> scripts}}
   </body>
 </html>
