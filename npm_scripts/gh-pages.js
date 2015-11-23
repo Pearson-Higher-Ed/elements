@@ -1,5 +1,6 @@
 const exec = require('./exec');
 
+exec('gulp clean');
 exec('NODE_ENV=gh-pages gulp build-docs');
 exec('git checkout gh-pages');
 exec('git add -f _gh_pages');
