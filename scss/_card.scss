@@ -2,12 +2,12 @@
   border: $card-border;
 }
 
-.pe-card__heading,
+.pe-card__header,
 .pe-card__content {
   padding: $card-heading-padding;
 }
 
-.pe-card__heading {
+.pe-card__header {
   border-bottom: $card-border;
 }
 

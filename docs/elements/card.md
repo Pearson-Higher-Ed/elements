@@ -9,7 +9,7 @@ A card represents a set of related information, serving as an entry point for a 
 
 {{#demo}}
 <div class="pe-card">
-  <div class="pe-card__heading">
+  <div class="pe-card__header">
     <h1>Jane Doe</h1>
   </div>
   <div class="pe-card__content">

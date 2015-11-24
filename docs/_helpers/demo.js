@@ -9,7 +9,7 @@ module.exports = function (options) {
 
   const demo = `
     <div class="d-demo pe-card">
-      <div class="pe-card__heading">${code}</div>
+      <div class="pe-card__header">${code}</div>
       <div class="pe-card__content hljs">${codeExample}</div>
     </div>
   `.trimLeft();
