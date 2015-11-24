@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/elements.css">
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-sidebar">
+      <nav>
+        <ul>
+            <li>
+              <a href="/elements/getting-started">Getting Started</a>
+                <ul>
+                  <li><a href="/elements/getting-started/overview">Overview</a></li>
+                  <li><a href="/elements/getting-started/installation">Installation</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="/elements/elements">Elements</a>
+                <ul>
+                  <li><a href="/elements/elements/color">Color</a></li>
+                  <li><a href="/elements/elements/typography">Typography</a></li>
+                  <li><a href="/elements/elements/buttons">Buttons</a></li>
+                  <li><a href="/elements/elements/card">Card</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1>Buttons</h1>
+
+    <p>Use a button to represent a user action.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><!-- The default button style -->
+<button class="pe-btn">Default</button>
+<!-- The primary action for a given context, such as
+the default action in a dialog -->
+<p><button class="pe-btn pe-btn--primary">Primary</button></p>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-comment">&lt;!-- The default button style --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><br><span class="hljs-comment">&lt;!-- The primary action for a given context, such as<br>the default action in a dialog --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Disabled</h3>
+<p>Buttons can be disabled when an action is not available to the user for the current context.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn" disabled>Default</button>
+<button class="pe-btn pe-btn--primary" disabled>Primary</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--primary"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<p>For non-<code>button</code> elements, use <code>pe-btn--disabled</code>.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-btn pe-btn--disabled">Not a button</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--disabled"</span>&gt;</span>Not a button<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Sizes</h3>
+<p>Buttons can be made smaller or larger.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn pe-btn--small">Small</button>
+<button class="pe-btn pe-btn--large">Large</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--small"</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--large"</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Links</h3>
+<p>In some cases, it may be necessary to style a button as a link.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn pe-btn--link">Link</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
