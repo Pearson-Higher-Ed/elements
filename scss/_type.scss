@@ -1,13 +1,33 @@
+@import '../node_modules/o-type/src/scss/type';
+@import '../node_modules/o-type/src/scss/scaffolding';
+
 h1, h2, h3, h4, h5, h6 {
-
-}
-
-p {
-
+  small {
+    font-size: 0.8em;
+    color: #555;
+  }
 }
 
 pre,
 code,
 kbd {
-  font-family: map-get($font-families, default-monospace);
+  font-family: o-type-font-family(default-monospace);
+}
+
+code {
+  color: #555;
+}
+kbd {
+  padding: 2px 4px;
+  background: #333;
+  color: #fff;
+  font-size: 90%;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+  kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: 700;
+    box-shadow: none;
+  }
 }
