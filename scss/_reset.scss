@@ -1,28 +1,17 @@
-// Reset
-//
-// Base CSS styles and normalize.css overrides
 
-// Box sizing
-//
-// Apply a natural box layout model to all elements.
-// See http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+@import '../node_modules/o-responsive/main';
+
+@import '../node_modules/o-type/src/scss/variables';
+@import '../node_modules/o-type/src/scss/fonts';
 
 html {
   box-sizing: border-box;
+  font-family: o-type-font-family(serif-default);
+  font-size: $pe-font-size-base;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-// Type
-//
-
-html {
-  font-family: map-get($pe-font-families, default-sans-serif);
-  // Set a base font size for all elements. Font sizes for
-  // other elements should be relative, using `rem` units.
-  font-size: $pe-font-size-base;
 }

@@ -4,8 +4,9 @@
     - title: Installation
 - title: Elements
   items:
-    - title: Aside
     - title: Color
     - title: Typography
+    - title: Aside
     - title: Buttons
     - title: Card
+    - title: Tables

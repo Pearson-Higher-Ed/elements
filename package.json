@@ -39,6 +39,8 @@
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-register-helpers": "^0.1.2",
+    "o-type": "git+https://github.com/Pearson-Higher-Ed/o-type.git",
+    "o-responsive": "git+https://github.com/Pearson-Higher-Ed/o-responsive.git",
     "semver": "^5.0.3"
   },
   "config": {
