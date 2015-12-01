@@ -1,13 +1,13 @@
 .pe-card {
-  border: $card-border;
+  border: $pe-card-border;
 }
 
 .pe-card__header,
 .pe-card__content {
-  padding: $card-heading-padding;
+  padding: $pe-card-heading-padding;
 }
 
 .pe-card__header {
-  border-bottom: $card-border;
+  border-bottom: $pe-card-border;
 }
 
