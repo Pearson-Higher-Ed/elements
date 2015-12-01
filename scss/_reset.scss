@@ -21,8 +21,8 @@ html {
 //
 
 html {
-  font-family: map-get($font-families, default-sans-serif);
+  font-family: map-get($pe-font-families, default-sans-serif);
   // Set a base font size for all elements. Font sizes for
   // other elements should be relative, using `rem` units.
-  font-size: $font-size-base;
+  font-size: $pe-font-size-base;
 }

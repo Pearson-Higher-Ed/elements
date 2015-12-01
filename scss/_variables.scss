@@ -4,56 +4,34 @@
 // Type
 //
 
-$font-size-base: 16px !default;
-$font-families: (
+$pe-font-size-base: 16px !default;
+$pe-font-families: (
   default-sans-serif: ('Helvetica Neue', Helvetica, Arial, sans-serif),
   default-serif: (Georgia, Times, 'Times New Roman', serif),
   default-monospace: ('Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace)
 ) !default;
 
-// Colors
-//
-// Foundational color palettes
-
-$primary-color: #00bbad !default;
-$primary-color-lightest: #62d3cb !default;
-$primary-color-lighter: #2cc2b7 !default;
-$primary-color-darker: #00847a !default;
-$primary-color-darkest: #005d56 !default;
-
-$secondary-color: #ffcb00 !default;
-$secondary-color-lightest: #ffe377 !default;
-$secondary-color-lighter: #ffd73a !default;
-$secondary-color-darker: #d6ab00 !default;
-$secondary-color-darkest: #977900 !default;
-
-$accent-color: #e00072 !default;
-$accent-color-lightest: #ea6dad !default;
-$accent-color-lighter: #e3338d !default;
-$accent-color-darker: #b0005a !default;
-$accent-color-darkest: #7c003f !default;
-
 // Buttons
 //
 
-$btn-default-bg: #f8f8f8 !default;
-$btn-default-border: #d0d0d0 !default;
-$btn-default-text: #666666 !default;
-$btn-default-disabled-bg: #cccccc !default;
-$btn-default-disabled-text: #888888 !default;
+$pe-btn-default-bg: #f8f8f8 !default;
+$pe-btn-default-border: #d0d0d0 !default;
+$pe-btn-default-text: #666666 !default;
+$pe-btn-default-disabled-bg: #cccccc !default;
+$pe-btn-default-disabled-text: #888888 !default;
 
-$btn-primary-bg: #107aca !default;
-$btn-primary-border: #0e6ab0 !default;
-$btn-primary-text: #ffffff !default;
-$btn-primary-disabled-bg: #9dc0db !default;
-$btn-primary-disabled-text: #ffffff !default;
+$pe-btn-primary-bg: #107aca !default;
+$pe-btn-primary-border: #0e6ab0 !default;
+$pe-btn-primary-text: #ffffff !default;
+$pe-btn-primary-disabled-bg: #9dc0db !default;
+$pe-btn-primary-disabled-text: #ffffff !default;
 
-$btn-font-size: 0.875rem !default;
-$btn-line-height: 1.75rem !default;
-$btn-padding: 12px !default;
+$pe-btn-font-size: 0.875rem !default;
+$pe-btn-line-height: 1.75rem !default;
+$pe-btn-padding: 12px !default;
 
 // Card
 //
 
-$card-border: solid 1px #cccccc !default;
-$card-heading-padding: 15px !default;
+$pe-card-border: solid 1px #cccccc !default;
+$pe-card-heading-padding: 15px !default;
