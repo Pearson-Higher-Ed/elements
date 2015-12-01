@@ -6,26 +6,71 @@ permalink: /elements/typography/
 ---
 ## Headings
 
-# H1 Heading <small>Secondary Text</small>
-## H2 Heading <small>Secondary Text</small>
-### H3 Heading <small>Secondary Text</small>
-#### H4 Heading <small>Secondary Text</small>
-##### H5 Heading <small>Secondary Text</small>
-###### H6 Heading <small>Secondary Text</small>
+{{#demo}}
+<h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6>
+{{/demo}}
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+## Paragraphs
 
-Cogito sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+{{#demo}}
+<p>
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque 
+  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+  id dolor id nibh ultricies vehicula.
+</p>
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+<p>
+  Cogito sociis natoque penatibus et magnis dis parturient montes, nascetur
+  ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis
+  mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+  odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+</p>
+
+<p>
+  Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id
+  elit non mi porta gravida at eget metus. Duis mollis, est non commodo
+  luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+</p>
+{{/demo}}
 
 ## Code
+
 ### Inline
-For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+Use the `<code>` element for inline code examples.
+
+{{#demo}}
+The <code>&lt;section&gt;</code> HTML element represents a section of a document.
+{{/demo}}
+
 ### User Input
-To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+Use the `<kdb>` element to represent user input.
+
+{{#demo}}
+<p>
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
+  To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
+</p>
+{{/demo}}
+
 ### Blocks
-```sh
-// Code block
-```
+
+Multi-line code blocks should be wrapped with `<pre></pre>` elements.
+
+{{#demo}}
+<pre><code>
+// This is a code example
+
+function greet(greeting) {
+  console.log(greeting);
+}
+
+greet('hello, world');
+</code></pre>
+{{/demo}}
