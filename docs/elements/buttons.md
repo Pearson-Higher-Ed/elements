@@ -23,6 +23,11 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 <input type="submit" value="Submit" class="pe-btn">
 {{/demo}}
 
+<aside>
+  <h1>Accessibility: Using non-button elements</h1>
+  <p>Where possible, prefer native HTML buttons (<code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>) over other elements styled as buttons. If using an element other than a native HTML button, add the <a href="http://www.w3.org/TR/wai-aria/roles#button"><code>role="button"</code></a> attribute.</p>
+</aside>
+
 ### Disabled
 
 Buttons can be disabled when an action is not available to the user for the current context.
@@ -58,7 +63,7 @@ In some cases, it may be desirable to style a button as a link.
 
 ### Text overflow
 
-When the width of the button's text exceeds the container width, it will be truncated with an ellipsis. However, you should generally avoid using long text strings with buttons.
+When the width of the button's text exceeds the container width, it will be truncated with an ellipsis. <strong>However, you should generally avoid using long text strings with buttons.</strong>
 
 {{#demo}}
 <button class="pe-btn" style="max-width: 200px">The quick brown fox jumps over the lazy dog.</button>
