@@ -29,36 +29,3 @@ To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 ```sh
 // Code block
 ```
-
-## Tables
-
-### Default Table
-| #  | Name  |
-|--- |---                 |
-| 1  | Adam Armour        |
-| 2  | Andrew Strickland  |
-| 3  | Joe Macaluso       |
-
-### Striped Tables
-<table class="table-striped">
-<thead>
-<tr>
-<th>#</th>
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Adam Armour</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Andrew Strickland</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Joe Macaluso</td>
-</tr>
-</tbody>
-</table>
