@@ -9,5 +9,5 @@ p {
 pre,
 code,
 kbd {
-  font-family: map-get($font-families, default-monospace);
+  font-family: map-get($pe-font-families, default-monospace);
 }
