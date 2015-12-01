@@ -9,6 +9,13 @@ const nano = require('gulp-cssnano');
 const del = require('del');
 const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
+const path = require('path');
+
+let metalsmithLoc = path.join('node_modules', '.bin', 'metalsmith');
+
+if(process.platform.indexOf('win') === 0){
+  metalsmithLoc += '.cmd';
+}
 
 gulp.task('clean', () => {
   return del([
@@ -26,7 +33,7 @@ gulp.task('build-docs', ['sass'], (done) => {
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-  spawn('./node_modules/.bin/metalsmith', { stdio: 'inherit' })
+  spawn(metalsmithLoc, { stdio: 'inherit' })
     .on('close', done);
 });
 
