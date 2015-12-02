@@ -8,6 +8,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Body copy
+//
+
+p {
+  color: $pe-copy-color;
+  font-size: $pe-copy-font-size;
+  line-height: $pe-copy-line-height;
+}
+
 // Code
 //
 
