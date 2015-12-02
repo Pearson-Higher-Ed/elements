@@ -17,8 +17,8 @@ Use a button to represent a user action.
 Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<input>` elements.
 
 {{#demo}}
-<div class="pe-btn" tabindex="0">Div</div>
-<a href="#" class="pe-btn">Link</a>
+<div class="pe-btn" tabindex="0" role="button">Div</div>
+<a href="#" class="pe-btn" role="button">Link</a>
 <button class="pe-btn">Button</button>
 <input type="submit" value="Submit" class="pe-btn">
 {{/demo}}
