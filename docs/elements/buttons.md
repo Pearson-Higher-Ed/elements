@@ -24,7 +24,7 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 {{/demo}}
 
 <aside>
-  <h1>Accessibility: Using non-button elements</h1>
+  <h1 class="pe-title">Accessibility: Using non-button elements</h1>
   <p>Where possible, prefer native HTML buttons (<code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>) over other elements styled as buttons. If using an element other than a native HTML button, add the <a href="http://www.w3.org/TR/wai-aria/roles#button"><code>role="button"</code></a> attribute.</p>
 </aside>
 
