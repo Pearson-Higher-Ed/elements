@@ -13,6 +13,12 @@ $pe-font-families: (
   default-monospace: ('Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace)
 ) !default;
 
+// Links
+//
+
+$pe-link-color: #0d65a6 !default;
+$pe-link-hover-color: #094877 !default;
+
 // Titles
 //
 
@@ -54,21 +60,47 @@ $pe-label-secondary-inverse-color: #aeaeae !default;
 // Buttons
 //
 
+$pe-btn-border-radius: 3px !default;
+$pe-btn-font-size: 0.875rem !default;
+$pe-btn-height: 28px !default;
+$pe-btn-padding: 0 11px !default;
+
 $pe-btn-default-bg: #f8f8f8 !default;
-$pe-btn-default-border: #d0d0d0 !default;
-$pe-btn-default-text: #666666 !default;
-$pe-btn-default-disabled-bg: #cccccc !default;
+$pe-btn-default-border: solid 1px #d0d0d0 !default;
+$pe-btn-default-text: $pe-label-secondary-color !default;
+$pe-btn-default-hover-bg: #e6e6e6 !default;
+$pe-btn-default-hover-border: solid 1px #b3b3b3 !default;
+$pe-btn-default-hover-text: $pe-label-secondary-color !default;
+$pe-btn-default-hover-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
+$pe-btn-default-disabled-bg: #f2f2f2 !default;
 $pe-btn-default-disabled-text: #888888 !default;
 
 $pe-btn-primary-bg: #107aca !default;
-$pe-btn-primary-border: #0e6ab0 !default;
-$pe-btn-primary-text: #ffffff !default;
+$pe-btn-primary-border: solid 1px #0a4d80 !default;
+$pe-btn-primary-text: $pe-label-inverse-color !default;
+$pe-btn-primary-hover-bg: #0c5d99 !default;
+$pe-btn-primary-hover-border: solid 1px #0a4d80 !default;
+$pe-btn-primary-hover-text: $pe-label-inverse-color !default;
+$pe-btn-primary-hover-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
 $pe-btn-primary-disabled-bg: #9dc0db !default;
 $pe-btn-primary-disabled-text: #ffffff !default;
 
-$pe-btn-font-size: 0.875rem !default;
-$pe-btn-line-height: 1.75rem !default;
-$pe-btn-padding: 12px !default;
+$pe-btn-link-bg: none !default;
+$pe-btn-link-border: 0 !default;
+$pe-btn-link-text: $pe-link-color !default;
+$pe-btn-link-hover-bg: $pe-btn-link-bg !default;
+$pe-btn-link-hover-border: $pe-btn-link-border !default;
+$pe-btn-link-hover-text: $pe-link-hover-color !default;
+$pe-btn-link-disabled-bg: 0 !default;
+$pe-btn-link-disabled-text: #9dc0db !default;
+
+$pe-btn-small-height: 24px !default;
+$pe-btn-small-font-size: $pe-label-small-font-size !default;
+$pe-btn-small-padding: 0 9px !default;
+
+$pe-btn-large-height: 42px !default;
+$pe-btn-large-font-size: $pe-label-large-font-size !default;
+$pe-btn-large-padding: 0 19px !default;
 
 // Card
 //

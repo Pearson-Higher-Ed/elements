@@ -1,13 +1,31 @@
-@mixin button($bg-color, $border-color, $text-color, $disabled-bg-color, $disabled-text-color) {
-  display: inline-block;
+@mixin pe-btn($bg, $border, $text-color, $hover-bg, $hover-border, $hover-text-color,
+  $disabled-bg, $disabled-text-color, $hover-shadow: none) {
+
   color: $text-color;
-  background-color: $bg-color;
-  border: solid 1px $border-color;
+  background: $bg;
+  border: $border;
+  border-radius: $pe-btn-border-radius;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $hover-text-color;
+    background: $hover-bg;
+    border: $hover-border;
+    box-shadow: $hover-shadow;
+  }
 
   &:disabled,
   &.pe-btn--disabled {
+    cursor: default;
     border: 0;
     color: $disabled-text-color;
-    background-color: $disabled-bg-color;
+    background: $disabled-bg;
+    box-shadow: none;
+    text-decoration: none;
   }
 }
