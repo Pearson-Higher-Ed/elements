@@ -1,12 +1,6 @@
-
-@import '../node_modules/o-responsive/main';
-
-@import '../node_modules/o-type/src/scss/variables';
-@import '../node_modules/o-type/src/scss/fonts';
-
 html {
   box-sizing: border-box;
-  font-family: o-type-font-family(serif-default);
+  font-family: pe-font-family(serif-default);
   font-size: $pe-font-size-base;
 }
 

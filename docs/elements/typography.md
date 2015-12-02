@@ -38,6 +38,49 @@ permalink: /elements/typography/
 </p>
 {{/demo}}
 
+## Titles
+
+{{#demo}}
+<div class="pe-title">Default title</div>
+{{/demo}}
+
+### Sizes
+
+Titles can be larger for additional emphasis.
+
+{{#demo}}
+<div class="pe-title pe-title--large">Large title</div>
+<div class="pe-title pe-title--extra-large">Extra large title</div>
+{{/demo}}
+
+## Labels
+
+{{#demo}}
+<div class="pe-label">Default label</div>
+<div class="pe-label pe-label--secondary">Secondary label</div>
+<div class="pe-label pe-label--bold">Bold label</div>
+{{/demo}}
+
+### Sizes
+
+Labels can be smaller or larger than the default.
+
+{{#demo}}
+<div class="pe-label pe-label--small">Small label</div>
+<div class="pe-label pe-label--large">Large label</div>
+{{/demo}}
+
+### Inverse
+
+When a label is used on a dark background, use `pe-label--inverse` to make it visible.
+
+{{#demo}}
+<div style="background-color: #000">
+  <div class="pe-label pe-label--inverse">Inverse label</div>
+  <div class="pe-label pe-label--secondary pe-label--inverse">Inverse secondary label</div>
+</div>
+{{/demo}}
+
 ## Code
 
 ### Inline

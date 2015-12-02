@@ -1,5 +1,5 @@
-@import '../node_modules/o-type/src/scss/type';
-@import '../node_modules/o-type/src/scss/scaffolding';
+// Headings
+//
 
 h1, h2, h3, h4, h5, h6 {
   small {
@@ -8,15 +8,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Code
+//
+
 pre,
 code,
 kbd {
-  font-family: o-type-font-family(default-monospace);
+  font-family: pe-font-family(default-monospace);
 }
 
 code {
   color: #555;
 }
+
 kbd {
   padding: 2px 4px;
   background: #333;
@@ -24,10 +28,70 @@ kbd {
   font-size: 90%;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+
   kbd {
     padding: 0;
     font-size: 100%;
     font-weight: 700;
     box-shadow: none;
   }
+}
+
+// Titles
+//
+
+.pe-title {
+  color: $pe-title-color;
+  font-size: $pe-title-font-size;
+  font-weight: $pe-title-font-weight;
+  line-height: $pe-title-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pe-title--large {
+  font-size: $pe-title-large-font-size;
+  line-height: $pe-title-large-line-height;
+}
+
+.pe-title--extra-large {
+  font-size: $pe-title-extra-large-font-size;
+  line-height: $pe-title-extra-large-line-height;
+}
+
+// Labels
+//
+
+.pe-label {
+  color: $pe-label-color;
+  font-size: $pe-label-font-size;
+  line-height: $pe-label-line-height;
+  font-weight: $pe-label-font-weight;
+
+  &.pe-label--inverse {
+    color: $pe-label-inverse-color;
+    font-weight: 300;
+  }
+}
+
+.pe-label--secondary {
+  color: $pe-label-secondary-color;
+
+  &.pe-label--inverse {
+    color: $pe-label-secondary-inverse-color;
+  }
+}
+
+.pe-label--small {
+  font-size: $pe-label-small-font-size;
+  line-height: $pe-label-small-line-height;
+}
+
+.pe-label--large {
+  font-size: $pe-label-large-font-size;
+  line-height: $pe-label-large-line-height;
+}
+
+.pe-label--bold {
+  font-weight: $pe-label-bold-font-weight;
 }
