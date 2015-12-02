@@ -12,6 +12,7 @@
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "gh-pages": "node ./npm_scripts/gh-pages.js",
+    "deploy-wip": "node ./npm_scripts/deploy-wip.js",
     "release": "node ./npm_scripts/release.js"
   },
   "keywords": [],
