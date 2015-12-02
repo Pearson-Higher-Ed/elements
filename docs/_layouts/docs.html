@@ -4,11 +4,14 @@
     {{> head}}
   </head>
   <body>
-    {{> nav}}
+    <div class="d-docs-layout__sidebar">
+      {{> nav}}
+    </div>
+    <div class="d-docs-layout__main">
+      <h1>{{title}}</h1>
 
-    <h1>{{title}}</h1>
-
-    {{{contents}}}
+      {{{contents}}}
+    </div>
 
     {{> scripts}}
   </body>
