@@ -30,6 +30,7 @@ gulp.task('lint', () => {
   return gulp.src([
     './scss/**/*.scss',
     '!./scss/_normalize.scss',
+    '!./scss/_icons.scss',
     './docs/scss/**/*.scss',
     '!./docs/scss/_syntax.scss'
   ])
@@ -38,13 +39,32 @@ gulp.task('lint', () => {
     .pipe(sassLint.failOnError());
 });
 
-gulp.task('build-docs', ['sass'], (done) => {
+gulp.task('sass', () => {
+  gulp.src('./scss/elements.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(nano())
+    .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('build', ['sass'], () => {
+  gulp.src('./assets/**')
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-docs', ['build'], (done) => {
   browserSync.notify('Running: <kbd>$ metalsmith</kbd>');
 
   gulp.src('./docs/scss/docs.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
+
+  gulp.src('./assets/**')
+    .pipe(gulp.dest('./_gh_pages'));
 
   spawn(metalsmithPath, { stdio: 'inherit' })
     .on('close', done);
@@ -58,17 +78,6 @@ gulp.task('browser-sync', ['build-docs'], () => {
       baseDir: '_gh_pages'
     }
   });
-});
-
-gulp.task('sass', () => {
-  gulp.src('./scss/elements.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer]))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(browserSync.reload({ stream: true }))
-    .pipe(rename({ extname: '.min.css' }))
-    .pipe(nano())
-    .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('watch', () => {
