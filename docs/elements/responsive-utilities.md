@@ -66,56 +66,18 @@ If you are using Sass, you can use the `pe-responsive-breakpoint` mixin to gener
 
 Visibility helpers are provided to make it easier to control element visibility based on the current breakpoint.
 
-<table class="pe-table">
-  <thead>
-    <tr>
-      <th>Selector</th>
-      <th>Visible</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>.pe-xs--visible</code></td>
-      <td><span class="pe-xs--visible">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-sm--visible</code></td>
-      <td><span class="pe-sm--visible">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-md--visible</code></td>
-      <td><span class="pe-md--visible">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-lg--visible</code></td>
-      <td><span class="pe-lg--visible">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-xl--visible</code></td>
-      <td><span class="pe-xl--visible">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-xs--hidden</code></td>
-      <td><span class="pe-xs--hidden">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-sm--hidden</code></td>
-      <td><span class="pe-sm--hidden">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-md--hidden</code></td>
-      <td><span class="pe-md--hidden">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-lg--hidden</code></td>
-      <td><span class="pe-lg--hidden">✓</span></td>
-    </tr>
-    <tr>
-      <td><code>.pe-xl--hidden</code></td>
-      <td><span class="pe-xl--hidden">✓</span></td>
-    </tr>
-  </tbody>
-</table>
+| Selector          | Visible                               |
+|-------------------|---------------------------------------|
+| `.pe-xs--visible` | <span class="pe-xs--visible">✓</span> |
+| `.pe-sm--visible` | <span class="pe-sm--visible">✓</span> |
+| `.pe-md--visible` | <span class="pe-md--visible">✓</span> |
+| `.pe-lg--visible` | <span class="pe-lg--visible">✓</span> |
+| `.pe-xl--visible` | <span class="pe-xl--visible">✓</span> |
+| `.pe-xs--hidden`  | <span class="pe-xs--hidden">✓</span>  |
+| `.pe-sm--hidden`  | <span class="pe-sm--hidden">✓</span>  |
+| `.pe-md--hidden`  | <span class="pe-md--hidden">✓</span>  |
+| `.pe-lg--hidden`  | <span class="pe-lg--hidden">✓</span>  |
+| `.pe-xl--hidden`  | <span class="pe-xl--hidden">✓</span>  |
 
 ### Visible
 
