@@ -104,6 +104,13 @@ $pe-label-bold-font-weight: bold !default;
 $pe-label-inverse-color: #ffffff !default;
 $pe-label-secondary-inverse-color: #aeaeae !default;
 
+// Aside
+//
+
+$pe-aside-bg: #f9f9f9 !default;
+$pe-aside-border-left: 5px solid #107aca !default;
+$pe-aside-padding: 15px !default;
+
 // Buttons
 //
 
@@ -156,9 +163,20 @@ $pe-card-border: solid 1px #cccccc !default;
 $pe-card-margin-bottom: 15px !default;
 $pe-card-heading-padding: 15px !default;
 
-// Aside
+// Header
 //
 
-$pe-aside-bg: #f9f9f9 !default;
-$pe-aside-border-left: 5px solid #107aca !default;
-$pe-aside-padding: 15px !default;
+$pe-header-height: 44px !default;
+$pe-header-bg: #000000 !default;
+$pe-header-text-color: #ffffff !default;
+$pe-header-link-color: #cccccc !default;
+$pe-header-link-hover-color: #f2f2f2 !default;
+
+$pe-header-nav-link-active-bg: #4d4d4d !default;
+$pe-header-nav-link-line-height: 20px !default;
+$pe-header-nav-link-padding: 15px !default;
+
+// z-index
+//
+
+$pe-header-z-index: 1000 !default;
