@@ -2,10 +2,10 @@
 
 $pe-light-palette: (
   name: 'Light Palette',
-  primary-text-color: peColors(pitch),
+  primary-text-color: peColor(pitch),
   secondary-text-color: peColor(gray-no-1),
-  primary-link-color: peColor(royal-navy),
-  secondary-link-color: peColor(hyperdrive),
+  primary-link-color: peColor(hyperdrive),
+  secondary-link-color: peColor(royal-navy),
   bg-color-darker: peColor(brightly-lit),
   bg-color-dark: peColor(off-white),
   bg-color-light: peColor(dirty-ice),
@@ -18,43 +18,42 @@ $pe-light-palette: (
 
 $pe-dark-palette: (
   name: 'Dark Palette',
-  primary-text-color: peColors(white),
+  primary-text-color: peColor(white),
   secondary-text-color: peColor(gray-wash),
-  primary-link-color: peColor(royal-navy),
-  secondary-link-color: peColor(hyperdrive),
   bg-color-darker: peColor(black),
   bg-color-dark: peColor(gutenberg-black),
   bg-color-light: peColor(full-moon),
-  bg-color-lighter: peColor(white),
-  highlight-color: peColor(highlighter),
   accent-dark: peColor(asphalt),
-  accent-med: peColor(smoke-gray),
-  accent-light: peColor(sidewalk)
+  accent-med: peColor(smoke-gray)
 );
 
 $pe-blue-palette: (
   name: 'Blue Palette',
-  primary-text-color: peColors(white),
-  secondary-text-color: peColor(white),
-  primary-link-color: peColor(white),
-  secondary-link-color: peColor(white),
-  bg-color-darker: peColor(sea),
+  primary-text-color: peColor(white),
   bg-color-dark: peColor(sea),
   bg-color-light: peColor(basic-blue),
-  bg-color-lighter: peColor(basic-blue),
-  highlight-color: peColor(highlighter),
   accent-dark: peColor(deep-sea),
-  accent-med: peColor(deep-sea),
   accent-light: peColor(sky-blue)
 );
 
-$pe-palette: $pe-light-palette !default;
+$pe-palettes: (
+  light: $pe-light-palette,
+  dark: $pe-dark-palette,
+  blue: $pe-blue-palette
+);
 
-@function pePalette($c){
-  @if map-has-key($pe-palette, $c) {
-    @return map-get($pe-palette, $c);
+
+
+@function pePalette($pal, $c){
+  @if map-has-key($pe-palettes, $pal){
+    $palette: map-get($pe-palettes, $pal);
+    @if map-has-key($palette, $c) {
+      @return map-get($palette, $c);
+    }
+
+    @warn "Unknown color `#{$c}` in current palette `#{$pal}` `#{map-get($palette, name)}`.";
+    @return null;
   }
+  @warn "No such palette `#{pal}`";
 
-  @warn "Unknown color `#{$c}` in current palette `#{map-get($pe-palette, name)}`.";
-  @return null;
 }

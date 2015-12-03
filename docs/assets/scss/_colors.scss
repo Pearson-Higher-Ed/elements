@@ -1,5 +1,9 @@
 @import '../../../scss/palette';
 
+.pe-c--color {
+  font-size: 0em;
+}
+
 @mixin paletteSwatches($pal) {
   position: relative;
   float: left;
@@ -14,6 +18,13 @@
         align-items: center;
         justify-content: center;
         background: $color;
+        font-size: 1em;
+        @if (lightness($color) > 50) {
+          color: #000;
+        }
+        @else {
+          color: #fff;
+        }
       }
     }
   }
