@@ -9,3 +9,10 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+sub,
+sup {
+  // Prevent from altering line height
+  position: relative;
+  vertical-align: baseline;
+}
