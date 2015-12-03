@@ -1,7 +1,7 @@
 @mixin pe-header-nav-link {
   display: block;
-  padding: (($pe-header-height - $pe-header-nav-link-line-height) / 2) $pe-header-nav-link-padding;
-  line-height: $pe-header-nav-link-line-height;
+  padding: 0 $pe-header-nav-link-padding-x;
+  line-height: $pe-header-height;
   text-decoration: none;
   color: $pe-header-link-color;
   font-size: 16px;
