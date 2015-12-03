@@ -159,7 +159,7 @@ Use <kbd>rm -rf</kbd> to recursively remove files. <strong>Be careful when using
 {{/demo}}
 
 <aside>
-  <h1>The difference between <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code></h1>
+  <h1 class="pe-title">The difference between <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code></h1>
   <p>The <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code> elements are similar. However, bold is a physical state that represents both the content and its presentation, while strong is a logical state that separates the content from its presentation&mdash;it indicates that, in the current context, the text is more important than the surrounding text.</p>
 </aside>
 
