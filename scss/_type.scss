@@ -69,6 +69,12 @@ kbd {
   font-weight: $pe-lead-font-weight;
   font-size: $pe-lead-font-size;
   line-height: $pe-lead-line-height;
+
+  @include pe-responsive-breakpoint(sm) {
+    font-weight: $pe-lead-sm-font-weight;
+    font-size: $pe-lead-sm-font-size;
+    line-height: $pe-lead-sm-line-height;
+  }
 }
 
 // Titles
@@ -76,21 +82,36 @@ kbd {
 
 .pe-title {
   color: $pe-title-color;
-  font-size: $pe-title-font-size;
   font-weight: $pe-title-font-weight;
+  font-size: $pe-title-font-size;
   line-height: $pe-title-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include pe-responsive-breakpoint(sm) {
+    font-size: $pe-title-sm-font-size;
+    line-height: $pe-title-sm-line-height;
+  }
 }
 
 .pe-title--large {
   font-size: $pe-title-large-font-size;
   line-height: $pe-title-large-line-height;
+
+  @include pe-responsive-breakpoint(sm) {
+    font-size: $pe-title-large-sm-font-size;
+    line-height: $pe-title-large-sm-line-height;
+  }
 }
 
 .pe-title--extra-large {
   font-size: $pe-title-extra-large-font-size;
   line-height: $pe-title-extra-large-line-height;
+
+  @include pe-responsive-breakpoint(sm) {
+    font-size: $pe-title-extra-large-sm-font-size;
+    line-height: $pe-title-extra-large-sm-line-height;
+  }
 }
 
 // Labels
