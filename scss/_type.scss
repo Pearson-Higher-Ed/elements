@@ -32,6 +32,46 @@ p {
   line-height: $pe-copy-line-height;
 }
 
+// Inline text
+//
+
+ins {
+  &:before {
+    content: '+';
+  }
+
+  &:after {
+    content: '+';
+  }
+}
+
+mark {
+  background: $pe-text-mark-bg;
+}
+
+s {
+  color: $pe-text-strikethrough-color;
+}
+
+small {
+  font-weight: $pe-text-small-font-weight;
+  font-size: $pe-text-small-font-size;
+  line-height: $pe-text-small-line-height;
+}
+
+sub,
+sup {
+  font-size: 90%;
+}
+
+sub {
+  top: 0.2rem;
+}
+
+sup {
+  top: -0.2rem;
+}
+
 // Code
 //
 
