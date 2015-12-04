@@ -1,6 +1,6 @@
 .d-docs-layout__sidebar {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 44px;
   bottom: 0;
   width: $d-sidebar-width;
