@@ -1,7 +1,10 @@
 .d-docs-layout__sidebar {
   display: none;
   position: absolute;
+  top: 44px;
+  bottom: 0;
   width: $d-sidebar-width;
+  overflow-y: scroll;
 
   @include pe-responsive-breakpoint(md) {
     display: block;
