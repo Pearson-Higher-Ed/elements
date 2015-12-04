@@ -2,7 +2,7 @@
   display: block;
   width: 32px;
   height: 32px;
-  margin-top: 6px;
+  margin-top: -16px;
   opacity: 0.5;
   background-size: cover;
   transition: all 0.2s ease-in-out;
@@ -11,5 +11,9 @@
   &:active,
   &:focus {
     opacity: 0.9;
+  }
+
+  @include pe-responsive-breakpoint(lg) {
+    margin-top: -16px;
   }
 }
