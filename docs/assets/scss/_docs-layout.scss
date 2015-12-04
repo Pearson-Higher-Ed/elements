@@ -1,9 +1,17 @@
 .d-docs-layout__sidebar {
+  display: none;
   position: absolute;
   width: $d-sidebar-width;
+
+  @include pe-responsive-breakpoint(md) {
+    display: block;
+  }
 }
 
 .d-docs-layout__main {
-  margin-left: $d-sidebar-width;
   padding: $d-main-padding;
+
+  @include pe-responsive-breakpoint(md) {
+    margin-left: $d-sidebar-width;
+  }
 }
