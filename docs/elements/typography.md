@@ -186,7 +186,7 @@ The <code>&lt;section&gt;</code> HTML element represents a section of a document
 
 ### User Input
 
-Use the `<kdb>` element to represent user input.
+Use the `<kbd>` element to represent user input.
 
 {{#demo}}
 <p>
