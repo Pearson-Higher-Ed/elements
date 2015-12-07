@@ -28,7 +28,7 @@ gulp.task('clean', () => {
 gulp.task('build-docs', ['sass'], (done) => {
   browserSync.notify('Running: <kbd>$ metalsmith</kbd>');
 
-  gulp.src('./docs/assets/scss/docs.scss')
+  gulp.src('./docs/scss/docs.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
@@ -52,7 +52,6 @@ gulp.task('sass', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./dist'))
-    .pipe(gulp.dest('./_gh_pages/css'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(nano())
@@ -61,7 +60,7 @@ gulp.task('sass', () => {
 
 gulp.task('watch', () => {
   gulp.watch('./scss/**/*.scss', ['sass']);
-  gulp.watch(['./docs/**/*.html', './docs/**/*.md', './docs/assets/scss/*.scss'], ['rebuild-docs']);
+  gulp.watch(['./docs/**/*.html', './docs/**/*.md', './docs/scss/**/*.scss'], ['rebuild-docs']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
