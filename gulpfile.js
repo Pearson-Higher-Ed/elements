@@ -59,8 +59,12 @@ gulp.task('sass', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./scss/**/*.scss', ['sass']);
-  gulp.watch(['./docs/**/*.html', './docs/**/*.md', './docs/scss/**/*.scss'], ['rebuild-docs']);
+  gulp.watch([
+    './scss/**/*.scss',
+    './docs/**/*.html',
+    './docs/**/*.md',
+    './docs/scss/**/*.scss'
+  ], ['rebuild-docs']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
