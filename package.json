@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "gulp",
+    "lint": "gulp lint",
     "test": "exit 0",
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
@@ -32,6 +33,7 @@
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
+    "gulp-sass-lint": "^1.1.0",
     "highlight.js": "^8.9.1",
     "markdown-it": "^5.0.2",
     "metalsmith": "^2.1.0",

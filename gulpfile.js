@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
+const sassLint = require('gulp-sass-lint');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const nano = require('gulp-cssnano');
@@ -23,6 +24,18 @@ gulp.task('clean', () => {
     '_gh_pages',
     'npm-debug.log'
   ]);
+});
+
+gulp.task('lint', () => {
+  gulp.src([
+    './scss/**/*.scss',
+    '!./scss/_normalize.scss',
+    './docs/scss/**/*.scss',
+    '!./docs/scss/_syntax.scss'
+  ])
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
 });
 
 gulp.task('build-docs', ['sass'], (done) => {
