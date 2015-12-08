@@ -16,10 +16,15 @@ a {
 // Headings
 //
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   small {
-    font-size: 0.8em;
-    color: #555;
+    font-size: $pe-text-heading-small-font-size;
+    color: $pe-text-heading-small-color;
   }
 }
 
@@ -82,16 +87,16 @@ kbd {
 }
 
 code {
-  color: #555;
+  color: $pe-text-code-color;
 }
 
 kbd {
   padding: 2px 4px;
-  background: #333;
-  color: #fff;
+  background: $pe-text-kbd-bg;
+  color: $pe-text-kbd-color;
   font-size: 90%;
   border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 
   kbd {
     padding: 0;

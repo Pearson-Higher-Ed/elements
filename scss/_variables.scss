@@ -30,6 +30,12 @@ $pe-font-families: (
 $pe-link-color: #0d65a6 !default;
 $pe-link-hover-color: #094877 !default;
 
+// Headings
+//
+
+$pe-text-heading-small-color: #555555 !default;
+$pe-text-heading-small-font-size: 0.8rem !default;
+
 // Inline text
 //
 
@@ -40,6 +46,14 @@ $pe-text-strikethrough-color: #676767 !default;
 $pe-text-small-line-height: 1rem !default;
 $pe-text-small-font-weight: normal !default;
 $pe-text-small-font-size: inherit !default;
+
+// Code
+//
+
+$pe-text-code-color: #555555 !default;
+
+$pe-text-kbd-bg: #333333 !default;
+$pe-text-kbd-color: #ffffff !default;
 
 // Body copy
 //
@@ -175,6 +189,12 @@ $pe-header-link-hover-color: #f2f2f2 !default;
 
 $pe-header-nav-link-active-bg: #4d4d4d !default;
 $pe-header-nav-link-padding-x: 15px !default;
+
+// Tables
+//
+
+$pe-table-striped-bg: #e8e8e8 !default;
+$pe-table-border-color: #dddddd !default;
 
 // z-index
 //
