@@ -6,7 +6,12 @@
         {{#if section.items}}
           <ul>
           {{#each section.items}}
-            <li><a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">{{title}}</a></li>
+            <li>
+              <a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}"
+                class="d-docs-layout__sidebar-nav-item {{#ifEql title ../../title}}d-docs-layout__sidebar-nav-item--active{{/ifEql}}">
+                {{title}}
+              </a>
+            </li>
           {{/each}}
           </ul>
         {{/if}}
