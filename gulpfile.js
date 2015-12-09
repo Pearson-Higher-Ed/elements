@@ -27,7 +27,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('lint', () => {
-  gulp.src([
+  return gulp.src([
     './scss/**/*.scss',
     '!./scss/_normalize.scss',
     './docs/scss/**/*.scss',
