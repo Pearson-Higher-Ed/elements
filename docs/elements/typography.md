@@ -184,20 +184,9 @@ Use the `<code>` element for inline code examples.
 The <code>&lt;section&gt;</code> HTML element represents a section of a document.
 {{/demo}}
 
-### User Input
+### Block
 
-Use the `<kbd>` element to represent user input.
-
-{{#demo}}
-<p>
-  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
-  To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
-</p>
-{{/demo}}
-
-### Blocks
-
-Multi-line code blocks should be wrapped with `<pre></pre>` elements.
+A multi-line code block should be wrapped with `<pre></pre>` elements.
 
 {{#demo}}
 <pre><code>
@@ -209,4 +198,15 @@ function greet(greeting) {
 
 greet('hello, world');
 </code></pre>
+{{/demo}}
+
+### User Input
+
+Use the `<kbd>` element to represent user input.
+
+{{#demo}}
+<p>
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
+  To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
+</p>
 {{/demo}}
