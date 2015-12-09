@@ -6,9 +6,8 @@
         {{#if section.items}}
           <ul class="pe-list pe-list--unstyled">
           {{#each section.items}}
-            <li class="d-nav__sub-section">
-              <a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}"
-                class="d-nav__nav-item {{#ifEql title ../../title}}d-nav__nav-item--active{{/ifEql}}">
+            <li class="d-nav__sub-section d-nav__nav-item {{#ifEql title ../../title}}d-nav__nav-item--active{{/ifEql}}">
+              <a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">
                 {{title}}
               </a>
             </li>
