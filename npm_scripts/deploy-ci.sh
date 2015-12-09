@@ -9,7 +9,7 @@ if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
 fi
 
 current_branch=$TRAVIS_BRANCH
-is_deployable="^v"
+is_deployable="^v[0-9]+"
 
 if [[ $current_branch =~ $is_deployable ]]; then
   npm run deploy-wip -- -y
