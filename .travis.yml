@@ -4,3 +4,5 @@ node_js:
   - "stable"
 script:
   - npm run ci
+after_success:
+  - npm run deploy-ci
