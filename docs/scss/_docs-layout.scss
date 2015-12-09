@@ -16,7 +16,8 @@
 }
 
 .d-docs-layout__main {
-  padding: $d-main-padding;
+  margin-top: 54px;
+  padding: 0 $d-layout-main-padding-x;
 
   @include pe-responsive-breakpoint(md) {
     margin-left: $d-sidebar-width;
