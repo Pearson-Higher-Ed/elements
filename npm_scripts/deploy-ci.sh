@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+npm run build-docs
+
 # Do not deploy if this build is for a pull request
 if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]; then
   echo "This build is for a pull request. Skipping deployment.";
