@@ -15,7 +15,7 @@ function main(argv) {
   const currentBranch = exec('git rev-parse --abbrev-ref HEAD', true);
 
   if (argv[0] === '-y') {
-    deploy(currentBranch);
+    deploy(argv[1] || currentBranch);
   } else {
     const stdin = readline.createInterface({
       input: process.stdin,

@@ -12,7 +12,7 @@ current_branch=$TRAVIS_BRANCH
 is_deployable="^v[0-9]+"
 
 if [[ $current_branch =~ $is_deployable ]]; then
-  npm run deploy-wip -- -y
+  npm run deploy-wip -- -y $TRAVIS_BRANCH
 else
   echo "This is not a primary branch. Skipping deployment.";
 fi
