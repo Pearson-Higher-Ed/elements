@@ -210,3 +210,47 @@ Use the `<kbd>` element to represent user input.
   To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
 </p>
 {{/demo}}
+
+## Lists
+
+### Unstyled lists
+
+Use `pe-list--unstyled` for plain lists.
+
+{{#demo}}
+<ul class="pe-list pe-list--unstyled">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+{{/demo}}
+
+### Nested lists
+
+When nested, `pe-list--unstyled` should be added to each `<ul>` element.
+
+{{#demo}}
+<ul class="pe-list pe-list--unstyled">
+  <li>1</li>
+  <li>
+    <ul class="pe-list pe-list--unstyled">
+      <li>1.a</li>
+      <li>1.b</li>
+    </ul>
+  </li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+{{/demo}}
+
+### Inline lists
+
+Use `pe-list--inline` to change the display to `inline-block`.
+
+{{#demo}}
+<ul class="pe-list pe-list--inline">
+  <li>Foo</li>
+  <li>Bar</li>
+  <li>Baz</li>
+</ul>
+{{/demo}}

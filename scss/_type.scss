@@ -195,3 +195,21 @@ kbd {
 .pe-label--bold {
   font-weight: $pe-label-bold-font-weight;
 }
+
+// Lists
+//
+
+.pe-list--unstyled {
+  @include pe-list-unstyled;
+}
+
+.pe-list--inline {
+  @include pe-list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
