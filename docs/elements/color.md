@@ -12,20 +12,20 @@ In your SASS file, use `pePalette(light|dark|blue, swatch-label)` where swatch l
 
 <div class="d-swatch">
   {{#each colors.palettes}}
-  <div class="pe-palette-{{@key}}">
+  <div class="d-palette-{{@key}}">
     <h4>{{this}}</h4>
-    <div class="pe-c--color pe-c--primary-text-color">Primary Text</div>
-    <div class="pe-c--color pe-c--secondary-text-color">Secondary Text</div>
-    <div class="pe-c--color pe-c--primary-link-color">Primary Link</div>
-    <div class="pe-c--color pe-c--secondary-link-color">Secondary Link</div>
-    <div class="pe-c--color pe-c--bg-color-darker">BG Darker</div>
-    <div class="pe-c--color pe-c--bg-color-dark">BG Dark</div>
-    <div class="pe-c--color pe-c--bg-color-light">BG Light</div>
-    <div class="pe-c--color pe-c--bg-color-lighter">BG Lighter</div>
-    <div class="pe-c--color pe-c--highlight-color">Highlight</div>
-    <div class="pe-c--color pe-c--accent-dark">Accent Dark</div>
-    <div class="pe-c--color pe-c--accent-med">Accent Med</div>
-    <div class="pe-c--color pe-c--accent-light">Accent Light</div>
+    <div class="d-c--color d-c--primary-text-color">Primary Text</div>
+    <div class="d-c--color d-c--secondary-text-color">Secondary Text</div>
+    <div class="d-c--color d-c--primary-link-color">Primary Link</div>
+    <div class="d-c--color d-c--secondary-link-color">Secondary Link</div>
+    <div class="d-c--color d-c--bg-color-darker">BG Darker</div>
+    <div class="d-c--color d-c--bg-color-dark">BG Dark</div>
+    <div class="d-c--color d-c--bg-color-light">BG Light</div>
+    <div class="d-c--color d-c--bg-color-lighter">BG Lighter</div>
+    <div class="d-c--color d-c--highlight-color">Highlight</div>
+    <div class="d-c--color d-c--accent-dark">Accent Dark</div>
+    <div class="d-c--color d-c--accent-med">Accent Med</div>
+    <div class="d-c--color d-c--accent-light">Accent Light</div>
   </div>
   {{/each}}
 
@@ -44,6 +44,6 @@ You should not have to use these directly, but in the event you do, use `peColor
 
 <div class="d-swatch">
   {{#each colors.colors}}
-    <div class="d-swatch--color pe-color-{{this}}"></div>
+    <div class="d-swatch--color d-color-{{this}}"></div>
   {{/each}}
 </div>

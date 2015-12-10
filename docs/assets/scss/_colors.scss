@@ -1,6 +1,9 @@
+@import '../../../scss/colors';
+@import '../../../scss/mixins/colors';
 @import '../../../scss/palette';
 
-.pe-c--color {
+
+.d-c--color {
   font-size: 0em;
 }
 
@@ -11,7 +14,7 @@
   margin-right: 3%;
   @each $prop, $color in $pal {
     @if $prop != 'name' {
-      .pe-c--#{$prop} {
+      .d-c--#{$prop} {
         width: 100%;
         height: 45px;
         display: flex;
@@ -19,24 +22,26 @@
         justify-content: center;
         background: $color;
         font-size: 1em;
-        @if (lightness($color) > 50) {
-          color: #000;
-        }
-        @else {
-          color: #fff;
+        @if (type-of($color) == color){
+          @if (lightness($color) > 50) {
+            color: #000;
+          }
+          @else {
+            color: #fff;
+          }
         }
       }
     }
   }
 }
 
-.pe-palette-light {
+.d-palette-light {
   @include paletteSwatches($pe-light-palette);
 }
-.pe-palette-dark {
+.d-palette-dark {
   @include paletteSwatches($pe-dark-palette);
 }
-.pe-palette-blue {
+.d-palette-blue {
   @include paletteSwatches($pe-blue-palette);
 }
 
@@ -59,7 +64,7 @@
 
 
 @each $name, $color in $pe-colors {
-  .pe-color-#{$name}{
+  .d-color-#{$name}{
     background: $color;
     position: relative;
     &:before, &:after{

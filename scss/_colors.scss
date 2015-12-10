@@ -25,12 +25,3 @@ $pe-colors: (
   deep-sea: #0A4D80,
   sky-blue: #9DC0DB
 );
-
-@function peColor($key) {
-  @if map-has-key($pe-colors, $key) {
-    @return map-get($pe-colors, $key);
-  }
-
-  @warn "Unknown color `#{$key}` in $pe-colors.";
-  @return null;
-}
