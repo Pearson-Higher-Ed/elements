@@ -184,20 +184,9 @@ Use the `<code>` element for inline code examples.
 The <code>&lt;section&gt;</code> HTML element represents a section of a document.
 {{/demo}}
 
-### User Input
+### Block
 
-Use the `<kbd>` element to represent user input.
-
-{{#demo}}
-<p>
-  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
-  To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
-</p>
-{{/demo}}
-
-### Blocks
-
-Multi-line code blocks should be wrapped with `<pre></pre>` elements.
+A multi-line code block should be wrapped with `<pre></pre>` elements.
 
 {{#demo}}
 <pre><code>
@@ -209,4 +198,59 @@ function greet(greeting) {
 
 greet('hello, world');
 </code></pre>
+{{/demo}}
+
+### User Input
+
+Use the `<kbd>` element to represent user input.
+
+{{#demo}}
+<p>
+  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
+  To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
+</p>
+{{/demo}}
+
+## Lists
+
+### Unstyled lists
+
+Use `pe-list--unstyled` for plain lists.
+
+{{#demo}}
+<ul class="pe-list pe-list--unstyled">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>
+{{/demo}}
+
+### Nested lists
+
+When nested, `pe-list--unstyled` should be added to each `<ul>` element.
+
+{{#demo}}
+<ul class="pe-list pe-list--unstyled">
+  <li>1</li>
+  <li>
+    <ul class="pe-list pe-list--unstyled">
+      <li>1.a</li>
+      <li>1.b</li>
+    </ul>
+  </li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+{{/demo}}
+
+### Inline lists
+
+Use `pe-list--inline` to change the display to `inline-block`.
+
+{{#demo}}
+<ul class="pe-list pe-list--inline">
+  <li>Foo</li>
+  <li>Bar</li>
+  <li>Baz</li>
+</ul>
 {{/demo}}

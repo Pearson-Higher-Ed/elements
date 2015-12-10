@@ -1,12 +1,16 @@
-<nav>
-  <ul>
+<nav class="d-nav">
+  <ul class="pe-list pe-list--unstyled">
     {{#each nav as |section|}}
-      <li>
+      <li class="d-nav__section">
         <a href="{{../site.baseUrl}}/{{normalizeUrlPathPart section.title}}">{{section.title}}</a>
         {{#if section.items}}
-          <ul>
+          <ul class="pe-list pe-list--unstyled">
           {{#each section.items}}
-            <li><a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">{{title}}</a></li>
+            <li class="d-nav__sub-section d-nav__nav-item {{#ifEql title ../../title}}d-nav__nav-item--active{{/ifEql}}">
+              <a href="{{../../site.baseUrl}}/{{normalizeUrlPathPart section.title}}/{{normalizeUrlPathPart title}}">
+                {{title}}
+              </a>
+            </li>
           {{/each}}
           </ul>
         {{/if}}

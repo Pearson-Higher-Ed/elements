@@ -1,3 +1,7 @@
+.d-docs-layout__container {
+  padding-top: 60px;
+}
+
 .d-docs-layout__sidebar {
   display: none;
   position: fixed;
@@ -12,7 +16,7 @@
 }
 
 .d-docs-layout__main {
-  padding: $d-main-padding;
+  padding: 0 $d-layout-main-padding-x;
 
   @include pe-responsive-breakpoint(md) {
     margin-left: $d-sidebar-width;

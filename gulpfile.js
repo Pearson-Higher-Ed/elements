@@ -12,10 +12,10 @@ const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
 const path = require('path');
 
-let metalsmithLoc = path.join('node_modules', '.bin', 'metalsmith');
+let metalsmithPath = path.join('node_modules', '.bin', 'metalsmith');
 
 if(process.platform.indexOf('win') === 0){
-  metalsmithLoc += '.cmd';
+  metalsmithPath += '.cmd';
 }
 
 gulp.task('clean', () => {
@@ -27,7 +27,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('lint', () => {
-  gulp.src([
+  return gulp.src([
     './scss/**/*.scss',
     '!./scss/_normalize.scss',
     './docs/scss/**/*.scss',
@@ -46,7 +46,7 @@ gulp.task('build-docs', ['sass'], (done) => {
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-  spawn(metalsmithLoc, { stdio: 'inherit' })
+  spawn(metalsmithPath, { stdio: 'inherit' })
     .on('close', done);
 });
 
