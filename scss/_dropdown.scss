@@ -1,0 +1,19 @@
+.pe-dropdown-menu{
+  position: relative;
+}
+
+.pe-dropdown-menu__menu-items {
+  position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: $pe-dropdown-z-index;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 10px 0;
+	margin: 0;
+	list-style: none;
+	text-align: left;
+	background-color: $o-dropdown-menu-bg;
+	border: 1px solid $o-dropdown-menu-border;
+}
