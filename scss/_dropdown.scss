@@ -1,3 +1,6 @@
+$pe-dropdown-menu-bg: pe-palette(light, bg-color-lighter);
+$pe-dropdown-menu-border: rgba(0, 0, 0, 0.15) !default;
+
 .pe-dropdown-menu{
   position: relative;
 }
@@ -14,6 +17,15 @@
 	margin: 0;
 	list-style: none;
 	text-align: left;
-	background-color: $o-dropdown-menu-bg;
-	border: 1px solid $o-dropdown-menu-border;
+	background-color: $pe-dropdown-menu-bg;
+	border: 1px solid $pe-dropdown-menu-border;
+}
+
+.pe-dropdown-menu--expanded > .pe-dropdown-menu__menu-items {
+	display: block;
+}
+
+.pe-dropdown-menu--right > .pe-dropdown-menu__menu-items {
+	right: 0;
+	left: auto;
 }
