@@ -12,10 +12,6 @@ $pe-responsive-breakpoints: (
   xl: (min: 1280px)
 ) !default;
 
-// z-indexes
-//
-$pe-dropdown-z-index: 1000 !default;
-
 // Type
 //
 
@@ -203,7 +199,27 @@ $pe-header-nav-link-padding-x: 15px !default;
 $pe-table-striped-bg: #e8e8e8 !default;
 $pe-table-border-color: #dddddd !default;
 
+// Dropdowns
+//
+$pe-dropdown-menu-bg: pe-palette(light, bg-color-lighter);
+$pe-dropdown-menu-border: rgba(0, 0, 0, 0.15) !default;
+$pe-dropdown-divider-bg: $pe-dropdown-menu-border;
+$pe-dropdown-menu-link-color: pe-palette(light, secondary-text-color);
+$pe-dropdown-menu-link-hover-color: pe-palette(light, bg-color-lighter);
+$pe-dropdown-menu-link-hover-bg: pe-palette(light, accent-dark);
+$pe-dropdown-menu-link-disabled-color: pe-palette(light, accent-dark);
+
+// inverse
+$pe-dropdown-menu-bg-inverse: pe-palette(dark, bg-color-dark);
+$pe-dropdown-menu-border-inverse: pe-palette(dark, bg-color-dark);
+$pe-dropdown-menu-link-color-inverse: pe-palette(dark, secondary-text-color);
+$pe-dropdown-menu-link-hover-color-inverse: pe-palette(light, bg-color-darker);
+$pe-dropdown-menu-link-hover-bg-inverse: pe-palette(dark, accent-dark);
+$pe-dropdown-menu-link-disabled-color-inverse: pe-palette(dark, accent-med);
+$pe-dropdown-menu-divider-bg-inverse: pe-palette(dark, secondary-text-color);
+
 // z-index
 //
 
 $pe-header-z-index: 1000 !default;
+$pe-dropdown-z-index: 1001 !default;
