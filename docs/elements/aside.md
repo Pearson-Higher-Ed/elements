@@ -2,7 +2,6 @@
 layout: docs.html
 title: Aside
 section: elements
-permalink: /elements/aside/
 ---
 
 An aside contains content that is tangentially related to the main content. The `<aside>` element should not be used to represent parenthetical text that is part of the main flow.

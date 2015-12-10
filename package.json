@@ -8,10 +8,14 @@
   },
   "scripts": {
     "start": "gulp",
+    "lint": "gulp lint",
     "test": "exit 0",
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "gh-pages": "node ./npm_scripts/gh-pages.js",
+    "ci": "npm run lint",
+    "deploy-ci": "./npm_scripts/deploy-ci.sh",
+    "deploy-wip": "node ./npm_scripts/deploy-wip.js",
     "release": "node ./npm_scripts/release.js"
   },
   "keywords": [],
@@ -31,6 +35,7 @@
     "gulp-postcss": "^6.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
+    "gulp-sass-lint": "^1.1.0",
     "highlight.js": "^8.9.1",
     "markdown-it": "^5.0.2",
     "metalsmith": "^2.1.0",
@@ -39,7 +44,8 @@
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-register-helpers": "^0.1.2",
-    "semver": "^5.0.3"
+    "semver": "^5.0.3",
+    "surge": "^0.17.3"
   },
   "config": {
     "commitizen": {

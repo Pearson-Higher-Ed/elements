@@ -2,7 +2,6 @@
 layout: docs.html
 title: Tables
 section: elements
-permalink: /elements/tables/
 ---
 
 {{#demo}}

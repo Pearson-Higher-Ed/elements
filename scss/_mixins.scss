@@ -1,1 +1,6 @@
-@import "mixins/buttons";
+@import 'mixins/responsive-breakpoints';
+@import 'mixins/buttons';
+@import 'mixins/fonts';
+@import 'mixins/header';
+@import 'mixins/lists';
+@import 'mixins/visibility';

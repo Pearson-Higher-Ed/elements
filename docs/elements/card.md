@@ -2,7 +2,6 @@
 layout: docs.html
 title: Card
 section: elements
-permalink: /elements/card/
 ---
 
 A card represents a set of related information, serving as an entry point for a more detailed view of that information.

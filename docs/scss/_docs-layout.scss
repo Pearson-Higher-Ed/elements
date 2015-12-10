@@ -1,0 +1,24 @@
+.d-docs-layout__container {
+  padding-top: 60px;
+}
+
+.d-docs-layout__sidebar {
+  display: none;
+  position: fixed;
+  top: 44px;
+  bottom: 0;
+  width: $d-sidebar-width;
+  overflow-y: scroll;
+
+  @include pe-responsive-breakpoint(md) {
+    display: block;
+  }
+}
+
+.d-docs-layout__main {
+  padding: 0 $d-layout-main-padding-x;
+
+  @include pe-responsive-breakpoint(md) {
+    margin-left: $d-sidebar-width;
+  }
+}

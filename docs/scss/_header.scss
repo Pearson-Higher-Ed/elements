@@ -1,0 +1,15 @@
+.d-header-github-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-top: 6px;
+  opacity: 0.5;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.9;
+  }
+}
