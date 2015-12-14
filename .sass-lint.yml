@@ -84,7 +84,7 @@ rules:
     - max-depth: 3
 
   # Should use hex color values rather than literals
-  no-color-keywords: 1
+  no-color-keywords: 0
 
   # Allow color literals as function arguments
   no-color-literals: 0
