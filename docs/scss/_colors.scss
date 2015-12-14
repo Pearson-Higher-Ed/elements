@@ -1,51 +1,10 @@
 @import '../../scss/colors';
 @import '../../scss/mixins/colors';
-@import '../../scss/palette';
 
 
 .d-c--color {
   font-size: 0em;
 }
-
-@mixin paletteSwatches($pal) {
-  position: relative;
-  float: left;
-  width: 30%;
-  margin-right: 3%;
-  @each $prop, $color in $pal {
-    @if $prop != 'name' {
-      .d-c--#{$prop} {
-        width: 100%;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $color;
-        font-size: 1em;
-        @if (type-of($color) == color){
-          @if (lightness($color) > 50) {
-            color: #000;
-          }
-          @else {
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
-}
-
-.d-palette-light {
-  @include paletteSwatches($pe-light-palette);
-}
-.d-palette-dark {
-  @include paletteSwatches($pe-dark-palette);
-}
-.d-palette-blue {
-  @include paletteSwatches($pe-blue-palette);
-}
-
-
 
 .d-swatch {
   clear: both;

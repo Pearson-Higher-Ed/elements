@@ -27,21 +27,21 @@ $pe-font-families: (
 // Links
 //
 
-$pe-link-color: pe-palette(light, primary-link-color) !default;
-$pe-link-hover-color: pe-palette(light, secondary-link-color) !default;
+$pe-link-color: pe-color(hyperdrive) !default;
+$pe-link-hover-color: pe-color(royal-navy) !default;
 
 // Headings
 //
 
-$pe-text-heading-small-color: #555555 !default;
+$pe-text-heading-small-color: pe-color(smoke-gray) !default;
 $pe-text-heading-small-font-size: 0.8rem !default;
 
 // Inline text
 //
 
-$pe-text-mark-bg: #fdec2e !default;
+$pe-text-mark-bg: pe-color(highlighter) !default;
 
-$pe-text-strikethrough-color: #676767 !default;
+$pe-text-strikethrough-color: pe-color(gray-no-1) !default;
 
 $pe-text-small-line-height: 1rem !default;
 $pe-text-small-font-weight: normal !default;
@@ -50,22 +50,22 @@ $pe-text-small-font-size: inherit !default;
 // Code
 //
 
-$pe-text-code-color: #555555 !default;
+$pe-text-code-color: pe-color(smoke-gray) !default;
 
-$pe-text-kbd-bg: #333333 !default;
-$pe-text-kbd-color: #ffffff !default;
+$pe-text-kbd-bg: pe-color(gutenberg-black) !default;
+$pe-text-kbd-color: pe-color(white) !default;
 
 // Body copy
 //
 
-$pe-copy-color: #231f20 !default;
+$pe-copy-color: pe-color(pitch) !default;
 $pe-copy-font-size: 1rem !default;
 $pe-copy-line-height: 1.375 !default;
 
 // Titles
 //
 
-$pe-title-color: pe-palette(dark, bg-color-darker) !default;
+$pe-title-color: pe-color(black) !default;
 $pe-title-font-weight: normal !default;
 $pe-title-font-size: 1.124rem !default;
 $pe-title-line-height: 1.375rem !default;
@@ -88,7 +88,7 @@ $pe-title-extra-large-sm-line-height: 2.25rem !default;
 // Leads
 //
 
-$pe-lead-color: #231f20 !default;
+$pe-lead-color: pe-color(pitch) !default;
 $pe-lead-font-weight: 200 !default;
 $pe-lead-font-size: 1.125rem !default;
 $pe-lead-line-height: 1.5rem !default;
@@ -100,12 +100,12 @@ $pe-lead-sm-line-height: 1.75rem !default;
 // Labels
 //
 
-$pe-label-color: pe-palette(light, primary-text-color) !default;
+$pe-label-color: pe-color(pitch) !default;
 $pe-label-font-size: 0.875rem !default;
 $pe-label-line-height: 1rem !default;
 $pe-label-font-weight: normal !default;
 
-$pe-label-secondary-color: pe-palette(light, secondary-text-color) !default;
+$pe-label-secondary-color: pe-color(gray-no-1) !default;
 
 $pe-label-small-font-size: 0.813rem !default;
 $pe-label-small-line-height: 0.9375rem !default;
@@ -115,14 +115,14 @@ $pe-label-large-line-height: 1.125rem !default;
 
 $pe-label-bold-font-weight: bold !default;
 
-$pe-label-inverse-color: pe-palette(dark, primary-text-color) !default;
-$pe-label-secondary-inverse-color: pe-palette(dark, secondary-text-color) !default;
+$pe-label-inverse-color: pe-color(white) !default;
+$pe-label-secondary-inverse-color: pe-color(gray-wash) !default;
 
 // Aside
 //
 
-$pe-aside-bg: #f9f9f9 !default;
-$pe-aside-border-left: 5px solid #107aca !default;
+$pe-aside-bg: pe-color(dirty-ice) !default;
+$pe-aside-border-left: 5px solid pe-color(basic-blue) !default;
 $pe-aside-padding: 15px !default;
 $pe-aside-margin: 15px !default;
 
@@ -134,25 +134,25 @@ $pe-btn-font-size: 0.875rem !default;
 $pe-btn-height: 28px !default;
 $pe-btn-padding: 0 11px !default;
 
-$pe-btn-default-bg: pe-palette(light, bg-color-light) !default;
-$pe-btn-default-border: solid 1px pe-palette(light, accent-light) !default;
+$pe-btn-default-bg: pe-color(dirty-ice) !default;
+$pe-btn-default-border: solid 1px pe-color(hairline-gray) !default;
 $pe-btn-default-text: $pe-label-secondary-color !default;
-$pe-btn-default-hover-bg: pe-palette(light, bg-color-darker) !default;
-$pe-btn-default-hover-border: solid 1px pe-palette(light, accent-med) !default;
+$pe-btn-default-hover-bg: pe-color(brightly-lit) !default;
+$pe-btn-default-hover-border: solid 1px pe-color(sidewalk) !default;
 $pe-btn-default-hover-text: $pe-label-secondary-color !default;
 $pe-btn-default-hover-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
-$pe-btn-default-disabled-bg: pe-palette(light, bg-color-dark) !default;
-$pe-btn-default-disabled-text: pe-palette(light, accent-dark) !default;
+$pe-btn-default-disabled-bg: pe-color(off-white) !default;
+$pe-btn-default-disabled-text: pe-color(boring) !default;
 
-$pe-btn-primary-bg: pe-palette(blue, bg-color-light) !default;
-$pe-btn-primary-border: solid 1px pe-palette(blue, accent-dark) !default;
+$pe-btn-primary-bg: pe-color(basic-blue) !default;
+$pe-btn-primary-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-text: $pe-label-inverse-color !default;
-$pe-btn-primary-hover-bg: pe-palette(blue, bg-color-dark) !default;
-$pe-btn-primary-hover-border: solid 1px pe-palette(blue, accent-dark) !default;
+$pe-btn-primary-hover-bg: pe-color(sea) !default;
+$pe-btn-primary-hover-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-hover-text: $pe-label-inverse-color !default;
 $pe-btn-primary-hover-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
-$pe-btn-primary-disabled-bg: pe-palette(blue, accent-light) !default;
-$pe-btn-primary-disabled-text: pe-palette(blue, primary-text-color) !default;
+$pe-btn-primary-disabled-bg: pe-color(sky-blue) !default;
+$pe-btn-primary-disabled-text: pe-color(white) !default;
 
 $pe-btn-link-bg: none !default;
 $pe-btn-link-border: 0 !default;
@@ -161,7 +161,7 @@ $pe-btn-link-hover-bg: $pe-btn-link-bg !default;
 $pe-btn-link-hover-border: $pe-btn-link-border !default;
 $pe-btn-link-hover-text: $pe-link-hover-color !default;
 $pe-btn-link-disabled-bg: 0 !default;
-$pe-btn-link-disabled-text: pe-palette(blue, accent-light) !default;
+$pe-btn-link-disabled-text: pe-color(sky-blue) !default;
 
 $pe-btn-small-height: 24px !default;
 $pe-btn-small-font-size: $pe-label-small-font-size !default;
@@ -174,30 +174,28 @@ $pe-btn-large-padding: 0 19px !default;
 // Card
 //
 
-$pe-card-border: solid 1px pe-palette(light, accent-med) !default;
+$pe-card-border: solid 1px pe-color(sidewalk) !default;
 $pe-card-margin-bottom: 15px !default;
 $pe-card-heading-padding: 15px !default;
 
 // Header
 //
 
-$pe-aside-bg: pe-palette(light, bg-color-light) !default;
-$pe-aside-border-left: 5px solid pe-palette(blue, bg-color-light) !default;
-$pe-aside-padding: 15px !default;
-$pe-header-height: 44px !default;
-$pe-header-bg: #000000 !default;
-$pe-header-text-color: #ffffff !default;
-$pe-header-link-color: #cccccc !default;
-$pe-header-link-hover-color: #f2f2f2 !default;
 
-$pe-header-nav-link-active-bg: #4d4d4d !default;
+$pe-header-height: 44px !default;
+$pe-header-bg: pe-color(black) !default;
+$pe-header-text-color: pe-color(white) !default;
+$pe-header-link-color: pe-color(hairline-gray) !default;
+$pe-header-link-hover-color: pe-color(off-white) !default;
+
+$pe-header-nav-link-active-bg: pe-color(full-moon) !default;
 $pe-header-nav-link-padding-x: 15px !default;
 
 // Tables
 //
 
-$pe-table-striped-bg: #e8e8e8 !default;
-$pe-table-border-color: #dddddd !default;
+$pe-table-striped-bg: pe-color(brightly-lit) !default;
+$pe-table-border-color: pe-color(hairline-gray) !default;
 
 // z-index
 //
