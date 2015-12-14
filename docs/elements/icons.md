@@ -53,11 +53,3 @@ Icons that are not just for presentation should provide an alternative element t
   <span class="pe-sr-only">close</span>
 </div>
 {{/demo}}
-
-You may also use [`aria-label`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-label_attribute) to specify the purpose of an element:
-
-{{#demo}}
-<button class="pe-btn" aria-label="close">
-  <span class="pe-icon--times" aria-hidden="true"></span>
-</button>
-{{/demo}}
