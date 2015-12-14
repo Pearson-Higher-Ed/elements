@@ -3,20 +3,6 @@
     @return map-get($pe-colors, $key);
   }
 
-  @warn "Unknown color `#{$key}` in $pe-colors.";
+  @warn 'Unknown color `#{$key}` in $pe-colors.';
   @return null;
-}
-
-@function pe-palette($pal, $c){
-  @if map-has-key($pe-palettes, $pal){
-    $palette: map-get($pe-palettes, $pal);
-    @if map-has-key($palette, $c) {
-      @return map-get($palette, $c);
-    }
-
-    @warn "Unknown color `#{$c}` in current palette `#{$pal}` `#{map-get($palette, name)}`.";
-    @return null;
-  }
-  @warn "No such palette `#{pal}`";
-
 }
