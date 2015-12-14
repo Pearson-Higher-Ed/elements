@@ -10,6 +10,10 @@ rules:
     - style: 1tbs
       allow-single-line: true
 
+  class-name-format:
+    - 1
+    - convention: ^([\.\%]?[a-z]*[-]?[a-z0-9\-]*)(\.[a-z0-9\-]*)?(__[a-z0-9]*[-]?[a-z0-9\-]*)?(--[a-z0-9]*[-]?[a-z0-9\-]*)?(\:[a-z]*)*$
+
   # @import 'foo';
   clean-import-paths:
     - 1
