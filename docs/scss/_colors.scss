@@ -5,10 +5,12 @@
 .d-swatch {
   clear: both;
   margin-bottom: 35px;
+
   &:after {
     clear: both;
     margin-bottom: 35px;
   }
+
   .d-swatch--color {
     float: left;
     width: 150px;
@@ -20,6 +22,7 @@
   .d-color-#{$name} {
     background: $color;
     position: relative;
+
     &:before,
     &:after {
       position: absolute;
@@ -30,11 +33,13 @@
       align-items: center;
       justify-content: center;
     }
+
     &:before {
       content: '#{$name}';
       color: white;
       top: 0px;
     }
+
     &:after {
       content: '#{$name}';
       color: black;
