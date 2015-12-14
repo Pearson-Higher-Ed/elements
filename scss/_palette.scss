@@ -1,0 +1,42 @@
+
+$pe-light-palette: (
+  name: 'Light Palette',
+  primary-text-color: pe-color(pitch),
+  secondary-text-color: pe-color(gray-no-1),
+  primary-link-color: pe-color(hyperdrive),
+  secondary-link-color: pe-color(royal-navy),
+  bg-color-darker: pe-color(brightly-lit),
+  bg-color-dark: pe-color(off-white),
+  bg-color-light: pe-color(dirty-ice),
+  bg-color-lighter: pe-color(white),
+  highlight-color: pe-color(highlighter),
+  accent-dark: pe-color(boring),
+  accent-med: pe-color(sidewalk),
+  accent-light: pe-color(hairline-gray)
+);
+
+$pe-dark-palette: (
+  name: 'Dark Palette',
+  primary-text-color: pe-color(white),
+  secondary-text-color: pe-color(gray-wash),
+  bg-color-darker: pe-color(black),
+  bg-color-dark: pe-color(gutenberg-black),
+  bg-color-light: pe-color(full-moon),
+  accent-dark: pe-color(asphalt),
+  accent-med: pe-color(smoke-gray)
+);
+
+$pe-blue-palette: (
+  name: 'Blue Palette',
+  primary-text-color: pe-color(white),
+  bg-color-dark: pe-color(sea),
+  bg-color-light: pe-color(basic-blue),
+  accent-dark: pe-color(deep-sea),
+  accent-light: pe-color(sky-blue)
+);
+
+$pe-palettes: (
+  light: $pe-light-palette,
+  dark: $pe-dark-palette,
+  blue: $pe-blue-palette
+);
