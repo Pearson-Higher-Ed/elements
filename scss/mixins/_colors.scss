@@ -3,6 +3,6 @@
     @return map-get($pe-colors, $key);
   }
 
-  @warn "Unknown color `#{$key}` in $pe-colors.";
+  @warn 'Unknown color `#{$key}` in $pe-colors.';
   @return null;
 }
