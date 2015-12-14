@@ -199,22 +199,22 @@ $pe-table-border-color: pe-color(hairline-gray) !default;
 
 // Dropdowns
 //
-$pe-dropdown-menu-bg: pe-palette(light, bg-color-lighter);
+$pe-dropdown-menu-bg: pe-color(white);
 $pe-dropdown-menu-border: rgba(0, 0, 0, 0.15) !default;
 $pe-dropdown-divider-bg: $pe-dropdown-menu-border;
-$pe-dropdown-menu-link-color: pe-palette(light, secondary-text-color);
-$pe-dropdown-menu-link-hover-color: pe-palette(light, bg-color-lighter);
-$pe-dropdown-menu-link-hover-bg: pe-palette(light, accent-dark);
-$pe-dropdown-menu-link-disabled-color: pe-palette(light, accent-dark);
+$pe-dropdown-menu-link-color: pe-color(gray-no-1);
+$pe-dropdown-menu-link-hover-color: pe-color(white);
+$pe-dropdown-menu-link-hover-bg: pe-color(boring);
+$pe-dropdown-menu-link-disabled-color: pe-color(boring);
 
 // inverse
-$pe-dropdown-menu-bg-inverse: pe-palette(dark, bg-color-dark);
-$pe-dropdown-menu-border-inverse: pe-palette(dark, bg-color-dark);
-$pe-dropdown-menu-link-color-inverse: pe-palette(dark, secondary-text-color);
-$pe-dropdown-menu-link-hover-color-inverse: pe-palette(light, bg-color-darker);
-$pe-dropdown-menu-link-hover-bg-inverse: pe-palette(dark, accent-dark);
-$pe-dropdown-menu-link-disabled-color-inverse: pe-palette(dark, accent-med);
-$pe-dropdown-menu-divider-bg-inverse: pe-palette(dark, secondary-text-color);
+$pe-dropdown-menu-bg-inverse: pe-color(gutenberg-black);
+$pe-dropdown-menu-border-inverse: pe-color(gutenberg-black);
+$pe-dropdown-menu-link-color-inverse: pe-color(gray-wash);
+$pe-dropdown-menu-link-hover-color-inverse: pe-color(brightly-lit);
+$pe-dropdown-menu-link-hover-bg-inverse: pe-color(asphalt);
+$pe-dropdown-menu-link-disabled-color-inverse: pe-color(smoke-gray);
+$pe-dropdown-menu-divider-bg-inverse: pe-color(gray-wash);
 
 // z-index
 //
