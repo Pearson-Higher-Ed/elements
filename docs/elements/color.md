@@ -11,8 +11,8 @@ Text is in both black and white to show you the un-adjusted contrast for each.
 
 You should not have to use these directly, but in the event you do, use `pe-color(color-name)` for example<br/>`pe-color(gray-no-1)`.
 
-<div class="d-swatch">
+<div class="d-swatches">
   {{#each colors.colors}}
-    <div class="d-swatch--color d-color-{{this}}"></div>
+    <div class="d-swatch d-swatch--{{this}}"></div>
   {{/each}}
 </div>

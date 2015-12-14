@@ -2,7 +2,7 @@
   font-size: 0em;
 }
 
-.d-swatch {
+.d-swatches {
   clear: both;
   margin-bottom: 35px;
 
@@ -10,16 +10,16 @@
     clear: both;
     margin-bottom: 35px;
   }
+}
 
-  .d-swatch--color {
-    float: left;
-    width: 150px;
-    height: 150px;
-  }
+.d-swatch {
+  float: left;
+  width: 150px;
+  height: 150px;
 }
 
 @each $name, $color in $pe-colors {
-  .d-color-#{$name} {
+  .d-swatch--#{$name} {
     background: $color;
     position: relative;
 
