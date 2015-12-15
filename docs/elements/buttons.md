@@ -27,6 +27,14 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
   <p>Where possible, prefer native HTML buttons (<code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>) over other elements styled as buttons. If using an element other than a native HTML button, add the <a href="http://www.w3.org/TR/wai-aria/roles#button"><code>role="button"</code></a> attribute.</p>
 </aside>
 
+### Links
+
+In some cases, it may be desirable to style a button as a link.
+
+{{#demo}}
+<button class="pe-btn pe-btn--link">Link</button>
+{{/demo}}
+
 ### Disabled
 
 Buttons can be disabled when an action is not available to the user for the current context.
@@ -50,14 +58,8 @@ Buttons can be made smaller or larger.
 {{#demo}}
 <button class="pe-btn pe-btn--small">Small</button>
 <button class="pe-btn pe-btn--large">Large</button>
-{{/demo}}
-
-### Links
-
-In some cases, it may be desirable to style a button as a link.
-
-{{#demo}}
-<button class="pe-btn pe-btn--link">Link</button>
+<button class="pe-btn pe-btn--link pe-btn--small">Small link</button>
+<button class="pe-btn pe-btn--link pe-btn--large">Large link</button>
 {{/demo}}
 
 ### Text overflow
