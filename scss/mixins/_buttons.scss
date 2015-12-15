@@ -1,5 +1,5 @@
 @mixin pe-btn($bg, $border, $text-color, $hover-bg, $hover-border, $hover-text-color,
-  $disabled-bg, $disabled-text-color, $hover-shadow: none) {
+  $disabled-bg, $disabled-text-color, $active-shadow: none) {
 
   color: $text-color;
   background: $bg;
@@ -16,7 +16,10 @@
     color: $hover-text-color;
     background: $hover-bg;
     border: $hover-border;
-    box-shadow: $hover-shadow;
+  }
+
+  &:active {
+    box-shadow: $active-shadow;
   }
 
   &:disabled,

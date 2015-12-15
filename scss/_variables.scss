@@ -171,7 +171,7 @@ $pe-btn-default-text: $pe-label-secondary-color !default;
 $pe-btn-default-hover-bg: pe-color(brightly-lit) !default;
 $pe-btn-default-hover-border: solid 1px pe-color(sidewalk) !default;
 $pe-btn-default-hover-text: $pe-label-secondary-color !default;
-$pe-btn-default-hover-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
+$pe-btn-default-active-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
 $pe-btn-default-disabled-bg: pe-color(off-white) !default;
 $pe-btn-default-disabled-text: pe-color(boring) !default;
 
@@ -181,7 +181,7 @@ $pe-btn-primary-text: $pe-label-inverse-color !default;
 $pe-btn-primary-hover-bg: pe-color(sea) !default;
 $pe-btn-primary-hover-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-hover-text: $pe-label-inverse-color !default;
-$pe-btn-primary-hover-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
+$pe-btn-primary-active-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
 $pe-btn-primary-disabled-bg: pe-color(sky-blue) !default;
 $pe-btn-primary-disabled-text: pe-color(white) !default;
 
