@@ -69,7 +69,9 @@ describe('type', () => {
       });
 
       it('should match the design spec when it is a secondary label', () => {
-        ['color', 'rgb(174, 174, 174)']
+        assertCssPropertiesAreEqual(getElementById('label-secondary-inverse'), [
+          ['color', 'rgb(174, 174, 174)']
+        ]);
       });
     });
   });
