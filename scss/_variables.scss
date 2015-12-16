@@ -148,6 +148,7 @@ $pe-label-bold-font-weight: bold !default;
 
 $pe-label-inverse-color: pe-color(white) !default;
 $pe-label-secondary-inverse-color: pe-color(gray-wash) !default;
+$pe-label-inverse-font-weight: 300 !default;
 
 // Aside
 //
@@ -168,6 +169,7 @@ $pe-btn-padding: 0 11px !default;
 $pe-btn-default-bg: pe-color(dirty-ice) !default;
 $pe-btn-default-border: solid 1px pe-color(hairline-gray) !default;
 $pe-btn-default-text: $pe-label-secondary-color !default;
+$pe-btn-default-font-weight: $pe-label-font-weight !default;
 $pe-btn-default-hover-bg: pe-color(brightly-lit) !default;
 $pe-btn-default-hover-border: solid 1px pe-color(sidewalk) !default;
 $pe-btn-default-hover-text: $pe-label-secondary-color !default;
@@ -178,6 +180,7 @@ $pe-btn-default-disabled-text: pe-color(boring) !default;
 $pe-btn-primary-bg: pe-color(basic-blue) !default;
 $pe-btn-primary-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-text: $pe-label-inverse-color !default;
+$pe-btn-primary-font-weight: $pe-label-inverse-font-weight !default;
 $pe-btn-primary-hover-bg: pe-color(sea) !default;
 $pe-btn-primary-hover-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-hover-text: $pe-label-inverse-color !default;
@@ -211,7 +214,6 @@ $pe-card-heading-padding: 15px !default;
 
 // Header
 //
-
 
 $pe-header-height: 44px !default;
 $pe-header-bg: pe-color(black) !default;

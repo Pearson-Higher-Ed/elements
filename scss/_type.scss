@@ -170,7 +170,7 @@ kbd {
 
   &.pe-label--inverse {
     color: $pe-label-inverse-color;
-    font-weight: 300;
+    font-weight: $pe-label-inverse-font-weight;
   }
 }
 
