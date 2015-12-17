@@ -17,7 +17,7 @@ describe('type', () => {
           ['color', 'rgb(35, 31, 32)'],
           ['font-size', '14px'],
           ['line-height', '16px'],
-          ['font-weight', 'normal']
+          ['font-weight', ['normal', '400']]
         ]);
       });
     });
@@ -29,7 +29,7 @@ describe('type', () => {
           ['color', 'rgb(86, 86, 86)'],
           ['font-size', '14px'],
           ['line-height', '16px'],
-          ['font-weight', 'normal']
+          ['font-weight', ['normal', '400']]
         ]);
       });
     });
@@ -38,7 +38,7 @@ describe('type', () => {
 
       it('should match the design spec when the label is small', () => {
         assertCssPropertiesAreEqual(getElementById('label-small'), [
-          ['font-size', '13px'],
+          ['font-size', ['13px', '13.008px']],
           ['line-height', '15px']
         ]);
       });
@@ -55,7 +55,7 @@ describe('type', () => {
 
       it('should match the design spec when the weight is bold', () => {
         assertCssPropertiesAreEqual(getElementById('label-bold'), [
-          ['font-weight', 'bold']
+          ['font-weight', ['bold', '700']]
         ]);
       });
     });
