@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+      
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <li class="pe-header__nav-item">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li>
+              <li class="d-nav__section">
+                <a href="/elements/elements">Elements</a>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/aside">
+                        Aside
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/card">
+                        Card
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/header">
+                        Header
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/tables">
+                        Tables
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Responsive Utilities</h1>
+
+        <h2>Responsive breakpoints and media queries</h2>
+<p>The responsive breakpoints are defined as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>Min width</th>
+<th>Max width</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>xs</code></td>
+<td>0px</td>
+<td>479px</td>
+</tr>
+<tr>
+<td><code>sm</code></td>
+<td>480px</td>
+<td>767px</td>
+</tr>
+<tr>
+<td><code>md</code></td>
+<td>768px</td>
+<td>1023px</td>
+</tr>
+<tr>
+<td><code>lg</code></td>
+<td>1024px</td>
+<td>1279px</td>
+</tr>
+<tr>
+<td><code>xl</code></td>
+<td>1280px</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Advanced usage with Sass</h3>
+<p>If you are using Sass, you can use the <code>pe-responsive-breakpoint</code> mixin to generate media queries for a range of breakpoints:</p>
+<pre><code class="language-sass">// Sass
+.foo {
+  color: red;
+
+  @include pe-responsive-breakpoint(sm) {
+    color: blue;
+  }
+
+  @include pe-responsive-breakpoint(md to lg) {
+    color: green;
+  }
+
+  @include pe-responsive-breakpoint(to xs) {
+    color: purple;
+  }
+}
+
+// Generated CSS
+.foo {
+  color: red;
+}
+
+@media (min-width: 480px) {
+  .foo {
+    color: blue;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .foo {
+    color: green;
+  }
+}
+
+@media (max-width: 479px) {
+  .foo {
+    color: purple;
+  }
+}
+</code></pre>
+<h2>Visibility</h2>
+<p>Visibility helpers are provided to make it easier to control element visibility based on the current breakpoint.</p>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>Visible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.pe-xs--visible</code></td>
+<td><span class="pe-xs--visible">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-sm--visible</code></td>
+<td><span class="pe-sm--visible">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-md--visible</code></td>
+<td><span class="pe-md--visible">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-lg--visible</code></td>
+<td><span class="pe-lg--visible">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-xl--visible</code></td>
+<td><span class="pe-xl--visible">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-xs--hidden</code></td>
+<td><span class="pe-xs--hidden">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-sm--hidden</code></td>
+<td><span class="pe-sm--hidden">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-md--hidden</code></td>
+<td><span class="pe-md--hidden">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-lg--hidden</code></td>
+<td><span class="pe-lg--hidden">✓</span></td>
+</tr>
+<tr>
+<td><code>.pe-xl--hidden</code></td>
+<td><span class="pe-xl--hidden">✓</span></td>
+</tr>
+</tbody>
+</table>
+<h3>Visible</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-xs--visible"><code>.pe-xs--visible</code></div>
+<div class="pe-sm--visible"><code>.pe-sm--visible</code></div>
+<div class="pe-md--visible"><code>.pe-md--visible</code></div>
+<div class="pe-lg--visible"><code>.pe-lg--visible</code></div>
+<div class="pe-xl--visible"><code>.pe-xl--visible</code></div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-xs--visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-xs--visible<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-sm--visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-sm--visible<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-md--visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-md--visible<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-lg--visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-lg--visible<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-xl--visible"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-xl--visible<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Hidden</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-xs--hidden"><code>.pe-xs--hidden</code></div>
+<div class="pe-sm--hidden"><code>.pe-sm--hidden</code></div>
+<div class="pe-md--hidden"><code>.pe-md--hidden</code></div>
+<div class="pe-lg--hidden"><code>.pe-lg--hidden</code></div>
+<div class="pe-xl--hidden"><code>.pe-xl--hidden</code></div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-xs--hidden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-xs--hidden<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-sm--hidden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-sm--hidden<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-md--hidden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-md--hidden<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-lg--hidden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-lg--hidden<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-xl--hidden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>.pe-xl--hidden<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Accessibility</h3>
+<h4>Making content visible to screen readers</h4>
+<p>Sometimes content needs to be hidden visually but remain visible to assistive technology. Add <code>pe-sr-only</code> to an element to hide the element on the page so that it is still read by screen readers.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><p>This paragraph is visible on the screen.</p>
+<p class="pe-sr-only">
+  This paragraph is only visible to assistive technologies
+  like screen readers.
+</p>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>This paragraph is visible on the screen.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-sr-only"</span>&gt;</span><br>  This paragraph is only visible to assistive technologies<br>  like screen readers.<br><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h4>Hiding content from screen readers</h4>
+<p>To hide an element from assistive technology, add the <a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden"><code>aria-hidden</code></a> attribute.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><p aria-hidden="true">This paragraph is not visible to assistive technologies.</p>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>This paragraph is not visible to assistive technologies.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
