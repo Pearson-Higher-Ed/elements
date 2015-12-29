@@ -4,7 +4,7 @@ const path = require('path');
 
 function deploy(branchName) {
   const deployPath = path.join(process.cwd(), '_gh_pages');
-  const domain = `pearson-elements-${branchName}.surge.sh`;
+  const domain = `pearson-elements-${branchName}.surge.sh`.toLowerCase();
 
   console.log(`Deploying ${deployPath} to ${domain}`);
 
