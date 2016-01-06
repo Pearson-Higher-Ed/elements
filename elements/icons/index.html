@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li>
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li>
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/aside">
+                        Aside
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/card">
+                        Card
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/header">
+                        Header
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/tables">
+                        Tables
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Icons</h1>
+
+        <p>The available icons are a subset of <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a> that includes the following:</p>
+<ul class="d-icon-list">
+  <li><i class="pe-icon--check"></i> check</li>
+  <li><i class="pe-icon--chevron-down"></i> chevron-down</li>
+  <li><i class="pe-icon--chevron-up"></i> chevron-up</li>
+  <li><i class="pe-icon--cog"></i> cog</li>
+  <li><i class="pe-icon--envelope"></i> envelope</li>
+  <li><i class="pe-icon--plus-circle"></i> plus-circle</li>
+  <li><i class="pe-icon--search"></i> search</li>
+  <li><i class="pe-icon--thumb-tack"></i> thumb-tack</li>
+  <li><i class="pe-icon--times"></i> times</li>
+  <li><i class="pe-icon--times-circle"></i> times-circle</li>
+  <li><i class="pe-icon--trash-o"></i> trash-o</li>
+  <li><i class="pe-icon--users"></i> users</li>
+</ul>
+<p>Add <code>pe-icon--{name}</code> to the icon element, where <code>{name}</code> is the icon name from the above list.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><span class="pe-icon--check"></span>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--check"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<aside>
+  <h1 class="pe-title">Do not combine with other elements</h1>
+  <p>Icons should not be combined with other elements; instead, use a nested <code>&lt;span&gt;</code>. Icon elements should not have children.</p>
+</aside>
+<aside>
+  <h1 class="pe-title">Change the path to the icon font</h1>
+  <p>The default directory for the icon files is <code>../fonts/</code>. You may change the location and/or names of the files by overriding <code>$pe-icons-path</code> and <code>$pe-icons-name</code>, or by replacing the paths in the generated CSS files.</p>
+</aside>
+<h2>Making icons accessible</h2>
+<p>Screen readers <em>may</em> read CSS-generated content, such as the unicode characters that are used to render an icon. To prevent screen readers from reading the content, add <code>aria-hidden=&quot;true&quot;</code> to the icon element:</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><span class="pe-icon--times" aria-hidden="true"></span>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--times"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<p>Icons that are not just for presentation should provide an alternative element that is visible to screen readers. You can add an element that is visible only to screen readers using <code>pe-sr-only</code>:</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div>
+  <span class="pe-icon--times" aria-hidden="true"></span>
+  <span class="pe-sr-only">close</span>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--times"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-sr-only"</span>&gt;</span>close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
