@@ -73,6 +73,86 @@ describe('type', () => {
           ['color', 'rgb(174, 174, 174)']
         ]);
       });
+      
+      it('should match the design spec with inverse weight it light', () => {
+        assertCssPropertiesAreEqual(getElementById('label-inverse-weight'),[
+          ['font-weight',['light','300']]
+          ]);
+      });      
     });
   });
+
+  //Titles
+  describe('titles', () => {
+
+    beforeEach(() => {
+      fixture.load('type/titles.html');
+    });
+
+    describe('sizes and height',() => {
+
+      it('should match the design spec where it is a default title',() => {
+        assertCssPropertiesAreEqual(getElementById('default-title'),[
+          ['font-size','18px'],
+          ['line-height','22px']
+          ]);
+      });
+      
+      it('should match the design spec where it is a large title',() => {
+        assertCssPropertiesAreEqual(getElementById('large-title'),[
+          ['font-size','20px'],
+          ['line-height','24px']
+          ]);
+      });
+
+      it('should match the design spec where it is a XLarge title',() => {
+        assertCssPropertiesAreEqual(getElementById('XLarge-title'),[
+          ['font-size','22px'],
+          ['line-height','28px']
+          ]);
+      });
+      //Tests to be added: for  @media (min-width
+    });
+  });
+
+  //Copy
+  describe('copy',() => {
+
+    beforeEach(() => {
+      fixture.load('type/copy.html');
+    });
+
+    describe('copy',() => {
+
+      it('should match the design spec where it is a copy',() => {
+        assertCssPropertiesAreEqual(getElementById('copy'),[
+          ['font-size','16px'],
+          //['line-height','22px'],
+          ['color','rgb(35, 31, 32)']
+          ]);
+      });
+    });
+  });
+
+  //Lead
+  describe('leads',() => {
+
+    beforeEach(() => {
+      fixture.load('type/lead.html');
+    });
+
+    describe('lead',() => {
+
+      it('should match the design spec where it is a lead',() => {
+        assertCssPropertiesAreEqual(getElementById('lead'),[
+          ['font-size','18px'],
+          ['line-height','24px'],
+          ['color','rgb(35, 31, 32)'],
+          ['font-weight','200']
+          ]);
+      });
+      //Tests to be added: for  @media (min-width)
+    });
+  });
+
 });
