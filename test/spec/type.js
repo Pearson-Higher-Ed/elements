@@ -7,7 +7,7 @@ describe('type', () => {
   describe('labels', () => {
 
     beforeEach(() => {
-      fixture.load('labels.html');
+      fixture.load('type/labels.html');
     });
 
     describe('default', () => {

@@ -18,7 +18,7 @@ module.exports = function(config) {
       'test/helpers/*.js',
       'dist/css/elements.css',
       'test/setup.js',
-      'test/fixtures/*.html',
+      'test/fixtures/**/*.html',
       'test/spec/*.js'
     ],
 
@@ -31,7 +31,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'test/fixtures/*.html': ['html2js'],
+      'test/fixtures/**/*.html': ['html2js'],
       'test/**/*.js': ['babel']
     },
 
