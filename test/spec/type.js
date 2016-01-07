@@ -153,6 +153,6 @@ describe('type', () => {
       });
       //Tests to be added: for  @media (min-width)
     });
-  });
+  }); 
 
 });
