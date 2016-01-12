@@ -157,7 +157,7 @@ describe('type', () => {
   
 
   //Inline Elements
-  describe('Inline Elements',() => {
+  describe('inline elements',() => {
 
     beforeEach(() => {
       fixture.load('type/inline.html');
@@ -277,7 +277,7 @@ describe('type', () => {
   });
 
   //Lists
-  describe('Lists',() => {
+  describe('lists',() => {
 
     beforeEach(() => {
       fixture.load('type/lists.html');
@@ -308,7 +308,7 @@ describe('type', () => {
   });
 
   //Code
-  describe('Lists',() => {
+  describe('code',() => {
 
     beforeEach(() => {
       fixture.load('type/code.html');
