@@ -11,6 +11,28 @@ const del = require('del');
 const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
 const path = require('path');
+const transform = require('gulp-transform');
+
+// Convert scss color variables to JSON
+function transformFn(contents, file) {
+
+  let step1 = [contents].toString().split('$pe-colors: ('),
+      step2 = step1[1].toString().split(');'),
+      step3 = step2[0].split('\n'),
+      colorObj = {};
+
+  step3.map(elem => {
+    if (elem && elem.indexOf('//') === -1) {
+      let description = elem.split(':')[0].trim(),
+          tempVal = elem.split(':')[1].trim(),
+          hexValue = tempVal.substring(0, tempVal.length-1);
+
+      colorObj[description] = hexValue;
+    }
+  });
+
+  return JSON.stringify(colorObj);
+}
 
 let metalsmithPath = path.join('node_modules', '.bin', 'metalsmith');
 
@@ -37,6 +59,13 @@ gulp.task('lint', () => {
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError());
+});
+
+gulp.task('scss-to-json', function() {
+  return gulp.src('./scss/_variables.scss')
+    .pipe(transform(transformFn))
+    .pipe(rename("colors.json"))
+    .pipe(gulp.dest('./test/fixtures/color'));
 });
 
 gulp.task('sass', () => {

@@ -3,3 +3,5 @@ node_modules
 dist
 _gh_pages
 .DS_Store
+.idea
+test/fixtures/color/*.json

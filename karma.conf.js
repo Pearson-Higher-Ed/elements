@@ -18,7 +18,7 @@ module.exports = function(config) {
       'test/helpers/*.js',
       'dist/css/elements.css',
       'test/setup.js',
-      'test/fixtures/**/*.html',
+      'test/fixtures/**/*',
       'test/spec/*.js'
     ],
 
@@ -28,28 +28,40 @@ module.exports = function(config) {
     ],
 
 
-    // preprocess matching files before serving them to the browser
+    // pre-process matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'test/fixtures/**/*.html': ['html2js'],
-      'test/**/*.js': ['babel']
+      'test/fixtures/**/*.json': ['json_fixtures'],
+      'test/**/*.js': ['webpack']
     },
 
+    jsonFixturesPreprocessor: {
+      variableName: '__json__'
+    },
 
-    // babel preprocessor options
-    babelPreprocessor: {
-      options: {
-        presets: ['es2015'],
-        sourceMap: 'inline'
+		webpack: {
+      quiet: true,
+      node: {
+        fs: "empty"
       },
-      filename: function (file) {
-        return file.originalPath.replace(/\.js$/, '.es5.js');
-      },
-      sourceFileName: function (file) {
-        return file.originalPath;
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['es2015']
+            }
+          }
+        ]
       }
     },
 
+    webpackMiddleware: {
+        noInfo: true
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -87,5 +99,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browsers should be started simultaneously
     concurrency: Infinity
-  })
-}
+  });
+};
