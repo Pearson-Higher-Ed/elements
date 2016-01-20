@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pearson UI Elements [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
 This module provides the base styles for Pearson web UIs.
@@ -38,3 +39,8 @@ This project was inspired by other popular front-end frameworks published under 
 ## License
 
 Copyright 2015 Pearson Education. This software is published under the [MIT](LICENSE) license.
+=======
+# Pearson UI Elements [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg)](https://travis-ci.org/Pearson-Higher-Ed/elements)
+
+This module provides the basic elements for building a Pearson web UI.
+>>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75

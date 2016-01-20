@@ -1,15 +1,29 @@
+<<<<<<< HEAD
+=======
+@import '../../scss/colors';
+@import '../../scss/mixins/colors';
+
+
+>>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 .d-c--color {
   font-size: 0em;
 }
 
+<<<<<<< HEAD
 .d-swatches {
   clear: both;
   margin-bottom: 35px;
 
+=======
+.d-swatch {
+  clear: both;
+  margin-bottom: 35px;
+>>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
   &:after {
     clear: both;
     margin-bottom: 35px;
   }
+<<<<<<< HEAD
 }
 
 .d-swatch {
@@ -23,6 +37,21 @@
     background: $color;
     position: relative;
 
+=======
+  .d-swatch--color {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+@each $name, $color in $pe-colors {
+  .d-color-#{$name} {
+    background: $color;
+    position: relative;
+>>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
     &:before,
     &:after {
       position: absolute;
@@ -33,13 +62,19 @@
       align-items: center;
       justify-content: center;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
     &:before {
       content: '#{$name}';
       color: white;
       top: 0px;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
     &:after {
       content: '#{$name}';
       color: black;
