@@ -12,10 +12,10 @@ const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
 const path = require('path');
 
-let metalsmithLoc = path.join('node_modules', '.bin', 'metalsmith');
+let metalsmithPath = path.join('node_modules', '.bin', 'metalsmith');
 
 if(process.platform.indexOf('win') === 0){
-  metalsmithLoc += '.cmd';
+  metalsmithPath += '.cmd';
 }
 
 gulp.task('clean', () => {
@@ -27,37 +27,16 @@ gulp.task('clean', () => {
 });
 
 gulp.task('lint', () => {
-  gulp.src([
+  return gulp.src([
     './scss/**/*.scss',
     '!./scss/_normalize.scss',
+    '!./scss/_icons.scss',
     './docs/scss/**/*.scss',
     '!./docs/scss/_syntax.scss'
   ])
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError());
-});
-
-gulp.task('build-docs', ['sass'], (done) => {
-  browserSync.notify('Running: <kbd>$ metalsmith</kbd>');
-
-  gulp.src('./docs/scss/docs.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer]))
-    .pipe(gulp.dest('./_gh_pages/css'));
-
-  spawn(metalsmithLoc, { stdio: 'inherit' })
-    .on('close', done);
-});
-
-gulp.task('rebuild-docs', ['build-docs'], () => browserSync.reload());
-
-gulp.task('browser-sync', ['build-docs'], () => {
-  browserSync({
-    server: {
-      baseDir: '_gh_pages'
-    }
-  });
 });
 
 gulp.task('sass', () => {
@@ -69,6 +48,36 @@ gulp.task('sass', () => {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(nano())
     .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('build', ['sass'], () => {
+  gulp.src('./assets/**')
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build-docs', ['build'], (done) => {
+  browserSync.notify('Running: <kbd>$ metalsmith</kbd>');
+
+  gulp.src('./docs/scss/docs.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest('./_gh_pages/css'));
+
+  gulp.src('./assets/**')
+    .pipe(gulp.dest('./_gh_pages'));
+
+  spawn(metalsmithPath, { stdio: 'inherit' })
+    .on('close', done);
+});
+
+gulp.task('rebuild-docs', ['build-docs'], () => browserSync.reload());
+
+gulp.task('browser-sync', ['build-docs'], () => {
+  browserSync({
+    server: {
+      baseDir: '_gh_pages'
+    }
+  });
 });
 
 gulp.task('watch', () => {

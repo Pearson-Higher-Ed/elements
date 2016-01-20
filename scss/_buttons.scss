@@ -8,11 +8,12 @@
     $pe-btn-default-hover-text,
     $pe-btn-default-disabled-bg,
     $pe-btn-default-disabled-text,
-    $pe-btn-default-hover-shadow
+    $pe-btn-default-font-weight,
+    $pe-btn-default-active-shadow
   );
 
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   cursor: pointer;
   font-size: $pe-btn-font-size;
   height: $pe-btn-height;
@@ -30,7 +31,8 @@
     $pe-btn-primary-hover-text,
     $pe-btn-primary-disabled-bg,
     $pe-btn-primary-disabled-text,
-    $pe-btn-primary-hover-shadow
+    $pe-btn-primary-font-weight,
+    $pe-btn-primary-active-shadow
   );
 }
 

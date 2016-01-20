@@ -1,11 +1,9 @@
 - title: Getting Started
-  items:
-    - title: Overview
-    - title: Installation
 - title: Elements
   items:
     - title: Color
     - title: Typography
+    - title: Icons
     - title: Aside
     - title: Buttons
     - title: Card

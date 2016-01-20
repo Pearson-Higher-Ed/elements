@@ -2,16 +2,15 @@
 @import 'normalize';
 
 // Elements
-@import 'variables';
 @import 'mixins';
+@import 'variables';
 @import 'reset';
 @import 'aside';
 @import 'buttons';
 @import 'card';
+@import 'dropdown';
 @import 'header';
+@import 'icons';
 @import 'responsive-utilities';
 @import 'tables';
 @import 'type';
-
-// components
-@import 'dropdown';
