@@ -14,11 +14,7 @@
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "gh-pages": "node ./npm_scripts/gh-pages.js",
-<<<<<<< HEAD
     "ci": "npm test && npm run lint",
-=======
-    "ci": "npm run lint",
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
     "deploy-ci": "./npm_scripts/deploy-ci.sh",
     "deploy-wip": "node ./npm_scripts/deploy-wip.js",
     "release": "node ./npm_scripts/release.js"
@@ -59,11 +55,8 @@
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-register-helpers": "^0.1.2",
-<<<<<<< HEAD
     "mocha": "^2.3.4",
     "phantomjs": "^1.9.19",
-=======
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
     "semver": "^5.0.3",
     "surge": "^0.17.3"
   },
