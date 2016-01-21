@@ -6,7 +6,7 @@
 // Paths to assets. Override these variables if you change the location(s)
 // of bundled assets.
 
-$pe-icons-path: '../fonts/' !default;
+$pe-icons-path: '/fonts/' !default;
 // Icon font filename without the extension.
 $pe-icons-name: 'pearson-fa' !default;
 
@@ -159,10 +159,7 @@ $pe-label-bold-font-weight: bold !default;
 
 $pe-label-inverse-color: pe-color(white) !default;
 $pe-label-secondary-inverse-color: pe-color(gray-wash) !default;
-<<<<<<< HEAD
 $pe-label-inverse-font-weight: 300 !default;
-=======
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 
 // Aside
 //
@@ -183,36 +180,22 @@ $pe-btn-padding: 0 11px !default;
 $pe-btn-default-bg: pe-color(dirty-ice) !default;
 $pe-btn-default-border: solid 1px pe-color(hairline-gray) !default;
 $pe-btn-default-text: $pe-label-secondary-color !default;
-<<<<<<< HEAD
 $pe-btn-default-font-weight: $pe-label-font-weight !default;
 $pe-btn-default-hover-bg: pe-color(brightly-lit) !default;
 $pe-btn-default-hover-border: solid 1px pe-color(sidewalk) !default;
 $pe-btn-default-hover-text: $pe-label-secondary-color !default;
 $pe-btn-default-active-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
-=======
-$pe-btn-default-hover-bg: pe-color(brightly-lit) !default;
-$pe-btn-default-hover-border: solid 1px pe-color(sidewalk) !default;
-$pe-btn-default-hover-text: $pe-label-secondary-color !default;
-$pe-btn-default-hover-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3) !default;
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 $pe-btn-default-disabled-bg: pe-color(off-white) !default;
 $pe-btn-default-disabled-text: pe-color(boring) !default;
 
 $pe-btn-primary-bg: pe-color(basic-blue) !default;
 $pe-btn-primary-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-text: $pe-label-inverse-color !default;
-<<<<<<< HEAD
 $pe-btn-primary-font-weight: $pe-label-inverse-font-weight !default;
 $pe-btn-primary-hover-bg: pe-color(sea) !default;
 $pe-btn-primary-hover-border: solid 1px pe-color(deep-sea) !default;
 $pe-btn-primary-hover-text: $pe-label-inverse-color !default;
 $pe-btn-primary-active-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
-=======
-$pe-btn-primary-hover-bg: pe-color(sea) !default;
-$pe-btn-primary-hover-border: solid 1px pe-color(deep-sea) !default;
-$pe-btn-primary-hover-text: $pe-label-inverse-color !default;
-$pe-btn-primary-hover-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3) !default;
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 $pe-btn-primary-disabled-bg: pe-color(sky-blue) !default;
 $pe-btn-primary-disabled-text: pe-color(white) !default;
 
@@ -243,25 +226,18 @@ $pe-card-heading-padding: 15px !default;
 // Header
 //
 
-
 $pe-header-height: 44px !default;
-<<<<<<< HEAD
 $pe-header-height-lg: 54px !default;
-=======
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 $pe-header-bg: pe-color(black) !default;
 $pe-header-text-color: pe-color(white) !default;
 $pe-header-link-color: pe-color(hairline-gray) !default;
 $pe-header-link-hover-color: pe-color(off-white) !default;
-<<<<<<< HEAD
 
 $pe-header-brand-font-size: 1.25rem !default;
 
 $pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 $pe-header-logo-sprite-height: 16px !default;
 $pe-header-logo-margin-x: 14px !default;
-=======
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 
 $pe-header-nav-link-active-bg: pe-color(full-moon) !default;
 $pe-header-nav-link-padding-x: 15px !default;
@@ -281,11 +257,7 @@ $pe-table-border-color: pe-color(hairline-gray) !default;
 //
 $pe-dropdown-menu-bg: pe-color(white);
 $pe-dropdown-menu-border: rgba(0, 0, 0, 0.15) !default;
-<<<<<<< HEAD
 $pe-dropdown-menu-divider-bg: $pe-dropdown-menu-border;
-=======
-$pe-dropdown-divider-bg: $pe-dropdown-menu-border;
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 $pe-dropdown-menu-link-color: pe-color(gray-no-1);
 $pe-dropdown-menu-link-hover-color: pe-color(white);
 $pe-dropdown-menu-link-hover-bg: pe-color(boring);

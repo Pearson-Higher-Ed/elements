@@ -1,12 +1,8 @@
 @function pe-color($key) {
-<<<<<<< HEAD
-  @return map-get-strict($pe-colors, $key);
-=======
   @if map-has-key($pe-colors, $key) {
     @return map-get($pe-colors, $key);
   }
 
   @warn 'Unknown color `#{$key}` in $pe-colors.';
   @return null;
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 }

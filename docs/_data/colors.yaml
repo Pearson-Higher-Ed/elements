@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-palettes:
-  light: "Light Palette (default)"
-  dark: "Dark Palette"
-  blue: "Blue Palette"
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
 colors:
   - "pitch"
   - "gray-no-1"

@@ -63,12 +63,9 @@ gulp.task('build-docs', ['build'], (done) => {
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./_gh_pages/css'));
 
-<<<<<<< HEAD
   gulp.src('./assets/**')
     .pipe(gulp.dest('./_gh_pages'));
-
-=======
->>>>>>> fa547d6aac95f7b79cc46e359550eb8c7d671b75
+    
   spawn(metalsmithPath, { stdio: 'inherit' })
     .on('close', done);
 });
