@@ -1,27 +1,12 @@
 describe('color', () => {
 
   let color_path = 'color/',
-      json_fixture = window.__json__['test/fixtures/' + color_path + 'colors']; // as configured for jsonFixturesPreprocessor
+      // following is configured in karma.conf.js for jsonFixturesPreprocessor
+      json_fixture = window.__json__['test/fixtures/' + color_path + 'colors'];
 
-  function hexToRgb(hex) {
-      hex = hex.replace(/[^0-9A-F]/gi, '');
-      let bigint = parseInt(hex, 16),
-          r = (bigint >> 16) & 255,
-          g = (bigint >> 8) & 255,
-          b = bigint & 255;
+  fixture.load(color_path + 'colors.html');
 
-      return 'rgb(' + [r, g, b].join(', ') + ')';
-  }
-
-  beforeEach(() => {
-    fixture.load(color_path + 'colors.html');
-  });
-
-  afterEach(() => {
-    fixture.cleanup();
-  });
-
-  describe('default', () => {
+  describe('color sets', () => {
 
     it('should render correctly the grayscale colors', () => {
 

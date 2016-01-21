@@ -13,8 +13,7 @@ const spawn = require('child_process').spawn;
 const path = require('path');
 const transform = require('gulp-transform');
 
-// Convert scss color variables to JSON
-function transformFn(contents, file) {
+function scssColorVarsToJSON(contents, file) {
 
   let step1 = [contents].toString().split('$pe-colors: ('),
       step2 = step1[1].toString().split(');'),
@@ -63,7 +62,7 @@ gulp.task('lint', () => {
 
 gulp.task('scss-to-json', function() {
   return gulp.src('./scss/_variables.scss')
-    .pipe(transform(transformFn))
+    .pipe(transform(scssColorVarsToJSON))
     .pipe(rename("colors.json"))
     .pipe(gulp.dest('./test/fixtures/color'));
 });
