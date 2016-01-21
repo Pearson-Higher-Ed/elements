@@ -73,12 +73,12 @@ describe('type', () => {
           ['color', 'rgb(174, 174, 174)']
         ]);
       });
-      
+
       it('should match the design spec with inverse weight it light', () => {
         assertCssPropertiesAreEqual(getElementById('label-inverse-weight'),[
           ['font-weight',['light','300']]
           ]);
-      });      
+      });
     });
   });
 
@@ -97,7 +97,7 @@ describe('type', () => {
           ['line-height','22px']
           ]);
       });
-      
+
       it('should match the design spec where it is a large title',() => {
         assertCssPropertiesAreEqual(getElementById('large-title'),[
           ['font-size','20px'],
@@ -154,7 +154,7 @@ describe('type', () => {
       //Tests to be added: for  @media (min-width)
     });
   });
-  
+
 
   //Inline Elements
   describe('inline elements',() => {
@@ -175,7 +175,7 @@ describe('type', () => {
     it('should match the design spec where it is subscript',() => {
       assertCssPropertiesAreEqual(getElementById('subscript'),[
         ['font-size',['14px','14.4px']],
-        ['top',['3px','3.2px']],               
+        ['top',['3px','3.2px']],
         ['position','relative']
         ]);
     });
@@ -183,7 +183,7 @@ describe('type', () => {
     it('should match the design spec where it is superscript',() => {
       assertCssPropertiesAreEqual(getElementById('supscript'),[
         ['font-size',['14px','14.4px']],
-        ['top',['-3px','-3.2px']],               
+        ['top',['-3px','-3.2px']],
         ['position','relative']
         ]);
     });
@@ -230,31 +230,31 @@ describe('type', () => {
         ['font-size','16px'],
         ['line-height','22px'],
         ['color','rgb(35, 31, 32)']
-        ]);      
+        ]);
     });
 
     it('should match the design spec where it is bTag',() => {
       assertCssPropertiesAreEqual(getElementById('bTag'),[
-        ['font-weight','bold'],        
-        ]);      
+        ['font-weight','bold'],
+        ]);
     });
 
     it('should match the design spec where it is strongTag',() => {
       assertCssPropertiesAreEqual(getElementById('strongTag'),[
-        ['font-weight','bold'],        
-        ]);      
+        ['font-weight','bold'],
+        ]);
     });
 
     it('should match the design spec where it is delTag',() => {
       assertCssPropertiesAreEqual(getElementById('delTag'),[
-        ['text-decoration','line-through'],        
-        ]);      
+        ['text-decoration','line-through'],
+        ]);
     });
-    
+
     it('should match the design spec where it is insTag',() => {
       assertCssPropertiesAreEqual(getElementById('insTag'),[
-        ['text-decoration','underline'],           
-        ]);      
+        ['text-decoration','underline'],
+        ]);
     });
 
     it('should match the design spec where it is insTag: before',() => {
@@ -302,7 +302,7 @@ describe('type', () => {
         ['padding-left','0px'],
         ['list-style-type','none'],
         ['margin-left','-5px']
-        ]);      
+        ]);
       });
     //one more test to add for inline list pe-list--inline > li
   });

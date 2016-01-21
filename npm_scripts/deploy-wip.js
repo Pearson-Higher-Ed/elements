@@ -6,8 +6,6 @@ function deploy(branchName) {
   const deployPath = path.join(process.cwd(), '_gh_pages');
   const domain = `pearson-elements-${branchName}.surge.sh`.toLowerCase();
 
-  console.log(`Deploying ${deployPath} to ${domain}`);
-
   exec(`surge -p ${deployPath} -d ${domain}`);
 }
 
@@ -21,7 +19,6 @@ function main(argv) {
       input: process.stdin,
       output: process.stdout
     });
-
     stdin.question(`Branch name (${currentBranch}): `, (branchName) => {
       deploy(branchName || currentBranch);
       stdin.close();
