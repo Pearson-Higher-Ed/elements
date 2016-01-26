@@ -24,7 +24,7 @@ function scssColorVarsToJSON(contents, file) {
     if (elem && elem.indexOf('//') === -1) {
       let description = elem.split(':')[0].trim(),
           tempVal = elem.split(':')[1].trim(),
-          hexValue = tempVal.substring(0, tempVal.length-1);
+          hexValue = tempVal.substring(0, (tempVal.indexOf(',') === -1 ? tempVal.length : tempVal.length-1));
 
       colorObj[description] = hexValue;
     }

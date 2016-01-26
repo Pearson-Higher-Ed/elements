@@ -4,7 +4,13 @@ describe('color', () => {
       // following is configured in karma.conf.js for jsonFixturesPreprocessor
       json_fixture = window.__json__['test/fixtures/' + color_path + 'colors'];
 
-  fixture.load(color_path + 'colors.html');
+  beforeEach(() => {
+    fixture.load(color_path + 'colors.html');
+  });
+
+  afterEach(() => {
+    fixture.cleanup();
+  });
 
   describe('color sets', () => {
 
@@ -100,7 +106,7 @@ describe('color', () => {
           basicBlueRGB = hexToRgb(json_fixture['basic-blue']),
           seaRGB = hexToRgb(json_fixture['sea']), //WIP
           deepSeaRGB = hexToRgb(json_fixture['deep-sea']), //WIP
-          skyBlueRGB = hexToRgb(json_fixture['sky-blue']); //WIP
+          skyBlueRGB = hexToRgb(json_fixture['sky-blue']);
 
       assertCssPropertiesAreEqual(getElementById('highlighter'), [
         ['background-color', highlighterRGB]
@@ -135,12 +141,9 @@ describe('color', () => {
       //  ['border-color', deepSeaRGB]
       //]);
 
-      // as yet unable to successfully test 'sky-blue'
-      //console.log(skyBlueRGB);
-      //console.log(getComputedStyle(getElementById('disabledButtonLink')).getPropertyValue('color'));
-      //assertCssPropertiesAreEqual(getElementById('disabledButtonLink'), [
-      //  ['color', skyBlueRGB]
-      //]);
+      assertCssPropertiesAreEqual(getElementById('disabledButtonLink'), [
+        ['color', skyBlueRGB]
+      ]);
 
     });
 
