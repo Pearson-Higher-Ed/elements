@@ -48,6 +48,11 @@ module.exports = function(config) {
         fs: "empty"
       },
       module: {
+
+        preLoaders: [
+          {test: /\.js$/, loader: "eslint", exclude: /node_modules/}
+        ],
+
         loaders: [
           {
             test: /\.js$/,

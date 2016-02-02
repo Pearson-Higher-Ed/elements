@@ -1,3 +1,4 @@
+/* global fixture */
 (global => {
 
   global.getElementById = (id) => {
