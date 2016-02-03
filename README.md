@@ -1,16 +1,22 @@
-# Pearson UI Elements [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
+# Pearson Elements 
+[![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
-This module provides the base styles for Pearson web UIs.
+This module provides the foundational styling for Pearson web user experiences, written in SCSS. Executing the build task 
+compiles to CSS, including the minified asset.
 
 For full documentation, please visit https://pearson-higher-ed.github.io/elements.
 
-## Quick start
+## Consuming this Module
 
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
     npm install --save pearson-elements
 
-## Contributing
+If Elements is not currently published or available on npm, then install directly from the repository:
+
+    npm install github:Pearson-Higher-Ed/elements#v0
+        
+## Getting Started on Development
 
 Please review the [guidelines](CONTRIBUTING.md) for contributing before getting started.
 
@@ -18,16 +24,21 @@ You must have [Node.js](https://nodejs.org/en/) `4+` installed first.
 
 Clone the project and install the dependencies:
 
-```
-git clone https://github.com/Pearson-Higher-Ed/elements.git
-cd elements
-npm install
-```
+    git clone https://github.com/Pearson-Higher-Ed/elements.git
+    cd elements
+    npm install
 
 ### Building the documentation
 
-We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. Run `npm start` to start a local development server that watches for file changes and regenerates the documentation.
+We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. Run `npm start` to start a local development 
+server that watches for file changes and regenerates the documentation.
 
+## Test
+ 
+The unit tests are run by Karma configured to use webpack to transpile and bundle the Mocha tests (ES6).
+ 
+    npm test
+     
 ## Acknowledgements
 
 This project was inspired by other popular front-end frameworks published under the MIT license:
