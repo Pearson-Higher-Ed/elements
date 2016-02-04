@@ -27,9 +27,6 @@
     color: $hover-color;
     background: $hover-bg;
     border: $hover-border;
-  }
-
-  &:active {
     box-shadow: $active-shadow;
   }
 
