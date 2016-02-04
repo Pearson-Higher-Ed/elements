@@ -17,7 +17,7 @@
             expect(actual).to.equal(expected[i], `property '${propertyName}'`);
             error = false;
             break;
-          } catch(e) {
+          } catch (e) {
             error = e;
           }
         }
