@@ -26,7 +26,7 @@ table,
 }
 
 .pe-table--striped {
-  tbody tr:nth-of-type(odd) {
+  tbody tr:nth-child(odd) td {
     background-color: $pe-table-striped-bg;
   }
 }

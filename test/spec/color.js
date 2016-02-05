@@ -19,7 +19,7 @@ describe('color', () => {
 
       const pitchRGB = hexToRgb(json_fixture['pitch']);
       const grayno1RGB = hexToRgb(json_fixture['gray-no-1']);
-      const brightlyLitRGB = hexToRgb(json_fixture['brightly-lit']); // WIP
+      const brightlyLitRGB = hexToRgb(json_fixture['brightly-lit']);
       const offWhiteRGB = hexToRgb(json_fixture['off-white']);
       const dirtyIceRGB = hexToRgb(json_fixture['dirty-ice']);
       const whiteRGB = hexToRgb(json_fixture['white']);
@@ -41,14 +41,10 @@ describe('color', () => {
         ['color', grayno1RGB]
       ]);
 
-      // as yet unable to successfully test 'brightly-lit'
-/*
-      console.log(brightlyLitRGB);
-      console.log(getComputedStyle(getElementById('brightlyLit')).getPropertyValue('background-color'));
       assertCssPropertiesAreEqual(getElementById('brightlyLit'), [
         ['background-color', brightlyLitRGB]
       ]);
-*/
+
       assertCssPropertiesAreEqual(getElementById('disabledButton'), [
         ['background-color', offWhiteRGB]
       ]);

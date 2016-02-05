@@ -5,7 +5,7 @@ section: elements
 ---
 
 {{#demo}}
-<table class="pe-table">
+<table class="pe-table--striped">
   <thead>
     <tr>
       <th>Product</th>
