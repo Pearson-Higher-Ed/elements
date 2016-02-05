@@ -55,6 +55,18 @@ describe('icons', () => {
       expect(content).to.equal('\\f077');
     });
 
+    it('should match the design spec where it is chevron-left', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--chevron-left'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f056');
+    });
+
+    it('should match the design spec where it is chevron-right', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--chevron-right'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f058');
+    });
+
     it('should match the design spec where it is cog', () => {
       character = window.getComputedStyle(document.querySelector('.pe-icon--cog'), ':before').getPropertyValue('content');
       content = formatContent(character);
