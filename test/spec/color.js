@@ -24,7 +24,7 @@ describe('color', () => {
       const dirtyIceRGB = hexToRgb(json_fixture['dirty-ice']);
       const whiteRGB = hexToRgb(json_fixture['white']);
       const boringRGB = hexToRgb(json_fixture['boring']);
-      const sidewalkRGB = hexToRgb(json_fixture['sidewalk']); // WIP
+      const sidewalkRGB = hexToRgb(json_fixture['sidewalk']);
       const hairlineGrayRGB = hexToRgb(json_fixture['hairline-gray']);
       const grayWashRGB = hexToRgb(json_fixture['gray-wash']);
       const blackRGB = hexToRgb(json_fixture['black']);
@@ -44,7 +44,7 @@ describe('color', () => {
       // as yet unable to successfully test 'brightly-lit'
 /*
       console.log(brightlyLitRGB);
-      console.log(getComputedStyle(getElementById('brightlyLit')).getPropertyValue("background-color"));
+      console.log(getComputedStyle(getElementById('brightlyLit')).getPropertyValue('background-color'));
       assertCssPropertiesAreEqual(getElementById('brightlyLit'), [
         ['background-color', brightlyLitRGB]
       ]);
@@ -65,14 +65,9 @@ describe('color', () => {
         ['color', boringRGB]
       ]);
 
-      // as yet unable to successfully test 'sidewalk'
-/*
-      console.log(sidewalkRGB);
-      console.log(getComputedStyle(getElementById('sidewalk')).getPropertyValue("border-color"));
       assertCssPropertiesAreEqual(getElementById('sidewalk'), [
-        ['border-color', sidewalkRGB]
+        ['border-top-color', sidewalkRGB]
       ]);
-*/
 
       assertCssPropertiesAreEqual(getElementById('hairlineGray'), [
         ['color', hairlineGrayRGB]
@@ -109,7 +104,7 @@ describe('color', () => {
       const hyperdriveRGB = hexToRgb(json_fixture['hyperdrive']);
       const basicBlueRGB = hexToRgb(json_fixture['basic-blue']);
       const seaRGB = hexToRgb(json_fixture['sea']); // WIP
-      const deepSeaRGB = hexToRgb(json_fixture['deep-sea']); // WIP
+      const deepSeaRGB = hexToRgb(json_fixture['deep-sea']);
       const skyBlueRGB = hexToRgb(json_fixture['sky-blue']);
 
       assertCssPropertiesAreEqual(getElementById('highlighter'), [
@@ -141,13 +136,11 @@ describe('color', () => {
         ['color', seaRGB]
       ]);
 
-      // as yet unable to successfully test 'deep-sea'
-      console.log(deepSeaRGB);
-      console.log(getComputedStyle(getElementById('basicBlue')).getPropertyValue('border-color'));
-      assertCssPropertiesAreEqual(getElementById('basicBlue'), [
-        ['border-color', deepSeaRGB]
-      ]);
 */
+      assertCssPropertiesAreEqual(getElementById('basicBlue'), [
+        ['border-top-color', deepSeaRGB]
+      ]);
+
       assertCssPropertiesAreEqual(getElementById('disabledButtonLink'), [
         ['color', skyBlueRGB]
       ]);
