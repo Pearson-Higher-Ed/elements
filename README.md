@@ -30,8 +30,12 @@ Clone the project and install the dependencies:
 
 ### Building the documentation
 
-We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. Run `npm start` to start a local development 
-server that watches for file changes and regenerates the documentation.
+We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. 
+
+    npm start 
+
+This will give you a browser-sync served copy of the docs on http://localhost:3001, and build the latest version of 
+elements.min.css to /dist.
 
 ## Test
  
