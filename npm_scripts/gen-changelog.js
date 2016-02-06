@@ -10,7 +10,7 @@ const outStream = fs.createWriteStream(FILENAME);
 const changelogStream = changelog({
   preset: 'angular',
   releaseCount: REGENERATE_ALL
-})
+});
 
 changelogStream.pipe(outStream);
 

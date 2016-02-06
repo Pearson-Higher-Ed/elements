@@ -7,7 +7,9 @@ including the minified asset.
 
 For full documentation, please visit https://pearson-higher-ed.github.io/elements.
 
-## Consuming this Module
+![Image](swatch.jpg?raw=true "swatch")
+
+## Consuming this SDK
 
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
@@ -21,7 +23,7 @@ If Elements is not currently published or available on npm, then install directl
 
 Please review the [guidelines](CONTRIBUTING.md) for contributing before getting started.
 
-You must have [Node.js](https://nodejs.org/en/) `4+` installed first.
+You must have [Node.js](https://nodejs.org/en/) `5` installed first.
 
 Clone the project and install the dependencies:
 

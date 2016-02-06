@@ -1,7 +1,7 @@
 {
   "name": "pearson-elements",
   "version": "0.0.0",
-  "description": "CSS building blocks for Pearson UIs",
+  "description": "CSS building blocks for Pearson web user experiences.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Pearson-Higher-Ed/elements.git"
@@ -17,10 +17,11 @@
     "ci": "npm test && npm run lint",
     "deploy-ci": "./npm_scripts/deploy-ci.sh",
     "deploy-wip": "node ./npm_scripts/deploy-wip.js",
-    "release": "node ./npm_scripts/release.js"
+    "release": "node ./npm_scripts/release.js",
+    "prepublish": "npm run build-docs"
   },
-  "keywords": [],
-  "author": "Pearson Platform UI team",
+  "keywords": ["Pearson", "design", "elements"],
+  "author": "Pearson Design Accelerator",
   "license": "MIT",
   "engines": {
     "node": "^4.0.0"
