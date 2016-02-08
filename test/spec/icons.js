@@ -121,6 +121,24 @@ describe('icons', () => {
       expect(content).to.equal('\\f0c0');
     });
 
+    it('should match the design spec where it is user', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--user'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f007');
+    });
+
+    it('should match the design spec where it is file-o', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--file-o'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f016');
+    });
+
+    it('should match the design spec where it is file', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--file'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f15b');
+    });
+
   });
 
 });
