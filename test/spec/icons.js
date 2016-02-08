@@ -103,6 +103,18 @@ describe('icons', () => {
       expect(content).to.equal('\\f014');
     });
 
+    it('should match the design spec where it is info', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--info'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f129');
+    });
+
+    it('should match the design spec where it is info-circle', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--info-circle'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f05a');
+    });
+
     it('should match the design spec where it is users', () => {
       character = window.getComputedStyle(document.querySelector('.pe-icon--users'), ':before').getPropertyValue('content');
       content = formatContent(character);
