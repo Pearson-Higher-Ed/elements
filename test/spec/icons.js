@@ -139,6 +139,18 @@ describe('icons', () => {
       expect(content).to.equal('\\f15b');
     });
 
+    it('should match the design spec where it is chevron-left', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--chevron-left'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f053');
+    });
+
+    it('should match the design spec where it is chevron-right', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--chevron-right'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f054');
+    });
+
   });
 
 });
