@@ -10,8 +10,6 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--check"></i> check</li>
   <li><i class="pe-icon--chevron-down"></i> chevron-down</li>
   <li><i class="pe-icon--chevron-up"></i> chevron-up</li>
-  <li><i class="pe-icon--chevron-left"></i> chevron-left</li>
-  <li><i class="pe-icon--chevron-right"></i> chevron-right</li>
   <li><i class="pe-icon--cog"></i> cog</li>
   <li><i class="pe-icon--envelope"></i> envelope</li>
   <li><i class="pe-icon--plus-circle"></i> plus-circle</li>
