@@ -1,8 +1,17 @@
 language: node_js
 sudo: false
 node_js:
-  - "stable"
+- "stable"
 script:
-  - npm run ci
+- npm run ci
 after_success:
-  - npm run deploy-ci
+- npm run deploy-ci
+deploy:
+  provider: npm
+  email: "pearson-design-accelerator@pearson.com"
+  api_key:
+    secure: W5dHsRjxPjd13nwUairndS+uAdO+kilqRIzAONcZxJiqL/oTwZPB04onc3N3nrjmqtjb+QSsDML2gDhglvgGoQxVh+EAUP9ziTUNYFptifC2BlmL/h4YP/hnkoMnRO8zFOYPwkJSErN4JewVr8uwGTRZqlobqeIHSwFJk8tI/ZdynrQK7Uy6GeQjrVzR5eZ3I7D9+msIBGaD0F70FxpzTWMhUwrp1aEdA9zkvrbZXxE7K/iGpEVQBWrW0ln2iwWXl5OUnOWp0hU6tpN4+C0v1JpFObccZwnv+pi5S7iN4NZ9yupt6EO2Ajmk/l8IxKlc4hiscSFBsOZjckpyh6cBs4lFvIXKu/f5xCIkpYXiwyVmhbdSbS4yt4vr8906y/0vjsa+yLRe/swU0rXt5R2DFdSHMSzWmOWaRrmLQ0Brqd+wDLST0MJsS1jAF9WsYkKp/01Ept7SqpWioADu43LHYQOI5sf+dQ24OBvc7a+ku1/2om4HqXSUxMNfRrHGE9ugKIBz13eMwWDXVPSHr+WGJN2eHgFzujZZ9q+2+ZW2eP981DqGct6zdTQTHGjBhUFV9foa8nbQOE8+yAiU3a3CBMs6zfKM2cHg9TU2pS/MA3cy86evb2bRXK/n/tFJ/DkWQvlY03iMOSl+vIGOIOlELbUqnEf0LG2y0izTSrjED74=
+  skip_cleanup: true
+  on:
+    branch: v0
+    tags: true
