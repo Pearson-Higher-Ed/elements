@@ -121,12 +121,6 @@ describe('icons', () => {
       expect(content).to.equal('\\f0c0');
     });
 
-    it('should match the design spec where it is info', () => {
-      character = window.getComputedStyle(document.querySelector('.pe-icon--info'), ':before').getPropertyValue('content');
-      content = formatContent(character);
-      expect(content).to.equal('\\f129');
-    });
-
     it('should match the design spec where it is info-circle', () => {
       character = window.getComputedStyle(document.querySelector('.pe-icon--info-circle'), ':before').getPropertyValue('content');
       content = formatContent(character);
@@ -145,10 +139,10 @@ describe('icons', () => {
       expect(content).to.equal('\\f016');
     });
 
-    it('should match the design spec where it is file', () => {
-      character = window.getComputedStyle(document.querySelector('.pe-icon--file'), ':before').getPropertyValue('content');
+    it('should match the design spec where it is calendar', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--calendar'), ':before').getPropertyValue('content');
       content = formatContent(character);
-      expect(content).to.equal('\\f15b');
+      expect(content).to.equal('\\f073');
     });
 
   });
