@@ -1,6 +1,6 @@
 {
   "name": "pearson-elements",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CSS building blocks for Pearson web user experiences.",
   "repository": {
     "type": "git",
@@ -20,7 +20,11 @@
     "release": "node ./npm_scripts/release.js",
     "prepublish": "npm run build-docs"
   },
-  "keywords": ["Pearson", "design", "elements"],
+  "keywords": [
+    "Pearson",
+    "design",
+    "elements"
+  ],
   "author": "Pearson Design Accelerator",
   "license": "MIT",
   "engines": {
