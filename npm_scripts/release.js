@@ -23,7 +23,7 @@ function generateCommitChangeLog(nextVersion) {
 
 function syncRemote(branchName, nextVersion) {
   exec(`git push origin ${branchName}`);
-  exec(`git push --tags`);
+  //exec(`git push --tags`);
   console.log(`TravisCI will now release to npm on the tagged commit ${nextVersion} for the pearson-ux account.`);
 }
 
@@ -60,9 +60,9 @@ stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) =>
   syncRemote(branchName, nextVersion);
 
   // Generate gh-pages branch and sync with remote
-  exec('npm run gh-pages');
-  exec('git pull -s recursive -Xours --no-edit');
-  exec('git push origin gh-pages');
+  //exec('npm run gh-pages');
+  //exec('git pull -s recursive -Xours --no-edit');
+  //exec('git push origin gh-pages');
 
   stdin.close();
 });
