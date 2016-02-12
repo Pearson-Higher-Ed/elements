@@ -7,7 +7,7 @@ karma.conf.js
 metalsmith.json
 metalsmith_plugins
 npm_scripts
-assets
 _gh_pages
 test
 misc
+docs
