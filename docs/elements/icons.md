@@ -21,6 +21,10 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--times-circle"></i> times-circle</li>
   <li><i class="pe-icon--trash-o"></i> trash-o</li>
   <li><i class="pe-icon--users"></i> users</li>
+  <li><i class="pe-icon--user"></i> user</li>
+  <li><i class="pe-icon--info-circle"></i> info-circle</li>
+  <li><i class="pe-icon--file-o"></i> file-o</li>
+  <li><i class="pe-icon--calendar"></i> calendar</li>
 </ul>
 
 Add `pe-icon--{name}` to the icon element, where `{name}` is the icon name from the above list.
