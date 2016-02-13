@@ -4,9 +4,9 @@
     - title: Color
     - title: Typography
     - title: Icons
-    - title: Aside
+#    - title: Aside
     - title: Buttons
-    - title: Card
-    - title: Header
-    - title: Tables
+#    - title: Card
+#    - title: Header
+#    - title: Tables
     - title: Responsive Utilities
