@@ -7,7 +7,7 @@ including the minified asset.
 
 For full documentation, please visit https://pearson-higher-ed.github.io/elements.
 
-![Image](swatch.jpg?raw=true "swatch")
+![Image](swatch_mini.jpg?raw=true "swatch")
 
 ## Consuming this SDK
 
