@@ -5,9 +5,9 @@ This module provides the foundational styling for Pearson web user experiences, 
 [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html). Executing the build task compiles to CSS, 
 including the minified asset.
 
-For full documentation, please visit https://pearson-higher-ed.github.io/elements.
+For full documentation, please visit https://pearson-elements-v0.surge.sh/getting-started/
 
-![Image](swatch_mini.jpg?raw=true "swatch")
+![Image](https://cloud.githubusercontent.com/assets/1950683/13062650/6d4bccee-d3fd-11e5-8815-cf3b8e5c7a78.jpg?raw=true "swatch")
 
 ## Consuming this SDK
 
