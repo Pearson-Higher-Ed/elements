@@ -1,7 +1,6 @@
 // Execute this script in the target branch to release to npm!
 
 const exec = require('./exec');
-const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
 const semver = require('semver');
@@ -12,14 +11,6 @@ const stdin = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-
-function generateCommitChangeLog(nextVersion) {
-  exec('npm run gen-changelog');
-  exec('git add CHANGELOG.md');
-  if (exec('git status --porcelain') !== '') {
-    exec(`git commit -m "docs: Generate release change log for ${nextVersion}."`);
-  }
-}
 
 function syncRemote(branchName, nextVersion) {
   exec(`git push origin ${branchName}`);
@@ -52,12 +43,12 @@ stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) =>
   // Make sure unit tests pass before continuing!
   exec('npm test');
 
-  generateCommitChangeLog(nextVersion);
-
   // Ensure the /dist is generated
   exec('npm run build-docs');
 
-  // Locally commit the version update in package.json (also, if present, npm-shrinkwrap.json) and create tag
+  // 1. Bump the version update in package.json and npm-shrinkwrap.json
+  // 2. The 'version' npm script executes changelog generation and adding to commit
+  // 3. Locally commit and tag
   exec(`npm version ${nextVersion}`);
 
   syncRemote(branchName, nextVersion);

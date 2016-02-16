@@ -17,7 +17,8 @@
     "ci": "npm test && npm run lint",
     "deploy-ci": "./npm_scripts/deploy-ci.sh",
     "deploy-wip": "node ./npm_scripts/deploy-wip.js",
-    "release": "node ./npm_scripts/release.js"
+    "release": "node ./npm_scripts/release.js",
+    "version": "npm run gen-changelog && git add CHANGELOG.md"
   },
   "keywords": [
     "Pearson",

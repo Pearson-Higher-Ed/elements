@@ -1,10 +1,6 @@
 # Pearson Elements 
 [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
-This module provides the foundational styling for Pearson web user experiences, written in 
-[SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html). Executing the build task compiles to CSS, 
-including the minified asset.
-
 For full documentation, please visit https://pearson-elements-v0.surge.sh/getting-started/
 
 ![Image](https://cloud.githubusercontent.com/assets/1950683/13062650/6d4bccee-d3fd-11e5-8815-cf3b8e5c7a78.jpg?raw=true "swatch")
@@ -15,15 +11,20 @@ We recommend that you install Elements in your project using [npm](https://npmjs
 
     npm install --save pearson-elements
 
-If Elements is not currently published or available on npm, then install directly from the repository:
+If pearson-elements is not currently published or available on npm, then install directly from the repository:
 
     npm install github:Pearson-Higher-Ed/elements#v0
-        
-## Getting Started on Development
+      
+The installation provides both the dist version with CSS, and the original source 
+[SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets. 
+
+This allows the consuming app to include the SDK as a static asset or as part of a build process.
+
+## Contributions
 
 Please review the [guidelines](CONTRIBUTING.md) for contributing before getting started.
 
-You must have [Node.js](https://nodejs.org/en/) `5` installed first.
+You must have [Node.js](https://nodejs.org/en/) v5 installed.
 
 Clone the project and install the dependencies:
 
@@ -31,7 +32,7 @@ Clone the project and install the dependencies:
     cd elements
     npm install
 
-### Building the documentation
+### Build the Documentation
 
 We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. 
 
@@ -40,9 +41,9 @@ We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation.
 This will give you a browser-sync served copy of the docs on http://localhost:3000, and build the latest version of 
 elements.min.css to /dist.
 
-## Test
+### Test
  
-The unit tests are run by Karma configured to use webpack to transpile and bundle the Mocha tests (ES6).
+The unit tests are run by Karma configured to use webpack to transpile and bundle the ES6-compliant Mocha tests.
  
     npm test
      
