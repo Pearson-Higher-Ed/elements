@@ -13,9 +13,13 @@ const stdin = readline.createInterface({
 });
 
 function syncRemote(branchName, nextVersion) {
+
   exec(`git push origin ${branchName}`);
-  exec(`git push --tags`);
-  console.log(`TravisCI will now release to npm on the tagged commit ${nextVersion} for the pearson-ux account.`);
+
+  if (nextVersion) {
+    exec(`git push --tags`);
+    console.log(`TravisCI will now release to npm on the tagged commit ${nextVersion} for the pearson-ux account.`);
+  }
 }
 
 function exitFailure(message) {
@@ -23,9 +27,8 @@ function exitFailure(message) {
   process.exit(1);
 }
 
-// RELEASE PROCESS BEGINS HERE
+// *** RELEASE PROCESS BEGINS HERE: Releaser provides the target SEMVER-compliant version ***
 
-// Releaser provides the target SEMVER-compliant version
 stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) => {
 
   if (!semver.valid(nextVersion)) {
@@ -51,12 +54,16 @@ stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) =>
   // 3. Locally commit and tag
   exec(`npm version ${nextVersion}`);
 
+  // push commit and tag on target release branch
   syncRemote(branchName, nextVersion);
 
   // Generate gh-pages branch and sync with remote
   exec('npm run gh-pages');
   exec('git pull -s recursive -Xours --no-edit');
-  exec('git push origin gh-pages');
+  syncRemote('gh-pages');
+
+  // Go back from whence you came
+  exec(`git checkout ${branchName}`);
 
   stdin.close();
 });
