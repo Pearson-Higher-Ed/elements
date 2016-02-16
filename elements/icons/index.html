@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li>
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li>
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Icons</h1>
+
+        <p>The available icons are a subset of <a href="http://fontawesome.io">Font Awesome by Dave Gandy</a> that includes the following:</p>
+<ul class="d-icon-list">
+  <li><i class="pe-icon--check"></i> check</li>
+  <li><i class="pe-icon--chevron-down"></i> chevron-down</li>
+  <li><i class="pe-icon--chevron-up"></i> chevron-up</li>
+  <li><i class="pe-icon--chevron-left"></i> chevron-left</li>
+  <li><i class="pe-icon--chevron-right"></i> chevron-right</li>
+  <li><i class="pe-icon--cog"></i> cog</li>
+  <li><i class="pe-icon--envelope"></i> envelope</li>
+  <li><i class="pe-icon--plus-circle"></i> plus-circle</li>
+  <li><i class="pe-icon--search"></i> search</li>
+  <li><i class="pe-icon--thumb-tack"></i> thumb-tack</li>
+  <li><i class="pe-icon--times"></i> times</li>
+  <li><i class="pe-icon--times-circle"></i> times-circle</li>
+  <li><i class="pe-icon--trash-o"></i> trash-o</li>
+  <li><i class="pe-icon--users"></i> users</li>
+  <li><i class="pe-icon--user"></i> user</li>
+  <li><i class="pe-icon--info-circle"></i> info-circle</li>
+  <li><i class="pe-icon--file-o"></i> file-o</li>
+  <li><i class="pe-icon--calendar"></i> calendar</li>
+</ul>
+<p>Add <code>pe-icon--{name}</code> to the icon element, where <code>{name}</code> is the icon name from the above list.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><span class="pe-icon--check"></span>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--check"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<aside>
+  <h3 class="pe-title">Do not combine with other elements</h3>
+  <p>Icons should not be combined with other elements; instead, use a nested <code>&lt;span&gt;</code>. Icon elements should not have children.</p>
+</aside>
+<aside>
+  <h3 class="pe-title">Change the path to the icon font</h3>
+  <p>The default directory for the icon files is <code>../fonts/</code>. You may change the location and/or names of the files by overriding <code>$pe-icons-path</code> and <code>$pe-icons-name</code>, or by replacing the paths in the generated CSS files.</p>
+</aside>
+<h2>Making icons accessible</h2>
+<p>The major accessibility problem with icons is that users don't tend to know what they are or what they mean unless they are associated with a textual label. This particularly aids users with cognitive disabilities. This is especially important if the icons are the primary &quot;text&quot; of an interactive element (e.g. links, buttons).</p>
+<h3>Screen readers</h3>
+<p>Screen readers <em>may</em> read CSS-generated content, such as the unicode characters that are used to render an icon. To prevent screen readers from reading the content, add <code>aria-hidden=&quot;true&quot;</code> to the icon element:</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><span class="pe-icon--times" aria-hidden="true"></span>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--times"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<p>The meanings of few icons are intuitively known by most users, however there are cases where the context plus the icon are generally enough (if shown by user testing), where the visual design may not allow text. An example would be a dialog-close button with an &quot;x&quot; representing &quot;close&quot;. Because what is visually obvious is usually not available to screen reader users, you can add an element that is visible only to screen readers using <code>pe-sr-only</code>:</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn">
+  <span class="pe-icon--times" aria-hidden="true"></span>
+  <span class="pe-sr-only">close</span>
+</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--times"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-sr-only"</span>&gt;</span>close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<p>It's important to note that speech users (who interact with the page using voice commands) will not have access to the names of interactive elements whose text is visually hidden and only made available to screen readers. There are only a few icons where a user has a good chance of guessing the interactive element's name, such as &quot;close&quot; and &quot;search&quot;, so it's important to show visible names of interactive elements as much as possible.</p>
+<h2>Adding new icons</h2>
+<p>After the Design or UX teams have approved a new icon, you not only need to add the change to this page and to the css and test files, but you will also need to actually add the icon to the <code>/assets/fonts</code> directory and a new <code>selection.json</code> file to <code>/misc/icomoon/</code>.</p>
+<p>Go to the IcoMoon app (https://icomoon.io/app).</p>
+<p>You can import the current  <code>selection.json</code> back to the IcoMoon app using the <em>Import Icons</em> input (or via Main Menu → Manage Projects) to retrieve your icon selection. It'll be called &quot;icomoon&quot; even though we're using Font-Awesome. If only IcoMoon icons are shown on the page, scroll down to the link &quot;Add Icons from Library&quot; and choose Font-Awesome (&quot;Add&quot; button).</p>
+<p>To select from Font-Awesome, make sure the &quot;select&quot; button at the top of the page is selected (it looks like a mouse arrow in a box, has an invisible name of &quot;select&quot;) and click on icons you'd like to add. Selected icons get an orange border and white background. Then go back to your &quot;icomoon&quot; group and click the stripey bar (button with the invisible name of &quot;Menu&quot;) to show a submenu. <em>With only your new icons selected</em>, choose &quot;Copy selection to set.&quot; Then make sure <em>all</em> the icons in your &quot;icomoon&quot; group are selected. The sticky menu at the bottom of the screen has a link &quot;Generate Font&quot; which will give you both new font files and a new <code>selection.json</code>.</p>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
