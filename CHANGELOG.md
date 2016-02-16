@@ -1,5 +1,15 @@
-<a name="0.1.0"></a>
-# [0.1.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.1.0...v0.1.0) (2016-02-16)
+<a name="0.1.2"></a>
+## [0.1.2](https://github.com/Pearson-Higher-Ed/elements/compare/v0.1.1...v0.1.2) (2016-02-16)
+
+
+### Bug Fixes
+
+* **publish:** Generate changelog via 'version' npm script. ([6961f11](https://github.com/Pearson-Higher-Ed/elements/commit/6961f11))
+
+
+
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/Pearson-Higher-Ed/elements/compare/v0.1.0...v0.1.1) (2016-02-16)
 
 
 
