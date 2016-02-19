@@ -10,10 +10,6 @@ For full documentation, please visit https://pearson-elements-v0.surge.sh/gettin
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
     npm install --save pearson-elements
-
-If pearson-elements is not currently published or available on npm, then install directly from the repository:
-
-    npm install github:Pearson-Higher-Ed/elements#v0
       
 The installation provides both the dist version with CSS, and the original source 
 [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets. 
