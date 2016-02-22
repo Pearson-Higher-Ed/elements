@@ -1,115 +1,11 @@
-// Links
-//
-
-a {
-  color: $pe-link-color;
-  text-decoration: underline;
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: $pe-link-hover-color;
-    text-decoration: none;
-  }
-}
-
-// Headings
-//
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  small {
-    font-size: $pe-text-heading-small-font-size;
-    color: $pe-text-heading-small-color;
-  }
-}
-
-// Body copy
-//
-
-p {
+@mixin pe-copy {
   color: $pe-copy-color;
   font-size: $pe-copy-font-size;
+  font-family: pe-font-family(default-sans-serif);
   line-height: $pe-copy-line-height;
 }
 
-// Inline text
-//
-
-ins {
-  &:before {
-    content: '+';
-  }
-
-  &:after {
-    content: '+';
-  }
-}
-
-mark {
-  background: $pe-text-mark-bg;
-}
-
-s {
-  color: $pe-text-strikethrough-color;
-}
-
-small {
-  font-weight: $pe-text-small-font-weight;
-  font-size: $pe-text-small-font-size;
-  line-height: $pe-text-small-line-height;
-}
-
-sub,
-sup {
-  font-size: 90%;
-}
-
-sub {
-  top: 0.2rem;
-}
-
-sup {
-  top: -0.2rem;
-}
-
-// Code
-//
-
-pre,
-code,
-kbd {
-  font-family: pe-font-family(default-monospace);
-}
-
-code {
-  color: $pe-text-code-color;
-}
-
-kbd {
-  padding: 2px 4px;
-  background: $pe-text-kbd-bg;
-  color: $pe-text-kbd-color;
-  font-size: 90%;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-
-  kbd {
-    padding: 0;
-    font-size: 100%;
-    font-weight: 700;
-    box-shadow: none;
-  }
-}
-
-// Leads
-//
-
-.pe-lead {
+@mixin pe-lead {
   color: $pe-lead-color;
   font-weight: $pe-lead-font-weight;
   font-size: $pe-lead-font-size;
@@ -122,10 +18,7 @@ kbd {
   }
 }
 
-// Titles
-//
-
-.pe-title {
+@mixin pe-title {
   color: $pe-title-color;
   font-weight: $pe-title-font-weight;
   font-size: $pe-title-font-size;
@@ -139,7 +32,7 @@ kbd {
   }
 }
 
-.pe-title--large {
+@mixin pe-title-large {
   font-size: $pe-title-large-font-size;
   line-height: $pe-title-large-line-height;
 
@@ -149,7 +42,7 @@ kbd {
   }
 }
 
-.pe-title--extra-large {
+@mixin pe-title-extra-large {
   font-size: $pe-title-extra-large-font-size;
   line-height: $pe-title-extra-large-line-height;
 
@@ -159,41 +52,109 @@ kbd {
   }
 }
 
-// Labels
-//
-
-.pe-label {
+@mixin pe-label {
   color: $pe-label-color;
   font-size: $pe-label-font-size;
   line-height: $pe-label-line-height;
   font-weight: $pe-label-font-weight;
-
-  &.pe-label--inverse {
-    color: $pe-label-inverse-color;
-    font-weight: $pe-label-inverse-font-weight;
-  }
 }
 
-.pe-label--secondary {
+@mixin pe-label-inverse {
+  color: $pe-label-inverse-color;
+  font-weight: $pe-label-inverse-font-weight;
+}
+
+@mixin pe-label-secondary {
   color: $pe-label-secondary-color;
-
-  &.pe-label--inverse {
-    color: $pe-label-secondary-inverse-color;
-  }
 }
 
-.pe-label--small {
+@mixin pe-label-secondary-inverse {
+  color: $pe-label-secondary-inverse-color;
+}
+
+@mixin pe-label-small {
   font-size: $pe-label-small-font-size;
   line-height: $pe-label-small-line-height;
 }
 
-.pe-label--large {
+@mixin pe-label-large {
   font-size: $pe-label-large-font-size;
   line-height: $pe-label-large-line-height;
 }
 
-.pe-label--bold {
+@mixin pe-label-bold {
   font-weight: $pe-label-bold-font-weight;
+}
+
+@mixin pe-list-inline {
+  @include pe-list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+// Body copy (as a class, from reset)
+//
+
+.pe-copy {
+  @include pe-copy;
+}
+
+// Leads
+//
+
+.pe-lead {
+  @include pe-lead;
+}
+
+// Titles
+//
+
+.pe-title {
+  @include pe-title;
+}
+
+.pe-title--large {
+  @include pe-title-large;
+}
+
+.pe-title--extra-large {
+  @include pe-title-extra-large;
+}
+
+// Labels
+//
+
+.pe-label {
+  @include pe-label;
+
+  &.pe-label--inverse {
+    @include pe-label-inverse;
+  }
+}
+
+.pe-label--secondary {
+  @include pe-label-secondary;
+
+  &.pe-label--inverse {
+    @include pe-label-secondary-inverse;
+  }
+}
+
+.pe-label--small {
+  @include pe-label-small;
+}
+
+.pe-label--large {
+  @include pe-label-large;
+}
+
+.pe-label--bold {
+  @include pe-label-bold;
 }
 
 // Lists
@@ -204,12 +165,5 @@ kbd {
 }
 
 .pe-list--inline {
-  @include pe-list-unstyled;
-  margin-left: -5px;
-
-  > li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+  @include pe-list-inline;
 }
