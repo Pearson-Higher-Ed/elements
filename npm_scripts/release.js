@@ -11,8 +11,7 @@ const stdin = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-
-function syncRemote(branchName, nextVersion) {
+const syncRemote = (branchName, nextVersion) => {
 
   exec(`git push origin ${branchName}`);
 
@@ -20,19 +19,18 @@ function syncRemote(branchName, nextVersion) {
     exec(`git push --tags`);
     console.log(`TravisCI will now release to npm on the tagged commit ${nextVersion} for the pearson-ux account.`);
   }
-}
-
-function exitFailure(message) {
+};
+const exitFailure = (message) => {
   console.error(message);
   process.exit(1);
-}
+};
 
-// *** RELEASE PROCESS BEGINS HERE: Releaser provides the target SEMVER-compliant version ***
+// *** Releaser provides the target SEMVER-compliant version ***
 
 stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) => {
 
   if (!semver.valid(nextVersion)) {
-    exitFailure(`Version '${nextVersion}' is not valid: it must be a valid semantic version. See http://semver.org/.`);
+    exitFailure(`Version '${nextVersion}' is not valid: requires a semver-compliant version. See http://semver.org/`);
   }
 
   if (!semver.gt(nextVersion, currentVersion)) {
@@ -43,14 +41,15 @@ stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) =>
     nextVersion = nextVersion.slice(1);
   }
 
-  // Make sure unit tests pass before continuing!
+  // Ensure unit tests pass before continuing!
   exec('npm test');
 
   // Ensure the /dist is generated
   exec('npm run build-docs');
 
+  // Order of operations:
   // 1. Bump the version update in package.json and npm-shrinkwrap.json
-  // 2. The 'version' npm script executes changelog generation and adding to commit
+  // 2. The 'version' custom npm script (defined in package.json) executes changelog generation and adding to commit
   // 3. Locally commit and tag
   exec(`npm version ${nextVersion}`);
 
