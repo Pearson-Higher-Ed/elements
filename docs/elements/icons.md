@@ -25,6 +25,8 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--info-circle"></i> info-circle</li>
   <li><i class="pe-icon--file-o"></i> file-o</li>
   <li><i class="pe-icon--calendar"></i> calendar</li>
+  <li><i class="pe-icon--square-o"></i> square</li>
+  <li><i class="pe-icon--square-check-o"></i> check square</li>
 </ul>
 
 Add `pe-icon--{name}` to the icon element, where `{name}` is the icon name from the above list.

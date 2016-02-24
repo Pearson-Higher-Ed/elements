@@ -145,6 +145,18 @@ describe('icons', () => {
       expect(content).to.equal('\\f073');
     });
 
+    it('should match the design spec where it is square-o', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--square-o'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f096');
+    });
+
+    it('should match the design spec where it is check-square-o', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--check-square-o'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f046');
+    });
+
   });
 
 });
