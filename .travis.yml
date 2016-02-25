@@ -4,6 +4,11 @@ node_js:
 - "stable"
 script:
 - npm run ci
+- chmod 777 ./test/shell_scripts/run_tests.sh
+- chmod 777 ./test/shell_scripts/tests_build_status.sh
+- ./test/shell_scripts/run_tests.sh
+- ./test/shell_scripts/tests_build_status.sh
+
 after_success:
 - npm run deploy-ci
 deploy:
