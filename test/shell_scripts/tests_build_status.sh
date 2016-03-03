@@ -1,5 +1,7 @@
 #!/bin/bash
 
+REPO_URI="https://api.travis-ci.org/repos/Pearson-Higher-Ed/ux-test-platform/builds"
+
 echo "Waiting for approximately 15s for the tests to trigger..."
 echo ""
 #The 15s sleep is to allow Travis to trigger the tests: ux-test-platform repo
@@ -17,7 +19,7 @@ do
 echo "--------------------------------------------"
 echo "Polling for the tests run build status..."
 
-curl -i -H "Accept: application/vnd.travis-ci.2+json" "https://api.travis-ci.org/repos/Pearson-Higher-Ed/ux-test-platform/builds" > test.json	
+curl -i -H "Accept: application/vnd.travis-ci.2+json" $REPO_URI > test.json	
 LATEST_STATE=$(grep -o '"state":.[a-z\"]*' test.json | head -1)
 #LATEST_ID=$(grep -o '"id":.[0-9]*' test.json | head -1 | grep ':.[0-9]*')
 

@@ -11,7 +11,7 @@ curl -s -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Travis-API-Version: 3" \
-  -H "Authorization: token Iit6_JxttCJ5JfEGQUyjRQ" \
+  -H "Authorization: token $AUTH_TOKEN" \
   -d "$body" \
   https://api.travis-ci.org/repo/Pearson-Higher-Ed%2Fux-test-platform/requests
 
