@@ -1,22 +1,24 @@
 language: node_js
 sudo: false
 node_js:
-- "stable"
+- stable
 script:
 - npm run ci
 - chmod 777 ./test/shell_scripts/run_tests.sh
 - chmod 777 ./test/shell_scripts/tests_build_status.sh
 - ./test/shell_scripts/run_tests.sh
 - ./test/shell_scripts/tests_build_status.sh
-
 after_success:
 - npm run deploy-ci
 deploy:
   provider: npm
-  email: "pearson-design-accelerator@pearson.com"
+  email: pearson-design-accelerator@pearson.com
   api_key:
     secure: W5dHsRjxPjd13nwUairndS+uAdO+kilqRIzAONcZxJiqL/oTwZPB04onc3N3nrjmqtjb+QSsDML2gDhglvgGoQxVh+EAUP9ziTUNYFptifC2BlmL/h4YP/hnkoMnRO8zFOYPwkJSErN4JewVr8uwGTRZqlobqeIHSwFJk8tI/ZdynrQK7Uy6GeQjrVzR5eZ3I7D9+msIBGaD0F70FxpzTWMhUwrp1aEdA9zkvrbZXxE7K/iGpEVQBWrW0ln2iwWXl5OUnOWp0hU6tpN4+C0v1JpFObccZwnv+pi5S7iN4NZ9yupt6EO2Ajmk/l8IxKlc4hiscSFBsOZjckpyh6cBs4lFvIXKu/f5xCIkpYXiwyVmhbdSbS4yt4vr8906y/0vjsa+yLRe/swU0rXt5R2DFdSHMSzWmOWaRrmLQ0Brqd+wDLST0MJsS1jAF9WsYkKp/01Ept7SqpWioADu43LHYQOI5sf+dQ24OBvc7a+ku1/2om4HqXSUxMNfRrHGE9ugKIBz13eMwWDXVPSHr+WGJN2eHgFzujZZ9q+2+ZW2eP981DqGct6zdTQTHGjBhUFV9foa8nbQOE8+yAiU3a3CBMs6zfKM2cHg9TU2pS/MA3cy86evb2bRXK/n/tFJ/DkWQvlY03iMOSl+vIGOIOlELbUqnEf0LG2y0izTSrjED74=
   skip_cleanup: true
   on:
     branch: v0
     tags: true
+env:
+  global:
+    secure: al6MU0Nb+7bsA6yeGoJb/gdvwxA0AlvpxJAawFfPUkYzkL3wS1jn6i9s/KEtRGRfKRkfR/Pl6YUMd45QXY3MbvTooAE9ZvmvZo24nqiYKSh3ZtLcu+uE7aOs9AgaRfpr4Uq1ezSr8wSt1An4aOUl+n9ULDkCJsMZEwcyUSZ9cGs19vSeKeSxi8gQBW2s0VMeeuqsZDMtsxzSa302EVaYzW0Ykpp7++zuSRNVrKPqToRv3eEsaKG7NxqLJqxIhNcXXC0+WzNal04zUoH0cfhoKghNZiBhzlKLtD+oGMpVyHt8sL2DZrB35ldw7RRz3jxQDUKxq78dyScAPX1HFuGXuSLCl4ttaIMR5jYcUQ6MUWOk+dOUYXG8OmhMUYI7Q9Mzt00O4Hf3b60GdzEW3IohVL4VA+rXu2npNc6oXVaO/h8ko/rxY1bpzFwWsaQgAanp4TU1C48KYTxyQM0r614F/l5kmIzZLFRVDo5vpuojOpz8k1v0zaQ5CNtHA7PAL7eONDlmi/wB5wbwTegsqOOEFd2p2rKLO8qOQDuSQ3R+GR9ssJsK5zTmTc3wfvhA8lKwQQOOGOAi87IDrmt+DZtJ9z/HirU6yA468RixrmWduw+rgOw5dI/uKqc2PuimM7HLGjPGCcA+aL+LSq1VIoiqA7h3W4LXIiQtDk1M3EX9Jww=
