@@ -5,4 +5,4 @@ _gh_pages
 .DS_Store
 .idea
 test/fixtures/color/*.json
-./test.json
+test.json
