@@ -1,3 +1,18 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.1.2...v0.2.0) (2016-03-08)
+
+
+### Bug Fixes
+
+* **header:** add link text to github link ([88a4edd](https://github.com/Pearson-Higher-Ed/elements/commit/88a4edd))
+
+### Features
+
+* Run tests in CI ([13d6427](https://github.com/Pearson-Higher-Ed/elements/commit/13d6427))
+* **scss:** separate plain-tag styles from the explicit classes ([0c42db9](https://github.com/Pearson-Higher-Ed/elements/commit/0c42db9))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/Pearson-Higher-Ed/elements/compare/v0.1.1...v0.1.2) (2016-02-16)
 
