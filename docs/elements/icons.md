@@ -27,6 +27,7 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--calendar"></i> calendar</li>
   <li><i class="pe-icon--square-o"></i> square</li>
   <li><i class="pe-icon--check-square-o"></i> check square</li>
+  <li><i class="pe-icon--ban"></i> ban</li>
 </ul>
 
 Add `pe-icon--{name}` to the icon element, where `{name}` is the icon name from the above list.
