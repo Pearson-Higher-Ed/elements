@@ -157,6 +157,12 @@ describe('icons', () => {
       expect(content).to.equal('\\f046');
     });
 
+    it('should match the design spec where it is ban', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--ban'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f05e');
+    });
+
   });
 
 });
