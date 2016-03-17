@@ -230,7 +230,8 @@ Use `pe-list--unstyled` for plain lists.
 When nested, `pe-list--unstyled` should be added to each `<ul>` element.
 
 {{#demo}}
-<ul class="pe-list pe-list--unstyled">
+Basic Body,As you read, quiz..
+<ul class="pe-list pe-list--padding--styled">
   <li>1</li>
   <li>
     <ul class="pe-list pe-list--styled">

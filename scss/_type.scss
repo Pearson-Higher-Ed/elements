@@ -111,6 +111,12 @@
   padding-left: $list-style-padding-left;
 }
 
+@mixin pe-list--padding-styled {
+  padding-top: 12px;
+  padding-left: 13px;
+  list-style-type: $list-style-type;
+}
+
 // Body copy (as a class, from reset)
 //
 
@@ -173,6 +179,10 @@
 
 // Lists
 //
+.pe-list--padding--styled {
+  @include pe-list--padding-styled;
+}
+
 .pe-list {
   @include pe-list;
 
