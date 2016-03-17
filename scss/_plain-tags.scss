@@ -8,6 +8,7 @@
 //
 // Remove top margin from `<h1> - <h6>` to avoid margin collapsing.
 // Set a base bottom margin.
+// Set heading following content a top margin of 20px
 h1,
 h2,
 h3,
@@ -15,7 +16,32 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+// Set heading following an l1 heading a top margin of 40px
+h1 {
+  @include pe-heading-level1;
+}
+
+h2 {
+  @include pe-heading-level2;
+}
+
+h3 {
+  @include pe-heading-level3;
+}
+
+h4 {
+  @include pe-heading-level4;
+}
+
+h5 {
+  @include pe-heading-level5;
+}
+
+h6 {
+  @include pe-heading-level6;
 }
 
 // Reset margins on paragraphs
@@ -186,4 +212,3 @@ kbd {
     box-shadow: none;
   }
 }
-

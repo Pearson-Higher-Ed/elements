@@ -167,3 +167,30 @@
 .pe-list--inline {
   @include pe-list-inline;
 }
+
+// Headings
+//
+
+.pe-heading-level1 {
+  @include pe-heading-level1;
+}
+
+.pe-heading-level2 {
+  @include pe-heading-level2;
+}
+
+.pe-heading-level3 {
+  @include pe-heading-level3;
+}
+
+.pe-heading-level4 {
+  @include pe-heading-level4;
+}
+
+.pe-heading-level5 {
+  @include pe-heading-level5;
+}
+
+.pe-heading-level6 {
+  @include pe-heading-level6;
+}
