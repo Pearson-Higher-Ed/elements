@@ -97,6 +97,20 @@
   }
 }
 
+//List
+//
+@mixin pe-list {
+  color: $pe-list-color;
+  font-size: $pe-list-font-size;
+  line-height: $pe-list-line-height;
+  font-weight: $pe-list-font-weight;
+}
+
+@mixin pe-list-styled {
+  list-style-type: $list-style-type;
+  padding-left: $list-style-padding-left;
+}
+
 // Body copy (as a class, from reset)
 //
 
@@ -159,6 +173,13 @@
 
 // Lists
 //
+.pe-list {
+  @include pe-list;
+
+  &.pe-list--styled {
+    @include pe-list-styled;
+  }
+}
 
 .pe-list--unstyled {
   @include pe-list-unstyled;

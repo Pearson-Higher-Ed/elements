@@ -19,7 +19,7 @@ permalink: /elements/typography/
 
 {{#demo}}
 <p>
-  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque 
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
   penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
   id dolor id nibh ultricies vehicula.
 </p>
@@ -151,7 +151,7 @@ Use the `<em>` element to emphasize a word, phrase, or other part of the text.
 
 ### `<strong>`
 
-Use the `<strong>` element when you want to give text strong importance with respect to other text in the same context.
+  Use the `<strong>` element when you want to give text strong importance with respect to other text in the same context.
 
 {{#demo}}
 Use <kbd>rm -rf</kbd> to recursively remove files. <strong>Be careful when using
@@ -233,7 +233,7 @@ When nested, `pe-list--unstyled` should be added to each `<ul>` element.
 <ul class="pe-list pe-list--unstyled">
   <li>1</li>
   <li>
-    <ul class="pe-list pe-list--unstyled">
+    <ul class="pe-list pe-list--styled">
       <li>1.a</li>
       <li>1.b</li>
     </ul>
