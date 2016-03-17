@@ -127,6 +127,22 @@ $pe-title-extra-large-line-height: 1.75rem !default;
 $pe-title-extra-large-sm-font-size: 1.875rem !default;
 $pe-title-extra-large-sm-line-height: 2.25rem !default;
 
+// lists
+//
+$pe-list-color: #231F20 !default;
+$pe-list-font-size: 1rem !default;
+$pe-list-line-height: 1.375rem !default;
+$pe-list-font-weight: normal !default;
+
+$list-style-type: none !default;
+$list-style-padding-left: 20px;
+$list-style-first-padding-left: 26px;
+$list-style-margin-bottom: 12px;
+$list-style-margin-top: 12px;
+$list-style-type: lower-roman;
+$list-style-type-ordered: lower-alpha;
+$list-style-type-number: number;
+
 // Leads
 //
 
