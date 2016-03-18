@@ -18,7 +18,6 @@
 [class*=' pe-icon--'] {
   // use !important to prevent issues with browser extensions that change fonts
   font-family: 'pearson-fa' !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -120,4 +119,8 @@
 
 .pe-icon--ban:before {
   content: '\f05e';
+}
+
+.pe-icon--camera:before {
+  content: '\f030';
 }
