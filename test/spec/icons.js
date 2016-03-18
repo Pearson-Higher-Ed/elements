@@ -20,7 +20,6 @@ describe('icons', () => {
     it('should match the design spec where it is pe-icon--', () => {
       assertCssPropertiesAreEqual(getElementById('peIcon'), [
 				['font-family', 'pearson-fa'],
-				['speak', 'none'],
 				['font-style', 'normal'],
 				['font-weight', 'normal'],
 				['font-variant', 'normal'],
@@ -161,6 +160,12 @@ describe('icons', () => {
       character = window.getComputedStyle(document.querySelector('.pe-icon--ban'), ':before').getPropertyValue('content');
       content = formatContent(character);
       expect(content).to.equal('\\f05e');
+    });
+
+    it('should match the design spec where it is camera', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--camera'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f030');
     });
 
   });
