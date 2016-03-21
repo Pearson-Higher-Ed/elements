@@ -1,28 +1,23 @@
 <!-- unstyled lists -->
-<div>
-	<ul id ="unstyled-lists" class="pe-list pe-list--unstyled">
-  		<li>One</li>
-  		<li>Two</li>
-  		<li>Three</li>
-	</ul>
-</div>
 
 <!-- nested unstlyed lists -->
 <div>
-<ul class="pe-list pe-list--unstyled">
-  <li>1</li>
-  <li>
-    <ul id="nested-unstyled-lists" class="pe-list pe-list--unstyled">
-      <li>1.a</li>
-      <li>1.b</li>
-    </ul>
-  </li>
-  <li>2</li>
-  <li>3</li>
-</ul>
+	<ul id ="unstyled-lists" class="pe-list unstyled-lists--ordered">
+	  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+	  <li>Item two.</li>
+	  <li>Item three.</li>
+	    <ul id="nested-unstyled-lists" class="pe-list nested-unstyled-lists--ordered">
+	      <li>child item one</li>
+	      <li>child item two</li>
+	      <ul class="pe-list pe-list-nested--ordered">
+	        <li>grand child item one</li>
+	        <li>grand child item two</li>
+	      </ul>
+	    </ul>
+	</ul>
 </div>
 
-<!-- inline lists -->
+<!-- inline lists
 <div>
 	<ul id="inline-lists" class="pe-list pe-list--inline">
   		<li>Foo</li>
@@ -30,3 +25,4 @@
   		<li>Baz</li>
 	</ul>
 </div>
+-->

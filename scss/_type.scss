@@ -106,22 +106,22 @@
   font-weight: $pe-list-font-weight;
 }
 
-@mixin pe-list-styled {
+@mixin nested-unstyled-lists-ordered {
   list-style-type: lower-alpha;
   padding-left: $list-style-padding-left;
 }
 
-@mixin pe-list-styled2 {
+@mixin pe-list-nested-ordered {
   //margin-left: 13px;
-  margin-bottom: 12px;
-  list-style-type: lower-roman;
+  margin-bottom: $list-style-margin-bottom;
+  list-style-type: $list-style-type;
   padding-left: $list-style-padding-left;
 }
 
-@mixin pe-list--padding-styled {
-  margin-top: 12px;
-  padding-left: 26px;
-  list-style-type: number;
+@mixin unstyled-lists-ordered {
+  margin-top: $list-style-margin-top;
+  padding-left: $list-style-first-padding-left;
+  list-style-type: $list-style-type-number;
 }
 
 // Body copy (as a class, from reset)
@@ -185,28 +185,32 @@
 }
 
 // Lists
-//
+//unstyled-lists--ordered
 .pe-list {
   @include pe-list;
 
-  &.pe-list--padding--styled {
-    @include pe-list--padding-styled;
+  &.unstyled-lists--ordered {
+    @include unstyled-lists-ordered;
   }
 }
 
+// Lists
+//nested unstyled-lists--ordered
 .pe-list {
   @include pe-list;
 
-  &.pe-list--styled {
-    @include pe-list-styled;
+  &.nested-unstyled-lists--ordered {
+    @include nested-unstyled-lists-ordered;
   }
 }
 
+// Lists
+//nested inside - unstyled-lists--ordered
 .pe-list {
   @include pe-list;
 
-  &.pe-list--styled2 {
-    @include pe-list-styled2;
+  &.pe-list-nested--ordered {
+    @include pe-list-nested-ordered;
   }
 }
 

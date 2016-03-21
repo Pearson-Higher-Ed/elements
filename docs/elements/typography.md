@@ -231,14 +231,14 @@ When nested, `pe-list--unstyled` should be added to each `<ul>` element.
 
 {{#demo}}
 Basic body. As you read, quiz yourself to review concepts and prep for exams,without leaving the page. What could be easier?
-<ul class="pe-list pe-list--padding--styled">
-  <li class="pe-list--inline">List item one. How are you doing today? Quite fine, thank you.</li>
+<ul class="pe-list unstyled-lists--ordered">
+  <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.</li>
-    <ul class="pe-list pe-list--styled">
+    <ul class="pe-list nested-unstyled-lists--ordered">
       <li>child item one</li>
       <li>child item two</li>
-      <ul class="pe-list pe-list--styled2">
+      <ul class="pe-list pe-list-nested--ordered">
         <li>grand child item one</li>
         <li>grand child item two</li>
       </ul>
