@@ -86,15 +86,15 @@
   font-weight: $pe-label-bold-font-weight;
 }
 
-@mixin pe-list-inline {
-  @include pe-list-unstyled;
-  margin-left: -5px;
+  @mixin pe-list-inline {
+  //@include pe-list-unstyled;
+//margin-left: 13px;
 
-  > li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+//  > li {
+//    display: inline-block;
+//   padding-right: 5px;
+  // padding-left: 26px;
+//  }
 }
 
 //List
@@ -107,14 +107,21 @@
 }
 
 @mixin pe-list-styled {
-  list-style-type: $list-style-type;
+  list-style-type: lower-alpha;
+  padding-left: $list-style-padding-left;
+}
+
+@mixin pe-list-styled2 {
+  //margin-left: 13px;
+  margin-bottom: 12px;
+  list-style-type: upper-roman;
   padding-left: $list-style-padding-left;
 }
 
 @mixin pe-list--padding-styled {
-  padding-top: 12px;
-  padding-left: 13px;
-  list-style-type: $list-style-type;
+  margin-top: 12px;
+  padding-left: 26px;
+  list-style-type: number;
 }
 
 // Body copy (as a class, from reset)
@@ -179,8 +186,12 @@
 
 // Lists
 //
-.pe-list--padding--styled {
-  @include pe-list--padding-styled;
+.pe-list {
+  @include pe-list;
+
+  &.pe-list--padding--styled {
+    @include pe-list--padding-styled;
+  }
 }
 
 .pe-list {
@@ -188,6 +199,14 @@
 
   &.pe-list--styled {
     @include pe-list-styled;
+  }
+}
+
+.pe-list {
+  @include pe-list;
+
+  &.pe-list--styled2 {
+    @include pe-list-styled2;
   }
 }
 

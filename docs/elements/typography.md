@@ -230,18 +230,23 @@ Use `pe-list--unstyled` for plain lists.
 When nested, `pe-list--unstyled` should be added to each `<ul>` element.
 
 {{#demo}}
-Basic Body,As you read, quiz..
+Basic body. As you read, quiz yourself to review concepts and prep for exams,without leaving the page. What could be easier?
 <ul class="pe-list pe-list--padding--styled">
-  <li>1</li>
-  <li>
+  <li class="pe-list--inline">List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>Item two.</li>
+  <li>Item three.</li>
     <ul class="pe-list pe-list--styled">
-      <li>1.a</li>
-      <li>1.b</li>
+      <li>child item one</li>
+      <li>child item two</li>
+      <ul class="pe-list pe-list--styled2">
+        <li>grand child item one</li>
+        <li>grand child item two</li>
+      </ul>
     </ul>
-  </li>
-  <li>2</li>
-  <li>3</li>
 </ul>
+And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
+Basic body. As you read, quiz yourself to review concepts and prep for exams,without leaving the page. What could be easier?
+</p>
 {{/demo}}
 
 ### Inline lists
