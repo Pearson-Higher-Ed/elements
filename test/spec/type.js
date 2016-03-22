@@ -284,17 +284,41 @@ describe('type', () => {
       fixture.load('type/lists.html');
     });
 
+    it('should match the design spec where it is pe lists', () => {
+      assertCssPropertiesAreEqual(getElementById('pe-lists'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '16px'],
+        ['line-height', '22px'],
+        ['font-weight', 'normal']
+      ]);
+    });
+
     it('should match the design spec where it is unstyled lists', () => {
-      assertCssPropertiesAreEqual(getElementById('unstyled-lists'), [
+      assertCssPropertiesAreEqual(getElementById('styled-lists'), [
         ['padding-left', '26px'],
         ['list-style-type', 'disc']
       ]);
     });
 
     it('should match the design spec where it is nested unstyled lists', () => {
-      assertCssPropertiesAreEqual(getElementById('nested-unstyled-lists'), [
+      assertCssPropertiesAreEqual(getElementById('nested-styled-lists'), [
         ['padding-left', '20px'],
         ['list-style-type', 'lower-alpha']
+      ]);
+    });
+
+    // List unordered tests
+    it('should match the design spec where it is unstyled lists, unordered', () => {
+      assertCssPropertiesAreEqual(getElementById('styled-lists-unordered'), [
+        ['padding-left', '26px'],
+        ['list-style-type', 'disc']
+      ]);
+    });
+
+    it('should match the design spec where it is nested unstyled lists, unordered', () => {
+      assertCssPropertiesAreEqual(getElementById('nested-styled-lists-unordered'), [
+        ['padding-left', '20px'],
+        ['list-style-type', 'circle']
       ]);
     });
 

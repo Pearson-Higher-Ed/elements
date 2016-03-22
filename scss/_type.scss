@@ -86,6 +86,18 @@
   font-weight: $pe-label-bold-font-weight;
 }
 
+//List
+//list function to get all common properties
+@mixin _styled-lists {
+  margin-top: $list-style-margin-top;
+  margin-bottom: $list-style-margin-bottom;
+  padding-left: $list-style-first-padding-left;
+}
+
+@mixin _pe-list-nested {
+  padding-left: $list-style-padding-left;
+}
+
   @mixin pe-list-inline {
   //@include pe-list-unstyled;
 //margin-left: 13px;
@@ -106,22 +118,31 @@
   font-weight: $pe-list-font-weight;
 }
 
-@mixin nested-unstyled-lists-ordered {
-  list-style-type: lower-alpha;
-  padding-left: $list-style-padding-left;
+@mixin nested-styled-lists-ordered {
+  list-style-type: $list-style-type-ordered;
+  @include _pe-list-nested;
+}
+
+@mixin nested-styled-lists-unordered {
+  @include _pe-list-nested;
 }
 
 @mixin pe-list-nested-ordered {
-  //margin-left: 13px;
-  margin-bottom: $list-style-margin-bottom;
   list-style-type: $list-style-type;
-  padding-left: $list-style-padding-left;
+  @include _pe-list-nested;
 }
 
-@mixin unstyled-lists-ordered {
-  margin-top: $list-style-margin-top;
-  padding-left: $list-style-first-padding-left;
+@mixin styled-lists-ordered {
+  @include _styled-lists;
   list-style-type: $list-style-type-number;
+}
+
+@mixin styled-lists-unordered {
+  @include _styled-lists;
+}
+
+@mixin pe-list-nested-unordered {
+  @include _pe-list-nested;
 }
 
 // Body copy (as a class, from reset)
@@ -185,22 +206,22 @@
 }
 
 // Lists
-//unstyled-lists--ordered
+//styled-lists--ordered
 .pe-list {
   @include pe-list;
 
-  &.unstyled-lists--ordered {
-    @include unstyled-lists-ordered;
+  &.styled-lists--ordered {
+    @include styled-lists-ordered;
   }
 }
 
 // Lists
-//nested unstyled-lists--ordered
+//nested styled-lists--ordered
 .pe-list {
   @include pe-list;
 
-  &.nested-unstyled-lists--ordered {
-    @include nested-unstyled-lists-ordered;
+  &.nested-styled-lists--ordered {
+    @include nested-styled-lists-ordered;
   }
 }
 
@@ -211,6 +232,31 @@
 
   &.pe-list-nested--ordered {
     @include pe-list-nested-ordered;
+  }
+}
+
+//list unordered
+.pe-list {
+  @include pe-list;
+
+  &.styled-lists--unordered {
+    @include styled-lists-unordered;
+  }
+}
+
+.pe-list {
+  @include pe-list;
+
+  &.nested-styled-lists--unordered {
+    @include nested-styled-lists-unordered;
+  }
+}
+
+.pe-list {
+  @include pe-list;
+
+  &.pe-list-nested--unordered {
+    @include pe-list-nested-unordered;
   }
 }
 

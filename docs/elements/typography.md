@@ -227,15 +227,15 @@ Use `pe-list--unstyled` for plain lists.
 
 ### Nested lists
 
-When nested, `pe-list--unstyled` should be added to each `<ul>` element.
+When nested, `styled-lists--ordered` should be added to each `<ul>` element.
 
 {{#demo}}
 Basic body. As you read, quiz yourself to review concepts and prep for exams,without leaving the page. What could be easier?
-<ul class="pe-list unstyled-lists--ordered">
+<ul class="pe-list styled-lists--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.</li>
-    <ul class="pe-list nested-unstyled-lists--ordered">
+    <ul class="pe-list nested-styled-lists--ordered">
       <li>child item one</li>
       <li>child item two</li>
       <ul class="pe-list pe-list-nested--ordered">
@@ -246,17 +246,27 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams,wit
 </ul>
 And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
 Basic body. As you read, quiz yourself to review concepts and prep for exams,without leaving the page. What could be easier?
-</p>
 {{/demo}}
 
-### Inline lists
+### Nested lists
 
-Use `pe-list--inline` to change the display to `inline-block`.
+When nested, `styled-lists--unordered` should be added to each `<ul>` element.
 
 {{#demo}}
-<ul class="pe-list pe-list--inline">
-  <li>Foo</li>
-  <li>Bar</li>
-  <li>Baz</li>
+And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
+Basic body. As you read, quiz yourself to review concepts and prep for exams,without leaving the page. What could be easier?
+<ul class="pe-list styled-lists--unordered">
+  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>Item two.</li>
+  <li>Item three.</li>
+    <ul class="pe-list nested-styled-lists--unordered">
+      <li>child item one</li>
+      <li>child item two</li>
+      <ul class="pe-list pe-list-nested--unordered">
+        <li>grand child item one</li>
+        <li>grand child item two</li>
+      </ul>
+    </ul>
 </ul>
+And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
 {{/demo}}
