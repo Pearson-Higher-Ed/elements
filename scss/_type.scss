@@ -98,7 +98,7 @@
   padding-left: $list-style-padding-left;
 }
 
-  @mixin pe-list-inline {
+//  @mixin pe-list-inline {
   //@include pe-list-unstyled;
 //margin-left: 13px;
 
@@ -107,7 +107,7 @@
 //   padding-right: 5px;
   // padding-left: 26px;
 //  }
-}
+//}
 
 //List
 //
@@ -264,6 +264,6 @@
   @include pe-list-unstyled;
 }
 
-.pe-list--inline {
-  @include pe-list-inline;
-}
+//.pe-list--inline {
+//  @include pe-list-inline;
+//}
