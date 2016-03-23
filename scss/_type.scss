@@ -97,6 +97,22 @@
   }
 }
 
+
+@mixin pe-code {
+  font-family: pe-font-family(default-monospace);
+  font-size: $pe-code-font-size;
+  color: $pe-code-color;
+  background-color: $pe-code-bg;
+  line-height: $pe-code-line-height;
+}
+
+@mixin pe-code-inline {
+  padding-left: $pe-code-inline-padding;
+  padding-right: $pe-code-inline-padding;
+  background-color: $pe-code-inline-bg;
+  font-family: pe-font-family(default-monospace);
+}
+
 // Body copy (as a class, from reset)
 //
 
@@ -160,6 +176,7 @@
 // Lists
 //
 
+
 .pe-list--unstyled {
   @include pe-list-unstyled;
 }
@@ -193,4 +210,19 @@
 
 .pe-heading-level6 {
   @include pe-heading-level6;
+}
+
+// Code
+//
+
+.pe-code {
+  @include  pe-code;
+}
+
+.pe-code-inline {
+  @include  pe-code-inline;
+}
+
+.pe-kbd {
+  @include  pe-code-inline;
 }
