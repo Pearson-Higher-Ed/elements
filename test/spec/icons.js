@@ -168,6 +168,12 @@ describe('icons', () => {
       expect(content).to.equal('\\f030');
     });
 
+    it('should match the design spec where it is clock-o', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--clock-o'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f017');
+    });
+
   });
 
 });
