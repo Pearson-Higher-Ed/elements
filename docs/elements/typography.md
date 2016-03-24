@@ -19,7 +19,7 @@ permalink: /elements/typography/
 
 {{#demo}}
 <p>
-  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque 
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
   penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
   id dolor id nibh ultricies vehicula.
 </p>
@@ -151,7 +151,7 @@ Use the `<em>` element to emphasize a word, phrase, or other part of the text.
 
 ### `<strong>`
 
-Use the `<strong>` element when you want to give text strong importance with respect to other text in the same context.
+  Use the `<strong>` element when you want to give text strong importance with respect to other text in the same context.
 
 {{#demo}}
 Use <kbd>rm -rf</kbd> to recursively remove files. <strong>Be careful when using
@@ -225,32 +225,102 @@ Use `pe-list--unstyled` for plain lists.
 </ul>
 {{/demo}}
 
-### Nested lists
+### Nested ordered lists
 
-When nested, `pe-list--unstyled` should be added to each `<ul>` element.
+When nested, `styled-lists--ordered` should be added to each `<ol>` element.
 
 {{#demo}}
-<ul class="pe-list pe-list--unstyled">
-  <li>1</li>
-  <li>
-    <ul class="pe-list pe-list--unstyled">
-      <li>1.a</li>
-      <li>1.b</li>
-    </ul>
-  </li>
-  <li>2</li>
-  <li>3</li>
-</ul>
+<p>
+Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
+</p>
+<ol class="pe-list styled-lists--ordered">
+  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>Item two.</li>
+  <li>Item three.</li>
+    <ol class="pe-list nested-styled-lists--ordered">
+      <li>child item one</li>
+      <li>child item two</li>
+      <ol class="pe-list pe-list-nested--ordered">
+        <li>grand child item one</li>
+        <li>grand child item two</li>
+      </ol>
+    </ol>
+</ol>
+<p>
+And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
+Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
+</p>
 {{/demo}}
 
-### Inline lists
+### Nested unordered lists
 
-Use `pe-list--inline` to change the display to `inline-block`.
+When nested, `styled-lists--unordered` should be added to each `<ul>` element.
 
 {{#demo}}
-<ul class="pe-list pe-list--inline">
-  <li>Foo</li>
-  <li>Bar</li>
-  <li>Baz</li>
+<p>
+And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
+Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
+</p>
+<ul class="pe-list styled-lists--unordered">
+  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>Item two.</li>
+  <li>Item three.</li>
+    <ul class="pe-list nested-styled-lists--unordered">
+      <li>child item one</li>
+      <li>child item two</li>
+      <ul class="pe-list pe-list-nested--unordered">
+        <li>grand child item one</li>
+        <li>grand child item two</li>
+      </ul>
+    </ul>
+</ul>
+<p>
+And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
+</p>
+{{/demo}}
+
+### Nested ordered lists with heading
+
+When nested, `styled-lists-heading--ordered` should be added to each `<ol>` element for lists with heading.
+
+{{#demo}}
+<h2>
+Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
+<h2>
+<ol class="pe-list styled-lists-heading--ordered">
+  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>Item two.</li>
+  <li>Item three.</li>
+    <ol class="pe-list nested-styled-lists--ordered">
+      <li>child item one</li>
+      <li>child item two</li>
+      <ol class="pe-list pe-list-nested--ordered">
+        <li>grand child item one</li>
+        <li>grand child item two</li>
+      </ol>
+    </ol>
+</ol>
+{{/demo}}
+
+### Nested unordered lists with heading
+
+When nested, `styled-lists-heading--unordered` should be added to each `<ul>` element for lists with heading.
+
+{{#demo}}
+<h2>
+Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
+<h2>
+<ul class="pe-list styled-lists-heading--unordered">
+  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>Item two.</li>
+  <li>Item three.</li>
+    <ul class="pe-list nested-styled-lists--unordered">
+      <li>child item one</li>
+      <li>child item two</li>
+      <ul class="pe-list pe-list-nested--unordered">
+        <li>grand child item one</li>
+        <li>grand child item two</li>
+      </ul>
+    </ul>
 </ul>
 {{/demo}}
