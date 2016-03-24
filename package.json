@@ -21,9 +21,8 @@
     "version": "npm run gen-changelog && git add CHANGELOG.md"
   },
   "keywords": [
-    "Pearson",
-    "design",
-    "elements"
+    "pearson-components",
+    "pearson-sdk"
   ],
   "author": "Pearson Design Accelerator",
   "license": "MIT",
