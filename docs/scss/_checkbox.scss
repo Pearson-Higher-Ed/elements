@@ -1,0 +1,72 @@
+$checkbox-width:      18px;
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+p {
+  font-family: "Times New Roman";
+  font-size: 18px;
+  text-align: left;
+}
+
+div {
+  font-family: FontAwesome;
+}
+
+.checkbox {
+
+  margin: 20px 100px;
+  position: relative;
+
+}
+input[type=checkbox]{
+  left: -9999px;
+
+  &+ label {
+    position: relative;
+    display: block;
+    padding: 6px 10px 6px ($checkbox-width + 10);
+    cursor: pointer;
+
+    // Checkbox setup
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin: (-$checkbox-width/2) 0 0;
+      width: $checkbox-width;
+      height: $checkbox-width;
+      background-repeat: no-repeat;
+      @include background-size(72px);
+    }
+  }
+
+  // Checked
+  &:checked + label {
+    &:before {
+      background-position: -$checkbox-width 0;
+    }
+  }
+
+  // Disabled
+  &:disabled {
+    &+ label {
+      cursor: not-allowed;
+
+      &:before {
+        background-position: (-$checkbox-width*2) 0;
+      }
+    }
+
+    // Disabled selected
+    &:checked + label {
+      &:before {
+        background-position: (-$checkbox-width*3) 0;
+      }
+    }
+  }
+
+}

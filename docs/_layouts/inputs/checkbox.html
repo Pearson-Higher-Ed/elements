@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Checkboxes</title>
+  <link rel="stylesheet" type="text/css" href="/scss/_inputs.scss">
+</head>
+<body>
+<h1>Checkboxes</h1>
+
+<div class="content">
+  <p>
+    Checkboxes are for times when the user needs to make one or more binary choices about a related item.
+
+    Unlike radio buttons, where a group of radio buttons represents a single choice, each check box in a group
+    represents a separate, independent choice. When there is more than one option but only one can be selected, use a
+    radio button instead.
+
+    Checkboxes use the default browser style.
+  </p>
+</div>
+<div class="container">
+  <div class="checkbox checked">
+    <label for="checkbox">
+      <input type="checkbox" name="Selected Checkbox" id="chk1" value="" checked>Selected Checkbox
+    </label>
+  </div>
+  <div class="checkbox unselected">
+    <label for="checkbox">
+      <input type="checkbox" name="UnSelected" id="chk2" value="">UnSelected
+    </label>
+  </div>
+  <div class="checkbox disabled">
+    <label for="checkbox">
+      <input type="checkbox" name="Read only/Disabled" id="chk3" value="" disabled>Read only/Disabled
+    </label>
+  </div>
+  <div class="checkbox disabled-selected">
+    <label for="checkbox">
+      <input type="checkbox" name="Read only/Disabled (selected)" id="chk4" value="" disabled checked>Read only/Disabled
+      (selected)
+    </label>
+  </div>
+</div>
+
+</body>
+</html>
