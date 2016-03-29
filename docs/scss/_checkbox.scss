@@ -14,14 +14,9 @@ div {
   font-family: FontAwesome;
 }
 
-.checkbox {
-
-  margin: 20px 100px;
-  position: relative;
-
-}
 input[type=checkbox]{
-  left: -9999px;
+  margin: 15px 7px;
+  position: relative;
 
   &+ label {
     position: relative;

@@ -1,52 +1,11 @@
 $checkbox-width:      18px;
 
-input[type=checkbox] {
+.pe-checkbox input {
   left: -9999px;
 
   &+ label {
-    position: relative;
-    display: block;
+    display: inline-block;
     padding: 6px 10px 6px ($checkbox-width + 10);
-    cursor: pointer;
-
-    // Checkbox setup
-    &:before {
-      display: block;
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      margin: (-$checkbox-width/2) 0 0;
-      width: $checkbox-width;
-      height: $checkbox-width;
-      background-repeat: no-repeat;
-      @include background-size(72px);
-    }
-  }
-
-  // Checked
-  &:checked + label {
-    &:before {
-      background-position: -$checkbox-width 0;
-    }
-  }
-
-  // Disabled
-  &:disabled {
-    &+ label  {
-      cursor: not-allowed;
-
-      &:before {
-        background-position: (-$checkbox-width*2) 0;
-      }
-    }
-
-    // Disabled selected
-    &:checked + label {
-      &:before {
-        background-position: (-$checkbox-width*3) 0;
-      }
-    }
   }
 
 }
