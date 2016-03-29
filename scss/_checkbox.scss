@@ -1,11 +1,10 @@
-$checkbox-width:      18px;
-
 .pe-checkbox input {
   left: -9999px;
+  margin: 10px;
 
   &+ label {
     display: inline-block;
-    padding: 6px 10px 6px ($checkbox-width + 10);
+
   }
 
 }
