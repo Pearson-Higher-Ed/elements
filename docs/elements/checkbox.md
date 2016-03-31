@@ -1,6 +1,6 @@
 ---
 layout: docs.html
-title: inputs
+title: Inputs
 section: elements
 ---
 
