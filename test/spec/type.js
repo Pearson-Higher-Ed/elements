@@ -350,4 +350,163 @@ describe('type', () => {
       ]);
     });
   });
+
+  describe('headings', () => {
+
+    beforeEach(() => {
+      fixture.load('type/headings.html');
+    });
+
+    it('should match the design spec where it is an h1 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h1-heading'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '24px'],
+        ['line-height', '30px'],
+        ['font-weight', 'bold'],
+        ['border-bottom-width', '2px'],
+        ['border-bottom-style', 'solid'],
+        ['border-bottom-color', 'rgb(166, 168, 171)']
+      ]);
+    });
+
+    it('should match the design spec where it is an h2 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h2-heading'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '20px'],
+        ['font-weight', 'bold'],
+        ['line-height', '24px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h3 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h3-heading'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '18px'],
+        ['font-weight', 'bold'],
+        ['line-height', '22px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h4 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h4-heading'), [
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '16px'],
+        ['font-weight', 'bold'],
+        ['line-height', '20px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h5 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h5-heading'), [
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '16px'],
+        ['font-style', 'italic'],
+        ['line-height', '20px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h6 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h6-heading'), [
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '14px'],
+        ['font-style', 'italic'],
+        ['line-height', '16px']
+      ]);
+    });
+
+    it('should match the design spec where it follows a header', () => {
+      assertCssPropertiesAreEqual(getElementById('header-following-header'), [
+        ['margin-top', '6px']
+      ]);
+    });
+
+    it('should match the design spec where it follows an h1 header', () => {
+      assertCssPropertiesAreEqual(getElementById('header-following-h1-header'), [
+        ['margin-top', '40px']
+      ]);
+    });
+
+    it('should match the design spec where it follows a content', () => {
+      assertCssPropertiesAreEqual(getElementById('header-following-content'), [
+        ['margin-top', '20px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h1 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h1-heading-with-class'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '24px'],
+        ['line-height', '30px'],
+        ['font-weight', 'bold'],
+        ['border-bottom-width', '2px'],
+        ['border-bottom-style', 'solid'],
+        ['border-bottom-color', 'rgb(166, 168, 171)']
+      ]);
+    });
+
+    it('should match the design spec where it is an h2 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h2-heading-with-class'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '20px'],
+        ['font-weight', 'bold'],
+        ['line-height', '24px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h3 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h3-heading-with-class'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '18px'],
+        ['font-weight', 'bold'],
+        ['line-height', '22px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h4 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h4-heading-with-class'), [
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '16px'],
+        ['font-weight', 'bold'],
+        ['line-height', '20px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h5 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h5-heading-with-class'), [
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '16px'],
+        ['font-style', 'italic'],
+        ['line-height', '20px']
+      ]);
+    });
+
+    it('should match the design spec where it is an h6 heading', () => {
+      assertCssPropertiesAreEqual(getElementById('h6-heading-with-class'), [
+        ['color', 'rgb(86, 86, 86)'],
+        ['font-size', '14px'],
+        ['font-style', 'italic'],
+        ['line-height', '16px']
+      ]);
+    });
+
+    it('should match the design spec where it follows a header', () => {
+      assertCssPropertiesAreEqual(getElementById('header-following-header-with-class'), [
+        ['margin-top', '6px']
+      ]);
+    });
+
+    it('should match the design spec where it follows an h1 header', () => {
+      assertCssPropertiesAreEqual(getElementById('header-following-h1-header-with-class'), [
+        ['margin-top', '40px']
+      ]);
+    });
+
+    it('should match the design spec where it follows a content', () => {
+      assertCssPropertiesAreEqual(getElementById('header-following-content-with-class'), [
+        ['margin-top', '20px']
+      ]);
+    });
+
+  });
+
 });
