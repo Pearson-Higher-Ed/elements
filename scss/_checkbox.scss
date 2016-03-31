@@ -1,0 +1,10 @@
+.pe-checkbox input {
+  left: -9999px;
+  margin: 10px;
+
+  &+ label {
+    display: inline-block;
+
+  }
+
+}
