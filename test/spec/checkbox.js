@@ -9,36 +9,38 @@ describe('checkbox', () => {
   });
 
 
-  describe('pe-checkbox-checked', () => {
-    it('should match the design spec for checked', () => {
-      assertCssPropertiesAreEqual(getElementById('chk-input-checked'), [
-        ['height', '13px']
+  describe('pe-lbl-chk', () => {
+    it('should match the design spec for checkbox', () => {
+      assertCssPropertiesAreEqual(getElementById('chk-lbl-checked'), [
+        ['display', 'inline']
+
       ]);
     });
   });
 
 
-  describe('pe-checkbox-unchecked', () => {
-    it('should match the design spec for unchecked', () => {
-      assertCssPropertiesAreEqual(getElementById('chk-input-unchecked'), [
-        ['height', '13px']
+  describe('pe-lbl-chk', () => {
+    it('should match the design spec for checkbox', () => {
+      assertCssPropertiesAreEqual(getElementById('chk-lbl-unchecked'), [
+        ['display', 'inline']
+
       ]);
     });
   });
 
-  describe('pe-checkbox-disabled', () => {
-    it('should match the design spec for disabled', () => {
-      assertCssPropertiesAreEqual(getElementById('chk-input-disabled'), [
-        ['height', '13px']
+  describe('pe-lbl-chk', () => {
+    it('should match the design spec for checkbox', () => {
+      assertCssPropertiesAreEqual(getElementById('chk-lbl-disabled'), [
+        ['display', 'inline']
       ]);
     });
   });
 
 
-  describe('pe-checkbox-disabled-checked', () => {
-    it('should match the design spec for disabled', () => {
-      assertCssPropertiesAreEqual(getElementById('chk-input-disabled-checked'), [
-        ['height', '23px']
+  describe('pe-lbl-chk', () => {
+    it('should match the design spec for checkbox', () => {
+      assertCssPropertiesAreEqual(getElementById('chk-lbl-disabled-checked'), [
+        ['display', 'inline']
       ]);
     });
   });
