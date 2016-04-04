@@ -5,7 +5,7 @@ section: elements
 ---
 
 Checkboxes are for times when the user needs to make one or more binary choices about a related item. Type attribute of "Checkbox" also represents a state or option that can be toggled.
-### Checked
+### <h2> Checked </h2>
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--checked">
@@ -14,7 +14,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-### UnChecked
+### <h2> UnChecked </h2>
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--unchecked">
@@ -23,7 +23,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-### Disabled
+### <h2> Disabled </h2>
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--disabled">
@@ -33,7 +33,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
 {{/demo}}
 
 
-### Disabled and Checked
+### <h2> Disabled and Checked </h2>
 
 {{#demo}}
  <div class="pe-checkbox pe-checkbox--disabled-checked">
