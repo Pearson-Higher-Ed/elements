@@ -1,0 +1,17 @@
+.pe-input {
+  @include pe-input(
+    $pe-input-default-bg,
+    $pe-input-default-border,
+    $pe-input-default-text,
+    $pe-input-default-disabled-bg,
+    $pe-input-default-disabled-text,
+    $pe-input-default-font-weight
+  );
+
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $pe-input-font-size;
+  height: $pe-input-height;
+  line-height: $pe-input-default-line-height;
+  padding: $pe-input-padding;
+}
