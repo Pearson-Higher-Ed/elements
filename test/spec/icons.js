@@ -174,6 +174,12 @@ describe('icons', () => {
       expect(content).to.equal('\\f017');
     });
 
+    it('should match the design spec where it is exclamation-circle', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--exclamation-circle'), ':before').getPropertyValue('content');
+      content = formatContent(character);
+      expect(content).to.equal('\\f06a');
+    });
+
   });
 
 });
