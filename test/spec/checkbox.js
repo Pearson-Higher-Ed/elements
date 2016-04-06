@@ -9,26 +9,24 @@ describe('checkbox', () => {
   });
 
 
-  describe('pe-lbl-chk', () => {
+  describe('pe-checkbox', () => {
     it('should match the design spec for checkbox', () => {
       assertCssPropertiesAreEqual(getElementById('chk-lbl-checked'), [
         ['display', 'inline']
-
       ]);
     });
   });
 
 
-  describe('pe-lbl-chk', () => {
+  describe('pe-checkbox', () => {
     it('should match the design spec for checkbox', () => {
       assertCssPropertiesAreEqual(getElementById('chk-lbl-unchecked'), [
         ['display', 'inline']
-
       ]);
     });
   });
 
-  describe('pe-lbl-chk', () => {
+  describe('pe-checkbox', () => {
     it('should match the design spec for checkbox', () => {
       assertCssPropertiesAreEqual(getElementById('chk-lbl-disabled'), [
         ['display', 'inline']
@@ -37,7 +35,7 @@ describe('checkbox', () => {
   });
 
 
-  describe('pe-lbl-chk', () => {
+  describe('pe-checkbox', () => {
     it('should match the design spec for checkbox', () => {
       assertCssPropertiesAreEqual(getElementById('chk-lbl-disabled-checked'), [
         ['display', 'inline']
