@@ -86,6 +86,85 @@
   font-weight: $pe-label-bold-font-weight;
 }
 
+//List
+//list function to get all common properties
+@mixin _styled-lists {
+  margin-top: $list-style-margin-top;
+  margin-bottom: $list-style-margin-bottom;
+  padding-left: $list-style-first-padding-left;
+}
+
+
+
+@mixin _styled-lists-heading {
+  margin-top: $list-heding-style-margin-top;
+  padding-left: $list-style-first-padding-left;
+}
+
+@mixin _pe-list-nested {
+  padding-left: $list-style-padding-left;
+}
+
+//  @mixin pe-list-inline {
+//@include pe-list-unstyled;
+//margin-left: 13px;
+
+//  > li {
+//    display: inline-block;
+//   padding-right: 5px;
+// padding-left: 26px;
+//  }
+//}
+
+//List
+//
+@mixin pe-list {
+  color: $pe-list-color;
+  font-size: $pe-list-font-size;
+  line-height: $pe-list-line-height;
+  font-weight: $pe-list-font-weight;
+}
+
+@mixin nested-styled-lists-ordered {
+  list-style-type: $list-style-type-ordered;
+  @include _pe-list-nested;
+}
+
+@mixin nested-styled-lists-unordered {
+  @include _pe-list-nested;
+  list-style-type: circle;
+}
+
+@mixin pe-list-nested-ordered {
+  list-style-type: $list-style-type;
+  @include _pe-list-nested;
+}
+
+@mixin styled-lists-ordered {
+  @include _styled-lists;
+  list-style-type: $list-style-type-number;
+}
+
+@mixin styled-lists-heading-ordered {
+  @include _styled-lists-heading;
+  list-style-type: $list-style-type-number;
+}
+
+@mixin styled-lists-heading-unordered {
+  @include _styled-lists-heading;
+  list-style-type: $list-style-type-disc;
+}
+
+@mixin styled-lists-unordered {
+  @include _styled-lists;
+  list-style-type: $list-style-type-disc;
+}
+
+@mixin pe-list-nested-unordered {
+  @include _pe-list-nested;
+  list-style-type: square;
+}
+
 @mixin pe-list-inline {
   @include pe-list-unstyled;
   margin-left: -5px;
@@ -158,14 +237,23 @@
 }
 
 // Lists
-//
+//styled-lists--ordered
+.pe-list {
+  @include pe-list;
 
-.pe-list--unstyled {
-  @include pe-list-unstyled;
+  &.styled-lists--ordered {
+    @include styled-lists-ordered;
+  }
 }
 
-.pe-list--inline {
-  @include pe-list-inline;
+// Lists
+//nested styled-lists--ordered
+.pe-list {
+  @include pe-list;
+
+  &.nested-styled-lists--ordered {
+    @include nested-styled-lists-ordered;
+  }
 }
 
 // Headings
@@ -193,4 +281,67 @@
 
 .pe-heading-level6 {
   @include pe-heading-level6;
+}
+
+// list with heading - unordered list
+.pe-list {
+  @include pe-list;
+
+  &.styled-lists-heading--unordered {
+    @include styled-lists-heading-unordered;
+  }
+}
+
+//.pe-list--inline {
+//  @include pe-list-inline;
+//}
+
+// Lists
+//nested inside - unstyled-lists--ordered
+.pe-list {
+  @include pe-list;
+
+  &.pe-list-nested--ordered {
+    @include pe-list-nested-ordered;
+  }
+}
+
+//list unordered
+.pe-list {
+  @include pe-list;
+
+  &.styled-lists--unordered {
+    @include styled-lists-unordered;
+  }
+}
+
+.pe-list {
+  @include pe-list;
+
+  &.nested-styled-lists--unordered {
+    @include nested-styled-lists-unordered;
+  }
+}
+
+.pe-list {
+  @include pe-list;
+
+  &.pe-list-nested--unordered {
+    @include pe-list-nested-unordered;
+  }
+}
+
+.pe-list--unstyled {
+  @include pe-list-unstyled;
+}
+
+
+
+// list with heading - ordered list
+.pe-list {
+  @include pe-list;
+
+  &.styled-lists-heading--ordered {
+    @include styled-lists-heading-ordered;
+  }
 }

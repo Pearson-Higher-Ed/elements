@@ -284,27 +284,51 @@ describe('type', () => {
       fixture.load('type/lists.html');
     });
 
+    it('should match the design spec where it is pe lists', () => {
+      assertCssPropertiesAreEqual(getElementById('pe-lists'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '16px'],
+        ['line-height', '22px'],
+        ['font-weight', 'normal']
+      ]);
+    });
+
     it('should match the design spec where it is unstyled lists', () => {
-      assertCssPropertiesAreEqual(getElementById('unstyled-lists'), [
-        ['padding-left', '0px'],
-        ['list-style-type', 'none']
+      assertCssPropertiesAreEqual(getElementById('styled-lists'), [
+        ['padding-left', '26px'],
+        ['list-style-type', 'decimal']
       ]);
     });
 
     it('should match the design spec where it is nested unstyled lists', () => {
-      assertCssPropertiesAreEqual(getElementById('nested-unstyled-lists'), [
-        ['padding-left', '0px'],
-        ['list-style-type', 'none']
+      assertCssPropertiesAreEqual(getElementById('nested-styled-lists'), [
+        ['padding-left', '20px'],
+        ['list-style-type', 'lower-alpha']
       ]);
     });
 
-    it('should match the design spec where it is Inline lists', () => {
-      assertCssPropertiesAreEqual(getElementById('inline-lists'), [
-        ['padding-left', '0px'],
-        ['list-style-type', 'none'],
-        ['margin-left', '-5px']
+    // List unordered tests
+    it('should match the design spec where it is unstyled lists, unordered', () => {
+      assertCssPropertiesAreEqual(getElementById('styled-lists-unordered'), [
+        ['padding-left', '26px'],
+        ['list-style-type', 'disc']
       ]);
     });
+
+    it('should match the design spec where it is nested unstyled lists, unordered', () => {
+      assertCssPropertiesAreEqual(getElementById('nested-styled-lists-unordered'), [
+        ['padding-left', '20px'],
+        ['list-style-type', 'circle']
+      ]);
+    });
+
+  //  it('should match the design spec where it is Inline lists', () => {
+  //    assertCssPropertiesAreEqual(getElementById('inline-lists'), [
+  //      ['padding-left', '0px'],
+  //      ['list-style-type', 'none'],
+  //      ['margin-left', '-5px']
+  //    ]);
+  //  });
     // one more test to add for inline list pe-list--inline > li
   });
 
