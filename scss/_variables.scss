@@ -92,13 +92,7 @@ $pe-text-small-line-height: 1rem !default;
 $pe-text-small-font-weight: normal !default;
 $pe-text-small-font-size: inherit !default;
 
-// Code
-//
 
-$pe-text-code-color: pe-color(smoke-gray) !default;
-
-$pe-text-kbd-bg: pe-color(gutenberg-black) !default;
-$pe-text-kbd-color: pe-color(white) !default;
 
 // Body copy
 //
@@ -280,3 +274,16 @@ $pe-dropdown-menu-divider-bg-inverse: pe-color(gray-wash);
 
 $pe-header-z-index: 1000 !default;
 $pe-dropdown-z-index: 1001 !default;
+
+
+// code
+//
+
+$pe-code-line-height: 1.25rem;
+$pe-code-font-size: 0.875rem !default;
+$pe-code-color: pe-color(gray-wash) !default;
+$pe-code-bg: pe-color(full-moon) !default;
+
+$pe-code-inline-padding: 4px !default;
+$pe-code-inline-color: pe-color(gray-wash) !default;
+$pe-code-inline-bg: pe-color(brightly-lit) !default;
