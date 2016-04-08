@@ -284,28 +284,38 @@ describe('type', () => {
       fixture.load('type/lists.html');
     });
 
-    it('should match the design spec where it is unstyled lists', () => {
-      assertCssPropertiesAreEqual(getElementById('unstyled-lists'), [
-        ['padding-left', '0px'],
-        ['list-style-type', 'none']
+    it('should match the design spec where it is pe lists', () => {
+      assertCssPropertiesAreEqual(getElementById('pe-lists'), [
+        ['color', 'rgb(35, 31, 32)'],
+        ['font-size', '16px'],
+        ['line-height', '22px'],
+        ['font-weight', 'normal']
       ]);
     });
 
-    it('should match the design spec where it is nested unstyled lists', () => {
-      assertCssPropertiesAreEqual(getElementById('nested-unstyled-lists'), [
-        ['padding-left', '0px'],
-        ['list-style-type', 'none']
+    it('should match the design spec where it is styled lists ordered', () => {
+      assertCssPropertiesAreEqual(getElementById('styled-lists-ordered'), [
+        ['padding-left', '26px'],
+        ['list-style-type', 'decimal']
       ]);
     });
 
-    it('should match the design spec where it is Inline lists', () => {
-      assertCssPropertiesAreEqual(getElementById('inline-lists'), [
-        ['padding-left', '0px'],
-        ['list-style-type', 'none'],
-        ['margin-left', '-5px']
+    it('should match the design spec where it is styled lists unordered', () => {
+      assertCssPropertiesAreEqual(getElementById('pe-styled-unordered'), [
+        ['padding-left', '26px'],
+        ['list-style-type', 'disc']
       ]);
     });
-    // one more test to add for inline list pe-list--inline > li
+
+  //  it('should match the design spec where it is Inline lists', () => {
+  //    assertCssPropertiesAreEqual(getElementById('inline-lists'), [
+  //      ['padding-left', '0px'],
+  //      ['list-style-type', 'none'],
+  //      ['margin-left', '-5px']
+  //    ]);
+  //  });
+  // one more test to add for inline list pe-list--inline > li
+  // one more test to add for inline list pe-list--inline > li
   });
 
   // Code
