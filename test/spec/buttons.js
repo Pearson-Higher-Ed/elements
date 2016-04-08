@@ -544,7 +544,7 @@ describe('buttons', () => {
         ['box-shadow', 'none']
       ]);
     });
-    
+
     it('should match the design spec when fake-button input is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input-disabled'), [
         ['height', '28px'],

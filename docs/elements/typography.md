@@ -181,7 +181,7 @@ The `<q>` element should be used for inline quotations.
 Use the `<code>` element for inline code examples.
 
 {{#demo}}
-The <code>&lt;section&gt;</code> HTML element represents a section of a document.
+The <code class="pe-code-inline">&lt;section&gt;</code> HTML element represents a section of a document.
 {{/demo}}
 
 ### Block
@@ -189,13 +189,11 @@ The <code>&lt;section&gt;</code> HTML element represents a section of a document
 A multi-line code block should be wrapped with `<pre></pre>` elements.
 
 {{#demo}}
-<pre><code>
+<pre class="pe-code"><code>
 // This is a code example
-
 function greet(greeting) {
   console.log(greeting);
 }
-
 greet('hello, world');
 </code></pre>
 {{/demo}}
@@ -206,8 +204,8 @@ Use the `<kbd>` element to represent user input.
 
 {{#demo}}
 <p>
-  To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br/>
-  To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
+  To switch directories, type <kbd class="pe-kbd">cd</kbd> followed by the name of the directory.<br/>
+  To edit settings, press <kbd class="pe-kbd">ctrl</kbd> + <kbd class="pe-kbd">,</kbd>
 </p>
 {{/demo}}
 

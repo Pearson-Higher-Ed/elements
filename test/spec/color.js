@@ -28,10 +28,8 @@ describe('color', () => {
       const hairlineGrayRGB = hexToRgb(json_fixture['hairline-gray']);
       const grayWashRGB = hexToRgb(json_fixture['gray-wash']);
       const blackRGB = hexToRgb(json_fixture['black']);
-      const gutenbergBlackRGB = hexToRgb(json_fixture['gutenberg-black']);
       const fullMoonRGB = hexToRgb(json_fixture['full-moon']);
       const asphaltRGB = hexToRgb(json_fixture['asphalt']);
-      const smokegrayRGB = hexToRgb(json_fixture['smoke-gray']);
 
       assertCssPropertiesAreEqual(getElementById('pitch'), [
         ['color', pitchRGB]
@@ -77,18 +75,8 @@ describe('color', () => {
         ['color', blackRGB]
       ]);
 
-      assertCssPropertiesAreEqual(getElementById('gutenbergBlack'), [
-        ['background-color', gutenbergBlackRGB]
-      ]);
-
       assertCssPropertiesAreEqual(getElementById('fullMoon'), [
         ['background-color', fullMoonRGB]
-      ]);
-
-      // 'asphalt' defined in SASS but not currently used and not tested
-
-      assertCssPropertiesAreEqual(getElementById('smokegray'), [
-        ['color', smokegrayRGB]
       ]);
 
     });
