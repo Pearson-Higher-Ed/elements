@@ -276,6 +276,7 @@ $pe-header-z-index: 1000 !default;
 $pe-dropdown-z-index: 1001 !default;
 
 
+
 // code
 //
 
@@ -287,3 +288,37 @@ $pe-code-bg: pe-color(full-moon) !default;
 $pe-code-inline-padding: 4px !default;
 $pe-code-inline-color: pe-color(gray-wash) !default;
 $pe-code-inline-bg: pe-color(brightly-lit) !default;
+
+
+
+
+// inputs
+//
+
+$pe-input-border-radius: 3px !default;
+$pe-input-font-size: $pe-label-large-font-size !default;
+$pe-input-height: 36px !default;
+$pe-input-padding: 0 14px !default;
+
+$pe-input-default-bg: pe-color(white) !default;
+$pe-input-default-border: solid 1px pe-color(hairline-gray) !default;
+$pe-input-default-text: pe-color(pitch) !default;
+$pe-input-default-disabled-bg: pe-color(off-white) !default;
+$pe-input-default-disabled-text: pe-color(boring) !default;
+$pe-input-default-line-height: $pe-label-large-line-height !default;
+
+$pe-input-small-bg: $pe-input-default-bg !default;
+$pe-input-small-border: $pe-input-default-border !default;
+$pe-input-small-text: $pe-input-default-text !default;
+$pe-input-small-disabled-bg: $pe-input-default-disabled-bg !default;
+$pe-input-small-disabled-text: $pe-input-default-disabled-text !default;
+$pe-input-small-height: 28px !default;
+$pe-input-small-padding: 0 10px !default;
+$pe-input-small-font-size: $pe-label-font-size !default;
+$pe-input-small-line-height: $pe-label-line-height !default;
+$pe-input-readonly-bg: pe-color(off-white) !default;
+$pe-input-error-border: solid 1px #D0021B !default;
+$pe-input-error-box-shadow: 0px 0px 4px #D0021B !default;
+$pe-input-error-text-color: pe-color(boring) !default;
+$pe-input-placeholder-color: #6d6d6d !default;
+$pe-input-placeholder-text: italic !default;
