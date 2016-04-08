@@ -32,7 +32,6 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-
 ## Disabled and Checked 
 
 {{#demo}}
@@ -42,8 +41,17 @@ Checkboxes are for times when the user needs to make one or more binary choices 
  </div>
 {{/demo}}
 
+## Small checkbox
 
-Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled.
+{{#demo}}
+  <div class="pe-checkbox pe-checkbox--small-disabled">
+    <input type="checkbox" name="Small checkbox" id="chk5" value="" disabled>
+    <label for="chk5">Small checkbox</label>
+  </div>
+{{/demo}}
+
+ Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled.
+
 ## Checked 
 
 {{#demo}}
