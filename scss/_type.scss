@@ -113,6 +113,15 @@
   font-family: pe-font-family(default-monospace);
 }
 
+@mixin pe-list {
+  color: $pe-list-color;
+  font-size: $pe-list-font-size;
+  font-weight: $pe-list-font-weight;
+  line-height: $pe-list-line-height;
+  margin-bottom: $list-style-margin-bottom;
+  padding-left: $list-style-first-padding-left;
+}
+
 // Body copy (as a class, from reset)
 //
 
@@ -176,13 +185,95 @@
 // Lists
 //
 
+// pe-styled-lists--ordered
+.pe-list {
+  @include pe-list;
+  margin-top: $list-style-margin-top;
+
+  &.pe-styled-lists--ordered {
+    list-style-type: $list-style-type-number;
+  }
+
+  &.pe-styled-lists--ordered ol {
+    list-style-type: $list-style-type-ordered;
+    padding-left: $list-padding-left;
+  }
+
+  &.pe-styled-lists--ordered ol ol {
+    list-style-type: $list-style-type-roman;
+  }
+}
+
+// pe-styled-lists--unordered
+.pe-list {
+  @include pe-list;
+  margin-top: $list-style-margin-top;
+
+  &.pe-styled-lists--unordered {
+    list-style-type: $list-style-type-disc;
+  }
+
+  &.pe-styled-lists--unordered ul {
+    list-style-type: $list-style-type-circle;
+    padding-left: $list-padding-left;
+  }
+
+  &.pe-styled-lists--unordered ul ul {
+    list-style-type: $list-style-type-square;
+  }
+}
+
+// list with heading - unordered list
+.pe-list {
+  @include pe-list;
+  margin-top: $list-heding-style-margin-top;
+
+  &.pe-styled-lists-heading--unordered {
+    list-style-type: $list-style-type-disc;
+  }
+
+  &.pe-styled-lists-heading--unordered ul {
+    list-style-type: $list-style-type-circle;
+    padding-left: $list-padding-left;
+  }
+
+  &.pe-styled-lists-heading--unordered ul ul {
+    list-style-type: $list-style-type-square;
+  }
+}
+
+// pe-styled-lists-heading--ordered
+.pe-list {
+  @include pe-list;
+  margin-top: $list-heding-style-margin-top;
+
+  &.pe-styled-lists-heading--ordered {
+    list-style-type: $list-style-type-number;
+  }
+
+  &.pe-styled-lists-heading--ordered ol {
+    list-style-type: $list-style-type-ordered;
+    padding-left: $list-padding-left;
+  }
+
+  &.pe-styled-lists-heading--ordered ol ol {
+    list-style-type: $list-style-type-roman;
+  }
+}
 
 .pe-list--unstyled {
   @include pe-list-unstyled;
 }
 
-.pe-list--inline {
-  @include pe-list-inline;
+@mixin pe-list-inline {
+  @include pe-list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 // Headings
