@@ -276,6 +276,7 @@ $pe-header-z-index: 1000 !default;
 $pe-dropdown-z-index: 1001 !default;
 
 
+
 // code
 //
 
@@ -289,6 +290,7 @@ $pe-code-inline-color: pe-color(gray-wash) !default;
 $pe-code-inline-bg: pe-color(brightly-lit) !default;
 
 
+<<<<<<< HEAD
 // lists
 //
 $pe-list-color: #231f20 !default;
@@ -309,6 +311,8 @@ $list-style-type-circle: circle;
 $list-style-type-square: square;
 $list-heding-style-margin-top: 0;
 $list-padding-left: 20px;
+=======
+
 
 // inputs
 //
@@ -340,4 +344,4 @@ $pe-input-error-box-shadow: 0px 0px 4px #D0021B !default;
 $pe-input-error-text-color: pe-color(boring) !default;
 $pe-input-placeholder-color: #6d6d6d !default;
 $pe-input-placeholder-text: italic !default;
-
+>>>>>>> e102c7c... Disabled, Readonly, Error.
