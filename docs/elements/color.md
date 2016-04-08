@@ -3,7 +3,7 @@ layout: docs.html
 title: Color
 section: elements
 ---
-### Entire Palette
+### <h2> Entire Palette </h2>
 
 The background color of each swatch is the hex code that will be used.
 
