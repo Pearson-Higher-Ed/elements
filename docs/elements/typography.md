@@ -235,16 +235,18 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.</li>
+  <li>
     <ol>
       <li>child item one</li>
       <li>child item two</li>
-   </li>
-      <ol>
-        <li>grand child item one</li>
-        <li>grand child item two</li>
-      </ol>
-   </li>
+      <li>
+        <ol>
+          <li>grand child item one</li>
+          <li>grand child item two</li>
+        </ol>
+      </li>
     </ol>
+  </li>
 </ol>
 <p>
 And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
@@ -265,16 +267,18 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.</li>
+  <li>
     <ul>
       <li>child item one</li>
       <li>child item two</li>
-   </li>
-      <ul>
-        <li>grand child item one</li>
-        <li>grand child item two</li>
-      </ul>
-   </li>
+      <li>
+        <ul>
+          <li>grand child item one</li>
+          <li>grand child item two</li>
+        </ul>
+      </li>
     </ul>
+  </li>
 </ul>
 <p>
 And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
@@ -288,21 +292,23 @@ When nested, `pe-styled-lists-heading--ordered` should be added to each `<ol>` e
 {{#demo}}
 <h2>
 Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
-<h2>
+</h2>
 <ol class="pe-list pe-list pe-styled-lists-heading--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.</li>
+  <li>
     <ol>
       <li>child item one</li>
       <li>child item two</li>
-   </li>
-      <ol>
-        <li>grand child item one</li>
-        <li>grand child item two</li>
-      </ol>
-   </li>
+      <li>
+        <ol>
+          <li>grand child item one</li>
+          <li>grand child item two</li>
+        </ol>
+      </li>
     </ol>
+  </li>
 </ol>
 {{/demo}}
 
@@ -313,20 +319,22 @@ When nested, `pe-styled-lists-heading--unordered` should be added to each `<ul>`
 {{#demo}}
 <h2>
 Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
-<h2>
+</h2>
 <ul class="pe-list pe-list pe-styled-lists-heading--unordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.</li>
+  <li>
     <ul>
       <li>child item one</li>
       <li>child item two</li>
-   </li>
-      <ul>
-        <li>grand child item one</li>
-        <li>grand child item two</li>
-      </ul>
-   </li>
+      <li>
+        <ul>
+          <li>grand child item one</li>
+          <li>grand child item two</li>
+        </ul>
+      </li>
     </ul>
+  </li>
 </ul>
 {{/demo}}
