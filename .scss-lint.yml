@@ -1,0 +1,6 @@
+linters:
+
+  # Allow omitting units for 0 values
+  ZeroUnit:
+    enabled: true
+    
