@@ -287,3 +287,25 @@ $pe-code-bg: pe-color(full-moon) !default;
 $pe-code-inline-padding: 4px !default;
 $pe-code-inline-color: pe-color(gray-wash) !default;
 $pe-code-inline-bg: pe-color(brightly-lit) !default;
+
+
+// lists
+//
+$pe-list-color: #231f20 !default;
+$pe-list-font-size: 1rem !default;
+$pe-list-line-height: 1.375rem !default;
+$pe-list-font-weight: normal !default;
+
+$list-style-type: none !default;
+$list-style-padding-left: 20px;
+$list-style-first-padding-left: 26px;
+$list-style-margin-bottom: 12px;
+$list-style-margin-top: 12px;
+$list-style-type-roman: lower-roman;
+$list-style-type-ordered: lower-alpha;
+$list-style-type-number: decimal;
+$list-style-type-disc: disc;
+$list-style-type-circle: circle;
+$list-style-type-square: square;
+$list-heding-style-margin-top: 0;
+$list-padding-left: 20px;
