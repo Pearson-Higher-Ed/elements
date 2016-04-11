@@ -1,8 +1,26 @@
 @mixin pe-copy {
-  color: $pe-copy-color;
+  @include pe-body-copy;
   font-size: $pe-copy-font-size;
-  font-family: pe-font-family(default-sans-serif);
   line-height: $pe-copy-line-height;
+}
+
+@mixin pe-copy-small {
+  @include pe-body-copy;
+  font-size: $pe-copy-small-font-size;
+  line-height: $pe-copy-small-line-height;
+}
+
+@mixin pe-paragraph {
+  margin-bottom: $pe-paragraph-margin-bottom;
+}
+
+@mixin pe-last-paragraph {
+  margin-bottom: $pe-paragraph-last-margin-bottom;
+}
+
+@mixin pe-body-copy {
+  color: $pe-copy-color;
+  font-family: pe-font-family(default-sans-serif);
 }
 
 @mixin pe-lead {
