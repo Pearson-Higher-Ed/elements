@@ -273,12 +273,10 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
 <ol class="pe-list pe-list pe-styled-lists--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
-  <li>Item three.</li>
-  <li>
+  <li>Item three.
     <ol>
       <li>child item one</li>
-      <li>child item two</li>
-      <li>
+      <li>child item two
         <ol>
           <li>grand child item one</li>
           <li>grand child item two</li>
@@ -305,12 +303,10 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
 <ul class="pe-list pe-list pe-styled-lists--unordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
-  <li>Item three.</li>
-  <li>
+  <li>Item three.
     <ul>
       <li>child item one</li>
-      <li>child item two</li>
-      <li>
+      <li>child item two
         <ul>
           <li>grand child item one</li>
           <li>grand child item two</li>
@@ -335,12 +331,10 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
 <ol class="pe-list pe-list pe-styled-lists-heading--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
-  <li>Item three.</li>
-  <li>
+  <li>Item three.
     <ol>
       <li>child item one</li>
-      <li>child item two</li>
-      <li>
+      <li>child item two
         <ol>
           <li>grand child item one</li>
           <li>grand child item two</li>
@@ -362,12 +356,10 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
 <ul class="pe-list pe-list pe-styled-lists-heading--unordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
-  <li>Item three.</li>
-  <li>
+  <li>Item three.
     <ul>
       <li>child item one</li>
-      <li>child item two</li>
-      <li>
+      <li>child item two
         <ul>
           <li>grand child item one</li>
           <li>grand child item two</li>
