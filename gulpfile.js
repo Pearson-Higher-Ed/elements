@@ -3,7 +3,7 @@
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-const sassLint = require('gulp-sass-lint');
+const scsslint = require('gulp-scss-lint');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const nano = require('gulp-cssnano');
@@ -47,7 +47,7 @@ gulp.task('clean', () => {
   ]);
 });
 
-gulp.task('lint', () => {
+gulp.task('scss-lint', function() {
   return gulp.src([
     './scss/**/*.scss',
     '!./scss/_normalize.scss',
@@ -55,9 +55,8 @@ gulp.task('lint', () => {
     './docs/scss/**/*.scss',
     '!./docs/scss/_syntax.scss'
   ])
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
+    .pipe(scsslint({'config': '.scss-lint.yml'}))
+    .pipe(scsslint.failReporter('E'));
 });
 
 gulp.task('scss-to-json', function() {
