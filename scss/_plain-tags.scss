@@ -1,14 +1,7 @@
-/* This component is experimental and not available for production use. If you need a component with this functionality, please contact us in the Pearson Design Accelerator hipchat room */
-
 // Typography (taken from _reset.scss)
 //
 
 // Remove top margins from headings
-// Credit: Bootstrap
-//
-// Remove top margin from `<h1> - <h6>` to avoid margin collapsing.
-// Set a base bottom margin.
-// Set heading following content a top margin of 20px
 h1,
 h2,
 h3,
@@ -19,7 +12,7 @@ h6 {
   margin-bottom: 0;
 }
 
-// Set heading following an l1 heading a top margin of 40px
+// Set heading following an level 1 heading a top margin of 40px
 h1 {
   @include pe-heading-level1;
 }
@@ -44,15 +37,21 @@ h6 {
   @include pe-heading-level6;
 }
 
-// Reset margins on paragraphs
-// Credit: Bootstrap
+// small tags within headings
 //
-// Set the top margin.
-// Reset the bottom margin to use `rem` units instead of `em`.
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  small {
+    font-size: $pe-text-heading-small-font-size;
+    color: $pe-text-heading-small-color;
+  }
 }
+
 
 aside {
   margin-bottom: $pe-aside-margin;
@@ -79,6 +78,7 @@ aside {
   }
 }
 
+// to be replaced
 table {
   width: 100%;
   max-width: 100%;
@@ -120,28 +120,14 @@ a {
   }
 }
 
-// Headings
-//
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  small {
-    font-size: $pe-text-heading-small-font-size;
-    color: $pe-text-heading-small-color;
-  }
-}
-
 // Body copy
 //
+body {
+  @include pe-copy;
+}
 
 p {
-  color: $pe-copy-color;
-  font-size: $pe-copy-font-size;
-  line-height: $pe-copy-line-height;
+  @include pe-paragraph;
 }
 
 // Inline text
