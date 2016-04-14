@@ -4,8 +4,11 @@ title: Inputs
 section: elements
 ---
 
+## Checkboxes
+
 Checkboxes are for times when the user needs to make one or more binary choices about a related item. Type attribute of "Checkbox" also represents a state or option that can be toggled.
-## Checked 
+
+### Checked 
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--checked">
@@ -14,7 +17,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-## UnChecked 
+### UnChecked 
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--unchecked">
@@ -23,7 +26,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-## Disabled 
+### Disabled 
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--disabled">
@@ -32,7 +35,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-## Disabled and Checked 
+### Disabled and Checked 
 
 {{#demo}}
  <div class="pe-checkbox pe-checkbox--disabled-checked">
@@ -41,18 +44,21 @@ Checkboxes are for times when the user needs to make one or more binary choices 
  </div>
 {{/demo}}
 
-## Small checkbox
+### Small checkbox
 
 {{#demo}}
-  <div class="pe-checkbox pe-checkbox--small-disabled">
-    <input type="checkbox" name="Small checkbox" id="chk5" value="" disabled>
+  <div class="pe-checkbox pe-checkbox--small">
+    <input type="checkbox" name="Small checkbox" id="chk5" value="">
     <label for="chk5">Small checkbox</label>
   </div>
 {{/demo}}
 
- Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled.
 
-## Checked 
+## Radio buttons 
+
+Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled.
+
+### Checked 
 
 {{#demo}}
   <div class="pe-radio pe-radio--checked">
@@ -61,7 +67,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-## UnChecked 
+### UnChecked 
 
 {{#demo}}
   <div class="pe-radio pe-radio--unchecked">
@@ -70,7 +76,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-## Disabled 
+### Disabled 
 
 {{#demo}}
   <div class="pe-radio pe-radio--disabled">
@@ -80,7 +86,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
 {{/demo}}
 
 
-## Disabled and Checked 
+### Disabled and Checked 
 
 {{#demo}}
  <div class="pe-radio pe-radio--disabled-checked">
@@ -89,20 +95,11 @@ Checkboxes are for times when the user needs to make one or more binary choices 
  </div>
 {{/demo}}
 
-## Focus
+### Small radio button
 
 {{#demo}}
-  <div class="pe-radio pe-radio--focus">
-    <input type="radio" name="focus" id="rad5" value="" autofocus>
-    <label for="rad5">Focus</label>
-  </div>
-{{/demo}}
-
-## Small radio button
-
-{{#demo}}
-  <div class="pe-radio pe-radio--small-disabled">
-    <input type="radio" name="Small Disabled" id="rad6" value="" disabled>
+  <div class="pe-radio pe-radio--small">
+    <input type="radio" name="Small" id="rad6" value="">
     <label for="rad6">Small radio button</label>
   </div>
 {{/demo}}
