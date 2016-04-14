@@ -4,6 +4,45 @@ title: Typography
 section: elements
 permalink: /elements/typography/
 ---
+
+## Basic Body
+
+{{#demo}}
+<body class="pe-copy">
+    Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+    id dolor id nibh ultricies vehicula.
+</body>
+<p class="pe-paragraph">
+    Nullam quis risus eget urna mollis ornare vel eu leo.
+</p>
+<p class="pe-paragraph">
+    Nullam quis risus eget urna mollis ornare vel eu leo.
+</p>
+<p class="pe-last-paragraph">
+    Nullam quis risus eget urna mollis ornare vel eu leo.
+</p>
+{{/demo}}
+
+## Small Body
+
+{{#demo}}
+<body class="pe-copy--small">
+    Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+    id dolor id nibh ultricies vehicula.
+</body>
+<p class="pe-paragraph">
+    Nullam quis risus eget urna mollis ornare vel eu leo.
+</p>
+<p class="pe-paragraph">
+    Nullam quis risus eget urna mollis ornare vel eu leo.
+</p>
+<p class="pe-last-paragraph">
+    Nullam quis risus eget urna mollis ornare vel eu leo.
+</p>
+{{/demo}}
+
 ## Headings
 
 {{#demo}}

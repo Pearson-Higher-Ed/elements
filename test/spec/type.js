@@ -512,4 +512,19 @@ describe('type', () => {
 
   });*/
 
+  // body
+  describe('body', () => {
+
+    beforeEach(() => {
+      fixture.load('type/body.html');
+    });
+
+    it('should match the design spec where it is basic body', () => {
+      assertCssPropertiesAreEqual(getElementById('pe-copy'), [
+        ['font-size', '16px'],
+        ['line-height', '22px'],
+        ['color', 'rgb(35, 31, 32)']
+      ]);
+    });
+  });
 });
