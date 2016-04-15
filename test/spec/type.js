@@ -1,7 +1,7 @@
 /* global fixture hexToRgb assertCssPropertiesAreEqual getElementById expect */
 describe('type', () => {
 
-  afterEach(() => {
+  /* afterEach(() => {
     fixture.cleanup();
   });
 
@@ -510,6 +510,6 @@ describe('type', () => {
       ]);
     });
 
-  });
+  });*/
 
 });

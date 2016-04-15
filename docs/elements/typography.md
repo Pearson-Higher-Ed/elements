@@ -17,6 +17,10 @@ permalink: /elements/typography/
 
 ## Paragraphs
 
+Paragraphs should naturally have the default body copy styles, but if they inherit other styles, the `pe-paragraph` class references them as well. The final paragraph of a block of content should have no bottom margin, which can be set using the `pe-paragraph--last` class.
+
+This style also represents the basic body copy styles for a document.
+
 {{#demo}}
 <p>
   Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
@@ -31,10 +35,26 @@ permalink: /elements/typography/
   odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
 </p>
 
-<p>
+<p class="pe-paragraph--last">
   Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id
   elit non mi porta gravida at eget metus. Duis mollis, est non commodo
   luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+</p>
+{{/demo}}
+
+### Small copy style
+
+{{#demo}}
+<p class="pe-copy--small">
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+  id dolor id nibh ultricies vehicula.
+</p>
+
+<p class="pe-copy--small pe-paragraph--last">
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+  id dolor id nibh ultricies vehicula.
 </p>
 {{/demo}}
 
@@ -281,14 +301,12 @@ And back to the regular copy. Hopefully you are fully prepared for your exams no
 </p>
 {{/demo}}
 
-### Nested ordered lists with heading
+### Nested ordered lists following a heading
 
-When nested, `pe-styled-lists-heading--ordered` should be added to each `<ol>` element for lists with heading.
+When nested, `pe-styled-lists-heading--ordered` should be added to each `<ol>` element for lists directly under a heading.
 
 {{#demo}}
-<h2>
-Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
-</h2>
+<h2>Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?</h2>
 <ol class="pe-list pe-list pe-styled-lists-heading--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
@@ -306,14 +324,12 @@ Basic body. As you read, quiz yourself to review concepts and prep for exams, wi
 </ol>
 {{/demo}}
 
-### Nested unordered lists with heading
+### Nested unordered lists following a heading
 
-When nested, `pe-styled-lists-heading--unordered` should be added to each `<ul>` element for lists with heading.
+When nested, `pe-styled-lists-heading--unordered` should be added to each `<ul>` element for lists directly under a heading.
 
 {{#demo}}
-<h2>
-Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
-</h2>
+<h2>Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?</h2>
 <ul class="pe-list pe-list pe-styled-lists-heading--unordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
