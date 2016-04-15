@@ -1,3 +1,51 @@
+// NOTE: this needs a better home!
+// display label-input pairs in a row
+
+.pe-inlineblock {
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1em 1em;
+  }
+
+  div:first-child {
+    margin-left: 0;
+  }
+}
+
+// input type=text etc
+
+.pe-input {
+  @include pe-input(
+    $pe-input-default-bg,
+    $pe-input-default-border,
+    $pe-input-default-text,
+    $pe-input-default-disabled-bg,
+    $pe-input-default-disabled-text
+  );
+
+  margin-bottom: 1em;//until Parker changes
+  
+  & label {
+    @include pe-label;
+
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  & input {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: $pe-input-font-size;
+    height: $pe-input-height;
+    line-height: $pe-input-default-line-height;
+    padding: $pe-input-padding;
+  }
+}
+
+// checks and radios
+
 .pe-checkbox,
 .pe-radio {
   & input,
