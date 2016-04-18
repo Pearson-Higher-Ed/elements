@@ -1,5 +1,6 @@
 .pe-checkbox,
-.pe-radio {
+.pe-radio,
+.pe-textarea {
   & input,
   & label {
     display: inline-block;
@@ -13,17 +14,30 @@
   & label {
     @include pe-label-large;
   }
+
+  & textarea {
+    position: relative;
+    background-color: #d1d1d1;
+  }
+
 }
 
 .pe-checkbox--small,
-.pe-radio--small {
+.pe-radio--small,
+.pe-textarea--small {
 
   & label {
     @include pe-label;
   }
 }
 
+
 .pe-textarea {
-  position: relative;
-  background-color: transparent;
+  & input,
+  & label {
+    vertical-align: top;
+  }
 }
+
+
+
