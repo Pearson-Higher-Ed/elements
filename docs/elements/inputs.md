@@ -103,3 +103,19 @@ Radio buttons are for when the user must choose a single item out of several opt
     <label for="rad6">Small radio button</label>
   </div>
 {{/demo}}
+
+## Textarea
+
+Textarea form elements are to be used for multiple lines of text. Vertical and horizontal resizing options may be enabled where appropriate. Textarea states are styled similarly to regular text inputs.
+
+### Large Size text area
+
+{{#demo}}
+  <textarea name="pe-textarea" rows="4" cols="50">Enter text here...</textarea>
+{{/demo}}
+
+### Small Size text area
+
+{{#demo}}
+  <textarea name="pe-textarea">Enter text here...</textarea>
+{{/demo}}
