@@ -31,7 +31,7 @@ linters:
     enabled: true
 
   ColorVariable:
-    enabled: false
+    enabled: true
 
   Comment:
     enabled: true
@@ -47,10 +47,10 @@ linters:
     enabled: false
 
   DuplicateProperty:
-    enabled: false
+    enabled: true
 
   ElsePlacement:
-    enabled: false
+    enabled: true
     style: same_line # or 'new_line'
 
   EmptyLineBetweenBlocks:
@@ -79,7 +79,7 @@ linters:
     enabled: true
 
   IdSelector:
-    enabled: false
+    enabled: true
 
   ImportantRule:
     enabled: true
@@ -91,7 +91,7 @@ linters:
 
   Indentation:
     enabled: true
-    allow_non_nested_indentation: true
+    allow_non_nested_indentation: false
     character: space # or 'tab'
     width: 2
 
@@ -101,7 +101,7 @@ linters:
 
   MergeableSelector:
     enabled: true
-    force_nesting: false
+    force_nesting: true
 
   NameFormat:
     enabled: true
@@ -126,7 +126,7 @@ linters:
     max_properties: 10
 
   PropertySortOrder:
-    enabled: false
+    enabled: true
     ignore_unspecified: false
     min_properties: 2
     separate_groups: false
@@ -150,11 +150,11 @@ linters:
     properties: {}
 
   PseudoElement:
-    enabled: false
+    enabled: true
 
   QualifyingElement:
     enabled: true
-    allow_element_with_attribute: true
+    allow_element_with_attribute: false
     allow_element_with_class: false
     allow_element_with_id: false
 
@@ -163,7 +163,7 @@ linters:
     max_depth: 3
 
   SelectorFormat:
-    enabled: false
+    enabled: true
     convention: hyphenated_lowercase # or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
 
   Shorthand:
@@ -178,7 +178,7 @@ linters:
     enabled: true
 
   SpaceAfterComma:
-    enabled: false
+    enabled: true
     style: one_space # or 'no_space', or 'at_least_one_space'
 
   SpaceAfterPropertyColon:
@@ -189,7 +189,7 @@ linters:
     enabled: true
 
   SpaceAfterVariableColon:
-    enabled: true
+    enabled: false
     style: one_space # or 'no_space', 'at_least_one_space' or 'one_space_or_newline'
 
   SpaceAfterVariableName:
@@ -202,14 +202,14 @@ linters:
   SpaceBeforeBrace:
     enabled: true
     style: space # or 'new_line'
-    allow_single_line_padding: true
+    allow_single_line_padding: false
 
   SpaceBetweenParens:
     enabled: true
     spaces: 0
 
   StringQuotes:
-    enabled: false
+    enabled: true
     style: single_quotes # or double_quotes
 
   TrailingSemicolon:
@@ -219,7 +219,7 @@ linters:
     enabled: true
 
   TrailingZero:
-    enabled: true
+    enabled: false
 
   TransitionAll:
     enabled: false
@@ -241,7 +241,7 @@ linters:
     properties: []
 
   VendorPrefix:
-    enabled: false
+    enabled: true
     identifier_list: base
     additional_identifiers: []
     excluded_identifiers: []
