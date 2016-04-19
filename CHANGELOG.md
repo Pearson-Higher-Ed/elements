@@ -1,3 +1,20 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.2.0...v0.3.0) (2016-04-19)
+
+
+### Bug Fixes
+
+* **ci:** Remove optional, low-level Mac-specific fsevents library from shrinkwrap. Build  ([5abc611](https://github.com/Pearson-Higher-Ed/elements/commit/5abc611))
+* **scss:** lint issue; (typography) invalid HTML fixed ([674723a](https://github.com/Pearson-Higher-Ed/elements/commit/674723a))
+
+### Features
+
+* Added elements sdk for radio buttons ([d83cc61](https://github.com/Pearson-Higher-Ed/elements/commit/d83cc61))
+* comment-typo-tests ([543925b](https://github.com/Pearson-Higher-Ed/elements/commit/543925b))
+* **typography:** manually added Gayan's PR #58 plus changes; ready inputs.md for next merge ([4ce242b](https://github.com/Pearson-Higher-Ed/elements/commit/4ce242b))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.1.2...v0.2.0) (2016-03-08)
 
