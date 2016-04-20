@@ -25,7 +25,7 @@
   );
 
   margin-bottom: 1em;//until Parker changes
-  
+
   & label {
     @include pe-label;
 
@@ -44,7 +44,7 @@
   }
 }
 
-// checks and radios
+// checks, radios and textarea
 
 .pe-checkbox,
 .pe-radio,
@@ -81,8 +81,8 @@
 
 
 .pe-textarea {
-  & input,
   & label {
+    display: block;
     vertical-align: top;
   }
 }
