@@ -1,15 +1,15 @@
 /* global fixture hexToRgb assertCssPropertiesAreEqual getElementById */
 describe('buttons', () => {
 
-  afterEach(() => {
+  /*afterEach(() => {
     fixture.cleanup();
   });
 
   beforeEach(() => {
     fixture.load('buttons/buttons.html');
-  });
+  });*/
 
-  describe('default', () => {
+  /*describe('default', () => {
 
     it('should match the design spec for default button', () => {
       assertCssPropertiesAreEqual(getElementById('btn'), [
@@ -47,7 +47,7 @@ describe('buttons', () => {
       ]);
     });
 
-/*
+
     it('should match the design spec when default button is focused', () => {
       assertCssPropertiesAreEqual(getElementById('btn').focus(), [
         ['height', '28px'],
@@ -82,10 +82,10 @@ describe('buttons', () => {
 
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
-    });*/
-  });
+    });
+  });*/
 
-  describe('primary', () => {
+  /*describe('primary', () => {
 
     it('should match the design spec', () => {
       assertCssPropertiesAreEqual(getElementById('btn-primary'), [
@@ -158,10 +158,10 @@ describe('buttons', () => {
 
         ['box-shadow', 'rgb(0, 0, 0)']
       ]);
-    });*/
-  });
+    });
+  });*/
 
-  describe('link', () => {
+  /*describe('link', () => {
 
     it('should match the design spec when styled as a link', () => {
       assertCssPropertiesAreEqual(getElementById('btn-link'), [
@@ -188,10 +188,10 @@ describe('buttons', () => {
         ['border-width', ''],
         ['box-shadow', 'none']
       ]);
-    });*/
-  });
+    });
+  });*/
 
-  describe('fake-div', () => {
+/*  describe('fake-div', () => {
 
     it('should match the design spec when a div is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-div'), [
@@ -264,10 +264,10 @@ describe('buttons', () => {
 
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
-    });*/
-  });
+    });
+  });*/
 
-  describe('fake-anchor', () => {
+  /*describe('fake-anchor', () => {
 
     it('should match the design spec when an anchor is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-anchor'), [
@@ -342,10 +342,10 @@ describe('buttons', () => {
 
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
-    });*/
-  });
+    });
+  });*/
 
-  describe('fake-input', () => {
+/*  describe('fake-input', () => {
 
     it('should match the design spec when an input is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input'), [
@@ -419,10 +419,10 @@ describe('buttons', () => {
 
         ['box-shadow', 'rgba(0, 0, 0, 0.3)']
       ]);
-    });*/
-  });
+    });
+  });*/
 
-  describe('sizes', () => {
+  /*describe('sizes', () => {
 
     it('should match the design spec when the button is small', () => {
       assertCssPropertiesAreEqual(getElementById('btn-small'), [
@@ -561,5 +561,5 @@ describe('buttons', () => {
         ['box-shadow', 'none']
       ]);
     });
-  });
+  });*/
 });
