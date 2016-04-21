@@ -196,7 +196,7 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 {{#demo}}
   <div class="pe-textarea pe-textarea--large">
     <label for="ta1">Large size text area</label>
-    <textarea name="largetext" rows="4" cols="50">Enter text here...</textarea>
+    <textarea name="largetext" rows="4" cols="50" id="ta1">Enter text here...</textarea>
    </div>
 {{/demo}}
 
@@ -205,7 +205,7 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 {{#demo}}
   <div class="pe-textarea pe-textarea--small">
     <label for="ta2">Small size text area</label>
-    <textarea name="smalltext">Enter text here...</textarea>
+    <textarea name="smalltext" id="ta2">Enter text here...</textarea>
    </div>
 {{/demo}}
 
@@ -214,6 +214,6 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 {{#demo}}
   <div class="pe-textarea pe-textarea--disabled">
     <label for="ta3">Disabled text area</label>
-    <textarea name="largetext" rows="4" cols="50" disabled>Disabled text area...</textarea>
+    <textarea name="largetext" rows="4" cols="50" disabled id="ta3">Disabled text area...</textarea>
    </div>
 {{/demo}}
