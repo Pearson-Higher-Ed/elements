@@ -14,7 +14,8 @@
   $active-shadow: none
 ) {
 
-  & input {
+  & input,
+  & textarea {
     color: $color;
     background: $bg;
     border: $border;
@@ -28,7 +29,9 @@
   }
 
   & input:disabled,
-  &.pe-input--disabled input {
+  &.pe-input--disabled input,
+  & textarea:disabled,
+  &.pe-textarea--disabled textarea {
     color: $disabled-color;
     background: $disabled-bg;
 
@@ -38,7 +41,8 @@
 
   }
 
-  &.pe-input--readonly input {
+  &.pe-input--readonly input,
+  &.pe-textarea--readonly textarea {
     background: $disabled-bg;
   }
 
@@ -49,11 +53,12 @@
   }
 
   & input:invalid,
-  &.pe-input--error input {
+  &.pe-input--error input,
+  &.pe-textarea--error textarea {
     border: $pe-input-error-border;
     box-shadow: $pe-input-error-box-shadow;
   }
-  
+
   // to be placed on error messages
 
   & .pe-error-text {

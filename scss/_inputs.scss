@@ -44,11 +44,40 @@
   }
 }
 
-// checks, radios and textarea
+//text-area
+
+.pe-textarea {
+  @include pe-input(
+    $pe-input-default-bg,
+    $pe-input-default-border,
+    $pe-input-default-text,
+    $pe-input-default-disabled-bg,
+    $pe-input-default-disabled-text
+  );
+
+  margin-bottom: 1em;//until Parker changes
+
+  & label {
+    @include pe-label;
+
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  & textarea {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $pe-input-font-size;
+    height: auto;
+    line-height: $pe-input-default-line-height;
+    padding: $pe-input-padding;
+  }
+}
+
+// checks and radios
 
 .pe-checkbox,
-.pe-radio,
-.pe-textarea {
+.pe-radio {
   & input,
   & label {
     display: inline-block;
@@ -62,30 +91,16 @@
   & label {
     @include pe-label-large;
   }
-
-  & textarea {
-    position: relative;
-    background-color: #d1d1d1;
-  }
-
 }
 
 .pe-checkbox--small,
 .pe-radio--small,
 .pe-textarea--small {
-
   & label {
     @include pe-label;
   }
 }
 
-
-.pe-textarea {
-  & label {
-    display: block;
-    vertical-align: top;
-  }
-}
 
 
 

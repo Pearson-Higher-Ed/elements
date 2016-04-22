@@ -195,25 +195,49 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 
 {{#demo}}
   <div class="pe-textarea pe-textarea--large">
-    <label for="ta1">Large size text area</label>
-    <textarea name="largetext" rows="4" cols="50" id="ta1">Enter text here...</textarea>
-   </div>
+    <label for="ta1">Text area label</label>
+    <textarea name="largetext" rows="4" cols="50" id="ta1">Multiple lines of text entry are supported with the textarea element</textarea>
+  </div>
 {{/demo}}
 
 ### Small Size text area
 
 {{#demo}}
+<div class="pe-inlineblock"> 
   <div class="pe-textarea pe-textarea--small">
-    <label for="ta2">Small size text area</label>
-    <textarea name="smalltext" id="ta2">Enter text here...</textarea>
-   </div>
+    <label for="ta2">Text area label</label>
+    <textarea name="smalltext" id="ta2" placeholder="Basic text area field" value="">Text area</textarea>
+  </div>
+  <div class="pe-textarea pe-textarea--smallplaceholder">
+    <label for="ta3">Text area placeholder</label>
+    <textarea name="smalltext" id="ta3" placeholder="Basic text area field" value=""></textarea>
+  </div>
+</div>
 {{/demo}}
 
 ### Disabled text area
 
 {{#demo}}
   <div class="pe-textarea pe-textarea--disabled">
-    <label for="ta3">Disabled text area</label>
-    <textarea name="largetext" rows="4" cols="50" disabled id="ta3">Disabled text area...</textarea>
-   </div>
+    <label for="ta4">Text area label</label>
+    <textarea name="largetext" rows="4" cols="50" disabled id="ta4">Textarea element...Disabled</textarea>
+  </div>
+{{/demo}}
+
+### Readonly text area
+
+{{#demo}}
+  <div class="pe-textarea pe-textarea--readonly">
+    <label for="ta5">Text area label</label>
+    <textarea name="readonlytext" rows="4" cols="50" id="ta5" value="Readonly" readonly>Read only</textarea>
+  </div>
+{{/demo}}
+
+### Error text area
+
+{{#demo}}
+  <div class="pe-textarea pe-textarea--error">
+    <label for="ta5">Text area label</label>
+    <textarea name="errortext" rows="4" cols="50" id="ta5" value="error" error>Error text area</textarea>
+  </div>
 {{/demo}}
