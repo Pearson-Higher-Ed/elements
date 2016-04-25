@@ -12,6 +12,7 @@ $pe-icons-name: 'pearson-fa' !default;
 
 $pe-images-path: '/images/';
 
+
 // Colors
 //
 
@@ -59,6 +60,19 @@ $pe-responsive-breakpoints: (
 
 $pe-font-size-base: 16px !default;
 $pe-line-height-base: 1.5 !default;
+
+// Functions
+
+
+@function pxToRem($px) {
+  @return #{$px/$pe-font-size-base}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: pxToRem($size);
+}
+
 
 $pe-font-families: (
   default-sans-serif: ('Helvetica Neue', Helvetica, Arial, sans-serif),
@@ -156,6 +170,7 @@ $pe-label-font-weight: normal !default;
 $pe-label-secondary-color: pe-color(gray-no-1) !default;
 
 $pe-label-small-font-size: 0.813rem !default;
+$pe-label-medium-font-size: pxToRem(16px) !default;
 $pe-label-small-line-height: 0.9375rem !default;
 
 $pe-label-large-font-size: 1rem !default;
@@ -249,6 +264,10 @@ $pe-btn-link-disabled-text: pe-color(sky-blue) !default;
 $pe-btn-small-height: 24px !default;
 $pe-btn-small-font-size: $pe-label-small-font-size !default;
 $pe-btn-small-padding: 0 9px !default;
+
+$pe-btn-medium-height: 36px !default;
+$pe-btn-medium-font-size: $pe-label-medium-font-size !default;
+$pe-btn-medium-padding: 0 12px !default;
 
 $pe-btn-large-height: 42px !default;
 $pe-btn-large-font-size: $pe-label-large-font-size !default;

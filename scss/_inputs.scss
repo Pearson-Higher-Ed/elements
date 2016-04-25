@@ -42,6 +42,20 @@
     line-height: $pe-input-default-line-height;
     padding: $pe-input-padding;
   }
+
+  &-group {
+    .pe-input {
+      position: relative;
+      float: left;
+      z-index: 2;
+
+      input {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-right: 0px;
+      }
+    }
+  }
 }
 
 //text-area

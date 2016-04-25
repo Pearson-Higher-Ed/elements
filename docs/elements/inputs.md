@@ -4,12 +4,27 @@ title: Inputs
 section: elements
 ---
 
+## Input with button
+A combination of pe-input and pe-button
+
+{{#demo}}
+<div class="pe-input-group"> 
+  <div class="pe-input">
+    <input type="text" id="i1" value="Basic text input field">
+  </div>
+  <span class="pe-btn-group">
+    <button class="pe-btn pe-btn--medium"><i class="pe-icon--search"></i></button>
+  </span>
+</div>
+{{/demo}}
+
+
+
+## Single-line input fields
 
 <aside>
 Label-input pairs are wrapped in divs in order to have a single unit that can be styled and moved around. The `pe-inlineblock` class on a container will make these divs line up horizontally.
 </aside>
-
-## Single-line input fields
 
 Text input form elements are to be used for single line text inputs.
 
