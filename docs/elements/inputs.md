@@ -14,7 +14,7 @@ Label-input pairs are wrapped in divs in order to have a single unit that can be
 Text input form elements are to be used for single line text inputs.
 
 {{#demo}}
-<div class="pe-inlineblock"> 
+<div class="pe-inlineblock">
   <div class="pe-input">
     <label for="i1">Text label</label>
     <input type="text" id="i1" value="Basic text input field">
@@ -75,7 +75,7 @@ This state is a form input that is unavailable for interaction. The `pe-input--d
 This field is used when a field has been filled out incorrectly. This state should always be paired with an explanatory message, which either must be inside the label element *or* if a separate element is used, it must have an id and the input must have a matching `aria-describedby` attribute.
 
 {{#demo}}
-<div class="pe-input pe-input--error">
+<div class="pe-input pe-input--small pe-input--error">
   <label for="i8">Text label <span class="pe-error-text">something went wrong!</span></label>
   <input type="text" id="i8" value="Error">
 </div>
@@ -91,7 +91,7 @@ This field is used when a field has been filled out incorrectly. This state shou
 
 Checkboxes are for times when the user needs to make one or more binary choices about a related item. Type attribute of "Checkbox" also represents a state or option that can be toggled.
 
-### Checked 
+### Checked
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--checked">
@@ -100,7 +100,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-### UnChecked 
+### UnChecked
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--unchecked">
@@ -109,7 +109,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-### Disabled 
+### Disabled
 
 {{#demo}}
   <div class="pe-checkbox pe-checkbox--disabled">
@@ -118,7 +118,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
   </div>
 {{/demo}}
 
-### Disabled and Checked 
+### Disabled and Checked
 
 {{#demo}}
  <div class="pe-checkbox pe-checkbox--disabled-checked">
@@ -137,11 +137,11 @@ Checkboxes are for times when the user needs to make one or more binary choices 
 {{/demo}}
 
 
-## Radio buttons 
+## Radio buttons
 
 Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled.
 
-### Checked 
+### Checked
 
 {{#demo}}
   <div class="pe-radio pe-radio--checked">
@@ -150,7 +150,7 @@ Radio buttons are for when the user must choose a single item out of several opt
   </div>
 {{/demo}}
 
-### UnChecked 
+### UnChecked
 
 {{#demo}}
   <div class="pe-radio pe-radio--unchecked">
@@ -159,7 +159,7 @@ Radio buttons are for when the user must choose a single item out of several opt
   </div>
 {{/demo}}
 
-### Disabled 
+### Disabled
 
 {{#demo}}
   <div class="pe-radio pe-radio--disabled">
@@ -169,7 +169,7 @@ Radio buttons are for when the user must choose a single item out of several opt
 {{/demo}}
 
 
-### Disabled and Checked 
+### Disabled and Checked
 
 {{#demo}}
  <div class="pe-radio pe-radio--disabled-checked">
