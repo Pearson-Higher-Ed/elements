@@ -208,7 +208,7 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
     <label for="ta2">Text area label</label>
     <textarea name="smalltext" id="ta2" placeholder="Basic text area field" value="">Text area</textarea>
   </div>
-  <div class="pe-textarea pe-textarea--smallplaceholder">
+  <div class="pe-textarea pe-textarea">
     <label for="ta3">Text area placeholder</label>
     <textarea name="smalltext" id="ta3" placeholder="Basic text area field" value=""></textarea>
   </div>

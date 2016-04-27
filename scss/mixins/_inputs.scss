@@ -29,9 +29,7 @@
   }
 
   & input:disabled,
-  &.pe-input--disabled input,
-  & textarea:disabled,
-  &.pe-textarea--disabled textarea {
+  &.pe-input--disabled input {
     color: $disabled-color;
     background: $disabled-bg;
 
@@ -40,6 +38,17 @@
     }
 
   }
+
+   & textarea:disabled,
+    &.pe-textarea--disabled textarea {
+      color: $disabled-color;
+      background: $disabled-bg;
+
+      @include pe-placeholder {
+        color: $disabled-color;
+      }
+
+    }
 
   &.pe-input--readonly input,
   &.pe-textarea--readonly textarea {
