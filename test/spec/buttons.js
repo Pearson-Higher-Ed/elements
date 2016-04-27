@@ -1,7 +1,7 @@
 /* global fixture hexToRgb assertCssPropertiesAreEqual getElementById */
 describe('buttons', () => {
 
-  /*afterEach(() => {
+  /* afterEach(() => {
     fixture.cleanup();
   });
 
@@ -9,7 +9,7 @@ describe('buttons', () => {
     fixture.load('buttons/buttons.html');
   });*/
 
-  /*describe('default', () => {
+  /* describe('default', () => {
 
     it('should match the design spec for default button', () => {
       assertCssPropertiesAreEqual(getElementById('btn'), [
@@ -85,7 +85,7 @@ describe('buttons', () => {
     });
   });*/
 
-  /*describe('primary', () => {
+  /* describe('primary', () => {
 
     it('should match the design spec', () => {
       assertCssPropertiesAreEqual(getElementById('btn-primary'), [
@@ -161,7 +161,7 @@ describe('buttons', () => {
     });
   });*/
 
-  /*describe('link', () => {
+  /* describe('link', () => {
 
     it('should match the design spec when styled as a link', () => {
       assertCssPropertiesAreEqual(getElementById('btn-link'), [
@@ -267,7 +267,7 @@ describe('buttons', () => {
     });
   });*/
 
-  /*describe('fake-anchor', () => {
+  /* describe('fake-anchor', () => {
 
     it('should match the design spec when an anchor is styled as a button', () => {
       assertCssPropertiesAreEqual(getElementById('btn-anchor'), [
@@ -422,7 +422,7 @@ describe('buttons', () => {
     });
   });*/
 
-  /*describe('sizes', () => {
+  /* describe('sizes', () => {
 
     it('should match the design spec when the button is small', () => {
       assertCssPropertiesAreEqual(getElementById('btn-small'), [
