@@ -8,7 +8,7 @@ section: elements
 A combination of pe-input and pe-button.
 
 {{#demo}}
-<div class="pe-input-group"> 
+<div class="pe-input-group">
   <div class="pe-input">
     <label for="i1">Label text</label>
     <input type="text" id="i1" value="Basic text input field">
@@ -17,7 +17,7 @@ A combination of pe-input and pe-button.
 </div>
 
 <p>Example as search: </p>
-<div class="pe-input-group"> 
+<div class="pe-input-group">
   <div class="pe-input">
     <label for="i2">Search our site</label>
     <input type="text" id="i2" placeholder="course number, course name, instructor">
@@ -229,7 +229,7 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 ### Small Size textarea, and small textarea with placeholder
 
 {{#demo}}
-<div class="pe-inlineblock"> 
+<div class="pe-inlineblock">
   <div class="pe-textarea pe-textarea--small">
     <label for="ta2">Textarea label</label>
     <textarea name="smalltext" id="ta2">Text area</textarea>
@@ -267,4 +267,70 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
     <textarea name="errortext" rows="4" cols="50" id="ta5" aria-describedby="ta6-error">Bad text here</textarea>
     <p id="ta6-error" class="pe-error-text">Something went wrong!</p>
   </div>
+{{/demo}}
+
+## Select Box
+
+The select input allows a user to choose one of many predetermined options.
+
+{{#demo}}
+<div class="pe-inlineblock">
+<div class="pe-select">
+ <label for="se1">Text label</label>
+<select id="se1">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+
+<div class="pe-select pe-select--small">
+<label for="se2">Text label</label>
+<select id="se2">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+</div>
+{{/demo}}
+
+### Select Readonly
+
+{{#demo}}
+<div class="pe-select pe-select--readonly">
+<label for="se3">Text label</label>
+<select id="se3">
+  <option disabled="disabled">Java</option>
+  <option selected="selected">CSS</option>
+  <option disabled="disabled">HTML</option>
+</select>
+</div>
+{{/demo}}
+
+### Select Disabled
+
+{{#demo}}
+<div class="pe-select pe-select--disabled">
+<label for="se4">Text label</label>
+<select disabled id="se4">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+{{/demo}}
+
+### Select Error
+
+{{#demo}}
+<div class="pe-select pe-select--error">
+<label for="se5">Text label</label>
+<select id="se5">
+  <option value="error">Error</option>
+</select>
+</div>
 {{/demo}}
