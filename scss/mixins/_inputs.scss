@@ -39,16 +39,15 @@
 
   }
 
-   & textarea:disabled,
-    &.pe-textarea--disabled textarea {
+  & textarea:disabled,
+  &.pe-textarea--disabled textarea {
+    color: $disabled-color;
+    background: $disabled-bg;
+
+    @include pe-placeholder {
       color: $disabled-color;
-      background: $disabled-bg;
-
-      @include pe-placeholder {
-        color: $disabled-color;
-      }
-
     }
+  }
 
   &.pe-input--readonly input,
   &.pe-textarea--readonly textarea {
@@ -63,6 +62,7 @@
 
   & input:invalid,
   &.pe-input--error input,
+  & textarea:invalid,
   &.pe-textarea--error textarea {
     border: $pe-input-error-border;
     box-shadow: $pe-input-error-box-shadow;
@@ -81,4 +81,8 @@
     padding: $pe-input-small-padding;
   }
 
+  &.pe-textarea--small textarea {
+    font-size: $pe-input-small-font-size;
+    padding: $pe-textarea-small-padding;
+  }
 }
