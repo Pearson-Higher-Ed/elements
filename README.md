@@ -43,6 +43,19 @@ The unit tests are run by Karma configured to use webpack to transpile and bundl
  
     npm test
      
+### Fork repo
+
+Forked repo will not trigger the 'ux-test-platform' tests. In the logs, you would see this error: {"error":"Travis encountered an error, sorry :("} which may cause the elements build to fail.
+
+	To handle this, follow below steps to have successful build runs:
+
+ 	cd elements
+ 	travis login --org *Provide your github login and password
+ 	travis token --org *Copy the access token
+ 	travis ecrypt AUTH_TOKEN=access_token *Copy this token and replace it with env: global: secure: <<access_token>> in .travis.yml file
+ 	
+ 	Push this change and ux-test-platform build would be triggered succesfully
+
 ## Acknowledgements
 
 This project was inspired by other popular front-end frameworks published under the MIT license:
