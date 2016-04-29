@@ -29,17 +29,17 @@ Text input form elements are to be used for single line text inputs.
 
 ### Placeholder
 
-Placeholders can be used to give additional information about the format of data.
+Placeholders can be used to give additional information about the format of data. They do *not* replace labels!
 
 {{#demo}}
 <div class="pe-input">
-  <label for="i3">Text label</label>
-  <input type="text" id="i3" placeholder="Basic text input field" value="">
+  <label for="i3">Your name</label>
+  <input type="text" id="i3" placeholder="First and last name" value="">
 </div>
 
 <div class="pe-input pe-input--small">
-  <label for="i4">Text label</label>
-  <input type="text" id="i4" placeholder="Small text input field" value="">
+  <label for="i4">Your name</label>
+  <input type="text" id="i4" placeholder="First and last name" value="">
 </div>
 {{/demo}}
 
@@ -49,8 +49,8 @@ To prevent the user from interacting with the field. The `pe-input--readonly` cl
 
 {{#demo}}
 <div class="pe-input pe-input--readonly">
-  <label for="i5">Text label</label>
-  <input type="text" id="i5" value="Readonly" readonly>
+  <label for="i5">Your text</label>
+  <input type="text" id="i5" value="Readonly text here" readonly>
 </div>
 {{/demo}}
 
@@ -77,7 +77,7 @@ This field is used when a field has been filled out incorrectly. This state shou
 {{#demo}}
 <div class="pe-input pe-input--small pe-input--error">
   <label for="i8">Text label <span class="pe-error-text">something went wrong!</span></label>
-  <input type="text" id="i8" value="Error">
+  <input type="text" id="i8" value="Error (in small input)">
 </div>
 
 <div class="pe-input pe-input--error">
@@ -194,23 +194,23 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 ### Large Size text area
 
 {{#demo}}
-  <div class="pe-textarea pe-textarea--large">
-    <label for="ta1">Text area label</label>
+  <div class="pe-textarea">
+    <label for="ta1">Textarea label</label>
     <textarea name="largetext" rows="4" cols="50" id="ta1">Multiple lines of text entry are supported with the textarea element</textarea>
   </div>
 {{/demo}}
 
-### Small Size text area
+### Small Size textarea, and small textarea with placeholder
 
 {{#demo}}
 <div class="pe-inlineblock"> 
   <div class="pe-textarea pe-textarea--small">
-    <label for="ta2">Text area label</label>
-    <textarea name="smalltext" id="ta2" placeholder="Basic text area field" value="">Text area</textarea>
+    <label for="ta2">Textarea label</label>
+    <textarea name="smalltext" id="ta2">Text area</textarea>
   </div>
-  <div class="pe-textarea pe-textarea">
-    <label for="ta3">Text area placeholder</label>
-    <textarea name="smalltext" id="ta3" placeholder="Basic text area field" value=""></textarea>
+  <div class="pe-textarea pe-textarea--small">
+    <label for="ta3">Textarea with placeholder</label>
+    <textarea name="smalltext" id="ta3" placeholder="Textarea placeholder"></textarea>
   </div>
 </div>
 {{/demo}}
@@ -219,8 +219,8 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 
 {{#demo}}
   <div class="pe-textarea pe-textarea--disabled">
-    <label for="ta4">Text area label</label>
-    <textarea name="largetext" rows="4" cols="50" disabled id="ta4">Textarea element...Disabled</textarea>
+    <label for="ta4">Textarea label</label>
+    <textarea name="largetext" rows="4" cols="50" id="ta4" disabled>Textarea element...Disabled</textarea>
   </div>
 {{/demo}}
 
@@ -228,8 +228,8 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 
 {{#demo}}
   <div class="pe-textarea pe-textarea--readonly">
-    <label for="ta5">Text area label</label>
-    <textarea name="readonlytext" rows="4" cols="50" id="ta5" value="Readonly" readonly>Read only</textarea>
+    <label for="ta5">Terms and Conditions</label>
+    <textarea name="readonlytext" rows="4" cols="50" id="ta5" readonly>Read only text here...</textarea>
   </div>
 {{/demo}}
 
@@ -237,7 +237,8 @@ Textarea form elements are to be used for multiple lines of text. Vertical and h
 
 {{#demo}}
   <div class="pe-textarea pe-textarea--error">
-    <label for="ta5">Text area label</label>
-    <textarea name="errortext" rows="4" cols="50" id="ta5" value="error" error>Error text area</textarea>
+    <label for="ta5">Textarea label</label>
+    <textarea name="errortext" rows="4" cols="50" id="ta5" aria-describedby="ta6-error">Bad text here</textarea>
+    <p id="ta6-error" class="pe-error-text">Something went wrong!</p>
   </div>
 {{/demo}}
