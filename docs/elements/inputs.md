@@ -186,3 +186,58 @@ Radio buttons are for when the user must choose a single item out of several opt
     <label for="rad6">Small radio button</label>
   </div>
 {{/demo}}
+
+## Textarea
+
+Textarea form elements are to be used for multiple lines of text. Vertical and horizontal resizing options may be enabled where appropriate. Textarea states are styled similarly to regular text inputs.
+
+### Large Size text area
+
+{{#demo}}
+  <div class="pe-textarea pe-textarea--large">
+    <label for="ta1">Text area label</label>
+    <textarea name="largetext" rows="4" cols="50" id="ta1">Multiple lines of text entry are supported with the textarea element</textarea>
+  </div>
+{{/demo}}
+
+### Small Size text area
+
+{{#demo}}
+<div class="pe-inlineblock"> 
+  <div class="pe-textarea pe-textarea--small">
+    <label for="ta2">Text area label</label>
+    <textarea name="smalltext" id="ta2" placeholder="Basic text area field" value="">Text area</textarea>
+  </div>
+  <div class="pe-textarea pe-textarea">
+    <label for="ta3">Text area placeholder</label>
+    <textarea name="smalltext" id="ta3" placeholder="Basic text area field" value=""></textarea>
+  </div>
+</div>
+{{/demo}}
+
+### Disabled text area
+
+{{#demo}}
+  <div class="pe-textarea pe-textarea--disabled">
+    <label for="ta4">Text area label</label>
+    <textarea name="largetext" rows="4" cols="50" disabled id="ta4">Textarea element...Disabled</textarea>
+  </div>
+{{/demo}}
+
+### Readonly text area
+
+{{#demo}}
+  <div class="pe-textarea pe-textarea--readonly">
+    <label for="ta5">Text area label</label>
+    <textarea name="readonlytext" rows="4" cols="50" id="ta5" value="Readonly" readonly>Read only</textarea>
+  </div>
+{{/demo}}
+
+### Error text area
+
+{{#demo}}
+  <div class="pe-textarea pe-textarea--error">
+    <label for="ta5">Text area label</label>
+    <textarea name="errortext" rows="4" cols="50" id="ta5" value="error" error>Error text area</textarea>
+  </div>
+{{/demo}}

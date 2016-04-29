@@ -25,7 +25,7 @@
   );
 
   margin-bottom: 1em;//until Parker changes
-  
+
   & label {
     @include pe-label;
 
@@ -41,6 +41,36 @@
     height: $pe-input-height;
     line-height: $pe-input-default-line-height;
     padding: $pe-input-padding;
+  }
+}
+
+//text-area
+
+.pe-textarea {
+  @include pe-input(
+    $pe-input-default-bg,
+    $pe-input-default-border,
+    $pe-input-default-text,
+    $pe-input-default-disabled-bg,
+    $pe-input-default-disabled-text
+  );
+
+  margin-bottom: 1em;//until Parker changes
+
+  & label {
+    @include pe-label;
+
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  & textarea {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $pe-input-font-size;
+    height: auto;
+    line-height: $pe-input-default-line-height;
+    padding: $pe-textarea-padding;
   }
 }
 
@@ -64,9 +94,13 @@
 }
 
 .pe-checkbox--small,
-.pe-radio--small {
-
+.pe-radio--small,
+.pe-textarea--small {
   & label {
     @include pe-label;
   }
 }
+
+
+
+
