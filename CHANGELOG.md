@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.3.1...v0.4.0) (2016-04-29)
+
+
+### Features
+
+* reliable way to fetch ux-test-platform master build status ([7f4f4f2](https://github.com/Pearson-Higher-Ed/elements/commit/7f4f4f2))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/Pearson-Higher-Ed/elements/compare/v0.3.0...v0.3.1) (2016-04-20)
 
