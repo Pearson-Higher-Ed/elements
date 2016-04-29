@@ -251,7 +251,7 @@ When nested, `pe-styled-lists--ordered` should be added to each `<ol>` element.
 <p>
 Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
 </p>
-<ol class="pe-list pe-list pe-styled-lists--ordered">
+<ol class="pe-list pe-styled-lists--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.
@@ -281,7 +281,7 @@ When nested, `pe-styled-lists--unordered` should be added to each `<ul>` element
 And back to the regular copy. Hopefully you are fully prepared for your exams now. At least you have a to do list all set up for you.
 Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
 </p>
-<ul class="pe-list pe-list pe-styled-lists--unordered">
+<ul class="pe-list pe-styled-lists--unordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.
@@ -307,7 +307,7 @@ When nested, `pe-styled-lists-heading--ordered` should be added to each `<ol>` e
 
 {{#demo}}
 <h2>Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?</h2>
-<ol class="pe-list pe-list pe-styled-lists-heading--ordered">
+<ol class="pe-list pe-styled-lists-heading--ordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.
@@ -330,7 +330,7 @@ When nested, `pe-styled-lists-heading--unordered` should be added to each `<ul>`
 
 {{#demo}}
 <h2>Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?</h2>
-<ul class="pe-list pe-list pe-styled-lists-heading--unordered">
+<ul class="pe-list pe-styled-lists-heading--unordered">
   <li>List item one. How are you doing today? Quite fine, thank you.</li>
   <li>Item two.</li>
   <li>Item three.
