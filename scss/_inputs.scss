@@ -44,16 +44,24 @@
   }
 
   &-group {
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+      height: 0;
+    }
     .pe-input {
-      position: relative;
-      float: left;
-      z-index: 2;
 
       input {
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        border-right: 0px;
+        float: left;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
       }
+    }
+    .pe-btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
   }
 }
