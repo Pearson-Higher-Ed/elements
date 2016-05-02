@@ -20,15 +20,6 @@
   line-height: $pe-btn-height;
   padding: $pe-btn-padding;
 
-  &-group {
-    position: relative;
-
-    .pe-btn {
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-      z-index: 1;
-    }
-  }
 }
 
 .pe-btn--primary {

@@ -10,11 +10,13 @@ A combination of pe-input and pe-button
 {{#demo}}
 <div class="pe-input-group"> 
   <div class="pe-input">
+    <label for="i1">Label text</label>
     <input type="text" id="i1" value="Basic text input field">
+    <button class="pe-btn pe-btn--medium">
+      <i class="pe-icon--search" aria-hidden="true"></i>
+      <span class="pe-sr-only">Search</span>
+    </button>
   </div>
-  <span class="pe-btn-group">
-    <button class="pe-btn pe-btn--medium"><i class="pe-icon--search"></i></button>
-  </span>
 </div>
 {{/demo}}
 
