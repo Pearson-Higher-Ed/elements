@@ -19,6 +19,16 @@
   height: $pe-btn-height;
   line-height: $pe-btn-height;
   padding: $pe-btn-padding;
+
+  &-group {
+    position: relative;
+
+    .pe-btn {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      z-index: 1;
+    }
+  }
 }
 
 .pe-btn--primary {
@@ -70,6 +80,13 @@
   line-height: $pe-btn-small-height;
   font-size: $pe-btn-small-font-size;
   padding: $pe-btn-small-padding;
+}
+
+.pe-btn--medium {
+  height: $pe-btn-medium-height;
+  line-height: $pe-btn-medium-height;
+  font-size: $pe-btn-medium-font-size;
+  padding: $pe-btn-medium-padding;
 }
 
 .pe-btn--large {

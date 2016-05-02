@@ -58,6 +58,7 @@ Buttons can be made smaller or larger.
 
 {{#demo}}
 <button class="pe-btn pe-btn--small">Small</button>
+<button class="pe-btn pe-btn--medium">Medium</button>
 <button class="pe-btn pe-btn--large">Large</button>
 <button class="pe-btn pe-btn--link pe-btn--small">Small link</button>
 <button class="pe-btn pe-btn--link pe-btn--large">Large link</button>
