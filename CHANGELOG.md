@@ -1,3 +1,14 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.4.1...v0.5.0) (2016-05-03)
+
+
+### Features
+
+* **buttons:** add medium button styles ([9c04a0e](https://github.com/Pearson-Higher-Ed/elements/commit/9c04a0e))
+* **icons:** add bell-o icon for Aegis ([d674766](https://github.com/Pearson-Higher-Ed/elements/commit/d674766))
+
+
+
 <a name="0.4.1"></a>
 ## [0.4.1](https://github.com/Pearson-Higher-Ed/elements/compare/v0.4.0...v0.4.1) (2016-04-29)
 
