@@ -5,13 +5,22 @@ section: elements
 ---
 
 ## Input with button
-A combination of pe-input and pe-button
+A combination of pe-input and pe-button.
 
 {{#demo}}
 <div class="pe-input-group"> 
   <div class="pe-input">
     <label for="i1">Label text</label>
     <input type="text" id="i1" value="Basic text input field">
+    <button class="pe-btn pe-btn--medium">Do Stuff!</button>
+  </div>
+</div>
+
+<p>Example as search: </p>
+<div class="pe-input-group"> 
+  <div class="pe-input">
+    <label for="i2">Search our site</label>
+    <input type="text" id="i2" placeholder="course number, course name, instructor">
     <button class="pe-btn pe-btn--medium">
       <i class="pe-icon--search" aria-hidden="true"></i>
       <span class="pe-sr-only">Search</span>
