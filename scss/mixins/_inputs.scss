@@ -19,6 +19,7 @@
     color: $color;
     background: $bg;
     border: $border;
+    -webkit-appearance: none;
     border-radius: $pe-input-border-radius;
 
     @include pe-placeholder {
