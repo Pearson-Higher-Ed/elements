@@ -186,6 +186,9 @@ $pe-label-inverse-font-weight: 300 !default;
 //
 
 $pe-input-border-radius: 3px !default;
+$pe-input-focus-color: pe-color(hyperdrive) !default;
+$pe-input-focus-border: 1px solid pe-color(hyperdrive) !default;
+$pe-input-focus-box-shadow: 0px 0px 4px pe-color(hyperdrive) !default;
 $pe-input-font-size: $pe-label-large-font-size !default;
 $pe-input-height: 36px !default;
 $pe-input-padding: 0 14px !default;
@@ -209,6 +212,7 @@ $pe-input-small-line-height: $pe-label-line-height !default;
 $pe-input-readonly-bg: pe-color(off-white) !default;
 $pe-input-error-border: solid 1px #d0021b !default;
 $pe-input-error-text-color: #d0021b;
+$pe-input-error-outline: 1px solid #d0021b;
 $pe-input-error-box-shadow: 0px 0px 4px #d0021b !default;
 $pe-input-placeholder-color: #6d6d6d !default;
 $pe-input-placeholder-text: italic !default;

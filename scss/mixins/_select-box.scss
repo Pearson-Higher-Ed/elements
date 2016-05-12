@@ -36,15 +36,20 @@
   background: $pe-input-readonly-bg;
 }
 
-&.pe-select--disabled select{
+&.pe-select--disabled select,
+& select:disabled {
   background-color: $pe-input-readonly-bg;
   color: $pe-select-readonly-text;
 }
 
 &.pe-select--error select {
-  border:1px solid #D0021B;
+  border: $pe-input-error-border;
   color: $pe-select-text;
-  box-shadow:0px 0px 4px #D0021B;
+
+  &:focus {
+    outline: 0;
+    box-shadow: $pe-input-error-box-shadow;
+  }
 }
 
 }
