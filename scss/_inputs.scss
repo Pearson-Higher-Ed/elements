@@ -115,7 +115,6 @@
   }
 }
 
-.pe-radio input:not(:checked):focus,
 .pe-checkbox input:focus {
   outline: 1px solid $pe-link-color;
   outline-offset: 2px;
@@ -123,7 +122,7 @@
 
 // if JavaScript detects a mouse and adds the class
 
-.mouseDetected .pe-radio input:not(:checked):focus,
+.mouseDetected .pe-radio input:focus,
 .mouseDetected .pe-checkbox input:focus {
   outline: 0;
 }
