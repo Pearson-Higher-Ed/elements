@@ -1,3 +1,5 @@
+# How to add a new icon
+
 Go to the IcoMoon app (https://icomoon.io/app).
 
 You can import the current  `selection.json` back to the IcoMoon app using the *Import Icons* input (or via Main Menu → Manage Projects) to retrieve your icon selection. It'll be called "icomoon" even though we're using Font-Awesome. If only IcoMoon icons are shown on the page, scroll down to the link "Add Icons from Library" and choose Font-Awesome ("Add" button).
@@ -8,6 +10,12 @@ Move the zip file to this directory (/misc/icomoon).
 
 Run `icomover.sh` script with the zip file as the argument.
 
-Update the  icons.md page with the new icon.
+If you can't run the shell script, it:
+* unpacks the zip file
+* takes the new selection.json and moves it to replace the current on in `/misc/icomoon/`.
+* renames the `icomoon.*` fonts to `pearson-fa.*` and moves those tp replace the current fonts in `/assets/fonts/`.
 
-Update /scss/_icons.scss with the new styles.
+
+Update the  icons.md page with the new icon, and update `/scss/_icons.scss` with the new style.
+
+When you PR the new icon, state in your PR message the Unicode code point for your icon (this can be found on the Font-Awesome website. Example: the bell icon is \f0f3.
