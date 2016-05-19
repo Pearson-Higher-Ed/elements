@@ -37,7 +37,7 @@ if [ $EXT = zip ]; then
   mv $TMPDIR/fonts/pearson-fa.* ../../assets/fonts/
 
   rm -rf $TMPDIR
-  exit  
+  exit
 
   # not a .zip, this may be changed if icomoon gives .gz etc files
   else

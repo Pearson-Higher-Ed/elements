@@ -34,6 +34,12 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--bell"></i> bell</li>
 </ul>
 
+## Adding new icons
+
+In `/misc/icomoon` there is a file `how-to-add-an-icon.md` and a shell script called `icomover.sh`. Follow the How-to-add instructions and don't forget to add the new icon to this file (as well as the CSS necessary).
+
+## Using CSS to make the icon appear
+
 Add `pe-icon--{name}` to the icon element, where `{name}` is the icon name from the above list.
 
 {{#demo}}
@@ -74,7 +80,3 @@ The meanings of few icons are intuitively known by most users, however there are
 
 It's important to note that speech users (who interact with the page using voice commands) will not have access to the names of interactive elements whose text is visually hidden and only made available to screen readers. There are only a few icons where a user has a good chance of guessing the interactive element's name, such as "close" and "search", so it's important to show visible names of interactive elements as much as possible.
 
-
-## Adding new icons
-
-In `/misc/icomoon` there is a file `how-to-add-an-icon.md` and a shell script called `icomover.sh`. Follow the How-to-add instructions and don't forget to add the new icon to this file (as well as the CSS necessary).
