@@ -73,7 +73,7 @@
 
 @mixin pe-heading-level4 {
   font-size: 16px;
-  font-style: bold;
+  font-weight: bold;
   line-height: 20px;
   color: $pe-text-heading-l4tol6-color;
   @include pe-heading-following-content;
