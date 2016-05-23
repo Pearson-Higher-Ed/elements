@@ -115,16 +115,17 @@
   }
 }
 
-.pe-radio input:focus,
 .pe-checkbox input:focus {
   outline: 1px solid $pe-link-color;
   outline-offset: 2px;
 }
-.mouseDetected .pe-radio input:not(:checked):focus,
+
+// if JavaScript detects a mouse and adds the class
+
+.mouseDetected .pe-radio input:focus,
 .mouseDetected .pe-checkbox input:focus {
   outline: 0;
 }
-
 
 .pe-checkbox--small,
 .pe-radio--small,
@@ -133,7 +134,3 @@
     @include pe-label;
   }
 }
-
-
-
-
