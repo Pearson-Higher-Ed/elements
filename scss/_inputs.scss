@@ -107,17 +107,17 @@
   }
 
   & input {
-    margin-right: 7px;//because inline-block adds approx 3-4px space
+    margin-right: 7px;// because inline-block adds approx 3-4px space
+
+    &:focus {
+      outline: 1px solid $pe-link-color;
+      outline-offset: 2px;// not supported by IE
+    }
   }
 
   & label {
     @include pe-label-large;
   }
-}
-
-.pe-checkbox input:focus {
-  outline: 1px solid $pe-link-color;
-  outline-offset: 2px;
 }
 
 // if JavaScript detects a mouse and adds the class
