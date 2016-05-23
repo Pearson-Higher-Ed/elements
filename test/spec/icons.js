@@ -180,10 +180,10 @@ describe('icons', () => {
       expect(content).to.equal('\\f06a');
     });
 
-    it('should match the design spec where it is bell-o', () => {
-      character = window.getComputedStyle(document.querySelector('.pe-icon--bell-o'), ':before').getPropertyValue('content');
+    it('should match the design spec where it is bell', () => {
+      character = window.getComputedStyle(document.querySelector('.pe-icon--bell'), ':before').getPropertyValue('content');
       content = formatContent(character);
-      expect(content).to.equal('\\f0a2');
+      expect(content).to.equal('\\f0f3');
     });
 
   });
