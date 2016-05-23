@@ -1,0 +1,50 @@
+@mixin pe-select(
+  $height,
+  $padding-left,
+  $padding-right,
+  $border,
+  $bg,
+  $color,
+  $font,
+  $line-height,
+  $vertical-align,
+  $border-radius
+) {
+
+& select{
+  height: $height;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+  border: $border;
+  background-color: $bg;
+  color: $color;
+  font-size: $font;
+  line-height: $line-height;
+  vertical-align: $vertical-align;
+  border-radius: $border-radius;
+}
+
+&.pe-select--small select {
+  height: $pe-input-small-height;
+  padding-left: $pe-select-small-padding-left;
+  padding-right: $pe-select-small-padding-right;
+  font-size: $pe-input-small-font-size;
+  line-height: $pe-input-small-line-height;
+}
+
+&.pe-select--readonly select {
+  background: $pe-input-readonly-bg;
+}
+
+&.pe-select--disabled select{
+  background-color: $pe-input-readonly-bg;
+  color: $pe-select-readonly-text;
+}
+
+&.pe-select--error select {
+  border:1px solid #D0021B;
+  color: $pe-select-text;
+  box-shadow:0px 0px 4px #D0021B;
+}
+
+}
