@@ -1,3 +1,18 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.5.0...v0.6.0) (2016-05-25)
+
+
+### Bug Fixes
+
+* **docs:** adjust docs ([2cd9af5](https://github.com/Pearson-Higher-Ed/elements/commit/2cd9af5))
+* **docs:** adjust text some more ([2264f19](https://github.com/Pearson-Higher-Ed/elements/commit/2264f19))
+* **icons:** Slight change based on feedback ([6054422](https://github.com/Pearson-Higher-Ed/elements/commit/6054422))
+* **inputs:** adjust input-button example, include search ([b3e3fb9](https://github.com/Pearson-Higher-Ed/elements/commit/b3e3fb9))
+* **inputs:** manual add focus style to unselected radio button ([497c674](https://github.com/Pearson-Higher-Ed/elements/commit/497c674))
+* **inputs:** re-add radio focus ([5dfc605](https://github.com/Pearson-Higher-Ed/elements/commit/5dfc605))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.4.1...v0.5.0) (2016-05-03)
 
