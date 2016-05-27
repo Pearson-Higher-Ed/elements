@@ -383,10 +383,12 @@ $pe-select-padding-left: 14px !default;
 $pe-select-padding-right: 14px !default;
 $pe-select-bg: pe-color(white) !default;
 $pe-select-text: pe-color(pitch) !default;
-$pe-select-vertical-align:middle !default;
+$pe-select-vertical-align: middle !default;
+$pe-select-line-height: 18px !default;
 
 $pe-select-small-padding-left: 10px !default;
 $pe-select-small-padding-right: 10px !default;
+$pe-select-small-line-height: 16px !default;
 
 $pe-select-readonly-text: pe-color(boring) !default;
 
