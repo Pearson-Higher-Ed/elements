@@ -27,6 +27,12 @@
       color: $pe-input-placeholder-color;
     }
 
+    &:focus {
+      outline: 0;
+      border: $pe-input-focus-border;
+      box-shadow: $pe-input-focus-box-shadow;
+    }
+
   }
 
   & input:disabled,
@@ -56,6 +62,7 @@
   }
 
   //these are not really supported yet, and interfere with earlier rule
+
   & input:read-only,
   & input:-moz-read-only {
     background: $disabled-bg;
@@ -66,7 +73,10 @@
   & textarea:invalid,
   &.pe-textarea--error textarea {
     border: $pe-input-error-border;
-    box-shadow: $pe-input-error-box-shadow;
+
+    &:focus {
+      box-shadow: $pe-input-error-box-shadow;
+    }
   }
 
   // to be placed on error messages
