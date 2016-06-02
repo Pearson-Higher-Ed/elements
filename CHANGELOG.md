@@ -1,3 +1,18 @@
+<a name="0.6.2"></a>
+## [0.6.2](https://github.com/Pearson-Higher-Ed/elements/compare/v0.6.1...v0.6.2) (2016-06-02)
+
+
+### Bug Fixes
+
+* **docs:** move icons docs, point to them in README ([e43f8cc](https://github.com/Pearson-Higher-Ed/elements/commit/e43f8cc))
+* calendar disabled state ([71d27d8](https://github.com/Pearson-Higher-Ed/elements/commit/71d27d8))
+
+### Features
+
+* **compile:** added archive icon ([b9e6759](https://github.com/Pearson-Higher-Ed/elements/commit/b9e6759))
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/Pearson-Higher-Ed/elements/compare/v0.6.0...v0.6.1) (2016-05-25)
 
@@ -14,6 +29,7 @@
 * **docs:** adjust text some more ([2264f19](https://github.com/Pearson-Higher-Ed/elements/commit/2264f19))
 * **icons:** Slight change based on feedback ([6054422](https://github.com/Pearson-Higher-Ed/elements/commit/6054422))
 * **inputs:** adjust input-button example, include search ([b3e3fb9](https://github.com/Pearson-Higher-Ed/elements/commit/b3e3fb9))
+* **inputs:** give explicit focus styles to input/textarea, focussed error states ([91c5d2f](https://github.com/Pearson-Higher-Ed/elements/commit/91c5d2f))
 * **inputs:** manual add focus style to unselected radio button ([497c674](https://github.com/Pearson-Higher-Ed/elements/commit/497c674))
 * **inputs:** re-add radio focus ([5dfc605](https://github.com/Pearson-Higher-Ed/elements/commit/5dfc605))
 
