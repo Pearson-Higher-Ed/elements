@@ -35,7 +35,7 @@ Clone the project and install the dependencies:
     npm install
 
 ### Adding Icons
-                                                                                 
+
 Please follow the steps outlined in the [how-to-add-an-icon](how-to-add-an-icon.md) file to add an icon. This assumes the icon is a Font-Awesome icon and was already approved by UX Design (contact the [Elemental Design Google Group](https://groups.google.com/a/pearson.com/forum/#!forum/elemental-discuss/categories)).
 
 
