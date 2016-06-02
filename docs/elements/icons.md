@@ -32,6 +32,7 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--clock-o"></i> clock-o</li>
   <li><i class="pe-icon--exclamation-circle"></i> exclamation-circle</li>
   <li><i class="pe-icon--bell"></i> bell</li>
+  <li><i class="pe-icon--archive"></i> archive</li>
 </ul>
 
 ## Adding new icons
