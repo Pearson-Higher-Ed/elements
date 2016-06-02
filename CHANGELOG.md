@@ -1,3 +1,9 @@
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.6.2...v0.7.0) (2016-06-02)
+
+
+
+
 <a name="0.6.2"></a>
 ## [0.6.2](https://github.com/Pearson-Higher-Ed/elements/compare/v0.6.1...v0.6.2) (2016-06-02)
 
