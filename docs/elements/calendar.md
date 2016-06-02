@@ -42,23 +42,23 @@ This component defines the standard visual style for the calendar element.
         <td class="pe-calendar-dates--within">6</td>
         <td class="pe-calendar-dates--within">7</td>
         <td class="pe-calendar-dates--within">8</td>
-        <td class="pe-calendar-dates--selected">9<span class="pe-sr-only">Highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">10</td>
-        <td class="pe-calendar-dates--highlighted">11</td>
-        <td class="pe-calendar-dates--highlighted">12</td>
+        <td class="pe-calendar-dates--selected">9 <span class="pe-sr-only">selected</span></td>
+        <td class="pe-calendar-dates--highlighted">10 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">11 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">12 <span class="pe-sr-only">highlighted</span></td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--highlighted">13</td>
-        <td class="pe-calendar-dates--highlighted">14</td>
-        <td class="pe-calendar-dates--highlighted">15</td>
-        <td class="pe-calendar-dates--highlighted">16</td>
-        <td class="pe-calendar-dates--highlighted">17</td>
-        <td class="pe-calendar-dates--highlighted">18</td>
-        <td class="pe-calendar-dates--highlighted">19</td>
+        <td class="pe-calendar-dates--highlighted">13 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">14 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">15 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">16 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">17 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">18 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted">19 <span class="pe-sr-only">highlighted</span></td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--highlighted">20</td>
-        <td class="pe-calendar-dates--within">21</td>
+        <td class="pe-calendar-dates--highlighted">20 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--within pe-calendar-dates--disabled">21</td>
         <td class="pe-calendar-dates--within">22</td>
         <td class="pe-calendar-dates--within">23</td>
         <td class="pe-calendar-dates--within">24</td>

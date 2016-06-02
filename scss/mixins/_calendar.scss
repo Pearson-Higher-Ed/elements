@@ -35,7 +35,7 @@
     min-width: $pe-calendar-div-min-width;
     max-width: $pe-calendar-div-max-width;
   }
-  .pe-calendar-dates{
+  .pe-calendar-dates {
     border-spacing: $pe-calendar-dates-border-spacing;
     border-collapse: $pe-calendar-dates-border-collapse;
     height: $pe-calendar-table-height;
@@ -45,7 +45,7 @@
     max-width: $pe-calendar-dates-max-width;
     min-width: $pe-calendar-dates-min-width;
   }
-  &.pe-calendar-dates thead,table tr,table th{
+  &.pe-calendar-dates thead, table tr, table th {
     font-size: $pe-calendar-table-header-font-size;
     line-height: $pe-calendar-table-header-line-height;
     padding-bottom: $pe-calendar-dates-heading-padding-bottom;
@@ -59,7 +59,7 @@
     min-height: $pe-calendar-dates-min-height;
     padding-top: $pe-calendar-dates-heading-padding-top;
   }
-  &.pe-calendar-dates table tr, table td{
+  &.pe-calendar-dates table tr, table td {
     font-size: $pe-calendar-dates-font-size;
     line-height: $pe-calendar-dates-line-height;
     border-spacing: $pe-calendar-dates-border-spacing;
@@ -68,29 +68,28 @@
     border-top: $pe-calendar-dates-border-top;
     text-align: $pe-calendar-dates-text-align;
   }
-
-  td:hover {
-      color:$pe-calendar-dates-hover-color;
-      background-color: $pe-calendar-dates-hover-background-color;
-    }
-  .pe-calendar-dates--disabled {
-     color: $pe-calendar-dates-disabled-color;
-     background-color: $pe-calendar-dates-disabled-background-color;
-    }
-  .pe-calendar-dates--selected {
-      color: $pe-calendar-dates-selected-color;
-      background-color: $pe-calendar-dates-selected-background-color;
-    }
-  .pe-calendar-dates--highlighted {
-      color: $pe-calendar-dates-highlighted-color;
-      background-color: $pe-calendar-dates-highlighted-background-color;
-    }
   .pe-calendar-dates--within {
-      color: $pe-calendar-dates-within-color;
-      background-color: $pe-calendar-dates-within-background-color;
-    }
+    color: $pe-calendar-dates-within-color;
+    background-color: $pe-calendar-dates-within-background-color;
+  }
   .pe-calendar-dates--outside {
-      color: $pe-calendar-dates-outside-color;
-      background-color: $pe-calendar-dates-outside-background-color;
-    }
+    color: $pe-calendar-dates-outside-color;
+    background-color: $pe-calendar-dates-outside-background-color;
+  }
+  .pe-calendar-dates--disabled {
+    color: $pe-calendar-dates-disabled-color;
+    background-color: $pe-calendar-dates-disabled-background-color;
+  }
+  .pe-calendar-dates--selected {
+    color: $pe-calendar-dates-selected-color;
+    background-color: $pe-calendar-dates-selected-background-color;
+  }
+  .pe-calendar-dates--highlighted {
+    color: $pe-calendar-dates-highlighted-color;
+    background-color: $pe-calendar-dates-highlighted-background-color;
+  }
+  td:not(.pe-calendar-dates--disabled):hover {
+    color:$pe-calendar-dates-hover-color;
+    background-color: $pe-calendar-dates-hover-background-color;
+  }
 }
