@@ -9,70 +9,70 @@ This component defines the standard visual style for the calendar element.
 
 {{#demo}}
 <div class="pe-calendar">
-  <h3 class="pe-calendar-month" id="m1">March 2016</h3>
-  <div class="pe-calendar-chevron">
-    <button class="pe-icon--chevron-left" aria-label="February" title="February"></button>
-    <button class="pe-icon--chevron-right" aria-label="April" title="April"></button>
+  <div class="pe-calendar-year">
+    <h3 class="pe-calendar-month" id="m1">March 2016</h3>
+    <div class="pe-calendar-chevron">
+      <label class="pe-icon--chevron-left pe-calendar-chevron-cursor" aria-label="Prev" title="Prev"></label>
+      <label class="pe-icon--chevron-right pe-calendar-chevron-cursor" aria-label="Next" title="Next"></label>
+    </div>
   </div>
-</div>
-<div class="pe-calendar pe-calendar-div">
   <table class="pe-calendar-dates">
     <thead>
       <tr>
-        <th scope="col"><abbr title="Sunday" class="pe-calendar-title">S</abbr></th>
-        <th scope="col"><abbr title="Monday" class="pe-calendar-title">M</abbr></th>
-        <th scope="col"><abbr title="Tuesday" class="pe-calendar-title">T</abbr></th>
-        <th scope="col"><abbr title="Wednesday" class="pe-calendar-title">W</abbr></th>
-        <th scope="col"><abbr title="Thursday" class="pe-calendar-title">T</abbr></th>
-        <th scope="col"><abbr title="Friday" class="pe-calendar-title">F</abbr></th>
-        <th scope="col"><abbr title="Saturday" class="pe-calendar-title">S</abbr></th>
+        <th scope="col"><abbr title="Sunday">S</abbr></th>
+        <th scope="col"><abbr title="Monday">M</abbr></th>
+        <th scope="col"><abbr title="Tuesday">T</abbr></th>
+        <th scope="col"><abbr title="Wednesday">W</abbr></th>
+        <th scope="col"><abbr title="Thursday">T</abbr></th>
+        <th scope="col"><abbr title="Friday">F</abbr></th>
+        <th scope="col"><abbr title="Saturday">S</abbr></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="pe-calendar-dates--outside">28</td>
-        <td class="pe-calendar-dates--outside">29</td>
-        <td class="pe-calendar-dates--within">1</td>
-        <td class="pe-calendar-dates--within">2</td>
-        <td class="pe-calendar-dates--within">3</td>
-        <td class="pe-calendar-dates--within">4</td>
-        <td class="pe-calendar-dates--within">5</td>
+        <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">28</div></td>
+        <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">29</div></td>
+        <td><div class="pe-calendar-dates-div">1</div></td>
+        <td><div class="pe-calendar-dates-div">2</div></td>
+        <td><div class="pe-calendar-dates-div">3</div></td>
+        <td><div class="pe-calendar-dates-div">4</div></td>
+        <td><div class="pe-calendar-dates-div">5</div></td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--within">6</td>
-        <td class="pe-calendar-dates--within">7</td>
-        <td class="pe-calendar-dates--within">8</td>
-        <td class="pe-calendar-dates--selected">9 <span class="pe-sr-only">selected</span></td>
-        <td class="pe-calendar-dates--highlighted">10 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">11 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">12 <span class="pe-sr-only">highlighted</span></td>
+        <td><div class="pe-calendar-dates-div">6</div></td>
+        <td><div class="pe-calendar-dates-div">7</div></td>
+        <td><div class="pe-calendar-dates-div">8</div></td>
+        <td class="pe-calendar-dates--selected"><div class="pe-calendar-dates-div">9</div><span class="pe-sr-only">Highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">10</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">11</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">12</div></td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--highlighted">13 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">14 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">15 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">16 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">17 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">18 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted">19 <span class="pe-sr-only">highlighted</span></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">13</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">14</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">15</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">16</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">17</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">18</div></td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">19</div></td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--highlighted">20 <span class="pe-sr-only">highlighted</span></td>
-        <td class="pe-calendar-dates--within pe-calendar-dates--disabled">21</td>
-        <td class="pe-calendar-dates--within">22</td>
-        <td class="pe-calendar-dates--within">23</td>
-        <td class="pe-calendar-dates--within">24</td>
-        <td class="pe-calendar-dates--within">25</td>
-        <td class="pe-calendar-dates--within">26</td>
+        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">20</div></td>
+        <td class="pe-calendar-dates--disabled"><div class="pe-calendar-dates-div">21</div></td>
+        <td><div class="pe-calendar-dates-div">22</div></td>
+        <td><div class="pe-calendar-dates-div">23</div></td>
+        <td><div class="pe-calendar-dates-div">24</div></td>
+        <td><div class="pe-calendar-dates-div">25</div></td>
+        <td><div class="pe-calendar-dates-div">26</div></td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--within">27</td>
-        <td class="pe-calendar-dates--within">28</td>
-        <td class="pe-calendar-dates--within">29</td>
-        <td class="pe-calendar-dates--within">30</td>
-        <td class="pe-calendar-dates--within">31</td>
-        <td class="pe-calendar-dates--outside">1</td>
-        <td class="pe-calendar-dates--outside">2</td>
+        <td><div class="pe-calendar-dates-div">27</div></td>
+        <td><div class="pe-calendar-dates-div">28</div></td>
+        <td><div class="pe-calendar-dates-div">29</div></td>
+        <td><div class="pe-calendar-dates-div">30</div></td>
+        <td><div class="pe-calendar-dates-div">31</div></td>
+        <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">1</div></td>
+        <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">2</div></td>
       </tr>
     </tbody>
   </table>
