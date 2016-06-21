@@ -265,6 +265,10 @@ $pe-btn-link-hover-text: $pe-link-hover-color !default;
 $pe-btn-link-disabled-bg: 0 !default;
 $pe-btn-link-disabled-text: pe-color(sky-blue) !default;
 
+$pe-btn-inverse-link-text: $pe-label-secondary-color !default;
+$pe-btn-inverse-link-hover-text: $pe-link-color !default;
+$pe-btn-inverse-link-disabled-text: pe-color(boring) !default;
+
 $pe-btn-small-height: 24px !default;
 $pe-btn-small-font-size: $pe-label-small-font-size !default;
 $pe-btn-small-padding: 0 9px !default;
@@ -437,8 +441,8 @@ $pe-calendar-table-header-font-size: $pe-label-large-font-size !default;
 $pe-calendar-table-header-line-height: $pe-label-large-line-height !default;
 $pe-calendar-month-float: right !default;
 $pe-calendar-month-line-height: $pe-title-sm-line-height !default;
-$pe-calendar-days-border-bottom: none !important;
-$pe-calendar-days-text-decoration: none !important;
+$pe-calendar-days-border-bottom: none !default;
+$pe-calendar-days-text-decoration: none !default;
 $pe-calendar-month-font-weight: normal !default;
 $pe-calendar-month-display: inline;
 $pe-calendar-div-min-width: 328px;

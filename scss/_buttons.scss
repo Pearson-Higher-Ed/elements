@@ -66,6 +66,31 @@
   }
 }
 
+.pe-btn--inverse-link {
+  @include pe-btn(
+    $pe-btn-link-bg,
+    $pe-btn-link-border,
+    $pe-btn-inverse-link-text,
+    $pe-btn-link-hover-bg,
+    $pe-btn-link-hover-border,
+    $pe-btn-inverse-link-hover-text,
+    $pe-btn-link-disabled-bg,
+    $pe-btn-link-disabled-text
+  );
+
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 1px black dotted;
+  }
+}
+
 .pe-btn--small {
   height: $pe-btn-small-height;
   line-height: $pe-btn-small-height;

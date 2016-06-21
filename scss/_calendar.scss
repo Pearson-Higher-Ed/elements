@@ -4,12 +4,14 @@
   $pe-calendar-border-width,
   $pe-calendar-width
   );
-  &:focus {
-   outline:none;
- }
 }
-.pe-calendar-chevron {
+.pe-calendar-buttons {
   float:$pe-calendar-month-float;
+
+  & .pe-btn--inverse-link {
+    height: 50px;
+    padding: 0;
+  }
 }
 .pe-calendar-month {
   font-size: $pe-calendar-default-font;
@@ -23,23 +25,14 @@
   text-decoration: $pe-calendar-days-text-decoration;
   display: table-row;
 }
-abbr[title] {
-  border-bottom: 0px;
-  border-bottom: $pe-calendar-days-border-bottom;
-  text-decoration: $pe-calendar-days-text-decoration;
-}
 .pe-calendar-year {
   padding-left: $pe-calendar-div-padding-left;
   padding-right: $pe-calendar-div-padding-right;
   border-bottom: $pe-calendar-border;
   line-height: $pe-calendar-default-line-height;
 }
-.pe-calendar-dates--today {
-     color: #231F20;
-     background-color: #FFFFFF;
-     border: 1px solid #4A90E2;
-}
-.pe-calendar-dates{
+
+.pe-calendar-dates {
   border-spacing: $pe-calendar-dates-border-spacing;
   border-collapse: $pe-calendar-dates-border-collapse;
   border-top: $pe-calendar-dates-border-top;
@@ -48,67 +41,73 @@ abbr[title] {
   max-width: $pe-calendar-dates-max-width;
   min-width: $pe-calendar-dates-min-width;
   padding: $pe-calendar-padding;
+
+  & abbr[title] {
+    border-bottom: 0px;
+    text-decoration: none;
+  }
 }
-&.pe-calendar-dates thead,table tr,table th{
-  font-size: $pe-calendar-table-header-font-size;
-  line-height: $pe-calendar-table-header-line-height;
-  padding-bottom: $pe-calendar-dates-heading-padding-bottom;
-  font-weight: $pe-calendar-table-header-font-weight;
-  border-bottom: $pe-calendar-days-border-bottom;
-  text-decoration: $pe-calendar-days-text-decoration;
-  text-align: $pe-calendar-dates-text-align;
-  max-width: $pe-calendar-dates-max-width;
-  min-width: $pe-calendar-dates-min-width;
-  max-height: $pe-calendar-dates-max-height;
-  min-height: $pe-calendar-dates-min-height;
-  padding-top: $pe-calendar-dates-heading-padding-top;
-}
-  &.pe-calendar-dates table tr, table td{
+.pe-calendar-dates {
+  & th {
+    font-size: $pe-calendar-table-header-font-size;
+    line-height: $pe-calendar-table-header-line-height;
+    padding-bottom: $pe-calendar-dates-heading-padding-bottom;
+    padding-top: $pe-calendar-dates-heading-padding-top;
+    font-weight: $pe-calendar-table-header-font-weight;
+    border-bottom: $pe-calendar-days-border-bottom;
+    text-decoration: $pe-calendar-days-text-decoration;
+    text-align: $pe-calendar-dates-text-align;
+    max-width: $pe-calendar-dates-max-width;
+    min-width: $pe-calendar-dates-min-width;
+    max-height: $pe-calendar-dates-max-height;
+    min-height: $pe-calendar-dates-min-height;
+  }
+  & td {
     font-size: $pe-calendar-dates-font-size;
     line-height: 0px;
+    padding: 0px;
     border-spacing: $pe-calendar-dates-border-spacing;
     width: $pe-calendar-dates-width;
     height: $pe-calendar-dates-height;
     border-top: $pe-calendar-dates-border-top;
     text-align: $pe-calendar-dates-text-align;
-    padding: 0px;
     color: $pe-calendar-dates-within-color;
     background-color: $pe-calendar-dates-within-background-color;
   }
- .pe-calendar-dates-div{
-    padding-top: 5px;
-    //padding-bottom: 5px;
+  & th:focus, & td:focus {
+    outline: 0;
+  }
+  & .pe-calendar-dates-div {
+    padding-top: 10px;
     line-height: $pe-calendar-dates-line-height;
-
   }
-.pe-calendar-dates--disabled {
-   color: $pe-calendar-dates-disabled-color;
-   background-color: $pe-calendar-dates-disabled-background-color;
+  & .pe-calendar-dates--disabled {
+    color: $pe-calendar-dates-disabled-color;
+    background-color: $pe-calendar-dates-disabled-background-color;
   }
-  td:not(.pe-calendar-dates--disabled):hover {
-      color:$pe-calendar-dates-hover-color;
-      background-color: $pe-calendar-dates-hover-background-color;
-}
-.pe-calendar-dates--selected {
+  & td:not(.pe-calendar-dates--disabled):hover,
+  & td:not(.pe-calendar-dates--disabled):focus {
+    color:$pe-calendar-dates-hover-color;
+    background-color: $pe-calendar-dates-hover-background-color;
+  }
+  & .pe-calendar-dates--selected {
     color: $pe-calendar-dates-selected-color;
     background-color: $pe-calendar-dates-selected-background-color;
   }
-.pe-calendar-dates--selected_from {
+  & .pe-calendar-dates--selected_from {
     color: $pe-calendar-dates-selected-color;
     background-color: $pe-calendar-dates-selected-background-color;
   }
-.pe-calendar-dates--selected_to {
+  & .pe-calendar-dates--selected_to {
     color: $pe-calendar-dates-selected-color;
     background-color: $pe-calendar-dates-selected-background-color;
   }
-.pe-calendar-dates--highlighted {
+  & .pe-calendar-dates--highlighted {
     color: $pe-calendar-dates-highlighted-color;
     background-color: $pe-calendar-dates-highlighted-background-color;
   }
-.pe-calendar-dates--outside {
+  & .pe-calendar-dates--outside {
     color: $pe-calendar-dates-outside-color;
     background-color: $pe-calendar-dates-outside-background-color;
   }
-.pe-calendar-chevron-cursor {
- cursor: pointer;
 }
