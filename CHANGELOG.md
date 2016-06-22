@@ -1,3 +1,13 @@
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/Pearson-Higher-Ed/elements/compare/v0.7.0...v0.7.1) (2016-06-22)
+
+
+### Bug Fixes
+
+* **calendar:** change labels to buttons; add more screen-reader-only text ([91cc439](https://github.com/Pearson-Higher-Ed/elements/commit/91cc439))
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.6.2...v0.7.0) (2016-06-02)
 
