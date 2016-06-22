@@ -5,15 +5,19 @@ section: elements
 ---
 
 
-This component defines the standard visual style for the calendar element.
+This component defines the standard visual style for the calendar element. Cells or dates which have visual highlighting or other states conveyed via a purely visual manner must also include a textual version of that information using the `pe-sr-only` class. Note the space between the date number and the hidden text; this is to prevent assistive technology from running the date and the first hidden word together. A newline character is also acceptable.
 
 {{#demo}}
 <div class="pe-calendar">
   <div class="pe-calendar-year">
     <h3 class="pe-calendar-month" id="m1">March 2016</h3>
-    <div class="pe-calendar-chevron">
-      <label class="pe-icon--chevron-left pe-calendar-chevron-cursor" aria-label="Prev" title="Prev"></label>
-      <label class="pe-icon--chevron-right pe-calendar-chevron-cursor" aria-label="Next" title="Next"></label>
+    <div class="pe-calendar-buttons">
+      <button class="pe-btn--inverse-link" aria-label="Previous" title="Previous">
+        <span class="pe-icon--chevron-left" aria-hidden="true"></span>
+      </button>
+      <button class="pe-btn--inverse-link" aria-label="Next" title="Next">
+        <span class="pe-icon--chevron-right" aria-hidden="true"></span>
+      </button>
     </div>
   </div>
   <table class="pe-calendar-dates">
@@ -42,23 +46,49 @@ This component defines the standard visual style for the calendar element.
         <td><div class="pe-calendar-dates-div">6</div></td>
         <td><div class="pe-calendar-dates-div">7</div></td>
         <td><div class="pe-calendar-dates-div">8</div></td>
-        <td class="pe-calendar-dates--selected"><div class="pe-calendar-dates-div">9</div><span class="pe-sr-only">Highlighted</span></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">10</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">11</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">12</div></td>
+        <td class="pe-calendar-dates--selected">
+          <div class="pe-calendar-dates-div">9</div> <span class="pe-sr-only">Selected</span>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">10 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">11 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">12 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">13</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">14</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">15</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">16</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">17</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">18</div></td>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">19</div></td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">13 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">14 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">15 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">16 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">17 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">18 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">19 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
       </tr>
       <tr>
-        <td class="pe-calendar-dates--highlighted"><div class="pe-calendar-dates-div">20</div></td>
-        <td class="pe-calendar-dates--disabled"><div class="pe-calendar-dates-div">21</div></td>
+        <td class="pe-calendar-dates--highlighted">
+          <div class="pe-calendar-dates-div">20 <span class="pe-sr-only">Highlighted</span></div>
+        </td>
+        <td class="pe-calendar-dates--disabled">
+          <div class="pe-calendar-dates-div">21 <span class="pe-sr-only">Not selectable</span></div>
+        </td>
         <td><div class="pe-calendar-dates-div">22</div></td>
         <td><div class="pe-calendar-dates-div">23</div></td>
         <td><div class="pe-calendar-dates-div">24</div></td>
