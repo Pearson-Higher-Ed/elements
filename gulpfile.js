@@ -13,6 +13,7 @@ const spawn = require('child_process').spawn;
 const path = require('path');
 const transform = require('gulp-transform');
 
+/*
 function scssColorVarsToJSON(contents, file) {
 
   let step1 = [contents].toString().split('$pe-colors: ('),
@@ -32,6 +33,7 @@ function scssColorVarsToJSON(contents, file) {
 
   return JSON.stringify(colorObj);
 }
+*/
 
 let metalsmithPath = path.join('node_modules', '.bin', 'metalsmith');
 
@@ -58,13 +60,6 @@ gulp.task('lint', () => {
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError());
-});
-
-gulp.task('scss-to-json', function() {
-  return gulp.src('./scss/_variables.scss')
-    .pipe(transform(scssColorVarsToJSON))
-    .pipe(rename("colors.json"))
-    .pipe(gulp.dest('./test/fixtures/color'));
 });
 
 gulp.task('sass', () => {

@@ -41,14 +41,11 @@ stdin.question(`Next version (current is ${currentVersion})? `, (nextVersion) =>
     nextVersion = nextVersion.slice(1);
   }
 
-  // Ensure unit tests pass before continuing!
-  exec('npm test');
-
   // Ensure the /dist is generated
   exec('npm run build-docs');
 
   // Order of operations:
-  // 1. Bump the version update in package.json and npm-shrinkwrap.json
+  // 1. Bump the version update in package.json
   // 2. The 'version' custom npm script (defined in package.json) executes changelog generation and adding to commit
   // 3. Locally commit and tag
   exec(`npm version ${nextVersion}`);

@@ -47,13 +47,8 @@ We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation.
 
 This will give you a browser-sync served copy of the docs on http://localhost:3000, and build the latest version of 
 elements.min.css to /dist.
-
-### Test
- 
-The unit tests are run by Karma configured to use webpack to transpile and bundle the ES6-compliant Mocha tests.
- 
-    npm test
      
+
 ### Fork repo
 
 Forked repo will not trigger the 'ux-test-platform' tests. In the logs, you would see this error: {"error":"Travis encountered an error, sorry :("} which may cause the elements build to fail.
@@ -71,9 +66,9 @@ Forked repo will not trigger the 'ux-test-platform' tests. In the logs, you woul
 
 This project was inspired by other popular front-end frameworks published under the MIT license:
 
-- [Bootstrap](https://getbootstrap.com) copyright 2011-2015 Twitter, Inc.
-- [Foundation](http://foundation.zurb.com/) copyright 2015 ZURB, inc.
+- [Bootstrap](https://getbootstrap.com) copyright 2011-2016 Twitter, Inc.
+- [Foundation](http://foundation.zurb.com/) copyright 2016 ZURB, inc.
 
 ## License
 
-Copyright 2015 Pearson Education. This software is published under the [MIT](LICENSE) license.
+Copyright 2016 Pearson Education. This software is published under the [MIT](LICENSE) license.
