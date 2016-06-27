@@ -13,28 +13,6 @@ const spawn = require('child_process').spawn;
 const path = require('path');
 const transform = require('gulp-transform');
 
-/*
-function scssColorVarsToJSON(contents, file) {
-
-  let step1 = [contents].toString().split('$pe-colors: ('),
-      step2 = step1[1].toString().split(');'),
-      step3 = step2[0].split('\n'),
-      colorObj = {};
-
-  step3.map(elem => {
-    if (elem && elem.indexOf('//') === -1) {
-      let description = elem.split(':')[0].trim(),
-          tempVal = elem.split(':')[1].trim(),
-          hexValue = tempVal.substring(0, (tempVal.indexOf(',') === -1 ? tempVal.length : tempVal.length-1));
-
-      colorObj[description] = hexValue;
-    }
-  });
-
-  return JSON.stringify(colorObj);
-}
-*/
-
 let metalsmithPath = path.join('node_modules', '.bin', 'metalsmith');
 
 if(process.platform.indexOf('win') === 0){
