@@ -6,3 +6,4 @@ _gh_pages
 .idea
 test/fixtures/color/*.json
 test.json
+elements.iml
