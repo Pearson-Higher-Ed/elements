@@ -58,7 +58,7 @@ Forked repo will not trigger the 'ux-test-platform' tests. In the logs, you woul
  	cd elements
  	travis login --org *Provide your github login and password
  	travis token --org *Copy the access token
- 	travis ecrypt AUTH_TOKEN=access_token *Copy this token and replace it with env: global: secure: <<access_token>> in .travis.yml file
+ 	travis encrypt AUTH_TOKEN=access_token *Copy this token and replace it with env: global: secure: <<access_token>> in .travis.yml file
  	
  	Push this change and the ux-test-platform build would be triggered successfully.
 
