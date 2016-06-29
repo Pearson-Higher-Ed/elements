@@ -24,7 +24,7 @@ The Elements SDK looks for the /fonts folder at the root of your served applicat
 
 ## Contributions
 
-Please review the [guidelines](CONTRIBUTING.md) for contributing before getting started.
+Please review the [guidelines](https://github.com/Pearson-Higher-Ed/docs/blob/master/origami-contributions.md) for contributing before getting started.
 
 You must have [Node.js](https://nodejs.org/en/) v5 installed.
 
