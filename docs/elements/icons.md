@@ -33,6 +33,7 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--exclamation-circle"></i> exclamation-circle</li>
   <li><i class="pe-icon--bell"></i> bell</li>
   <li><i class="pe-icon--archive"></i> archive</li>
+  <li><i class="pe-icon--question-circle"></i> question-circle</li>
 </ul>
 
 ## Adding new icons
