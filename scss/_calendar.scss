@@ -2,7 +2,8 @@
   @include pe-calendar(
   $pe-calendar-border,
   $pe-calendar-border-width,
-  $pe-calendar-width
+  $pe-calendar-width,
+  $pe-calendar-background-color
   );
 }
 .pe-calendar-buttons {
