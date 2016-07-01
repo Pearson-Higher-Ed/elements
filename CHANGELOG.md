@@ -1,3 +1,18 @@
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.7.1...v0.8.0) (2016-07-01)
+
+
+### Bug Fixes
+
+* scss-to-JSON in fact still needed ([3ec5e8c](https://github.com/Pearson-Higher-Ed/elements/commit/3ec5e8c))
+
+### Features
+
+* **ci-test:** Run tests against feature branch in CI ([c586cc2](https://github.com/Pearson-Higher-Ed/elements/commit/c586cc2))
+* added questionmark icon ([43d523d](https://github.com/Pearson-Higher-Ed/elements/commit/43d523d))
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/Pearson-Higher-Ed/elements/compare/v0.7.0...v0.7.1) (2016-06-22)
 
