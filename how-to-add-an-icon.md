@@ -26,7 +26,8 @@
 
     If you run `git status` you should see the following files (if not, it means you missed one):
 
-    * `/misc/selection.json` * `/assets/fonts/pearson-fa.(svg,woff,eot,ttf versions)`
+    * `/misc/selection.json` 
+    * `/assets/fonts/pearson-fa.(svg,woff,eot,ttf versions)`
     * `/docs/elements/icons.md`
     * `/scss/_icons.scss`
 
