@@ -115,42 +115,30 @@ This field is used when a field has been filled out incorrectly. This state shou
 
 ## Checkboxes
 
-Checkboxes are for times when the user needs to make one or more binary choices about a related item. Type attribute of "Checkbox" also represents a state or option that can be toggled.
+Checkboxes are for times when the user needs to make one or more binary choices about a related item. Type attribute of "checkbox" also represents a state or option that can be toggled.
 
-### Checked
+### Checked, unchecked, disabled and unchecked, disabled and checked
 
 {{#demo}}
-  <div class="pe-checkbox pe-checkbox--checked">
+  <div class="pe-checkbox">
     <input type="checkbox" name="Checked" id="chk1" value="" checked>
     <label for="chk1">Checked</label>
   </div>
-{{/demo}}
 
-### UnChecked
-
-{{#demo}}
-  <div class="pe-checkbox pe-checkbox--unchecked">
+  <div class="pe-checkbox">
     <input type="checkbox" name="UnChecked" id="chk2" value="">
     <label for="chk2">UnChecked</label>
   </div>
-{{/demo}}
 
-### Disabled
-
-{{#demo}}
-  <div class="pe-checkbox pe-checkbox--disabled">
+  <div class="pe-checkbox">
     <input type="checkbox" name="Read only/Disabled" id="chk3" value="" disabled>
     <label for="chk3">Read only/Disabled</label>
   </div>
-{{/demo}}
 
-### Disabled and Checked
-
-{{#demo}}
- <div class="pe-checkbox pe-checkbox--disabled-checked">
+  <div class="pe-checkbox">
     <input type="checkbox" name="Read only/Disabled (checked)" id="chk4" value="" disabled checked>
-    <label for="chk4">Read only/Disabled(checked)</label>
- </div>
+    <label for="chk4">Read only/Disabled (checked)</label>
+  </div>
 {{/demo}}
 
 ### Small checkbox
@@ -165,31 +153,23 @@ Checkboxes are for times when the user needs to make one or more binary choices 
 
 ## Radio buttons
 
-Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled.
+Radio buttons are for when the user must choose a single item out of several options. Type attribute of "radio" also represents a state or option that can be toggled. Radio buttons belong in a radio group; everyone in the radio group shares the same `name` attribute.
 
-### Checked
+### Checked, unchecked, disabled and unchecked
 
 {{#demo}}
-  <div class="pe-radio pe-radio--checked">
-    <input type="radio" name="Checked" id="rad1" value="" checked>
+  <div class="pe-radio">
+    <input type="radio" name="group1" id="rad1" value="" checked>
     <label for="rad1">Checked</label>
   </div>
-{{/demo}}
 
-### UnChecked
-
-{{#demo}}
-  <div class="pe-radio pe-radio--unchecked">
-    <input type="radio" name="UnChecked" id="rad2" value="">
+  <div class="pe-radio">
+    <input type="radio" name="group1" id="rad2" value="">
     <label for="rad2">UnChecked</label>
   </div>
-{{/demo}}
 
-### Disabled
-
-{{#demo}}
-  <div class="pe-radio pe-radio--disabled">
-    <input type="radio" name="Read only/Disabled" id="rad3" value="" disabled>
+  <div class="pe-radio">
+    <input type="radio" name="group1" id="rad3" value="" disabled>
     <label for="rad3">Read only/Disabled</label>
   </div>
 {{/demo}}
@@ -198,9 +178,9 @@ Radio buttons are for when the user must choose a single item out of several opt
 ### Disabled and Checked
 
 {{#demo}}
- <div class="pe-radio pe-radio--disabled-checked">
-    <input type="radio" name="Read only/Disabled (checked)" id="rad4" value="" disabled checked>
-    <label for="rad4">Read only/Disabled(checked)</label>
+ <div class="pe-radio">
+    <input type="radio" name="group2" id="rad4" value="" disabled checked>
+    <label for="rad4">Read only/Disabled (checked)</label>
  </div>
 {{/demo}}
 
@@ -208,7 +188,7 @@ Radio buttons are for when the user must choose a single item out of several opt
 
 {{#demo}}
   <div class="pe-radio pe-radio--small">
-    <input type="radio" name="Small" id="rad6" value="">
+    <input type="radio" name="group3" id="rad6" value="">
     <label for="rad6">Small radio button</label>
   </div>
 {{/demo}}
@@ -275,25 +255,25 @@ The select input allows a user to choose one of many predetermined options.
 
 {{#demo}}
 <div class="pe-inlineblock">
-<div class="pe-select">
- <label for="se1">Text label</label>
-<select id="se1">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-</div>
+  <div class="pe-select">
+    <label for="se1">Text label</label>
+    <select id="se1">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
 
-<div class="pe-select pe-select--small">
-<label for="se2">Text label</label>
-<select id="se2">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-</div>
+  <div class="pe-select pe-select--small">
+    <label for="se2">Text label</label>
+    <select id="se2">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
 </div>
 {{/demo}}
 
@@ -301,12 +281,12 @@ The select input allows a user to choose one of many predetermined options.
 
 {{#demo}}
 <div class="pe-select pe-select--readonly">
-<label for="se3">Text label</label>
-<select id="se3">
-  <option disabled="disabled">Java</option>
-  <option selected="selected">CSS</option>
-  <option disabled="disabled">HTML</option>
-</select>
+  <label for="se3">Text label</label>
+  <select id="se3">
+    <option disabled="disabled">Java</option>
+    <option selected="selected">CSS</option>
+    <option disabled="disabled">HTML</option>
+  </select>
 </div>
 {{/demo}}
 
@@ -314,13 +294,13 @@ The select input allows a user to choose one of many predetermined options.
 
 {{#demo}}
 <div class="pe-select pe-select--disabled">
-<label for="se4">Text label</label>
-<select disabled id="se4">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
+  <label for="se4">Text label</label>
+  <select disabled id="se4">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
 </div>
 {{/demo}}
 
@@ -328,9 +308,9 @@ The select input allows a user to choose one of many predetermined options.
 
 {{#demo}}
 <div class="pe-select pe-select--error">
-<label for="se5">Text label</label>
-<select id="se5">
-  <option value="error">Error</option>
-</select>
+  <label for="se5">Text label</label>
+  <select id="se5">
+    <option value="error">Error</option>
+  </select>
 </div>
 {{/demo}}
