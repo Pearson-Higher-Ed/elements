@@ -37,12 +37,12 @@
   line-height: 30px;
   border-bottom: 2px solid $pe-text-heading-bottom-border;
 
-  & + h1,
-  & + h2,
-  & + h3,
-  & + h4,
-  & + h5,
-  & + h6,
+  & + h1:not(.pe-title),
+  & + h2:not(.pe-title),
+  & + h3:not(.pe-title),
+  & + h4:not(.pe-title),
+  & + h5:not(.pe-title),
+  & + h6:not(.pe-title),
   & + .pe-heading-level1,
   & + .pe-heading-level2,
   & + .pe-heading-level3,
@@ -50,6 +50,9 @@
   & + .pe-heading-level5,
   & + .pe-heading-level6 {
     margin-top: 40px;
+  };
+  & + .pe-title {
+    margin-top: 6px;
   };
   @include pe-heading-large-bold;
   @include pe-heading-following-content;

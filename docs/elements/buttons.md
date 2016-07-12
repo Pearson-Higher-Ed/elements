@@ -4,7 +4,7 @@ title: Buttons
 section: elements
 ---
 
-Use a button to represent a user action.
+Use a button to represent a user action&#8212; specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere.
 
 {{#demo}}
 <button class="pe-btn">Default</button>

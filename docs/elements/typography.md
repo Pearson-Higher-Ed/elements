@@ -78,8 +78,10 @@ A lead paragraph or sentence introduces and guides the user into the primary con
 
 ## Titles
 
+Not that titles are going to be "heading" content, so most if not all of the time, they will be heading elements. Use the `pe-title` class for this title style.
+
 {{#demo}}
-<div class="pe-title">Default title</div>
+<h3 class="pe-title">Default title</h3>
 {{/demo}}
 
 ### Sizes
@@ -87,11 +89,13 @@ A lead paragraph or sentence introduces and guides the user into the primary con
 Titles can be larger for additional emphasis.
 
 {{#demo}}
-<div class="pe-title pe-title--large">Large title</div>
-<div class="pe-title pe-title--extra-large">Extra large title</div>
+<h3 class="pe-title pe-title--large">Large title</h3>
+<h3 class="pe-title pe-title--extra-large">Extra large title</h3>
 {{/demo}}
 
 ## Labels
+
+Note these are not related to form element labels (use the HTML `label` element for those).
 
 {{#demo}}
 <div class="pe-label">Default label</div>
@@ -121,7 +125,7 @@ When a label is used on a dark background, use `pe-label--inverse` to make it vi
 
 ## Inline text
 
-Use the `<abbr>`, `<ins>`, `<del>`, `<s>`, `<mark>`, `<em>`, `<strong>`, and `<q>` elements to indicate contextual changes or differences within a string of text.
+Use the `<abbr>`, `<ins>`, `<del>`, `<s>`, `<mark>`, `<em>`, `<strong>`, `<sub>`, `<sup>` and `<q>` elements to indicate contextual changes or differences within a string of text.
 
 ### `<abbr>`
 
@@ -182,6 +186,23 @@ Use <kbd>rm -rf</kbd> to recursively remove files. <strong>Be careful when using
   <h1 class="pe-title">The difference between <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code></h1>
   <p>The <code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code> elements are similar. However, bold is a physical state that represents both the content and its presentation, while strong is a logical state that separates the content from its presentation&mdash;it indicates that, in the current context, the text is more important than the surrounding text.</p>
 </aside>
+
+### `<sub>`
+
+Use the `<sub>` element to lower characters below the font baseline. This is commonly done in mathematical expressions and chemical formulas.
+
+{{#demo}}
+<p>The main ingredient is H<sub>2</sub>O.</p>
+{{/demo}}
+
+### `<sup>`
+
+Use the `<sup>` element to raise characters above the font baseline. This is not only used exponents, but also for ordinals, the trademark symbol, and atomic charges.
+
+{{#demo}}
+<p>On December 5<sup>th</sup>, the Dutch celebrate Saint Nicholas' Eve.</p>
+{{/demo}}
+
 
 ### `<q>`
 
@@ -345,4 +366,15 @@ When nested, `pe-styled-lists-heading--unordered` should be added to each `<ul>`
     </ul>
   </li>
 </ul>
+{{/demo}}
+
+## Links
+
+Use a link to represent a user navigational element. For performing an action on the page, such as closing a dialog, use a `<button>` element instead.
+
+### Notes on anchors
+HTML anchor elements require an `href` attribute. Without it, anchors are not keyboard-focusable. Link text should be clear and actionable; try to avoid text like "click here." Finally, be aware that anchors do not have a disabled state, and setting the disabled attribute on it does nothing.
+
+{{#demo}}
+<p>For more information, <a href="path/to/account">view your account page</a>.</p>
 {{/demo}}
