@@ -1,3 +1,18 @@
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.8.0...v0.9.0) (2016-07-13)
+
+
+### Bug Fixes
+
+* add background-color to calendar ([2e0dbe2](https://github.com/Pearson-Higher-Ed/elements/commit/2e0dbe2))
+
+### Features
+
+* new icon for question-circle ([2653434](https://github.com/Pearson-Higher-Ed/elements/commit/2653434))
+* updated icon for bolt-on with \f059 ([79a553c](https://github.com/Pearson-Higher-Ed/elements/commit/79a553c))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.7.1...v0.8.0) (2016-07-01)
 
