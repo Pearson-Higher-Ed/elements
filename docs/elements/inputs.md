@@ -30,6 +30,259 @@ A combination of pe-input and pe-button.
 {{/demo}}
 
 
+## Input with fake button (datepicker as example)
+This is an input with a picture of a button.
+
+{{#demo}}
+<div class="pe-input-group pe-input-icon">
+  <div class="pe-input">
+    <label for="i3">Pick a date</label>
+    <input type="text" id="i3" placeholder="dd/mm/yyyy">
+    <span class="pe-btn pe-btn--medium">
+      <i class="pe-icon--calendar" aria-hidden="true"></i>
+    </span>
+  </div>
+  <div class="pe-calendar">
+    <div class="pe-calendar-year">
+      <h3 class="pe-calendar-month" id="m1">March 2016</h3>
+      <div class="pe-calendar-buttons">
+        <button class="pe-btn--inverse-link" aria-label="Previous" title="Previous">
+          <span class="pe-icon--chevron-left" aria-hidden="true"></span>
+        </button>
+        <button class="pe-btn--inverse-link" aria-label="Next" title="Next">
+          <span class="pe-icon--chevron-right" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <table class="pe-calendar-dates" aria-describedby="m1">
+      <thead>
+        <tr>
+          <th scope="col"><abbr title="Sunday">S</abbr></th>
+          <th scope="col"><abbr title="Monday">M</abbr></th>
+          <th scope="col"><abbr title="Tuesday">T</abbr></th>
+          <th scope="col"><abbr title="Wednesday">W</abbr></th>
+          <th scope="col"><abbr title="Thursday">T</abbr></th>
+          <th scope="col"><abbr title="Friday">F</abbr></th>
+          <th scope="col"><abbr title="Saturday">S</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">28</div></td>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">29</div></td>
+          <td><div class="pe-calendar-dates-div">1</div></td>
+          <td><div class="pe-calendar-dates-div">2</div></td>
+          <td><div class="pe-calendar-dates-div">3</div></td>
+          <td><div class="pe-calendar-dates-div">4</div></td>
+          <td><div class="pe-calendar-dates-div">5</div></td>
+        </tr>
+        <tr>
+          <td><div class="pe-calendar-dates-div">6</div></td>
+          <td><div class="pe-calendar-dates-div">7</div></td>
+          <td><div class="pe-calendar-dates-div">8</div></td>
+          <td class="pe-calendar-dates--selected">
+            <div class="pe-calendar-dates-div">9</div> <span class="pe-sr-only">Selected</span>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">10 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">11 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">12 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">13 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">14 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">15 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">16 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">17 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">18 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">19 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">20 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--disabled">
+            <div class="pe-calendar-dates-div">21 <span class="pe-sr-only">Not selectable</span></div>
+          </td>
+          <td><div class="pe-calendar-dates-div">22</div></td>
+          <td><div class="pe-calendar-dates-div">23</div></td>
+          <td><div class="pe-calendar-dates-div">24</div></td>
+          <td><div class="pe-calendar-dates-div">25</div></td>
+          <td><div class="pe-calendar-dates-div">26</div></td>
+        </tr>
+        <tr>
+          <td><div class="pe-calendar-dates-div">27</div></td>
+          <td><div class="pe-calendar-dates-div">28</div></td>
+          <td><div class="pe-calendar-dates-div">29</div></td>
+          <td><div class="pe-calendar-dates-div">30</div></td>
+          <td><div class="pe-calendar-dates-div">31</div></td>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">1</div></td>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">2</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="pe-input-group pe-input-icon">
+  <div class="pe-input pe-input--small">
+    <label for="d3">Pick a tiny date</label>
+    <input type="text" id="d3" placeholder="dd/mm/yyyy">
+    <span class="pe-btn pe-btn--small">
+      <i class="pe-icon--calendar" aria-hidden="true"></i>
+    </span>
+  </div>
+  <div class="pe-calendar">
+    <div class="pe-calendar-year">
+      <h3 class="pe-calendar-month" id="m2">March 2016</h3>
+      <div class="pe-calendar-buttons">
+        <button class="pe-btn--inverse-link" aria-label="Previous" title="Previous">
+          <span class="pe-icon--chevron-left" aria-hidden="true"></span>
+        </button>
+        <button class="pe-btn--inverse-link" aria-label="Next" title="Next">
+          <span class="pe-icon--chevron-right" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <table class="pe-calendar-dates" aria-describedby="m2">
+      <thead>
+        <tr>
+          <th scope="col"><abbr title="Sunday">S</abbr></th>
+          <th scope="col"><abbr title="Monday">M</abbr></th>
+          <th scope="col"><abbr title="Tuesday">T</abbr></th>
+          <th scope="col"><abbr title="Wednesday">W</abbr></th>
+          <th scope="col"><abbr title="Thursday">T</abbr></th>
+          <th scope="col"><abbr title="Friday">F</abbr></th>
+          <th scope="col"><abbr title="Saturday">S</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">28</div></td>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">29</div></td>
+          <td><div class="pe-calendar-dates-div">1</div></td>
+          <td><div class="pe-calendar-dates-div">2</div></td>
+          <td><div class="pe-calendar-dates-div">3</div></td>
+          <td><div class="pe-calendar-dates-div">4</div></td>
+          <td><div class="pe-calendar-dates-div">5</div></td>
+        </tr>
+        <tr>
+          <td><div class="pe-calendar-dates-div">6</div></td>
+          <td><div class="pe-calendar-dates-div">7</div></td>
+          <td><div class="pe-calendar-dates-div">8</div></td>
+          <td class="pe-calendar-dates--selected">
+            <div class="pe-calendar-dates-div">9</div> <span class="pe-sr-only">Selected</span>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">10 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">11 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">12 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">13 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">14 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">15 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">16 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">17 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">18 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">19 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="pe-calendar-dates--highlighted">
+            <div class="pe-calendar-dates-div">20 <span class="pe-sr-only">Highlighted</span></div>
+          </td>
+          <td class="pe-calendar-dates--disabled">
+            <div class="pe-calendar-dates-div">21 <span class="pe-sr-only">Not selectable</span></div>
+          </td>
+          <td><div class="pe-calendar-dates-div">22</div></td>
+          <td><div class="pe-calendar-dates-div">23</div></td>
+          <td><div class="pe-calendar-dates-div">24</div></td>
+          <td><div class="pe-calendar-dates-div">25</div></td>
+          <td><div class="pe-calendar-dates-div">26</div></td>
+        </tr>
+        <tr>
+          <td><div class="pe-calendar-dates-div">27</div></td>
+          <td><div class="pe-calendar-dates-div">28</div></td>
+          <td><div class="pe-calendar-dates-div">29</div></td>
+          <td><div class="pe-calendar-dates-div">30</div></td>
+          <td><div class="pe-calendar-dates-div">31</div></td>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">1</div></td>
+          <td class="pe-calendar-dates--outside"><div class="pe-calendar-dates-div">2</div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{{/demo}}
+
+<script>
+  var dp=document.querySelectorAll('.pe-input-icon input'),
+      cal=document.querySelectorAll('.pe-calendar'),
+      container=document.querySelector('.pe-input-icon');
+
+console.log(dp);
+  console.log(cal[0]);
+    
+  container.style.position='relative';
+  cal[0].style.display='none';
+  cal[0].style.position='absolute';
+  cal[0].style.marginTop='-5px';
+  cal[1].style.display='none';
+  cal[1].style.position='absolute';
+  cal[1].style.marginTop='-5px';
+
+  dp[0].addEventListener('focus',function() {
+    cal[0].style.display="block";
+  },false);
+  dp[0].addEventListener('blur',function() {
+    cal[0].style.display="none";
+  },false);
+
+  dp[1].addEventListener('focus',function() {
+    cal[1].style.display="block";
+  },false);
+  dp[1].addEventListener('blur',function() {
+    cal[1].style.display="none";
+  },false);
+</script>
 
 ## Single-line input fields
 
@@ -42,13 +295,13 @@ Text input form elements are to be used for single line text inputs.
 {{#demo}}
 <div class="pe-inlineblock">
   <div class="pe-input">
-    <label for="i1">Text label</label>
-    <input type="text" id="i1" value="Basic text input field">
+    <label for="i4">Text label</label>
+    <input type="text" id="i4" value="Basic text input field">
   </div>
 
   <div class="pe-input pe-input--small">
-    <label for="i2">Text label</label>
-    <input type="text" id="i2" value="Small text input field">
+    <label for="i5">Text label</label>
+    <input type="text" id="i5" value="Small text input field">
   </div>
 </div>
 {{/demo}}
@@ -59,13 +312,13 @@ Placeholders can be used to give additional information about the format of data
 
 {{#demo}}
 <div class="pe-input">
-  <label for="i3">Your name</label>
-  <input type="text" id="i3" placeholder="First and last name" value="">
+  <label for="i6">Your name</label>
+  <input type="text" id="i6" placeholder="First and last name" value="">
 </div>
 
 <div class="pe-input pe-input--small">
-  <label for="i4">Your name</label>
-  <input type="text" id="i4" placeholder="First and last name" value="">
+  <label for="i7">Your name</label>
+  <input type="text" id="i7" placeholder="First and last name" value="">
 </div>
 {{/demo}}
 
@@ -75,8 +328,8 @@ To prevent the user from interacting with the field. The `pe-input--readonly` cl
 
 {{#demo}}
 <div class="pe-input pe-input--readonly">
-  <label for="i5">Your text</label>
-  <input type="text" id="i5" value="Readonly text here" readonly>
+  <label for="i8">Your text</label>
+  <input type="text" id="i8" value="Readonly text here" readonly>
 </div>
 {{/demo}}
 
@@ -86,13 +339,13 @@ This state is a form input that is unavailable for interaction. The `pe-input--d
 
 {{#demo}}
 <div class="pe-input pe-input--disabled">
-  <label for="i6">Text label</label>
-  <input type="text" id="i6" value="Disabled" disabled>
+  <label for="i9">Text label</label>
+  <input type="text" id="i9" value="Disabled" disabled>
 </div>
 
 <div class="pe-input pe-input--disabled">
-  <label for="i7">Text label</label>
-  <input type="text" id="i7" placeholder="disabled with a placeholder" value="" disabled>
+  <label for="i10">Text label</label>
+  <input type="text" id="i10" placeholder="disabled with a placeholder" value="" disabled>
 </div>
 {{/demo}}
 
@@ -102,14 +355,14 @@ This field is used when a field has been filled out incorrectly. This state shou
 
 {{#demo}}
 <div class="pe-input pe-input--small pe-input--error">
-  <label for="i8">Text label <span class="pe-error-text">something went wrong!</span></label>
-  <input type="text" id="i8" value="Error (in small input)">
+  <label for="i11">Text label <span class="pe-error-text">something went wrong!</span></label>
+  <input type="text" id="i11" value="Error (in small input)">
 </div>
 
 <div class="pe-input pe-input--error">
-  <label for="i9">Text label </label>
-  <input type="text" id="i9" aria-describedby="i9-error" value="Error">
-  <p id="i9-error" class="pe-error-text">Something went wrong!</p>
+  <label for="i12">Text label </label>
+  <input type="text" id="i12" aria-describedby="i12-error" value="Error">
+  <p id="i12-error" class="pe-error-text">Something went wrong!</p>
 </div>
 {{/demo}}
 
