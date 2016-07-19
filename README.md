@@ -62,6 +62,25 @@ Forked repo will not trigger the 'ux-test-platform' tests. In the logs, you woul
  	
  	Push this change and the ux-test-platform build would be triggered successfully.
 
+
+## Element Design Document Version
+
+List of Elements with their current respective design version:
+
+( <a href="http://pearson-higher-ed.github.io/design/">Design Document Site</a> )
+
+| Element | Current Design Version |
+|---------|------------------------|
+|Colors|v1.0.1|
+| Typography| v1.0.0|
+|Icons|v1.0.0|
+|Inputs|v1.0.0|
+| Buttons | v1.0.0|
+|Calendar|v1.0.0-beta.1|
+
+** Developers should update table as they implement new versions...*
+
+
 ## Acknowledgements
 
 This project was inspired by other popular front-end frameworks published under the MIT license:
