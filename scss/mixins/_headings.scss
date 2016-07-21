@@ -85,6 +85,7 @@
 
 @mixin pe-heading-level5 {
   font-size: 16px;
+  font-weight: normal;
   line-height: 20px;
   @include pe-heading-small-italic;
   @include pe-heading-following-content;
@@ -93,6 +94,7 @@
 
 @mixin pe-heading-level6 {
   font-size: 14px;
+  font-weight: normal;
   line-height: 16px;
   @include pe-heading-small-italic;
   @include pe-heading-following-content;
