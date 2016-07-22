@@ -37,6 +37,8 @@
   content: '\f00c';
 }
 
+/* all three for close-X */
+
 .pe-icon--close:before {
   content: '\f00d';
 }
@@ -81,6 +83,10 @@
   content: '\f08d';
 }
 
+.pe-icon--user:before {
+  content: '\f007';
+}
+
 .pe-icon--users:before {
   content: '\f0c0';
 }
@@ -89,16 +95,12 @@
   content: '\f0e0';
 }
 
-.pe-icon--times-circle:before {
-  content: '\f057';
+.pe-icon--times-circle-o:before {
+  content: '\f05c';
 }
 
 .pe-icon--info-circle:before {
   content: '\f05a';
-}
-
-.pe-icon--user:before {
-  content: '\f007';
 }
 
 .pe-icon--file-o:before {
@@ -145,3 +147,54 @@
   content: '\f059';
 }
 
+.pe-icon--heart:before {
+  content: '\f004';
+}
+
+.pe-icon--heart-o:before {
+  content: '\f08a';
+}
+
+.pe-icon--laptop:before {
+  content: '\f109';
+}
+
+.pe-icon--book:before {
+  content: '\f02d';
+}
+
+.pe-icon--list-ul:before {
+  content: '\f0ca';
+}
+
+.pe-icon--th-large:before {
+  content: '\f009';
+}
+
+.pe-icon--newspaper-o:before {
+  content: '\f1ea';
+}
+
+.pe-icon--video-camera:before {
+  content: '\f03d';
+}
+
+.pe-icon--picture-o:before {
+  content: '\f03e';
+}
+
+.pe-icon--suitcase:before {
+  content: '\f0f2';
+}
+
+.pe-icon--caret-right:before {
+  content: '\f0da';
+}
+
+.pe-icon--caret-down:before {
+  content: '\f0d7';
+}
+
+.pe-icon--lightbulb-o:before {
+  content: '\f0eb';
+}

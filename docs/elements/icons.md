@@ -18,15 +18,15 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--search"></i> search</li>
   <li><i class="pe-icon--thumb-tack"></i> thumb-tack</li>
   <li><i class="pe-icon--times"></i> times</li>
-  <li><i class="pe-icon--times-circle"></i> times-circle</li>
+  <li><i class="pe-icon--times-circle-o"></i> times-circle-o</li>
   <li><i class="pe-icon--trash-o"></i> trash-o</li>
   <li><i class="pe-icon--users"></i> users</li>
   <li><i class="pe-icon--user"></i> user</li>
   <li><i class="pe-icon--info-circle"></i> info-circle</li>
   <li><i class="pe-icon--file-o"></i> file-o</li>
   <li><i class="pe-icon--calendar"></i> calendar</li>
-  <li><i class="pe-icon--square-o"></i> square</li>
-  <li><i class="pe-icon--check-square-o"></i> check square</li>
+  <li><i class="pe-icon--square-o"></i> square-o</li>
+  <li><i class="pe-icon--check-square-o"></i> check square-o</li>
   <li><i class="pe-icon--ban"></i> ban</li>
   <li><i class="pe-icon--camera"></i> camera</li>
   <li><i class="pe-icon--clock-o"></i> clock-o</li>
@@ -34,6 +34,19 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--bell"></i> bell</li>
   <li><i class="pe-icon--archive"></i> archive</li>
   <li><i class="pe-icon--question-circle"></i> question-circle</li>
+  <li><i class="pe-icon--heart"></i> heart</li>
+  <li><i class="pe-icon--heart-o"></i> heart-o</li>
+  <li><i class="pe-icon--laptop"></i> laptop</li>
+  <li><i class="pe-icon--book"></i> book</li>
+  <li><i class="pe-icon--list-ul"></i> list-ul</li>
+  <li><i class="pe-icon--th-large"></i> th-large</li>
+  <li><i class="pe-icon--newspaper-o"></i> newspaper-o</li>
+  <li><i class="pe-icon--suitcase"></i> suitcase</li>
+  <li><i class="pe-icon--video-camera"></i> video-camera</li>
+  <li><i class="pe-icon--picture-o"></i> picture-o</li>
+  <li><i class="pe-icon--caret-right"></i> caret-right</li>
+  <li><i class="pe-icon--caret-down"></i> caret-down</li>
+  <li><i class="pe-icon--lightbulb-o"></i> lightbulb-o</li>
 </ul>
 
 ## Adding new icons
