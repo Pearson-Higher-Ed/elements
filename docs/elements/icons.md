@@ -47,6 +47,8 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--caret-right"></i> caret-right</li>
   <li><i class="pe-icon--caret-down"></i> caret-down</li>
   <li><i class="pe-icon--lightbulb-o"></i> lightbulb-o</li>
+  <li><i class="pe-icon--bookmark"></i> bookmark</li>
+  <li><i class="pe-icon--bookmark-o"></i> bookmark-o</li>
 </ul>
 
 ## Adding new icons
