@@ -12,6 +12,8 @@ const browserSync = require('browser-sync');
 const spawn = require('child_process').spawn;
 const path = require('path');
 const transform = require('gulp-transform');
+const rev = require('gulp-rev');
+const revReplace = require('gulp-rev-replace');
 
 let metalsmithPath = path.join('node_modules', '.bin', 'metalsmith');
 
@@ -41,19 +43,32 @@ gulp.task('lint', () => {
 });
 
 gulp.task('sass', () => {
-  gulp.src('./scss/elements.scss')
+  return gulp.src('./scss/elements.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
-    .pipe(gulp.dest('./dist/css'))
+    .pipe(gulp.dest('./dist/temp'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(nano())
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/temp'));
 });
 
-gulp.task('build', ['sass'], () => {
-  gulp.src('./assets/**')
-    .pipe(gulp.dest('./dist'));
+gulp.task('assets', ['sass'], () => {
+  return gulp.src('./assets/**')
+    .pipe(rev())
+    .pipe(gulp.dest('./dist'))
+    .pipe(rev.manifest())
+    .pipe(gulp.dest('./dist/temp'));
+});
+
+gulp.task('build', ['sass', 'assets'], () => {
+  const revManifest = gulp.src('./dist/temp/rev-manifest.json');
+
+  gulp.src('./dist/temp/*.css')
+    .pipe(revReplace({ manifest: revManifest }))
+    .pipe(gulp.dest('./dist/css'));
+
+  return del(['dist/temp']);
 });
 
 gulp.task('build-docs', ['build'], (done) => {
