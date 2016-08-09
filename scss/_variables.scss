@@ -7,10 +7,11 @@
 // of bundled assets.
 
 $pe-icons-path: '/fonts/' !default;
-// Icon font filename without the extension.
+// Icon font filename need extensions in order to use find and replace.
 $pe-icons-name: 'pearson-fa' !default;
 
 $pe-images-path: '/images/';
+$pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 
 
 // Colors
@@ -301,7 +302,6 @@ $pe-header-link-hover-color: pe-color(off-white) !default;
 
 $pe-header-brand-font-size: 1.25rem !default;
 
-$pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 $pe-header-logo-sprite-height: 16px !default;
 $pe-header-logo-margin-x: 14px !default;
 
