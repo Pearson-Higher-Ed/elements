@@ -1,9 +1,9 @@
 # Pearson Elements 
 [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
-For full documentation, please visit https://pearson-elements-v0.surge.sh/getting-started/
+To see individual Elements components in action, please visit https://pearson-elements-v0.surge.sh/elements/
 
-![Image](https://cloud.githubusercontent.com/assets/1950683/13062650/6d4bccee-d3fd-11e5-8815-cf3b8e5c7a78.jpg?raw=true "swatch")
+![Color swatch showing the colors and their SCSS variable names](https://cloud.githubusercontent.com/assets/1950683/13062650/6d4bccee-d3fd-11e5-8815-cf3b8e5c7a78.jpg?raw=true "swatch")
 
 ## Consuming this SDK
 
@@ -14,6 +14,14 @@ We recommend that you install Elements in your project using [npm](https://npmjs
 The installation provides both the dist version with CSS, and the original source 
 [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets. 
 This allows the option for the consuming app to include the SDK as a static asset or as part of a build process.
+
+To comment out any SCSS file so it's not added to your rendered elements.css, open `/scss/elements.scss` and use JavaScript-style commenting. Example:
+
+    @import 'reset';
+    //@import 'plain-tags';
+    @import 'aside';
+
+The above would prevent the `_plain-tags.scss` styles from being transpiled into the `elements.css` file.
 
 ### Important: Fonts
 
@@ -41,12 +49,24 @@ Please follow the steps outlined in the [how-to-add-an-icon](how-to-add-an-icon.
 
 ### Build the Documentation
 
-We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. 
+Contibutors adding wholly new components to Elements (which have been already approved by UX design), in addition to writing CSS for the component, will also need to add a new component page to the docs.
+
+We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. To add a new component to the docs:
+
+- update `/docs/_data/nav.yaml` file with the new component name (this adds it to the menu)
+- add a new `.md` file to `/docs/elements/` (use any of the other files in that directory as an example) 
+
+The new component's document page should:
+- have some explanation of what the purpose of the element or component is
+- have some example HTML (wrapped in demo tags, you can show both the rendered in-browser version as well as the actual HTML code in one go) for other developers to see where to best add Elements classes
+- have any special use notes if needed, such as accessibility or browser support gotchas
+
+To view your changes or some branch in action:
 
     npm start 
 
-This will give you a browser-sync served copy of the docs on http://localhost:3000, and build the latest version of 
-elements.min.css to /dist.
+This will give you a browser-sync served copy of the docs on http://localhost:3000, and build the latest version of elements.min.css to /dist.
+
      
 
 ### Fork repo
@@ -71,12 +91,12 @@ List of Elements with their current respective design version:
 
 | Element | Current Design Version |
 |---------|------------------------|
-|Colors|v1.0.1|
-| Typography| v1.0.0|
-|Icons|v1.0.0|
-|Inputs|v1.0.0|
-| Buttons | v1.0.0|
-|Calendar|v1.0.0-beta.1|
+| Colors | v1.0.1 |
+| Typography | v1.0.0 |
+| Icons | v1.0.0 |
+| Inputs | v1.0.0 |
+| Buttons | v1.0.0 |
+| Calendar | v1.0.0-beta.1 |
 
 ** Developers should update table as they implement new versions...*
 
