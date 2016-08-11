@@ -455,3 +455,47 @@ $pe-calendar-dates-max-width: 40px;
 $pe-calendar-dates-min-width: 40px;
 $pe-calendar-dates-max-height: 35px;
 $pe-calendar-dates-min-height: 35px;
+
+//Grid Variables
+//http://pearson-higher-ed.github.io/design/c/grid/beta/
+
+$columns             : 12 !default;
+$columns-min-height  : 1px;
+
+$container-max-width : 1140px;
+
+$container-margin: (
+  xl : 40px,
+  lg : 40px,
+  md : 20px,
+  sm : 20px,
+  xs : 10px
+);
+
+$gutter-widths: (
+  xl : 40px,
+  lg : 40px,
+  md : 40px,
+  sm : 20px,
+  xs : 10px
+);
+
+//Breakpoints
+//http://pearson-higher-ed.github.io/design/c/breakpoints/
+
+$breakpoints-min: (
+  xs: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+) !default;
+
+
+$breakpoints-max: (
+xs: 480px,
+sm: 768px,
+md: 1024px,
+lg: 1280px,
+xl: 100%
+) !default;
