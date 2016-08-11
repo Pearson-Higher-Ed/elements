@@ -9,7 +9,7 @@
   "scripts": {
     "start": "gulp",
     "lint": "gulp lint",
-    "build": "gulp sass",
+    "build": "gulp build",
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "gh-pages": "node ./npm_scripts/gh-pages.js",
