@@ -53,12 +53,37 @@ $pe-colors: (
 //
 
 $pe-responsive-breakpoints: (
-  xs: (min: 0,      max: 479px),
+  xs: (min: 1px,    max: 479px),
   sm: (min: 480px,  max: 767px),
   md: (min: 768px,  max: 1023px),
   lg: (min: 1024px, max: 1279px),
   xl: (min: 1280px)
 ) !default;
+
+//Grid Variables
+//http://pearson-higher-ed.github.io/design/c/grid/beta/
+
+$pe-columns             : 12 !default;
+
+$pe-columns-min-height  : 1px;
+
+$pe-container-max-width : 1140px;
+
+$pe-container-margin: (
+  xl : 40px,
+  lg : 40px,
+  md : 20px,
+  sm : 20px,
+  xs : 10px
+);
+
+$pe-gutter-widths: (
+  xl : 40px,
+  lg : 40px,
+  md : 40px,
+  sm : 20px,
+  xs : 10px
+);
 
 // Type
 //
@@ -459,3 +484,9 @@ $pe-calendar-dates-max-width: 40px;
 $pe-calendar-dates-min-width: 40px;
 $pe-calendar-dates-max-height: 35px;
 $pe-calendar-dates-min-height: 35px;
+
+
+// progressbar
+$pe-progressbar-bg: pe-color(brightly-lit);
+$pe-progressbar-border: 1px solid pe-color(royal-navy);
+$pe-progressbar-value: pe-color(royal-navy);

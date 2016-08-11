@@ -1,3 +1,14 @@
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.11.0...v0.12.0) (2016-08-26)
+
+
+### Features
+
+* initial commit create CSS files without base HTML sytling. ([15747cc](https://github.com/Pearson-Higher-Ed/elements/commit/15747cc))
+* **icons:** Added shopping cart icon ([771483c](https://github.com/Pearson-Higher-Ed/elements/commit/771483c))
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.10.0...v0.11.0) (2016-08-12)
 
@@ -9,6 +20,7 @@
 
 ### Features
 
+* **color:** added 4 new colors, switched hard-coded values to use new variables ([6545f51](https://github.com/Pearson-Higher-Ed/elements/commit/6545f51))
 * fingerprinting static asset files and updating internal references to those file ([17a6bd6](https://github.com/Pearson-Higher-Ed/elements/commit/17a6bd6))
 
 
