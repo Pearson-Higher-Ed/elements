@@ -46,11 +46,11 @@ gulp.task('sass', () => {
   return gulp.src('./scss/elements.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
-    .pipe(gulp.dest('./dist/temp'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.reload({ stream: true }))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(nano())
-    .pipe(gulp.dest('./dist/temp'));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('assets', ['sass'], () => {
@@ -64,7 +64,7 @@ gulp.task('assets', ['sass'], () => {
 gulp.task('build', ['sass', 'assets'], () => {
   const revManifest = gulp.src('./dist/temp/rev-manifest.json');
 
-  gulp.src('./dist/temp/*.css')
+  gulp.src('./dist/css/*.css')
     .pipe(revReplace({ manifest: revManifest }))
     .pipe(gulp.dest('./dist/css'));
 
