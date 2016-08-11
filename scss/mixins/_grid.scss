@@ -1,0 +1,60 @@
+//Grid Mixins
+
+@mixin generate-container($container-max-width) {
+  .container {
+  position      : relative;
+  max-width     : $container-max-width;
+
+  @each $breakpoint-name, $breakpoint-value in $breakpoints-min {
+
+    //Get container margin by breakpoint-name
+    $margin : map-get($container-margin, $breakpoint-name);
+
+    //Construct media query
+    @media(min-width:#{$breakpoint-value}){
+      margin-right : ($margin / 2);
+      margin-left  : ($margin / 2);
+    };
+  };
+  };
+};
+
+
+@mixin position-columns($column, $columns){
+  float : left;
+  width : percentage($column / $columns);
+};
+
+
+@mixin generate-columns(){
+  $breakpoint-list:();
+
+  @each $breakpoint-name, $breakpoint-value in $breakpoints-min {
+    //Construct media query
+    @media(min-width:#{$breakpoint-value}){
+      @for $i from 1 through $columns {
+
+        $breakpoint-list: append($breakpoint-list, unquote(".col-#{$breakpoint-name}-#{$i}"), comma);
+        //Construct column
+        .col-#{$breakpoint-name}-#{$i} {
+          margin-right : map-get($gutter-widths, $breakpoint-name) / 2;
+          margin-left  : map-get($gutter-widths, $breakpoint-name) / 2;
+          @include position-columns($i, $columns);
+        };
+      };
+    };
+  };
+
+  #{$breakpoint-list} {
+    position      : relative;
+    min-height    : 1px;
+  };
+};
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
