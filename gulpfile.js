@@ -43,6 +43,39 @@ gulp.task('lint', () => {
 });
 
 gulp.task('sass', () => {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+  gulp.src('./scss/elementsNoPlain.scss')
+=======
+  gulp.src('./scss/elementsBase.scss')
+>>>>>>> 15747cc... feat: initial commit create CSS files without base HTML sytling.
+=======
+  gulp.src('./scss/elementsNoPlain.scss')
+>>>>>>> 189a6d8... docs: updated documentation regarding the elementsNoPlain files.
+=======
+  gulp.src('./scss/elementsBase.scss')
+>>>>>>> 15747cc... feat: initial commit create CSS files without base HTML sytling.
+=======
+  gulp.src('./scss/elementsNoPlain.scss')
+>>>>>>> 189a6d8... docs: updated documentation regarding the elementsNoPlain files.
+=======
+  gulp.src('./scss/elementsBase.scss')
+>>>>>>> 15747cc... feat: initial commit create CSS files without base HTML sytling.
+=======
+  gulp.src('./scss/elementsNoPlain.scss')
+>>>>>>> 189a6d8... docs: updated documentation regarding the elementsNoPlain files.
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(nano())
+    .pipe(gulp.dest('./dist/css'));
+
   return gulp.src('./scss/elements.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
