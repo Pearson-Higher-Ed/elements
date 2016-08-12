@@ -1,3 +1,18 @@
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.10.0...v0.11.0) (2016-08-12)
+
+
+### Bug Fixes
+
+* not moving css files to temp dir during intermediate build phase. ([1924557](https://github.com/Pearson-Higher-Ed/elements/commit/1924557))
+* npm build now runs gulp build ([5747c54](https://github.com/Pearson-Higher-Ed/elements/commit/5747c54))
+
+### Features
+
+* fingerprinting static asset files and updating internal references to those file ([17a6bd6](https://github.com/Pearson-Higher-Ed/elements/commit/17a6bd6))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.9.0...v0.10.0) (2016-07-26)
 
