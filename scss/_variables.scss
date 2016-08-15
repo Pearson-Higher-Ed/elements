@@ -11,6 +11,7 @@ $pe-icons-path: '/fonts/' !default;
 $pe-icons-name: 'pearson-fa' !default;
 
 $pe-images-path: '/images/';
+$pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 
 
 // Colors
@@ -33,6 +34,7 @@ $pe-colors: (
   full-moon: #424242,
   asphalt: #3f3f3f,
   smoke-gray: #545454,
+  sandy-gray: #6d6d6d,
 
   // colors
   highlighter: #fdec2e,
@@ -41,7 +43,10 @@ $pe-colors: (
   basic-blue: #107aca,
   sea: #0c5d99,
   deep-sea: #0a4d80,
-  sky-blue: #9dc0db
+  sky-blue: #9dc0db,
+  firetruck: #d0021b,
+  spruce: #076826,
+  blue-milk: #d9eeff
 );
 
 // Responsive breakpoints
@@ -211,11 +216,11 @@ $pe-input-small-padding: 0 10px !default;
 $pe-input-small-font-size: $pe-label-font-size !default;
 $pe-input-small-line-height: $pe-label-line-height !default;
 $pe-input-readonly-bg: pe-color(off-white) !default;
-$pe-input-error-border: solid 1px #d0021b !default;
-$pe-input-error-text-color: #d0021b;
-$pe-input-error-outline: 1px solid #d0021b;
-$pe-input-error-box-shadow: 0px 0px 4px #d0021b !default;
-$pe-input-placeholder-color: #6d6d6d !default;
+$pe-input-error-border: solid 1px pe-color(firetruck) !default;
+$pe-input-error-text-color: pe-color(firetruck);
+$pe-input-error-outline: 1px solid pe-color(firetruck);
+$pe-input-error-box-shadow: 0px 0px 4px pe-color(firetruck) !default;
+$pe-input-placeholder-color: pe-color(sandy-gray) !default;
 $pe-input-placeholder-text: italic !default;
 
 
@@ -301,7 +306,6 @@ $pe-header-link-hover-color: pe-color(off-white) !default;
 
 $pe-header-brand-font-size: 1.25rem !default;
 
-$pe-header-logo-sprite-name: 'pearson-sprite.svg' !default;
 $pe-header-logo-sprite-height: 16px !default;
 $pe-header-logo-margin-x: 14px !default;
 

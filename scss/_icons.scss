@@ -7,9 +7,9 @@
   font-family: 'pearson-fa';
   src: url('#{$pe-icons-path}#{$pe-icons-name}.eot?i9zm12');
   src: url('#{$pe-icons-path}#{$pe-icons-name}.eot?i9zm12#iefix') format('embedded-opentype'),
-    url('#{$pe-icons-path}#{$pe-icons-name}.ttf?i9zm12') format('truetype'),
-    url('#{$pe-icons-path}#{$pe-icons-name}.woff?i9zm12') format('woff'),
-    url('#{$pe-icons-path}#{$pe-icons-name}.svg?i9zm12##{$pe-icons-name}') format('svg');
+  url('#{$pe-icons-path}#{$pe-icons-name}.ttf?i9zm12') format('truetype'),
+  url('#{$pe-icons-path}#{$pe-icons-name}.woff?i9zm12') format('woff'),
+  url('#{$pe-icons-path}#{$pe-icons-name}.svg?i9zm12##{$pe-icons-name}') format('svg');
   font-weight: normal;
   font-style: normal;
 }

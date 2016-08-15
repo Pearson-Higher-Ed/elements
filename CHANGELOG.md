@@ -1,3 +1,33 @@
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.10.0...v0.11.0) (2016-08-12)
+
+
+### Bug Fixes
+
+* not moving css files to temp dir during intermediate build phase. ([1924557](https://github.com/Pearson-Higher-Ed/elements/commit/1924557))
+* npm build now runs gulp build ([5747c54](https://github.com/Pearson-Higher-Ed/elements/commit/5747c54))
+
+### Features
+
+* fingerprinting static asset files and updating internal references to those file ([17a6bd6](https://github.com/Pearson-Higher-Ed/elements/commit/17a6bd6))
+
+
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.9.0...v0.10.0) (2016-07-26)
+
+
+### Bug Fixes
+
+* **headings:** h5 and h6 unbolded ([06a2688](https://github.com/Pearson-Higher-Ed/elements/commit/06a2688))
+
+### Features
+
+* **icons:** started adding some new icons ([75d7aee](https://github.com/Pearson-Higher-Ed/elements/commit/75d7aee))
+* **typography:** added sub/sup examples; adjusted markup and docs ([7fb04fa](https://github.com/Pearson-Higher-Ed/elements/commit/7fb04fa))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.8.0...v0.9.0) (2016-07-13)
 
