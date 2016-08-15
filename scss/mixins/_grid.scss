@@ -1,60 +1,85 @@
 //Grid Mixins
 
-@mixin generate-container($container-max-width) {
-  .container {
-  position      : relative;
-  max-width     : $container-max-width;
+@mixin generate-container($pe-container-max-width, $pe-responsive-breakpoints) {
+  .pe-container {
+    position      : relative;
+    max-width     : $pe-container-max-width;
+    margin-right  : auto;
+    margin-left   : auto;
+    min-height    : 1px;
+    height        : 100%;
+    @include clearfix();
 
-  @each $breakpoint-name, $breakpoint-value in $breakpoints-min {
+    @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
-    //Get container margin by breakpoint-name
-    $margin : map-get($container-margin, $breakpoint-name);
+      //Get container margin by breakpoint
+      $breakpoint-value : pe-responsive-get-breakpoint-value($breakpoint, min);
+      $margin           : map-get($pe-container-margin, $breakpoint);
 
-    //Construct media query
-    @media(min-width:#{$breakpoint-value}){
-      margin-right : ($margin / 2);
-      margin-left  : ($margin / 2);
+      //Construct media query
+      @media(min-width:#{$breakpoint-value} ){
+        padding-right : ($margin / 2);
+        padding-left  : ($margin / 2);
+      };
     };
   };
-  };
 };
 
 
-@mixin position-columns($column, $columns){
+@mixin position-columns($column, $columns, $current-margin, $pe-container-max-width){
+  $column-width : percentage($column / $columns);
+  @debug($pe-container-max-width - ($current-margin * $columns));
+  $raw-container: $pe-container-max-width - ($current-margin * $columns);
+  $gutter-width : percentage($current-margin / $raw-container);
+  $width        : $column-width - $gutter-width;
+
   float : left;
-  width : percentage($column / $columns);
+  width : $width;
 };
 
 
-@mixin generate-columns(){
+@mixin generate-columns($pe-responsive-breakpoints){
   $breakpoint-list:();
 
-  @each $breakpoint-name, $breakpoint-value in $breakpoints-min {
-    //Construct media query
-    @media(min-width:#{$breakpoint-value}){
-      @for $i from 1 through $columns {
+  @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
-        $breakpoint-list: append($breakpoint-list, unquote(".col-#{$breakpoint-name}-#{$i}"), comma);
+    //Construct media query
+    @media(min-width: pe-responsive-get-breakpoint-value($breakpoint, min)){
+      @for $i from 1 through $pe-columns {
+
+        $breakpoint-list: append($breakpoint-list, unquote(".col-#{$breakpoint}-#{$i}"), comma);
+        $current-margin : map-get($pe-gutter-widths, $breakpoint);
+
+        //Construct Row
+        .pe-row{
+          margin-right : $current-margin / -2;
+          margin-left  : $current-margin / -2;
+        }
+
         //Construct column
-        .col-#{$breakpoint-name}-#{$i} {
-          margin-right : map-get($gutter-widths, $breakpoint-name) / 2;
-          margin-left  : map-get($gutter-widths, $breakpoint-name) / 2;
-          @include position-columns($i, $columns);
+        //(add #{breakpoint to add ability to set breakpoint} .pe-col-#{$breakpoint}-#{$i})
+        .pe-col-#{$breakpoint}-#{$i} {
+          margin-right : $current-margin / 2;
+          margin-left  : $current-margin / 2;
+          @include position-columns($i, $pe-columns, $current-margin, $pe-container-max-width);
         };
+
       };
     };
   };
 
   #{$breakpoint-list} {
-    position      : relative;
-    min-height    : 1px;
+    position   : relative;
+    min-height : 1px;
+    @include clearfix();
   };
 };
 
+
 @mixin clearfix() {
   &::after {
-    content: "";
-    display: table;
-    clear: both;
+    content : "";
+    display : table;
+    clear   : both;
   }
 }

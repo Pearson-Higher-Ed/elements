@@ -1,5 +1,5 @@
 //Grid
 
-@include generate-container($container-max-width);
+@include generate-container($pe-container-max-width, $pe-responsive-breakpoints);
 
-@include generate-columns();
+@include generate-columns($pe-responsive-breakpoints);
