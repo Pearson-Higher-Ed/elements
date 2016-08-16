@@ -53,6 +53,7 @@
         .pe-row{
           margin-right : $current-margin / -2;
           margin-left  : $current-margin / -2;
+          @include clearfix();
         }
 
         //Construct column
