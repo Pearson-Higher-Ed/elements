@@ -8,7 +8,6 @@
     margin-left   : auto;
     min-height    : 1px;
     height        : 100%;
-    @include clearfix();
 
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
@@ -28,7 +27,6 @@
 
 @mixin position-columns($column, $columns, $current-margin, $pe-container-max-width){
   $column-width : percentage($column / $columns);
-  @debug($pe-container-max-width - ($current-margin * $columns));
   $raw-container: $pe-container-max-width - ($current-margin * $columns);
   $gutter-width : percentage($current-margin / $raw-container);
   $width        : $column-width - $gutter-width;
@@ -71,15 +69,13 @@
   #{$breakpoint-list} {
     position   : relative;
     min-height : 1px;
-    @include clearfix();
+    height     : 100%;
   };
 };
 
 
 @mixin clearfix() {
   &::after {
-    content : "";
-    display : table;
-    clear   : both;
+    overflow:hidden
   }
 }
