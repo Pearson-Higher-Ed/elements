@@ -7,7 +7,6 @@
     margin-right  : auto;
     margin-left   : auto;
     min-height    : 1px;
-    height        : 100%;
     @include clearfix();
 
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
@@ -26,44 +25,43 @@
 };
 
 
-@mixin position-columns($column, $columns, $current-margin, $pe-container-max-width){
-  $column-width : percentage($column / $columns);
-  $raw-container: $pe-container-max-width - ($current-margin * $columns);
-  $gutter-width : percentage($current-margin / $raw-container);
-  $width        : $column-width - $gutter-width;
-
-  float : left;
-  width : $width;
-};
-
-
 @mixin generate-columns($pe-responsive-breakpoints){
   $breakpoint-list:();
 
-  @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+  @each $breakpoint in map-keys($pe-container-margin) {
+
+    $current-gutter  : map-get($pe-gutter-widths, $breakpoint);
 
     //Construct media query
-    @media(min-width: pe-responsive-get-breakpoint-value($breakpoint, min)){
-      @for $i from 1 through $pe-columns {
+    $current-breakpoint-value-get : pe-responsive-get-breakpoint-value($breakpoint, min);
 
-        $breakpoint-list: append($breakpoint-list, unquote(".col-#{$breakpoint}-#{$i}"), comma);
-        $current-margin : map-get($pe-gutter-widths, $breakpoint);
+    @if $current-breakpoint-value-get <= $pe-container-max-width {
+       $current-breakpoint-value-get : $current-breakpoint-value-get
+    } @else{
+       $current-breakpoint-value-get : $pe-container-max-width
+      }
 
-        //Construct Row
-        .pe-row{
-          margin-right : $current-margin / -2;
-          margin-left  : $current-margin / -2;
-          @include clearfix();
-        }
+    @media(min-width: $current-breakpoint-value-get){
 
-        //Construct column
-        //(add #{breakpoint to add ability to set breakpoint} .pe-col-#{$breakpoint}-#{$i})
-        .pe-col-#{$breakpoint}-#{$i} {
-          margin-right : $current-margin / 2;
-          margin-left  : $current-margin / 2;
-          @include position-columns($i, $pe-columns, $current-margin, $pe-container-max-width);
+      //Construct Row
+      .pe-row {
+        margin-right : $current-gutter / -2;
+        margin-left  : $current-gutter / -2;
+        @include clearfix();
+
+        @for $i from 1 through $pe-columns {
+
+          $breakpoint-list : append($breakpoint-list, unquote(".col-#{$breakpoint}-#{$i}"), comma);
+          $column-width    : percentage($i / $pe-columns);
+
+          //Construct column
+          .pe-col-#{$breakpoint}-#{$i} {
+            padding-right : $current-gutter / 2;
+            padding-left  : $current-gutter / 2;
+            width         : $column-width;
+            float         : left;
+          };
         };
-
       };
     };
   };
@@ -71,7 +69,6 @@
   #{$breakpoint-list} {
     position   : relative;
     min-height : 1px;
-    height     : 100%;
   };
 };
 

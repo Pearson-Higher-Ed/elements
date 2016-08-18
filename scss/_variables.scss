@@ -53,7 +53,7 @@ $pe-colors: (
 //
 
 $pe-responsive-breakpoints: (
-  xs: (min: 0,      max: 479px),
+  xs: (min: 1px,    max: 479px),
   sm: (min: 480px,  max: 767px),
   md: (min: 768px,  max: 1023px),
   lg: (min: 1024px, max: 1279px),
@@ -64,8 +64,6 @@ $pe-responsive-breakpoints: (
 //http://pearson-higher-ed.github.io/design/c/grid/beta/
 
 $pe-columns             : 12 !default;
-$pe-columns-min-height  : 1px;
-
 $pe-container-max-width : 1140px;
 
 $pe-container-margin: (
