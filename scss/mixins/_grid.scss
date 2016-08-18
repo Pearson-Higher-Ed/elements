@@ -12,11 +12,18 @@
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
       //Get container margin by breakpoint
-      $breakpoint-value : pe-responsive-get-breakpoint-value($breakpoint, min);
       $margin           : map-get($pe-container-margin, $breakpoint);
 
+      $current-breakpoint-value-get : pe-responsive-get-breakpoint-value($breakpoint, min);
+
+      @if $current-breakpoint-value-get <= $pe-container-max-width {
+         $current-breakpoint-value-get : $current-breakpoint-value-get
+      } @else{
+         $current-breakpoint-value-get : $pe-container-max-width
+        }
+
       //Construct media query
-      @media(min-width:#{$breakpoint-value} ){
+      @media(min-width:$current-breakpoint-value-get){
         padding-right : ($margin / 2);
         padding-left  : ($margin / 2);
       };
@@ -32,7 +39,6 @@
 
     $current-gutter  : map-get($pe-gutter-widths, $breakpoint);
 
-    //Construct media query
     $current-breakpoint-value-get : pe-responsive-get-breakpoint-value($breakpoint, min);
 
     @if $current-breakpoint-value-get <= $pe-container-max-width {
@@ -41,6 +47,7 @@
        $current-breakpoint-value-get : $pe-container-max-width
       }
 
+    //Construct media query
     @media(min-width: $current-breakpoint-value-get){
 
       //Construct Row
@@ -79,4 +86,4 @@
     display: table;
     clear: both;
   }
-}
+};
