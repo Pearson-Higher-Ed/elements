@@ -42,7 +42,7 @@ A low level framework for positioning elements on the page.
 <div class="pe-container">
   <div class='pe-row'>
     <div class="pe-col-xs-4"><p style="background:cyan">one</p></div>
-    <div class="pe-col-xs-4"><p style="background:cyan">two</p></div>
+    <div class="pe-col-md-4"><p style="background:cyan">two</p></div>
     <div class="pe-col-xs-4"><p style="background:cyan">three</p></div>
   </div>
 </div>
