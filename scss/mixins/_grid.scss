@@ -2,6 +2,7 @@
 
 @mixin generate-container($pe-container-max-width, $pe-responsive-breakpoints) {
   .pe-container {
+    position      : relative;
     max-width     : $pe-container-max-width;
     margin-right  : auto;
     margin-left   : auto;
@@ -25,10 +26,25 @@
 
 
 @mixin generate-columns($pe-responsive-breakpoints){
+  $breakpoint-list:();
 
-      @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+  @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
-        $current-gutter : map-get($pe-gutter-widths, $breakpoint);
+    $current-gutter               : map-get($pe-gutter-widths, $breakpoint);
+    $current-breakpoint-value-gets : get-breakpoint-value($breakpoint);
+
+
+    //Construct media query
+    @media(min-width: $current-breakpoint-value-gets){
+
+      //Construct Row
+      .pe-row {
+        margin-right : $current-gutter / -2;
+        margin-left  : $current-gutter / -2;
+        @include clearfix();
+      };
+
+      @each $breakpoint in map-keys($pe-container-margin) {
 
         @for $i from 1 through $pe-columns {
 
@@ -44,31 +60,16 @@
           };
         };
       };
-@include generate-rows();
-};
-
-@mixin generate-rows(){
-
-  .pe-row{
-    @include clearfix();
-  };
-
-  div.pe-row > div:last-child{
-    padding-right : 0px;
-  };
-
-  div.pe-row > div:nth-child(1){
-    padding-left : 0px;
+    };
   };
 };
-
 
 
 @mixin clearfix() {
   &::after {
-    content : "";
-    display : table;
-    clear   : both;
+    content: "";
+    display: table;
+    clear: both;
   }
 };
 
