@@ -43,6 +43,15 @@ gulp.task('lint', () => {
 });
 
 gulp.task('sass', () => {
+  gulp.src('./scss/elementsBase.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(browserSync.reload({ stream: true }))
+    .pipe(rename({ extname: '.min.css' }))
+    .pipe(nano())
+    .pipe(gulp.dest('./dist/css'));
+
   return gulp.src('./scss/elements.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
