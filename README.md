@@ -97,7 +97,7 @@ List of Elements with their current respective design version:
 | Inputs | v1.0.0 |
 | Buttons | v1.0.0 |
 | Calendar | v1.0.0-beta.1 |
-| Grid | 1.0.0-beta.2 |
+| Grid | 1.0.0 |
 
 ** Developers should update table as they implement new versions...*
 
