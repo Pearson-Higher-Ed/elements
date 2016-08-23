@@ -2,7 +2,6 @@
 
 @mixin generate-container($pe-container-max-width, $pe-responsive-breakpoints) {
   .pe-container {
-    position      : relative;
     max-width     : $pe-container-max-width;
     margin-right  : auto;
     margin-left   : auto;
@@ -27,44 +26,49 @@
 
 @mixin generate-columns($pe-responsive-breakpoints){
 
-  @each $breakpoint in map-keys($pe-container-margin) {
+      @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
-    $current-gutter               : map-get($pe-gutter-widths, $breakpoint);
-    $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
+        $current-gutter : map-get($pe-gutter-widths, $breakpoint);
 
-    //Construct media query
-    @media(min-width: $current-breakpoint-value-get){
+        @for $i from 1 through $pe-columns {
 
-      //Construct Row
-      .pe-row {
-        margin-right : $current-gutter / -2;
-        margin-left  : $current-gutter / -2;
-        @include clearfix();
-      };
+          $column-width    : percentage($i / $pe-columns);
 
-      @for $i from 1 through $pe-columns {
-
-        $column-width    : percentage($i / $pe-columns);
-
-        //Construct column
-        .pe-col-#{$breakpoint}-#{$i} {
-          padding-right : $current-gutter / 2;
-          padding-left  : $current-gutter / 2;
-          width         : $column-width;
-          float         : left;
-          min-height    : 1px;
+          //Construct column
+          .pe-col-#{$breakpoint}-#{$i} {
+            padding-right : $current-gutter / 2;
+            padding-left  : $current-gutter / 2;
+            width         : $column-width;
+            float         : left;
+            min-height    : 1px;
+          };
         };
       };
-    };
+@include generate-rows();
+};
+
+@mixin generate-rows(){
+
+  .pe-row{
+    @include clearfix();
+  };
+
+  div.pe-row > div:last-child{
+    padding-right : 0px;
+  };
+
+  div.pe-row > div:nth-child(1){
+    padding-left : 0px;
   };
 };
 
 
+
 @mixin clearfix() {
   &::after {
-    content: "";
-    display: table;
-    clear: both;
+    content : "";
+    display : table;
+    clear   : both;
   }
 };
 
