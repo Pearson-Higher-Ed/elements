@@ -43,7 +43,7 @@ gulp.task('lint', () => {
 });
 
 gulp.task('sass', () => {
-  gulp.src('./scss/elementsBase.scss')
+  gulp.src('./scss/elementsNoPlain.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer]))
     .pipe(gulp.dest('./dist/css'))

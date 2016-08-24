@@ -23,6 +23,10 @@ To comment out any SCSS file so it's not added to your rendered elements.css, op
 
 The above would prevent the `_plain-tags.scss` styles from being transpiled into the `elements.css` file.
 
+NOTE: if desired, Elements SDK ships with a version that does not include any styling on plain HTML tags.  Simply include
+the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files or add the `/scss/elementsNoPlain.scss` file
+to the project.
+
 ### Important: Fonts
 
 The Elements SDK looks for the /fonts folder at the root of your served application. Copy the npm-installed /fonts to the
