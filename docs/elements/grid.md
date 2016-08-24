@@ -8,82 +8,91 @@ A low level framework for positioning elements on the page.
 
 ## Equal Columns
 {{#demo}}
-<div class="pe-container">
-  <div class='pe-row'>
-    <div class="pe-col-xs-1"><p style="background:cyan">one</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">two</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">three</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">four</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">five</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">six</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">seven</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">eight</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">nine</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">ten</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">eleven</p></div>
-    <div class="pe-col-xs-1"><p style="background:cyan">twelve</p></div>
-  </div>
-  <br />
-  <div class='pe-row'>
-    <div class="pe-col-sm-1"><p style="background:cyan">one</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">two</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">three</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">four</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">five</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">six</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">seven</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">eight</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">nine</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">ten</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">eleven</p></div>
-    <div class="pe-col-sm-1"><p style="background:cyan">twelve</p></div>
-  </div>
-  <br />
-  <div class='pe-row'>
-    <div class="pe-col-md-1"><p style="background:cyan">one</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">two</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">three</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">four</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">five</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">six</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">seven</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">eight</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">nine</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">ten</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">eleven</p></div>
-    <div class="pe-col-md-1"><p style="background:cyan">twelve</p></div>
-  </div>
-  <br />
-  <div class='pe-row'>
-    <div class="pe-col-lg-1"><p style="background:cyan">one</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">two</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">three</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">four</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">five</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">six</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">seven</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">eight</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">nine</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">ten</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">eleven</p></div>
-    <div class="pe-col-lg-1"><p style="background:cyan">twelve</p></div>
-  </div>
-  <br />
-  <div class='pe-row'>
-    <div class="pe-col-xl-1"><p style="background:cyan">one</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">two</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">three</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">four</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">five</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">six</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">seven</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">eight</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">nine</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">ten</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">eleven</p></div>
-    <div class="pe-col-xl-1"><p style="background:cyan">twelve</p></div>
-  </div>
-</div>
+    <p>pe-col-xs-1</p>
+    <div class="pe-container">
+      <div class='pe-row'>
+        <div class="pe-col-xs-1"><p style="background:cyan">one</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">two</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">three</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">four</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">five</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">six</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">seven</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">eight</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">nine</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">ten</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">eleven</p></div>
+        <div class="pe-col-xs-1"><p style="background:cyan">twelve</p></div>
+      </div>
+    </div>
+    <p>pe-col-sm-1</p>
+    <div class="pe-container">
+      <div class='pe-row'>
+        <div class="pe-col-sm-1"><p style="background:cyan">one</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">two</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">three</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">four</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">five</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">six</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">seven</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">eight</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">nine</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">ten</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">eleven</p></div>
+        <div class="pe-col-sm-1"><p style="background:cyan">twelve</p></div>
+      </div>
+    </div>
+    <p>pe-col-md-1</p>
+    <div class="pe-container">
+      <div class='pe-row'>
+        <div class="pe-col-md-1"><p style="background:cyan">one</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">two</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">three</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">four</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">five</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">six</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">seven</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">eight</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">nine</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">ten</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">eleven</p></div>
+        <div class="pe-col-md-1"><p style="background:cyan">twelve</p></div>
+      </div>
+    </div>
+    <p>pe-col-lg-1</p>
+    <div class="pe-container">
+      <div class='pe-row'>
+        <div class="pe-col-lg-1"><p style="background:cyan">one</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">two</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">three</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">four</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">five</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">six</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">seven</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">eight</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">nine</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">ten</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">eleven</p></div>
+        <div class="pe-col-lg-1"><p style="background:cyan">twelve</p></div>
+      </div>
+    </div>
+    <p>pe-col-xl-1</p>
+    <div class="pe-container">
+      <div class='pe-row'>
+        <div class="pe-col-xl-1"><p style="background:cyan">one</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">two</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">three</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">four</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">five</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">six</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">seven</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">eight</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">nine</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">ten</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">eleven</p></div>
+        <div class="pe-col-xl-1"><p style="background:cyan">twelve</p></div>
+      </div>
+    </div>
 {{/demo}}
 
 ## Span Mulitple Columns
