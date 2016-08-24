@@ -38,8 +38,8 @@
 
       //Construct Row
       .pe-row {
-        margin-right : $current-gutter;
-        margin-left  : $current-gutter;
+        margin-right : $current-gutter / - 2;
+        margin-left  : $current-gutter / - 2;
         @include clearfix();
       };
 
