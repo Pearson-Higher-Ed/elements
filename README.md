@@ -102,8 +102,6 @@ List of Elements with their current respective design version:
 ** Developers should update table as they implement new versions...*
 
 
-
-
 ## Acknowledgements
 
 This project was inspired by other popular front-end frameworks published under the MIT license:
