@@ -17,8 +17,8 @@
 
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
-        padding-right : ($margin / 2);
-        padding-left  : ($margin / 2);
+        padding-right : ($margin);
+        padding-left  : ($margin);
       };
     };
   };
@@ -38,8 +38,8 @@
 
       //Construct Row
       .pe-row {
-        margin-right : $current-gutter / -2;
-        margin-left  : $current-gutter / -2;
+        margin-right : $current-gutter;
+        margin-left  : $current-gutter;
         @include clearfix();
       };
 
