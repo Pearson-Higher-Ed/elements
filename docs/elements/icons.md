@@ -47,6 +47,7 @@ The available icons are a subset of [Font Awesome by Dave Gandy](http://fontawes
   <li><i class="pe-icon--caret-right"></i> caret-right</li>
   <li><i class="pe-icon--caret-down"></i> caret-down</li>
   <li><i class="pe-icon--lightbulb-o"></i> lightbulb-o</li>
+  <li><i class="pe-icon--shopping-cart"></i> shopping-cart</li>
 </ul>
 
 ## Adding new icons
