@@ -27,14 +27,39 @@
 
 @mixin generate-columns($pe-responsive-breakpoints){
 
+  // TODO (group common column widths)
+  @for $i from 1 through $pe-columns {
+    $column-width : percentage($i / $pe-columns);
+    @each $breakpoint in map-keys($pe-container-margin) {
+
+      //Construct column defaults
+      .pe-col-#{$breakpoint}-#{$i} {
+        width : $column-width;
+      };
+
+    };
+  };
+
+  $breakpoint-ex : ();
+
   @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
+    $breakpoint-ex                 : append($breakpoint-ex, unquote('div[class*="#{$breakpoint}"]'), comma);
+    $breakpoint-ex-n               : set-nth($breakpoint-ex, 1, null );
     $current-gutter                : map-get($pe-gutter-widths, $breakpoint);
     $current-breakpoint-value-gets : get-breakpoint-value($breakpoint);
 
-
     //Construct media query
     @media(min-width: $current-breakpoint-value-gets){
+
+      @each $breakpoint-ex-n-a in $breakpoint-ex-n{
+        @if $breakpoint-ex-n-a {
+          #{$breakpoint-ex-n-a}{
+            width : 100%;
+          };
+        };
+      };
+
 
       //Construct Row
       .pe-row {
@@ -43,24 +68,25 @@
         @include clearfix();
       };
 
-      @each $breakpoint in map-keys($pe-container-margin) {
 
-        @for $i from 1 through $pe-columns {
 
-          $column-width    : percentage($i / $pe-columns);
-
-          //Construct column
-          .pe-col-#{$breakpoint}-#{$i} {
-            padding-right : $current-gutter / 2;
-            padding-left  : $current-gutter / 2;
-            width         : $column-width;
-            float         : left;
-            min-height    : 1px;
+      // Group common properties in media query by class list
+      $breakpoint-list:();
+        @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+          @for $i from 1 through $pe-columns {
+            $breakpoint-list: append($breakpoint-list, unquote(".pe-col-#{$breakpoint}-#{$i}"), comma);
           };
         };
+        #{$breakpoint-list} {
+          padding-right : $current-gutter / 2;
+          padding-left  : $current-gutter / 2;
+          min-height    : 1px;
+          float         : left;
+          @include clearfix();
+        };
       };
-    };
   };
+
 };
 
 
