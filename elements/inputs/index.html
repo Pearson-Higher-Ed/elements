@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/inputs">
+                        Inputs
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/calendar">
+                        Calendar
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Inputs</h1>
+
+        <h2>Input with button</h2>
+<p>A combination of pe-input and pe-button.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-input-group">
+  <div class="pe-input">
+    <label for="i1">Label text</label>
+    <input type="text" id="i1" value="Basic text input field">
+    <button class="pe-btn pe-btn--medium">Do Stuff!</button>
+  </div>
+</div>
+<p>Example as search: </p>
+<div class="pe-input-group">
+  <div class="pe-input">
+    <label for="i2">Search our site</label>
+    <input type="text" id="i2" placeholder="course number, course name, instructor">
+    <button class="pe-btn pe-btn--medium">
+      <i class="pe-icon--search" aria-hidden="true"></i>
+      <span class="pe-sr-only">Search</span>
+    </button>
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input-group"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i1"</span>&gt;</span>Label text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Basic text input field"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--medium"</span>&gt;</span>Do Stuff!<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Example as search: <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input-group"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i2"</span>&gt;</span>Search our site<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i2"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"course number, course name, instructor"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--medium"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-icon--search"</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-sr-only"</span>&gt;</span>Search<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Single-line input fields</h2>
+<aside>
+Label-input pairs are wrapped in divs in order to have a single unit that can be styled and moved around. The `pe-inlineblock` class on a container will make these divs line up horizontally.
+</aside>
+<p>Text input form elements are to be used for single line text inputs.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-inlineblock">
+  <div class="pe-input">
+    <label for="i1">Text label</label>
+    <input type="text" id="i1" value="Basic text input field">
+  </div>
+  <div class="pe-input pe-input--small">
+    <label for="i2">Text label</label>
+    <input type="text" id="i2" value="Small text input field">
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-inlineblock"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i1"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Basic text input field"</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--small"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i2"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Small text input field"</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Placeholder</h3>
+<p>Placeholders can be used to give additional information about the format of data. They do <em>not</em> replace labels!</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-input">
+  <label for="i3">Your name</label>
+  <input type="text" id="i3" placeholder="First and last name" value="">
+</div>
+<div class="pe-input pe-input--small">
+  <label for="i4">Your name</label>
+  <input type="text" id="i4" placeholder="First and last name" value="">
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i3"</span>&gt;</span>Your name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"First and last name"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--small"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i4"</span>&gt;</span>Your name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i4"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"First and last name"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Readonly</h3>
+<p>To prevent the user from interacting with the field. The <code>pe-input--readonly</code> class is only for styling; the readonly attribute <em>must</em> be applied to make the field function as readonly.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-input pe-input--readonly">
+  <label for="i5">Your text</label>
+  <input type="text" id="i5" value="Readonly text here" readonly>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--readonly"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i5"</span>&gt;</span>Your text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i5"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Readonly text here"</span> <span class="hljs-attribute">readonly</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Disabled</h3>
+<p>This state is a form input that is unavailable for interaction. The <code>pe-input--disabled</code> class is only for styling; the disabled attribute <em>must</em> be applied to make the field function as disabled.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-input pe-input--disabled">
+  <label for="i6">Text label</label>
+  <input type="text" id="i6" value="Disabled" disabled>
+</div>
+<div class="pe-input pe-input--disabled">
+  <label for="i7">Text label</label>
+  <input type="text" id="i7" placeholder="disabled with a placeholder" value="" disabled>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--disabled"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i6"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i6"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Disabled"</span> <span class="hljs-attribute">disabled</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--disabled"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i7"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i7"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"disabled with a placeholder"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">disabled</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Error</h3>
+<p>This field is used when a field has been filled out incorrectly. This state should always be paired with an explanatory message, which either must be inside the label element <em>or</em> if a separate element is used, it must have an id and the input must have a matching <code>aria-describedby</code> attribute.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-input pe-input--small pe-input--error">
+  <label for="i8">Text label <span class="pe-error-text">something went wrong!</span></label>
+  <input type="text" id="i8" value="Error (in small input)">
+</div>
+<div class="pe-input pe-input--error">
+  <label for="i9">Text label </label>
+  <input type="text" id="i9" aria-describedby="i9-error" value="Error">
+  <p id="i9-error" class="pe-error-text">Something went wrong!</p>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--small pe-input--error"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i8"</span>&gt;</span>Text label <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-error-text"</span>&gt;</span>something went wrong!<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i8"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Error (in small input)"</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input pe-input--error"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"i9"</span>&gt;</span>Text label <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i9"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"i9-error"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Error"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"i9-error"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-error-text"</span>&gt;</span>Something went wrong!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Checkboxes</h2>
+<p>Checkboxes are for times when the user needs to make one or more binary choices about a related item. Type attribute of &quot;checkbox&quot; also represents a state or option that can be toggled.</p>
+<h3>Checked, unchecked, disabled and unchecked, disabled and checked</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-checkbox">
+    <input type="checkbox" name="Checked" id="chk1" value="" checked>
+    <label for="chk1">Checked</label>
+  </div>
+  <div class="pe-checkbox">
+    <input type="checkbox" name="UnChecked" id="chk2" value="">
+    <label for="chk2">UnChecked</label>
+  </div>
+  <div class="pe-checkbox">
+    <input type="checkbox" name="Read only/Disabled" id="chk3" value="" disabled>
+    <label for="chk3">Read only/Disabled</label>
+  </div>
+  <div class="pe-checkbox">
+    <input type="checkbox" name="Read only/Disabled (checked)" id="chk4" value="" disabled checked>
+    <label for="chk4">Read only/Disabled (checked)</label>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-checkbox"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"Checked"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chk1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">checked</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"chk1"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-checkbox"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"UnChecked"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chk2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"chk2"</span>&gt;</span>UnChecked<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-checkbox"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"Read only/Disabled"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chk3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">disabled</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"chk3"</span>&gt;</span>Read only/Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-checkbox"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"Read only/Disabled (checked)"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chk4"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">checked</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"chk4"</span>&gt;</span>Read only/Disabled (checked)<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Small checkbox</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-checkbox pe-checkbox--small">
+    <input type="checkbox" name="Small checkbox" id="chk5" value="">
+    <label for="chk5">Small checkbox</label>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-checkbox pe-checkbox--small"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"Small checkbox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chk5"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"chk5"</span>&gt;</span>Small checkbox<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Radio buttons</h2>
+<p>Radio buttons are for when the user must choose a single item out of several options. Type attribute of &quot;radio&quot; also represents a state or option that can be toggled. Radio buttons belong in a radio group; everyone in the radio group shares the same <code>name</code> attribute.</p>
+<h3>Checked, unchecked, disabled and unchecked</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-radio">
+    <input type="radio" name="group1" id="rad1" value="" checked>
+    <label for="rad1">Checked</label>
+  </div>
+  <div class="pe-radio">
+    <input type="radio" name="group1" id="rad2" value="">
+    <label for="rad2">UnChecked</label>
+  </div>
+  <div class="pe-radio">
+    <input type="radio" name="group1" id="rad3" value="" disabled>
+    <label for="rad3">Read only/Disabled</label>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-radio"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"group1"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"rad1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">checked</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"rad1"</span>&gt;</span>Checked<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-radio"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"group1"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"rad2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"rad2"</span>&gt;</span>UnChecked<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-radio"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"group1"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"rad3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">disabled</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"rad3"</span>&gt;</span>Read only/Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Disabled and Checked</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"> <div class="pe-radio">
+    <input type="radio" name="group2" id="rad4" value="" disabled checked>
+    <label for="rad4">Read only/Disabled (checked)</label>
+ </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code> <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-radio"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"group2"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"rad4"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">checked</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"rad4"</span>&gt;</span>Read only/Disabled (checked)<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Small radio button</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-radio pe-radio--small">
+    <input type="radio" name="group3" id="rad6" value="">
+    <label for="rad6">Small radio button</label>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-radio pe-radio--small"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"group3"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"rad6"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"rad6"</span>&gt;</span>Small radio button<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Textarea</h2>
+<p>Textarea form elements are to be used for multiple lines of text. Vertical and horizontal resizing options may be enabled where appropriate. Textarea states are styled similarly to regular text inputs.</p>
+<h3>Large Size text area</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-textarea">
+    <label for="ta1">Textarea label</label>
+    <textarea name="largetext" rows="4" cols="50" id="ta1">Multiple lines of text entry are supported with the textarea element</textarea>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textarea"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ta1"</span>&gt;</span>Textarea label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"largetext"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"4"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"50"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta1"</span>&gt;</span>Multiple lines of text entry are supported with the textarea element<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Small Size textarea, and small textarea with placeholder</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-inlineblock">
+  <div class="pe-textarea pe-textarea--small">
+    <label for="ta2">Textarea label</label>
+    <textarea name="smalltext" id="ta2">Text area</textarea>
+  </div>
+  <div class="pe-textarea pe-textarea--small">
+    <label for="ta3">Textarea with placeholder</label>
+    <textarea name="smalltext" id="ta3" placeholder="Textarea placeholder"></textarea>
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-inlineblock"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textarea pe-textarea--small"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ta2"</span>&gt;</span>Textarea label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"smalltext"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta2"</span>&gt;</span>Text area<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textarea pe-textarea--small"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ta3"</span>&gt;</span>Textarea with placeholder<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"smalltext"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Textarea placeholder"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Disabled text area</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-textarea pe-textarea--disabled">
+    <label for="ta4">Textarea label</label>
+    <textarea name="largetext" rows="4" cols="50" id="ta4" disabled>Textarea element...Disabled</textarea>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textarea pe-textarea--disabled"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ta4"</span>&gt;</span>Textarea label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"largetext"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"4"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"50"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta4"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Textarea element...Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Readonly text area</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-textarea pe-textarea--readonly">
+    <label for="ta5">Terms and Conditions</label>
+    <textarea name="readonlytext" rows="4" cols="50" id="ta5" readonly>Read only text here...</textarea>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textarea pe-textarea--readonly"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ta5"</span>&gt;</span>Terms and Conditions<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"readonlytext"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"4"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"50"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta5"</span> <span class="hljs-attribute">readonly</span>&gt;</span>Read only text here...<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Error text area</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="pe-textarea pe-textarea--error">
+    <label for="ta5">Textarea label</label>
+    <textarea name="errortext" rows="4" cols="50" id="ta5" aria-describedby="ta6-error">Bad text here</textarea>
+    <p id="ta6-error" class="pe-error-text">Something went wrong!</p>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textarea pe-textarea--error"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ta5"</span>&gt;</span>Textarea label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"errortext"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"4"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"50"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta5"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"ta6-error"</span>&gt;</span>Bad text here<span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta6-error"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-error-text"</span>&gt;</span>Something went wrong!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Select Box</h2>
+<p>The select input allows a user to choose one of many predetermined options.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-inlineblock">
+  <div class="pe-select">
+    <label for="se1">Text label</label>
+    <select id="se1">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
+  <div class="pe-select pe-select--small">
+    <label for="se2">Text label</label>
+    <select id="se2">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-inlineblock"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-select"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"se1"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"se1"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"volvo"</span>&gt;</span>Volvo<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"saab"</span>&gt;</span>Saab<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"mercedes"</span>&gt;</span>Mercedes<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"audi"</span>&gt;</span>Audi<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-select pe-select--small"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"se2"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"se2"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"volvo"</span>&gt;</span>Volvo<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"saab"</span>&gt;</span>Saab<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"mercedes"</span>&gt;</span>Mercedes<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"audi"</span>&gt;</span>Audi<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Select Readonly</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-select pe-select--readonly">
+  <label for="se3">Text label</label>
+  <select id="se3">
+    <option disabled="disabled">Java</option>
+    <option selected="selected">CSS</option>
+    <option disabled="disabled">HTML</option>
+  </select>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-select pe-select--readonly"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"se3"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"se3"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">"disabled"</span>&gt;</span>Java<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">selected</span>=<span class="hljs-value">"selected"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">disabled</span>=<span class="hljs-value">"disabled"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Select Disabled</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-select pe-select--disabled">
+  <label for="se4">Text label</label>
+  <select disabled id="se4">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-select pe-select--disabled"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"se4"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"se4"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"volvo"</span>&gt;</span>Volvo<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"saab"</span>&gt;</span>Saab<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"mercedes"</span>&gt;</span>Mercedes<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"audi"</span>&gt;</span>Audi<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h3>Select Error</h3>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-select pe-select--error">
+  <label for="se5">Text label</label>
+  <select id="se5">
+    <option value="error">Error</option>
+  </select>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-select pe-select--error"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"se5"</span>&gt;</span>Text label<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"se5"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"error"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
