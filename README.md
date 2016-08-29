@@ -1,4 +1,4 @@
-# Pearson Elements 
+# Pearson Elements
 [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
 To see individual Elements components in action, please visit https://pearson-elements-v0.surge.sh/elements/
@@ -10,9 +10,9 @@ To see individual Elements components in action, please visit https://pearson-el
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
     npm install --save pearson-elements
-      
-The installation provides both the dist version with CSS, and the original source 
-[SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets. 
+
+The installation provides both the dist version with CSS, and the original source
+[SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets.
 This allows the option for the consuming app to include the SDK as a static asset or as part of a build process.
 
 To comment out any SCSS file so it's not added to your rendered elements.css, open `/scss/elements.scss` and use JavaScript-style commenting. Example:
@@ -30,7 +30,7 @@ to the project.
 ### Important: Fonts
 
 The Elements SDK looks for the /fonts folder at the root of your served application. Copy the npm-installed /fonts to the
- correct location in your web server, and ensure your application is set up to allow the font files to download correctly 
+ correct location in your web server, and ensure your application is set up to allow the font files to download correctly
  and not filter out the response header Content Type (i.e. 'application/x-font-ttf') so the icons may be rendered in the
   browser.
 
@@ -58,7 +58,7 @@ Contibutors adding wholly new components to Elements (which have been already ap
 We use [Metalsmith](http://www.metalsmith.io/) to generate the documentation. To add a new component to the docs:
 
 - update `/docs/_data/nav.yaml` file with the new component name (this adds it to the menu)
-- add a new `.md` file to `/docs/elements/` (use any of the other files in that directory as an example) 
+- add a new `.md` file to `/docs/elements/` (use any of the other files in that directory as an example)
 
 The new component's document page should:
 - have some explanation of what the purpose of the element or component is
@@ -67,11 +67,11 @@ The new component's document page should:
 
 To view your changes or some branch in action:
 
-    npm start 
+    npm start
 
 This will give you a browser-sync served copy of the docs on http://localhost:3000, and build the latest version of elements.min.css to /dist.
 
-     
+
 
 ### Fork repo
 
@@ -83,7 +83,7 @@ Forked repo will not trigger the 'ux-test-platform' tests. In the logs, you woul
  	travis login --org *Provide your github login and password
  	travis token --org *Copy the access token
  	travis encrypt AUTH_TOKEN=access_token *Copy this token and replace it with env: global: secure: <<access_token>> in .travis.yml file
- 	
+
  	Push this change and the ux-test-platform build would be triggered successfully.
 
 
@@ -101,6 +101,9 @@ List of Elements with their current respective design version:
 | Inputs | v1.0.0 |
 | Buttons | v1.0.0 |
 | Calendar | v1.0.0-beta.1 |
+| Grid | 1.0.0 |
+
+
 
 ** Developers should update table as they implement new versions...*
 
