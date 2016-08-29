@@ -2,7 +2,6 @@
 
 @mixin generate-container($pe-container-max-width, $pe-responsive-breakpoints) {
   .pe-container {
-    position      : relative;
     max-width     : $pe-container-max-width;
     margin-right  : auto;
     margin-left   : auto;
@@ -68,15 +67,6 @@
       };
   };
 
-};
-
-
-@mixin clearfix() {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 };
 
 

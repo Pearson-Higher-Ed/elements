@@ -5,6 +5,7 @@ section: elements
 ---
 
 A low level framework for positioning elements on the page.
+[Design and Redlines](https://pearson-higher-ed.github.io/design/c/grid/)
 
 ## Equal Columns
 {{#demo}}
@@ -28,17 +29,6 @@ A low level framework for positioning elements on the page.
 {{/demo}}
 
 ## Span Mulitple Columns
-{{#demo}}
-<div class="pe-container">
-  <div class='pe-row'>
-    <div class="pe-col-4"><p style="background:cyan">one</p></div>
-    <div class="pe-col-4"><p style="background:cyan">two</p></div>
-    <div class="pe-col-4"><p style="background:cyan">three</p></div>
-  </div>
-</div>
-{{/demo}}
-
-## Span Mulitple Columns - (Different Widths)
 {{#demo}}
 <div class="pe-container">
   <div class='pe-row'>
