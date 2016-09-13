@@ -1,3 +1,13 @@
+<a name="0.13.0"></a>
+# [0.13.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.12.0...v0.13.0) (2016-09-13)
+
+
+### Features
+
+* **progressbar:** Create progress bar and all associated CSS and documentation ([c4f7bc5](https://github.com/Pearson-Higher-Ed/elements/commit/c4f7bc5))
+
+
+
 <a name="0.12.0"></a>
 # [0.12.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.11.0...v0.12.0) (2016-08-26)
 
