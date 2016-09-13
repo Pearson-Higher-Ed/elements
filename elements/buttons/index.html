@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/inputs">
+                        Inputs
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/calendar">
+                        Calendar
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/meter">
+                        Meter
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Buttons</h1>
+
+        <p>Use a button to represent a user action— specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn">Default</button>
+<button class="pe-btn pe-btn--primary">Primary</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Elements</h2>
+<p>Button classes can be used with <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-btn" tabindex="0" role="button">Div</div>
+<a href="#" class="pe-btn" role="button">Link</a>
+<button class="pe-btn">Button</button>
+<input type="submit" value="Submit" class="pe-btn">
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span> <span class="hljs-attribute">tabindex</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span>&gt;</span>Div<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Submit"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<aside>
+  <h1 class="pe-title">Accessibility: Using non-button elements</h1>
+  <p>Where possible, prefer native HTML buttons (<code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code>) over other elements styled as buttons, so that the User Agent and the OS do most of the work for you.</p> 
+  <p>If using an element other than a native HTML button, add the <a href="http://www.w3.org/TR/wai-aria/roles#button"><code>role="button"</code></a> attribute, and script in both click and keyup/down listeners (detect both spacebar and enter keys) to recreate button behavior. Also since buttons and inputs (but not divs, spans, or anchors) have a native disabled attribute, add <a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-disabled"><code>aria-disabled</code></a> to elements you want to disable, as well as manually changing the <code>tabindex</code> value to <code>"-1"</code> (or removing it in the case of non-natively focusables like div and span) to prevent average keyboarders from being able to tab to it (disabled elements cannot be in the tab order).</p>
+</aside>
+<h2>Links</h2>
+<p>In some cases, it may be desirable to style a button as a link.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn pe-btn--link">Link</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--link"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Disabled</h2>
+<p>Buttons can be disabled when an action is not available to the user for the current context.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn" disabled>Default</button>
+<button class="pe-btn pe-btn--primary" disabled>Primary</button>
+<button class="pe-btn pe-btn--link" disabled>Link</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--primary"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--link"</span> <span class="hljs-attribute">disabled</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<p>For elements that do not support the <code>disabled</code> attribute, use <code>pe-btn--disabled</code> and <code>aria-disabled</code>.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-btn pe-btn--disabled" aria-disabled="true">Not a button</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--disabled"</span> <span class="hljs-attribute">aria-disabled</span>=<span class="hljs-value">"true"</span>&gt;</span>Not a button<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Sizes</h2>
+<p>Buttons can be made smaller or larger.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn pe-btn--small">Small</button>
+<button class="pe-btn pe-btn--medium">Medium</button>
+<button class="pe-btn pe-btn--large">Large</button>
+<button class="pe-btn pe-btn--link pe-btn--small">Small link</button>
+<button class="pe-btn pe-btn--link pe-btn--large">Large link</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--small"</span>&gt;</span>Small<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--medium"</span>&gt;</span>Medium<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--large"</span>&gt;</span>Large<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--link pe-btn--small"</span>&gt;</span>Small link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn pe-btn--link pe-btn--large"</span>&gt;</span>Large link<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Text overflow</h2>
+<p>When the width of the button's text exceeds the container width, it will be truncated with an ellipsis. <strong>However, you should generally avoid using long text strings with buttons.</strong></p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><button class="pe-btn" style="max-width: 200px">The quick brown fox jumps over the lazy dog.</button>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-btn"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"max-width: 200px"</span>&gt;</span>The quick brown fox jumps over the lazy dog.<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
