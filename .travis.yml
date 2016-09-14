@@ -23,5 +23,3 @@ env:
 
 notifications:
   hipchat: 8kYUBgqb3GTlHlMPzn94O8OX2YGOHOnUyG1qdoJF@2846476
-    on_success: always
-    on_failure: always 
