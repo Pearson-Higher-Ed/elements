@@ -60,8 +60,8 @@ $pe-responsive-breakpoints: (
   xl: (min: 1280px)
 ) !default;
 
-//Grid Variables
-//http://pearson-higher-ed.github.io/design/c/grid/beta/
+//Grid
+//
 
 $pe-columns             : 12 !default;
 
@@ -84,6 +84,30 @@ $pe-gutter-widths: (
   sm : 20px,
   xs : 10px
 );
+
+// Templates
+//
+
+$pe-static-template-width-breakpoints : (
+  sm : 480px,
+  lg : 800px
+);
+
+$pe-template__static-large-xs-width        : percentage(12 / $pe-columns);
+$pe-template__static-large-md_and_sm-width : percentage(10 / $pe-columns);
+$pe-template__static-large-lg_and_xl-width : 800px;
+
+$pe-template__double--sidebar-width           : percentage(4 / $pe-columns);
+$pe-template__double--main-width              : percentage(8 / $pe-columns);
+$pe-template__double-horizontal-margin-height : 40px;
+
+$pe-template__static-small-xs-width : percentage(12 / $pe-columns);
+$pe-template__static-small-sm-width : percentage(10 / $pe-columns);
+$pe-template__static-small-lg_and_xl_and_md-width : 480px;
+
+$pe-template__small-gap : 40px;
+$pe-template__large-gap : 80px;
+
 
 // Type
 //

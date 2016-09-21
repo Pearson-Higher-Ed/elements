@@ -102,6 +102,7 @@ List of Elements with their current respective design version:
 | Buttons | v1.0.0 |
 | Calendar | v1.0.0-beta.1 |
 | Grid | 1.0.0 |
+| Templates | 1.0.0 |
 
 
 
