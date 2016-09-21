@@ -27,7 +27,6 @@
 
 @mixin generate-columns($pe-responsive-breakpoints){
 
-  // TODO (group common column widths)
   @for $i from 1 through $pe-columns {
     $column-width : percentage($i / $pe-columns);
 
@@ -54,7 +53,7 @@
 
       // Group common properties in media query by class list
       $breakpoint-list:();
-      
+
         @for $i from 1 through $pe-columns {
           $breakpoint-list: append($breakpoint-list, unquote(".pe-col-#{$i}"), comma);
         };
