@@ -1,3 +1,13 @@
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.13.0...v0.14.0) (2016-09-22)
+
+
+### Bug Fixes
+
+* removed typo in attribute selectors ([ba6eca7](https://github.com/Pearson-Higher-Ed/elements/commit/ba6eca7))
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.12.0...v0.13.0) (2016-09-13)
 
@@ -5,6 +15,7 @@
 ### Features
 
 * **progressbar:** Create progress bar and all associated CSS and documentation ([c4f7bc5](https://github.com/Pearson-Higher-Ed/elements/commit/c4f7bc5))
+* add responsive grid ([477dac1](https://github.com/Pearson-Higher-Ed/elements/commit/477dac1))
 
 
 
