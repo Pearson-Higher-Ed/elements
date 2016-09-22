@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/inputs">
+                        Inputs
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/calendar">
+                        Calendar
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/meter">
+                        Meter
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/grid">
+                        Grid
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/templates">
+                        Templates
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Header</h1>
+
+        <p>The header is the primary navigational element in a Pearson web property.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><header class="pe-header">
+  <section class="pe-header__section">
+    <a href="#" class="pe-header__brand">Brand</a>
+  </section>
+  <section class="pe-header__section pe-header__section--right">
+    <nav class="pe-header__nav">
+      <ul class="pe-header__nav-items">
+        <li class="pe-header__nav-item">
+          <a href="#">Item 1</a>
+        </li>
+        <li class="pe-header__nav-item">
+          <a href="#">Item 2</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__section"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__brand"</span>&gt;</span>Brand<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__section pe-header__section--right"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-items"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-item"</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Item 1<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-item"</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Item 2<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Fixed</h2>
+<p>To fix the header to the top of the page, add <code>pe-header--fixed</code> to the root element:</p>
+<pre><code class="language-html">&lt;header class=&quot;pe-header pe-header--fixed&quot;&gt;
+  …
+&lt;/header&gt;
+</code></pre>
+<h2>Nav items</h2>
+<h3>Active</h3>
+<p>Add <code>pe-header__nav-item--active</code> to select the active nav item.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><header class="pe-header">
+  <section class="pe-header__section pe-header__section--right">
+    <nav class="pe-header__nav">
+      <ul class="pe-header__nav-items">
+        <li class="pe-header__nav-item pe-header__nav-item--active">
+          <a href="#">Active</a>
+        </li>
+        <li class="pe-header__nav-item">
+          <a href="#">Inactive</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__section pe-header__section--right"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-items"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-item pe-header__nav-item--active"</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-item"</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Inactive<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Logo</h2>
+<p>For applications that require the Pearson logo, use a <code>&lt;span&gt;</code> element with <code>pe-header__logo</code> and <code>pe-header__logo--pearson</code>.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><header class="pe-header">
+  <section class="pe-header__section">
+    <a href="#" aria-label="Return to home">
+      <span class="pe-header__logo pe-header__logo--pearson"></span>
+    </a>
+  </section>
+</header>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__section"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Return to home"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__logo pe-header__logo--pearson"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<aside>
+  <h1 class="pe-title">Accessibility: Screen readers</h1>
+  <p>When the logo is a link, add the <code>aria-label</code> attribute. The label text conveys the intent of the link and will be read by screen readers.
+</aside>
+<h2>Inverse</h2>
+<p>Add <code>pe-header--inverse</code> to the root element to invert the header.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><header class="pe-header pe-header--inverse">
+  <section class="pe-header__section">
+    <a href="#" aria-label="Return to home">
+      <span class="pe-header__logo pe-header__logo--pearson"></span>
+    </a>
+  </section>
+  <section class="pe-header__section pe-header__section--right">
+    <nav class="pe-header__nav">
+      <ul class="pe-header__nav-items">
+        <li class="pe-header__nav-item pe-header__nav-item--active">
+          <a href="#">Active</a>
+        </li>
+        <li class="pe-header__nav-item">
+          <a href="#">Inactive</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+</header>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header pe-header--inverse"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__section"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Return to home"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__logo pe-header__logo--pearson"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__section pe-header__section--right"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">nav</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-items"</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-item pe-header__nav-item--active"</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-header__nav-item"</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Inactive<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><br>        <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">nav</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
