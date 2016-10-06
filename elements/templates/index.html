@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/inputs">
+                        Inputs
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/calendar">
+                        Calendar
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/meter">
+                        Meter
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/grid">
+                        Grid
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/templates">
+                        Templates
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/presentation-strategies">
+                        Presentation Strategies
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Templates</h1>
+
+        <p>A standard set of page structures for a variety of use cases.
+Templates provide a way of organizing and structuring the content of a page in a consistent and responsive way. There are a variety of templates available for everything from simple single column presentations to more complicated multi-column structures.</p>
+<p><a href="https://pearson-higher-ed.github.io/design/c/templates/">Design and Redlines</a></p>
+<p>Several Presentation Strategies are available for organization of content within the layout areas provided by each templates.</p>
+<p>Feature List:</p>
+<ul>
+<li>Consistent dimensions for a variety of useful page structures</li>
+<li>Responsive strategies for each template</li>
+<li>Accessible implementation</li>
+</ul>
+<p>Usage Guidelines:</p>
+<ul>
+<li>Every page should utilize one or more of these templates to create its high level structure.</li>
+</ul>
+<h2>Single Column</h2>
+<p>The simplest page template, it takes up the full 12 columns available at every breakpoint.</p>
+<p>Dimensions:</p>
+<ul>
+<li>Full 12 column width at all breakpoints</li>
+</ul>
+<p>Responsive:</p>
+<ul>
+<li>Maintain full 12 column width</li>
+</ul>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__single' style='background:magenta;'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Two Column</h2>
+<p>This template devotes 8 columns to a main content area and the remaining 4 to a sidebar which appears on either side. At medium and smaller breakpoints the content areas stack, with the option to put the sidebar above or below the main content area.</p>
+<p>** <strong>Option to put sidebar above and below currently on hold</strong></p>
+<p>Dimensions:</p>
+<ul>
+<li>Full 12 column width at all breakpoints</li>
+</ul>
+<p>Responsive:</p>
+<ul>
+<li>Maintain full 12 column width</li>
+</ul>
+<h4>Two Column - (right)</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__double' style='background:magenta;'>
+    <div class='pe-template__double--main'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class="pe-template__double--sidebar">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--main'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-template__double--sidebar"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Sidebar Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h4>Two Column - (left)</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__double' style='background:magenta;'>
+    <div class="pe-template__double--sidebar">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
+    </div>
+    <div class='pe-template__double--main'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-template__double--sidebar"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Sidebar Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--main'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Static Column</h2>
+<p>The static column presents a single column of fixed width which is centered in the page. At smaller breakpoints it transitions to full width fluid behavior. This column comes in two different sizes (small at 480px and large at 800px) and is handy for presenting modals or small pieces of content like sign in forms.</p>
+<p>Dimensions:</p>
+<ul>
+<li>The large size is 800px wide at large breakpoints and larger</li>
+<li>The small size is 480px wide at medium breakpoints and larger</li>
+</ul>
+<p>Responsive:</p>
+<ul>
+<li>Below the breakpoints mentioned above, both sizes become 10 grid columns wide and centered</li>
+<li>Below the small breakpoint both sizes become the full 12 column width</li>
+</ul>
+<h4>Static Column - (small)</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__static-small'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__static-small'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h4>Static Column - (large)</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__static-large'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__static-large'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Shared Features</h2>
+<p>Spacing:</p>
+<ul>
+<li>Directly adjoining templates have no vertical space between them</li>
+<li>Small Gap is 40px total</li>
+<li>Large Gap is 80px total</li>
+</ul>
+<p>Backgrounds and Borders:</p>
+<ul>
+<li>Each template section may include a full width border (either color or image)</li>
+<li>Two template sections may be divided with a border that is either full page width or just 12 columns wide</li>
+</ul>
+<h4>Directly Adjoining - (Default)</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__single' style='background:magenta;'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+  <div class='pe-template__double' style='background:magenta;'>
+      <div class='pe-template__double--main'>
+        <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+      </div>
+      <div class='pe-template__double--sidebar'>
+        <h6 style='background:lightblue;text-align:center;height:40px;'>SideBar Area</h6>
+      </div>
+    </div>
+  <div class='pe-template__single' style='background:magenta;'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--main'</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--sidebar'</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>SideBar Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h4>Standard Spacing</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class='pe-template__small-gap'>
+    <div class='pe-template__single' style='background:magenta;'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class='pe-template__double' style='background:magenta;'>
+      <div class='pe-template__double--main'>
+        <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+      </div>
+      <div class='pe-template__double--sidebar'>
+        <h6 style='background:lightblue;text-align:center;height:40px;'>SideBar Area</h6>
+      </div>
+    </div>
+    <div class='pe-template__single' style='background:magenta;'>
+      <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__small-gap'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--main'</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--sidebar'</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>SideBar Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h4>Large Spacing</h4>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class='pe-template__large-gap'>
+  <div class='pe-template__single' style='background:magenta;'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+  <div class='pe-template__double' style='background:magenta;'>
+    <div class='pe-template__double--main'>
+      <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class='pe-template__double--sidebar'>
+      <h6 style='background:lightblue;text-align:center;height:40px;'>SideBar Area</h6>
+    </div>
+  </div>
+  <div class='pe-template__single' style='background:magenta;'>
+    <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__large-gap'</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:cyan;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--main'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__double--sidebar'</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>SideBar Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-template__single'</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:magenta;'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">h6</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">'background:lightblue;text-align:center;height:40px;'</span>&gt;</span>Content Area<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
