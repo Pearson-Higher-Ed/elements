@@ -39,6 +39,8 @@ Responsive:
 ## Two Column
 This template devotes 8 columns to a main content area and the remaining 4 to a sidebar which appears on either side. At medium and smaller breakpoints the content areas stack, with the option to put the sidebar above or below the main content area.
 
+** **Option to put sidebar above and below currently on hold**
+
 Dimensions:
 - Full 12 column width at all breakpoints
 
@@ -101,7 +103,7 @@ Spacing:
 - Small Gap is 40px total
 - Large Gap is 80px total
 
-Backgrounds & Borders:
+Backgrounds and Borders:
 - Each template section may include a full width border (either color or image)
 - Two template sections may be divided with a border that is either full page width or just 12 columns wide
 
