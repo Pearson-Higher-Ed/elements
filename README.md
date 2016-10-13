@@ -95,15 +95,8 @@ List of Elements with their current respective design version:
 
 | Element | Current Design Version |
 |---------|------------------------|
-| Colors | v1.0.1 |
-| Typography | v1.0.0 |
-| Icons | v1.0.0 |
-| Inputs | v1.0.0 |
-| Buttons | v1.0.0 |
-| Calendar | v1.0.0-beta.1 |
-| Grid | v1.0.0 |
-| Templates | v1.0.0 |
-| Presentation Strategies | v1.0.0 |
+| Colors | v2.0.0 |
+| Typography | v2.0.0 |
 
 
 ** Developers should update table as they implement new versions...*

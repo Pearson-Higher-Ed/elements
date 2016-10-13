@@ -6,6 +6,8 @@ permalink: /elements/typography/
 ---
 ## Headings
 
+Content headings, used to delineate the outline of a page. If there is a need to have a subheading, use a `header` element, with a `p.subtitle` to hold the subtitle, as illustrated below.
+
 {{#demo}}
 <h1>H1 Heading</h1>
 <h2>H2 Heading</h2>
@@ -13,6 +15,31 @@ permalink: /elements/typography/
 <h4>H4 Heading</h4>
 <h5>H5 Heading</h5>
 <h6>H6 Heading</h6>
+{{/demo}}
+
+### Subtitles
+
+{{#demo}}
+<header>
+	<h1>Title Element 1</h1>
+	<p class="subtitle">Subtitle, sized based on the preceding element</p>
+</header>
+<header>
+	<h2>Title Element 2</h2>
+	<p class="subtitle">Subtitle, sized based on the preceding element</p>
+</header>
+<header>
+	<h3>Title Element 3</h3>
+	<p class="subtitle">Subtitle, sized based on the preceding element</p>
+</header>
+<header>
+	<h4>Title Element 4</h4>
+	<p class="subtitle">Subtitle, sized based on the preceding element</p>
+</header>
+<header>
+	<h5>Title Element 5</h5>
+	<p class="subtitle">Subtitle, sized based on the preceding element</p>
+</header>
 {{/demo}}
 
 ## Paragraphs
@@ -45,13 +72,33 @@ This style also represents the basic body copy styles for a document.
 ### Small copy style
 
 {{#demo}}
-<p class="pe-copy--small">
+<p class="pe-copy pe-copy--small">
   Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
   penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
   id dolor id nibh ultricies vehicula.
 </p>
 
-<p class="pe-copy--small pe-paragraph--last">
+<p class="pe-copy pe-copy--small pe-paragraph--last">
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+  id dolor id nibh ultricies vehicula.
+</p>
+{{/demo}}
+
+### Large copy style
+
+{{#demo}}
+<p class="pe-copy pe-copy--large">
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+  penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
+  id dolor id nibh ultricies vehicula.
+</p>
+{{/demo}}
+
+### Secondary color copy style
+
+{{#demo}}
+<p class="pe-copy pe-copy--secondary">
   Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
   penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam
   id dolor id nibh ultricies vehicula.
@@ -76,50 +123,72 @@ A lead paragraph or sentence introduces and guides the user into the primary con
 </p>
 {{/demo}}
 
-## Titles
+## UI Page Headings
 
-Not that titles are going to be "heading" content, so most if not all of the time, they will be heading elements. Use the `pe-title` class for this title style.
+Page-level UI headings. Basic and smaller sizing for page level titles is available.
 
 {{#demo}}
-<h3 class="pe-title">Default title</h3>
+<h1 class="pe-page-title">Page Level Heading</h1>
+<h1 class="pe-page-title pe-page-title--secondary">Secondary Color Page Level Heading</h1>
+{{/demo}}
+
+{{#demo}}
+<h1 class="pe-page-title pe-page-title--small">Small Page Level Heading</h1>
+<h1 class="pe-page-title pe-page-title--small pe-page-title--secondary">Secondary Color Small Page Level Heading</h1>
+{{/demo}}
+
+## UI Section Headings
+
+Note that UI Section Headings are going to be "heading" content, so most if not all of the time, they will be heading elements. Use the `pe-title` class for this UI Section Headings style.
+
+{{#demo}}
+<h3 class="pe-title">Default UI Section Headings</h3>
+<h3 class="pe-title"><b>Bold UI Section Headings<b/></h3>
+<h3 class="pe-title pe-title--secondary">Secondary Color Default UI Section Headings</h3>
 {{/demo}}
 
 ### Sizes
 
-Titles can be larger for additional emphasis.
+Titles can be larger or smaller for additional emphasis. Note: pe-title--extra-large has been deprecated in v1 Elements.
 
 {{#demo}}
-<h3 class="pe-title pe-title--large">Large title</h3>
-<h3 class="pe-title pe-title--extra-large">Extra large title</h3>
+<h3 class="pe-title pe-title--small">Small UI Section Headings</h3>
+<h3 class="pe-title pe-title--small"><b>Small and Bold UI Section Headings</b></h3>
+<h3 class="pe-title pe-title--small pe-title--secondary">Secondary Color Small UI Section Headings</h3>
+<h3 class="pe-title pe-title--large">Large UI Section Headings</h3>
+<h3 class="pe-title pe-title--large"><b>Large and bold UI Section Headings</b></h3>
+<h3 class="pe-title pe-title--large pe-title--secondary">Secondary Color Large UI Section Headings</h3>
 {{/demo}}
 
-## Labels
+## UI Text
 
-Note these are not related to form element labels (use the HTML `label` element for those).
+Note these are not related to form element labels (use the HTML `label` element for those). This was remapped from a "label" in v0 to a "UI Text" in v1. The markup remains the same as in v0.
 
 {{#demo}}
-<div class="pe-label">Default label</div>
-<div class="pe-label pe-label--secondary">Secondary label</div>
-<div class="pe-label pe-label--bold">Bold label</div>
+<div class="pe-label">Default UI Text</div>
+<div class="pe-label pe-label--secondary">Secondary UI Text</div>
+<div class="pe-label pe-label--bold">Bold UI Text</div>
 {{/demo}}
 
 ### Sizes
 
-Labels can be smaller or larger than the default.
+UI Text can be smaller or larger than the default.
 
 {{#demo}}
-<div class="pe-label pe-label--small">Small label</div>
-<div class="pe-label pe-label--large">Large label</div>
+<div class="pe-label pe-label--small">Small UI Text</div>
+<div class="pe-label pe-label--small pe-label--secondary">Small UI Text secondary color</div>
+<div class="pe-label pe-label--large">Large UI Text</div>
+<div class="pe-label pe-label--large pe-label--secondary">Large UI Text secondary color</div>
 {{/demo}}
 
 ### Inverse
 
-When a label is used on a dark background, use `pe-label--inverse` to make it visible.
+When UI Text is used on a dark background, use `pe-label--inverse` to make it visible.
 
 {{#demo}}
 <div style="background-color: #000">
-  <div class="pe-label pe-label--inverse">Inverse label</div>
-  <div class="pe-label pe-label--secondary pe-label--inverse">Inverse secondary label</div>
+  <div class="pe-label pe-label--inverse">Inverse UI Text</div>
+  <div class="pe-label pe-label--secondary pe-label--inverse">Inverse secondary UI Text</div>
 </div>
 {{/demo}}
 
@@ -230,13 +299,11 @@ The <code class="pe-code-inline">&lt;section&gt;</code> HTML element represents 
 A multi-line code block should be wrapped with `<pre></pre>` elements.
 
 {{#demo}}
-<pre class="pe-code"><code>
-// This is a code example
+<pre class="pe-code"><code>// This is a code example
 function greet(greeting) {
   console.log(greeting);
 }
-greet('hello, world');
-</code></pre>
+greet('hello, world');</code></pre>
 {{/demo}}
 
 ### User Input
@@ -260,7 +327,13 @@ Use `pe-list--unstyled` for plain lists.
 <ul class="pe-list pe-list--unstyled">
   <li>One</li>
   <li>Two</li>
-  <li>Three</li>
+  <li>Three
+	<ul class="pe-list pe-list--unstyled">
+	  <li>Three-One</li>
+	  <li>Three-Two</li>
+	  <li>Three-Three</li>
+	</ul>
+  </li>
 </ul>
 {{/demo}}
 
