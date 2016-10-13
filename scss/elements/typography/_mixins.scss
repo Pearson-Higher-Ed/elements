@@ -1,0 +1,255 @@
+@import './variables';
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: pxToRem($size);
+}
+
+@mixin pe-copy {
+  color: $pe-copy-color;
+  font-size: $pe-copy-font-size;
+  font-family: pe-font-family(default-sans-serif);
+  line-height: $pe-copy-line-height;
+}
+
+@mixin pe-copy--small {
+  color: $pe-copy-color;
+  font-size: $pe-copy-small-font-size;
+  font-family: pe-font-family(default-sans-serif);
+  line-height: $pe-copy-small-line-height;
+}
+
+@mixin pe-paragraph {
+  margin-top: 0;
+  margin-bottom: $pe-paragraph-margin-bottom;
+}
+
+@mixin pe-paragraph--last {
+  margin-top: 0;
+  margin-bottom: $pe-paragraph-last-margin-bottom;
+}
+
+
+@mixin pe-heading-large-bold {
+  font-weight: bold;
+  color: $pe-text-heading-l1tol3-color;
+}
+
+@mixin pe-heading-small-italic {
+  font-style: italic;
+  color: $pe-text-heading-l4tol6-color;
+}
+
+@mixin pe-heading-following-content {
+  p + & {
+    margin-top: 20px;
+  }
+}
+
+@mixin pe-heading-following-heading {
+  & + h1,
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5,
+  & + h6,
+  & + .pe-heading-level1,
+  & + .pe-heading-level2,
+  & + .pe-heading-level3,
+  & + .pe-heading-level4,
+  & + .pe-heading-level5,
+  & + .pe-heading-level6 {
+    margin-top: 6px;
+  }
+}
+
+@mixin pe-heading-level1 {
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 2px solid $pe-text-heading-bottom-border;
+  
+  & + h1:not(.pe-title),
+  & + h2:not(.pe-title),
+  & + h3:not(.pe-title),
+  & + h4:not(.pe-title),
+  & + h5:not(.pe-title),
+  & + h6:not(.pe-title),
+  & + .pe-heading-level1,
+  & + .pe-heading-level2,
+  & + .pe-heading-level3,
+  & + .pe-heading-level4,
+  & + .pe-heading-level5,
+  & + .pe-heading-level6 {
+    margin-top: 40px;
+  };
+  & + .pe-title {
+    margin-top: 6px;
+  };
+  @include pe-heading-large-bold;
+  @include pe-heading-following-content;
+}
+
+@mixin pe-heading-level2 {
+  font-size: 20px;
+  line-height: 24px;
+  @include pe-heading-large-bold;
+  @include pe-heading-following-content;
+  @include pe-heading-following-heading;
+}
+
+@mixin pe-heading-level3 {
+  font-size: 18px;
+  line-height: 22px;
+  @include pe-heading-large-bold;
+  @include pe-heading-following-content;
+  @include pe-heading-following-heading;
+}
+
+@mixin pe-heading-level4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $pe-text-heading-l4tol6-color;
+  @include pe-heading-following-content;
+  @include pe-heading-following-heading;
+}
+
+@mixin pe-heading-level5 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  @include pe-heading-small-italic;
+  @include pe-heading-following-content;
+  @include pe-heading-following-heading;
+}
+
+@mixin pe-heading-level6 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  @include pe-heading-small-italic;
+  @include pe-heading-following-content;
+  @include pe-heading-following-heading;
+}
+
+@mixin pe-list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+@mixin pe-lead {
+  color: $pe-lead-color;
+  font-weight: $pe-lead-font-weight;
+  font-size: $pe-lead-font-size;
+  line-height: $pe-lead-line-height;
+  
+  @include pe-responsive-breakpoint(sm) {
+    font-weight: $pe-lead-sm-font-weight;
+    font-size: $pe-lead-sm-font-size;
+    line-height: $pe-lead-sm-line-height;
+  }
+}
+
+@mixin pe-title {
+  color: $pe-title-color;
+  font-weight: $pe-title-font-weight;
+  font-size: $pe-title-font-size;
+  line-height: $pe-title-line-height;
+  border-bottom: $pe-title-border-bottom;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  @include pe-responsive-breakpoint(sm) {
+    font-size: $pe-title-sm-font-size;
+    line-height: $pe-title-sm-line-height;
+  }
+}
+
+@mixin pe-title-large {
+  font-size: $pe-title-large-font-size;
+  line-height: $pe-title-large-line-height;
+  
+  @include pe-responsive-breakpoint(sm) {
+    font-size: $pe-title-large-sm-font-size;
+    line-height: $pe-title-large-sm-line-height;
+  }
+}
+
+@mixin pe-title-extra-large {
+  font-size: $pe-title-extra-large-font-size;
+  line-height: $pe-title-extra-large-line-height;
+  
+  @include pe-responsive-breakpoint(sm) {
+    font-size: $pe-title-extra-large-sm-font-size;
+    line-height: $pe-title-extra-large-sm-line-height;
+  }
+}
+
+@mixin pe-label {
+  color: $pe-label-color;
+  font-size: $pe-label-font-size;
+  line-height: $pe-label-line-height;
+  font-weight: $pe-label-font-weight;
+}
+
+@mixin pe-label-inverse {
+  color: $pe-label-inverse-color;
+  font-weight: $pe-label-inverse-font-weight;
+}
+
+@mixin pe-label-secondary {
+  color: $pe-label-secondary-color;
+}
+
+@mixin pe-label-secondary-inverse {
+  color: $pe-label-secondary-inverse-color;
+}
+
+@mixin pe-label-small {
+  font-size: $pe-label-small-font-size;
+  line-height: $pe-label-small-line-height;
+}
+
+@mixin pe-label-large {
+  font-size: $pe-label-large-font-size;
+  line-height: $pe-label-large-line-height;
+}
+
+@mixin pe-label-bold {
+  font-weight: $pe-label-bold-font-weight;
+}
+
+@mixin pe-list-inline {
+  @include pe-list-unstyled;
+  margin-left: -5px;
+  
+  > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+
+@mixin pe-code {
+  font-family: pe-font-family(default-monospace);
+  font-size: $pe-code-font-size;
+  color: $pe-code-color;
+  background-color: $pe-code-bg;
+  line-height: $pe-code-line-height;
+}
+
+@mixin pe-code-inline {
+  padding-left: $pe-code-inline-padding;
+  padding-right: $pe-code-inline-padding;
+  background-color: $pe-code-inline-bg;
+  font-family: pe-font-family(default-monospace);
+}
+
+@mixin pe-list {
+  color: $pe-list-color;
+  font-size: $pe-list-font-size;
+  font-weight: $pe-list-font-weight;
+  line-height: $pe-list-line-height;
+  margin-bottom: $list-style-margin-bottom;
+  padding-left: $list-style-first-padding-left;
+}
