@@ -74,20 +74,62 @@ This strategy aligns one chunk of content to the left and another chunk to the r
 ## Basic Grid
 The basic grid strategy arranges equally sized chunks of content into two, three, or four rows. Each chunk should maintain the same height. The gutter size is configurable to be either small (10px) or large (20px). Chunks fill the content area in a left-to-right, top-to-bottom pattern.
 
+#### Basic Grid (--small-2col)
 {{#demo}}
-  <div class='pe-template__single' style='background:magenta;width:300px;'>
-    <div class='pe-strategy__left_right'>
-      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
-      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+  <div class='pe-template__single' style='background:magenta;width:100%;height:100px'>
+    <div class='pe-strategy__basic-grid--small-2col'>
+      <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
     </div>
   </div>
+{{/demo}}
+
+
+#### Basic Grid (--small-3col)
+{{#demo}}
+  <div class='pe-template__single' style='background:magenta;width:100%;height:100px'>
+    <div class='pe-strategy__basic-grid--small-3col'>
+      <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+    </div>
+  </div>
+{{/demo}}
+
+
+#### Basic Grid (--small-4col)
+{{#demo}}
+  <div class='pe-template__single' style='background:magenta;width:100%;height:100px'>
+    <div class='pe-strategy__basic-grid--small-4col'>
+      <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+    </div>
+  </div>
+{{/demo}}
+
+
+#### Basic Grid (large)
+{{#demo}}
+<div class='pe-template__single' style='background:magenta;width:100%;height:100px;'>
+  <div class='pe-strategy__basic-grid--large'>
+    <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
+    <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
+    <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
+    <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+  </div>
+</div>
 {{/demo}}
 
 
 ## Spacing
 Stacked strategies have the same spacing options as templates: Directly Adjoining, Small Gap, and Large Gap.
 
-#### Default Gap
+#### Directly Adjoining (Default)
 {{#demo}}
   <div class='pe-template__single' style='background:magenta;width:300px;'>
     <div class='pe-strategy__centered'>
