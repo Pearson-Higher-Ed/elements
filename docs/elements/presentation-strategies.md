@@ -76,12 +76,20 @@ The basic grid strategy arranges equally sized chunks of content into two, three
 
 #### Basic Grid (--small-2col)
 {{#demo}}
-  <div class='pe-template__single' style='background:magenta;width:100%;height:100px'>
+  <div class='pe-template__single' style='background:magenta;width:100%;height:250px;'>
     <div class='pe-strategy__basic-grid--small-2col'>
-      <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:cyan;text-align:center;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;'>Content Area</div>
+      <div style='background:whiteSmoke;text-align:center;'><img src="https://img1.etsystatic.com/022/0/6252525/il_fullxfull.478145691_guj1.jpg" height="50px"; width="100px";></div>
+      <div style='background:greenYellow;text-align:center;'><img src="https://img1.etsystatic.com/022/0/6252525/il_fullxfull.478145691_guj1.jpg" height="100px"; width="100px";><p>hi there</p></div>
+      <div style='background:lightBlue;text-align:center;'>Content Area</div>
+      <div style='background:BurlyWood;text-align:center;'>Content Area</div>
+      <div style='background:HotPink;text-align:center;'>Content Area</div>
+      <div style='background:OliveDrab;text-align:center;'>Content Area</div>
+      <div style='background:Orange;text-align:center;'>Content Area</div>
+      <div style='background:Plum;text-align:center;'>Content Area</div>
+      <div style='background:Silver;text-align:center;'>Content Area</div>
+      <div style='background:SlateBlue;text-align:center;'>Content Area</div>
     </div>
   </div>
 {{/demo}}
@@ -89,12 +97,20 @@ The basic grid strategy arranges equally sized chunks of content into two, three
 
 #### Basic Grid (--small-3col)
 {{#demo}}
-  <div class='pe-template__single' style='background:magenta;width:100%;height:100px'>
+  <div class='pe-template__single' style='background:magenta;width:100%;height:175px'>
     <div class='pe-strategy__basic-grid--small-3col'>
-      <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:cyan;text-align:center;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;'>Content Area</div>
+      <div style='background:whiteSmoke;text-align:center;'>Content Area</div>
+      <div style='background:greenYellow;text-align:center;'>Content Area</div>
+      <div style='background:lightBlue;text-align:center;'>Content Area</div>
+      <div style='background:BurlyWood;text-align:center;'>Content Area</div>
+      <div style='background:HotPink;text-align:center;'>Content Area</div>
+      <div style='background:OliveDrab;text-align:center;'>Content Area</div>
+      <div style='background:Orange;text-align:center;'>Content Area</div>
+      <div style='background:Plum;text-align:center;'>Content Area</div>
+      <div style='background:Silver;text-align:center;'>Content Area</div>
+      <div style='background:SlateBlue;text-align:center;'>Content Area</div>
     </div>
   </div>
 {{/demo}}
@@ -102,12 +118,20 @@ The basic grid strategy arranges equally sized chunks of content into two, three
 
 #### Basic Grid (--small-4col)
 {{#demo}}
-  <div class='pe-template__single' style='background:magenta;width:100%;height:100px'>
+  <div class='pe-template__single' style='background:magenta;width:100%;height:150px'>
     <div class='pe-strategy__basic-grid--small-4col'>
-      <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
-      <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+      <div style='background:cyan;text-align:center;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;'>Content Area</div>
+      <div style='background:whiteSmoke;text-align:center;'>Content Area</div>
+      <div style='background:greenYellow;text-align:center;'>Content Area</div>
+      <div style='background:lightBlue;text-align:center;'>Content Area</div>
+      <div style='background:BurlyWood;text-align:center;'>Content Area</div>
+      <div style='background:HotPink;text-align:center;'>Content Area</div>
+      <div style='background:OliveDrab;text-align:center;'>Content Area</div>
+      <div style='background:Orange;text-align:center;'>Content Area</div>
+      <div style='background:Plum;text-align:center;'>Content Area</div>
+      <div style='background:Silver;text-align:center;'>Content Area</div>
+      <div style='background:SlateBlue;text-align:center;'>Content Area</div>
     </div>
   </div>
 {{/demo}}
@@ -117,10 +141,10 @@ The basic grid strategy arranges equally sized chunks of content into two, three
 {{#demo}}
 <div class='pe-template__single' style='background:magenta;width:100%;height:100px;'>
   <div class='pe-strategy__basic-grid--large'>
-    <div style='background:cyan;text-align:center;height:40px;'>Content Area</div>
-    <div style='background:blueViolet;text-align:center;height:40px;'>Content Area</div>
-    <div style='background:whiteSmoke;text-align:center;height:40px;'>Content Area</div>
-    <div style='background:greenYellow;text-align:center;height:40px;'>Content Area</div>
+    <div style='background:cyan;text-align:center;'>Content Area</div>
+    <div style='background:blueViolet;text-align:center;'>Content Area</div>
+    <div style='background:whiteSmoke;text-align:center;'>Content Area</div>
+    <div style='background:greenYellow;text-align:center;'>Content Area</div>
   </div>
 </div>
 {{/demo}}
