@@ -140,7 +140,7 @@ Backgrounds and Borders:
       </div>
     </div>
     <div class='pe-template__single' style='background:magenta;'>
-      <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
     </div>
   </div>
 {{/demo}}
@@ -160,7 +160,7 @@ Backgrounds and Borders:
     </div>
   </div>
   <div class='pe-template__single' style='background:magenta;'>
-    <h6 style='background:lightblue;text-align:center;height:40px;'>Content Area</h6>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 </div>
 {{/demo}}

@@ -99,7 +99,7 @@ List of Elements with their current respective design version:
 | Typography | v1.0.0 |
 | Icons | v1.0.0 |
 | Inputs | v1.0.0 |
-| Buttons | v1.0.0 |
+| Buttons | v2.0.0 |
 | Calendar | v1.0.0-beta.1 |
 | Grid | v1.0.0 |
 | Templates | v1.0.0 |
