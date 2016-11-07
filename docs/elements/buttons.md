@@ -25,7 +25,7 @@ Buttons can be disabled when an action is not available to the user for the curr
 
 ## Sizes
 
-Buttons come in small, large and xlarge sizes. Prefer the small size but feel free to use the large size where they would fit better with surrounding content. Both small large button sizes are meant to pair with equally sized inputs. XLarge buttons are to be used when the UI appears on a mobile device or screen smaller than 768px width (tablet portrait view).
+Buttons come in small, large and xlarge sizes. Prefer the small size but feel free to use the large size where they would fit better with surrounding content. Both small and large button sizes are meant to pair with equally sized inputs. XLarge buttons are to be used when the UI appears on a mobile device or screen smaller than 768px width (tablet portrait view).
 
 {{#demo}}
 <button class="pe-btn">Standard</button>
