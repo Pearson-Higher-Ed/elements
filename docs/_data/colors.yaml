@@ -1,27 +1,21 @@
-colors:
-  - "pitch"
-  - "gray-no-1"
-  - "brightly-lit"
-  - "off-white"
-  - "dirty-ice"
+colors-primary:
+  - "digital-pearson-blue"
+  - "ink-blue"
   - "white"
-  - "boring"
-  - "sidewalk"
-  - "hairline-gray"
-  - "gray-wash"
-  - "black"
-  - "gutenberg-black"
-  - "full-moon"
-  - "asphalt"
-  - "smoke-gray"
-  - "sandy-gray"
-  - "highlighter"
-  - "royal-navy"
-  - "hyperdrive"
-  - "basic-blue"
-  - "sea"
-  - "deep-sea"
-  - "sky-blue"
-  - "blue-milk"
-  - "firetruck"
-  - "spruce"
+  - "white-gray"
+
+colors-secondary:
+  - "sunshine-yellow"
+  - "sunflower-yellow"
+  - "digital-ice-blue"
+
+colors-neutral:
+  - "charcoal"
+  - "medium-gray"
+  - "concrete"
+  - "alto"
+  - "moonlight"
+
+colors-conditional:
+  - "strawberry-red"
+  - "digital-grass-green"
