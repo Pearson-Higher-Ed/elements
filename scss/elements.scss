@@ -1,24 +1,6 @@
-// normalize.css
-@import 'normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/functions';
+@import 'base/normalize';
 
-// Elements
-@import 'mixins';
-@import 'variables';
-@import 'reset';
-@import 'plain-tags';
-@import 'aside';
-@import 'buttons';
-@import 'card';
-@import 'dropdown';
-@import 'header';
-@import 'icons';
-@import 'responsive-utilities';
-@import 'tables';
-@import 'grid';
-@import 'type';
-@import 'inputs';
-@import 'select-box';
-@import 'calendar';
-@import 'meter';
-@import 'templates';
-@import 'presentation-strategies';
+// @import 'base/html-tags';

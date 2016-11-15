@@ -1,15 +1,6 @@
-// Elements
-@import 'mixins';
-@import 'variables';
-@import 'aside';
-@import 'buttons';
-@import 'card';
-@import 'dropdown';
-@import 'header';
-@import 'icons';
-@import 'responsive-utilities';
-@import 'tables';
-@import 'type';
-@import 'inputs';
-@import 'select-box';
-@import 'calendar';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/functions';
+@import 'base/normalize';
+
+// @import 'base/html-tags';

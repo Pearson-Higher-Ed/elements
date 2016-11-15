@@ -1,3 +1,4 @@
+
 .d-c--color {
   font-size: 0em;
 }
@@ -8,6 +9,8 @@
 
   &:after {
     clear: both;
+    content: "";
+    display: table;
     margin-bottom: 35px;
   }
 }
@@ -18,8 +21,25 @@
   height: 150px;
 }
 
-@each $name, $color in $pe-colors {
-  .d-swatch--#{$name} {
+$docs-colors: (
+  digital-pearson-blue: $pe-color-digital-pearson-blue,
+  ink-blue: $pe-color-ink-blue,
+  white: $pe-color-white,
+  white-gray: $pe-color-white-gray,
+  sunshine-yellow: $pe-color-sunshine-yellow,
+  sunflower-yellow: $pe-color-sunflower-yellow,
+  digital-ice-blue: $pe-color-digital-ice-blue,
+  charcoal: $pe-color-charcoal,
+  medium-gray: $pe-color-medium-gray,
+  concrete: $pe-color-concrete,
+  alto: $pe-color-alto,
+  moonlight: $pe-color-moonlight,
+  strawberry-red: $pe-color-strawberry-red,
+  digital-grass-green: $pe-color-digital-grass-green
+);
+
+@each $name, $color in $docs-colors {
+  .d-swatch--pe-color-#{$name} {
     background: $color;
     position: relative;
 
@@ -32,6 +52,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
     }
 
     &:before {
@@ -47,3 +68,4 @@
     }
   }
 }
+
