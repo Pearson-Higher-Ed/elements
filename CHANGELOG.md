@@ -1,3 +1,17 @@
+<a name="0.16.0"></a>
+# [0.16.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.15.0...v0.16.0) (2016-11-17)
+
+
+### Bug Fixes
+
+* prevent linefeed smushing ([a5f7f56](https://github.com/Pearson-Higher-Ed/elements/commit/a5f7f56))
+
+### Features
+
+* add presentation strategy spacing ([fb0e046](https://github.com/Pearson-Higher-Ed/elements/commit/fb0e046))
+
+
+
 <a name="0.15.0"></a>
 # [0.15.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.14.0...v0.15.0) (2016-10-06)
 
