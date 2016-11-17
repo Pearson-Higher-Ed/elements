@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+                <li>
+                  <ul class="pe-list pe-list--unstyled">
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/color">
+                        Color
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/typography">
+                        Typography
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/icons">
+                        Icons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/inputs">
+                        Inputs
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/buttons">
+                        Buttons
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/calendar">
+                        Calendar
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/meter">
+                        Meter
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/responsive-utilities">
+                        Responsive Utilities
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                      <a href="/elements/elements/grid">
+                        Grid
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/templates">
+                        Templates
+                      </a>
+                    </li>
+                    <li class="d-nav__sub-section d-nav__nav-item ">
+                      <a href="/elements/elements/presentation-strategies">
+                        Presentation Strategies
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Grid</h1>
+
+        <p>A low level framework for positioning elements on the page.
+<a href="https://pearson-higher-ed.github.io/design/c/grid/">Design and Redlines</a></p>
+<h2>Equal Columns</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">    <p>pe-col-1</p>
+    <div class="pe-container">
+      <div class='pe-row'>
+        <div class="pe-col-1"><p style="background:cyan">one</p></div>
+        <div class="pe-col-1"><p style="background:cyan">two</p></div>
+        <div class="pe-col-1"><p style="background:cyan">three</p></div>
+        <div class="pe-col-1"><p style="background:cyan">four</p></div>
+        <div class="pe-col-1"><p style="background:cyan">five</p></div>
+        <div class="pe-col-1"><p style="background:cyan">six</p></div>
+        <div class="pe-col-1"><p style="background:cyan">seven</p></div>
+        <div class="pe-col-1"><p style="background:cyan">eight</p></div>
+        <div class="pe-col-1"><p style="background:cyan">nine</p></div>
+        <div class="pe-col-1"><p style="background:cyan">ten</p></div>
+        <div class="pe-col-1"><p style="background:cyan">eleven</p></div>
+        <div class="pe-col-1"><p style="background:cyan">twelve</p></div>
+      </div>
+    </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>pe-col-1<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-container"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>one<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>two<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>three<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>four<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>five<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>six<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>seven<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>eight<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>nine<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>ten<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>eleven<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>twelve<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Span Mulitple Columns</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-container">
+  <div class='pe-row'>
+    <div class="pe-col-4"><p style="background:cyan">one</p></div>
+    <div class="pe-col-4"><p style="background:cyan">two</p></div>
+    <div class="pe-col-4"><p style="background:cyan">three</p></div>
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-container"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>one<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>two<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>three<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Span Columns</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><div class="pe-container">
+  <div class='pe-row'>
+    <div class="pe-col-1"><p style="background:cyan">one</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-2"><p style="background:cyan">two</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-3"><p style="background:cyan">three</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-4"><p style="background:cyan">four</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-5"><p style="background:cyan">five</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-6"><p style="background:cyan">six</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-7"><p style="background:cyan">seven</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-8"><p style="background:cyan">eight</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-9"><p style="background:cyan">nine</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-10"><p style="background:cyan">ten</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-11"><p style="background:cyan">eleven</p></div>
+  </div>
+  <div class='pe-row'>
+    <div class="pe-col-12"><p style="background:cyan">twelve</p></div>
+  </div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-container"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-1"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>one<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-2"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>two<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-3"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>three<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-4"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>four<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-5"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>five<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-6"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>six<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-7"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>seven<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-8"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>eight<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-9"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>nine<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-10"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>ten<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-11"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>eleven<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'pe-row'</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-col-12"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"background:cyan"</span>&gt;</span>twelve<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Feature List</h2>
+<ul>
+<li>Adapts to standard breakpoints</li>
+<li>Consistent fluid behavior</li>
+<li>Handy 12 column grid that can support many layouts</li>
+<li>Integration with Templates component for easy usage</li>
+</ul>
+<h2>Usage Guidelines</h2>
+<p>You should generally not use this component directly, prefer instead to use Templates and Presentation Strategies in your designs.</p>
+<h2>Grid Structure</h2>
+<p>The grid consists of four key parts: the Container, Container Margins, Columns, and Gutters.</p>
+<p>All columns reside within the Container, which is located at the root level of a page. Depending on the breakpoint, the container will have Container Margins of various sizes. The container also has a maximum width property, beyond which only the container margins grow in size.</p>
+<p>The container is divided into 12 proportional Columns which contain actual content. These are separated by Gutters of a fixed size (which varies based on the breakpoint again).</p>
+<p>See the redlines for the exact dimensions of each feature at each breakpoint.</p>
+<h2>Rediline Details</h2>
+<p>Container:
+Maximum width of 1140px
+Always horizontally centered</p>
+<p>Container Margins:
+≥ 40px at Large and Extra Large breakpoints
+20px at Small and Medium breakpoints
+10px at Extra Small breakpoints</p>
+<p>Gutters:
+40px at Medium and larger breakpoints
+20px at Small breakpoints
+10px at Extra Small breakpoints</p>
+<p>Columns:
+Equal widths, size determined by remaining space after accounting for the container width and gutter size</p>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
