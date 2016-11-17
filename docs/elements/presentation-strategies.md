@@ -10,8 +10,6 @@ Layout Templates help you structure a page at a high level and chunk it into maj
 
 [Design and Redlines](https://pearson-higher-ed.github.io/design/c/presentation-strategies/)
 
-** **Grid and Spacing Features from Redlines... yet to be implimented**
-
 Feature List
 - Support for common layout patterns
 - Full integration with the standard templates
@@ -26,6 +24,9 @@ Each strategy defines the location of one or more content areas which should eac
 
 ### Stacking
 Similarly to the templates themselves, strategies can be combined into stacks within a given template area.
+
+### Spacing
+Stacked strategies have the same spacing options as templates: Directly Adjoining, Small Gap, and Large Gap.
 
 ### Responsive behavior
 Strategies don’t include inherent responsive behavior, preferring instead to leave that up to their containing templates. More advanced designs may change between various strategies at the standard breakpoints.
@@ -42,8 +43,6 @@ The default strategy is the normal browser layout flow of left aligning content.
   </div>
 </div>
 {{/demo}}
-
-
 
 
 ## Centered
@@ -72,6 +71,63 @@ This strategy aligns one chunk of content to the left and another chunk to the r
 {{/demo}}
 
 
+## Spacing
+Stacked strategies have the same spacing options as templates: Directly Adjoining, Small Gap, and Large Gap.
+
+#### Directly Adjoining (Default)
+{{#demo}}
+  <div class='pe-template__single' style='background:magenta;width:300px;'>
+    <div class='pe-strategy__centered'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+    <div class='pe-strategy__centered'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+    <div class='pe-strategy__centered'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+  </div>
+{{/demo}}
+
+#### Small Gap
+{{#demo}}
+  <div class='pe-template__single' style='background:magenta;width:300px;'>
+    <div class='pe-strategy__centered--small-gap'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+    <div class='pe-strategy__centered--small-gap'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+    <div class='pe-strategy__centered--small-gap'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+  </div>
+{{/demo}}
+
+#### Large Gap
+{{#demo}}
+  <div class='pe-template__single' style='background:magenta;width:300px;'>
+    <div class='pe-strategy__centered--large-gap'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+    <div class='pe-strategy__centered--large-gap'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+    <div class='pe-strategy__centered--large-gap'>
+      <div style='background:cyan;text-align:center;height:40px;width:100px;'>Content Area</div>
+      <div style='background:blueViolet;text-align:center;height:40px;width:100px;'>Content Area</div>
+    </div>
+  </div>
+{{/demo}}
+
 
 ## Redlines
 #### Default Strategy
@@ -85,3 +141,9 @@ This strategy aligns one chunk of content to the left and another chunk to the r
 #### Left/Right Strategy
 - One content item is left aligned and the other is right aligned
 - Both content items are vertically aligned to their top edges
+
+
+#### Spacing
+- Directly adjoining strategies should have no gap between them
+- Small Gap is 40px total
+- Large gap is 80px total

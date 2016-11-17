@@ -5,10 +5,9 @@
       $current-margin                : map-get($pe-container-margin, $breakpoint);
       $current-breakpoint-value-gets : get-breakpoint-value($breakpoint);
 
-      //Construct media query
       @media(min-width: $current-breakpoint-value-gets){
 
-        .pe-strategy__default{
+        div[class*="pe-strategy__default"] {
           margin-right : $current-margin / - 1;
           margin-left  : $current-margin / - 1;
         };
@@ -18,12 +17,11 @@
 };
 
 
-
 @mixin centered-strategy(){
 
-  .pe-strategy__centered > * {
-    margin-right: auto;
-    margin-left : auto;
+  div[class*="pe-strategy__centered"] > * {
+    margin-right : auto;
+    margin-left  : auto;
   };
 
 };
@@ -36,19 +34,58 @@
     $current-margin                : map-get($pe-container-margin, $breakpoint);
     $current-breakpoint-value-gets : get-breakpoint-value($breakpoint);
 
-    //Construct media query
     @media(min-width: $current-breakpoint-value-gets){
 
-      .pe-strategy__left_right > :first-child {
+      div[class*="pe-strategy__left_right"]{
+        width : 100%;
+      };
+
+      div[class*="pe-strategy__left_right"] > :first-child {
         margin-left : $current-margin / - 1;
         float       : left;
       };
 
-      .pe-strategy__left_right > :last-child {
+      div[class*="pe-strategy__left_right"] > :last-child {
         margin-right : $current-margin / - 1;
         float        : right;
       };
     };
+  };
+
+};
+
+
+@mixin presentation-spacing(){
+
+  div[class*="--small-gap"]:first-child {
+    margin-top : 0px;
+  };
+
+  div[class*="--small-gap"] {
+    width         : 100%;
+    display       : inline-block;
+    margin-top    : $pe-strategy__small-gap / 2;
+    margin-bottom : $pe-strategy__small-gap / 2;
+  };
+
+  div[class*="--small-gap"]:last-child {
+    margin-bottom : 0px;
+  };
+
+
+  div[class*="--large-gap"]:first-child {
+    margin-top : 0px;
+  };
+
+  div[class*="--large-gap"] {
+    width         : 100%;
+    display       : inline-block;
+    margin-top    : $pe-strategy__large-gap / 2;
+    margin-bottom : $pe-strategy__large-gap / 2;
+  };
+
+  div[class*="--large-gap"]:last-child {
+    margin-bottom : 0px;
   };
 
 };
