@@ -2,6 +2,7 @@
 
 @mixin generate-container($pe-container-max-width, $pe-responsive-breakpoints) {
   .pe-container {
+    box-sizing    : border-box;
     max-width     : $pe-container-max-width;
     margin-right  : auto;
     margin-left   : auto;

@@ -2,7 +2,7 @@
 
 
 @mixin generate-templates(){
-  
+
   @include pe-template-single();
   @include pe-template-static-large();
   @include pe-template-static-small();
@@ -15,6 +15,7 @@
 @mixin pe-template-single(){
 
   .pe-template__single{
+    box-sizing    : border-box;
     min-height    : $pe-columns-min-height;
     margin-right  : auto;
     margin-left   : auto;
@@ -41,6 +42,7 @@
 @mixin pe-template-static-large(){
 
   .pe-template__static-large{
+    box-sizing    : border-box;
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
@@ -73,6 +75,7 @@
 @mixin pe-template-static-small(){
 
   .pe-template__static-small{
+    box-sizing    : border-box;
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
@@ -125,6 +128,7 @@
   };
 
   .pe-template__double{
+    box-sizing   : border-box;
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
