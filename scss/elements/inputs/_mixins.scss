@@ -1,14 +1,15 @@
 
 @mixin textInput () {
   %pe-textInput {
-    padding            :$textInput-padding;
-    font-size          :$textInput-placeholder-font-size;
-    color              :$textInput-hintText-color;
-    width              :$textInput-width;
-    border             :$textInput-border-reset;
+    padding   :$textInput-padding;
+    font-size :$textInput-placeholder-font-size;
+    color     :$textInput-hintText-color;
+    width     :$textInput-width;
+    border    :$textInput-border-reset;
     &:focus {
       outline : none;
-      color : $textInput-placeholder-color;
+      color   : $textInput-placeholder-color;
+      border  :$textInput-border-reset;
     }
 
   }
