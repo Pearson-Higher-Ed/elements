@@ -13,9 +13,11 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textLabelInput__label">First Name</label>
-    <input type="text" class="pe-textInput" placeholder="First Name"/>
-    <span class="pe-input_underline"></span>
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label">First Name</label>
+      <input type="text" class="pe-textInput" placeholder="First Name">
+      <span class="pe-input_underline"></span>
+    </div>
   </div>
 {{/demo}}
 
@@ -28,8 +30,11 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textLabelInput__label--label_error">First Name</label>
-    <input type="text" class="pe-textInput--input_error" placeholder="First Name"/>
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label--label_error">First Name</label>
+      <input type="text" class="pe-textInput--input_error" placeholder="First Name"/>
+      <span class="pe-inputError_underline"></span>
+    </div>
   </div>
 {{/demo}}
 
@@ -42,8 +47,10 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textLabelInput__label" disabled>First Name</label>
-    <input type="text" class="pe-textInput" placeholder="First Name" disabled/>
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label" disabled>First Name</label>
+      <input type="text" class="pe-textInput" placeholder="First Name" disabled/>
+    </div>
   </div>
 {{/demo}}
 
@@ -56,7 +63,9 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textLabelInput__label" readonly>First Name</label>
-    <input type="text" class="pe-textInput" placeholder="First Name" readonly/>
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label" readonly>First Name</label>
+      <input type="text" class="pe-textInput" placeholder="First Name" readonly/>
+    </div>
   </div>
 {{/demo}}

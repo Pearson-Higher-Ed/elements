@@ -3,28 +3,11 @@
   %pe-textInput {
     padding            : 0px;
     font-size          :$textInput-placeholder-font-size;
-    height             :$textInput-height;
     width              :$textInput-width;
     border             :$textInput-border-reset;
     &:focus {
       outline : none;
     }
-    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-      // line-height : $textInput-hintText-font-size;
-       color       : $textInput-hintText-color;
-    }
-    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-       opacity     : 1;
-      // line-height : $textInput-hintText-font-size;
-    }
-    &::-moz-placeholder { /* Mozilla Firefox 19+ */
-       opacity: 1;
-      // line-height : $textInput-hintText-font-size;
-    }
-    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      // line-height : $textInput-hintText-font-size;
-    }
-
 
   }
 
@@ -34,7 +17,7 @@
 
   .pe-input_underline {
     background-color: $textInput-focus-border-bottom-color;
-    display: inline-block;
+    display: block;
     height: 4px;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
@@ -49,29 +32,39 @@
     border-bottom      :$textInput-border-bottom;
     border-bottom-style:$textInput-border-bottom-style;
     border-bottom-color:$textInput-border-bottom-color;
-
-
   }
-
-
-
 };
 
 
 
+
 @mixin textInputError() {
+  input:focus+.pe-inputError_underline {
+    transform: scale(1);
+  }
+
+  .pe-inputError_underline {
+    background-color: $textInput-error-border-bottom-color;
+    display: block;
+    height: 4px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 100%;
+  }
+
   .pe-textInput--input_error {
     @extend %pe-textInput;
     border-bottom      :$textInput-error-border-bottom;
     border-bottom-style:$textInput-error-border-bottom-style;
     border-bottom-color:$textInput-error-border-bottom-color;
-    &:focus{
-      outline:none;
-      border-bottom      :$textInput-error-focus-border-bottom;
-      border-bottom-style:$textInput-error-focus-border-bottom-style;
-      border-bottom-color:$textInput-error-focus-border-bottom-color;
-    }
   }
+
+  .pe-input-wrapper{
+    height : 52px;
+  }
+
 };
 
 
