@@ -49,9 +49,9 @@ For elements that do not support the `disabled` attribute, use `pe-btn--disabled
 Buttons can be made smaller or larger.
 
 {{#demo}}
-<button class="pe-btn pe-btn--small">Small</button>
-<button class="pe-btn pe-btn--large">Large</button>
-<button class="pe-btn pe-btn--xlarge">xLarge</button>
+<button class="pe-btn--btn_small">Small</button>
+<button class="pe-btn--btn_large">Large</button>
+<button class="pe-btn--btn_xlarge">xLarge</button>
 {{/demo}}
 
 ## Text overflow

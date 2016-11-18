@@ -1,7 +1,7 @@
 
 @mixin textInput () {
   %pe-textInput {
-    padding            :8px 0px 10px 0px;
+    padding            :$textInput-padding;
     font-size          :$textInput-placeholder-font-size;
     width              :$textInput-width;
     border             :$textInput-border-reset;

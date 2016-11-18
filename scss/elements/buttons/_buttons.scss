@@ -62,14 +62,14 @@
   );
 }
 
-[class*="--small"] {
+[class$="--btn_small"] {
   height      : $pe-btn-small-height;
   font-size   : $pe-btn-small-font-size;
   line-height : $pe-btn-small-line-height;
   padding     : $pe-btn-small-padding;
 }
 
-[class^="--large"] {
+[class$="--btn_large"] {
   height      : $pe-btn-large-height;
   font-size   : $pe-btn-large-font-size;
   line-height : $pe-btn-large-line-height;
@@ -78,7 +78,7 @@
 
 
 
-[class*="--xlarge"]{
+[class$="--btn_xlarge"]{
   height      : $pe-btn-xlarge-height;
   font-size   : $pe-btn-xlarge-font-size;
   line-height : $pe-btn-xlarge-line-height;
