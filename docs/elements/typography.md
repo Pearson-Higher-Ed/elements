@@ -143,7 +143,7 @@ Note that UI Section Headings are going to be "heading" content, so most if not 
 
 {{#demo}}
 <h3 class="pe-title">Default UI Section Headings</h3>
-<h3 class="pe-title"><b>Bold UI Section Headings<b/></h3>
+<h3 class="pe-title"><b>Bold UI Section Headings</b></h3>
 <h3 class="pe-title pe-title--secondary">Secondary Color Default UI Section Headings</h3>
 {{/demo}}
 
