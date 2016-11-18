@@ -1,3 +1,23 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.15.0...v1.0.0) (2016-11-18)
+
+
+### Bug Fixes
+
+* prevent linefeed smushing ([a5f7f56](https://github.com/Pearson-Higher-Ed/elements/commit/a5f7f56))
+
+### Features
+
+* **color:** Documentation update ([bfbeec5](https://github.com/Pearson-Higher-Ed/elements/commit/bfbeec5))
+* **color:** Updated to v2.0.0-beta.4 ([fdc3f3d](https://github.com/Pearson-Higher-Ed/elements/commit/fdc3f3d))
+* **typography:** DES-469, restyle typography to v2 of design for v1 of Elements ([eb99237](https://github.com/Pearson-Higher-Ed/elements/commit/eb99237))
+* add inputs ([90dff1f](https://github.com/Pearson-Higher-Ed/elements/commit/90dff1f))
+* new icons ([777d628](https://github.com/Pearson-Higher-Ed/elements/commit/777d628))
+* new icons ([2d24021](https://github.com/Pearson-Higher-Ed/elements/commit/2d24021))
+* re-structured SCSS folders for v1 ([9e2769c](https://github.com/Pearson-Higher-Ed/elements/commit/9e2769c))
+
+
+
 <a name="0.15.0"></a>
 # [0.15.0](https://github.com/Pearson-Higher-Ed/elements/compare/v0.14.0...v0.15.0) (2016-10-06)
 
