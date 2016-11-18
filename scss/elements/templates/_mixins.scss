@@ -138,6 +138,7 @@
 
 
   .pe-template__double--main{
+    box-sizing : border-box;
     min-height : $pe-columns-min-height;
 
     @include clearfix();
@@ -166,6 +167,7 @@
   };
 
   .pe-template__double--sidebar{
+    box-sizing   : border-box;
     min-height : $pe-columns-min-height;
 
     @include clearfix();
