@@ -95,8 +95,8 @@ List of Elements with their current respective design version:
 
 | Element | Current Design Version |
 |---------|------------------------|
-| Colors | v2.0.0 |
 | Typography | v2.0.0 |
+| Colors | v2.0.0-beta.4 |
 
 
 ** Developers should update table as they implement new versions...*
