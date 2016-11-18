@@ -1,55 +1,74 @@
-// Inputs
-//
 
-$pe-input-border-radius: 3px !default;
-$pe-input-focus-color: pe-color(hyperdrive) !default;
-$pe-input-focus-border: 1px solid pe-color(hyperdrive) !default;
-$pe-input-focus-box-shadow: 0px 0px 4px pe-color(hyperdrive) !default;
-$pe-input-font-size: $pe-label-large-font-size !default;
-$pe-input-height: 36px !default;
-$pe-input-padding: 0 14px !default;
+//======textInput====================
 
-$pe-input-default-bg: pe-color(white) !default;
-$pe-input-default-border: solid 1px pe-color(hairline-gray) !default;
-$pe-input-default-text: pe-color(pitch) !default;
-$pe-input-default-disabled-bg: pe-color(off-white) !default;
-$pe-input-default-disabled-text: pe-color(boring) !default;
-$pe-input-default-line-height: $pe-label-large-line-height !default;
+$textInput-animation : 0.2s ease all;
 
-$pe-input-small-bg: $pe-input-default-bg !default;
-$pe-input-small-border: $pe-input-default-border !default;
-$pe-input-small-text: $pe-input-default-text !default;
-$pe-input-small-disabled-bg: $pe-input-default-disabled-bg !default;
-$pe-input-small-disabled-text: $pe-input-default-disabled-text !default;
-$pe-input-small-height: 28px !default;
-$pe-input-small-padding: 0 10px !default;
-$pe-input-small-font-size: $pe-label-font-size !default;
-$pe-input-small-line-height: $pe-label-line-height !default;
-$pe-input-readonly-bg: pe-color(off-white) !default;
-$pe-input-error-border: solid 1px pe-color(firetruck) !default;
-$pe-input-error-text-color: pe-color(firetruck);
-$pe-input-error-outline: 1px solid pe-color(firetruck);
-$pe-input-error-box-shadow: 0px 0px 4px pe-color(firetruck) !default;
-$pe-input-placeholder-color: pe-color(sandy-gray) !default;
-$pe-input-placeholder-text: italic !default;
+$textInput-width        : 100%;
+$textInput-border-reset : none;
+$textInput-padding      : 10px 10px 10px 5px;
 
-//text-area
-//
-$pe-textarea-padding: 9px 14px !default;
-$pe-textarea-small-padding: 9px 10px !default;
+$textInput-border-bottom       : 1px;
+$textInput-border-bottom-style : solid;
+$textInput-border-bottom-color : #6A7070;
 
-// select-box
-//
-$pe-select-height: 36px !default;
-$pe-select-padding-left: 14px !default;
-$pe-select-padding-right: 14px !default;
-$pe-select-bg: pe-color(white) !default;
-$pe-select-text: pe-color(pitch) !default;
-$pe-select-vertical-align: middle !default;
-$pe-select-line-height: 18px !default;
+$textInput-placeholder-color     : #252525;
+$textInput-placeholder-font-size : 14pt;
 
-$pe-select-small-padding-left: 10px !default;
-$pe-select-small-padding-right: 10px !default;
-$pe-select-small-line-height: 16px !default;
+$textInput-label-color     : #6A7070;
+$textInput-label-font-size : 12pt;
 
-$pe-select-readonly-text: pe-color(boring) !default;
+$textInput-hintText-color     : #C7C7C7;
+$textInput-hintText-font-size : 14pt;
+
+//======textInput-Error==============
+
+$textInput-error-border-bottom       : 1px;
+$textInput-error-border-bottom-style : solid;
+$textInput-error-border-bottom-color :#DB0020;
+
+$textInput-error-color           : #252525;
+$textInput-error-font-size       : 14pt;
+$textInput-error-label-color     :#DB0020;
+$textInput-error-label-font-size :12pt;
+
+//=======textInput-focus-error=======
+
+$textInput-error-focus-border-bottom       : 4px;
+$textInput-error-focus-border-bottom-style : solid;
+$textInput-error-focus-border-bottom-color : #DB0020;
+
+$textInput-error-focus-color           : #252525;
+$textInput-error-focus-font-size       : 14pt;
+$textInput-error-focus-label-color     : #DB0020;
+$textInput-error-focus-label-font-size : 12pt;
+
+//======focus=========================
+
+$textInput-focus-border-bottom       : 4px;
+$textInput-focus-border-bottom-style : solid;
+$textInput-focus-border-bottom-color : #047A9C;
+
+$textInput-focus-text-color     : #252525;
+$textInput-focus-text-font-size : 14pt;
+
+$textInput-focus-label-color     : #047A9C;
+$textInput-focus-label-font-size : 14pt;
+
+
+//======disable=======================
+
+$textInput-disable-border-bottom       : 1px;
+$textInput-disable-border-bottom-style : solid;
+$textInput-disable-border-bottom-color : #C7C7C7;
+
+$textInput-disable-text-color     : #C7C7C7;
+$textInput-disable-text-font-size : 14pt;
+
+//=======read-only====================
+
+$textInput-readonly-border         : none;
+$textInput-readonly-text-color     : #252525;
+$textInput-readonly-text-font-size : 14pt;
+
+$textInput-readonly-label-color     : #6A7070;
+$textInput-readonly-label-font-size : 12pt;

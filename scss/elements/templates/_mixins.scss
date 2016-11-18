@@ -8,25 +8,25 @@
   @include pe-template-static-small();
   @include pe-template-double();
   @include pe-template-spacing();
-  
+
 };
 
 
 @mixin pe-template-single(){
-  
+
   .pe-template__single{
     min-height    : $pe-columns-min-height;
     margin-right  : auto;
     margin-left   : auto;
-    
+
     @include clearfix();
-    
+
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
-      
+
       //Get container margin by breakpoint
       $margin                       : map-get($pe-container-margin, $breakpoint);
       $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-      
+
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
         padding-right : $margin;
@@ -34,25 +34,25 @@
       };
     };
   };
-  
+
 };
 
 
 @mixin pe-template-static-large(){
-  
+
   .pe-template__static-large{
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
-    
+
     @include clearfix();
-    
+
     @each $breakpoint in map-keys($pe-static-template-width-breakpoints) {
-      
+
       //Get container margin by breakpoint
       $margin                       : map-get($pe-static-template-width-breakpoints, $breakpoint);
       $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-      
+
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
         @if $breakpoint == "lg" or $breakpoint == "xl" {
@@ -67,24 +67,24 @@
       };
     };
   };
-  
+
 };
 
 @mixin pe-template-static-small(){
-  
+
   .pe-template__static-small{
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
-    
+
     @include clearfix();
-    
+
     @each $breakpoint in map-keys($pe-static-template-width-breakpoints) {
-      
+
       //Get container margin by breakpoint
       $margin                       : map-get($pe-static-template-width-breakpoints, $breakpoint);
       $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-      
+
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
         @if $breakpoint == "lg" or $breakpoint == "xl" or $breakpoint == "md" {
@@ -99,18 +99,18 @@
       };
     };
   };
-  
+
 };
 
 
 @mixin pe-template-double(){
-  
+
   div[class="pe-template__double"] > :first-child {
-    
+
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
-      
+
       $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-      
+
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
         @if $breakpoint == "xs" or $breakpoint == "sm" or $breakpoint == "md"{
@@ -123,27 +123,27 @@
       };
     };
   };
-  
+
   .pe-template__double{
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
-    
+
     @include clearfix();
   };
-  
-  
+
+
   .pe-template__double--main{
     min-height : $pe-columns-min-height;
-    
+
     @include clearfix();
-    
+
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
-      
+
       //Get container margin by breakpoint
       $margin                       : map-get($pe-container-margin, $breakpoint);
       $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-      
+
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
         @if $breakpoint == "xs" or $breakpoint == "sm" or $breakpoint == "md"{
@@ -160,18 +160,18 @@
       };
     };
   };
-  
+
   .pe-template__double--sidebar{
     min-height : $pe-columns-min-height;
-    
+
     @include clearfix();
-    
+
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
-      
+
       //Get container margin by breakpoint
       $margin                       : map-get($pe-container-margin, $breakpoint);
       $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-      
+
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
         @if $breakpoint == "xs" or $breakpoint == "sm" or $breakpoint == "md"{
@@ -188,42 +188,42 @@
       };
     };
   };
-  
+
 };
 
 
 @mixin pe-template-spacing(){
-  
+
   //Small Gap Spacing
   div[class="pe-template__small-gap"] > :first-child {
     padding-bottom : $pe-template__small-gap / 2;
     padding-top    : 0px;
   };
-  
+
   div[class="pe-template__small-gap"] > div {
     padding-bottom : $pe-template__small-gap / 2;
     padding-top    : $pe-template__small-gap / 2;
   };
-  
+
   div[class="pe-template__small-gap"] > :last-child {
     padding-bottom : 0px;
     padding-top    : $pe-template__small-gap / 2;
   };
-  
+
   //Large Gap Spacing
   div[class="pe-template__large-gap"] > :first-child {
     padding-bottom : $pe-template__large-gap / 2;
     padding-top    : 0px;
   };
-  
+
   div[class="pe-template__large-gap"] > div {
     padding-bottom : $pe-template__large-gap / 2;
     padding-top    : $pe-template__large-gap / 2;
   };
-  
+
   div[class="pe-template__large-gap"] > :last-child {
     padding-bottom : 0px;
     padding-top    : $pe-template__large-gap / 2;
   };
-  
+
 };

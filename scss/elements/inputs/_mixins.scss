@@ -1,156 +1,97 @@
-@mixin pe-placeholder {
-  &::-webkit-input-placeholder { @content }
-  &::-moz-placeholder { @content }
-  &:-moz-placeholder { @content }
-  &:-ms-input-placeholder { @content }
-}
 
-@mixin pe-input(
-  $bg,
-  $border,
-  $color,
-  $disabled-bg,
-  $disabled-color,
-  $active-shadow: none
-) {
-  
-  & input,
-  & textarea {
-    color: $color;
-    background: $bg;
-    border: $border;
-    -webkit-appearance: none;
-    border-radius: $pe-input-border-radius;
-    
-    @include pe-placeholder {
-      font-style: $pe-input-placeholder-text;
-      color: $pe-input-placeholder-color;
+@mixin textInput () {
+  [class^="pe-textInput" ]	{
+    font-size          :$textInput-placeholder-font-size;
+    width              :$textInput-width;
+    padding            :$textInput-padding;
+    border             :$textInput-border-reset;
+    border-bottom      :$textInput-border-bottom;
+    border-bottom-style:$textInput-border-bottom-style;
+    border-bottom-color:$textInput-border-bottom-color;
+    transition         :$textInput-animation;
+    -moz-transition    :$textInput-animation;
+    -webkit-transition :$textInput-animation;
+    &:focus{
+      outline            :none;
+      border-bottom      :$textInput-focus-border-bottom;
+      border-bottom-style:$textInput-focus-border-bottom-style;
+      border-bottom-color:$textInput-focus-border-bottom-color;
     }
-    
-    &:focus {
-      outline: 0;
-      border: $pe-input-focus-border;
-      box-shadow: $pe-input-focus-box-shadow;
+    &::before {
+      left:50%;
     }
-    
-  }
-  
-  & input:disabled,
-  &.pe-input--disabled input {
-    color: $disabled-color;
-    background: $disabled-bg;
-    
-    @include pe-placeholder {
-      color: $disabled-color;
-    }
-    
-  }
-  
-  & textarea:disabled,
-  &.pe-textarea--disabled textarea {
-    color: $disabled-color;
-    background: $disabled-bg;
-    
-    @include pe-placeholder {
-      color: $disabled-color;
+    &::after {
+      right:50%;
     }
   }
-  
-  &.pe-input--readonly input,
-  &.pe-textarea--readonly textarea {
-    background: $disabled-bg;
-  }
-  
-  //these are not really supported yet, and interfere with earlier rule
-  
-  & input:read-only,
-  & input:-moz-read-only {
-    background: $disabled-bg;
-  }
-  
-  & input:invalid,
-  &.pe-input--error input,
-  & textarea:invalid,
-  &.pe-textarea--error textarea {
-    border: $pe-input-error-border;
-    
-    &:focus {
-      box-shadow: $pe-input-error-box-shadow;
-    }
-  }
-  
-  // to be placed on error messages
-  
-  & .pe-error-text {
-    color: $pe-input-error-text-color;
-  }
-  
-  &.pe-input--small input {
-    font-size: $pe-input-small-font-size;
-    height: $pe-input-small-height;
-    line-height: $pe-input-small-line-height;
-    padding: $pe-input-small-padding;
-  }
-  
-  &.pe-textarea--small textarea {
-    font-size: $pe-input-small-font-size;
-    padding: $pe-textarea-small-padding;
-  }
-}
+
+};
 
 
-@mixin pe-select(
-  $height,
-  $padding-left,
-  $padding-right,
-  $border,
-  $bg,
-  $color,
-  $font,
-  $line-height,
-  $vertical-align,
-  $border-radius
-) {
-  
-  & select{
-    height: $height;
-    padding-left: $padding-left;
-    padding-right: $padding-right;
-    border: $border;
-    background-color: $bg;
-    color: $color;
-    font-size: $font;
-    line-height: $line-height;
-    vertical-align: $vertical-align;
-    border-radius: $border-radius;
-  }
-  
-  &.pe-select--small select {
-    height: $pe-input-small-height;
-    padding-left: $pe-select-small-padding-left;
-    padding-right: $pe-select-small-padding-right;
-    font-size: $pe-input-small-font-size;
-    line-height: $pe-select-small-line-height;
-  }
-  
-  &.pe-select--readonly select {
-    background: $pe-input-readonly-bg;
-  }
-  
-  &.pe-select--disabled select,
-  & select:disabled {
-    background-color: $pe-input-readonly-bg;
-    color: $pe-select-readonly-text;
-  }
-  
-  &.pe-select--error select {
-    border: $pe-input-error-border;
-    color: $pe-select-text;
-    
-    &:focus {
-      outline: 0;
-      box-shadow: $pe-input-error-box-shadow;
+
+@mixin textInputError() {
+  [class$="--input_error"] {
+    border-bottom      :$textInput-error-border-bottom;
+    border-bottom-style:$textInput-error-border-bottom-style;
+    border-bottom-color:$textInput-error-border-bottom-color;
+    &:focus{
+      outline:none;
+      border-bottom      :$textInput-error-focus-border-bottom;
+      border-bottom-style:$textInput-error-focus-border-bottom-style;
+      border-bottom-color:$textInput-error-focus-border-bottom-color;
     }
   }
-  
-}
+};
+
+
+
+@mixin textInputLabel () {
+  .pe-textInput__label	{
+    font-size:$textInput-label-font-size;
+    color    :$textInput-label-color;
+  }
+};
+
+
+
+@mixin textInputLabelError() {
+  [class$="--label_error"] {
+    color     : $textInput-error-focus-label-color;
+    font-size : $textInput-error-focus-label-font-size;
+  }
+};
+
+
+
+@mixin textInputReadOnly() {
+  .pe-textInput:read-only {
+    border-bottom : $textInput-readonly-border;
+    color         : $textInput-readonly-text-color;
+    font-size     : $textInput-readonly-text-font-size;
+  }
+};
+
+
+@mixin textInputDisabled() {
+  .pe-textInput:disabled {
+    border-bottom      :$textInput-disable-border-bottom;
+    border-bottom-style:$textInput-disable-border-bottom-style;
+    border-bottom-color:$textInput-disable-border-bottom-color;
+  }
+};
+
+
+@mixin textInputLabelDisabled() {
+  .pe-textInput__label:disabled {
+    color     : $textInput-disable-text-color;
+    font-size : $textInput-disable-text-font-size;
+  }
+};
+
+
+@mixin clearIEPasswordIcon() {
+  //for IE password Input Icon...
+  ::-ms-reveal {
+      display: none;
+  };
+};
