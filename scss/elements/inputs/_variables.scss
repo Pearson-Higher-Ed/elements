@@ -1,11 +1,12 @@
 
 //======textInput====================
 
+$textInput-height : 52px;
+
 $textInput-animation : 0.2s ease all;
 
 $textInput-width        : 100%;
 $textInput-border-reset : none;
-$textInput-padding      : 10px 10px 10px 5px;
 
 $textInput-border-bottom       : 1px;
 $textInput-border-bottom-style : solid;
@@ -18,7 +19,7 @@ $textInput-label-color     : #6A7070;
 $textInput-label-font-size : 12pt;
 
 $textInput-hintText-color     : #C7C7C7;
-$textInput-hintText-font-size : 14pt;
+$textInput-hintText-font-size : 17px;
 
 //======textInput-Error==============
 
@@ -27,7 +28,9 @@ $textInput-error-border-bottom-style : solid;
 $textInput-error-border-bottom-color :#DB0020;
 
 $textInput-error-color           : #252525;
+
 $textInput-error-font-size       : 14pt;
+
 $textInput-error-label-color     :#DB0020;
 $textInput-error-label-font-size :12pt;
 
@@ -67,6 +70,7 @@ $textInput-disable-text-font-size : 14pt;
 //=======read-only====================
 
 $textInput-readonly-border         : none;
+
 $textInput-readonly-text-color     : #252525;
 $textInput-readonly-text-font-size : 14pt;
 

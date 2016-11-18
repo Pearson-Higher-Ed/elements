@@ -1,36 +1,67 @@
 
 @mixin textInput () {
-  [class^="pe-textInput" ]	{
+  %pe-textInput {
+    padding            : 0px;
     font-size          :$textInput-placeholder-font-size;
+    height             :$textInput-height;
     width              :$textInput-width;
-    padding            :$textInput-padding;
     border             :$textInput-border-reset;
+    &:focus {
+      outline : none;
+    }
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      // line-height : $textInput-hintText-font-size;
+       color       : $textInput-hintText-color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       opacity     : 1;
+      // line-height : $textInput-hintText-font-size;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+       opacity: 1;
+      // line-height : $textInput-hintText-font-size;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      // line-height : $textInput-hintText-font-size;
+    }
+
+
+  }
+
+  input:focus+.pe-input_underline {
+    transform: scale(1);
+  }
+
+  .pe-input_underline {
+    background-color: $textInput-focus-border-bottom-color;
+    display: inline-block;
+    height: 4px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 100%;
+  }
+
+
+  .pe-textInput{
+    @extend %pe-textInput;
     border-bottom      :$textInput-border-bottom;
     border-bottom-style:$textInput-border-bottom-style;
     border-bottom-color:$textInput-border-bottom-color;
-    transition         :$textInput-animation;
-    -moz-transition    :$textInput-animation;
-    -webkit-transition :$textInput-animation;
-    &:focus{
-      outline            :none;
-      border-bottom      :$textInput-focus-border-bottom;
-      border-bottom-style:$textInput-focus-border-bottom-style;
-      border-bottom-color:$textInput-focus-border-bottom-color;
-    }
-    &::before {
-      left:50%;
-    }
-    &::after {
-      right:50%;
-    }
+
+
   }
+
+
 
 };
 
 
 
 @mixin textInputError() {
-  [class$="--input_error"] {
+  .pe-textInput--input_error {
+    @extend %pe-textInput;
     border-bottom      :$textInput-error-border-bottom;
     border-bottom-style:$textInput-error-border-bottom-style;
     border-bottom-color:$textInput-error-border-bottom-color;
@@ -46,7 +77,7 @@
 
 
 @mixin textInputLabel () {
-  .pe-textInput__label	{
+  .pe-textLabelInput__label	{
     font-size:$textInput-label-font-size;
     color    :$textInput-label-color;
   }
@@ -55,7 +86,7 @@
 
 
 @mixin textInputLabelError() {
-  [class$="--label_error"] {
+  .pe-textLabelInput__label--label_error {
     color     : $textInput-error-focus-label-color;
     font-size : $textInput-error-focus-label-font-size;
   }
@@ -64,7 +95,7 @@
 
 
 @mixin textInputReadOnly() {
-  .pe-textInput:read-only {
+  .pe-textInput[readonly] {
     border-bottom : $textInput-readonly-border;
     color         : $textInput-readonly-text-color;
     font-size     : $textInput-readonly-text-font-size;
@@ -73,7 +104,7 @@
 
 
 @mixin textInputDisabled() {
-  .pe-textInput:disabled {
+  .pe-textInput[disabled] {
     border-bottom      :$textInput-disable-border-bottom;
     border-bottom-style:$textInput-disable-border-bottom-style;
     border-bottom-color:$textInput-disable-border-bottom-color;
@@ -82,7 +113,7 @@
 
 
 @mixin textInputLabelDisabled() {
-  .pe-textInput__label:disabled {
+  .pe-textInput__label[disabled] {
     color     : $textInput-disable-text-color;
     font-size : $textInput-disable-text-font-size;
   }

@@ -13,8 +13,9 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textInput__label">First Name</label>
+    <label class="pe-textLabelInput__label">First Name</label>
     <input type="text" class="pe-textInput" placeholder="First Name"/>
+    <span class="pe-input_underline"></span>
   </div>
 {{/demo}}
 
@@ -27,7 +28,7 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textInput__label--label_error">First Name</label>
+    <label class="pe-textLabelInput__label--label_error">First Name</label>
     <input type="text" class="pe-textInput--input_error" placeholder="First Name"/>
   </div>
 {{/demo}}
@@ -41,7 +42,7 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textInput__label" disabled>First Name</label>
+    <label class="pe-textLabelInput__label" disabled>First Name</label>
     <input type="text" class="pe-textInput" placeholder="First Name" disabled/>
   </div>
 {{/demo}}
@@ -55,7 +56,7 @@ Hint text disappear as soon as input become focus.
 
 {{#demo}}
   <div class="inputWrapper">
-    <label class="pe-textInput__label" readonly>First Name</label>
+    <label class="pe-textLabelInput__label" readonly>First Name</label>
     <input type="text" class="pe-textInput" placeholder="First Name" readonly/>
   </div>
 {{/demo}}
