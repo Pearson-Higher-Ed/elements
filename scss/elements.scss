@@ -1,8 +1,8 @@
-@import 'base/variables';
 @import 'base/mixins';
 @import 'base/functions';
 @import 'base/normalize';
-
+@import 'base/variables';
+@import 'base/html-tags';
 
 @import 'elements/responsive-utilities/responsive-utilities';
 @import 'elements/typography/type';
@@ -13,5 +13,3 @@
 @import 'elements/templates/templates';
 @import 'elements/presentation-strategies/presentation-strategies';
 @import 'elements/inputs/inputs';
-
-// @import 'base/html-tags';

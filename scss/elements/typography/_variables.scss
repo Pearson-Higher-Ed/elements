@@ -1,149 +1,84 @@
 // Type
-//
+// base line-height, font size and font-family are defined in variables
+// to support using Elements without calling in Typography
+
+// -----------------------------
+// UI and body copy
+// -----------------------------
+$pe-line-height-copy:				22px !default;
+
+$pe-font-size-small:				12px !default;
+$pe-line-height-small:				16px !default;
+$pe-line-height-copy-small:			20px !default;
+
+$pe-font-size-large:				16px !default;
+$pe-line-height-large:				20px !default;
+$pe-line-height-copy-large:			24px !default;
+
+$pe-font-size-lead:					20px !default;
+$pe-line-height-lead:				28px !default;
 
 
-$pe-line-height-base: 1.5 !default;
+// -----------------------------
+// Page headers
+// -----------------------------
+$pe-font-size-page-title:			38px !default;
+$pe-line-height-page-title:			52px !default;
 
-$pe-font-families: (
-  default-sans-serif: ('Helvetica Neue', Helvetica, Arial, sans-serif),
-  default-serif: (Georgia, Times, 'Times New Roman', serif),
-  default-monospace: ('Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace)
-) !default;
+$pe-font-size-page-title-small:		28px !default;
+$pe-line-height-page-title-small:	38px !default;
 
+
+// -----------------------------
+// UI section headers
+// -----------------------------
+$pe-font-size-sctn-title:			20px !default;
+$pe-line-height-sctn-title:			26px !default;
+
+$pe-font-size-sctn-title-small:		18px !default;
+$pe-line-height-sctn-title-small:	22px !default;
+
+$pe-font-size-sctn-title-large:		24px !default;
+$pe-line-height-sctn-title-large:	28px !default;
+
+
+// -----------------------------
+// Content headers
+// -----------------------------
+
+
+// -----------------------------
+// Code
+// -----------------------------
+$pe-font-family-code:				$pe-font-family-mono;
+
+$pe-bg-code:						$pe-color-moonlight;
+$pe-padding-code:					0 4px;
+
+$pe-bg-pre:							$pe-color-ink-blue;
+$pe-padding-pre:					30px 50px;
+$pe-color-pre:						$pe-color-white-gray;
+$pe-font-size-pre:					14px;
+$pe-line-height-pre:				20px;
+
+
+// -----------------------------
+// Lists
+// -----------------------------
+$pe-margin-list:					12px 0;
+$pe-padding-left-list-primary:		26px;
+$pe-padding-left-list-nested:		20px;
+$pe-space-between-list-items:		6px;
+
+
+// -----------------------------
 // Links
-//
-
-$pe-link-color: pe-color(hyperdrive) !default;
-$pe-link-hover-color: pe-color(royal-navy) !default;
-
-// Headings
-//
-
-$pe-text-heading-small-color: pe-color(smoke-gray) !default;
-$pe-text-heading-small-font-size: 0.8rem !default;
-$pe-text-heading-bottom-border: pe-color(boring);
-$pe-text-heading-l1tol3-color: pe-color(pitch);
-$pe-text-heading-l4tol6-color: pe-color(gray-no-1);
-
-// Inline text
-//
-
-$pe-text-mark-bg: pe-color(highlighter) !default;
-
-$pe-text-strikethrough-color: pe-color(gray-no-1) !default;
-
-$pe-text-small-line-height: 1rem !default;
-$pe-text-small-font-weight: normal !default;
-$pe-text-small-font-size: inherit !default;
+// -----------------------------
+$pe-color-link:						$pe-color-digital-pearson-blue;
+$pe-color-link-hover:				$pe-color-ink-blue;
 
 
-
-// Body copy
-//
-
-$pe-copy-color: pe-color(pitch) !default;
-$pe-copy-font-size: 1rem !default;
-$pe-copy-line-height: 1.375 !default;
-
-// body copy small
-//
-
-$pe-copy-small-font-size: 0.875rem !default;
-$pe-copy-small-line-height: 1.25rem !default;
-$pe-paragraph-margin-bottom: 12px !default;
-$pe-paragraph-last-margin-bottom: 0 !default;
-
-
-// Titles
-//
-
-$pe-title-color: pe-color(black) !default;
-$pe-title-font-weight: normal !default;
-$pe-title-font-size: 1.124rem !default;
-$pe-title-line-height: 1.375rem !default;
-$pe-title-border-bottom: 0 !default;
-// sm and larger viewports
-$pe-title-sm-font-size: 1.375rem !default;
-$pe-title-sm-line-height: 1.75rem !default;
-
-$pe-title-large-font-size: 1.25rem !default;
-$pe-title-large-line-height: 1.5rem !default;
-// sm and larger viewports
-$pe-title-large-sm-font-size: 1.5rem !default;
-$pe-title-large-sm-line-height: 1.875rem !default;
-
-$pe-title-extra-large-font-size: 1.375rem !default;
-$pe-title-extra-large-line-height: 1.75rem !default;
-// sm and larger viewports
-$pe-title-extra-large-sm-font-size: 1.875rem !default;
-$pe-title-extra-large-sm-line-height: 2.25rem !default;
-
-// Leads
-//
-
-$pe-lead-color: pe-color(pitch) !default;
-$pe-lead-font-weight: 200 !default;
-$pe-lead-font-size: 1.125rem !default;
-$pe-lead-line-height: 1.5rem !default;
-// sm and larger viewports
-$pe-lead-sm-font-weight: 300 !default;
-$pe-lead-sm-font-size: 1.25rem !default;
-$pe-lead-sm-line-height: 1.75rem !default;
-
-// Labels
-//
-
-$pe-label-color: pe-color(pitch) !default;
-$pe-label-font-size: 0.875rem !default;
-$pe-label-line-height: 1rem !default;
-$pe-label-font-weight: normal !default;
-
-$pe-label-secondary-color: pe-color(gray-no-1) !default;
-
-$pe-label-small-font-size: 0.813rem !default;
-$pe-label-medium-font-size: pxToRem(16px) !default;
-$pe-label-small-line-height: 0.9375rem !default;
-
-$pe-label-large-font-size: 1rem !default;
-$pe-label-large-line-height: 1.125rem !default;
-
-$pe-label-bold-font-weight: bold !default;
-
-$pe-label-inverse-color: pe-color(white) !default;
-$pe-label-secondary-inverse-color: pe-color(gray-wash) !default;
-$pe-label-inverse-font-weight: 300 !default;
-
-
-
-// code
-//
-
-$pe-code-line-height: 1.25rem;
-$pe-code-font-size: 0.875rem !default;
-$pe-code-color: pe-color(gray-wash) !default;
-$pe-code-bg: pe-color(full-moon) !default;
-
-$pe-code-inline-padding: 4px !default;
-$pe-code-inline-color: pe-color(gray-wash) !default;
-$pe-code-inline-bg: pe-color(brightly-lit) !default;
-
-// lists
-//
-$pe-list-color: #231f20 !default;
-$pe-list-font-size: 1rem !default;
-$pe-list-line-height: 1.375rem !default;
-$pe-list-font-weight: normal !default;
-
-$list-style-type: none !default;
-$list-style-padding-left: 20px;
-$list-style-first-padding-left: 26px;
-$list-style-margin-bottom: 12px;
-$list-style-margin-top: 12px;
-$list-style-type-roman: lower-roman;
-$list-style-type-ordered: lower-alpha;
-$list-style-type-number: decimal;
-$list-style-type-disc: disc;
-$list-style-type-circle: circle;
-$list-style-type-square: square;
-$list-heding-style-margin-top: 0;
-$list-padding-left: 20px;
+// -----------------------------
+// Inline Elements
+// -----------------------------
+$pe-text-mark-bg:					$pe-color-sunshine-yellow;

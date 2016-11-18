@@ -1,9 +1,0 @@
-@function pxToRem($px) {
-  @return #{$px/$pe-font-size-base}rem;
-}
-
-@function pe-font-family($family) {
-  @return map-get($pe-font-families, $family);
-}
-
-

@@ -4,14 +4,12 @@
   $hover-bg,
   $hover-color,
   $disabled-bg:  null,
-  $disabled-color: null,
-  $font-weight: null
+  $disabled-color: null
 ) {
 
   color           : $color;
   background      : $bg;
   border-radius   : $pe-btn-standard-border-radius;
-  font-weight     : $font-weight;
   text-decoration : none;
   text-overflow   : ellipsis;
   white-space     : nowrap;
