@@ -69,7 +69,7 @@
   padding     : $pe-btn-small-padding;
 }
 
-[class*="--large"] {
+[class^="--large"] {
   height      : $pe-btn-large-height;
   font-size   : $pe-btn-large-font-size;
   line-height : $pe-btn-large-line-height;
