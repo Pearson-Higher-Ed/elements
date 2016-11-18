@@ -1,7 +1,7 @@
 
 @mixin textInput () {
   %pe-textInput {
-    padding            : 0px;
+    padding            :8px 0px 10px 0px;
     font-size          :$textInput-placeholder-font-size;
     width              :$textInput-width;
     border             :$textInput-border-reset;
@@ -21,8 +21,8 @@
     height: 4px;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: $textInput-animation;
+    transition: $textInput-animation;
     width: 100%;
   }
 
@@ -49,8 +49,8 @@
     height: 4px;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: $textInput-animation;
+    transition: $textInput-animation;
     width: 100%;
   }
 

@@ -3,7 +3,6 @@
 
 To see individual Elements components in action, please visit https://pearson-elements-v0.surge.sh/elements/
 
-![Color swatch showing the colors and their SCSS variable names](https://cloud.githubusercontent.com/assets/1950683/13062650/6d4bccee-d3fd-11e5-8815-cf3b8e5c7a78.jpg?raw=true "swatch")
 
 ## Consuming this SDK
 
