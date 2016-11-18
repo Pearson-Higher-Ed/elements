@@ -3,10 +3,12 @@
   %pe-textInput {
     padding            :$textInput-padding;
     font-size          :$textInput-placeholder-font-size;
+    color              :#C7C7C7;
     width              :$textInput-width;
     border             :$textInput-border-reset;
     &:focus {
       outline : none;
+      color : #252525;
     }
 
   }
