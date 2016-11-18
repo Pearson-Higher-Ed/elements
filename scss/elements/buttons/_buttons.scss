@@ -2,7 +2,7 @@
 @import 'mixins';
 
 %btn{
-  border-radius  : 3px;
+  border-radius  : $pe-btn-standard-border-radius;
   border         : none;
   display        : inline-block;
   vertical-align : middle;
@@ -62,12 +62,17 @@
   );
 }
 
-
+[class*="--small"] {
+  height      : $pe-btn-small-height;
+  font-size   : $pe-btn-small-font-size;
+  line-height : $pe-btn-small-line-height;
+  padding     : $pe-btn-small-padding;
+}
 
 [class*="--large"] {
   height      : $pe-btn-large-height;
   font-size   : $pe-btn-large-font-size;
-  line-height : $pe-btn-large-height;
+  line-height : $pe-btn-large-line-height;
   padding     : $pe-btn-large-padding;
 }
 
@@ -76,6 +81,6 @@
 [class*="--xlarge"]{
   height      : $pe-btn-xlarge-height;
   font-size   : $pe-btn-xlarge-font-size;
-  line-height : $pe-btn-xlarge-height;
+  line-height : $pe-btn-xlarge-line-height;
   padding     : $pe-btn-xlarge-padding;
 }
