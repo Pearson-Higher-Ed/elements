@@ -63,7 +63,11 @@ gulp.task('sass', () => {
 });
 
 gulp.task('assets', ['sass'], () => {
-  return gulp.src('./assets/**')
+  gulp.src('./assets/icons/*')
+    .pipe(gulp.dest('./dist/icons'));
+
+  // TODO: Fix icon static asset fingerprinting for cache-busting
+  return gulp.src(['./assets/**', '!./assets/icons/*'])
     .pipe(rev())
     .pipe(gulp.dest('./dist'))
     .pipe(rev.manifest())
