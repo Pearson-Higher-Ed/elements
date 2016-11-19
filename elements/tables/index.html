@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+                <ul class="pe-list pe-list--unstyled">
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/color">
+                      Color
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/typography">
+                      Typography
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/icons">
+                      Icons
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/buttons">
+                      Buttons
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/grid">
+                      Grid
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/templates">
+                      Templates
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/presentation-strategies">
+                      Presentation Strategies
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/responsive-utilities">
+                      Responsive Utilities
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/inputs">
+                      Inputs
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Tables</h1>
+
+        <div class="d-demo pe-card">
+      <div class="pe-card__header"><table class="pe-table--striped">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Cost</th>
+    </tr>   
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>$0.35</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>$0.25</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-table--striped"</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Product<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Cost<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>   <br>  <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Apple<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>$0.35<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>$0.25<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
