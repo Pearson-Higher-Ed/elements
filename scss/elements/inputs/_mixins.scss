@@ -135,3 +135,48 @@
       display: none;
   };
 };
+
+
+@mixin checkbox() {
+
+  label {
+
+    input[type="checkbox"] {
+      opacity : 0;
+      + span {
+        content       : "";
+        opacity       : 1;
+        display       : inline-block;
+        height        : $checkbox-box-height;
+        width         : $checkbox-box-width;
+        margin-right  : $checkbox-box-rightMargin;
+        border        : $checkbox-box-border;
+        border-radius : $checkbox-box-borderRadius;
+      }
+      + span svg {
+        opacity      : 0;
+        display      : inline-block;
+        height       : $checkbox-box-height;
+        width        : $checkbox-box-width;
+        margin-right : $checkbox-box-rightMargin;
+      }
+      &:checked + span svg {
+        opacity : 1;
+
+      }
+      &:focus + span {
+        border        : $checkbox-box-border-focus;
+        border-radius : $checkbox-box-borderRadius;
+      }
+      &:disabled + span {
+        background-color : $checkbox-box-disabled-color;
+      }
+      &:disabled + span svg{
+        fill : $checkbox-checkmark-color-disabled;
+      }
+
+    }
+
+  }
+
+};

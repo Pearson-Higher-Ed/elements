@@ -80,3 +80,18 @@ $textInput-readonly-text-font-size : 14pt;
 
 $textInput-readonly-label-color     : $pe-color-medium-gray;
 $textInput-readonly-label-font-size : 12pt;
+
+
+//*************checkboxes**************
+
+$checkbox-checkmark                : '/icons/p-icons-sprite-1.1.svg#pe-icon--check-sm-18';
+$checkbox-checkmark-color-active   : $pe-color-medium-gray;
+$checkbox-checkmark-color-disabled : $pe-color-concrete;
+
+$checkbox-box-height         : 16px;
+$checkbox-box-width          : 16px;
+$checkbox-box-rightMargin    : 12px;
+$checkbox-box-borderRadius   : 2px;
+$checkbox-box-border         : 1px solid $pe-color-concrete;
+$checkbox-box-border-focus   : 1px solid $pe-color-digital-pearson-blue;
+$checkbox-box-disabled-color : $pe-color-moonlight;
