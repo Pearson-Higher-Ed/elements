@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+                <ul class="pe-list pe-list--unstyled">
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/color">
+                      Color
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/typography">
+                      Typography
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/icons">
+                      Icons
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/buttons">
+                      Buttons
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/grid">
+                      Grid
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/templates">
+                      Templates
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/presentation-strategies">
+                      Presentation Strategies
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/responsive-utilities">
+                      Responsive Utilities
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item d-nav__nav-item--active">
+                    <a href="/elements/elements/inputs">
+                      Inputs
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Inputs</h1>
+
+        <p>An input is a field used to elicit a response from a user</p>
+<h2>Inputs (single line)</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="inputWrapper">
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label">First Name</label>
+      <input type="text" class="pe-textInput" placeholder="First Name">
+      <span class="pe-input_underline"></span>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inputWrapper"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input-wrapper"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textLabelInput__label"</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textInput"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"First Name"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input_underline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Inputs (single line - error)</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="inputWrapper">
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label--label_error">First Name</label>
+      <input type="text" class="pe-textInput--input_error" placeholder="First Name"/>
+      <span class="pe-inputError_underline"></span>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inputWrapper"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input-wrapper"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textLabelInput__label--label_error"</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textInput--input_error"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"First Name"</span>/&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-inputError_underline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Inputs (single line - disabled)</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="inputWrapper">
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label" disabled>First Name</label>
+      <input type="text" class="pe-textInput" placeholder="First Name" disabled/>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inputWrapper"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input-wrapper"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textLabelInput__label"</span> <span class="hljs-attribute">disabled</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textInput"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"First Name"</span> <span class="hljs-attribute">disabled</span>/&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+<h2>Inputs (single line - read only)</h2>
+<div class="d-demo pe-card">
+      <div class="pe-card__header">  <div class="inputWrapper">
+    <div class="pe-input-wrapper">
+      <label class="pe-textLabelInput__label" readonly>First Name</label>
+      <input type="text" class="pe-textInput" value="First Name" readonly/>
+    </div>
+  </div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code>  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"inputWrapper"</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-input-wrapper"</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textLabelInput__label"</span> <span class="hljs-attribute">readonly</span>&gt;</span>First Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-textInput"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"First Name"</span> <span class="hljs-attribute">readonly</span>/&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>

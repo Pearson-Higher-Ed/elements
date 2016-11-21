@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <div class="d-docs-layout__container">
+      <header class="pe-header pe-header--fixed">
+        <section class="pe-header__section">
+          <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+        </section>
+        <section class="pe-header__section pe-header__section--right">
+          <nav class="pe-header__nav">
+            <ul class="pe-header__nav-items">
+              <!--li class="pe-header__nav-item  ">
+                <a href="/elements/getting-started">Getting Started</a>
+              </li-->
+              <li class="pe-header__nav-item pe-header__nav-item--active ">
+                <a href="/elements/elements">Elements</a>
+              </li>
+              <li class="pe-header__nav-item">
+                <a href="https://github.com/pearson-higher-ed/elements/">
+                  <span class="d-github-mark--light d-header-github-link"></span>
+                  <span class="pe-sr-only">Elements on GitHub</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <div class="d-docs-layout__sidebar">
+        <nav class="d-nav">
+          <ul class="pe-list pe-list--unstyled">
+              <li class="d-nav__section ">
+                <a href="/elements/elements">Elements</a>
+                <ul class="pe-list pe-list--unstyled">
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/color">
+                      Color
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/typography">
+                      Typography
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/icons">
+                      Icons
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/buttons">
+                      Buttons
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/grid">
+                      Grid
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/templates">
+                      Templates
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/presentation-strategies">
+                      Presentation Strategies
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/responsive-utilities">
+                      Responsive Utilities
+                    </a>
+                  </li>
+                  <li class="d-nav__sub-section d-nav__nav-item ">
+                    <a href="/elements/elements/inputs">
+                      Inputs
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="d-docs-layout__main">
+        <h1>Meter</h1>
+
+        <p>The meter element is a gauge that is a static representation of the progress of an item. It is meant to have no dynamic component and therefore should be used to render items that are static on a single page. For all items that need to be updated via javascript there will be a Progress Bar available in the compounds SDK.</p>
+<p>The meter element should be rendered as a div with the class 'pe-progressbar', and the appropriate &quot;progressbar&quot; role with aria-roledescription=&quot;meter&quot;. There is also an optional value text to describe the value in aria.</p>
+<div class="d-demo pe-card">
+      <div class="pe-card__header"><p class="pe-progressbar-label">80% Complete</p>
+<div class="pe-progressbar" role="progressbar" aria-roledescription="meter" aria-readonly="true" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" aria-valuetext="almost done">
+	<div class="pe-progressbar-inner" style="width:80%;"></div>
+</div>
+</div>
+      <div class="pe-card__content d-demo__code-example">
+        <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-progressbar-label"</span>&gt;</span>80% Complete<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-progressbar"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"progressbar"</span> <span class="hljs-attribute">aria-roledescription</span>=<span class="hljs-value">"meter"</span> <span class="hljs-attribute">aria-readonly</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-valuemin</span>=<span class="hljs-value">"0"</span> <span class="hljs-attribute">aria-valuemax</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">aria-valuenow</span>=<span class="hljs-value">"80"</span> <span class="hljs-attribute">aria-valuetext</span>=<span class="hljs-value">"almost done"</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pe-progressbar-inner"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"width:80%;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span><br></code></pre>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
