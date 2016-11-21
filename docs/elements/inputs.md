@@ -51,3 +51,121 @@ An input is a field used to elicit a response from a user
     </div>
   </div>
 {{/demo}}
+
+## Inputs (checkbox)
+
+{{#demo}}
+
+  <div class="inputWrapper">
+    <p>Unselected</p>
+    <div class="checkbox">
+      <input type="checkbox" id="checkboxInput" value="1" />
+      <label for="checkboxInput">Bacon</label>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true"
+             class="pe-icon--check-sm-18">
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
+  	</div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+      <p>Selected</p>
+      <div class="checkbox">
+      <input type="checkbox" id="checkboxInput2" value="1" checked/>
+      <label for="checkboxInput2">Pastrami</label>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true"
+             class="pe-icon--check-sm-18">
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
+    	</div>
+    </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Unselected Focus</p>
+    <div class="checkbox">
+      <input type="checkbox" id="checkboxInput3" value="1" />
+      <label for="checkboxInput3">Ham</label>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true"
+             class="pe-icon--check-sm-18">
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Selected Focus</p>
+    <div class="checkbox">
+      <input type="checkbox" id="checkboxInput4" value="1" checked/>
+      <label for="checkboxInput4">Steak</label>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true"
+             class="pe-icon--check-sm-18">
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Disabled Selected</p>
+    <div class="checkbox">
+      <input type="checkbox" id="checkboxInput5" value="1" checked disabled/>
+      <label for="checkboxInput5">Tripe</label>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true"
+             class="pe-icon--check-sm-18">
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Disabled Unselected</p>
+    <div class="checkbox">
+      <input type="checkbox" id="checkboxInput6" value="1" disabled/>
+      <label for="checkboxInput6">Meatball</label>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             aria-hidden="true"
+             class="pe-icon--check-sm-18">
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+
+{{/demo}}
