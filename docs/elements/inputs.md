@@ -11,8 +11,8 @@ An input is a field used to elicit a response from a user
 {{#demo}}
   <div class="inputWrapper">
     <div class="pe-input-wrapper">
-      <label class="pe-textLabelInput__label">First Name</label>
-      <input type="text" class="pe-textInput" placeholder="First Name">
+      <label class="pe-textLabelInput__label" for="a">First Name</label>
+      <input type="text" class="pe-textInput" id="a" placeholder="First Name">
       <span class="pe-input_underline"></span>
     </div>
   </div>
@@ -23,8 +23,8 @@ An input is a field used to elicit a response from a user
 {{#demo}}
   <div class="inputWrapper">
     <div class="pe-input-wrapper">
-      <label class="pe-textLabelInput__label--label_error">First Name</label>
-      <input type="text" class="pe-textInput--input_error" placeholder="First Name"/>
+      <label class="pe-textLabelInput__label--label_error" for="b">First Name</label>
+      <input type="text" class="pe-textInput--input_error" id="b" placeholder="First Name"/>
       <span class="pe-inputError_underline"></span>
     </div>
   </div>
@@ -35,8 +35,8 @@ An input is a field used to elicit a response from a user
 {{#demo}}
   <div class="inputWrapper">
     <div class="pe-input-wrapper">
-      <label class="pe-textLabelInput__label" disabled>First Name</label>
-      <input type="text" class="pe-textInput" placeholder="First Name" disabled/>
+      <label class="pe-textLabelInput__label--label-disabled" for="c">First Name</label>
+      <input type="text" class="pe-textInput" id="c" value="Donald" disabled/>
     </div>
   </div>
 {{/demo}}
@@ -46,8 +46,8 @@ An input is a field used to elicit a response from a user
 {{#demo}}
   <div class="inputWrapper">
     <div class="pe-input-wrapper">
-      <label class="pe-textLabelInput__label" readonly>First Name</label>
-      <input type="text" class="pe-textInput" value="First Name" readonly/>
+      <label class="pe-textLabelInput__label" for="d">First Name</label>
+      <input type="text" class="pe-textInput--input_readonly" id="d" value="Donald" readonly/>
     </div>
   </div>
 {{/demo}}

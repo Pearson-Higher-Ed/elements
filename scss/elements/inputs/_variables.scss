@@ -14,14 +14,14 @@ $textInput-border-bottom       : 1px;
 $textInput-border-bottom-style : solid;
 $textInput-border-bottom-color : #6A7070;
 
-$textInput-placeholder-color     : #252525;
-$textInput-placeholder-font-size : 14pt;
+$textInput-value-color     : #252525;
+$textInput-value-font-size : 14pt;
 
 $textInput-label-color     : #6A7070;
 $textInput-label-font-size : 12pt;
 
-$textInput-hintText-color     : #C7C7C7;
-$textInput-hintText-font-size : 17px;
+$textInput-placeholder-color     : #C7C7C7;
+$textInput-placeholder-font-size : 14pt;
 
 //======textInput-Error==============
 
@@ -61,7 +61,7 @@ $textInput-focus-label-font-size : 14pt;
 
 
 //======disable=======================
-
+$textInput-disable-background-color    : #fff;
 $textInput-disable-border-bottom       : 1px;
 $textInput-disable-border-bottom-style : solid;
 $textInput-disable-border-bottom-color : #C7C7C7;
@@ -71,7 +71,7 @@ $textInput-disable-text-font-size : 14pt;
 
 //=======read-only====================
 
-$textInput-readonly-border         : none;
+$textInput-readonly-border         : 0;
 
 $textInput-readonly-text-color     : #252525;
 $textInput-readonly-text-font-size : 14pt;

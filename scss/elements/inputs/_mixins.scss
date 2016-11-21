@@ -1,15 +1,25 @@
+@mixin pe-placeholder {
+  &::-webkit-input-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+}
 
-@mixin textInput () {
+@mixin textInput() {
   %pe-textInput {
-    padding   :$textInput-padding;
-    font-size :$textInput-placeholder-font-size;
-    color     :$textInput-hintText-color;
-    width     :$textInput-width;
-    border    :$textInput-border-reset;
+    padding   : $textInput-padding;
+    font-size : $textInput-value-font-size;
+    color     : $textInput-value-color;
+    width     : $textInput-width;
+    border    : $textInput-border-reset;
+
+    @include pe-placeholder {
+      font-size : $textInput-placeholder-font-size;
+      color      : $textInput-placeholder-color;
+    }
+
     &:focus {
-      outline : none;
-      color   : $textInput-placeholder-color;
-      border  :$textInput-border-reset;
+      outline: none;
     }
 
   }
@@ -30,11 +40,11 @@
   }
 
 
-  .pe-textInput{
+  .pe-textInput {
     @extend %pe-textInput;
-    border-bottom      :$textInput-border-bottom;
-    border-bottom-style:$textInput-border-bottom-style;
-    border-bottom-color:$textInput-border-bottom-color;
+    border-bottom       : $textInput-border-bottom;
+    border-bottom-style : $textInput-border-bottom-style;
+    border-bottom-color : $textInput-border-bottom-color;
   }
 };
 
@@ -59,23 +69,23 @@
 
   .pe-textInput--input_error {
     @extend %pe-textInput;
-    border-bottom      :$textInput-error-border-bottom;
-    border-bottom-style:$textInput-error-border-bottom-style;
-    border-bottom-color:$textInput-error-border-bottom-color;
+    border-bottom       : $textInput-error-border-bottom;
+    border-bottom-style : $textInput-error-border-bottom-style;
+    border-bottom-color : $textInput-error-border-bottom-color;
   }
 
   .pe-input-wrapper{
-    height : 52px;
+    min-height : 52px;
   }
 
 };
 
 
 
-@mixin textInputLabel () {
-  .pe-textLabelInput__label	{
-    font-size:$textInput-label-font-size;
-    color    :$textInput-label-color;
+@mixin textInputLabel() {
+  .pe-textLabelInput__label {
+    font-size : $textInput-label-font-size;
+    color     : $textInput-label-color;
   }
 };
 
@@ -91,7 +101,8 @@
 
 
 @mixin textInputReadOnly() {
-  .pe-textInput[readonly] {
+  .pe-textInput--input_readonly {
+    @extend %pe-textInput;
     border-bottom : $textInput-readonly-border;
     color         : $textInput-readonly-text-color;
     font-size     : $textInput-readonly-text-font-size;
@@ -100,16 +111,18 @@
 
 
 @mixin textInputDisabled() {
-  .pe-textInput[disabled] {
-    border-bottom      :$textInput-disable-border-bottom;
-    border-bottom-style:$textInput-disable-border-bottom-style;
-    border-bottom-color:$textInput-disable-border-bottom-color;
+  .pe-textInput:disabled {
+    color               : $textInput-disable-text-color;
+    background-color    : $textInput-disable-background-color;
+    border-bottom       : $textInput-disable-border-bottom;
+    border-bottom-style : $textInput-disable-border-bottom-style;
+    border-bottom-color : $textInput-disable-border-bottom-color;
   }
 };
 
 
 @mixin textInputLabelDisabled() {
-  .pe-textInput__label[disabled] {
+  .pe-textLabelInput__label--label-disabled {
     color     : $textInput-disable-text-color;
     font-size : $textInput-disable-text-font-size;
   }
