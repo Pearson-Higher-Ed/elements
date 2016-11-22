@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 @import '../typography/type';
+@import '../color/color';
 
 @include textInput();
 @include textInputLabel();
