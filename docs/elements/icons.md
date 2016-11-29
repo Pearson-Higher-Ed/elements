@@ -2,7 +2,6 @@
 layout: docs.html
 title: Icons
 section: elements
-path: /icons/p-icons-sprite-1.1.svg
 ---
 
 The available icons includes the following:
@@ -14,7 +13,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--archive-18">
-      <use xlink:href = "{{path}}#archive-18"></use>
+      <use xlink:href = "#archive-18"></use>
     </svg>
     archive-18
   </li>
@@ -24,7 +23,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--archive-24">
-      <use xlink:href = "{{path}}#archive-24"></use>
+      <use xlink:href = "#archive-24"></use>
     </svg>
     archive-24
   </li>
@@ -34,7 +33,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--audio-high-18">
-      <use xlink:href = "{{path}}#audio-high-18"></use>
+      <use xlink:href = "#audio-high-18"></use>
     </svg>
     audio-high-18
   </li>
@@ -44,7 +43,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--audio-high-24">
-      <use xlink:href = "{{path}}#audio-high-24"></use>
+      <use xlink:href = "#audio-high-24"></use>
     </svg>
     audio-high-24
   </li>
@@ -54,7 +53,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--audio-low-18">
-      <use xlink:href = "{{path}}#audio-low-18"></use>
+      <use xlink:href = "#audio-low-18"></use>
     </svg>
     audio-low-18
   </li>
@@ -64,7 +63,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--audio-low-24">
-      <use xlink:href = "{{path}}#audio-low-24"></use>
+      <use xlink:href = "#audio-low-24"></use>
     </svg>
     audio-low-24
   </li>
@@ -74,7 +73,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--audio-off-18">
-      <use xlink:href = "{{path}}#audio-off-18"></use>
+      <use xlink:href = "#audio-off-18"></use>
     </svg>
     audio-off-18
   </li>
@@ -84,7 +83,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--audio-off-24">
-      <use xlink:href = "{{path}}#audio-off-24"></use>
+      <use xlink:href = "#audio-off-24"></use>
     </svg>
     audio-off-24
   </li>
@@ -94,7 +93,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--ban-18">
-      <use xlink:href = "{{path}}#ban-18"></use>
+      <use xlink:href = "#ban-18"></use>
     </svg>
     ban-18
   </li>
@@ -104,7 +103,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--ban-24">
-      <use xlink:href = "{{path}}#ban-24"></use>
+      <use xlink:href = "#ban-24"></use>
     </svg>
     ban-24
   </li>
@@ -114,7 +113,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--book-18">
-      <use xlink:href = "{{path}}#book-18"></use>
+      <use xlink:href = "#book-18"></use>
     </svg>
     book-18
   </li>
@@ -124,7 +123,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--book-24">
-      <use xlink:href = "{{path}}#book-24"></use>
+      <use xlink:href = "#book-24"></use>
     </svg>
     book-24
   </li>
@@ -134,7 +133,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--bookmark-off-18">
-      <use xlink:href = "{{path}}#bookmark-off-18"></use>
+      <use xlink:href = "#bookmark-off-18"></use>
     </svg>
     bookmark-off-18
   </li>
@@ -144,7 +143,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--bookmark-off-24">
-      <use xlink:href = "{{path}}#bookmark-off-24"></use>
+      <use xlink:href = "#bookmark-off-24"></use>
     </svg>
     bookmark-off-24
   </li>
@@ -154,7 +153,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--bookmark-on-18">
-      <use xlink:href = "{{path}}#bookmark-on-18"></use>
+      <use xlink:href = "#bookmark-on-18"></use>
     </svg>
     bookmark-on-18
   </li>
@@ -164,7 +163,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--bookmark-on-24">
-      <use xlink:href = "{{path}}#bookmark-on-24"></use>
+      <use xlink:href = "#bookmark-on-24"></use>
     </svg>
     bookmark-on-24
   </li>
@@ -174,7 +173,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--calendar-18">
-      <use xlink:href = "{{path}}#calendar-18"></use>
+      <use xlink:href = "#calendar-18"></use>
     </svg>
     calendar-18
   </li>
@@ -184,7 +183,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--calendar-24">
-      <use xlink:href = "{{path}}#calendar-24"></use>
+      <use xlink:href = "#calendar-24"></use>
     </svg>
     calendar-24
   </li>
@@ -194,7 +193,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--camera-18">
-      <use xlink:href = "{{path}}#camera-18"></use>
+      <use xlink:href = "#camera-18"></use>
     </svg>
     camera-18
   </li>
@@ -204,7 +203,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--camera-24">
-      <use xlink:href = "{{path}}#camera-24"></use>
+      <use xlink:href = "#camera-24"></use>
     </svg>
     camera-24
   </li>
@@ -214,7 +213,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--camera-video-18">
-      <use xlink:href = "{{path}}#camera-video-18"></use>
+      <use xlink:href = "#camera-video-18"></use>
     </svg>
     camera-video-18
   </li>
@@ -224,7 +223,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--camera-video-24">
-      <use xlink:href = "{{path}}#camera-video-24"></use>
+      <use xlink:href = "#camera-video-24"></use>
     </svg>
     camera-video-24
   </li>
@@ -234,7 +233,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--check-lg-18">
-      <use xlink:href = "{{path}}#check-lg-18"></use>
+      <use xlink:href = "#check-lg-18"></use>
     </svg>
     check-lg-18
   </li>
@@ -244,7 +243,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--check-lg-24">
-      <use xlink:href = "{{path}}#check-lg-24"></use>
+      <use xlink:href = "#check-lg-24"></use>
     </svg>
     check-lg-24
   </li>
@@ -254,7 +253,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--check-sm-18">
-      <use xlink:href = "{{path}}#check-sm-18"></use>
+      <use xlink:href = "#check-sm-18"></use>
     </svg>
     check-sm-18
   </li>
@@ -264,7 +263,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--check-sm-24">
-      <use xlink:href = "{{path}}#check-sm-24"></use>
+      <use xlink:href = "#check-sm-24"></use>
     </svg>
     check-sm-24
   </li>
@@ -274,7 +273,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--checkbox-off-18">
-      <use xlink:href = "{{path}}#checkbox-off-18"></use>
+      <use xlink:href = "#checkbox-off-18"></use>
     </svg>
     checkbox-off-18
   </li>
@@ -284,7 +283,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--checkbox-off-24">
-      <use xlink:href = "{{path}}#checkbox-off-24"></use>
+      <use xlink:href = "#checkbox-off-24"></use>
     </svg>
     checkbox-off-24
   </li>
@@ -294,7 +293,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--checkbox-on-18">
-      <use xlink:href = "{{path}}#checkbox-on-18"></use>
+      <use xlink:href = "#checkbox-on-18"></use>
     </svg>
     checkbox-on-18
   </li>
@@ -304,7 +303,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--checkbox-on-24">
-      <use xlink:href = "{{path}}#checkbox-on-24"></use>
+      <use xlink:href = "#checkbox-on-24"></use>
     </svg>
     checkbox-on-24
   </li>
@@ -314,7 +313,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--checkbox-tristate-18">
-      <use xlink:href = "{{path}}#checkbox-tristate-18"></use>
+      <use xlink:href = "#checkbox-tristate-18"></use>
     </svg>
     checkbox-tristate-18
   </li>
@@ -324,7 +323,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--checkbox-tristate-24">
-      <use xlink:href = "{{path}}#checkbox-tristate-24"></use>
+      <use xlink:href = "#checkbox-tristate-24"></use>
     </svg>
     checkbox-tristate-24
   </li>
@@ -334,7 +333,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--chevron-back-18">
-      <use xlink:href = "{{path}}#chevron-back-18"></use>
+      <use xlink:href = "#chevron-back-18"></use>
     </svg>
     chevron-back-18
   </li>
@@ -344,7 +343,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--chevron-back-24">
-      <use xlink:href = "{{path}}#chevron-back-24"></use>
+      <use xlink:href = "#chevron-back-24"></use>
     </svg>
     chevron-back-24
   </li>
@@ -354,7 +353,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--chevron-next-18">
-      <use xlink:href = "{{path}}#chevron-next-18"></use>
+      <use xlink:href = "#chevron-next-18"></use>
     </svg>
     chevron-next-18
   </li>
@@ -364,7 +363,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--chevron-next-24">
-      <use xlink:href = "{{path}}#chevron-next-24"></use>
+      <use xlink:href = "#chevron-next-24"></use>
     </svg>
     chevron-next-24
   </li>
@@ -374,7 +373,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--clock-18">
-      <use xlink:href = "{{path}}#clock-18"></use>
+      <use xlink:href = "#clock-18"></use>
     </svg>
     clock-18
   </li>
@@ -384,7 +383,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--clock-24">
-      <use xlink:href = "{{path}}#clock-24"></use>
+      <use xlink:href = "#clock-24"></use>
     </svg>
     clock-24
   </li>
@@ -394,7 +393,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--delete-18">
-      <use xlink:href = "{{path}}#delete-18"></use>
+      <use xlink:href = "#delete-18"></use>
     </svg>
     delete-18
   </li>
@@ -404,7 +403,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--delete-24">
-      <use xlink:href = "{{path}}#delete-24"></use>
+      <use xlink:href = "#delete-24"></use>
     </svg>
     delete-24
   </li>
@@ -414,7 +413,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--desktop-18">
-      <use xlink:href = "{{path}}#desktop-18"></use>
+      <use xlink:href = "#desktop-18"></use>
     </svg>
     desktop-18
   </li>
@@ -424,7 +423,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--desktop-24">
-      <use xlink:href = "{{path}}#desktop-24"></use>
+      <use xlink:href = "#desktop-24"></use>
     </svg>
     desktop-24
   </li>
@@ -434,7 +433,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--dropdown-close-18">
-      <use xlink:href = "{{path}}#dropdown-close-18"></use>
+      <use xlink:href = "#dropdown-close-18"></use>
     </svg>
     dropdown-close-18
   </li>
@@ -444,7 +443,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--dropdown-close-24">
-      <use xlink:href = "{{path}}#dropdown-close-24"></use>
+      <use xlink:href = "#dropdown-close-24"></use>
     </svg>
     dropdown-close-24
   </li>
@@ -454,7 +453,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--dropdown-open-18">
-      <use xlink:href = "{{path}}#dropdown-open-18"></use>
+      <use xlink:href = "#dropdown-open-18"></use>
     </svg>
     dropdown-open-18
   </li>
@@ -464,7 +463,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--dropdown-open-24">
-      <use xlink:href = "{{path}}#dropdown-open-24"></use>
+      <use xlink:href = "#dropdown-open-24"></use>
     </svg>
     dropdown-open-24
   </li>
@@ -474,7 +473,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--email-18">
-      <use xlink:href = "{{path}}#email-18"></use>
+      <use xlink:href = "#email-18"></use>
     </svg>
     email-18
   </li>
@@ -484,7 +483,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--email-24">
-      <use xlink:href = "{{path}}#email-24"></use>
+      <use xlink:href = "#email-24"></use>
     </svg>
     email-24
   </li>
@@ -494,7 +493,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--favorite-off-18">
-      <use xlink:href = "{{path}}#favorite-off-18"></use>
+      <use xlink:href = "#favorite-off-18"></use>
     </svg>
     favorite-off-18
   </li>
@@ -504,7 +503,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--favorite-off-24">
-      <use xlink:href = "{{path}}#favorite-off-24"></use>
+      <use xlink:href = "#favorite-off-24"></use>
     </svg>
     favorite-off-24
   </li>
@@ -514,7 +513,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--favorite-on-18">
-      <use xlink:href = "{{path}}#favorite-on-18"></use>
+      <use xlink:href = "#favorite-on-18"></use>
     </svg>
     favorite-on-18
   </li>
@@ -524,7 +523,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--favorite-on-24">
-      <use xlink:href = "{{path}}#favorite-on-24"></use>
+      <use xlink:href = "#favorite-on-24"></use>
     </svg>
     favorite-on-24
   </li>
@@ -534,7 +533,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--file-18">
-      <use xlink:href = "{{path}}#file-18"></use>
+      <use xlink:href = "#file-18"></use>
     </svg>
     file-18
   </li>
@@ -544,7 +543,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--file-24">
-      <use xlink:href = "{{path}}#file-24"></use>
+      <use xlink:href = "#file-24"></use>
     </svg>
     file-24
   </li>
@@ -554,7 +553,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--font-lg-18">
-      <use xlink:href = "{{path}}#font-lg-18"></use>
+      <use xlink:href = "#font-lg-18"></use>
     </svg>
     font-lg-18
   </li>
@@ -564,7 +563,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--font-lg-24">
-      <use xlink:href = "{{path}}#font-lg-24"></use>
+      <use xlink:href = "#font-lg-24"></use>
     </svg>
     font-lg-24
   </li>
@@ -574,7 +573,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--font-setting-18">
-      <use xlink:href = "{{path}}#font-setting-18"></use>
+      <use xlink:href = "#font-setting-18"></use>
     </svg>
     font-setting-18
   </li>
@@ -584,7 +583,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--font-setting-24">
-      <use xlink:href = "{{path}}#font-setting-24"></use>
+      <use xlink:href = "#font-setting-24"></use>
     </svg>
     font-setting-24
   </li>
@@ -594,7 +593,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--font-sm-18">
-      <use xlink:href = "{{path}}#font-sm-18"></use>
+      <use xlink:href = "#font-sm-18"></use>
     </svg>
     font-sm-18
   </li>
@@ -604,7 +603,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--font-sm-24">
-      <use xlink:href = "{{path}}#font-sm-24"></use>
+      <use xlink:href = "#font-sm-24"></use>
     </svg>
     font-sm-24
   </li>
@@ -614,7 +613,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--group-18">
-      <use xlink:href = "{{path}}#group-18"></use>
+      <use xlink:href = "#group-18"></use>
     </svg>
     group-18
   </li>
@@ -624,7 +623,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--group-24">
-      <use xlink:href = "{{path}}#group-24"></use>
+      <use xlink:href = "#group-24"></use>
     </svg>
     group-24
   </li>
@@ -634,7 +633,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--help-fill-18">
-      <use xlink:href = "{{path}}#help-fill-18"></use>
+      <use xlink:href = "#help-fill-18"></use>
     </svg>
     help-fill-18
   </li>
@@ -644,7 +643,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--help-fill-24">
-      <use xlink:href = "{{path}}#help-fill-24"></use>
+      <use xlink:href = "#help-fill-24"></use>
     </svg>
     help-fill-24
   </li>
@@ -654,7 +653,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--help-outline-18">
-      <use xlink:href = "{{path}}#help-outline-18"></use>
+      <use xlink:href = "#help-outline-18"></use>
     </svg>
     help-outline-18
   </li>
@@ -664,7 +663,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--help-outline-24">
-      <use xlink:href = "{{path}}#help-outline-24"></use>
+      <use xlink:href = "#help-outline-24"></use>
     </svg>
     help-outline-24
   </li>
@@ -674,7 +673,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--image-18">
-      <use xlink:href = "{{path}}#image-18"></use>
+      <use xlink:href = "#image-18"></use>
     </svg>
     image-18
   </li>
@@ -684,7 +683,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--image-24">
-      <use xlink:href = "{{path}}#image-24"></use>
+      <use xlink:href = "#image-24"></use>
     </svg>
     image-24
   </li>
@@ -694,7 +693,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--info-fill-18">
-      <use xlink:href = "{{path}}#info-fill-18"></use>
+      <use xlink:href = "#info-fill-18"></use>
     </svg>
     info-fill-18
   </li>
@@ -704,7 +703,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--info-fill-24">
-      <use xlink:href = "{{path}}#info-fill-24"></use>
+      <use xlink:href = "#info-fill-24"></use>
     </svg>
     info-fill-24
   </li>
@@ -714,7 +713,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--info-outline-18">
-      <use xlink:href = "{{path}}#info-outline-18"></use>
+      <use xlink:href = "#info-outline-18"></use>
     </svg>
     info-outline-18
   </li>
@@ -724,7 +723,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--info-outline-24">
-      <use xlink:href = "{{path}}#info-outline-24"></use>
+      <use xlink:href = "#info-outline-24"></use>
     </svg>
     info-outline-24
   </li>
@@ -734,7 +733,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--item-add-18">
-      <use xlink:href = "{{path}}#item-add-18"></use>
+      <use xlink:href = "#item-add-18"></use>
     </svg>
     item-add-18
   </li>
@@ -744,7 +743,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--item-add-24">
-      <use xlink:href = "{{path}}#item-add-24"></use>
+      <use xlink:href = "#item-add-24"></use>
     </svg>
     item-add-24
   </li>
@@ -754,7 +753,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--item-remove-18">
-      <use xlink:href = "{{path}}#item-remove-18"></use>
+      <use xlink:href = "#item-remove-18"></use>
     </svg>
     item-remove-18
   </li>
@@ -764,7 +763,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--item-remove-24">
-      <use xlink:href = "{{path}}#item-remove-24"></use>
+      <use xlink:href = "#item-remove-24"></use>
     </svg>
     item-remove-24
   </li>
@@ -774,7 +773,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--lock-close-18">
-      <use xlink:href = "{{path}}#lock-close-18"></use>
+      <use xlink:href = "#lock-close-18"></use>
     </svg>
     lock-close-18
   </li>
@@ -784,7 +783,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--lock-close-24">
-      <use xlink:href = "{{path}}#lock-close-24"></use>
+      <use xlink:href = "#lock-close-24"></use>
     </svg>
     lock-close-24
   </li>
@@ -794,7 +793,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--lock-open-18">
-      <use xlink:href = "{{path}}#lock-open-18"></use>
+      <use xlink:href = "#lock-open-18"></use>
     </svg>
     lock-open-18
   </li>
@@ -804,7 +803,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--lock-open-24">
-      <use xlink:href = "{{path}}#lock-open-24"></use>
+      <use xlink:href = "#lock-open-24"></use>
     </svg>
     lock-open-24
   </li>
@@ -814,7 +813,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--note-18">
-      <use xlink:href = "{{path}}#note-18"></use>
+      <use xlink:href = "#note-18"></use>
     </svg>
     note-18
   </li>
@@ -824,7 +823,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--note-24">
-      <use xlink:href = "{{path}}#note-24"></use>
+      <use xlink:href = "#note-24"></use>
     </svg>
     note-24
   </li>
@@ -834,7 +833,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--pause-18">
-      <use xlink:href = "{{path}}#pause-18"></use>
+      <use xlink:href = "#pause-18"></use>
     </svg>
     pause-18
   </li>
@@ -844,7 +843,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--pause-24">
-      <use xlink:href = "{{path}}#pause-24"></use>
+      <use xlink:href = "#pause-24"></use>
     </svg>
     pause-24
   </li>
@@ -854,7 +853,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--person-18">
-      <use xlink:href = "{{path}}#person-18"></use>
+      <use xlink:href = "#person-18"></use>
     </svg>
     person-18
   </li>
@@ -864,7 +863,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--person-24">
-      <use xlink:href = "{{path}}#person-24"></use>
+      <use xlink:href = "#person-24"></use>
     </svg>
     person-24
   </li>
@@ -874,7 +873,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--pivot-close-18">
-      <use xlink:href = "{{path}}#pivot-close-18"></use>
+      <use xlink:href = "#pivot-close-18"></use>
     </svg>
     pivot-close-18
   </li>
@@ -884,7 +883,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--pivot-close-24">
-      <use xlink:href = "{{path}}#pivot-close-24"></use>
+      <use xlink:href = "#pivot-close-24"></use>
     </svg>
     pivot-close-24
   </li>
@@ -894,7 +893,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--pivot-open-18">
-      <use xlink:href = "{{path}}#pivot-open-18"></use>
+      <use xlink:href = "#pivot-open-18"></use>
     </svg>
     pivot-open-18
   </li>
@@ -904,7 +903,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--pivot-open-24">
-      <use xlink:href = "{{path}}#pivot-open-24"></use>
+      <use xlink:href = "#pivot-open-24"></use>
     </svg>
     pivot-open-24
   </li>
@@ -914,7 +913,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--play-18">
-      <use xlink:href = "{{path}}#play-18"></use>
+      <use xlink:href = "#play-18"></use>
     </svg>
     play-18
   </li>
@@ -924,7 +923,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--play-24">
-      <use xlink:href = "{{path}}#play-24"></use>
+      <use xlink:href = "#play-24"></use>
     </svg>
     play-24
   </li>
@@ -934,7 +933,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--point-back-18">
-      <use xlink:href = "{{path}}#point-back-18"></use>
+      <use xlink:href = "#point-back-18"></use>
     </svg>
     point-back-18
   </li>
@@ -944,7 +943,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--point-back-24">
-      <use xlink:href = "{{path}}#point-back-24"></use>
+      <use xlink:href = "#point-back-24"></use>
     </svg>
     point-back-24
   </li>
@@ -954,7 +953,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--point-next-18">
-      <use xlink:href = "{{path}}#point-next-18"></use>
+      <use xlink:href = "#point-next-18"></use>
     </svg>
     point-next-18
   </li>
@@ -964,7 +963,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--point-next-24">
-      <use xlink:href = "{{path}}#point-next-24"></use>
+      <use xlink:href = "#point-next-24"></use>
     </svg>
     point-next-24
   </li>
@@ -974,7 +973,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--radio-button-on-18">
-      <use xlink:href = "{{path}}#radio-button-on-18"></use>
+      <use xlink:href = "#radio-button-on-18"></use>
     </svg>
     radio-button-on-18
   </li>
@@ -984,7 +983,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--radio-button-on-24">
-      <use xlink:href = "{{path}}#radio-button-on-24"></use>
+      <use xlink:href = "#radio-button-on-24"></use>
     </svg>
     radio-button-on-24
   </li>
@@ -994,7 +993,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--radio-button-off-18">
-      <use xlink:href = "{{path}}#radio-button-off-18"></use>
+      <use xlink:href = "#radio-button-off-18"></use>
     </svg>
     radio-button-off-18
   </li>
@@ -1004,7 +1003,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--radio-button-off-24">
-      <use xlink:href = "{{path}}#radio-button-off-24"></use>
+      <use xlink:href = "#radio-button-off-24"></use>
     </svg>
     radio-button-off-24
   </li>
@@ -1014,7 +1013,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--remove-lg-18">
-      <use xlink:href = "{{path}}#remove-lg-18"></use>
+      <use xlink:href = "#remove-lg-18"></use>
     </svg>
     remove-lg-18
   </li>
@@ -1024,7 +1023,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--remove-lg-24">
-      <use xlink:href = "{{path}}#remove-lg-24"></use>
+      <use xlink:href = "#remove-lg-24"></use>
     </svg>
     remove-lg-24
   </li>
@@ -1034,7 +1033,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--remove-sm-18">
-      <use xlink:href = "{{path}}#remove-sm-18"></use>
+      <use xlink:href = "#remove-sm-18"></use>
     </svg>
     remove-sm-18
   </li>
@@ -1044,7 +1043,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--remove-sm-24">
-      <use xlink:href = "{{path}}#remove-sm-24"></use>
+      <use xlink:href = "#remove-sm-24"></use>
     </svg>
     remove-sm-24
   </li>
@@ -1054,7 +1053,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--screen-full-18">
-      <use xlink:href = "{{path}}#screen-full-18"></use>
+      <use xlink:href = "#screen-full-18"></use>
     </svg>
     screen-full-18
   </li>
@@ -1064,7 +1063,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--screen-full-24">
-      <use xlink:href = "{{path}}#screen-full-24"></use>
+      <use xlink:href = "#screen-full-24"></use>
     </svg>
     screen-full-24
   </li>
@@ -1074,7 +1073,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--screen-minimize-18">
-      <use xlink:href = "{{path}}#screen-minimize-18"></use>
+      <use xlink:href = "#screen-minimize-18"></use>
     </svg>
     screen-minimize-18
   </li>
@@ -1084,7 +1083,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--screen-minimize-24">
-      <use xlink:href = "{{path}}#screen-minimize-24"></use>
+      <use xlink:href = "#screen-minimize-24"></use>
     </svg>
     screen-minimize-24
   </li>
@@ -1094,7 +1093,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--search-lg-18">
-      <use xlink:href = "{{path}}#search-lg-18"></use>
+      <use xlink:href = "#search-lg-18"></use>
     </svg>
     search-lg-18
   </li>
@@ -1104,7 +1103,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--search-lg-24">
-      <use xlink:href = "{{path}}#search-lg-24"></use>
+      <use xlink:href = "#search-lg-24"></use>
     </svg>
     search-lg-24
   </li>
@@ -1114,7 +1113,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--search-sm-18">
-      <use xlink:href = "{{path}}#search-sm-18"></use>
+      <use xlink:href = "#search-sm-18"></use>
     </svg>
     search-sm-18
   </li>
@@ -1124,7 +1123,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--search-sm-24">
-      <use xlink:href = "{{path}}#search-sm-24"></use>
+      <use xlink:href = "#search-sm-24"></use>
     </svg>
     search-sm-24
   </li>
@@ -1134,7 +1133,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--settings-18">
-      <use xlink:href = "{{path}}#settings-18"></use>
+      <use xlink:href = "#settings-18"></use>
     </svg>
     settings-18
   </li>
@@ -1144,7 +1143,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--settings-24">
-      <use xlink:href = "{{path}}#settings-24"></use>
+      <use xlink:href = "#settings-24"></use>
     </svg>
     settings-24
   </li>
@@ -1154,7 +1153,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--show-off-18">
-      <use xlink:href = "{{path}}#show-off-18"></use>
+      <use xlink:href = "#show-off-18"></use>
     </svg>
     show-off-18
   </li>
@@ -1164,7 +1163,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--show-off-24">
-      <use xlink:href = "{{path}}#show-off-24"></use>
+      <use xlink:href = "#show-off-24"></use>
     </svg>
     show-off-24
   </li>
@@ -1174,7 +1173,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--show-on-18">
-      <use xlink:href = "{{path}}#show-on-18"></use>
+      <use xlink:href = "#show-on-18"></use>
     </svg>
     show-on-18
   </li>
@@ -1184,7 +1183,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--show-on-24">
-      <use xlink:href = "{{path}}#show-on-24"></use>
+      <use xlink:href = "#show-on-24"></use>
     </svg>
     show-on-24
   </li>
@@ -1194,7 +1193,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--tip-18">
-      <use xlink:href = "{{path}}#tip-18"></use>
+      <use xlink:href = "#tip-18"></use>
     </svg>
     tip-18
   </li>
@@ -1204,7 +1203,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--tip-24">
-      <use xlink:href = "{{path}}#tip-24"></use>
+      <use xlink:href = "#tip-24"></use>
     </svg>
     tip-24
   </li>
@@ -1214,7 +1213,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--view-list-18">
-      <use xlink:href = "{{path}}#view-list-18"></use>
+      <use xlink:href = "#view-list-18"></use>
     </svg>
     view-list-18
   </li>
@@ -1224,7 +1223,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--view-list-24">
-      <use xlink:href = "{{path}}#view-list-24"></use>
+      <use xlink:href = "#view-list-24"></use>
     </svg>
     view-list-24
   </li>
@@ -1234,7 +1233,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--view-tile-18">
-      <use xlink:href = "{{path}}#view-tile-18"></use>
+      <use xlink:href = "#view-tile-18"></use>
     </svg>
     view-tile-18
   </li>
@@ -1244,7 +1243,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--view-tile-24">
-      <use xlink:href = "{{path}}#view-tile-24"></use>
+      <use xlink:href = "#view-tile-24"></use>
     </svg>
     view-tile-24
   </li>
@@ -1254,7 +1253,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--warning-18">
-      <use xlink:href = "{{path}}#warning-18"></use>
+      <use xlink:href = "#warning-18"></use>
     </svg>
     warning-18
   </li>
@@ -1264,7 +1263,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--warning-24">
-      <use xlink:href = "{{path}}#warning-24"></use>
+      <use xlink:href = "#warning-24"></use>
     </svg>
     warning-24
   </li>
@@ -1274,7 +1273,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--zoom-in-18">
-      <use xlink:href = "{{path}}#zoom-in-18"></use>
+      <use xlink:href = "#zoom-in-18"></use>
     </svg>
     zoom-in-18
   </li>
@@ -1284,7 +1283,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--zoom-in-24">
-      <use xlink:href = "{{path}}#zoom-in-24"></use>
+      <use xlink:href = "#zoom-in-24"></use>
     </svg>
     zoom-in-24
   </li>
@@ -1294,7 +1293,7 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--zoom-out-18">
-      <use xlink:href = "{{path}}#zoom-out-18"></use>
+      <use xlink:href = "#zoom-out-18"></use>
     </svg>
     zoom-out-18
   </li>
@@ -1304,11 +1303,39 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          class = "pe-icon--zoom-out-24">
-      <use xlink:href = "{{path}}#zoom-out-24"></use>
+      <use xlink:href = "#zoom-out-24"></use>
     </svg>
     zoom-out-24
   </li>
 </ul>
+
+## Two methods of including icons
+
+The icons above are called from a single larger SVG sprite, using the `&lt;use&gt;` tag and `href` attribute. In Internet Explorer 11 this doesn't work due to a bug unless the sprite is actually on the HTML page where you want to use icons (as opposed to referencing the sprite from your filesystem).
+
+The sprite is naturally invisible (because it contains only `&ltsymbol&gt;` tags inside), however it is currently around 84kb large. Consumers of the SDK need to choose whether they want to
+
+* manually include the sprite at the top of their pages as simply an SVG tag (view source of this page)
+* use JavaScript to dynamically call add the sprite to the page
+
+The advantage of the second method is that this treats the sprite file like any other external file: cachable. Adding 84kb to each page load (the first option) may affect users on slower connections, however it ensures the page never loads with a moment where icons don't appear.
+
+To use the second method, include the JavaScript below to your page with icons. Ensure the path in the GET request is the right path for your sprite:
+
+<div class="pe-card__content d-demo__code-example">
+<pre><code>var pe_ajax = new XMLHttpRequest();
+pe_ajax.open("GET", "/icons/p-icons-sprite-1.1.svg", true);
+pe_ajax.responseType = "document";
+pe_ajax.onload = function(e) {
+  document.body.insertBefore(
+    pe_ajax.responseXML.documentElement,
+    document.body.childNodes[0]
+  );
+}
+pe_ajax.send();</code></pre>
+</div>
+
+If you are using Babel or other ES5-to-ES6 transpiler for your JavaScript, you may wish to change `var pe_ajax` to `const pe_ajax`.
 
 ## Making decorative icons
 
@@ -1322,7 +1349,7 @@ Decorative icons are sitting next to visible text as a decoration to that text. 
        xmlns:xlink="http://www.w3.org/1999/xlink"
        aria-hidden="true"
        class="pe-icon--warning-18">
-    <use xlink:href="{{path}}#warning-18"></use>
+    <use xlink:href="#warning-18"></use>
   </svg>
   Warning! Stuff happened!</h2>
 {{/demo}}
@@ -1342,7 +1369,7 @@ In order for the internal text to work in all assistive tech and browsers curren
        aria-labelledby="r2"
        class="pe-icon--remove-sm-18">
     <title id="r2">Close dialog</title>
-    <use xlink:href="{{path}}#remove-sm-18"></use>
+    <use xlink:href="#remove-sm-18"></use>
   </svg>
 </button>
 {{/demo}}
@@ -1386,7 +1413,7 @@ Screen readers *may* alert their users to the existence of decorative SVGs. When
        xmlns:xlink="http://www.w3.org/1999/xlink"
        <b>aria-hidden="true"</b>
        class="pe-icon--warning-18"&gt;
-    &lt;use xlink:href="../path-to-icon#warning-18"&gt;&lt;/use&gt;
+    &lt;use xlink:href="#warning-18"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 </code></pre>
 
@@ -1400,7 +1427,7 @@ Do not use this attribute for icons that are content! Those icons with text insi
        aria-labelledby="r3"</b>
        class="pe-icon--warning-18"&gt;
     <b>&lt;title id="r3"&gt;Text here!&lt;/title&gt;</b>
-    &lt;use xlink:href="../path-to-icon#warning-18"&gt;&lt;/use&gt;
+    &lt;use xlink:href="#warning-18"&gt;&lt;/use&gt;
   &lt;/svg&gt;
 </code></pre>
 
