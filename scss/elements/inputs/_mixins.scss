@@ -142,29 +142,30 @@
   label {
 
     input[type="checkbox"] {
-      display : none;
+      opacity : 0;
+      left    : 999999;
       ~ span {
+        content      : "";
+        opacity      : 1;
         display      : inline-block;
         height       : $checkbox-box-height;
         width        : $checkbox-box-width;
         margin-right : $checkbox-box-rightMargin;
         border       : $checkbox-box-border;
-        &:active{
-          border-color:$checkbox-box-border-focus;
-        }
       }
-      ~ svg {
-        display      : none;
+      ~ span svg {
+        opacity      : 0;
+        display      : inline-block;
         height       : $checkbox-box-height;
         width        : $checkbox-box-width;
         margin-right : $checkbox-box-rightMargin;
-        border       : $checkbox-box-border;
       }
-      &:checked ~ svg {
-        display:inline-block;
+      &:checked ~ span svg {
+        opacity:1;
+
       }
       &:checked ~ span {
-        display:none;
+        border : 1px solid blue;
       }
 
     }

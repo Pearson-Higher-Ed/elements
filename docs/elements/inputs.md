@@ -65,12 +65,12 @@ An input is a field used to elicit a response from a user
 
 
 
-  <div class="inputWrapper">
+<div class="inputWrapper">
     <p>Unselected</p>
     <div class="checkbox">
 	  	<label>
-        <input type="checkbox" id="checkboxInput" aria-checked="" aria-labelledby="label" value="1" name="" />
-        <span></span>
+        <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <span>
         <svg version="1.1"
              xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -79,10 +79,11 @@ An input is a field used to elicit a response from a user
              class="pe-icon--check-sm-18">
           <title id="r2">Box Checked</title>
           <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
-        </svg>Bacon
+        </svg></span>Bacon
       </label>
   	</div>
   </div>
+
 
 
 
