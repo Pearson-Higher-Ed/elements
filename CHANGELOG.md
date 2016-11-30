@@ -1,3 +1,13 @@
+<a name="1.0.5"></a>
+## [1.0.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.4...v1.0.5) (2016-11-21)
+
+
+### Bug Fixes
+
+* adjust inputs ([d60c4bc](https://github.com/Pearson-Higher-Ed/elements/commit/d60c4bc))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.3...v1.0.4) (2016-11-21)
 
