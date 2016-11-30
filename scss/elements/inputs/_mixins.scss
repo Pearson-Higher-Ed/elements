@@ -136,61 +136,39 @@
   };
 };
 
+
 @mixin checkbox() {
 
-  input[type="checkbox"]{
-    display : none;
+  label {
+
+    input[type="checkbox"] {
+      display : none;
+      ~ span {
+        display      : inline-block;
+        height       : $checkbox-box-height;
+        width        : $checkbox-box-width;
+        margin-right : $checkbox-box-rightMargin;
+        border       : $checkbox-box-border;
+        &:active{
+          border-color:$checkbox-box-border-focus;
+        }
+      }
+      ~ svg {
+        display      : none;
+        height       : $checkbox-box-height;
+        width        : $checkbox-box-width;
+        margin-right : $checkbox-box-rightMargin;
+        border       : $checkbox-box-border;
+      }
+      &:checked ~ svg {
+        display:inline-block;
+      }
+      &:checked ~ span {
+        display:none;
+      }
+
+    }
+
   }
-
-
-  .checkbox {
-  	width: 18px;
-  	position: relative;
-  }
-
-
-  .checkbox label {
-  	cursor: pointer;
-  	position: absolute;
-  	width: 16px;
-  	height: 16px;
-  	top: 0;
-    left: 0;
-  	background: transparent;
-  	border:1px solid #ddd;
-  }
-
-  .checkbox label:after {
-  	opacity: 1;
-  	content: '';
-  	position: absolute;
-  	width: 9px;
-  	height: 5px;
-  	background: transparent;
-  	top: 3px;
-  	left: 2px;
-  	border: 3px solid #333;
-  	border-top: none;
-  	border-right: none;
-  	transform: rotate(-60deg);
-  }
-
-
-  .checkbox label::after {
-  	opacity: 0;
-  }
-
-  /**
-   * Create the checkbox state for the tick
-   */
-  .checkbox input[type=checkbox]:checked + label:after {
-  	opacity: 1;
-  }
-
-  .pe-checkbox__label {
-    margin-left: 30px;
-  };
-
-
 
 };

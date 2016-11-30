@@ -2,6 +2,7 @@
 layout: docs.html
 title: Inputs
 section: elements
+path: /icons/p-icons-sprite-1.1.svg
 ---
 
 An input is a field used to elicit a response from a user
@@ -67,11 +68,20 @@ An input is a field used to elicit a response from a user
   <div class="inputWrapper">
     <p>Unselected</p>
     <div class="checkbox">
-  		<input type="checkbox" id="checkboxInput" aria-labeledby="actualLabel" aria-checked="" value="1" name="checkbox1" />
-	  	<label id="checkboxInputLabel" for="checkboxInput"></label>
-      <span id="actualLabel" class="pe-checkbox__label">Bacon</span>
+	  	<label>
+        <input type="checkbox" id="checkboxInput" aria-checked="" aria-labelledby="label" value="1" name="" />
+        <span></span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             role="img"
+             aria-labelledby="r2"
+             class="pe-icon--check-sm-18">
+          <title id="r2">Box Checked</title>
+          <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+        </svg>Bacon
+      </label>
   	</div>
-    </div>
   </div>
 
 
