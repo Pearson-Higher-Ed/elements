@@ -172,11 +172,7 @@
         background-color : $checkbox-box-disabled-color;
       }
       &:disabled + span svg{
-<<<<<<< HEAD
         fill : $checkbox-checkmark-color-disabled;
-=======
-        fill : $checkbox-checkmark-disabled-color;
->>>>>>> cd7119ba81fcf5e3e9a604c57cf7e52620420a3f
       }
 
     }
