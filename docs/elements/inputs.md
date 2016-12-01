@@ -69,7 +69,7 @@ An input is a field used to elicit a response from a user
                aria-labelledby="r2"
                class="pe-icon--check-sm-18">
             <title id="r2">Box Checked</title>
-            <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
           </svg>
         </span>
         Bacon
@@ -92,7 +92,7 @@ An input is a field used to elicit a response from a user
                  aria-labelledby="r2"
                  class="pe-icon--check-sm-18">
               <title id="r2">Box Checked</title>
-              <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+              <use xlink:href="#check-sm-18"></use>
             </svg>
           </span>
           Pastrami
@@ -115,7 +115,7 @@ An input is a field used to elicit a response from a user
                aria-labelledby="r2"
                class="pe-icon--check-sm-18">
             <title id="r2">Box Checked</title>
-            <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
           </svg>
         </span>
         Hamburger
@@ -138,7 +138,7 @@ An input is a field used to elicit a response from a user
                aria-labelledby="r2"
                class="pe-icon--check-sm-18">
             <title id="r2">Box Checked</title>
-            <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
           </svg>
         </span>
         Ribs
@@ -161,7 +161,7 @@ An input is a field used to elicit a response from a user
              aria-labelledby="r2"
              class="pe-icon--check-sm-18">
           <title id="r2">Box Checked</title>
-          <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+          <use xlink:href="#check-sm-18"></use>
         </svg>
         </span>
         Ham
@@ -184,7 +184,7 @@ An input is a field used to elicit a response from a user
              aria-labelledby="r2"
              class="pe-icon--check-sm-18">
           <title id="r2">Box Checked</title>
-          <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+          <use xlink:href="#check-sm-18"></use>
         </svg>
         </span>
         Steak
