@@ -2,7 +2,6 @@
 
 // import typography variables here
 @import '../elements/typography/variables';
-@import '../elements/typography/type';
 
 html {
 	font-size: pxToRem($pe-font-size-base, 16px);
