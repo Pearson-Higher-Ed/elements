@@ -57,19 +57,103 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
 
-
-
-
-
-
-
-
-
 <div class="inputWrapper">
     <p>Unselected</p>
     <div class="checkbox">
 	  	<label>
         <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <span>
+          <svg version="1.1"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               role="img"
+               aria-labelledby="r2"
+               class="pe-icon--check-sm-18">
+            <title id="r2">Box Checked</title>
+            <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+          </svg>
+        </span>
+        Bacon
+      </label>
+  	</div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+      <p>Selected</p>
+      <div class="checkbox">
+  	  	<label>
+          <input type="checkbox" id="checkboxInput" value="1" name="" />
+          <span>
+            <svg version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 role="img"
+                 aria-labelledby="r2"
+                 class="pe-icon--check-sm-18">
+              <title id="r2">Box Checked</title>
+              <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+            </svg>
+          </span>
+          Pastrami
+        </label>
+    	</div>
+    </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Unselected Focus</p>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <span>
+          <svg version="1.1"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               role="img"
+               aria-labelledby="r2"
+               class="pe-icon--check-sm-18">
+            <title id="r2">Box Checked</title>
+            <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+          </svg>
+        </span>
+        Hamburger
+      </label>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Selected Focus</p>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <span>
+          <svg version="1.1"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               role="img"
+               aria-labelledby="r2"
+               class="pe-icon--check-sm-18">
+            <title id="r2">Box Checked</title>
+            <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+          </svg>
+        </span>
+        Ribs
+      </label>
+    </div>
+  </div>
+
+  <br />
+
+  <div class="inputWrapper">
+    <p>Disabled Selected</p>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="checkboxInput" value="1" name="" checked disabled/>
         <span>
         <svg version="1.1"
              xmlns="http://www.w3.org/2000/svg"
@@ -79,60 +163,10 @@ An input is a field used to elicit a response from a user
              class="pe-icon--check-sm-18">
           <title id="r2">Box Checked</title>
           <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
-        </svg></span>Bacon
+        </svg>
+        </span>
+        Ham
       </label>
-  	</div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <br />
-
-  <div class="inputWrapper">
-    <p>Selected</p>
-    <div class="pe-input-wrapper">
-      <input type="checkbox" class="" id="d" />
-      <label class="" for="d">Pastrami</label>
-    </div>
-  </div>
-
-  <br />
-
-  <div class="inputWrapper">
-    <p>Unselected Focus</p>
-    <div class="pe-input-wrapper">
-      <input type="checkbox" class="" id="e" />
-      <label class="" for="e">Hamburger</label>
-    </div>
-  </div>
-
-  <br />
-
-  <div class="inputWrapper">
-    <p>Selected Focus</p>
-    <div class="pe-input-wrapper">
-      <input type="checkbox" class="" id="f" />
-      <label class="" for="f">Short Ribs</label>
-    </div>
-  </div>
-
-  <br />
-
-  <div class="inputWrapper">
-    <p>Disabled Selected</p>
-    <div class="pe-input-wrapper">
-      <input type="checkbox" class="" id="g" />
-      <label class="" for="g">Ham</label>
     </div>
   </div>
 
@@ -140,9 +174,22 @@ An input is a field used to elicit a response from a user
 
   <div class="inputWrapper">
     <p>Disabled Unselected</p>
-    <div class="pe-input-wrapper">
-      <input type="checkbox" class="" id="h" />
-      <label class="" for="h">Filet Mignon</label>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" id="checkboxInput" value="1" name="" disabled />
+        <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             role="img"
+             aria-labelledby="r2"
+             class="pe-icon--check-sm-18">
+          <title id="r2">Box Checked</title>
+          <use xlink:href="/icons/p-icons-sprite-1.1.svg#check-sm-18"></use>
+        </svg>
+        </span>
+        Steak
+      </label>
     </div>
   </div>
 
