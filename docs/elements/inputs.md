@@ -2,7 +2,6 @@
 layout: docs.html
 title: Inputs
 section: elements
-path: /icons/p-icons-sprite-1.1.svg
 ---
 
 An input is a field used to elicit a response from a user
