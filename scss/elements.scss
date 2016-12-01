@@ -1,12 +1,20 @@
 @import 'base/mixins';
 @import 'base/functions';
 @import 'base/normalize';
+
+// colors
+@import 'elements/color/color';
+
+// base variables
 @import 'base/variables';
+
+// base HTML tags
 @import 'base/html-tags';
 
-@import 'elements/responsive-utilities/responsive-utilities';
+// typography
 @import 'elements/typography/type';
-@import 'elements/color/color';
+
+@import 'elements/responsive-utilities/responsive-utilities';
 @import 'elements/icons/icons';
 @import 'elements/buttons/buttons';
 @import 'elements/grid/grid';
