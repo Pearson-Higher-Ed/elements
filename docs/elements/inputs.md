@@ -60,7 +60,7 @@ An input is a field used to elicit a response from a user
     <p>Unselected</p>
     <div class="checkbox">
 	  	<label>
-        <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <input type="checkbox" id="checkboxInput" value="1" />
         <span>
           <svg version="1.1"
                xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ An input is a field used to elicit a response from a user
       <p>Selected</p>
       <div class="checkbox">
   	  	<label>
-          <input type="checkbox" id="checkboxInput" value="1" name="" />
+          <input type="checkbox" id="checkboxInput" value="1" />
           <span>
             <svg version="1.1"
                  xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ An input is a field used to elicit a response from a user
     <p>Unselected Focus</p>
     <div class="checkbox">
       <label>
-        <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <input type="checkbox" id="checkboxInput" value="1" />
         <span>
           <svg version="1.1"
                xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ An input is a field used to elicit a response from a user
     <p>Selected Focus</p>
     <div class="checkbox">
       <label>
-        <input type="checkbox" id="checkboxInput" value="1" name="" />
+        <input type="checkbox" id="checkboxInput" value="1" />
         <span>
           <svg version="1.1"
                xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ An input is a field used to elicit a response from a user
     <p>Disabled Selected</p>
     <div class="checkbox">
       <label>
-        <input type="checkbox" id="checkboxInput" value="1" name="" checked disabled/>
+        <input type="checkbox" id="checkboxInput" value="1" checked disabled/>
         <span>
         <svg version="1.1"
              xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +175,7 @@ An input is a field used to elicit a response from a user
     <p>Disabled Unselected</p>
     <div class="checkbox">
       <label>
-        <input type="checkbox" id="checkboxInput" value="1" name="" disabled />
+        <input type="checkbox" id="checkboxInput" value="1" disabled />
         <span>
         <svg version="1.1"
              xmlns="http://www.w3.org/2000/svg"
