@@ -1,6 +1,3 @@
-
-
-
 //======textInput====================
 
 $textInput-height : 52px;
@@ -9,7 +6,7 @@ $textInput-padding : 8px 0px 10px 0px;
 
 $textInput-animation : 0.2s ease all;
 
-$textInput-fontFamily : "Open sans";
+$textInput-fontFamily : $pe-font-family-sans;
 
 $textInput-width        : 100%;
 $textInput-border-reset : none;
