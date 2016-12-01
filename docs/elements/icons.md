@@ -232,6 +232,26 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         class = "pe-icon--capslock-18">
+      <use xlink:href = "#capslock-18"></use>
+    </svg>
+    capslock-18
+  </li>
+  <li>
+    <svg version = "1.1"
+         xmlns = "http://www.w3.org/2000/svg"
+         xmlns:xlink = "http://www.w3.org/1999/xlink"
+         aria-hidden = "true"
+         class = "pe-icon--capslock-24">
+      <use xlink:href = "#capslock-24"></use>
+    </svg>
+    capslock-24
+  </li>
+  <li>
+    <svg version = "1.1"
+         xmlns = "http://www.w3.org/2000/svg"
+         xmlns:xlink = "http://www.w3.org/1999/xlink"
+         aria-hidden = "true"
          class = "pe-icon--check-lg-18">
       <use xlink:href = "#check-lg-18"></use>
     </svg>
