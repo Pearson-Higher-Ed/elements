@@ -1,12 +1,12 @@
 #!/bin/bash
 
-echo "Trigger the Selenium tests for master branch: ux-test-platform repo...."
+echo "Trigger the Selenium tests for rebrand branch: ux-test-platform repo...."
 
 #Step 1: API to trigger the ux-test-platform build with the below config
 body="{
 \"request\": {
-\"message\": \"feat(elements): Run Elements SDK Tests\",
-\"branch\":\"master\",
+\"message\": \"feat(elements): Run Elements SDK V1 Tests\",
+\"branch\":\"rebrand\",
 \"config\": {
 \"script\": [
 \"export component=elements_sdk\",
@@ -44,11 +44,11 @@ do
   get_state_value=${BRANCH#*:}
   BRANCH="${get_state_value//\"}"
 
-	if [ $BRANCH == "master" ] #If condition to check if the last triggered build is master
+	if [ $BRANCH == "rebrand" ] #If condition to check if the last triggered build is 'rebrand'
     sleep 5
     curl -i $REPO_URI > test.json
 	then LATEST_ID=$(grep -o '"id":.[0-9]*' test.json | head -1  | grep ':.[0-9]*') #
-	echo "LATEST_ID of master branch.............................. $LATEST_ID"
+	echo "LATEST_ID of rebrand branch.............................. $LATEST_ID"
   export LATEST_ID
   	break 
 	else 	
@@ -57,7 +57,7 @@ do
 	fi
 done
 
-#Step 2 : Fetch the build status of the 'master' branch
+#Step 2 : Fetch the build status of the 'rebrand' branch
 get_buildId_value=${LATEST_ID#*:}
 BUILD_ID="${get_buildId_value//\"}"
 
@@ -71,9 +71,9 @@ do
 
 curl -i $REPO_URI_WITH_BUILDID > test.json 
 
-STATE=$(grep -o '"state":.[a-z\"]*' test.json | head -1 ) #Fetch the state of master build
+STATE=$(grep -o '"state":.[a-z\"]*' test.json | head -1 ) #Fetch the state of rebrand build
 #RESULT=$(grep -o '"result":.[0-9]*' test.json | head -1  | grep ':.[0-9]*') #For debug
-STATUS=$(grep -o '"status":.[0-9]*' test.json | head -1  | grep ':.[0-9]*') #Fetch the status of master build
+STATUS=$(grep -o '"status":.[0-9]*' test.json | head -1  | grep ':.[0-9]*') #Fetch the status of rebrand build
 
 echo "--------------------------------------------"
 echo "Polling for the tests run build status..."
