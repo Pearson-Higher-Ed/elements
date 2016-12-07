@@ -59,21 +59,19 @@ An input is a field used to elicit a response from a user
 <div class="inputWrapper">
     <p>Unselected</p>
     <div class="checkbox">
-	  	<label>
-        <input type="checkbox" id="checkboxInput" value="1" />
-        <span>
-          <svg version="1.1"
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               role="img"
-               aria-labelledby="r2"
-               class="pe-icon--check-sm-18">
-            <title id="r2">Box Checked</title>
-            <use xlink:href="#check-sm-18"></use>
-          </svg>
-        </span>
-        Bacon
-      </label>
+      <label for="checkboxInput">Bacon</label>
+      <input type="checkbox" id="checkboxInput" value="1" />
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             role="img"
+             aria-labelledby="r2"
+             class="pe-icon--check-sm-18">
+          <title id="r2">Box Checked</title>
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
   	</div>
   </div>
 
@@ -82,21 +80,19 @@ An input is a field used to elicit a response from a user
   <div class="inputWrapper">
       <p>Selected</p>
       <div class="checkbox">
-  	  	<label>
-          <input type="checkbox" id="checkboxInput" value="1" />
-          <span>
-            <svg version="1.1"
-                 xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 role="img"
-                 aria-labelledby="r2"
-                 class="pe-icon--check-sm-18">
-              <title id="r2">Box Checked</title>
-              <use xlink:href="#check-sm-18"></use>
-            </svg>
-          </span>
-          Pastrami
-        </label>
+      <label for="checkboxInput2">Pastrami</label>
+      <input type="checkbox" id="checkboxInput2" value="1" checked/>
+      <span>
+        <svg version="1.1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             role="img"
+             aria-labelledby="r2"
+             class="pe-icon--check-sm-18">
+          <title id="r2">Box Checked</title>
+          <use xlink:href="#check-sm-18"></use>
+        </svg>
+      </span>
     	</div>
     </div>
 
@@ -105,21 +101,19 @@ An input is a field used to elicit a response from a user
   <div class="inputWrapper">
     <p>Unselected Focus</p>
     <div class="checkbox">
-      <label>
-        <input type="checkbox" id="checkboxInput" value="1" />
-        <span>
-          <svg version="1.1"
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               role="img"
-               aria-labelledby="r2"
-               class="pe-icon--check-sm-18">
-            <title id="r2">Box Checked</title>
-            <use xlink:href="#check-sm-18"></use>
-          </svg>
-        </span>
-        Hamburger
-      </label>
+    <label for="checkboxInput3">Hamburger</label>
+    <input type="checkbox" id="checkboxInput3" value="1" />
+    <span>
+      <svg version="1.1"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           role="img"
+           aria-labelledby="r2"
+           class="pe-icon--check-sm-18">
+        <title id="r2">Box Checked</title>
+        <use xlink:href="#check-sm-18"></use>
+      </svg>
+    </span>
     </div>
   </div>
 
@@ -128,21 +122,19 @@ An input is a field used to elicit a response from a user
   <div class="inputWrapper">
     <p>Selected Focus</p>
     <div class="checkbox">
-      <label>
-        <input type="checkbox" id="checkboxInput" value="1" />
-        <span>
-          <svg version="1.1"
-               xmlns="http://www.w3.org/2000/svg"
-               xmlns:xlink="http://www.w3.org/1999/xlink"
-               role="img"
-               aria-labelledby="r2"
-               class="pe-icon--check-sm-18">
-            <title id="r2">Box Checked</title>
-            <use xlink:href="#check-sm-18"></use>
-          </svg>
-        </span>
-        Ribs
-      </label>
+    <label for="checkboxInput4">Ribs</label>
+    <input type="checkbox" id="checkboxInput4" value="1" checked/>
+    <span>
+      <svg version="1.1"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           role="img"
+           aria-labelledby="r2"
+           class="pe-icon--check-sm-18">
+        <title id="r2">Box Checked</title>
+        <use xlink:href="#check-sm-18"></use>
+      </svg>
+    </span>
     </div>
   </div>
 
@@ -151,21 +143,19 @@ An input is a field used to elicit a response from a user
   <div class="inputWrapper">
     <p>Disabled Selected</p>
     <div class="checkbox">
-      <label>
-        <input type="checkbox" id="checkboxInput" value="1" checked disabled/>
-        <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             role="img"
-             aria-labelledby="r2"
-             class="pe-icon--check-sm-18">
-          <title id="r2">Box Checked</title>
-          <use xlink:href="#check-sm-18"></use>
-        </svg>
-        </span>
-        Ham
-      </label>
+    <label for="checkboxInput5">Steak</label>
+    <input type="checkbox" id="checkboxInput5" value="1" checked disabled/>
+    <span>
+      <svg version="1.1"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           role="img"
+           aria-labelledby="r2"
+           class="pe-icon--check-sm-18">
+        <title id="r2">Box Checked</title>
+        <use xlink:href="#check-sm-18"></use>
+      </svg>
+    </span>
     </div>
   </div>
 
@@ -174,21 +164,19 @@ An input is a field used to elicit a response from a user
   <div class="inputWrapper">
     <p>Disabled Unselected</p>
     <div class="checkbox">
-      <label>
-        <input type="checkbox" id="checkboxInput" value="1" disabled />
-        <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             role="img"
-             aria-labelledby="r2"
-             class="pe-icon--check-sm-18">
-          <title id="r2">Box Checked</title>
-          <use xlink:href="#check-sm-18"></use>
-        </svg>
-        </span>
-        Steak
-      </label>
+    <label for="checkboxInput6">Chicken</label>
+    <input type="checkbox" id="checkboxInput6" value="1" disabled/>
+    <span>
+      <svg version="1.1"
+           xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           role="img"
+           aria-labelledby="r2"
+           class="pe-icon--check-sm-18">
+        <title id="r2">Box Checked</title>
+        <use xlink:href="#check-sm-18"></use>
+      </svg>
+    </span>
     </div>
   </div>
 
