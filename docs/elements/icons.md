@@ -1331,7 +1331,7 @@ The available icons includes the following:
 
 ## Two methods of including icons
 
-The icons above are called from a single larger SVG sprite, using the `&lt;use&gt;` tag and `href` attribute. In Internet Explorer 11 this doesn't work due to a bug unless the sprite is actually on the HTML page where you want to use icons (as opposed to referencing the sprite from your filesystem).
+The icons above are called from a single larger SVG sprite, using the `&lt;use&gt;` tag and `href` attribute. In Internet Explorer 11 and the webkit version of some Android's default "Chrome" browser, this doesn't work due to a bug unless the sprite is actually on the HTML page where you want to use icons (as opposed to referencing the sprite from your filesystem).
 
 The sprite is naturally invisible (because it contains only `&ltsymbol&gt;` tags inside), however it is currently around 84kb large. Consumers of the SDK need to choose whether they want to
 
@@ -1340,19 +1340,21 @@ The sprite is naturally invisible (because it contains only `&ltsymbol&gt;` tags
 
 The advantage of the second method is that this treats the sprite file like any other external file: cachable. Adding 84kb to each page load (the first option) may affect users on slower connections, however it ensures the page never loads with a moment where icons don't appear.
 
-To use the second method, include the JavaScript below to your page with icons. Ensure the path in the GET request is the right path for your sprite:
+To use the second method, include the JavaScript below to your page which uses icons. Ensure the path in the GET request is the right path for your sprite:
 
 <div class="pe-card__content d-demo__code-example">
-<pre><code>var pe_ajax = new XMLHttpRequest();
-pe_ajax.open("GET", "/icons/p-icons-sprite-1.1.svg", true);
-pe_ajax.responseType = "document";
-pe_ajax.onload = function(e) {
-  document.body.insertBefore(
-    pe_ajax.responseXML.documentElement,
-    document.body.childNodes[0]
-  );
-}
-pe_ajax.send();</code></pre>
+<pre><code>if (!document.getElementById('pe-icons-sprite')) {
+  var pe_ajax = new XMLHttpRequest();
+  pe_ajax.open("GET", "/icons/p-icons-sprite-1.1.svg", true);
+  pe_ajax.responseType = "document";
+  pe_ajax.onload = function(e) {
+    document.body.insertBefore(
+      pe_ajax.responseXML.documentElement,
+      document.body.childNodes[0]
+    );
+  }
+  pe_ajax.send();
+}</code></pre>
 </div>
 
 If you are using Babel or other ES5-to-ES6 transpiler for your JavaScript, you may wish to change `var pe_ajax` to `const pe_ajax`.
@@ -1376,12 +1378,12 @@ Decorative icons are sitting next to visible text as a decoration to that text. 
 
 ## Making stand-alone icons
 
-Stand-alone icons represent meaningful content on their own, and require their own internal alternative text. If they were HTML images, they would have alt="their meaning". Examples include icons used instead of text inside actionable controls like buttons.
+Stand-alone icons represent meaningful content on their own, and require their own internal alternative text. If they were HTML images, they would have alt="their meaning". Examples include icons used instead of text inside actionable controls like buttons (see the <a href="../buttons">buttons documentation</a>).
 
 In order for the internal text to work in all assistive tech and browsers currently, a small hack is required: the `title` element must get an id (which of course must be unique on the page) and the `svg` element gets an `aria-labelledby` attribute pointing to that id. Text inside the `title` tag is not visible on the page. Additionally the role of "img" is added to ensure browsers expose the icon as an image.
 
 {{#demo}}
-<button type="button" class="pe-btn">
+<button type="button" class="pe-icon--btn">
   <svg version="1.1"
        xmlns="http://www.w3.org/2000/svg"
        xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1414,18 +1416,22 @@ After a proposed icon has been accepted by the UX Framework team, an SVG can be 
 * From your new icon, copy the &lt;path&gt; into the Elements file, inside the &lt;symbol&gt; tags.
 * Test your new icon out locally
 
-Don't forget to add the new icon to this file, and update the path variable at the top if this .md file.
+Don't forget to add the new icon to this page, and update the path variable at the top if this .md file.
 
 If you've generated an icon with the correct viewBox attribute and don't feel comfortable editing the Elements SVG file, send your icon file to the PDA team.
 
 
 ## Making icons accessible
 
-The major accessibility problem with icons is that users don't tend to know what they are or what they mean unless they are associated with a textual label. Textual labels particularly aid users with cognitive disabilities. This is especially important if the icons are the primary "text" of an interactive element (e.g. links, buttons).
+The major accessibility problem with icons in general is that users don't tend to know what they are or what they mean unless they are associated with a textual label. Textual labels particularly aid users with cognitive disabilities. This is especially important if the icons are the primary "text" of an interactive element (e.g. links, buttons).
+
+### Speech recognition
+
+It's important to note that speech users (who interact with the page using voice commands) will not have access to the names of interactive elements whose text is visually hidden and only made available to screen readers. There are only a few icons where a user has a good chance of guessing the interactive element's name, such as "close" and "search," so it's important to show visible names of interactive elements as much as possible.
 
 ### Screen readers
 
-Screen readers *may* alert their users to the existence of decorative SVGs. When the icon is purely decorative, adding `aria-hidden="true"` to the SVG will hide it from assistive technologies.
+Screen readers *may* alert their users to the existence of decorative SVGs. When the icon is purely decorative, add `aria-hidden="true"` to the SVG to hide it from assistive technologies.
 
 <pre><code>
   &lt;svg version="1.1"
@@ -1453,4 +1459,16 @@ Do not use this attribute for icons that are content! Those icons with text insi
 
 The `aria-labelledby` is a fix for some older browsers and Assistive Tech, as is the role (some browsers and some AT see SVGs with other roles such as `diagram` or `group`).
 
-It's important to note that speech users (who interact with the page using voice commands) will not have access to the names of interactive elements whose text is visually hidden and only made available to screen readers. There are only a few icons where a user has a good chance of guessing the interactive element's name, such as "close" and "search," so it's important to show visible names of interactive elements as much as possible.
+#### Assistive Tech support for SVG icons
+
+Browsers differ in how they present SVGs in general. Assistive technology (AT) is fairly dependent on the browser to give the user the correct awareness of what's available on a web page.
+
+##### Internet Explorer
+
+IE, up to and including version 11, implements parts of the Tiny SVG 1.2 spec which had a `focusable` boolean attribute for SVGs, for authors (developers) to state whether an SVG should be focusable. This spec never made it through. The upcoming SVG 2 spec will just use the normal `tabindex` attribute to set SVG focusability. Edge prior to version 14 used to support this `focusable` attribute. Edge 14 has been updated to remove this.
+
+The upshot is that SVGs are in the tab order in IE by default. This means in some screen readers, in the case of an SVG inside a control such as a button, users may hear (separately) the button itself and the SVG inside as the user tabs through the controls. Other screen readers may simply have a silent tab stop. This is pretty much just IE being IE and if you are testing a page in a screen reader, be aware that this is a known issue and we are not adding code in an attempt to "fix" this.
+
+##### Firefox
+Firefox (as last checked) does not appear to offer the names of the SVGs as names of controls when an SVG is inside a button for example. Normally the name of a control like a button comes from the content inside. However some screen readers (Orca on Linux, JAWS for Windows) are leaving the SVGs silent and consider the buttons unnamed. We are still investigating if this is full a bug on Mozilla's part or Freedom Scientific's (makes of JAWS), but in the meantime if you have a JAWS users on Firefox, know that buttons and other controls with only an SVG icon will be considered unlabelled buttons. Either recommend to your JAWS users to use Internet Explorer or Chrome/chromium (both of these read out the SVGs fine), or you can turn your SVG icons into the "decorative" version (see examples above) and use `aria-label` (value is a string, don't forget to incluse localisation) on the control. Be aware that `aria-label` overrides all labels and text inside a control, and is only appropriate for things like buttons where no additional inner content is present.
+
