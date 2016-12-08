@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'mixins';
 
+
+
 %btn{
   border-radius  : $pe-btn-standard-border-radius;
   border         : none;
@@ -31,8 +33,15 @@
 }
 
 
+// For icons in buttons, remove buttony styles
 
-[class*="pe-btn__primary"] {
+.pe-icon--btn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.pe-btn__primary {
 
   @extend %btn;
 
