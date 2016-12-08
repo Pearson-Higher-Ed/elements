@@ -139,45 +139,45 @@
 
 @mixin checkbox() {
   input[type="checkbox"] {
-    opacity       : 0;
-    position      : absolute;
-    left          : -9999px;
-    + span {
+    opacity  : 0;
+    position : absolute;
+    left     : -9999px;
+    ~ span {
       content       : "";
       opacity       : 1;
-      display       : inline-block;
+      float         : left;
+      z-index : -1;
       height        : $checkbox-box-height;
       width         : $checkbox-box-width;
       border        : $checkbox-box-border;
       border-radius : $checkbox-box-borderRadius;
     }
-    + span svg {
-      opacity      : 0;
-      display      : inline-block;
-      height       : $checkbox-box-height;
-      width        : $checkbox-box-width;
-      z-index:-1;
+    ~ span svg {
+      opacity : 0;
+      height  : $checkbox-box-height;
+      width   : $checkbox-box-width;
     }
-    &:checked + span svg {
+    &:checked ~ span svg {
       opacity : 1;
 
     }
-    &:focus + span {
+    &:focus ~ span {
       border        : $checkbox-box-border-focus;
       border-radius : $checkbox-box-borderRadius;
     }
-    &:disabled + span {
+    &:disabled ~ span {
       background-color : $checkbox-box-disabled-color;
     }
-    &:disabled + span svg{
+    &:disabled ~ span svg{
       fill : $checkbox-checkmark-color-disabled;
     }
 
   }
-  label {
-    position     : absolute;
-    z-index      : 1;
-    padding-left : $checkbox-box-width + $checkbox-box-rightMargin;
+  input[type="checkbox"] ~ label {
+    z-index  : 1;
+    position : absolute;
+    float    : right;
+    padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
   }
 
 };
