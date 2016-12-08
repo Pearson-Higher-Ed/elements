@@ -56,7 +56,7 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
 
-<div class="inputWrapper">
+  <div class="inputWrapper">
     <p>Unselected</p>
     <div class="checkbox">
       <input type="checkbox" id="checkboxInput" value="1" />
