@@ -1,6 +1,3 @@
-
-
-
 //======textInput====================
 
 $textInput-height : 52px;
@@ -8,6 +5,8 @@ $textInput-height : 52px;
 $textInput-padding : 8px 0px 10px 0px;
 
 $textInput-animation : 0.2s ease all;
+
+$textInput-fontFamily : $pe-font-family-sans;
 
 $textInput-width        : 100%;
 $textInput-border-reset : none;
@@ -17,10 +16,10 @@ $textInput-border-bottom-style : solid;
 $textInput-border-bottom-color : $pe-color-medium-gray;
 
 $textInput-value-color     : $pe-color-charcoal;
-$textInput-value-font-size : 14pt;
+$textInput-value-font-size : 14px;
 
 $textInput-label-color     : $pe-color-medium-gray;
-$textInput-label-font-size : 12pt;
+$textInput-label-font-size : 12px;
 
 $textInput-placeholder-color     : $pe-color-concrete;
 $textInput-placeholder-font-size : 14pt;
@@ -33,10 +32,10 @@ $textInput-error-border-bottom-color : $pe-color-strawberry-red;
 
 $textInput-error-color           : $pe-color-charcoal;
 
-$textInput-error-font-size       : 14pt;
+$textInput-error-font-size       : 14px;
 
 $textInput-error-label-color     : $pe-color-strawberry-red;
-$textInput-error-label-font-size : 12pt;
+$textInput-error-label-font-size : 12px;
 
 //=======textInput-focus-error=======
 
@@ -45,9 +44,9 @@ $textInput-error-focus-border-bottom-style : solid;
 $textInput-error-focus-border-bottom-color : $pe-color-strawberry-red;
 
 $textInput-error-focus-color           : $pe-color-charcoal;
-$textInput-error-focus-font-size       : 14pt;
+$textInput-error-focus-font-size       : 14px;
 $textInput-error-focus-label-color     : $pe-color-strawberry-red;
-$textInput-error-focus-label-font-size : 12pt;
+$textInput-error-focus-label-font-size : 12px;
 
 //======focus=========================
 
@@ -56,10 +55,10 @@ $textInput-focus-border-bottom-style : solid;
 $textInput-focus-border-bottom-color : $pe-color-digital-pearson-blue;
 
 $textInput-focus-text-color     : $pe-color-charcoal;
-$textInput-focus-text-font-size : 14pt;
+$textInput-focus-text-font-size : 14px;
 
 $textInput-focus-label-color     : $pe-color-digital-pearson-blue;
-$textInput-focus-label-font-size : 14pt;
+$textInput-focus-label-font-size : 12px;
 
 
 //======disable=======================
@@ -69,14 +68,14 @@ $textInput-disable-border-bottom-style : solid;
 $textInput-disable-border-bottom-color : $pe-color-concrete;
 
 $textInput-disable-text-color     : $pe-color-concrete;
-$textInput-disable-text-font-size : 14pt;
+$textInput-disable-text-font-size : 14px;
 
 //=======read-only====================
 
 $textInput-readonly-border         : 0;
 
 $textInput-readonly-text-color     : $pe-color-charcoal;
-$textInput-readonly-text-font-size : 14pt;
+$textInput-readonly-text-font-size : 14px;
 
 $textInput-readonly-label-color     : $pe-color-medium-gray;
-$textInput-readonly-label-font-size : 12pt;
+$textInput-readonly-label-font-size : 12px;
