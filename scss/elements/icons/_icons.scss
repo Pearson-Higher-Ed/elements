@@ -1,6 +1,12 @@
 // Icons
 //
 
+// Stop the sprite from taking up room on the page
+
+#pe-icons-sprite {
+  display: none;
+}
+
 svg[class^='pe-icon--'] {
   display: inline-block;
   vertical-align: top;
