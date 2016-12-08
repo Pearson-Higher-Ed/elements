@@ -1,3 +1,25 @@
+<a name="1.0.6"></a>
+## [1.0.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.5...v1.0.6) (2016-12-08)
+
+
+### Bug Fixes
+
+* ∆ normalize ([72bfc68](https://github.com/Pearson-Higher-Ed/elements/commit/72bfc68))
+* add full font stack to input placeholder and normailze ([3b6f570](https://github.com/Pearson-Higher-Ed/elements/commit/3b6f570))
+* adjust icons documentation to include sprite-including script for IE, older webk ([1960739](https://github.com/Pearson-Higher-Ed/elements/commit/1960739))
+* fix elements.scss ([88f50fa](https://github.com/Pearson-Higher-Ed/elements/commit/88f50fa))
+* fix the placeholder font family ([4a5294b](https://github.com/Pearson-Higher-Ed/elements/commit/4a5294b))
+* fonts rendering sans serif to open sans ([292411f](https://github.com/Pearson-Higher-Ed/elements/commit/292411f))
+* fonts rendering sans serif to open sans ([0cc41d6](https://github.com/Pearson-Higher-Ed/elements/commit/0cc41d6))
+* merge conflict ([dcca454](https://github.com/Pearson-Higher-Ed/elements/commit/dcca454))
+* update pts to px ([d1f9ab1](https://github.com/Pearson-Higher-Ed/elements/commit/d1f9ab1))
+
+### Features
+
+* added Van's new caps-lock icon ([350f5cf](https://github.com/Pearson-Higher-Ed/elements/commit/350f5cf))
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.4...v1.0.5) (2016-11-21)
 
