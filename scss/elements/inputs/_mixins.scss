@@ -142,9 +142,8 @@
     opacity  : 0;
     position : absolute;
     ~ span {
-      content       : "";
-      opacity       : 1;
-      float         : left;
+      left          : 0;
+      position      : absolute;
       z-index       : -1;
       height        : $checkbox-box-height;
       width         : $checkbox-box-width;
@@ -173,9 +172,6 @@
 
   }
   input[type="checkbox"] ~ label {
-    z-index  : 1;
-    position : absolute;
-    float    : right;
     padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
   }
 
