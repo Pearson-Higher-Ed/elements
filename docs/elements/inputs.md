@@ -56,6 +56,8 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
 
+ **note: checkboxes must have a positioned parent, notice that position is set to relative in the examples below...
+
   <div class="inputWrapper">
     <p>Unselected</p>
     <div class="checkbox" style="position:relative;">
@@ -96,7 +98,7 @@ An input is a field used to elicit a response from a user
 
   <div class="inputWrapper">
     <p>Unselected Focus</p>
-    <div class="checkbox" style="postion:relative;">
+    <div class="checkbox" style="position:relative;">
       <input type="checkbox" id="checkboxInput3" value="1" />
       <label for="checkboxInput3">Ham</label>
       <span>
