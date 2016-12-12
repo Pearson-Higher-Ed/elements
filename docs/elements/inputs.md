@@ -54,9 +54,8 @@ An input is a field used to elicit a response from a user
 
 ## Inputs (checkbox)
 
+**note: checkboxes must have a positioned parent, notice that position is set to relative in the examples below...
 {{#demo}}
-
- **note: checkboxes must have a positioned parent, notice that position is set to relative in the examples below...
 
   <div class="inputWrapper">
     <p>Unselected</p>
