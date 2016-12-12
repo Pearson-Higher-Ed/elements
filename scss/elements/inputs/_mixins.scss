@@ -138,6 +138,11 @@
 
 
 @mixin checkbox() {
+
+  .pe-checkbox {
+    position : relative;
+  }
+
   input[type="checkbox"] {
     opacity  : 0;
     position : absolute;
