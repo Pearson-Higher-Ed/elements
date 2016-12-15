@@ -38,6 +38,12 @@ An input is a field used to elicit a response from a user
 
 ## Inputs (checkbox)
 
+Checkboxes are for times when the user needs to make one or more binary choices about a related item.
+
+- Unlike radio buttons, where a group of radio buttons represents a single choice, each check box in a group represents a separate, independent choice.
+
+- When there is more than one option but only one can be selected, use a radio button instead.
+
 Unselected
 {{#demo}}
 
