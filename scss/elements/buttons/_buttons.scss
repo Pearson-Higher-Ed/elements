@@ -17,7 +17,7 @@
 
 
 
-[class*="pe-btn"] {
+[class|="pe-btn"] {
 
   @extend %btn;
 
@@ -41,7 +41,7 @@
   border: 0;
 }
 
-.pe-btn__primary {
+[class*="primary"] {
 
   @extend %btn;
 
@@ -57,7 +57,7 @@
 
 
 
-.pe-btn__cta {
+[class*="cta"] {
 
   @extend %btn;
 
@@ -91,3 +91,4 @@
   line-height : $pe-btn-xlarge-line-height;
   padding     : $pe-btn-xlarge-padding;
 }
+

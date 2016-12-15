@@ -54,6 +54,7 @@ Buttons can be made smaller or larger.
 <button class="pe-btn--btn_small">Small</button>
 <button class="pe-btn--btn_large">Large</button>
 <button class="pe-btn--btn_xlarge">xLarge</button>
+<button class="pe-btn__primary--btn_xlarge">Primary xLarge</button>
 {{/demo}}
 
 ## Text overflow
