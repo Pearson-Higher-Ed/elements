@@ -1,3 +1,24 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.6...v1.1.0) (2016-12-16)
+
+
+### Bug Fixes
+
+* add position note to checkboxes ([3b0506e](https://github.com/Pearson-Higher-Ed/elements/commit/3b0506e))
+* buttons selectors ([86346a7](https://github.com/Pearson-Higher-Ed/elements/commit/86346a7))
+* buttons selectors ([9d4bc99](https://github.com/Pearson-Higher-Ed/elements/commit/9d4bc99))
+* ff postion bug ([1dde018](https://github.com/Pearson-Higher-Ed/elements/commit/1dde018))
+* make demo with 2 adjacent checkboxex ([fa719e8](https://github.com/Pearson-Higher-Ed/elements/commit/fa719e8))
+* move message to kill the repeat ([e8f94d6](https://github.com/Pearson-Higher-Ed/elements/commit/e8f94d6))
+* remove cpe ([51c7e7b](https://github.com/Pearson-Higher-Ed/elements/commit/51c7e7b))
+* spacing ([263b6fe](https://github.com/Pearson-Higher-Ed/elements/commit/263b6fe))
+
+### Features
+
+* add checkbox ([69505a5](https://github.com/Pearson-Higher-Ed/elements/commit/69505a5))
+
+
+
 <a name="1.0.6"></a>
 ## [1.0.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.5...v1.0.6) (2016-12-08)
 
@@ -5,17 +26,27 @@
 ### Bug Fixes
 
 * ∆ normalize ([72bfc68](https://github.com/Pearson-Higher-Ed/elements/commit/72bfc68))
+* add aria-hidded to svg ([930249a](https://github.com/Pearson-Higher-Ed/elements/commit/930249a))
 * add full font stack to input placeholder and normailze ([3b6f570](https://github.com/Pearson-Higher-Ed/elements/commit/3b6f570))
 * adjust icons documentation to include sprite-including script for IE, older webk ([1960739](https://github.com/Pearson-Higher-Ed/elements/commit/1960739))
+* extract input from label ([181a300](https://github.com/Pearson-Higher-Ed/elements/commit/181a300))
+* extract input from label ([3a39d5e](https://github.com/Pearson-Higher-Ed/elements/commit/3a39d5e))
 * fix elements.scss ([88f50fa](https://github.com/Pearson-Higher-Ed/elements/commit/88f50fa))
+* fix elements.scss ([27a1269](https://github.com/Pearson-Higher-Ed/elements/commit/27a1269))
 * fix the placeholder font family ([4a5294b](https://github.com/Pearson-Higher-Ed/elements/commit/4a5294b))
-* fonts rendering sans serif to open sans ([292411f](https://github.com/Pearson-Higher-Ed/elements/commit/292411f))
 * fonts rendering sans serif to open sans ([0cc41d6](https://github.com/Pearson-Higher-Ed/elements/commit/0cc41d6))
+* fonts rendering sans serif to open sans ([292411f](https://github.com/Pearson-Higher-Ed/elements/commit/292411f))
 * merge conflict ([dcca454](https://github.com/Pearson-Higher-Ed/elements/commit/dcca454))
+* merge conflict ([996a2b2](https://github.com/Pearson-Higher-Ed/elements/commit/996a2b2))
+* merge conflict ([130e01b](https://github.com/Pearson-Higher-Ed/elements/commit/130e01b))
+* remove icon path in inputs variables and inputs.md ([8969b6f](https://github.com/Pearson-Higher-Ed/elements/commit/8969b6f))
+* remove name attr in inputs.md ([f4a1acb](https://github.com/Pearson-Higher-Ed/elements/commit/f4a1acb))
+* remove path from md ([85db7f3](https://github.com/Pearson-Higher-Ed/elements/commit/85db7f3))
 * update pts to px ([d1f9ab1](https://github.com/Pearson-Higher-Ed/elements/commit/d1f9ab1))
 
 ### Features
 
+* add checkbox ([353b068](https://github.com/Pearson-Higher-Ed/elements/commit/353b068))
 * added Van's new caps-lock icon ([350f5cf](https://github.com/Pearson-Higher-Ed/elements/commit/350f5cf))
 
 
