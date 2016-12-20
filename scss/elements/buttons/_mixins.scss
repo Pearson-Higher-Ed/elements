@@ -8,7 +8,7 @@
 ) {
 
   color           : $color;
-  background      : $bg;
+  background-color: $bg;
   border-radius   : $pe-btn-standard-border-radius;
   text-decoration : none;
   text-overflow   : ellipsis;
@@ -18,16 +18,17 @@
   &:hover,
   &:active,
   &:focus {
-    color      : $hover-color;
-    background : $hover-bg;
+    color            : $hover-color;
+    background-color : $hover-bg;
   }
 
   &:disabled,
-  &.pe-btn--disabled {
+  &.pe-btn--disabled,
+  &.pe-btn--disabled:hover {
     cursor          : default;
     border          : 0;
     color           : $disabled-color;
-    background      : $disabled-bg;
+    background-color: $disabled-bg;
     box-shadow      : none;
     text-decoration : none;
   }
