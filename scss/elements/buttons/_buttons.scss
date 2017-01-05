@@ -41,7 +41,7 @@
   border: 0;
 }
 
-[class*="primary"] {
+[class*="pe-btn__primary"] {
 
   @extend %btn;
 
@@ -57,7 +57,7 @@
 
 
 
-[class*="cta"] {
+[class*="pe-btn__cta"] {
 
   @extend %btn;
 
