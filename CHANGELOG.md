@@ -1,3 +1,14 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.1.0...v1.1.1) (2017-01-06)
+
+
+### Bug Fixes
+
+* button background states ([503c4ef](https://github.com/Pearson-Higher-Ed/elements/commit/503c4ef))
+* make class selector more specific to buttons ([7fc3312](https://github.com/Pearson-Higher-Ed/elements/commit/7fc3312))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.6...v1.1.0) (2016-12-16)
 
@@ -5,6 +16,7 @@
 ### Bug Fixes
 
 * add position note to checkboxes ([3b0506e](https://github.com/Pearson-Higher-Ed/elements/commit/3b0506e))
+* button background states ([f09cf12](https://github.com/Pearson-Higher-Ed/elements/commit/f09cf12))
 * buttons selectors ([86346a7](https://github.com/Pearson-Higher-Ed/elements/commit/86346a7))
 * buttons selectors ([9d4bc99](https://github.com/Pearson-Higher-Ed/elements/commit/9d4bc99))
 * ff postion bug ([1dde018](https://github.com/Pearson-Higher-Ed/elements/commit/1dde018))
