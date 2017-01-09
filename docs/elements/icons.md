@@ -12,6 +12,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--archive-18">
       <use xlink:href = "#archive-18"></use>
     </svg>
@@ -22,6 +23,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--archive-24">
       <use xlink:href = "#archive-24"></use>
     </svg>
@@ -32,6 +34,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--audio-high-18">
       <use xlink:href = "#audio-high-18"></use>
     </svg>
@@ -42,6 +45,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--audio-high-24">
       <use xlink:href = "#audio-high-24"></use>
     </svg>
@@ -52,6 +56,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--audio-low-18">
       <use xlink:href = "#audio-low-18"></use>
     </svg>
@@ -62,6 +67,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--audio-low-24">
       <use xlink:href = "#audio-low-24"></use>
     </svg>
@@ -72,6 +78,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--audio-off-18">
       <use xlink:href = "#audio-off-18"></use>
     </svg>
@@ -82,6 +89,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--audio-off-24">
       <use xlink:href = "#audio-off-24"></use>
     </svg>
@@ -92,6 +100,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--ban-18">
       <use xlink:href = "#ban-18"></use>
     </svg>
@@ -102,6 +111,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--ban-24">
       <use xlink:href = "#ban-24"></use>
     </svg>
@@ -112,6 +122,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--book-18">
       <use xlink:href = "#book-18"></use>
     </svg>
@@ -122,6 +133,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--book-24">
       <use xlink:href = "#book-24"></use>
     </svg>
@@ -132,6 +144,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--bookmark-off-18">
       <use xlink:href = "#bookmark-off-18"></use>
     </svg>
@@ -142,6 +155,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--bookmark-off-24">
       <use xlink:href = "#bookmark-off-24"></use>
     </svg>
@@ -152,6 +166,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--bookmark-on-18">
       <use xlink:href = "#bookmark-on-18"></use>
     </svg>
@@ -162,6 +177,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--bookmark-on-24">
       <use xlink:href = "#bookmark-on-24"></use>
     </svg>
@@ -172,6 +188,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--calendar-18">
       <use xlink:href = "#calendar-18"></use>
     </svg>
@@ -182,6 +199,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--calendar-24">
       <use xlink:href = "#calendar-24"></use>
     </svg>
@@ -192,6 +210,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--camera-18">
       <use xlink:href = "#camera-18"></use>
     </svg>
@@ -202,6 +221,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--camera-24">
       <use xlink:href = "#camera-24"></use>
     </svg>
@@ -212,6 +232,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--camera-video-18">
       <use xlink:href = "#camera-video-18"></use>
     </svg>
@@ -222,6 +243,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--camera-video-24">
       <use xlink:href = "#camera-video-24"></use>
     </svg>
@@ -232,6 +254,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--capslock-18">
       <use xlink:href = "#capslock-18"></use>
     </svg>
@@ -242,6 +265,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--capslock-24">
       <use xlink:href = "#capslock-24"></use>
     </svg>
@@ -252,6 +276,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--check-lg-18">
       <use xlink:href = "#check-lg-18"></use>
     </svg>
@@ -262,6 +287,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--check-lg-24">
       <use xlink:href = "#check-lg-24"></use>
     </svg>
@@ -272,6 +298,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--check-sm-18">
       <use xlink:href = "#check-sm-18"></use>
     </svg>
@@ -282,6 +309,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--check-sm-24">
       <use xlink:href = "#check-sm-24"></use>
     </svg>
@@ -292,6 +320,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--checkbox-off-18">
       <use xlink:href = "#checkbox-off-18"></use>
     </svg>
@@ -302,6 +331,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--checkbox-off-24">
       <use xlink:href = "#checkbox-off-24"></use>
     </svg>
@@ -312,6 +342,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--checkbox-on-18">
       <use xlink:href = "#checkbox-on-18"></use>
     </svg>
@@ -322,6 +353,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--checkbox-on-24">
       <use xlink:href = "#checkbox-on-24"></use>
     </svg>
@@ -332,6 +364,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--checkbox-tristate-18">
       <use xlink:href = "#checkbox-tristate-18"></use>
     </svg>
@@ -342,6 +375,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--checkbox-tristate-24">
       <use xlink:href = "#checkbox-tristate-24"></use>
     </svg>
@@ -352,6 +386,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--chevron-back-18">
       <use xlink:href = "#chevron-back-18"></use>
     </svg>
@@ -362,6 +397,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--chevron-back-24">
       <use xlink:href = "#chevron-back-24"></use>
     </svg>
@@ -372,6 +408,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--chevron-next-18">
       <use xlink:href = "#chevron-next-18"></use>
     </svg>
@@ -382,6 +419,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--chevron-next-24">
       <use xlink:href = "#chevron-next-24"></use>
     </svg>
@@ -392,6 +430,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--clock-18">
       <use xlink:href = "#clock-18"></use>
     </svg>
@@ -402,6 +441,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--clock-24">
       <use xlink:href = "#clock-24"></use>
     </svg>
@@ -412,6 +452,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--delete-18">
       <use xlink:href = "#delete-18"></use>
     </svg>
@@ -422,6 +463,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--delete-24">
       <use xlink:href = "#delete-24"></use>
     </svg>
@@ -432,6 +474,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--desktop-18">
       <use xlink:href = "#desktop-18"></use>
     </svg>
@@ -442,6 +485,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--desktop-24">
       <use xlink:href = "#desktop-24"></use>
     </svg>
@@ -452,6 +496,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--dropdown-close-18">
       <use xlink:href = "#dropdown-close-18"></use>
     </svg>
@@ -462,6 +507,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--dropdown-close-24">
       <use xlink:href = "#dropdown-close-24"></use>
     </svg>
@@ -472,6 +518,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--dropdown-open-18">
       <use xlink:href = "#dropdown-open-18"></use>
     </svg>
@@ -482,6 +529,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--dropdown-open-24">
       <use xlink:href = "#dropdown-open-24"></use>
     </svg>
@@ -492,6 +540,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--email-18">
       <use xlink:href = "#email-18"></use>
     </svg>
@@ -502,6 +551,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--email-24">
       <use xlink:href = "#email-24"></use>
     </svg>
@@ -512,6 +562,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--favorite-off-18">
       <use xlink:href = "#favorite-off-18"></use>
     </svg>
@@ -522,6 +573,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--favorite-off-24">
       <use xlink:href = "#favorite-off-24"></use>
     </svg>
@@ -532,6 +584,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--favorite-on-18">
       <use xlink:href = "#favorite-on-18"></use>
     </svg>
@@ -542,6 +595,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--favorite-on-24">
       <use xlink:href = "#favorite-on-24"></use>
     </svg>
@@ -552,6 +606,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--file-18">
       <use xlink:href = "#file-18"></use>
     </svg>
@@ -562,6 +617,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--file-24">
       <use xlink:href = "#file-24"></use>
     </svg>
@@ -572,6 +628,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--font-lg-18">
       <use xlink:href = "#font-lg-18"></use>
     </svg>
@@ -582,6 +639,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--font-lg-24">
       <use xlink:href = "#font-lg-24"></use>
     </svg>
@@ -592,6 +650,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--font-setting-18">
       <use xlink:href = "#font-setting-18"></use>
     </svg>
@@ -602,6 +661,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--font-setting-24">
       <use xlink:href = "#font-setting-24"></use>
     </svg>
@@ -612,6 +672,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--font-sm-18">
       <use xlink:href = "#font-sm-18"></use>
     </svg>
@@ -622,6 +683,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--font-sm-24">
       <use xlink:href = "#font-sm-24"></use>
     </svg>
@@ -632,6 +694,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--group-18">
       <use xlink:href = "#group-18"></use>
     </svg>
@@ -642,6 +705,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--group-24">
       <use xlink:href = "#group-24"></use>
     </svg>
@@ -652,6 +716,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--help-fill-18">
       <use xlink:href = "#help-fill-18"></use>
     </svg>
@@ -662,6 +727,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--help-fill-24">
       <use xlink:href = "#help-fill-24"></use>
     </svg>
@@ -672,6 +738,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--help-outline-18">
       <use xlink:href = "#help-outline-18"></use>
     </svg>
@@ -682,6 +749,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--help-outline-24">
       <use xlink:href = "#help-outline-24"></use>
     </svg>
@@ -692,6 +760,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--image-18">
       <use xlink:href = "#image-18"></use>
     </svg>
@@ -702,6 +771,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--image-24">
       <use xlink:href = "#image-24"></use>
     </svg>
@@ -712,6 +782,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--info-fill-18">
       <use xlink:href = "#info-fill-18"></use>
     </svg>
@@ -722,6 +793,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--info-fill-24">
       <use xlink:href = "#info-fill-24"></use>
     </svg>
@@ -732,6 +804,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--info-outline-18">
       <use xlink:href = "#info-outline-18"></use>
     </svg>
@@ -742,6 +815,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--info-outline-24">
       <use xlink:href = "#info-outline-24"></use>
     </svg>
@@ -752,6 +826,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--item-add-18">
       <use xlink:href = "#item-add-18"></use>
     </svg>
@@ -762,6 +837,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--item-add-24">
       <use xlink:href = "#item-add-24"></use>
     </svg>
@@ -772,6 +848,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--item-remove-18">
       <use xlink:href = "#item-remove-18"></use>
     </svg>
@@ -782,6 +859,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--item-remove-24">
       <use xlink:href = "#item-remove-24"></use>
     </svg>
@@ -792,6 +870,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--lock-close-18">
       <use xlink:href = "#lock-close-18"></use>
     </svg>
@@ -802,6 +881,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--lock-close-24">
       <use xlink:href = "#lock-close-24"></use>
     </svg>
@@ -812,6 +892,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--lock-open-18">
       <use xlink:href = "#lock-open-18"></use>
     </svg>
@@ -822,6 +903,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--lock-open-24">
       <use xlink:href = "#lock-open-24"></use>
     </svg>
@@ -832,6 +914,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--note-18">
       <use xlink:href = "#note-18"></use>
     </svg>
@@ -842,6 +925,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--note-24">
       <use xlink:href = "#note-24"></use>
     </svg>
@@ -852,6 +936,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pause-18">
       <use xlink:href = "#pause-18"></use>
     </svg>
@@ -862,6 +947,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pause-24">
       <use xlink:href = "#pause-24"></use>
     </svg>
@@ -872,6 +958,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--person-18">
       <use xlink:href = "#person-18"></use>
     </svg>
@@ -882,6 +969,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--person-24">
       <use xlink:href = "#person-24"></use>
     </svg>
@@ -892,6 +980,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pivot-close-18">
       <use xlink:href = "#pivot-close-18"></use>
     </svg>
@@ -902,6 +991,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pivot-close-24">
       <use xlink:href = "#pivot-close-24"></use>
     </svg>
@@ -912,6 +1002,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pivot-open-18">
       <use xlink:href = "#pivot-open-18"></use>
     </svg>
@@ -922,6 +1013,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pivot-open-24">
       <use xlink:href = "#pivot-open-24"></use>
     </svg>
@@ -932,6 +1024,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--play-18">
       <use xlink:href = "#play-18"></use>
     </svg>
@@ -942,6 +1035,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--play-24">
       <use xlink:href = "#play-24"></use>
     </svg>
@@ -952,6 +1046,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--point-back-18">
       <use xlink:href = "#point-back-18"></use>
     </svg>
@@ -962,6 +1057,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--point-back-24">
       <use xlink:href = "#point-back-24"></use>
     </svg>
@@ -972,6 +1068,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--point-next-18">
       <use xlink:href = "#point-next-18"></use>
     </svg>
@@ -982,6 +1079,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--point-next-24">
       <use xlink:href = "#point-next-24"></use>
     </svg>
@@ -992,6 +1090,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--radio-button-on-18">
       <use xlink:href = "#radio-button-on-18"></use>
     </svg>
@@ -1002,6 +1101,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--radio-button-on-24">
       <use xlink:href = "#radio-button-on-24"></use>
     </svg>
@@ -1012,6 +1112,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--radio-button-off-18">
       <use xlink:href = "#radio-button-off-18"></use>
     </svg>
@@ -1022,6 +1123,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--radio-button-off-24">
       <use xlink:href = "#radio-button-off-24"></use>
     </svg>
@@ -1032,6 +1134,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--remove-lg-18">
       <use xlink:href = "#remove-lg-18"></use>
     </svg>
@@ -1042,6 +1145,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--remove-lg-24">
       <use xlink:href = "#remove-lg-24"></use>
     </svg>
@@ -1052,6 +1156,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--remove-sm-18">
       <use xlink:href = "#remove-sm-18"></use>
     </svg>
@@ -1062,6 +1167,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--remove-sm-24">
       <use xlink:href = "#remove-sm-24"></use>
     </svg>
@@ -1072,6 +1178,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--screen-full-18">
       <use xlink:href = "#screen-full-18"></use>
     </svg>
@@ -1082,6 +1189,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--screen-full-24">
       <use xlink:href = "#screen-full-24"></use>
     </svg>
@@ -1092,6 +1200,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--screen-minimize-18">
       <use xlink:href = "#screen-minimize-18"></use>
     </svg>
@@ -1102,6 +1211,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--screen-minimize-24">
       <use xlink:href = "#screen-minimize-24"></use>
     </svg>
@@ -1112,6 +1222,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--search-lg-18">
       <use xlink:href = "#search-lg-18"></use>
     </svg>
@@ -1122,6 +1233,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--search-lg-24">
       <use xlink:href = "#search-lg-24"></use>
     </svg>
@@ -1132,6 +1244,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--search-sm-18">
       <use xlink:href = "#search-sm-18"></use>
     </svg>
@@ -1142,6 +1255,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--search-sm-24">
       <use xlink:href = "#search-sm-24"></use>
     </svg>
@@ -1152,6 +1266,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--settings-18">
       <use xlink:href = "#settings-18"></use>
     </svg>
@@ -1162,6 +1277,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--settings-24">
       <use xlink:href = "#settings-24"></use>
     </svg>
@@ -1172,6 +1288,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--show-off-18">
       <use xlink:href = "#show-off-18"></use>
     </svg>
@@ -1182,6 +1299,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--show-off-24">
       <use xlink:href = "#show-off-24"></use>
     </svg>
@@ -1192,6 +1310,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--show-on-18">
       <use xlink:href = "#show-on-18"></use>
     </svg>
@@ -1202,6 +1321,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--show-on-24">
       <use xlink:href = "#show-on-24"></use>
     </svg>
@@ -1212,6 +1332,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--tip-18">
       <use xlink:href = "#tip-18"></use>
     </svg>
@@ -1222,6 +1343,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--tip-24">
       <use xlink:href = "#tip-24"></use>
     </svg>
@@ -1232,6 +1354,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--view-list-18">
       <use xlink:href = "#view-list-18"></use>
     </svg>
@@ -1242,6 +1365,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--view-list-24">
       <use xlink:href = "#view-list-24"></use>
     </svg>
@@ -1252,6 +1376,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--view-tile-18">
       <use xlink:href = "#view-tile-18"></use>
     </svg>
@@ -1262,6 +1387,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--view-tile-24">
       <use xlink:href = "#view-tile-24"></use>
     </svg>
@@ -1272,6 +1398,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--warning-18">
       <use xlink:href = "#warning-18"></use>
     </svg>
@@ -1282,6 +1409,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--warning-24">
       <use xlink:href = "#warning-24"></use>
     </svg>
@@ -1292,6 +1420,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--zoom-in-18">
       <use xlink:href = "#zoom-in-18"></use>
     </svg>
@@ -1302,6 +1431,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--zoom-in-24">
       <use xlink:href = "#zoom-in-24"></use>
     </svg>
@@ -1312,6 +1442,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--zoom-out-18">
       <use xlink:href = "#zoom-out-18"></use>
     </svg>
@@ -1322,6 +1453,7 @@ The available icons includes the following:
          xmlns = "http://www.w3.org/2000/svg"
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--zoom-out-24">
       <use xlink:href = "#zoom-out-24"></use>
     </svg>
@@ -1370,6 +1502,7 @@ Decorative icons are sitting next to visible text as a decoration to that text. 
        xmlns="http://www.w3.org/2000/svg"
        xmlns:xlink="http://www.w3.org/1999/xlink"
        aria-hidden="true"
+       focusable="no"
        class="pe-icon--warning-18">
     <use xlink:href="#warning-18"></use>
   </svg>
@@ -1389,6 +1522,7 @@ In order for the internal text to work in all assistive tech and browsers curren
        xmlns:xlink="http://www.w3.org/1999/xlink"
        role="img"
        aria-labelledby="r2"
+       focusable="no"
        class="pe-icon--remove-sm-18">
     <title id="r2">Close dialog</title>
     <use xlink:href="#remove-sm-18"></use>
@@ -1438,6 +1572,7 @@ Screen readers *may* alert their users to the existence of decorative SVGs. When
        xmlns="http://www.w3.org/2000/svg"
        xmlns:xlink="http://www.w3.org/1999/xlink"
        <b>aria-hidden="true"</b>
+       focusable="no"
        class="pe-icon--warning-18"&gt;
     &lt;use xlink:href="#warning-18"&gt;&lt;/use&gt;
   &lt;/svg&gt;
@@ -1451,6 +1586,7 @@ Do not use this attribute for icons that are content! Those icons with text insi
        xmlns:xlink="http://www.w3.org/1999/xlink"
        <b>role="img"
        aria-labelledby="r3"</b>
+       focusable="no"
        class="pe-icon--warning-18"&gt;
     <b>&lt;title id="r3"&gt;Text here!&lt;/title&gt;</b>
     &lt;use xlink:href="#warning-18"&gt;&lt;/use&gt;
@@ -1465,9 +1601,9 @@ Browsers differ in how they present SVGs in general. Assistive technology (AT) i
 
 ##### Internet Explorer
 
-IE, up to and including version 11, implements parts of the Tiny SVG 1.2 spec which had a `focusable` boolean attribute for SVGs, for authors (developers) to state whether an SVG should be focusable. This spec never made it through. The upcoming SVG 2 spec will just use the normal `tabindex` attribute to set SVG focusability. Edge prior to version 14 used to support this `focusable` attribute. Edge 14 has been updated to remove this.
+IE, up to and including version 11, implements parts of the Tiny SVG 1.2 spec which had a `focusable` boolean attribute for SVGs, for authors (developers) to state whether an SVG should be focusable. This spec never made it through. The upcoming SVG 2 spec will just use the normal `tabindex` attribute to set SVG focusability. Edge prior to version 14 used to support this `focusable` attribute, while later versions have removed this.
 
-The upshot is that SVGs are in the tab order in IE by default. This means in some screen readers, in the case of an SVG inside a control such as a button, users may hear (separately) the button itself and the SVG inside as the user tabs through the controls. Other screen readers may simply have a silent tab stop. This is pretty much just IE being IE and if you are testing a page in a screen reader, be aware that this is a known issue and we are not adding code in an attempt to "fix" this.
+The upshot is that SVGs are in the tab order in IE by default, and causes keyboard users (including screen reader users) to have 2 tab stops when an icon is inside a control. Adding `focusable="no"` to your SVGs takes care of this. 
 
 ##### Firefox
 Firefox (as last checked) does not appear to offer the names of the SVGs as names of controls when an SVG is inside a button for example. Normally the name of a control like a button comes from the content inside. However some screen readers (Orca on Linux, JAWS for Windows) are leaving the SVGs silent and consider the buttons unnamed. We are still investigating if this is fully a bug on Mozilla's part or Freedom Scientific's (makes of JAWS), but in the meantime if you have a JAWS users on Firefox, know that buttons and other controls with only an SVG icon will be considered unlabelled buttons. Either recommend to your JAWS users to use Internet Explorer or Chrome/chromium (both of these read out the SVGs fine), or you can turn your SVG icons into the "decorative" version (see examples above) and use `aria-label` (value is a string, don't forget to incluse localisation) on the control. Be aware that `aria-label` overrides all labels and text inside a control, and is only appropriate for things like buttons where no additional inner content is present.
