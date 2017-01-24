@@ -1,6 +1,9 @@
 //======textInput====================
 
-$textInput-height : 52px;
+$textInput-height  : 52px;
+$textInput-width   : 100%;
+
+$textInput-wrapper-min-height : 52px;
 
 $textInput-padding : 8px 0px 10px 0px;
 
@@ -100,3 +103,9 @@ $checkbox-box-disabled-color : $pe-color-moonlight;
 $pe-btn-link-bg: none !default;
 $pe-btn-link-border: 0 !default;
 $pe-btn-link-text: $pe-color-digital-pearson-blue !default;
+
+$pe-passwordInput-margin-top      : -32px;
+$pe-passwordInput-width           : 40px;
+$pe-passwordInput-float           : right;
+$pe-passwordInput-outline         : none;
+$pe-passwordInput-text-decoration : none;

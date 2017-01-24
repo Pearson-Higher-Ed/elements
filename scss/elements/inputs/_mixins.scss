@@ -31,12 +31,12 @@
   .pe-input_underline {
     background-color: $textInput-focus-border-bottom-color;
     display: block;
-    height: 4px;
+    height: $textInput-error-focus-border-bottom;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
-    width: 100%;
+    width: $textInput-width;
   }
 
 
@@ -59,12 +59,12 @@
   .pe-inputError_underline {
     background-color: $textInput-error-border-bottom-color;
     display: block;
-    height: 4px;
+    height: $textInput-error-focus-border-bottom;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
-    width: 100%;
+    width: $textInput-width;
   }
 
   .pe-textInput--input_error {
@@ -75,7 +75,7 @@
   }
 
   .pe-input-wrapper{
-    min-height : 52px;
+    min-height : $textInput-wrapper-min-height;
   }
 
 };
@@ -187,13 +187,12 @@
 
   .pe-textInput__showButton{
      position         : relative;
-     margin-top       : -32px;
-     margin-right     : 0px;
-     width            :  40px;
+     margin-top       : $pe-passwordInput-margin-top;
+     width            : $pe-passwordInput-width ;
      background-color : $pe-btn-link-bg;
-     text-decoration  : none;
-     outline          : none;
-     float            : right;
+     text-decoration  : $pe-passwordInput-text-decoration;
+     outline          : $pe-passwordInput-outline;
+     float            : $pe-passwordInput-float;
      border           : $pe-btn-link-border;
      color            : $pe-btn-link-text;
      background       : $pe-btn-link-bg;
