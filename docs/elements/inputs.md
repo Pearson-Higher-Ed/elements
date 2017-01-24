@@ -38,12 +38,13 @@ An input is a field used to elicit a response from a user
 
 ## Inputs (password)
 {{#demo}}
-  <label class="pe-textLabelInput__label" for="a">Password</label>
-  <input type="password" class="pe-textInput" id="a" placeholder="Password" />
+  <label class="pe-textLabelInput__label" for="e">Password</label>
+  <input type="password" class="pe-textInput" id="e" placeholder="Password" />
   <span class="pe-input_underline"></span>
-  <a id="showbutton" onclick="" class="pe-textInput__showButton">show</a>
+  <button id="showbutton" onclick="" class="pe-textInput__showButton">show</button>
 {{/demo}}
-** this needs javascript to action show/hide function -- https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput
+** this needs javascript to action show/hide function --
+ <a href="https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput">https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput</a>
 
 ## Inputs (checkbox)
 

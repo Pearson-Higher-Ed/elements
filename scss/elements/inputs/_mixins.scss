@@ -190,10 +190,14 @@
      margin-top       : -32px;
      margin-right     : 0px;
      width            :  40px;
-     background-color : white;
+     background-color : $pe-btn-link-bg;
      text-decoration  : none;
      outline          : none;
      float            : right;
+     border           : $pe-btn-link-border;
+     color            : $pe-btn-link-text;
+     background       : $pe-btn-link-bg;
+
   }
 
 };
