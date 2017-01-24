@@ -3,6 +3,7 @@ const hljs = require('highlight.js');
 
 hljs.configure({ useBR: true });
 
+
 module.exports = function (options) {
   const code = options.fn(this);
   const codeExample = hljs.fixMarkup(hljs.highlight('html', code).value);

@@ -110,7 +110,7 @@ List of Elements with their current respective design version:
 | Presentation Strategies | v1.0.0 |
 | Templates | v2.0.0-beta.1 |
 | Responsive Utilities | v1.0.0 |
-              
+
 
 ** Developers should update table as they implement new versions...*
 

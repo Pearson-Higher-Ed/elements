@@ -3,7 +3,7 @@
   &::-moz-placeholder { @content }
   &:-moz-placeholder { @content }
   &:-ms-input-placeholder { @content }
-}
+};
 
 @mixin textInput() {
   %pe-textInput {
@@ -15,7 +15,7 @@
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
-      color      : $textInput-placeholder-color;
+      color     : $textInput-placeholder-color;
     }
 
     &:focus {
@@ -31,12 +31,12 @@
   .pe-input_underline {
     background-color: $textInput-focus-border-bottom-color;
     display: block;
-    height: 4px;
+    height: $textInput-error-focus-border-bottom;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
-    width: 100%;
+    width: $textInput-width;
   }
 
 
@@ -59,12 +59,12 @@
   .pe-inputError_underline {
     background-color: $textInput-error-border-bottom-color;
     display: block;
-    height: 4px;
+    height: $textInput-error-focus-border-bottom;
     -webkit-transform: scale(0, 1);
     transform: scale(0, 1);
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
-    width: 100%;
+    width: $textInput-width;
   }
 
   .pe-textInput--input_error {
@@ -75,7 +75,7 @@
   }
 
   .pe-input-wrapper{
-    min-height : 52px;
+    min-height : $textInput-wrapper-min-height;
   }
 
 };
@@ -178,6 +178,25 @@
   }
   input[type="checkbox"] ~ label {
     padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
+  }
+
+};
+
+
+@mixin passwordInput(){
+
+  .pe-textInput__showButton{
+     position         : relative;
+     margin-top       : $pe-passwordInput-margin-top;
+     width            : $pe-passwordInput-width ;
+     background-color : $pe-btn-link-bg;
+     text-decoration  : $pe-passwordInput-text-decoration;
+     outline          : $pe-passwordInput-outline;
+     float            : $pe-passwordInput-float;
+     border           : $pe-btn-link-border;
+     color            : $pe-btn-link-text;
+     background       : $pe-btn-link-bg;
+
   }
 
 };

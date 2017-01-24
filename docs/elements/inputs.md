@@ -36,6 +36,16 @@ An input is a field used to elicit a response from a user
  <input type="text" class="pe-textInput--input_readonly" id="d" value="Donald" readonly/>
 {{/demo}}
 
+## Inputs (password)
+{{#demo}}
+  <label class="pe-textLabelInput__label" for="e">Password</label>
+  <input type="password" class="pe-textInput" id="e" placeholder="Password" />
+  <span class="pe-input_underline"></span>
+  <button id="showbutton" onclick="" class="pe-textInput__showButton">show</button>
+{{/demo}}
+** this needs javascript to action show/hide function --
+ <a href="https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput">https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput</a>
+
 ## Inputs (checkbox)
 
 Checkboxes are for times when the user needs to make one or more binary choices about a related item.
@@ -147,5 +157,3 @@ Disabled Unselected
       </span>
     </div>
 {{/demo}}
-
-
