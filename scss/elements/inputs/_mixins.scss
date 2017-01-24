@@ -3,7 +3,7 @@
   &::-moz-placeholder { @content }
   &:-moz-placeholder { @content }
   &:-ms-input-placeholder { @content }
-}
+};
 
 @mixin textInput() {
   %pe-textInput {
@@ -15,7 +15,7 @@
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
-      color      : $textInput-placeholder-color;
+      color     : $textInput-placeholder-color;
     }
 
     &:focus {
@@ -178,6 +178,22 @@
   }
   input[type="checkbox"] ~ label {
     padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
+  }
+
+};
+
+
+@mixin passwordInput(){
+
+  .pe-textInput__showButton{
+     position         : relative;
+     margin-top       : -32px;
+     margin-right     : 0px;
+     width            :  40px;
+     background-color : white;
+     text-decoration  : none;
+     outline          : none;
+     float            : right;
   }
 
 };
