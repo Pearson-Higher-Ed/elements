@@ -5,7 +5,7 @@ section: elements
 ---
 
 An input is a field used to elicit a response from a user
-
+# Fancy Inputs
 ## Inputs (single line)
 
 {{#demo}}
@@ -37,6 +37,7 @@ An input is a field used to elicit a response from a user
 {{/demo}}
 
 ## Inputs (password)
+
 {{#demo}}
   <label class="pe-textLabelInput__label" for="e">Password</label>
   <input type="password" class="pe-textInput" id="e" placeholder="Password" />
@@ -45,6 +46,29 @@ An input is a field used to elicit a response from a user
 {{/demo}}
 ** this needs javascript to action show/hide function --
  <a href="https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput">https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput</a>
+
+# Basic Inputs
+
+## Inputs - Basic (single line)
+
+{{#demo}}
+  <label class="pe-textLabelInput__label" for="z">Label</label>
+  <input type="text" class="pe-textInput--basic" id="z" placeholder="Placeholder" />
+{{/demo}}
+
+## Inputs - Basic (single line - error)
+
+{{#demo}}
+  <label class="pe-textLabelInput__label--label_error" for="y">Email address</label>
+  <input type="text" class="pe-textInput--basic_error" id="y" placeholder="Error" />
+{{/demo}}
+
+## Inputs - Basic (single line - disabled)
+
+{{#demo}}
+  <label class="pe-textLabelInput__label--label-disabled" for="x">Label</label>
+  <input type="text" class="pe-textInput--basic" id="x" placeholder="Disabled" disabled />
+{{/demo}}
 
 ## Inputs (checkbox)
 
