@@ -1,3 +1,18 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.1.1...v1.2.0) (2017-01-30)
+
+
+### Bug Fixes
+
+* <a> ---> <button> , for and id to unique letter to avoid collision ([e35dace](https://github.com/Pearson-Higher-Ed/elements/commit/e35dace))
+* remove hardcoded variables ([3db300d](https://github.com/Pearson-Higher-Ed/elements/commit/3db300d))
+
+### Features
+
+* add passwordInput ([fbcd0d0](https://github.com/Pearson-Higher-Ed/elements/commit/fbcd0d0))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.1.0...v1.1.1) (2017-01-06)
 
