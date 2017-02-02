@@ -183,9 +183,9 @@
 };
 
 
-@mixin passwordInput(){
+@mixin passwordInput() {
 
-  .pe-textInput__showButton{
+  .pe-textInput__showButton {
      position         : relative;
      margin-top       : $pe-passwordInput-margin-top;
      width            : $pe-passwordInput-width ;

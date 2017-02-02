@@ -1,5 +1,6 @@
 @import './variables';
 @import './mixins';
+@import './basic-input-mixins';
 @import '../typography/type';
 @import '../color/color';
 
@@ -19,3 +20,7 @@
 @include checkbox();
 
 @include passwordInput();
+
+@include textInputBasic();
+@include textInputBasicError();
+@include textInputBasicDisabled();
