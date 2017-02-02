@@ -7,3 +7,5 @@ _gh_pages
 test/fixtures/color/*.json
 test.json
 elements.iml
+yarn.lock
+*.swp

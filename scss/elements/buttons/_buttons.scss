@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'mixins';
 
+
+
 %btn{
   border-radius  : $pe-btn-standard-border-radius;
   border         : none;
@@ -15,7 +17,7 @@
 
 
 
-[class*="pe-btn"] {
+[class|="pe-btn"] {
 
   @extend %btn;
 
@@ -31,6 +33,13 @@
 }
 
 
+// For icons in buttons, remove buttony styles
+
+.pe-icon--btn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
 
 [class*="pe-btn__primary"] {
 
@@ -48,7 +57,7 @@
 
 
 
-.pe-btn__cta {
+[class*="pe-btn__cta"] {
 
   @extend %btn;
 
@@ -82,3 +91,4 @@
   line-height : $pe-btn-xlarge-line-height;
   padding     : $pe-btn-xlarge-padding;
 }
+

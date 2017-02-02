@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 @import '../typography/type';
+@import '../color/color';
 
 @include textInput();
 @include textInputLabel();
@@ -14,3 +15,7 @@
 @include textInputLabelDisabled();
 
 @include clearIEPasswordIcon();
+
+@include checkbox();
+
+@include passwordInput();
