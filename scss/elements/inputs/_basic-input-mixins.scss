@@ -61,4 +61,28 @@
     margin-top: $textInput-basic-marginTop;
   }
 
-}
+};
+
+@mixin textInputBasicSelect() {
+
+  .pe-selectInput--basic {
+    @extend .abstract;
+    border: $textInput-basic-border;
+    width: 230px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    @include pe-placeholder {
+      font-size : $textInput-placeholder-font-size;
+      color     : $textInput-placeholder-color;
+    }
+
+    &:focus {
+      outline: none;
+      border: $textInput-basic-focus-border;
+      box-shadow: $textInput-basic-focus-boxShadow;
+    }
+  }
+
+};
