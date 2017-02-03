@@ -1,3 +1,15 @@
+<a name="1.3.6"></a>
+## [1.3.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.5...v1.3.6) (2017-02-03)
+
+
+
+
+<a name="1.3.5"></a>
+## [1.3.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.4...v1.3.5) (2017-02-03)
+
+
+
+
 <a name="1.3.4"></a>
 ## [1.3.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.3...v1.3.4) (2017-02-03)
 
