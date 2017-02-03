@@ -100,12 +100,35 @@ $checkbox-box-disabled-color : $pe-color-moonlight;
 
 //-------------passwordInput-----------
 
-$pe-btn-link-bg: none !default;
-$pe-btn-link-border: 0 !default;
-$pe-btn-link-text: $pe-color-digital-pearson-blue !default;
+$pe-btn-link-bg     : none !default;
+$pe-btn-link-border : 0 !default;
+$pe-btn-link-text   : $pe-color-digital-pearson-blue !default;
 
 $pe-passwordInput-margin-top      : -32px;
 $pe-passwordInput-width           : 40px;
 $pe-passwordInput-float           : right;
 $pe-passwordInput-outline         : none;
 $pe-passwordInput-text-decoration : none;
+
+//============textInput-basic==========
+
+$textInput-basic-padding         : 0px 14px 0px 14px;
+$textInput-basic-height          : 36px;
+$textInput-basic-borderRadius    : 3px;
+$textInput-basic-display         : block;
+$textInput-basic-marginTop       : 6px;
+
+$textInput-basic-border          : 1px solid $pe-color-concrete;
+
+//==========textInput-basic-focus======
+
+$textInput-basic-focus-border    : 1px solid $pe-color-digital-pearson-blue;
+$textInput-basic-focus-boxShadow : 0px 0px 5px 0px $pe-color-digital-pearson-blue;
+
+//===========textInput-basicError======
+
+$textInput-basic-error-border : 1px solid $pe-color-strawberry-red;
+
+//=======textInput-basicError-focus====
+
+$textInput-basic-error-focus-boxShadow : 0px 0px 4px 0px $pe-color-strawberry-red;
