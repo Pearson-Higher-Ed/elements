@@ -7,11 +7,12 @@
 
 @mixin textInput() {
   %pe-textInput {
-    padding   : $textInput-padding;
-    font-size : $textInput-value-font-size;
-    color     : $textInput-value-color;
-    width     : $textInput-width;
-    border    : $textInput-border-reset;
+    padding     : $textInput-padding;
+    font-size   : $textInput-value-font-size;
+    color       : $textInput-value-color;
+    width       : $textInput-width;
+    border      : $textInput-border-reset;
+    line-height : $textInput-line-height;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
