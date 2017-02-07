@@ -937,6 +937,28 @@ The available icons includes the following:
          xmlns:xlink = "http://www.w3.org/1999/xlink"
          aria-hidden = "true"
          focusable="no"
+         class = "pe-icon--notification-18">
+      <use xlink:href = "#notification-18"></use>
+    </svg>
+    notfication-18
+  </li>
+  <li>
+    <svg version = "1.1"
+         xmlns = "http://www.w3.org/2000/svg"
+         xmlns:xlink = "http://www.w3.org/1999/xlink"
+         aria-hidden = "true"
+         focusable="no"
+         class = "pe-icon--notification-24">
+      <use xlink:href = "#notification-24"></use>
+    </svg>
+    notification-24
+  </li>
+  <li>
+    <svg version = "1.1"
+         xmlns = "http://www.w3.org/2000/svg"
+         xmlns:xlink = "http://www.w3.org/1999/xlink"
+         aria-hidden = "true"
+         focusable="no"
          class = "pe-icon--pause-18">
       <use xlink:href = "#pause-18"></use>
     </svg>

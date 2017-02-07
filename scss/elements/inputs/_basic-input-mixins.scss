@@ -13,6 +13,7 @@
   color: $pe-color-charcoal;
   display: $textInput-basic-display;
   margin-top: $textInput-basic-marginTop;
+  line-height: $textInput-line-height;
 }
 
 @mixin textInputBasic() {
