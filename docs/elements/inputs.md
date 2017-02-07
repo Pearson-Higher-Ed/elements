@@ -79,7 +79,6 @@ An input is a field used to elicit a response from a user
     <option>Three</option>
   </select>
   <svg
-    id="pe-icon--dropdown-open-18"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"

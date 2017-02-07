@@ -73,12 +73,13 @@
     width: $textInput-basic-select-containerWidth;
   }
 
-  #pe-icon--dropdown-open-18 {
+  .pe-select-container svg {
     position: absolute;
     bottom: $svg-position;
     right: $svg-position;
     padding-bottom: $svg-paddingBottom;
     margin-right: $svg-marginRight;
+    pointer-events: none;
   }
 
   .pe-textLabelInput__label {
