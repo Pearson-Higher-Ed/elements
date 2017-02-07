@@ -13,7 +13,15 @@ An input is a field used to elicit a response from a user
  <span class="pe-input_underline"></span>
 {{/demo}}
 
-## Inputs - Fancy (single line - error)
+## Inputs (single line - focus)
+
+{{#demo}}
+ <label class="pe-textLabelInput__label--label_focus" for="ab">First Name</label>
+ <input type="text" class="pe-textInput" id="ab" placeholder="First Name">
+ <span class="pe-input_underline"></span>
+{{/demo}}
+
+## Inputs (single line - error)
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label_error" for="b">First Name</label>
@@ -51,6 +59,13 @@ An input is a field used to elicit a response from a user
 {{#demo}}
   <label class="pe-textLabelInput__label" for="z">Label</label>
   <input type="text" class="pe-textInput--basic" id="z" placeholder="Placeholder" />
+{{/demo}}
+
+## Inputs - Basic (single line - focus)
+
+{{#demo}}
+  <label class="pe-textLabelInput__label--label_focus" for="yz">Label</label>
+  <input type="text" class="pe-textInput--basic" id="yz" placeholder="Placeholder" />
 {{/demo}}
 
 ## Inputs - Basic (single line - error)
