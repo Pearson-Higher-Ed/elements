@@ -65,10 +65,33 @@
 
 @mixin textInputBasicSelect() {
 
+  .container-test {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+  }
+
+  .svg-test {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    bottom: 0;
+  }
+
+  .pe-textLabelInput__label {
+    display: block;
+  }
+
+  .pe-textLabelInput__label ~ .container-test select {
+    width: 40%;
+  }
+
   .pe-selectInput--basic {
     @extend .abstract;
     border: $textInput-basic-border;
-    width: 230px;
+    z-index: 2;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

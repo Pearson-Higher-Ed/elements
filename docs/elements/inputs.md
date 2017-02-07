@@ -71,12 +71,23 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="w">Send message to</label>
-<select class="pe-selectInput--basic" id="w">
-  <option>Which option will you choose?</option>
-  <option>Not this one!</option>
-  <option>Probably not this one either.</option>
-  <option>This works.</option>
-</select>
+<span class="container-test">
+  <select class="pe-selectInput--basic" id="w">
+    <option>Which option will you choose?</option>
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+  </select>
+  <svg
+    class="svg-test"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    aria-hidden="true"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+</span>
 {{/demo}}
 
 ## Inputs (checkbox)
