@@ -84,7 +84,7 @@ An input is a field used to elicit a response from a user
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     aria-hidden="true"
-    focusable="no"
+    focusable="false"
     class="pe-icon--dropdown-open-18">
   <use xlink:href="#dropdown-open-18"></use>
   </svg>
