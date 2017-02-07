@@ -66,36 +66,35 @@
 
 @mixin textInputBasicSelect() {
 
-  .container-test {
+  .pe-select-container {
     position: relative;
-    overflow: hidden;
-    width: 30%;
+    display: $textInput-basic-display;
+    min-width: $textInput-basic-select-minWidth;
+    width: $textInput-basic-select-containerWidth;
   }
 
-  .svg-test {
-    z-index: 1;
+  #pe-icon--dropdown-open-18 {
     position: absolute;
-    display: block;
-    width: 18px;
-    height: 18px;
-    bottom: 0;
+    bottom: $svg-position;
+    right: $svg-position;
+    padding-bottom: $svg-paddingBottom;
+    margin-right: $svg-marginRight;
   }
 
   .pe-textLabelInput__label {
-    display: block;
+    display: $textInput-basic-display;
   }
 
-  .pe-textLabelInput__label ~ .container-test select {
-    width: 40%;
+  .pe-textLabelInput__label ~ .pe-select-container select {
+    width: $textInput-basic-select-width;
   }
 
   .pe-selectInput--basic {
     @extend .abstract;
     border: $textInput-basic-border;
-    z-index: 2;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    -webkit-appearance: $textInput-basic-select-display;
+    -moz-appearance: $textInput-basic-select-display;
+    appearance: $textInput-basic-select-display;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
