@@ -24,15 +24,15 @@ Form classes should be used within a form tag with the pe-form class.  Next/Subm
 
 {{#demo}}
 <form class="pe-form">
-  <div class="pe-form-name">Form Name</div>
-  <p class="pe-form-error">Error Message</p>
-  <p class="pe-form-desc">Form desription</p>
-  <div class="pe-form-group">
+  <h1 class="pe-form--name-bold">Form Name</h1>
+  <p class="pe-form--error">Initial error description (target one line or less)</p>
+  <p class="pe-form--desc">Additional error details or form instructions for the form can go here.  This is optional.</p>
+  <div class="pe-form--group">
     <label class="pe-textLabelInput__label" for="a">First Name</label>
     <input type="text" class="pe-textInput" id="a" placeholder="First Name">
     <span class="pe-input_underline"></span>
   </div>
-  <div class="pe-form-group">
+  <div class="pe-form--group">
     <label class="pe-textLabelInput__label" for="b">Last Name</label>
     <input type="text" class="pe-textInput" id="b" placeholder="Last Name">
     <span class="pe-input_underline"></span>

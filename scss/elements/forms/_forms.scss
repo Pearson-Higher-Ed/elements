@@ -9,24 +9,24 @@
 
 .pe-form {
 
-  .pe-form-name {
+  .pe-form--name {
     @extend %frm-fonts;
   }
 
-  .pe-form-name-bold {
+  .pe-form--name-bold {
     @extend %frm-fonts;
     font-weight: $form-font-weight-bold;
   }
 
-  .pe-form-error {
+  .pe-form--error {
     color: $pe-color-strawberry-red;
   }
 
-  .pe-form-desc {
+  .pe-form--desc {
     margin-bottom: 30px;
   }
 
-  .pe-form-group {
+  .pe-form--group {
     margin-bottom: 40px;
   }
 }
