@@ -5,6 +5,7 @@ section: elements
 ---
 
 An input is a field used to elicit a response from a user
+
 ## Inputs - Fancy (single line)
 
 {{#demo}}
