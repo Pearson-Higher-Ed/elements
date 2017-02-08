@@ -1,26 +1,21 @@
 @import 'variables';
 @import 'mixins';
 
-%frm {
-
-}
-
 %frm-fonts {
   font-size: $form-font-size;
   line-height: $form-line-height;
+  margin-bottom: 20px;
 }
 
 .pe-form {
-  // @extend %frm;
 
   .pe-form-name {
     @extend %frm-fonts;
-    margin-bottom: 20px;
   }
 
   .pe-form-name-bold {
     @extend %frm-fonts;
-    font-weight: $form-font-weight;
+    font-weight: $form-font-weight-bold;
   }
 
   .pe-form-error {
@@ -34,6 +29,4 @@
   .pe-form-group {
     margin-bottom: 40px;
   }
-
-
 }
