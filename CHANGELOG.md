@@ -1,3 +1,27 @@
+<a name="1.4.2"></a>
+## [1.4.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.4.1...v1.4.2) (2017-02-09)
+
+
+
+
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.4.0...v1.4.1) (2017-02-09)
+
+
+
+
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.6...v1.4.0) (2017-02-09)
+
+
+### Bug Fixes
+
+* correct font size being applied on value ([df5d119](https://github.com/Pearson-Higher-Ed/elements/commit/df5d119))
+* merge conflict ([dc6d71d](https://github.com/Pearson-Higher-Ed/elements/commit/dc6d71d))
+* overwrite input line height to give inputs a line-height of 18px as per redlines ([e76b179](https://github.com/Pearson-Higher-Ed/elements/commit/e76b179))
+
+
+
 <a name="1.3.6"></a>
 ## [1.3.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.5...v1.3.6) (2017-02-03)
 
