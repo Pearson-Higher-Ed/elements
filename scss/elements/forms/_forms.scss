@@ -15,7 +15,7 @@
 
   .pe-form--name-bold {
     @extend %frm-fonts;
-    font-weight: $form-font-weight-bold;
+    font-weight: $pe-label-bold;
   }
 
   .pe-form--error {
