@@ -1,73 +1,31 @@
-<a name="1.3.6"></a>
-## [1.3.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.5...v1.3.6) (2017-02-03)
-
-
-
-
-<a name="1.3.5"></a>
-## [1.3.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.4...v1.3.5) (2017-02-03)
-
-
-
-
-<a name="1.3.4"></a>
-## [1.3.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.3.3...v1.3.4) (2017-02-03)
-
-
-
-
-<a name="1.3.3"></a>
-## [1.3.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.2.0...v1.3.3) (2017-02-03)
-
-
-
-
-<a name="1.2.0"></a>
-# [1.2.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.1.1...v1.2.0) (2017-01-30)
+<a name="1.4.0"></a>
+# [1.4.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.6...v1.4.0) (2017-02-09)
 
 
 ### Bug Fixes
 
 * <a> ---> <button> , for and id to unique letter to avoid collision ([e35dace](https://github.com/Pearson-Higher-Ed/elements/commit/e35dace))
-* remove hardcoded variables ([3db300d](https://github.com/Pearson-Higher-Ed/elements/commit/3db300d))
-
-### Features
-
-* add passwordInput ([fbcd0d0](https://github.com/Pearson-Higher-Ed/elements/commit/fbcd0d0))
-* notification icon ([1632797](https://github.com/Pearson-Higher-Ed/elements/commit/1632797))
-
-
-
-<a name="1.1.1"></a>
-## [1.1.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.1.0...v1.1.1) (2017-01-06)
-
-
-### Bug Fixes
-
-* button background states ([503c4ef](https://github.com/Pearson-Higher-Ed/elements/commit/503c4ef))
-* make class selector more specific to buttons ([7fc3312](https://github.com/Pearson-Higher-Ed/elements/commit/7fc3312))
-
-
-
-<a name="1.1.0"></a>
-# [1.1.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.0.6...v1.1.0) (2016-12-16)
-
-
-### Bug Fixes
-
 * add position note to checkboxes ([3b0506e](https://github.com/Pearson-Higher-Ed/elements/commit/3b0506e))
 * button background states ([f09cf12](https://github.com/Pearson-Higher-Ed/elements/commit/f09cf12))
-* buttons selectors ([86346a7](https://github.com/Pearson-Higher-Ed/elements/commit/86346a7))
+* button background states ([503c4ef](https://github.com/Pearson-Higher-Ed/elements/commit/503c4ef))
 * buttons selectors ([9d4bc99](https://github.com/Pearson-Higher-Ed/elements/commit/9d4bc99))
+* buttons selectors ([86346a7](https://github.com/Pearson-Higher-Ed/elements/commit/86346a7))
+* correct font size being applied on value ([df5d119](https://github.com/Pearson-Higher-Ed/elements/commit/df5d119))
 * ff postion bug ([1dde018](https://github.com/Pearson-Higher-Ed/elements/commit/1dde018))
+* make class selector more specific to buttons ([7fc3312](https://github.com/Pearson-Higher-Ed/elements/commit/7fc3312))
 * make demo with 2 adjacent checkboxex ([fa719e8](https://github.com/Pearson-Higher-Ed/elements/commit/fa719e8))
+* merge conflict ([dc6d71d](https://github.com/Pearson-Higher-Ed/elements/commit/dc6d71d))
 * move message to kill the repeat ([e8f94d6](https://github.com/Pearson-Higher-Ed/elements/commit/e8f94d6))
+* overwrite input line height to give inputs a line-height of 18px as per redlines ([e76b179](https://github.com/Pearson-Higher-Ed/elements/commit/e76b179))
 * remove cpe ([51c7e7b](https://github.com/Pearson-Higher-Ed/elements/commit/51c7e7b))
+* remove hardcoded variables ([3db300d](https://github.com/Pearson-Higher-Ed/elements/commit/3db300d))
 * spacing ([263b6fe](https://github.com/Pearson-Higher-Ed/elements/commit/263b6fe))
 
 ### Features
 
 * add checkbox ([69505a5](https://github.com/Pearson-Higher-Ed/elements/commit/69505a5))
+* add passwordInput ([fbcd0d0](https://github.com/Pearson-Higher-Ed/elements/commit/fbcd0d0))
+* notification icon ([1632797](https://github.com/Pearson-Higher-Ed/elements/commit/1632797))
 
 
 
