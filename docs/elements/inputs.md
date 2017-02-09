@@ -5,8 +5,8 @@ section: elements
 ---
 
 An input is a field used to elicit a response from a user
-# Fancy Inputs
-## Inputs (single line)
+
+## Inputs - Fancy (single line)
 
 {{#demo}}
  <label class="pe-textLabelInput__label" for="a">First Name</label>
@@ -14,7 +14,15 @@ An input is a field used to elicit a response from a user
  <span class="pe-input_underline"></span>
 {{/demo}}
 
-## Inputs (single line - error)
+## Inputs - Fancy (single line - focus)
+
+{{#demo}}
+ <label class="pe-textLabelInput__label--label_focus" for="ab">First Name</label>
+ <input type="text" class="pe-textInput" id="ab" placeholder="First Name">
+ <span class="pe-input_underline"></span>
+{{/demo}}
+
+## Inputs - Fancy (single line - error)
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label_error" for="b">First Name</label>
@@ -22,7 +30,7 @@ An input is a field used to elicit a response from a user
  <span class="pe-inputError_underline"></span>
 {{/demo}}
 
-## Inputs (single line - disabled)
+## Inputs - Fancy (single line - disabled)
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label-disabled" for="c">First Name</label>
@@ -47,13 +55,18 @@ An input is a field used to elicit a response from a user
 ** this needs javascript to action show/hide function --
  <a href="https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput">https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput</a>
 
-# Basic Inputs
-
 ## Inputs - Basic (single line)
 
 {{#demo}}
   <label class="pe-textLabelInput__label" for="z">Label</label>
   <input type="text" class="pe-textInput--basic" id="z" placeholder="Placeholder" />
+{{/demo}}
+
+## Inputs - Basic (single line - focus)
+
+{{#demo}}
+  <label class="pe-textLabelInput__label--label_focus" for="yz">Label</label>
+  <input type="text" class="pe-textInput--basic" id="yz" placeholder="Placeholder" />
 {{/demo}}
 
 ## Inputs - Basic (single line - error)
@@ -68,6 +81,29 @@ An input is a field used to elicit a response from a user
 {{#demo}}
   <label class="pe-textLabelInput__label--label-disabled" for="x">Label</label>
   <input type="text" class="pe-textInput--basic" id="x" placeholder="Disabled" disabled />
+{{/demo}}
+
+## Select Inputs - Basic
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="w">Send message to</label>
+<span class="pe-select-container">
+  <select class="pe-selectInput--basic" id="w">
+    <option>Which option will you choose?</option>
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+  </select>
+  <svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+</span>
 {{/demo}}
 
 ## Inputs (checkbox)
