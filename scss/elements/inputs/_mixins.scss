@@ -85,13 +85,15 @@
 
 @mixin textInputLabel() {
   .pe-textLabelInput__label {
-    font-size : $textInput-label-font-size;
-    color     : $textInput-label-color;
+    font-size   : $textInput-label-font-size;
+    color       : $textInput-label-color;
+    line-height : $textInput-label-line-height;
   }
 
   .pe-textLabelInput__label--label_focus {
-    font-size : $textInput-label-font-size;
-    color     : $textInput-focus-label-color;
+    font-size   : $textInput-label-font-size;
+    color       : $textInput-focus-label-color;
+    line-height : $textInput-label-line-height;
   }
 
 };
@@ -102,6 +104,7 @@
   .pe-textLabelInput__label--label_error {
     color     : $textInput-error-focus-label-color;
     font-size : $textInput-error-focus-label-font-size;
+    line-height : $textInput-label-line-height;
   }
 };
 
@@ -130,8 +133,9 @@
 
 @mixin textInputLabelDisabled() {
   .pe-textLabelInput__label--label-disabled {
-    color     : $textInput-disable-text-color;
-    font-size : $textInput-disable-text-font-size;
+    color       : $textInput-disable-text-color;
+    font-size   : $textInput-disable-text-font-size;
+    line-height : $textInput-label-line-height;
   }
 };
 
