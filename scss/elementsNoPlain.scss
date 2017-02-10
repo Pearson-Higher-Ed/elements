@@ -8,8 +8,16 @@
 // base variables
 @import 'base/variables';
 
-// base HTML tags
+// no base HTML tags!
 //@import 'base/html-tags';
 
 // typography
 @import 'elements/typography/type';
+
+@import 'elements/inputs/inputs';
+@import 'elements/icons/icons';
+@import 'elements/buttons/buttons';
+@import 'elements/responsive-utilities/responsive-utilities';
+@import 'elements/grid/grid';
+@import 'elements/templates/templates';
+@import 'elements/presentation-strategies/presentation-strategies';
