@@ -1,6 +1,7 @@
 @import './variables';
 @import './mixins';
 @import './basic-input-mixins';
+@import './multi-line-text-mixin';
 @import '../typography/type';
 @import '../color/color';
 
@@ -26,3 +27,5 @@
 @include textInputBasicDisabled();
 
 @include textInputBasicSelect();
+
+@include multiLineText();
