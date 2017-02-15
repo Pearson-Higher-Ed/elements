@@ -185,19 +185,6 @@
   );
 }
 
-
-.pe-btn__cta {
-
-  @extend %btn;
-
-  @include pe-btn(
-    $pe-btn-cta-bg,
-    $pe-btn-cta-text,
-    $pe-btn-cta-hover-bg,
-    $pe-btn-cta-hover-text
-  );
-}
-
 .pe-btn__cta--btn_small {
 
   @extend %btn;
