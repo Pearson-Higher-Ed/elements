@@ -39,7 +39,7 @@ Some caching headers will prevent Internet Explorer from showing font files afte
 
 #### Icons
 
-This version of Elements uses an SVG sprite for icons (the Pearson logos are two separate SVGs, not part of the sprite). The sprite file is found in `/dist/icons/` in Elements, and should be copied to the appropriate place, as mentioned above, in your web server. In additional, to support Internet Explorer and some versions of Android where the default-Chrome browser is actually webkit, that SVG sprite must be present on your application's page. See <a href="https://pearson-elements-v1.surge.sh/elements/icons/">the icons page</a> under "Two methods of including icons" for examples of getting this sprite on your application page. Additionally, there are instructions on that page for how to add new icons.
+This version of Elements uses an SVG sprite for icons (the Pearson logos are two separate SVGs, not part of the sprite). The sprite file is found in `/dist/icons/` in Elements, and should be copied to the appropriate place, as mentioned above, in your web server. In additional, to support Internet Explorer and some versions of Android where the default-Chrome browser is actually webkit, that SVG sprite must be present on your application's page. See <a href="http://pearson-higher-ed.github.io/elements/elements/icons/">the icons page</a> under "Two methods of including icons" for examples of getting this sprite on your application page. Additionally, there are instructions on that page for how to add new icons.
 
 ## Contributions
 
@@ -55,7 +55,7 @@ Clone the project and install the dependencies:
 
 ### Adding Icons
 
-See <a href="https://pearson-elements-v1.surge.sh/elements/icons/">the icons documentation</a> under "Adding new icons" for the process of adding a new icon.
+See <a href="http://pearson-higher-ed.github.io/elements/elements/icons/">the icons documentation</a> under "Adding new icons" for the process of adding a new icon.
 
 ### Build the Documentation
 
