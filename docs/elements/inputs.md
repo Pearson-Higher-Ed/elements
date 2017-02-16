@@ -217,3 +217,115 @@ Disabled Unselected
       </span>
     </div>
 {{/demo}}
+
+## Inputs (radio buttons)
+
+Radio buttons are for times when the user needs to make a single choice among many options. Unlike a select box, all options are available and visible to all users at once.
+
+- Radio buttons are required to be inside a radio group (the most common example is a fieldset element where the fieldset's `<legend>` contains the subject the user is making a choice about.  They are required to have a label (which names the choice). Thus there is almost always a combination of a subject regarding the group, and a label per option.
+
+- Radio buttons within a radio group are also required to share the same `name` attribute. There cannot be only 1 radio button in a radio group.
+
+- It is <strong>strongly recommended</strong> that one of the radio buttons are selected by default, rather than letting browsers choose to either pre-select the first item or leave them all unselected.
+
+- When a subject line and individual options, or using a fieldset/legend seem unnecessary for your question, consider using a select element instead.
+
+- When there is more than one option that could be selected, use checkboxes instead.
+
+Example showing unselected, selected, and disabled unselected versions:
+
+{{#demo}}
+<fieldset class="pe-fieldset">
+  <legend>Which scotch do you like with your cookies?</legend>
+  <div class="pe-radio">
+    <input type="radio" name="scotch" id="scotchTB">
+    <label for="scotchTB">T&#233; Bheag (unselected)</label>
+    <span>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+
+  <div class="pe-radio">
+    <input type="radio" name="scotch" id="scotchMS" checked="checked">
+    <label for="scotchMS">Monkey Shoulder (selected)</label>
+    <span>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+
+  <div class="pe-radio">
+    <input type="radio" name="scotch" id="scotchT" disabled>
+    <label for="scotchT">Talisker 18 years (disabled)</label>
+    <span>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+</fieldset>
+{{/demo}}
+
+Example showing unselected, disabled selected and focused unselected (developers should avoid offering a focused-but-unselected state by having one option pre-selected). "Focused" state shown visually only; developers do not have to add any inline styles to see this style on real focus events.
+
+{{#demo}}
+<fieldset class="pe-fieldset">
+  <legend>Which kinds of cookies do you like with your scotch?</legend>
+  <div class="pe-radio">
+    <input type="radio" name="cookie" id="cookieCC">
+    <label for="cookieCC">Chocolate Chip (unselected)</label>
+    <span style="border-color:#047a9c;>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+
+  <div class="pe-radio">
+    <input type="radio" name="cookie" id="oreo" disabled checked>
+    <label for="oreo">Oreo (disabled selected)</label>
+    <span>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+</fieldset>
+{{/demo}}
+
+Example showing unselected and focused selected item (short ribs). Again, developers do not add inline styles for this effect.
+
+{{#demo}}
+<fieldset class="pe-fieldset">
+  <legend>Choose a meat</legend>
+  <div class="pe-radio">
+    <input type="radio" name="meat" id="bacon">
+    <label for="bacon">Bacon</label>
+    <span>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+
+  <div class="pe-radio">
+    <input type="radio" name="meat" id="shortribs" checked>
+    <label for="shortribs">Short Ribs</label>
+    <span style="border-color:#047a9c;>
+      <svg aria-hidden="true"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+</fieldset>
+{{/demo}}
