@@ -89,6 +89,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 <button type="button" class="pe-icon--btn">
   <svg role="img"
        aria-labelledby="b1"
+       focusable="false"
        class="pe-icon--remove-lg-24">
     <title id="b1">Close dialog</title>
     <use xlink:href="#remove-lg-24"></use>
