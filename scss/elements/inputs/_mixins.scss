@@ -215,6 +215,8 @@
       padding-left: $label-padding;
     }
     ~ span {
+      display       : block;
+      box-sizing    : content-box;// for IE
       position      : absolute;
       left          : 0;
       top           : 0;
@@ -224,6 +226,7 @@
       color         : $radio-dot-color; 
       border        : $radio-border;
       border-radius : $radio-borderRadius;
+      pointer-events: none;
     }
     &:focus ~ span {
       color         : $radio-dot-color;
