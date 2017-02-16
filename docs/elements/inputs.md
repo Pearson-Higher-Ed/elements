@@ -94,11 +94,7 @@ An input is a field used to elicit a response from a user
     <option>Two</option>
     <option>Three</option>
   </select>
-  <svg
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    aria-hidden="true"
+  <svg aria-hidden="true"
     focusable="false"
     class="pe-icon--dropdown-open-18">
   <use xlink:href="#dropdown-open-18"></use>
@@ -121,10 +117,8 @@ Unselected
       <input type="checkbox"  id="checkboxInput" value="1" />
       <label for="checkboxInput">Bacon</label>
       <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             aria-hidden="true"
+        <svg aria-hidden="true"
+             focusable="false"
              class="pe-icon--check-sm-18">
           <use xlink:href="#check-sm-18"></use>
         </svg>
