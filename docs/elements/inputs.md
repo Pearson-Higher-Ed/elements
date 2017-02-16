@@ -138,10 +138,8 @@ Selected
    <input type="checkbox" id="checkboxInput2" value="1" checked/>
    <label for="checkboxInput2">Pastrami</label>
    <span>
-     <svg version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        aria-hidden="true"
+     <svg aria-hidden="true"
+        focusable="false"
         class="pe-icon--check-sm-18">
       <use xlink:href="#check-sm-18"></use>
      </svg>
@@ -156,10 +154,8 @@ Unselected Focus
       <input type="checkbox" id="checkboxInput3" value="1" />
       <label for="checkboxInput3">Ham</label>
       <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             aria-hidden="true"
+        <svg aria-hidden="true"
+             focusable="false"
              class="pe-icon--check-sm-18">
           <use xlink:href="#check-sm-18"></use>
         </svg>
@@ -173,10 +169,8 @@ Selected Focus
       <input type="checkbox" id="checkboxInput4" value="1" checked/>
       <label for="checkboxInput4">Steak</label>
       <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             aria-hidden="true"
+        <svg aria-hidden="true"
+             focusable="false"
              class="pe-icon--check-sm-18">
           <use xlink:href="#check-sm-18"></use>
         </svg>
@@ -190,10 +184,8 @@ Disabled Selected
       <input type="checkbox" id="checkboxInput5" value="1" checked disabled/>
       <label for="checkboxInput5">Tripe</label>
       <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             aria-hidden="true"
+        <svg aria-hidden="true"
+             focusable="false"
              class="pe-icon--check-sm-18">
           <use xlink:href="#check-sm-18"></use>
         </svg>
@@ -207,10 +199,8 @@ Disabled Unselected
       <input type="checkbox" id="checkboxInput6" value="1" disabled/>
       <label for="checkboxInput6">Meatball</label>
       <span>
-        <svg version="1.1"
-             xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink"
-             aria-hidden="true"
+        <svg aria-hidden="true"
+             focusable="false"
              class="pe-icon--check-sm-18">
           <use xlink:href="#check-sm-18"></use>
         </svg>
@@ -222,7 +212,7 @@ Disabled Unselected
 
 Radio buttons are for times when the user needs to make a single choice among many options. Unlike a select box, all options are available and visible to all users at once.
 
-- Radio buttons are required to be inside a radio group (the most common example is a fieldset element where the fieldset's `<legend>` contains the subject the user is making a choice about.  They are required to have a label (which names the choice). Thus there is almost always a combination of a subject regarding the group, and a label per option.
+- Radio buttons are required to be inside a radio group (the most common example is a fieldset element where the fieldset's `<legend>` contains the subject the user is making a choice about).  They are required to have a label (which names the choice). Thus there is almost always a combination of a subject regarding the group (like a question), and a label per option.
 
 - Radio buttons within a radio group are also required to share the same `name` attribute. There cannot be only 1 radio button in a radio group.
 
@@ -242,6 +232,7 @@ Example showing unselected, selected, and disabled unselected versions:
     <label for="scotchTB">T&#233; Bheag (unselected)</label>
     <span>
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
@@ -253,6 +244,7 @@ Example showing unselected, selected, and disabled unselected versions:
     <label for="scotchMS">Monkey Shoulder (selected)</label>
     <span>
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
@@ -261,9 +253,10 @@ Example showing unselected, selected, and disabled unselected versions:
 
   <div class="pe-radio">
     <input type="radio" name="scotch" id="scotchT" disabled>
-    <label for="scotchT">Talisker 18 years (disabled)</label>
+    <label for="scotchT">Talisker 18 years (disabled unselected)</label>
     <span>
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
@@ -272,7 +265,7 @@ Example showing unselected, selected, and disabled unselected versions:
 </fieldset>
 {{/demo}}
 
-Example showing unselected, disabled selected and focused unselected (developers should avoid offering a focused-but-unselected state by having one option pre-selected). "Focused" state shown visually only; developers do not have to add any inline styles to see this style on real focus events.
+Example showing focused unselected and disabled selected versions (developers should avoid offering a focused-but-unselected state by having one option pre-selected). "Focused" state shown visually only; developers do not have to add any inline styles to see this style on real focus events.
 
 {{#demo}}
 <fieldset class="pe-fieldset">
@@ -280,8 +273,9 @@ Example showing unselected, disabled selected and focused unselected (developers
   <div class="pe-radio">
     <input type="radio" name="cookie" id="cookieCC">
     <label for="cookieCC">Chocolate Chip (unselected)</label>
-    <span style="border-color:#047a9c;>
+    <span style="border-color:#047a9c;">
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
@@ -293,6 +287,7 @@ Example showing unselected, disabled selected and focused unselected (developers
     <label for="oreo">Oreo (disabled selected)</label>
     <span>
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
@@ -301,16 +296,17 @@ Example showing unselected, disabled selected and focused unselected (developers
 </fieldset>
 {{/demo}}
 
-Example showing unselected and focused selected item (short ribs). Again, developers do not add inline styles for this effect.
+Example showing unselected and focused selected versions. Again, developers do not add inline styles for this effect.
 
 {{#demo}}
 <fieldset class="pe-fieldset">
   <legend>Choose a meat</legend>
   <div class="pe-radio">
     <input type="radio" name="meat" id="bacon">
-    <label for="bacon">Bacon</label>
+    <label for="bacon">Bacon (unselected)</label>
     <span>
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
@@ -319,13 +315,74 @@ Example showing unselected and focused selected item (short ribs). Again, develo
 
   <div class="pe-radio">
     <input type="radio" name="meat" id="shortribs" checked>
-    <label for="shortribs">Short Ribs</label>
-    <span style="border-color:#047a9c;>
+    <label for="shortribs">Short Ribs (focused selected)</label>
+    <span style="border-color:#047a9c;">
       <svg aria-hidden="true"
+           focusable="false"
            class="pe-icon--radio-dot">
         <use xlink:href="#new-notification-9"></use>
       </svg>
     </span>
   </div>
 </fieldset>
+{{/demo}}
+
+### Accessibility Concerns
+
+There can be times when a developer cannot have a fieldset+legend but must for some reason use radio buttons. It is possible to use another wrapping element, such as a div, with `role=radiogroup` set on it. Additionally for the legend text, if there is nearby text that is visually being relied upon to do the question/subject work, giving that element a unique id can allow you to add `aria-describedby="that unique id"` on your div.
+
+{{#demo}}
+<h2 id="cookiemonster">Cookies</h2>
+<div role="radiogroup" aria-describedby="cookiemonster">
+  <div class="pe-radio">
+    <input type="radio" name="cookiez" id="cookiey" checked>
+    <label for="cookiey">Love them</label>
+    <span>
+      <svg aria-hidden="true"
+           focusable="false"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="pe-radio">
+    <input type="radio" name="cookiez" id="cookien">
+    <label for="cookien">Hate them</label>
+    <span>
+      <svg aria-hidden="true"
+           focusable="false"
+           class="pe-icon--radio-dot">
+        <use xlink:href="#new-notification-9"></use>
+      </svg>
+    </span>
+  </div>
+</div>
+{{/demo}}
+
+If the developer doesn't even have the freedom to wrap the radio buttons, `aria-describedby` can be used directly as well:
+
+{{#demo}}
+<h2 id="cookiemonster2">Cookies</h2>
+<div class="pe-radio">
+  <input type="radio" name="cookiezz" id="cookieyes" checked aria-describedby="cookiemonster2">
+  <label for="cookieyes">Love them</label>
+  <span>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--radio-dot">
+      <use xlink:href="#new-notification-9"></use>
+    </svg>
+  </span>
+</div>
+<div class="pe-radio">
+  <input type="radio" name="cookiezz" id="cookieno" aria-describedby="cookiemonster2">
+  <label for="cookieno">Hate them</label>
+  <span>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--radio-dot">
+      <use xlink:href="#new-notification-9"></use>
+    </svg>
+  </span>
+</div>
 {{/demo}}
