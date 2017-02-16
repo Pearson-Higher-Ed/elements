@@ -28,6 +28,7 @@
       border: $textInput-basic-focus-border;
       box-shadow: $textInput-basic-focus-boxShadow;
       resize: both;
+      overflow: auto;
     }
   }
 
