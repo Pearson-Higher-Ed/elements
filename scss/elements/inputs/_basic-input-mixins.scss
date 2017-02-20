@@ -76,9 +76,8 @@
 
   .pe-select-container svg {
     position: absolute;
-    bottom: $svg-position;
-    right: $svg-position;
-    padding-bottom: $svg-paddingBottom;
+    bottom: $svg-bottom;
+    right: 0;
     margin-right: $svg-marginRight;
     pointer-events: none;
   }
