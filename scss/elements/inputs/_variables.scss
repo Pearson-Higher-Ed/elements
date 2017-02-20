@@ -115,7 +115,7 @@ $pe-passwordInput-text-decoration : none;
 
 //============textInput-basic==========
 
-$textInput-basic-padding         : 0px 14px 0px 14px;
+$textInput-basic-padding         : 0px 14px;
 $textInput-basic-height          : 36px;
 $textInput-basic-borderRadius    : 3px;
 $textInput-basic-display         : block;
@@ -139,8 +139,7 @@ $textInput-basic-error-focus-boxShadow : 0px 0px 4px 0px $pe-color-strawberry-re
 //=======textInput-basic-select========
 
 $textInput-basic-select-containerWidth    : 28%;
-$textInput-basic-select-minWidth          : 220px;
-$textInput-basic-select-display           : none;
+$textInput-basic-select-minWidth          : 250px;
 
 $svg-position      : 0;
 $svg-paddingBottom : 10px;
