@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/elements/css/docs.css">
+  </head>
+  <body>
+    <header class="pe-header pe-header--fixed">
+      <section class="pe-header__section">
+        <a href="//elements" class="pe-header__brand">Pearson Elements</a>
+      </section>
+      <section class="pe-header__section pe-header__section--right">
+        <nav class="pe-header__nav">
+          <ul class="pe-header__nav-items">
+            <!--li class="pe-header__nav-item  ">
+              <a href="/elements/getting-started">Getting Started</a>
+            </li-->
+            <li class="pe-header__nav-item  ">
+              <a href="/elements/elements">Elements</a>
+            </li>
+            <li class="pe-header__nav-item">
+              <a href="https://github.com/pearson-higher-ed/elements/">
+                <span class="d-github-mark--light d-header-github-link"></span>
+                <span class="pe-sr-only">Elements on GitHub</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    
+.d-c--color {
+  font-size: 0em;
+}
+
+.d-swatches {
+  clear: both;
+  margin-bottom: 35px;
+
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+    margin-bottom: 35px;
+  }
+}
+
+.d-swatch {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+$docs-colors: (
+  digital-pearson-blue: $pe-color-digital-pearson-blue,
+  ink-blue: $pe-color-ink-blue,
+  white: $pe-color-white,
+  white-gray: $pe-color-white-gray,
+  sunshine-yellow: $pe-color-sunshine-yellow,
+  sunflower-yellow: $pe-color-sunflower-yellow,
+  digital-ice-blue: $pe-color-digital-ice-blue,
+  charcoal: $pe-color-charcoal,
+  medium-gray: $pe-color-medium-gray,
+  concrete: $pe-color-concrete,
+  alto: $pe-color-alto,
+  moonlight: $pe-color-moonlight,
+  strawberry-red: $pe-color-strawberry-red,
+  digital-grass-green: $pe-color-digital-grass-green,
+  hot-pink: $pe-color-hot-pink,
+  digital-marine-turquoise: $pe-color-digital-marine-turquoise
+);
+
+@each $name, $color in $docs-colors {
+  .d-swatch--pe-color-#{$name} {
+    background: $color;
+    position: relative;
+
+    &:before,
+    &:after {
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &:before {
+      content: '#{$name}';
+      color: white;
+      top: 0px;
+    }
+
+    &:after {
+      content: '#{$name}';
+      color: black;
+      bottom: 0px;
+    }
+  }
+}
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  </body>
+</html>
