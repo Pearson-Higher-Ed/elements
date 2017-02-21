@@ -123,6 +123,7 @@
 @mixin textInputDisabled() {
   .pe-textInput:disabled {
     color               : $textInput-disable-text-color;
+    font-size           : $textInput-label-font-size;
     background-color    : $textInput-disable-background-color;
     border-bottom       : $textInput-disable-border-bottom;
     border-bottom-style : $textInput-disable-border-bottom-style;

@@ -73,6 +73,7 @@
     display: $textInput-basic-display;
     min-width: $textInput-basic-select-minWidth;
     width: $textInput-basic-select-containerWidth;
+    padding: 0;
     border: $textInput-basic-border;
   }
 
@@ -98,9 +99,12 @@
     display: $textInput-basic-display;
   }
 
-  .pe-textLabelInput__label ~ .pe-select-container select {
+  .pe-select-container select {
+    box-sizing: border-box;
     width: $textInput-basic-select-width;
+    min-height: 34px;
     margin: 0;
+    padding: 0 14px;
     outline: none;
   }
 
