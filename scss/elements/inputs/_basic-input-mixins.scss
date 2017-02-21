@@ -68,17 +68,29 @@
 @mixin textInputBasicSelect() {
 
   .pe-select-container {
+    @extend .abstract;
     position: relative;
     display: $textInput-basic-display;
     min-width: $textInput-basic-select-minWidth;
     width: $textInput-basic-select-containerWidth;
+    border: $textInput-basic-border;
+  }
+
+  .pe-select-container::after {
+  	width: 0;
+  	height: 0;
+  	border-left: 4px solid transparent;
+  	border-right: 4px solid transparent;
+  	border-top: 7px solid #666;
+  	margin-top: -3px;
+    z-index: 2;
+    display: none;
   }
 
   .pe-select-container svg {
     position: absolute;
     bottom: $svg-bottom;
-    right: 0;
-    margin-right: $svg-marginRight;
+    right: $svg-right;
     pointer-events: none;
   }
 
@@ -88,33 +100,42 @@
 
   .pe-textLabelInput__label ~ .pe-select-container select {
     width: $textInput-basic-select-width;
+    margin: 0;
+    outline: none;
+  }
+
+  .pe-select-container select:focus {
+    outline: none;
+    border: $textInput-basic-focus-border;
+    box-shadow: $textInput-basic-focus-boxShadow;
   }
 
   .pe-selectInput--basic {
-    @extend .abstract;
-    border: $textInput-basic-border;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-color: $pe-color-white;
+    border: 1px solid transparent;
+    padding-top: 8px;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
       color     : $textInput-placeholder-color;
     }
 
-    &:focus {
-      outline: none;
-      border: $textInput-basic-focus-border;
-      box-shadow: $textInput-basic-focus-boxShadow;
-    }
   }
+
+  .pe-select-container select:focus::-ms-value {
+		background: transparent;
+		color: #222;
+	}
 
   .pe-selectInput--basic:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
   }
 
-  .pe-selectInput--basic::-ms-expand {
+  .pe-select-container select::-ms-expand {
     opacity: 0;
   }
 
