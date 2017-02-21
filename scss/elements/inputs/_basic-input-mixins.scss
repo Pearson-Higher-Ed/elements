@@ -74,18 +74,8 @@
     min-width: $textInput-basic-select-minWidth;
     width: $textInput-basic-select-containerWidth;
     padding: 0;
+    height: auto;
     border: $textInput-basic-border;
-  }
-
-  .pe-select-container::after {
-  	width: 0;
-  	height: 0;
-  	border-left: 4px solid transparent;
-  	border-right: 4px solid transparent;
-  	border-top: 7px solid #666;
-  	margin-top: -3px;
-    z-index: 2;
-    display: none;
   }
 
   .pe-select-container svg {
@@ -102,9 +92,8 @@
   .pe-select-container select {
     box-sizing: border-box;
     width: $textInput-basic-select-width;
-    min-height: 34px;
     margin: 0;
-    padding: 0 14px;
+    padding: .6em 14px .5em;
     outline: none;
   }
 
