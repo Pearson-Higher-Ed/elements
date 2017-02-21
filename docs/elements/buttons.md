@@ -14,13 +14,14 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 
 ## Elements
 
-Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<input>` elements.
+Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<input>` elements. But try very hard not to use button styles on divs, spans, or links.
 
 {{#demo}}
 <div class="pe-btn" tabindex="0" role="button">Div</div>
 <a href="#" class="pe-btn" role="button">Link</a>
-<button class="pe-btn">Button</button>
-<input class="pe-btn" type="submit" value="Submit">
+<button type="button" class="pe-btn">Button</button>
+<input class="pe-btn" type="submit" value="Submit"> 
+<button type="button" class="pe-link">Button</button>
 {{/demo}}
 
 <aside>
@@ -86,10 +87,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 
 {{#demo}}
 <button type="button" class="pe-icon--btn">
-  <svg version="1.1"
-       xmlns="http://www.w3.org/2000/svg"
-       xmlns:xlink="http://www.w3.org/1999/xlink"
-       role="img"
+  <svg role="img"
        aria-labelledby="b1"
        class="pe-icon--remove-lg-24">
     <title id="b1">Close dialog</title>

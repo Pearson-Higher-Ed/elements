@@ -1095,7 +1095,7 @@ The available icons includes the following:
 
 The icons above are called from a single larger SVG sprite, using the `<use>` tag and `href` attribute. In Internet Explorer 11 and the webkit version of some Android's default "Chrome" browser, this doesn't work due to a bug unless the sprite is actually on the HTML page where you want to use icons (as opposed to referencing the sprite from your filesystem).
 
-The sprite is naturally invisible (because it contains only `<symbol>` tags inside), however it is currently around 84kb large. Consumers of the SDK need to choose whether they want to
+The sprite is invisible on the page, however it is currently around 84kb large. Consumers of the SDK need to choose whether they want to
 
 * manually include the sprite at the top of their pages as simply an SVG tag (view source of this page)
 * use JavaScript to dynamically call add the sprite to the page
@@ -1120,6 +1120,8 @@ To use the second method, include the JavaScript below to your page which uses i
 </div>
 
 If you are using Babel or other ES5-to-ES6 transpiler for your JavaScript, you may wish to change `var pe_ajax` to `const pe_ajax`.
+
+Remember that JavaScript's version of attribute names are camel-cased. If you are writing an SVG in JSX or building one in vanilla JavaScript, the `xlink:href` of HTML is called `xlinkHref`.
 
 ## Making decorative icons
 
@@ -1160,7 +1162,7 @@ In order for the internal text to work in all assistive tech and browsers curren
 </aside>
 
 
-## Adding new icons
+## Adding new icons to ElementsSDK
 
 After a proposed icon has been accepted by the UX Framework team, an SVG can be created in whichever program you prefer. For a size-18 icon, set the viewBox attribute to "0 0 18 18". For the size-24 version, set the viewBox attribute to "0 0 24 24". This means if the icon you've created is a bit smaller either vertically or horizontally than those dimensions, empty space will be the result (and this is okay).
 
