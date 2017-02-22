@@ -94,9 +94,9 @@
   .pe-selectInput--basic {
     @extend .abstract;
     border: $textInput-basic-border;
-    -webkit-appearance: $textInput-basic-select-display;
-    -moz-appearance: $textInput-basic-select-display;
-    appearance: $textInput-basic-select-display;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
@@ -108,6 +108,15 @@
       border: $textInput-basic-focus-border;
       box-shadow: $textInput-basic-focus-boxShadow;
     }
+  }
+
+  .pe-selectInput--basic:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  .pe-selectInput--basic::-ms-expand {
+    opacity: 0;
   }
 
 };
