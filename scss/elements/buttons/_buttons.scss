@@ -15,9 +15,41 @@
   padding        : $pe-btn-standard-padding;
 }
 
+%btn_small {
+  height      : $pe-btn-small-height;
+  font-size   : $pe-btn-small-font-size;
+  line-height : $pe-btn-small-line-height;
+  padding     : $pe-btn-small-padding;
+}
+
+%btn_large {
+  height      : $pe-btn-large-height;
+  font-size   : $pe-btn-large-font-size;
+  line-height : $pe-btn-large-line-height;
+  padding     : $pe-btn-large-padding;
+}
 
 
-[class|="pe-btn"] {
+
+%btn_xlarge{
+  height      : $pe-btn-xlarge-height;
+  font-size   : $pe-btn-xlarge-font-size;
+  line-height : $pe-btn-xlarge-line-height;
+  padding     : $pe-btn-xlarge-padding;
+}
+
+
+// For icons in buttons, remove buttony styles
+
+.pe-icon--btn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+
+//===========btn=================================
+.pe-btn {
 
   @extend %btn;
 
@@ -32,16 +64,56 @@
 
 }
 
+.pe-btn--btn_small {
 
-// For icons in buttons, remove buttony styles
+  @extend %btn;
+  @extend %btn_small;
 
-.pe-icon--btn {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
+  @include pe-btn(
+    $pe-btn-default-bg,
+    $pe-btn-default-text,
+    $pe-btn-default-hover-bg,
+    $pe-btn-default-hover-text,
+    $pe-btn-default-disabled-bg,
+    $pe-btn-default-disabled-text
+  );
+
 }
 
-[class*="pe-btn__primary"] {
+.pe-btn--btn_large {
+
+  @extend %btn;
+  @extend %btn_large;
+
+  @include pe-btn(
+    $pe-btn-default-bg,
+    $pe-btn-default-text,
+    $pe-btn-default-hover-bg,
+    $pe-btn-default-hover-text,
+    $pe-btn-default-disabled-bg,
+    $pe-btn-default-disabled-text
+  );
+
+}
+
+.pe-btn--btn_xlarge {
+
+  @extend %btn;
+  @extend %btn_xlarge;
+
+  @include pe-btn(
+    $pe-btn-default-bg,
+    $pe-btn-default-text,
+    $pe-btn-default-hover-bg,
+    $pe-btn-default-hover-text,
+    $pe-btn-default-disabled-bg,
+    $pe-btn-default-disabled-text
+  );
+
+}
+
+//===========Primary=================================
+.pe-btn__primary {
 
   @extend %btn;
 
@@ -55,9 +127,53 @@
   );
 }
 
+.pe-btn__primary--btn_small {
+
+  @extend %btn;
+  @extend %btn_small;
+
+  @include pe-btn(
+    $pe-btn-primary-bg,
+    $pe-btn-primary-text,
+    $pe-btn-primary-hover-bg,
+    $pe-btn-primary-hover-text,
+    $pe-btn-primary-disabled-bg,
+    $pe-btn-primary-disabled-text
+  );
+}
+
+.pe-btn__primary--btn_large {
+
+  @extend %btn;
+  @extend %btn_large;
+
+  @include pe-btn(
+    $pe-btn-primary-bg,
+    $pe-btn-primary-text,
+    $pe-btn-primary-hover-bg,
+    $pe-btn-primary-hover-text,
+    $pe-btn-primary-disabled-bg,
+    $pe-btn-primary-disabled-text
+  );
+}
+.pe-btn__primary--btn_xlarge {
+
+  @extend %btn;
+  @extend %btn_xlarge;
+
+  @include pe-btn(
+    $pe-btn-primary-bg,
+    $pe-btn-primary-text,
+    $pe-btn-primary-hover-bg,
+    $pe-btn-primary-hover-text,
+    $pe-btn-primary-disabled-bg,
+    $pe-btn-primary-disabled-text
+  );
+}
 
 
-[class*="pe-btn__cta"] {
+//===========CTA=================================
+.pe-btn__cta {
 
   @extend %btn;
 
@@ -69,26 +185,41 @@
   );
 }
 
-[class*="--btn_small"] {
-  height      : $pe-btn-small-height;
-  font-size   : $pe-btn-small-font-size;
-  line-height : $pe-btn-small-line-height;
-  padding     : $pe-btn-small-padding;
+.pe-btn__cta--btn_small {
+
+  @extend %btn;
+  @extend %btn_small;
+
+  @include pe-btn(
+    $pe-btn-cta-bg,
+    $pe-btn-cta-text,
+    $pe-btn-cta-hover-bg,
+    $pe-btn-cta-hover-text
+  );
 }
 
-[class*="--btn_large"] {
-  height      : $pe-btn-large-height;
-  font-size   : $pe-btn-large-font-size;
-  line-height : $pe-btn-large-line-height;
-  padding     : $pe-btn-large-padding;
+.pe-btn__cta--btn_large {
+
+  @extend %btn;
+  @extend %btn_large;
+
+  @include pe-btn(
+    $pe-btn-cta-bg,
+    $pe-btn-cta-text,
+    $pe-btn-cta-hover-bg,
+    $pe-btn-cta-hover-text
+  );
 }
 
+.pe-btn__cta--btn_xlarge {
 
+  @extend %btn;
+  @extend %btn_xlarge;
 
-[class*="--btn_xlarge"]{
-  height      : $pe-btn-xlarge-height;
-  font-size   : $pe-btn-xlarge-font-size;
-  line-height : $pe-btn-xlarge-line-height;
-  padding     : $pe-btn-xlarge-padding;
+  @include pe-btn(
+    $pe-btn-cta-bg,
+    $pe-btn-cta-text,
+    $pe-btn-cta-hover-bg,
+    $pe-btn-cta-hover-text
+  );
 }
-
