@@ -1,13 +1,13 @@
 @import '../../scss/elements/responsive-utilities/responsive-utilities';
 @import '../../scss/experimental/header/header';
 .d-docs-layout__container {
-  padding-top: 72px;
+  padding-top: 90px;
 }
 
 .d-docs-layout__sidebar {
   display: none;
   position: fixed;
-  top: 54px;
+  top: 70px;
   bottom: 0;
   width: $d-sidebar-width;
   overflow-y: scroll;
