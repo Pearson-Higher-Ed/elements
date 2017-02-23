@@ -109,6 +109,15 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 </span>
 {{/demo}}
 
+## Multiple Line text
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="zz">Multi-line label</label>
+<textarea class="pe-multiLineText" id="zz" cols="30" rows="5"
+  placeholder="Many words displayed over multiple lines.">
+</textarea>
+{{/demo}}
+
 ## Inputs (checkbox)
 
 Checkboxes are for times when the user needs to make one or more binary choices about a related item.

@@ -695,7 +695,7 @@ The available icons includes the following:
          class="pe-icon--notification-18">
       <use xlink:href="#notification-18"></use>
     </svg>
-    notfication-18
+    notification-18
   </li>
   <li>
     <svg aria-hidden="true"
