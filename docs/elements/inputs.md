@@ -85,14 +85,21 @@ An input is a field used to elicit a response from a user
 
 ## Select Inputs - Basic
 
+Select dropdowns are generally meant for times when a user needs to make a single choice from among many options. People can choose more than one option if the `mutliple` attribute is added, however checkboxes are much more user-friendly for multiple selections.
+
+- Generally only 1 option is visible at a time, unless the `size` attribute is present (points to a string representing the number of options visible by default). We recommend leaving size to its default of "1".
+- When there is more than one option that could be selected, use checkboxes instead.
+
+*Note:* A separate label should be present and visible for the select box. We do not recommend using one of the options to display a question: browsers differ on how they truncate options before the user focusses on selects.
+
 {{#demo}}
 <label class="pe-textLabelInput__label" for="w">Send message to</label>
 <span class="pe-select-container">
   <select class="pe-selectInput--basic" id="w">
-    <option>Which option will you choose?</option>
-    <option>One</option>
-    <option>Two</option>
-    <option>Three</option>
+    <option value="GBPTF">Grizzly Bear Prevention Task Force</option>
+    <option value="1234B">Boaty McBoatface</option>
+    <option value="GDL">GDL</option>
+    <option value="LED">LED</option>
   </select>
   <svg aria-hidden="true"
     focusable="false"
