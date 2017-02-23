@@ -1,8 +1,14 @@
-@import './font-face';
 @import './variables';
 @import './functions';
 @import './mixins';
 @import '../../base/mixins';
+
+html {
+  font-size: pxToRem($pe-font-size-base, 16px);
+}
+body {
+  font-family: $pe-font-family-sans;
+}
 
 // Body copy (as a class, from utilities)
 //
