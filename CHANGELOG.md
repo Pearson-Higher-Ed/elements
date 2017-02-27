@@ -1,3 +1,35 @@
+<a name="1.5.3"></a>
+## [1.5.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.2...v1.5.3) (2017-02-23)
+
+
+
+
+<a name="1.5.2"></a>
+## [1.5.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.1...v1.5.2) (2017-02-22)
+
+
+
+
+<a name="1.5.1"></a>
+## [1.5.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.0...v1.5.1) (2017-02-22)
+
+
+
+
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.4.2...v1.5.0) (2017-02-20)
+
+
+### Bug Fixes
+
+* change variables to use typeography font weight ([1337b2a](https://github.com/Pearson-Higher-Ed/elements/commit/1337b2a))
+* FF and IE change ([b6c90ca](https://github.com/Pearson-Higher-Ed/elements/commit/b6c90ca))
+* line height per red lines ([a41bd9f](https://github.com/Pearson-Higher-Ed/elements/commit/a41bd9f))
+* remove redundant cta class ([c73b4f0](https://github.com/Pearson-Higher-Ed/elements/commit/c73b4f0))
+* take class selectors out of buttons ([b5eda1a](https://github.com/Pearson-Higher-Ed/elements/commit/b5eda1a))
+
+
+
 <a name="1.4.2"></a>
 ## [1.4.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.4.1...v1.4.2) (2017-02-09)
 
@@ -43,6 +75,10 @@
 <a name="1.3.3"></a>
 ## [1.3.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.2.0...v1.3.3) (2017-02-03)
 
+
+### Features
+
+* add form styles ([c135eb9](https://github.com/Pearson-Higher-Ed/elements/commit/c135eb9))
 
 
 

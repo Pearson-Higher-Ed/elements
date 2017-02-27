@@ -47,6 +47,23 @@
   border: 0;
 }
 
+// for fake links
+
+.pe-link {
+  color: $pe-color-link;
+  text-decoration: underline;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $pe-color-link-hover;
+    text-decoration: none;
+  }
+}
+
 
 //===========btn=================================
 .pe-btn {
