@@ -191,6 +191,7 @@
   input[type="checkbox"] ~ label {
     display: inline-block;
     padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
+    line-height: 18px;
   }
 
 };
@@ -213,6 +214,7 @@
     &+label {
       display: inline-block;
       padding-left: $label-padding;
+      line-height: 18px;
     }
     ~ span {
       display       : block;
