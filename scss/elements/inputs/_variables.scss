@@ -87,7 +87,7 @@ $textInput-readonly-label-color     : $pe-color-medium-gray;
 $textInput-readonly-label-font-size : 12px;
 
 
-//*************checkboxes**************
+//=============checkboxes=============
 
 $checkbox-checkmark                : '#pe-icon--check-sm-18';
 $checkbox-checkmark-color-active   : $pe-color-medium-gray;
@@ -101,7 +101,25 @@ $checkbox-box-border         : 1px solid $pe-color-concrete;
 $checkbox-box-border-focus   : 1px solid $pe-color-digital-pearson-blue;
 $checkbox-box-disabled-color : $pe-color-moonlight;
 
-//-------------passwordInput-----------
+//=============radio buttons=============
+
+$radio-dot                : '#pe-icon--new-notifications-9';
+$radio-dot-color          : $pe-color-medium-gray;
+$radio-dot-color-focused  : $pe-color-digital-pearson-blue;
+$radio-dot-color-disabled : $pe-color-concrete;
+$label-padding            : 28px;
+
+$radio-dot-height            : 8px;
+$radio-dot-width             : 8px;
+$radio-border-padding        : 3px 6px 6px 3px;
+$radio-border-height         : 5px;
+$radio-border-width          : 5px;
+$radio-borderRadius          : 50%;
+$radio-border                : 1px solid $pe-color-concrete;
+$radio-border-focus          : 1px solid $pe-color-digital-pearson-blue;
+$radio-disabled-color        : $pe-color-moonlight;
+
+//=============passwordInput==========
 
 $pe-btn-link-bg     : none !default;
 $pe-btn-link-border : 0 !default;
