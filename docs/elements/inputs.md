@@ -87,7 +87,7 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="w">Send message to</label>
-<span class="pe-select-container">
+<div class="pe-select-container">
   <select class="pe-selectInput--basic" id="w">
     <option>Which option will you choose?</option>
     <option>One</option>
@@ -103,7 +103,7 @@ An input is a field used to elicit a response from a user
     class="pe-icon--dropdown-open-18">
   <use xlink:href="#dropdown-open-18"></use>
   </svg>
-</span>
+</div>
 {{/demo}}
 
 ## Multiple Line text

@@ -123,6 +123,7 @@
 @mixin textInputDisabled() {
   .pe-textInput:disabled {
     color               : $textInput-disable-text-color;
+    font-size           : $textInput-label-font-size;
     background-color    : $textInput-disable-background-color;
     border-bottom       : $textInput-disable-border-bottom;
     border-bottom-style : $textInput-disable-border-bottom-style;
@@ -134,14 +135,14 @@
 @mixin textInputLabelDisabled() {
   .pe-textLabelInput__label--label-disabled {
     color       : $textInput-disable-text-color;
-    font-size   : $textInput-disable-text-font-size;
+    font-size   : $textInput-label-font-size;
     line-height : $textInput-label-line-height;
   }
 };
 
 
 @mixin clearIEPasswordIcon() {
-  //for IE password Input Icon...
+  //for IE password Input Icon
   ::-ms-reveal {
       display: none;
   };
