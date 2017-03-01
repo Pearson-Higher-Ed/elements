@@ -95,7 +95,7 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="w">Send message to</label>
-<span class="pe-select-container">
+<div class="pe-select-container">
   <select class="pe-selectInput--basic" id="w">
     <option value="GBPTF">Grizzly Bear Prevention Task Force</option>
     <option value="1234B">Boaty McBoatface</option>
@@ -107,7 +107,7 @@ Select dropdowns are generally meant for times when a user needs to make a singl
     class="pe-icon--dropdown-open-18">
   <use xlink:href="#dropdown-open-18"></use>
   </svg>
-</span>
+</div>
 {{/demo}}
 
 ## Multiple Line text
