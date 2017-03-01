@@ -1,3 +1,9 @@
+<a name="1.5.4"></a>
+## [1.5.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.3...v1.5.4) (2017-03-01)
+
+
+
+
 <a name="1.5.3"></a>
 ## [1.5.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.2...v1.5.3) (2017-02-23)
 
@@ -13,6 +19,10 @@
 <a name="1.5.1"></a>
 ## [1.5.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.0...v1.5.1) (2017-02-22)
 
+
+### Bug Fixes
+
+* Fixed IE's handling of SVG sizing ([988d1bf](https://github.com/Pearson-Higher-Ed/elements/commit/988d1bf))
 
 
 
