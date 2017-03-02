@@ -1,6 +1,27 @@
-<a name="1.5.5"></a>
-## [1.5.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.3...v1.5.5) (2017-03-01)
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.0) (2017-03-02)
 
+
+
+
+<a name="1.5.5"></a>
+## [1.5.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.4...v1.5.5) (2017-03-01)
+
+
+
+
+<a name="1.5.4"></a>
+## [1.5.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.3...v1.5.4) (2017-03-01)
+
+
+### Bug Fixes
+
+* added line-height to checks and radios; gave z-index to docs header ([f0ea38c](https://github.com/Pearson-Higher-Ed/elements/commit/f0ea38c))
+* remove duplicate error padding large button ([50a49a8](https://github.com/Pearson-Higher-Ed/elements/commit/50a49a8))
+
+### Features
+
+* radio buttons ([e845bc6](https://github.com/Pearson-Higher-Ed/elements/commit/e845bc6))
 
 
 
@@ -35,8 +56,13 @@
 * change variables to use typeography font weight ([1337b2a](https://github.com/Pearson-Higher-Ed/elements/commit/1337b2a))
 * FF and IE change ([b6c90ca](https://github.com/Pearson-Higher-Ed/elements/commit/b6c90ca))
 * line height per red lines ([a41bd9f](https://github.com/Pearson-Higher-Ed/elements/commit/a41bd9f))
+* remove duplicate error padding large button ([2e0a6a7](https://github.com/Pearson-Higher-Ed/elements/commit/2e0a6a7))
 * remove redundant cta class ([c73b4f0](https://github.com/Pearson-Higher-Ed/elements/commit/c73b4f0))
 * take class selectors out of buttons ([b5eda1a](https://github.com/Pearson-Higher-Ed/elements/commit/b5eda1a))
+
+### Features
+
+* radio buttons ([ca9dd54](https://github.com/Pearson-Higher-Ed/elements/commit/ca9dd54))
 
 
 
