@@ -192,8 +192,63 @@
   input[type="checkbox"] ~ label {
     display: inline-block;
     padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
+    line-height: 18px;
   }
 
+};
+
+@mixin radio() {
+
+  .pe-radio {
+    position : relative;
+    min-height: 16px;
+    margin-bottom: 14px;
+  }
+  .pe-radio:last-child {
+    margin-bottom: 0;
+  }
+
+  input[type="radio"] {
+    opacity  : 0;
+    position : absolute;
+
+    &+label {
+      display: inline-block;
+      padding-left: $label-padding;
+      line-height: 18px;
+    }
+    ~ span {
+      display       : block;
+      box-sizing    : content-box;// for IE
+      position      : absolute;
+      left          : 0;
+      top           : 0;
+      height        : $radio-border-height;
+      width         : $radio-border-width;
+      padding       : $radio-border-padding;
+      color         : $radio-dot-color; 
+      border        : $radio-border;
+      border-radius : $radio-borderRadius;
+      pointer-events: none;
+    }
+    &:focus ~ span {
+      color         : $radio-dot-color;
+      border        : $radio-border-focus;
+      border-radius : $radio-borderRadius;
+    }
+    &:disabled ~ span {
+      color            : $radio-dot-color-disabled;
+      background-color : $radio-disabled-color;
+    }
+    ~ span svg {
+      opacity : 0;
+      height  : $radio-dot-height;
+      width   : $radio-dot-width;
+    }
+    &:checked ~ span svg {
+      opacity : 1;
+    }
+  }
 };
 
 
@@ -210,7 +265,8 @@
     padding          : 2px; //temp until inputs beta4
     border           : $pe-btn-link-border;
     color            : $pe-btn-link-text;
-    background       : $pe-btn-link-bg;
+   // background       : $pe-btn-link-bg;
+    background       : #fff; //temp for Bob (browser capslock icon cover)
  
 
     //temporary until inputs beta4

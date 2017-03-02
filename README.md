@@ -22,7 +22,7 @@ To comment out any SCSS file so it's not added to your rendered elements.css, op
     //@import 'base/html-tags';
 
     // typography
-    @import 'elements/typography/type';
+    @import 'elements/typography/font-face';
 ```
 
 The above would prevent the `_html-tags.scss` styles from being transpiled into the `elements.css` file.
@@ -39,7 +39,7 @@ Some caching headers will prevent Internet Explorer from showing font files afte
 
 #### Icons
 
-This version of Elements uses an SVG sprite for icons. The sprite file is found in `/dist/icons/` in Elements, and should be copied to the appropriate place, as mentioned above, in your web server. In additional, to support Internet Explorer and some versions of Android where the default-Chrome browser is actually webkit, that SVG sprite must be present on your application's page. See <a href="https://pearson-elements-v1.surge.sh/elements/icons/">the icons page</a> under "Two methods of including icons" for examples of getting this sprite on your application page. Additionally, there are instructions on that page for how to add new icons.
+This version of Elements uses an SVG sprite for icons (the Pearson logos are two separate SVGs, not part of the sprite). The sprite file is found in `/dist/icons/` in Elements, and should be copied to the appropriate place, as mentioned above, in your web server. In additional, to support Internet Explorer and some versions of Android where the default-Chrome browser is actually webkit, that SVG sprite must be present on your application's page. See <a href="http://pearson-higher-ed.github.io/elements/elements/icons/">the icons page</a> under "Two methods of including icons" for examples of getting this sprite on your application page. Additionally, there are instructions on that page for how to add new icons.
 
 ## Contributions
 
@@ -55,7 +55,7 @@ Clone the project and install the dependencies:
 
 ### Adding Icons
 
-See <a href="https://pearson-elements-v1.surge.sh/elements/icons/">the icons documentation</a> under "Adding new icons" for the process of adding a new icon.
+See <a href="http://pearson-higher-ed.github.io/elements/elements/icons/">the icons documentation</a> under "Adding new icons" for the process of adding a new icon.
 
 ### Build the Documentation
 
@@ -102,14 +102,14 @@ List of Elements with their current respective design version:
 | Element | Current Design Version |
 |---------|------------------------|
 | Typography | v2.0.0-beta.8 |
-| Colors | v2.0.0-beta.4 |
-| Icons | v2.0.0-beta.2 |
+| Colors | v2.0.0-beta.6 |
+| Icons | v2.0.0-beta.4 |
 | Buttons | v2.0.0-beta.4 |
 | Inputs | v2.0.0-beta.3 |
 | Grid | v1.0.0 |
 | Presentation Strategies | v1.0.0 |
 | Templates | v2.0.0-beta.1 |
-| Responsive Utilities | v1.0.0 |
+| Responsive Utilities (Breakpoints) | v1.0.0 |
 | Forms | v1.0.0-beta.3 |
 
 
@@ -120,9 +120,9 @@ List of Elements with their current respective design version:
 
 This project was inspired by other popular front-end frameworks published under the MIT license:
 
-- [Bootstrap](https://getbootstrap.com) copyright 2011-2016 Twitter, Inc.
-- [Foundation](http://foundation.zurb.com/) copyright 2016 ZURB, inc.
+- [Bootstrap](https://getbootstrap.com) copyright 2011-2017 Twitter, Inc.
+- [Foundation](http://foundation.zurb.com/) copyright 2017 ZURB, inc.
 
 ## License
 
-Copyright 2016 Pearson Education. This software is published under the [MIT](LICENSE) license.
+Copyright 2017 Pearson Education. This software is published under the [MIT](LICENSE) license.
