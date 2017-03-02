@@ -1,5 +1,5 @@
-<a name="1.6.0"></a>
-# [1.6.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.0) (2017-03-02)
+<a name="1.6.1"></a>
+## [1.6.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.1) (2017-03-02)
 
 
 
