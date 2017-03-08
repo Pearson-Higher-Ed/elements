@@ -1,5 +1,25 @@
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.6.1...v1.7.1) (2017-03-08)
+
+
+### Bug Fixes
+
+* add line height ([8183013](https://github.com/Pearson-Higher-Ed/elements/commit/8183013))
+
+### Features
+
+* add error message for inputs ([5f78aa6](https://github.com/Pearson-Higher-Ed/elements/commit/5f78aa6))
+
+
+
 <a name="1.6.1"></a>
-## [1.6.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.1) (2017-03-02)
+## [1.6.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.6.0...v1.6.1) (2017-03-02)
+
+
+
+
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.0) (2017-03-02)
 
 
 
