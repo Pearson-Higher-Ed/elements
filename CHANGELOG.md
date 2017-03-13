@@ -1,3 +1,13 @@
+<a name="1.7.3"></a>
+## [1.7.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.2...v1.7.3) (2017-03-13)
+
+
+### Bug Fixes
+
+* pt -> px ([7fbbd79](https://github.com/Pearson-Higher-Ed/elements/commit/7fbbd79))
+
+
+
 <a name="1.7.2"></a>
 ## [1.7.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.1...v1.7.2) (2017-03-13)
 
