@@ -1,3 +1,13 @@
+<a name="1.7.2"></a>
+## [1.7.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.1...v1.7.2) (2017-03-13)
+
+
+### Bug Fixes
+
+* line-height on fake buttons ([220c020](https://github.com/Pearson-Higher-Ed/elements/commit/220c020))
+
+
+
 <a name="1.7.1"></a>
 ## [1.7.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.6.1...v1.7.1) (2017-03-08)
 
