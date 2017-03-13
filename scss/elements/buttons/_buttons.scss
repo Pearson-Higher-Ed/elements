@@ -18,14 +18,14 @@
 %btn_small {
   height      : $pe-btn-small-height;
   font-size   : $pe-btn-small-font-size;
-  line-height : $pe-btn-small-line-height;
+  line-height : $pe-btn-small-height;
   padding     : $pe-btn-small-padding;
 }
 
 %btn_large {
   height      : $pe-btn-large-height;
   font-size   : $pe-btn-large-font-size;
-  line-height : $pe-btn-large-line-height;
+  line-height : $pe-btn-large-height;
   padding     : $pe-btn-large-padding;
 }
 
@@ -34,7 +34,7 @@
 %btn_xlarge{
   height      : $pe-btn-xlarge-height;
   font-size   : $pe-btn-xlarge-font-size;
-  line-height : $pe-btn-xlarge-line-height;
+  line-height : $pe-btn-xlarge-height;
   padding     : $pe-btn-xlarge-padding;
 }
 

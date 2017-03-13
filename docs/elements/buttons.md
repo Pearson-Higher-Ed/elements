@@ -4,7 +4,7 @@ title: Buttons
 section: elements
 ---
 
-Use a button to represent a user action&#8212; specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere. These button styles are generally intended for content buttons rather than UI buttons. See below for UI buttons.
+Use a button to represent a user action&#8212; specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere. These button styles are generally intended for content buttons rather than UI buttons. See below for <a href="#uibuttons">UI buttons</a>.
 
 {{#demo}}
 <button class="pe-btn">Default</button>
@@ -18,7 +18,8 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 
 {{#demo}}
 <div class="pe-btn" tabindex="0" role="button">Div</div>
-<a href="#" class="pe-btn" role="button">Link</a>
+<a href="#void" class="pe-btn" role="button">Link</a>
+<a href="#void" class="pe-btn__primary--btn_large" role="button">Large Primary Link</a>
 <button type="button" class="pe-btn">Button</button>
 <input class="pe-btn" type="submit" value="Submit"> 
 <button type="button" class="pe-link">Button</button>
@@ -54,6 +55,7 @@ Buttons can be made smaller or larger.
 {{#demo}}
 <button class="pe-btn--btn_small">Small</button>
 <button class="pe-btn--btn_large">Large</button>
+<button class="pe-btn--btn_large pe-btn__cta">CTA Large</button>
 <button class="pe-btn--btn_xlarge">xLarge</button>
 <button class="pe-btn__primary--btn_xlarge">Primary xLarge</button>
 {{/demo}}
@@ -66,7 +68,7 @@ When the width of the button's text exceeds the container width, it will be trun
 <button class="pe-btn" style="max-width: 200px">The quick brown fox jumps over the lazy dog.</button>
 {{/demo}}
 
-## UI Buttons
+<h2 id="uibuttons">UI Buttons</h2>
 
 <script>if (!document.getElementById('pe-icons-sprite')) {
   var pe_ajax = new XMLHttpRequest();
