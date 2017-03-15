@@ -346,7 +346,7 @@ When nested, `pe-styled-lists--ordered` should be added to each `<ol>` element.
 Basic body. As you read, quiz yourself to review concepts and prep for exams, without leaving the page. What could be easier?
 </p>
 <ol class="pe-list pe-styled-lists--ordered">
-  <li>List item one. How are you doing today? Quite fine, thank you.</li>
+  <li>List item one. How are you doing today? Quite fine, thank you. This is a long, paragraph-style list-item to show the line-height of the copy in the list-item.</li>
   <li>Item two.</li>
   <li>Item three.
     <ol>
