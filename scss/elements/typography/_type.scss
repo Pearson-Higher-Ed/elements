@@ -136,6 +136,7 @@ html {
 	padding-left: pxToRem($pe-padding-left-list-primary);
 
 	li {
+                @include font-size($pe-font-size-base, $pe-line-height-copy, 12px);
 		margin-bottom: pxToRem($pe-space-between-list-items);
 		> ol,
 		> ul {
