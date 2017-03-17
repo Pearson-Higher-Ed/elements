@@ -1,3 +1,14 @@
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.3...v1.7.4) (2017-03-17)
+
+
+### Bug Fixes
+
+* link error message with aria-describedby; change error message to natural block  ([42b3e33](https://github.com/Pearson-Higher-Ed/elements/commit/42b3e33))
+* make list-items reflect the same line-height as body copy ([ea265d9](https://github.com/Pearson-Higher-Ed/elements/commit/ea265d9))
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.2...v1.7.3) (2017-03-13)
 
