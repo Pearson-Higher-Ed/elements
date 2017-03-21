@@ -1,4 +1,3 @@
-// @import './variables';
 @function get-breakpoint-value($breakpoint){
   $current-breakpoint-value-get : pe-responsive-get-breakpoint-value($breakpoint, min);
 
