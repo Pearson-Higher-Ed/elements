@@ -1,5 +1,62 @@
+<a name="1.7.5"></a>
+## [1.7.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.4...v1.7.5) (2017-03-17)
+
+
+
+
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.3...v1.7.4) (2017-03-17)
+
+
+### Bug Fixes
+
+* link error message with aria-describedby; change error message to natural block  ([42b3e33](https://github.com/Pearson-Higher-Ed/elements/commit/42b3e33))
+* make list-items reflect the same line-height as body copy ([ea265d9](https://github.com/Pearson-Higher-Ed/elements/commit/ea265d9))
+
+
+
+<a name="1.7.3"></a>
+## [1.7.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.2...v1.7.3) (2017-03-13)
+
+
+### Bug Fixes
+
+* pt -> px ([7fbbd79](https://github.com/Pearson-Higher-Ed/elements/commit/7fbbd79))
+
+
+
+<a name="1.7.2"></a>
+## [1.7.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.1...v1.7.2) (2017-03-13)
+
+
+### Bug Fixes
+
+* line-height on fake buttons ([220c020](https://github.com/Pearson-Higher-Ed/elements/commit/220c020))
+
+
+
+<a name="1.7.1"></a>
+## [1.7.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.6.1...v1.7.1) (2017-03-08)
+
+
+### Bug Fixes
+
+* add line height ([8183013](https://github.com/Pearson-Higher-Ed/elements/commit/8183013))
+
+### Features
+
+* add error message for inputs ([5f78aa6](https://github.com/Pearson-Higher-Ed/elements/commit/5f78aa6))
+
+
+
 <a name="1.6.1"></a>
-## [1.6.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.1) (2017-03-02)
+## [1.6.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.6.0...v1.6.1) (2017-03-02)
+
+
+
+
+<a name="1.6.0"></a>
+# [1.6.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.5.5...v1.6.0) (2017-03-02)
 
 
 

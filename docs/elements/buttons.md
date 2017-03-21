@@ -4,7 +4,7 @@ title: Buttons
 section: elements
 ---
 
-Use a button to represent a user action&#8212; specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere. These button styles are generally intended for content buttons rather than UI buttons. See below for UI buttons.
+Use a button to represent a user action&#8212; specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere. These button styles are generally intended for content buttons rather than UI buttons. See below for <a href="#uibuttons">UI buttons</a>.
 
 {{#demo}}
 <button class="pe-btn">Default</button>
@@ -18,7 +18,8 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 
 {{#demo}}
 <div class="pe-btn" tabindex="0" role="button">Div</div>
-<a href="#" class="pe-btn" role="button">Link</a>
+<a href="#void" class="pe-btn" role="button">Link</a>
+<a href="#void" class="pe-btn__primary--btn_large" role="button">Large Primary Link</a>
 <button type="button" class="pe-btn">Button</button>
 <input class="pe-btn" type="submit" value="Submit"> 
 <button type="button" class="pe-link">Button</button>
@@ -26,7 +27,7 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 
 <aside>
   <h3 class="pe-title">Accessibility: Using non-button elements</h3>
-  <p>Where possible, prefer native HTML buttons (<code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt; etc</code>) over other elements styled as buttons, so that the User Agent and the OS do most of the work for you.</p>
+  <p>Where possible, prefer native HTML buttons (<code>&lt;button&gt;</code>, <code>&lt;input type="button"&gt;</code> etc) over other elements styled as buttons, so that the User Agent and the OS do most of the work for you.</p>
   <p>If using an element other than a native HTML button, add the <a href="http://www.w3.org/TR/wai-aria/roles#button"><code>role="button"</code></a> attribute, and script in both click and keyup/down listeners (detect both spacebar and enter keys) to recreate button behavior. Also since buttons and inputs (but not divs, spans, or anchors) have a native disabled attribute, add <a href="http://www.w3.org/TR/wai-aria/states_and_properties#aria-disabled"><code>aria-disabled</code></a> to elements you want to disable, as well as manually changing the <code>tabindex</code> value to <code>"-1"</code> (or removing it in the case of non-natively focusables like div and span) to prevent average keyboarders from being able to tab to it (disabled elements cannot be in the tab order).</p>
 
   <p>Another thing to be aware of that developers sometimes miss, is that because a focusable, interactive element is <strong>not</strong> allowed inside a button (ie, <span style="color:#b00;">&lt;button&gt; I'm button text &lt;a href="somewhere"&gt;with a link&lt;/a&gt;&lt;/button&gt;</span>), the same rule holds for divs or other elements turned into buttons with <code>tabindex</code> and <code>role=button</code>, even though an HTML validator currently won't flag this. This also holds true for polyfilled <code>details/summary</code> elements!</p> 
@@ -54,6 +55,7 @@ Buttons can be made smaller or larger.
 {{#demo}}
 <button class="pe-btn--btn_small">Small</button>
 <button class="pe-btn--btn_large">Large</button>
+<button class="pe-btn--btn_large pe-btn__cta">CTA Large</button>
 <button class="pe-btn--btn_xlarge">xLarge</button>
 <button class="pe-btn__primary--btn_xlarge">Primary xLarge</button>
 {{/demo}}
@@ -66,7 +68,7 @@ When the width of the button's text exceeds the container width, it will be trun
 <button class="pe-btn" style="max-width: 200px">The quick brown fox jumps over the lazy dog.</button>
 {{/demo}}
 
-## UI Buttons
+<h2 id="uibuttons">UI Buttons</h2>
 
 <script>if (!document.getElementById('pe-icons-sprite')) {
   var pe_ajax = new XMLHttpRequest();

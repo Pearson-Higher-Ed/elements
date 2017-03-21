@@ -26,29 +26,30 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label_error" for="b">First Name</label>
- <input type="text" class="pe-textInput--input_error" id="b" placeholder="First Name"/>
+ <input type="text" class="pe-textInput--input_error" id="b" placeholder="First Name" aria-describedby="someError">
  <span class="pe-inputError_underline"></span>
+ <p id="someError" class="pe-input--error_message">this is an error message</p>
 {{/demo}}
 
 ## Inputs - Fancy (single line - disabled)
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label-disabled" for="c">First Name</label>
- <input type="text" class="pe-textInput" id="c" value="Donald" disabled/>
+ <input type="text" class="pe-textInput" id="c" value="Donald" disabled>
 {{/demo}}
 
 ## Inputs (single line - read only)
 
 {{#demo}}
  <label class="pe-textLabelInput__label" for="d">First Name</label>
- <input type="text" class="pe-textInput--input_readonly" id="d" value="Donald" readonly/>
+ <input type="text" class="pe-textInput--input_readonly" id="d" value="Donald" readonly>
 {{/demo}}
 
 ## Inputs (password)
 
 {{#demo}}
   <label class="pe-textLabelInput__label" for="e">Password</label>
-  <input type="password" class="pe-textInput" id="e" placeholder="Password" />
+  <input type="password" class="pe-textInput" id="e" placeholder="Password">
   <span class="pe-input_underline"></span>
   <button id="showbutton" onclick="" class="pe-textInput__showButton">show</button>
 {{/demo}}
@@ -59,28 +60,28 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
   <label class="pe-textLabelInput__label" for="z">Label</label>
-  <input type="text" class="pe-textInput--basic" id="z" placeholder="Placeholder" />
+  <input type="text" class="pe-textInput--basic" id="z" placeholder="Placeholder">
 {{/demo}}
 
 ## Inputs - Basic (single line - focus)
 
 {{#demo}}
   <label class="pe-textLabelInput__label--label_focus" for="yz">Label</label>
-  <input type="text" class="pe-textInput--basic" id="yz" placeholder="Placeholder" />
+  <input type="text" class="pe-textInput--basic" id="yz" placeholder="Placeholder">
 {{/demo}}
 
 ## Inputs - Basic (single line - error)
 
 {{#demo}}
   <label class="pe-textLabelInput__label--label_error" for="y">Email address</label>
-  <input type="text" class="pe-textInput--basic_error" id="y" placeholder="Error" />
+  <input type="text" class="pe-textInput--basic_error" id="y" placeholder="Error">
 {{/demo}}
 
 ## Inputs - Basic (single line - disabled)
 
 {{#demo}}
   <label class="pe-textLabelInput__label--label-disabled" for="x">Label</label>
-  <input type="text" class="pe-textInput--basic" id="x" placeholder="Disabled" disabled />
+  <input type="text" class="pe-textInput--basic" id="x" placeholder="Disabled" disabled>
 {{/demo}}
 
 ## Select Inputs - Basic

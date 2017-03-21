@@ -49,7 +49,15 @@
   }
 };
 
-
+@mixin inputErrorMessage() {
+  .pe-input--error_message {
+    padding-top: 3px;
+    color: $pe-color-strawberry-red;
+    font-size: $textInput-label-font-size;
+    line-height: $textInput-label-line-height; 
+    margin-bottom: 0;
+  }
+}
 
 
 @mixin textInputError() {
@@ -226,7 +234,7 @@
       height        : $radio-border-height;
       width         : $radio-border-width;
       padding       : $radio-border-padding;
-      color         : $radio-dot-color; 
+      color         : $radio-dot-color;
       border        : $radio-border;
       border-radius : $radio-borderRadius;
       pointer-events: none;
@@ -267,7 +275,7 @@
     color            : $pe-btn-link-text;
    // background       : $pe-btn-link-bg;
     background       : #fff; //temp for Bob (browser capslock icon cover)
- 
+
 
     //temporary until inputs beta4
     &:focus {
