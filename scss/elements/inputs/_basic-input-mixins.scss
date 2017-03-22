@@ -5,7 +5,7 @@
   &:-ms-input-placeholder { @content }
 };
 
-.abstract {
+%abstract {
   padding: $textInput-basic-padding;
   height: $textInput-basic-height;
   font-size: $textInput-value-font-size;
@@ -20,7 +20,7 @@
 @mixin textInputBasic() {
 
   .pe-textInput--basic {
-    @extend .abstract;
+    @extend %abstract;
     border: $textInput-basic-border;
 
     @include pe-placeholder {
@@ -40,7 +40,7 @@
 @mixin textInputBasicError() {
 
   .pe-textInput--basic_error {
-    @extend .abstract;
+    @extend %abstract;
     border: $textInput-basic-error-border;
 
     @include pe-placeholder {
@@ -65,21 +65,21 @@
 
 };
 
-.container-extend {
+%container-extend {
   position: relative;
   display: $textInput-basic-display;
   min-width: $textInput-basic-select-minWidth;
   padding: 0;
 }
 
-.container-extend-svg {
+%container-extend-svg {
   position: absolute;
   bottom: $svg-bottom;
   right: $svg-right;
   pointer-events: none;
 }
 
-.container-extend-select {
+%container-extend-select {
   box-sizing: border-box;
   width: 100%;
   min-height: 34px;
@@ -88,7 +88,7 @@
   outline: none;
 }
 
-.selectInput--basic-extend {
+%selectInput--basic-extend {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -100,16 +100,16 @@
 @mixin textInputBasicSelect() {
 
   .pe-select-container {
-    @extend .abstract, .container-extend;
+    @extend %abstract, %container-extend;
     border: $textInput-basic-border;
   }
 
   .pe-select-container svg {
-    @extend .container-extend-svg;
+    @extend %container-extend-svg;
   }
 
   .pe-select-container select {
-    @extend .container-extend-select;
+    @extend %container-extend-select;
   }
 
   .pe-select-container select:focus {
@@ -119,7 +119,7 @@
   }
 
   .pe-selectInput--basic {
-    @extend .selectInput--basic-extend;
+    @extend %selectInput--basic-extend;
   }
 
   .pe-select-container select:focus::-ms-value {
@@ -141,16 +141,16 @@
 @mixin textInputBasicSelectError() {
 
   .pe-select-container-error {
-    @extend .abstract, .container-extend;
+    @extend %abstract, %container-extend;
     border: $textInput-basic-error-border;
   }
 
   .pe-select-container-error svg {
-    @extend .container-extend-svg;
+    @extend %container-extend-svg;
   }
 
   .pe-select-container-error select {
-    @extend .container-extend-select;
+    @extend %container-extend-select;
   }
 
   .pe-select-container-error select:focus {
@@ -160,7 +160,7 @@
   }
 
   .pe-selectInput--basic {
-    @extend .selectInput--basic-extend;
+    @extend %selectInput--basic-extend;
   }
 
   .pe-select-container-error select:focus::-ms-value {
