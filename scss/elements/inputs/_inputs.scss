@@ -28,6 +28,7 @@
 @include textInputBasicDisabled();
 
 @include textInputBasicSelect();
+@include textInputBasicSelectError();
 
 @include multiLineText();
 
