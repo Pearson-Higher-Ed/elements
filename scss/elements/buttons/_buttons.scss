@@ -70,6 +70,10 @@
   color: $pe-color-digital-pearson-blue;
   padding: 4px;
   @extend %pe-link-extend;
+
+  &:disabled {
+    color: $pe-color-medium-gray;
+  }
 }
 
 //===========btn=================================
