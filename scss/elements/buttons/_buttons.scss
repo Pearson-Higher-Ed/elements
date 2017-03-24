@@ -71,8 +71,14 @@
   padding: 4px;
   @extend %pe-link-extend;
 
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
   &:disabled {
     color: $pe-color-medium-gray;
+    text-decoration: none;
   }
 }
 
