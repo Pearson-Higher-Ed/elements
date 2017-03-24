@@ -47,7 +47,7 @@
 
 // for fake links
 
-.pe-link-extend {
+%pe-link-extend {
   text-decoration: underline;
   background-color: transparent;
   border: none;
@@ -57,7 +57,7 @@
 .pe-link {
   color: $pe-color-link;
   padding: 0;
-  @extend .pe-link-extend;
+  @extend %pe-link-extend;
 
   &:hover,
   &:focus {
@@ -69,7 +69,11 @@
 .pe-link--btn {
   color: $pe-color-digital-pearson-blue;
   padding: 4px;
-  @extend .pe-link-extend;
+  @extend %pe-link-extend;
+
+  &:disabled {
+    color: $pe-color-medium-gray;
+  }
 }
 
 //===========btn=================================

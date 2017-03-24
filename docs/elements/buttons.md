@@ -24,6 +24,7 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 <input class="pe-btn" type="submit" value="Submit">
 <button type="button" class="pe-link">Button</button>
 <button type="button" class="pe-link--btn">Link button 2.0</button>
+<button type="button" class="pe-link--btn" disabled>Disabled link button 2.0</button>
 {{/demo}}
 
 <aside>
