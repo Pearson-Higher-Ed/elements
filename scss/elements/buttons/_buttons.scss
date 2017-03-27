@@ -2,7 +2,6 @@
 @import 'mixins';
 
 
-
 %btn{
   border-radius  : $pe-btn-standard-border-radius;
   border         : none;
@@ -38,7 +37,6 @@
   padding     : $pe-btn-xlarge-padding;
 }
 
-
 // For icons in buttons, remove buttony styles
 
 .pe-icon--btn {
@@ -49,13 +47,17 @@
 
 // for fake links
 
+%pe-link-extend {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .pe-link {
   color: $pe-color-link;
-  text-decoration: underline;
   padding: 0;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
+  @extend %pe-link-extend;
 
   &:hover,
   &:focus {
@@ -64,6 +66,21 @@
   }
 }
 
+.pe-link--btn {
+  color: $pe-color-digital-pearson-blue;
+  padding: 4px;
+  @extend %pe-link-extend;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: $pe-color-medium-gray;
+    text-decoration: none;
+  }
+}
 
 //===========btn=================================
 .pe-btn {
@@ -187,7 +204,6 @@
     $pe-btn-primary-disabled-text
   );
 }
-
 
 //===========CTA=================================
 .pe-btn__cta {

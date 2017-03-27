@@ -111,6 +111,27 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 </div>
 {{/demo}}
 
+## Select Inputs - Basic (error)
+
+{{#demo}}
+<label class="pe-textLabelInput__label--label_error" for="ww">Error label</label>
+<div class="pe-select-container-error">
+  <select class="pe-selectInput--basic" id="ww">
+    <option value="uno">One</option>
+    <option value="dos">Two</option>
+    <option value="tres">Three</option>
+    <option value="quatro">Four</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+</div>
+<p id="someError" class="pe-input--error_message">error message</p>
+
+{{/demo}}
+
 ## Multiple Line text
 
 {{#demo}}

@@ -54,7 +54,7 @@
     padding-top: 3px;
     color: $pe-color-strawberry-red;
     font-size: $textInput-label-font-size;
-    line-height: $textInput-label-line-height; 
+    line-height: $textInput-label-line-height;
     margin-bottom: 0;
   }
 }
@@ -96,12 +96,14 @@
     font-size   : $textInput-label-font-size;
     color       : $textInput-label-color;
     line-height : $textInput-label-line-height;
+    display     : $textInput-basic-display;
   }
 
   .pe-textLabelInput__label--label_focus {
     font-size   : $textInput-label-font-size;
     color       : $textInput-focus-label-color;
     line-height : $textInput-label-line-height;
+    display     : $textInput-basic-display;
   }
 
 };
@@ -110,9 +112,10 @@
 
 @mixin textInputLabelError() {
   .pe-textLabelInput__label--label_error {
-    color     : $textInput-error-focus-label-color;
-    font-size : $textInput-error-focus-label-font-size;
+    color       : $textInput-error-focus-label-color;
+    font-size   : $textInput-error-focus-label-font-size;
     line-height : $textInput-label-line-height;
+    display     : $textInput-basic-display;
   }
 };
 
@@ -131,7 +134,7 @@
 @mixin textInputDisabled() {
   .pe-textInput:disabled {
     color               : $textInput-disable-text-color;
-    font-size           : $textInput-label-font-size;
+    font-size           : $textInput-value-font-size;
     background-color    : $textInput-disable-background-color;
     border-bottom       : $textInput-disable-border-bottom;
     border-bottom-style : $textInput-disable-border-bottom-style;
