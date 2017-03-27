@@ -38,6 +38,7 @@
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
     width: $textInput-width;
+    margin-top: $textInput-focus-marginTop;
   }
 
 
@@ -74,6 +75,7 @@
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
     width: $textInput-width;
+    margin-top: $textInput-focus-marginTop;
   }
 
   .pe-textInput--input_error {
