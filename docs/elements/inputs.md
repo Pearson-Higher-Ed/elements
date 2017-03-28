@@ -28,7 +28,9 @@ An input is a field used to elicit a response from a user
  <label class="pe-textLabelInput__label--label_error" for="b">First Name</label>
  <input type="text" class="pe-textInput--input_error" id="b" placeholder="First Name" aria-describedby="someError">
  <span class="pe-inputError_underline"></span>
- <p id="someError" class="pe-input--error_message">this is an error message</p>
+ <span id="someError" class="pe-input--info_message">this is an info message</span>
+ <br />
+ <span id="someError" class="pe-input--error_message">this is an error message</span>
 {{/demo}}
 
 ## Inputs - Fancy (single line - disabled)

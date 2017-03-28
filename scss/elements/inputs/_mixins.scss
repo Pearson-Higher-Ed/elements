@@ -49,10 +49,17 @@
   }
 };
 
-@mixin inputErrorMessage() {
+@mixin inputMessages() {
   .pe-input--error_message {
     padding-top: 3px;
     color: $pe-color-strawberry-red;
+    font-size: $textInput-label-font-size;
+    line-height: $textInput-label-line-height;
+    margin-bottom: 0;
+  }
+  .pe-input--info_message {
+    padding-top: 3px;
+    color: $textInput-label-color;
     font-size: $textInput-label-font-size;
     line-height: $textInput-label-line-height;
     margin-bottom: 0;
@@ -173,7 +180,6 @@
       left          : 0;
       top           : 0;
       position      : absolute;
-      z-index       : -1;
       height        : $checkbox-box-height;
       width         : $checkbox-box-width;
       border        : $checkbox-box-border;
