@@ -38,6 +38,7 @@
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
     width: $textInput-width;
+    margin-top: $textInput-focus-marginTop;
   }
 
 
@@ -51,6 +52,7 @@
 
 @mixin inputMessages() {
   .pe-input--error_message {
+    display:block;
     padding-top: 3px;
     color: $pe-color-strawberry-red;
     font-size: $textInput-label-font-size;
@@ -58,6 +60,7 @@
     margin-bottom: 0;
   }
   .pe-input--info_message {
+    display:block;
     padding-top: 3px;
     color: $textInput-label-color;
     font-size: $textInput-label-font-size;
@@ -81,6 +84,7 @@
     -webkit-transition: $textInput-animation;
     transition: $textInput-animation;
     width: $textInput-width;
+    margin-top: $textInput-focus-marginTop;
   }
 
   .pe-textInput--input_error {
@@ -274,7 +278,6 @@
   .pe-textInput__showButton {
     position         : relative;
     margin-top       : $pe-passwordInput-margin-top;
-    width            : $pe-passwordInput-width ;
     background-color : $pe-btn-link-bg;
     text-decoration  : $pe-passwordInput-text-decoration;
     //outline          : $pe-passwordInput-outline;
@@ -291,5 +294,88 @@
       text-decoration: underline;
     }
   }
+
+  .pe-textInput__showButton-basic {
+    margin-right:14px;
+    position         : relative;
+    margin-top       : $pe-passwordInput-basic-margin-top;
+    background-color : $pe-btn-link-bg;
+    text-decoration  : $pe-passwordInput-text-decoration;
+    //outline          : $pe-passwordInput-outline;
+    float            : $pe-passwordInput-float;
+    padding          : 2px; //temp until inputs beta4
+    border           : $pe-btn-link-border;
+    color            : $pe-btn-link-text;
+   // background       : $pe-btn-link-bg;
+    background       : #fff; //temp for Bob (browser capslock icon cover)
+
+
+    //temporary until inputs beta4
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+};
+
+@mixin fieldSet() {
+  .pe-fieldset{
+    border:none;
+  }
+
+  .pe-legend {
+    opacity: 0;
+  }
+};
+
+@mixin textInputFancySelect() {
+
+  .pe-selectInput--fancy {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: $pe-color-white;
+    border: 1px solid transparent;
+    padding-top: 8px;
+  }
+
+  .pe-select-container--fancy {
+    @extend %abstract, %container-extend;
+    border: $textInput-basic-border;
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .pe-select-container--fancy svg {
+    @extend %container-extend-svg;
+  }
+
+  .pe-select-container--fancy select {
+    @extend %container-extend-select;
+  }
+
+  .pe-select-container--fancy select:focus {
+    outline: none;
+    border: $textInput-basic-focus-border;
+    box-shadow: $textInput-basic-focus-boxShadow;
+  }
+
+  .pe-select-container--fancy select:focus::-ms-value {
+    background: transparent;
+    color: #222;
+  }
+
+  .pe-selectInput--fancy:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  .pe-select-container--fancy select::-ms-expand {
+    opacity: 0;
+  }
+
+};
+
+@mixin textInputFancySelectError() {
 
 };

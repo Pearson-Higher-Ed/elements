@@ -29,7 +29,6 @@ An input is a field used to elicit a response from a user
  <input type="text" class="pe-textInput--input_error" id="b" placeholder="First Name" aria-describedby="someError">
  <span class="pe-inputError_underline"></span>
  <span id="someError" class="pe-input--info_message">this is an info message</span>
- <br />
  <span id="someError" class="pe-input--error_message">this is an error message</span>
 {{/demo}}
 
@@ -134,12 +133,161 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 
 {{/demo}}
 
+## Select Inputs - Basic (disabled)
+
+{{#demo}}
+<label class="pe-textLabelInput__label--label-disabled" for="ww">Error label</label>
+<div class="pe-select-container">
+  <select class="pe-selectInput--basic" id="ww" disabled>
+    <option value="uno">One</option>
+    <option value="dos">Two</option>
+    <option value="tres">Three</option>
+    <option value="quatro">Four</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+</div>
+<p id="someError" class="pe-input--error_message">error message</p>
+
+{{/demo}}
+
+## Select Inputs - Basic (readOnly)
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="ww">Error label</label>
+<div class="pe-select-container">
+  <select class="pe-selectInput--basic" id="ww">
+    <option value="uno">One</option>
+    <option value="dos">Two</option>
+    <option value="tres">Three</option>
+    <option value="quatro">Four</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+</div>
+<p id="someError" class="pe-input--error_message">error message</p>
+
+{{/demo}}
+
+## Select Inputs - Fancy
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="w">Send message to</label>
+<div class="pe-select-container">
+  <select class="pe-selectInput--basic" id="w">
+    <option value="GBPTF">Grizzly Bear Prevention Task Force</option>
+    <option value="1234B">Boaty McBoatface</option>
+    <option value="GDL">GDL</option>
+    <option value="LED">LED</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+   <span class="pe-input_underline"></span>
+</div>
+{{/demo}}
+
+## Select Inputs - Fancy error
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="w">Send message to</label>
+<div class="pe-select-container">
+  <select class="pe-selectInput--basic" id="w">
+    <option value="GBPTF">Grizzly Bear Prevention Task Force</option>
+    <option value="1234B">Boaty McBoatface</option>
+    <option value="GDL">GDL</option>
+    <option value="LED">LED</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+  <span class="pe-inputError_underline"></span>
+</div>
+{{/demo}}
+
+## Select Inputs - Fancy disabled
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="w">Send message to</label>
+<div class="pe-select-container">
+  <select class="pe-selectInput--basic" id="w">
+    <option value="GBPTF">Grizzly Bear Prevention Task Force</option>
+    <option value="1234B">Boaty McBoatface</option>
+    <option value="GDL">GDL</option>
+    <option value="LED">LED</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+  <span class="pe-inputDisabled_underline"></span>
+</div>
+{{/demo}}
+
+
+## Select Inputs - Fancy readOnly
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="w">Send message to</label>
+<div class="pe-select-container">
+  <select class="pe-selectInput--basic" id="w">
+    <option value="GBPTF">Grizzly Bear Prevention Task Force</option>
+    <option value="1234B">Boaty McBoatface</option>
+    <option value="GDL">GDL</option>
+    <option value="LED">LED</option>
+  </select>
+  <svg aria-hidden="true"
+    focusable="false"
+    class="pe-icon--dropdown-open-18">
+  <use xlink:href="#dropdown-open-18"></use>
+  </svg>
+</div>
+{{/demo}}
+
 ## Multiple Line text
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="zz">Multi-line label</label>
 <textarea class="pe-multiLineText" id="zz" cols="30" rows="5"
   placeholder="Many words displayed over multiple lines.">
+</textarea>
+{{/demo}}
+
+## Multiple Line text - error
+
+{{#demo}}
+<label class="pe-textLabelInput__label--label_error" for="zz">Multi-line label</label>
+<textarea class="pe-multiLineText--error" id="zz" cols="30" rows="5"
+  placeholder="Many words displayed over multiple lines.">
+</textarea>
+{{/demo}}
+
+## Multiple Line text - disabled
+
+{{#demo}}
+<label class="pe-textLabelInput__label--label-disabled" for="zz">Multi-line label</label>
+<textarea class="pe-multiLineText--disabled" id="zz" cols="30" rows="5"
+  placeholder="Many words displayed over multiple lines." disabled>
+</textarea>
+{{/demo}}
+
+## Multiple Line text - readOnly
+
+{{#demo}}
+<label class="pe-textLabelInput__label" for="zz">Multi-line label</label>
+<textarea class="pe-multiLineText--readOnly" id="zz" cols="30" rows="5"
+  placeholder="Many words displayed over multiple lines." disabled>
 </textarea>
 {{/demo}}
 

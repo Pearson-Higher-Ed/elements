@@ -1,29 +1,13 @@
-<a name="1.8.0"></a>
-# [1.8.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.6...v1.8.0) (2017-03-24)
-
-
-
-
-<a name="1.7.6"></a>
-## [1.7.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.5...v1.7.6) (2017-03-22)
-
-
-
-
-<a name="1.7.5"></a>
-## [1.7.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.4...v1.7.5) (2017-03-17)
-
-
-
-
-<a name="1.7.4"></a>
-## [1.7.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.3...v1.7.4) (2017-03-17)
+<a name="1.8.1"></a>
+## [1.8.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.3...v1.8.1) (2017-03-27)
 
 
 ### Bug Fixes
 
 * link error message with aria-describedby; change error message to natural block  ([42b3e33](https://github.com/Pearson-Higher-Ed/elements/commit/42b3e33))
 * make list-items reflect the same line-height as body copy ([ea265d9](https://github.com/Pearson-Higher-Ed/elements/commit/ea265d9))
+* reduce redundant imports. ([37b78f5](https://github.com/Pearson-Higher-Ed/elements/commit/37b78f5))
+* remove commented import commands. ([638a66a](https://github.com/Pearson-Higher-Ed/elements/commit/638a66a))
 
 
 

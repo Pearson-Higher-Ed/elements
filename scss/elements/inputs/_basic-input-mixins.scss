@@ -15,6 +15,8 @@
   display: $textInput-basic-display;
   margin-top: $textInput-basic-marginTop;
   line-height: $textInput-line-height;
+  width:$textInput-basic-width;
+  box-sizing :$textInput-basic-box-sizing;
 }
 
 @mixin textInputBasic() {
@@ -97,6 +99,10 @@
   padding-top: 8px;
 }
 
+
+// Selects=========================================
+
+
 @mixin textInputBasicSelect() {
 
   .pe-select-container {
@@ -139,6 +145,48 @@
 };
 
 @mixin textInputBasicSelectError() {
+
+  .pe-select-container-error {
+    @extend %abstract, %container-extend;
+    border: $textInput-basic-error-border;
+  }
+
+  .pe-select-container-error svg {
+    @extend %container-extend-svg;
+  }
+
+  .pe-select-container-error select {
+    @extend %container-extend-select;
+  }
+
+  .pe-select-container-error select:focus {
+    outline: none;
+    border: $textInput-basic-error-border;
+    box-shadow: $textInput-basic-error-focus-boxShadow;
+  }
+
+  .pe-selectInput--basic {
+    @extend %selectInput--basic-extend;
+  }
+
+  .pe-select-container-error select:focus::-ms-value {
+		background: transparent;
+		color: #222;
+	}
+
+  .pe-selectInput--basic:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+
+  .pe-select-container-error select::-ms-expand {
+    opacity: 0;
+  }
+
+};
+
+
+@mixin textInputBasicSelectDisabled() {
 
   .pe-select-container-error {
     @extend %abstract, %container-extend;
