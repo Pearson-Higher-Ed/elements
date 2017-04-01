@@ -30,6 +30,12 @@ $textInput-label-line-height : 16px;
 $textInput-placeholder-color     : $pe-color-concrete;
 $textInput-placeholder-font-size : 14px;
 
+//=====Input Messages================
+
+$textInput-messages-padding-top   : 3px;
+$textInput-messages-display       : block;
+$textInput-messages-margin-bottom : 0;
+
 //======textInput-Error==============
 
 $textInput-error-border-bottom       : 1px;
@@ -41,7 +47,6 @@ $textInput-error-color           : $pe-color-charcoal;
 $textInput-error-font-size       : 14px;
 
 $textInput-error-label-color     : $pe-color-strawberry-red;
-$textInput-error-label-font-size : 12px;
 
 //=======textInput-focus-error=======
 
@@ -127,13 +132,15 @@ $pe-btn-link-bg     : none !default;
 $pe-btn-link-border : 0 !default;
 $pe-btn-link-text   : $pe-color-digital-pearson-blue !default;
 
-$pe-passwordInput-margin-top       : -33px;
+$pe-passwordInput-margin-top       : -37px;
 $pe-passwordInput-basic-margin-top : -27px;
 $pe-passwordInput-width            : 40px;
 $pe-passwordInput-float            : right;
 $pe-passwordInput-outline          : none;
 $pe-passwordInput-text-decoration  : none;
 
+$pe-passwordInput-button-margin-right : 14px;
+$pe-passwordInput-basic-disabled-margin-top : -35px;
 //============textInput-basic==========
 
 $textInput-basic-padding      : 0px 14px 0px 14px;

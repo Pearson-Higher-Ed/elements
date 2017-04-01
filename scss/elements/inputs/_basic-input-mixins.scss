@@ -1,29 +1,10 @@
-@mixin pe-placeholder {
-  &::-webkit-input-placeholder { @content }
-  &::-moz-placeholder { @content }
-  &:-moz-placeholder { @content }
-  &:-ms-input-placeholder { @content }
-};
-
-%abstract {
-  padding: $textInput-basic-padding;
-  height: $textInput-basic-height;
-  font-size: $textInput-value-font-size;
-  border-radius: $textInput-basic-borderRadius;
-  background-color: $pe-color-white;
-  color: $pe-color-charcoal;
-  display: $textInput-basic-display;
-  margin-top: $textInput-basic-marginTop;
-  line-height: $textInput-line-height;
-  width:$textInput-basic-width;
-  box-sizing :$textInput-basic-box-sizing;
-}
 
 @mixin textInputBasic() {
 
+
   .pe-textInput--basic {
     @extend %abstract;
-    border: $textInput-basic-border;
+    border : $textInput-basic-border;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
@@ -31,19 +12,20 @@
     }
 
     &:focus {
-      outline: none;
-      border: $textInput-basic-focus-border;
-      box-shadow: $textInput-basic-focus-boxShadow;
+      outline    : none;
+      border     : $textInput-basic-focus-border;
+      box-shadow : $textInput-basic-focus-boxShadow;
     }
   }
 
 };
+
 
 @mixin textInputBasicError() {
 
   .pe-textInput--basic_error {
     @extend %abstract;
-    border: $textInput-basic-error-border;
+    border : $textInput-basic-error-border;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
@@ -51,178 +33,19 @@
     }
 
     &:focus {
-      outline: none;
-      box-shadow: $textInput-basic-error-focus-boxShadow;
+      outline    : none;
+      box-shadow : $textInput-basic-error-focus-boxShadow;
     }
   }
 
+
 };
+
 
 @mixin textInputBasicDisabled() {
-
   .pe-textInput--basic:disabled {
-    background-color: $pe-color-moonlight;
-    margin-top: $textInput-basic-marginTop;
-  }
-
-};
-
-%container-extend {
-  position: relative;
-  display: $textInput-basic-display;
-  min-width: $textInput-basic-select-minWidth;
-  padding: 0;
-}
-
-%container-extend-svg {
-  position: absolute;
-  bottom: $svg-bottom;
-  right: $svg-right;
-  pointer-events: none;
-}
-
-%container-extend-select {
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 34px;
-  margin: 0;
-  padding: 0 14px;
-  outline: none;
-}
-
-%selectInput--basic-extend {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: $pe-color-white;
-  border: 1px solid transparent;
-  padding-top: 8px;
-}
-
-
-// Selects=========================================
-
-
-@mixin textInputBasicSelect() {
-
-  .pe-select-container {
-    @extend %abstract, %container-extend;
-    border: $textInput-basic-border;
-  }
-
-  .pe-select-container svg {
-    @extend %container-extend-svg;
-  }
-
-  .pe-select-container select {
-    @extend %container-extend-select;
-  }
-
-  .pe-select-container select:focus {
-    outline: none;
-    border: $textInput-basic-focus-border;
-    box-shadow: $textInput-basic-focus-boxShadow;
-  }
-
-  .pe-selectInput--basic {
-    @extend %selectInput--basic-extend;
-  }
-
-  .pe-select-container select:focus::-ms-value {
-		background: transparent;
-		color: #222;
-	}
-
-  .pe-selectInput--basic:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-  }
-
-  .pe-select-container select::-ms-expand {
-    opacity: 0;
-  }
-
-};
-
-@mixin textInputBasicSelectError() {
-
-  .pe-select-container-error {
-    @extend %abstract, %container-extend;
-    border: $textInput-basic-error-border;
-  }
-
-  .pe-select-container-error svg {
-    @extend %container-extend-svg;
-  }
-
-  .pe-select-container-error select {
-    @extend %container-extend-select;
-  }
-
-  .pe-select-container-error select:focus {
-    outline: none;
-    border: $textInput-basic-error-border;
-    box-shadow: $textInput-basic-error-focus-boxShadow;
-  }
-
-  .pe-selectInput--basic {
-    @extend %selectInput--basic-extend;
-  }
-
-  .pe-select-container-error select:focus::-ms-value {
-		background: transparent;
-		color: #222;
-	}
-
-  .pe-selectInput--basic:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-  }
-
-  .pe-select-container-error select::-ms-expand {
-    opacity: 0;
-  }
-
-};
-
-
-@mixin textInputBasicSelectDisabled() {
-
-  .pe-select-container-error {
-    @extend %abstract, %container-extend;
-    border: $textInput-basic-error-border;
-  }
-
-  .pe-select-container-error svg {
-    @extend %container-extend-svg;
-  }
-
-  .pe-select-container-error select {
-    @extend %container-extend-select;
-  }
-
-  .pe-select-container-error select:focus {
-    outline: none;
-    border: $textInput-basic-error-border;
-    box-shadow: $textInput-basic-error-focus-boxShadow;
-  }
-
-  .pe-selectInput--basic {
-    @extend %selectInput--basic-extend;
-  }
-
-  .pe-select-container-error select:focus::-ms-value {
-		background: transparent;
-		color: #222;
-	}
-
-  .pe-selectInput--basic:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-  }
-
-  .pe-select-container-error select::-ms-expand {
-    opacity: 0;
+    background-color : $pe-color-moonlight;
+    margin-top       : $textInput-basic-marginTop;
   }
 
 };
