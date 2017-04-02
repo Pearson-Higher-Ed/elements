@@ -1,54 +1,4 @@
 
-@mixin selectAbstracts() {
-  %container-extend {
-    position  : relative;
-    display   : $textInput-basic-display;
-    min-width : $textInput-basic-select-minWidth;
-    padding   : 0;
-  }
-
-  %container-extend-svg {
-    position       : absolute;
-    bottom         : $svg-bottom;
-    right          : $svg-right;
-    pointer-events : none;
-  }
-
-  %container-extend-select {
-    box-sizing : border-box;
-    width      : 100%;
-    min-height : 34px;
-    margin     : 0;
-    padding    : 0 14px;
-    outline    : none;
-  }
-
-  %selectInput--basic-extend {
-    -webkit-appearance : none;
-    -moz-appearance    : none;
-    appearance         : none;
-    background-color   : $pe-color-white;
-    border             : 1px solid transparent;
-    padding-top        : 8px;
-  }
-
-  %abstract {
-    padding          : $textInput-basic-padding;
-    height           : $textInput-basic-height;
-    width            : $textInput-basic-width;
-    box-sizing       : $textInput-basic-box-sizing;
-    display          : $textInput-basic-display;
-    margin-top       : $textInput-basic-marginTop;
-    border-radius    : $textInput-basic-borderRadius;
-    font-size        : $textInput-value-font-size;
-    line-height      : $textInput-line-height;
-    background-color : $pe-color-white;
-    color            : $pe-color-charcoal;
-  }
-
-};
-
-
 @mixin textInputBasicSelect() {
 
   .pe-select-container {
@@ -61,13 +11,6 @@
     @extend %container-extend-svg;
   }
 
-  .pe-selectInput--basic {
-    @extend %selectInput--basic-extend;
-    &:-moz-focusring {
-      color       : transparent;
-      text-shadow : 0 0 0 #000;
-    }
-  }
 
   .pe-select-container select {
     @extend %container-extend-select;
@@ -85,7 +28,45 @@
     }
   }
 
+  .pe-selectInput--basic {
+    @extend %selectInput--basic-extend;
+    &:-moz-focusring {
+      color       : transparent;
+      text-shadow : 0 0 0 #000;
+    }
+  }
+
+
+
+  // Styles for focus...
+  .pe-select-container-focus {
+    @extend %abstract, %container-extend;
+    border  : 1px solid transparent;
+    padding : 0px;
+  }
+
+  .pe-select-container-focus svg {
+    @extend %container-extend-svg;
+  }
+
+  .pe-select-container-focus select {
+    @extend %container-extend-select;
+    &:focus {
+      outline    : none;
+      border     : $textInput-basic-focus-border;
+      box-shadow : $textInput-basic-focus-boxShadow;
+      &::-ms-value {
+        background : transparent;
+        color      : #222;
+      }
+      &::-ms-expand {
+        opacity : 0;
+      }
+    }
+  }
+
 };
+
 
 @mixin textInputBasicSelectError() {
 
@@ -101,35 +82,52 @@
 
   .pe-select-container-error select {
     @extend %container-extend-select;
+    &:focus {
+      outline    : none;
+      border     : $textInput-basic-error-border;
+      box-shadow : $textInput-basic-error-focus-boxShadow;
+      &::-ms-value {
+    		background : transparent;
+    		color      : #222;
+    	}
+    }
+    &::-ms-expand {
+      opacity : 0;
+    }
   }
 
-  .pe-select-container-error select:focus {
-    outline    : none;
-    border     : $textInput-basic-error-border;
-    box-shadow : $textInput-basic-error-focus-boxShadow;
+  // Styles for focus...
+  .pe-select-container-focus-error {
+    @extend %abstract, %container-extend;
+    border  : 1px solid transparent;
+    padding : 0px;
   }
 
-  .pe-selectInput--basic {
-    @extend %selectInput--basic-extend;
+  .pe-select-container-focus-error svg {
+    @extend %container-extend-svg;
   }
 
-  .pe-select-container-error select:focus::-ms-value {
-		background : transparent;
-		color      : #222;
-	}
-
-  .pe-selectInput--basic:-moz-focusring {
-    color       : transparent;
-    text-shadow : 0 0 0 #000;
+  .pe-select-container-focus-error select {
+    @extend %container-extend-select;
+    &:focus {
+      outline    : none;
+      border     : $textInput-basic-error-border;
+      box-shadow : $textInput-basic-error-focus-boxShadow;
+      &::-ms-value {
+        background : transparent;
+        color      : #222;
+      }
+    }
+    &::-ms-expand {
+      opacity : 0;
+    }
   }
 
-  .pe-select-container-error select::-ms-expand {
-    opacity : 0;
-  }
+
+
 
   .pe-select--basic_error {
-    @extend %abstract;
-    border             : $textInput-basic-error-border;
+    @extend %selectInput--basic-extend;
     -webkit-appearance : none;
 
     @include pe-placeholder {
@@ -148,49 +146,24 @@
 
 @mixin textInputBasicSelectDisabled() {
 
-  .pe-select-container-error {
+  .pe-select-container-disabled {
     @extend %abstract, %container-extend;
-    border : $textInput-basic-error-border;
-  }
-
-  .pe-select-container-error svg {
-    @extend %container-extend-svg;
-  }
-
-  .pe-select-container-error select {
-    @extend %container-extend-select;
-  }
-
-  .pe-select-container-error select:focus {
-    border     : $textInput-basic-error-border;
-    box-shadow : $textInput-basic-error-focus-boxShadow;
-  }
-
-  .pe-selectInput--basic {
-    @extend %selectInput--basic-extend;
-  }
-
-  .pe-select-container-error select:focus::-ms-value {
-		background : transparent;
-		color      : #222;
-	}
-
-  .pe-selectInput--basic:-moz-focusring {
-    color       : transparent;
-    text-shadow : 0 0 0 #000;
-  }
-
-  .pe-select-container-error select::-ms-expand {
-    opacity : 0;
-  }
-
-
-  .pe-selectInput--disabled {
-    @extend %abstract;
-    background-color   : $pe-color-moonlight;
-    margin-top         : $textInput-basic-marginTop;
-    -webkit-appearance : none;
+    outline            : none;
+    padding            : 0px;
     color              : $pe-color-concrete;
+    background-color   : $pe-color-moonlight;
+    -webkit-appearance : none;
+  }
+
+  .pe-select-container-disabled svg {
+    @extend %container-extend-svg;
+    fill : $pe-color-concrete;
+  }
+
+
+  .pe-select-container-disabled select {
+    @extend %container-extend-select;
+        border  : 1px solid $pe-color-concrete;
   }
 
 };

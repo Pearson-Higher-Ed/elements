@@ -54,7 +54,7 @@ An input is a field used to elicit a response from a user
   <span class="pe-input_underline"></span>
   <button id="showbutton" onclick="" class="pe-textInput__showButton">show</button>
 {{/demo}}
-** this needs javascript to action show/hide function --
+** this needs javascript to action show/hide function, and label focus --
  <a href="https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput">https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput</a>
 
 ## Inputs - Basic (single line)

@@ -3,23 +3,24 @@
 
   .pe-select-container--fancy {
     @extend %abstract, %container-extend;
-    background-color   : transparent;
     -webkit-appearance : none;
     -moz-appearance    : none;
     padding            : 0px;
+    border:none;
   }
 
   .pe-select-container--fancy svg {
     @extend %container-extend-svg;
+    right : 0;
+    outline : none;
   }
-
-  .pe-select-container-disabled--fancy svg {
-    @extend %container-extend-svg;
-  }
-
 
   .pe-select-container--fancy select {
     @extend %container-extend-select;
+    padding : 0px;
+    outline:none;
+    box-shadow: none;
+
     &:focus {
       outline    : none;
       box-shadow : none;
@@ -39,6 +40,7 @@
     -webkit-appearance  : none;
     -moz-appearance     : none;
     appearance          : none;
+    outline             : none;
     background-color    : transparent;
     padding-top         : 8px;
     border-bottom       : $textInput-border-bottom;
@@ -55,6 +57,34 @@
     transform : scale(1);
   }
 
+  // Styles for focus...
+  .pe-select-container-fancy-focus {
+    @extend %abstract, %container-extend;
+    border  : none;
+    padding : 0px;
+  }
+
+  .pe-select-container-fancy-focus svg {
+    @extend %container-extend-svg;
+    right : 0;
+  }
+
+  .pe-select-container-fancy-focus select {
+    @extend %container-extend-select;
+    padding : 0px;
+    border  : none;
+    &:focus {
+      outline    : none;
+      &::-ms-value {
+        background : transparent;
+        color      : #222;
+      }
+      &::-ms-expand {
+        opacity : 0;
+      }
+    }
+  }
+
 };
 
 
@@ -62,29 +92,138 @@
 
 @mixin textInputFancySelectError() {
 
-  .pe-selectInput--input_error {
+
+  .pe-select-container-fancy-error {
+    @extend %abstract, %container-extend;
+    background-color   : transparent;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    padding            : 0px;
+  }
+
+  .pe-select-container-fancy-error svg {
+    @extend %container-extend-svg;
+    right : 0;
+  }
+
+  .pe-select-container-fancy-error select {
+    padding : 0px;
+    @extend %container-extend-select;
+    &:focus {
+      outline    : none;
+      box-shadow : none;
+      &::-ms-value {
+        background : transparent;
+        color      : #222;
+      }
+    }
+    &::-ms-expand {
+      opacity : 0;
+    }
+  }
+
+
+  .pe-selectInput-fancy-error {
     @extend %pe-textInput;
     -webkit-appearance  : none;
     -moz-appearance     : none;
     appearance          : none;
+    background-color    : transparent;
     padding-top         : 8px;
-    border-radius       : 0px;
-    border-bottom       : $textInput-error-border-bottom;
-    border-bottom-style : $textInput-error-border-bottom-style;
+    border-bottom       : $textInput-border-bottom;
+    border-bottom-style : $textInput-border-bottom-style;
     border-bottom-color : $textInput-error-border-bottom-color;
+    border-radius       : 0px;
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow : 0 0 0 #000;
+    }
   }
-
-  .pe-input-wrapper{
-    min-height : $textInput-wrapper-min-height;
-  }
-
 
   select:focus+.pe-inputError_underline {
     transform : scale(1);
   }
 
+  // Styles for focus...
+  .pe-select-container-fancy-error-focus {
+    @extend %abstract, %container-extend;
+    border  : none;
+    padding : 0px;
+  }
+
+  .pe-select-container-fancy-error-focus svg {
+    @extend %container-extend-svg;
+    right : 0;
+  }
+
+  .pe-select-container-fancy-error-focus select {
+    @extend %container-extend-select;
+    padding : 0px;
+    &:focus {
+      outline    : none;
+      &::-ms-value {
+        background : transparent;
+        color      : #222;
+      }
+      &::-ms-expand {
+        opacity : 0;
+      }
+    }
+  }
+
+
 };
 
-@mixin textInputFancySelectDisabled() {};
+@mixin textInputFancySelectDisabled() {
 
-@mixin textInputFancySelectReadOnly() {};
+
+    .pe-select-container-fancy-disabled {
+      @extend %abstract, %container-extend;
+      background-color   : transparent;
+      -webkit-appearance : none;
+      -moz-appearance    : none;
+      padding            : 0px;
+    }
+
+    .pe-select-container-fancy-disabled svg {
+      @extend %container-extend-svg;
+      right : 0;
+    }
+
+    .pe-select-container-fancy-disabled select {
+      @extend %container-extend-select;
+      padding : 0px;
+      &:focus {
+        outline    : none;
+        box-shadow : none;
+        &::-ms-value {
+          background : transparent;
+          color      : #222;
+        }
+      }
+      &::-ms-expand {
+        opacity : 0;
+      }
+    }
+
+
+    .pe-selectInput-fancy-disabled {
+      @extend %pe-textInput;
+      -webkit-appearance  : none;
+      -moz-appearance     : none;
+      appearance          : none;
+      background-color    : transparent;
+      padding-top         : 8px;
+      border              : none;
+      border-radius       : 0px;
+      &:-moz-focusring {
+        color: transparent;
+        text-shadow : 0 0 0 #000;
+      }
+    }
+
+    select:focus+.pe-input_underline {
+      transform : scale(1);
+    }
+
+};

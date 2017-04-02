@@ -103,10 +103,12 @@
   }
 
   .pe-textLabelInput__label--label_error {
+    @extend %pe-textLabelInput__label;
     color       : $textInput-error-focus-label-color;
   }
 
   .pe-textLabelInput__label--label-disabled {
+    @extend %pe-textLabelInput__label;
     color       : $textInput-disable-text-color;
     font-size   : $textInput-label-font-size;
     line-height : $textInput-label-line-height;
