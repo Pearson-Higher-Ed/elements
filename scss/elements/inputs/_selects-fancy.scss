@@ -182,25 +182,23 @@
       background-color   : transparent;
       -webkit-appearance : none;
       -moz-appearance    : none;
+      appearance         : none;
       padding            : 0px;
     }
 
     .pe-select-container-fancy-disabled svg {
       @extend %container-extend-svg;
       right : 0;
+      fill  : $pe-color-concrete;
     }
 
     .pe-select-container-fancy-disabled select {
       @extend %container-extend-select;
-      padding : 0px;
-      &:focus {
-        outline    : none;
-        box-shadow : none;
-        &::-ms-value {
-          background : transparent;
-          color      : #222;
-        }
-      }
+      padding             : 0px;
+      color               : $pe-color-concrete;
+      border-bottom       : $textInput-disable-border-bottom;
+      border-bottom-style : $textInput-disable-border-bottom-style;
+      border-bottom-color : $textInput-disable-border-bottom-color;
       &::-ms-expand {
         opacity : 0;
       }
@@ -216,14 +214,46 @@
       padding-top         : 8px;
       border              : none;
       border-radius       : 0px;
-      &:-moz-focusring {
-        color: transparent;
-        text-shadow : 0 0 0 #000;
+    }
+
+};
+
+@mixin textInputFancySelectReadOnly() {
+
+
+    .pe-select-container-fancy-readonly {
+      @extend %abstract, %container-extend;
+      background-color   : transparent;
+      -webkit-appearance : none;
+      -moz-appearance    : none;
+      appearance         : none;
+      padding            : 0px;
+    }
+
+    .pe-select-container-fancy-readonly svg {
+      @extend %container-extend-svg;
+      right : 0;
+    }
+
+    .pe-select-container-fancy-readonly select {
+      @extend %container-extend-select;
+      padding    : 0px;
+      appearance : none;
+      &::-ms-expand {
+        opacity : 0;
       }
     }
 
-    select:focus+.pe-input_underline {
-      transform : scale(1);
+
+    .pe-selectInput-fancy-readonly {
+      @extend %pe-textInput;
+      -webkit-appearance  : none;
+      -moz-appearance     : none;
+      appearance          : none;
+      background-color    : transparent;
+      padding-top         : 8px;
+      border              : none;
+      border-radius       : 0px;
     }
 
 };

@@ -7,6 +7,13 @@
     border      : $textInput-border-reset;
     line-height : $textInput-line-height;
 
+  }
+
+  .pe-textInput {
+    @extend %pe-textInput;
+    border-bottom       : $textInput-border-bottom;
+    border-bottom-style : $textInput-border-bottom-style;
+    border-bottom-color : $textInput-border-bottom-color;
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
       color     : $textInput-placeholder-color;
@@ -15,14 +22,6 @@
     &:focus {
       outline : none;
     }
-
-  }
-
-  .pe-textInput {
-    @extend %pe-textInput;
-    border-bottom       : $textInput-border-bottom;
-    border-bottom-style : $textInput-border-bottom-style;
-    border-bottom-color : $textInput-border-bottom-color;
   }
 
 
@@ -71,6 +70,14 @@
     border-bottom       : $textInput-error-border-bottom;
     border-bottom-style : $textInput-error-border-bottom-style;
     border-bottom-color : $textInput-error-border-bottom-color;
+    @include pe-placeholder {
+      font-size : $textInput-placeholder-font-size;
+      color     : $textInput-placeholder-color;
+    }
+
+    &:focus {
+      outline : none;
+    }
   }
 
   .pe-input-wrapper{
@@ -125,9 +132,17 @@
   .pe-textInput--input_readonly {
     @extend %pe-textInput;
     border-bottom      : $textInput-readonly-border;
-    color              : $textInput-readonly-text-color;
+    background-color   : transparent;
     font-size          : $textInput-readonly-text-font-size;
+    color              : $textInput-value-color;
     -webkit-appearance : none;
+    @include pe-placeholder {
+      font-size : $textInput-placeholder-font-size;
+    }
+
+    &:focus {
+      outline : none;
+    }
   }
 };
 

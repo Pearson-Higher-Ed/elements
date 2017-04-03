@@ -30,10 +30,12 @@
 @include textInputBasicSelect();
 @include textInputBasicSelectError();
 @include textInputBasicSelectDisabled();
+@include textInputBasicSelectReadOnly();
 
 @include textInputFancySelect();
 @include textInputFancySelectError();
 @include textInputFancySelectDisabled();
+@include textInputFancySelectReadOnly();
 
 
 @include multiLineText();

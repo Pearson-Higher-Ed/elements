@@ -22,9 +22,9 @@
     		background : transparent;
     		color      : #222;
     	}
-      &::-ms-expand {
-        opacity : 0;
-      }
+    }
+    &::-ms-expand {
+      opacity : 0;
     }
   }
 
@@ -139,6 +139,10 @@
       outline    : none;
       box-shadow : $textInput-basic-error-focus-boxShadow;
     }
+    &:-moz-focusring {
+      color       : transparent;
+      text-shadow : 0 0 0 #000;
+    }
   }
 
 };
@@ -153,6 +157,8 @@
     color              : $pe-color-concrete;
     background-color   : $pe-color-moonlight;
     -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
   }
 
   .pe-select-container-disabled svg {
@@ -164,6 +170,55 @@
   .pe-select-container-disabled select {
     @extend %container-extend-select;
         border  : 1px solid $pe-color-concrete;
+        &:focus {
+              outline    : none;
+              border     : $textInput-basic-error-border;
+              box-shadow : $textInput-basic-error-focus-boxShadow;
+              &::-ms-value {
+                background : transparent;
+                color      : #222;
+              }
+            }
+            &::-ms-expand {
+              opacity : 0;
+            }
+  }
+
+};
+
+@mixin textInputBasicSelectReadOnly() {
+
+  .pe-select-container-readonly {
+    @extend %abstract, %container-extend;
+    padding            : 0px;
+    border             : none;
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    appearance         : none;
+  }
+
+  .pe-select-container-readonly svg {
+    @extend %container-extend-svg;
+    right : 0;
+
+  }
+
+
+  .pe-select-container-readonly select {
+    @extend %container-extend-select;
+    padding : 0px;
+    &:focus {
+      outline    : none;
+      border     : $textInput-basic-error-border;
+      box-shadow : $textInput-basic-error-focus-boxShadow;
+      &::-ms-value {
+        background : transparent;
+        color      : #222;
+      }
+    }
+    &::-ms-expand {
+      opacity : 0;
+    }
   }
 
 };
