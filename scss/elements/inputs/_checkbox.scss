@@ -1,7 +1,12 @@
 @mixin checkbox() {
 
   .pe-checkbox {
-    position : relative;
+    position      : relative;
+    min-height    : 16px;
+    margin-bottom : 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   input[type="checkbox"] {
