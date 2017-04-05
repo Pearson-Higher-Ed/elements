@@ -17,9 +17,9 @@
 
   .pe-select-container--fancy select {
     @extend %container-extend-select;
-    padding : 0px;
-    outline:none;
-    box-shadow: none;
+    padding    : .3em 0em .3em 0em;
+    outline    : none;
+    box-shadow : none;
 
     &:focus {
       outline    : none;
@@ -71,7 +71,7 @@
 
   .pe-select-container-fancy-focus select {
     @extend %container-extend-select;
-    padding : 0px;
+    padding : .3em 0em .3em 0em;
     border  : none;
     &:focus {
       outline    : none;
@@ -107,7 +107,7 @@
   }
 
   .pe-select-container-fancy-error select {
-    padding : 0px;
+    padding : .3em 0em .3em 0em;
     @extend %container-extend-select;
     &:focus {
       outline    : none;
@@ -158,7 +158,7 @@
 
   .pe-select-container-fancy-error-focus select {
     @extend %container-extend-select;
-    padding : 0px;
+    padding : .3em 0em .3em 0em;
     &:focus {
       outline    : none;
       &::-ms-value {
@@ -194,7 +194,7 @@
 
     .pe-select-container-fancy-disabled select {
       @extend %container-extend-select;
-      padding             : 0px;
+      padding             : .3em 0em .3em 0em;
       color               : $pe-color-concrete;
       border-bottom       : $textInput-disable-border-bottom;
       border-bottom-style : $textInput-disable-border-bottom-style;
@@ -237,7 +237,7 @@
 
     .pe-select-container-fancy-readonly select {
       @extend %container-extend-select;
-      padding    : 0px;
+      padding    : .3em 0em .3em 0em;
       appearance : none;
       &::-ms-expand {
         opacity : 0;

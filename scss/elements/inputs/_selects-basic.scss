@@ -4,6 +4,7 @@
   .pe-select-container {
     @extend %abstract, %container-extend;
     border  : $textInput-basic-border;
+    padding : 0px;
   }
 
   .pe-select-container svg {
@@ -13,9 +14,9 @@
 
   .pe-select-container select {
     @extend %container-extend-select;
-    padding:.3em;
+    padding      : .3em;
+    padding-left : 14px;
     &:focus {
-      padding:.3em;
       outline    : none;
       border     : $textInput-basic-focus-border;
       box-shadow : $textInput-basic-focus-boxShadow;
@@ -52,6 +53,8 @@
 
   .pe-select-container-focus select {
     @extend %container-extend-select;
+    padding      : .3em;
+    padding-left : 14px;
     &:focus {
       outline    : none;
       border     : $textInput-basic-focus-border;
@@ -83,6 +86,8 @@
 
   .pe-select-container-error select {
     @extend %container-extend-select;
+    padding      : .3em;
+    padding-left : 14px;
     &:focus {
       outline    : none;
       border     : $textInput-basic-error-border;
@@ -110,6 +115,8 @@
 
   .pe-select-container-focus-error select {
     @extend %container-extend-select;
+    padding      : .3em;
+    padding-left : 14px;
     &:focus {
       outline    : none;
       border     : $textInput-basic-error-border;
