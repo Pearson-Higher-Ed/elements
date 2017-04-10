@@ -208,6 +208,7 @@
     -webkit-appearance : none;
     -moz-appearance    : none;
     appearance         : none;
+    margin-top         : $textInput-basic-marginTop;
   }
 
   .pe-select-container-readonly svg {
