@@ -3,8 +3,9 @@
 
   .pe-select-container {
     @extend %abstract, %container-extend;
-    border  : $textInput-basic-border;
-    padding : 0px;
+    border     : $textInput-basic-border;
+    padding    : 0px;
+    margin-top : $textInput-basic-marginTop;
   }
 
   .pe-select-container svg {
@@ -43,8 +44,9 @@
   // Styles for focus...
   .pe-select-container-focus {
     @extend %abstract, %container-extend;
-    border  : 1px solid transparent;
-    padding : 0px;
+    border     : 1px solid transparent;
+    padding    : 0px;
+    margin-top : $textInput-basic-marginTop;
   }
 
   .pe-select-container-focus svg {
@@ -76,8 +78,9 @@
 
   .pe-select-container-error {
     @extend %abstract, %container-extend;
-    border  : $textInput-basic-error-border;
-    padding : 0px;
+    border     : $textInput-basic-error-border;
+    padding    : 0px;
+    margin-top : $textInput-basic-marginTop;
   }
 
   .pe-select-container-error svg {
@@ -105,8 +108,9 @@
   // Styles for focus...
   .pe-select-container-focus-error {
     @extend %abstract, %container-extend;
-    border  : 1px solid transparent;
-    padding : 0px;
+    border     : 1px solid transparent;
+    padding    : 0px;
+    margin-top : $textInput-basic-marginTop;
   }
 
   .pe-select-container-focus-error svg {
@@ -167,6 +171,7 @@
     -webkit-appearance : none;
     -moz-appearance    : none;
     appearance         : none;
+    margin-top         : $textInput-basic-marginTop;
   }
 
   .pe-select-container-disabled svg {

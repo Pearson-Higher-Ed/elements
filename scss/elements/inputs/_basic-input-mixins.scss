@@ -4,7 +4,8 @@
 
   .pe-textInput--basic {
     @extend %abstract;
-    border : $textInput-basic-border;
+    border     : $textInput-basic-border;
+    margin-top : $textInput-basic-marginTop;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;
@@ -25,7 +26,8 @@
 
   .pe-textInput--basic_error {
     @extend %abstract;
-    border : $textInput-basic-error-border;
+    border     : $textInput-basic-error-border;
+    margin-top : $textInput-basic-marginTop;
 
     @include pe-placeholder {
       font-size : $textInput-placeholder-font-size;

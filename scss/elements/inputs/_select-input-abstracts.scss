@@ -1,9 +1,9 @@
 @mixin selectAbstracts() {
   %container-extend {
-    position  : relative;
-    display   : $textInput-basic-display;
-    min-width : $textInput-basic-select-minWidth;
-    padding   : 0;
+    position   : relative;
+    display    : $textInput-basic-display;
+    min-width  : $textInput-basic-select-minWidth;
+    padding    : 0;
   }
 
   %container-extend-svg {
