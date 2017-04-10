@@ -79,7 +79,7 @@ An input is a field used to elicit a response from a user
 
 {{#demo}}
   <label class="pe-textLabelInput__label" for="y">Label</label>
-  <input type="text" class="pe-textInput--input_readonly" id="y" placeholder="ReadOnly`" disabled>
+  <input type="text" class="pe-textInput--input_readonly" id="y" placeholder="ReadOnly" readonly>
 {{/demo}}
 
 
