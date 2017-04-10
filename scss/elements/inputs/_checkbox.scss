@@ -16,6 +16,7 @@
       left          : 0;
       top           : 0;
       position      : absolute;
+      z-index       : 0;
       height        : $checkbox-box-height;
       width         : $checkbox-box-width;
       border        : $checkbox-box-border;
@@ -28,7 +29,6 @@
     }
     &:checked ~ span svg {
       opacity : 1;
-
     }
     &:focus ~ span {
       border        : $checkbox-box-border-focus;
@@ -46,6 +46,8 @@
     display: inline-block;
     padding-left: $checkbox-box-width + $checkbox-box-rightMargin;
     line-height: 18px;
+    position: relative;
+    z-index: 2;
   }
 
 };

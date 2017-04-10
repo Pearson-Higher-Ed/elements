@@ -384,7 +384,6 @@ Checkboxes are for times when the user needs to make one or more binary choices 
 
 Unselected
 {{#demo}}
-
     <div class="pe-checkbox">
       <input type="checkbox"  id="checkboxInput" value="1" />
       <label for="checkboxInput">Bacon</label>

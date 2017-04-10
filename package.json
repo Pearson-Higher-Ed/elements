@@ -2,6 +2,7 @@
   "name": "pearson-elements",
   "version": "1.8.1",
   "description": "CSS building blocks for Pearson web user experiences.",
+  "main": "./dist/css/elements.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/Pearson-Higher-Ed/elements.git"
