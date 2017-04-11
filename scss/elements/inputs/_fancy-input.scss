@@ -101,24 +101,22 @@
 
   .pe-textLabelInput__label {
     @extend %pe-textLabelInput__label;
-    color       : $textInput-label-color;
+    color : $textInput-label-color;
   }
 
   .pe-textLabelInput__label--label_focus {
     @extend %pe-textLabelInput__label;
-    color       : $textInput-focus-label-color;
+    color : $textInput-focus-label-color;
   }
 
   .pe-textLabelInput__label--label_error {
     @extend %pe-textLabelInput__label;
-    color       : $textInput-error-focus-label-color;
+    color : $textInput-error-focus-label-color;
   }
 
   .pe-textLabelInput__label--label-disabled {
     @extend %pe-textLabelInput__label;
-    color       : $textInput-disable-text-color;
-    font-size   : $textInput-label-font-size;
-    line-height : $textInput-label-line-height;
+    color : $textInput-disable-text-color;
   }
 
 };
