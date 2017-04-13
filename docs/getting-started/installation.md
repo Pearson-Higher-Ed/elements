@@ -1,5 +1,0 @@
----
-layout: docs.html
-title: Installation
-section: getting-started
----
