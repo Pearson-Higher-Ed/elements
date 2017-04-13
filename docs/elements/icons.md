@@ -6,7 +6,7 @@ section: elements
 
 The available icons includes the following:
 
-<ul class="d-icon-list">
+<ul class="d-icon-list" style="color: #6a7070">
   <li>
     <svg aria-hidden="true"
          focusable="false"
@@ -282,6 +282,38 @@ The available icons includes the following:
   <li>
     <svg aria-hidden="true"
          focusable="false"
+         class="pe-icon--chevron-back-sm-18">
+      <use xlink:href="#chevron-back-sm-18"></use>
+    </svg>
+    chevron-back-sm-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--chevron-back-sm-24">
+      <use xlink:href="#chevron-back-sm-24"></use>
+    </svg>
+    chevron-back-sm-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--chevron-next-sm-18">
+      <use xlink:href="#chevron-next-sm-18"></use>
+    </svg>
+    chevron-next-sm-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--chevron-next-sm-24">
+      <use xlink:href="#chevron-next-sm-24"></use>
+    </svg>
+    chevron-next-sm-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
          class="pe-icon--chevron-back-18">
       <use xlink:href="#chevron-back-18"></use>
     </svg>
@@ -362,6 +394,38 @@ The available icons includes the following:
   <li>
     <svg aria-hidden="true"
          focusable="false"
+         class="pe-icon--dropdown-close-sm-18">
+      <use xlink:href="#dropdown-close-sm-18"></use>
+    </svg>
+    dropdown-close-sm-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--dropdown-close-sm-24">
+      <use xlink:href="#dropdown-close-sm-24"></use>
+    </svg>
+    dropdown-close-sm-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--dropdown-open-sm-18">
+      <use xlink:href="#dropdown-open-sm-18"></use>
+    </svg>
+    dropdown-open-sm-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--dropdown-open-sm-24">
+      <use xlink:href="#dropdown-open-sm-24"></use>
+    </svg>
+    dropdown-open-sm-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
          class="pe-icon--dropdown-close-18">
       <use xlink:href="#dropdown-close-18"></use>
     </svg>
@@ -390,6 +454,22 @@ The available icons includes the following:
       <use xlink:href="#dropdown-open-24"></use>
     </svg>
     dropdown-open-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--ellipsis-18">
+      <use xlink:href="#ellipsis-18"></use>
+    </svg>
+    ellipsis-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--ellipsis-24">
+      <use xlink:href="#ellipsis-24"></use>
+    </svg>
+    ellipsis-24
   </li>
   <li>
     <svg aria-hidden="true"
@@ -992,6 +1072,38 @@ The available icons includes the following:
       <use xlink:href="#show-on-24"></use>
     </svg>
     show-on-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--sort-down-18">
+      <use xlink:href="#sort-down-18"></use>
+    </svg>
+    sort-down-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--sort-down-24">
+      <use xlink:href="#sort-down-24"></use>
+    </svg>
+    sort-down-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--sort-up-18">
+      <use xlink:href="#sort-up-18"></use>
+    </svg>
+    sort-up-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--sort-up-24">
+      <use xlink:href="#sort-up-24"></use>
+    </svg>
+    sort-up-24
   </li>
   <li>
     <svg aria-hidden="true"
