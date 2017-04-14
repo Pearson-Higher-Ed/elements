@@ -1,6 +1,25 @@
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.8.2...v1.9.0) (2017-04-14)
+
+
+
+
 <a name="1.8.2"></a>
 ## [1.8.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.8.1...v1.8.2) (2017-04-13)
 
+
+### Bug Fixes
+
+* basic margin-top ([ac64463](https://github.com/Pearson-Higher-Ed/elements/commit/ac64463))
+* basic readonly attribute ([0e5a160](https://github.com/Pearson-Higher-Ed/elements/commit/0e5a160))
+* checkbox z-index ([e4a4f27](https://github.com/Pearson-Higher-Ed/elements/commit/e4a4f27))
+* font-face url path to relative to fix default-src policy error ([bd01196](https://github.com/Pearson-Higher-Ed/elements/commit/bd01196))
+* fonts warnings ([ac51461](https://github.com/Pearson-Higher-Ed/elements/commit/ac51461))
+* make images path relative ([34d44a9](https://github.com/Pearson-Higher-Ed/elements/commit/34d44a9))
+* make images path relative ([6e31b8c](https://github.com/Pearson-Higher-Ed/elements/commit/6e31b8c))
+* margin top basic select readonly ([2319c2e](https://github.com/Pearson-Higher-Ed/elements/commit/2319c2e))
+* padding on fancy select ([022c48a](https://github.com/Pearson-Higher-Ed/elements/commit/022c48a))
+* revert image path ([24e718d](https://github.com/Pearson-Higher-Ed/elements/commit/24e718d))
 
 ### Features
 
