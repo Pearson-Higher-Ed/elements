@@ -143,7 +143,8 @@ Note that UI Section Headings are going to be "heading" content, so most if not 
 
 {{#demo}}
 <h3 class="pe-title">Default UI Section Headings</h3>
-<h3 class="pe-title"><b>Bold UI Section Headings</b></h3>
+<h3 class="pe-heading-level3">Bold UI Section Headings (h3 example)</h3>
+<h3 class="pe-title pe-label--bold">non-h3 Bold UI Section Headings</h3>
 <h3 class="pe-title pe-title--secondary">Secondary Color Default UI Section Headings</h3>
 {{/demo}}
 
@@ -153,10 +154,10 @@ Titles can be larger or smaller for additional emphasis. Note: pe-title--extra-l
 
 {{#demo}}
 <h3 class="pe-title pe-title--small">Small UI Section Headings</h3>
-<h3 class="pe-title pe-title--small"><b>Small and Bold UI Section Headings</b></h3>
+<h3 class="pe-title pe-title--small pe-label--bold">Small and Bold UI Section Headings</h3>
 <h3 class="pe-title pe-title--small pe-title--secondary">Secondary Color Small UI Section Headings</h3>
 <h3 class="pe-title pe-title--large">Large UI Section Headings</h3>
-<h3 class="pe-title pe-title--large"><b>Large and bold UI Section Headings</b></h3>
+<h3 class="pe-title pe-title--large pe-label--bold">Large and bold UI Section Headings</h3>
 <h3 class="pe-title pe-title--large pe-title--secondary">Secondary Color Large UI Section Headings</h3>
 {{/demo}}
 
