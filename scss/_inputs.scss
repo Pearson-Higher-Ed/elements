@@ -50,18 +50,42 @@
       clear: both;
       height: 0;
     }
-    .pe-input {
-
-      input {
+    .pe-input input {
         float: left;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: 0;
-      }
     }
     .pe-btn {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+    }
+  }
+  &-group.pe-input-icon {
+    .pe-input input {
+        padding-right: 54px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-right: 1px solid #d0d0d0;
+
+        &:focus {
+          border-right-color: #0d65a6;
+        }
+    }
+    .pe-btn {
+        height: 34px;
+        line-height: 34px;
+        margin-left: -41px;
+        margin-top: 1px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-width: 0 0 0 1px;
+        pointer-events: none;
+    }
+    .pe-btn--small {
+        height: 26px;
+        line-height: 26px;
+        margin-left: -32px;
     }
   }
 }
