@@ -458,6 +458,22 @@ The available icons includes the following:
   <li>
     <svg aria-hidden="true"
          focusable="false"
+         class="pe-icon--edit-18">
+      <use xlink:href="#edit-18"></use>
+    </svg>
+    edit-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--edit-24">
+      <use xlink:href="#edit-24"></use>
+    </svg>
+    edit-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
          class="pe-icon--ellipsis-18">
       <use xlink:href="#ellipsis-18"></use>
     </svg>
