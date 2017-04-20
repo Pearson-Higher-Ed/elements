@@ -144,7 +144,7 @@ Note that UI Section Headings are going to be "heading" content, so most if not 
 {{#demo}}
 <h3 class="pe-title">Default UI Section Headings</h3>
 <h3 class="pe-heading-level3">Bold UI Section Headings (h3 example)</h3>
-<h3 class="pe-title pe-label--bold">non-h3 Bold UI Section Headings</h3>
+<h3 class="pe-title pe-bold">non-h3 Bold UI Section Headings</h3>
 <h3 class="pe-title pe-title--secondary">Secondary Color Default UI Section Headings</h3>
 {{/demo}}
 
@@ -154,10 +154,10 @@ Titles can be larger or smaller for additional emphasis. Note: pe-title--extra-l
 
 {{#demo}}
 <h3 class="pe-title pe-title--small">Small UI Section Headings</h3>
-<h3 class="pe-title pe-title--small pe-label--bold">Small and Bold UI Section Headings</h3>
+<h3 class="pe-title pe-title--small pe-bold">Small and Bold UI Section Headings</h3>
 <h3 class="pe-title pe-title--small pe-title--secondary">Secondary Color Small UI Section Headings</h3>
 <h3 class="pe-title pe-title--large">Large UI Section Headings</h3>
-<h3 class="pe-title pe-title--large pe-label--bold">Large and bold UI Section Headings</h3>
+<h3 class="pe-title pe-title--large pe-bold">Large and bold UI Section Headings</h3>
 <h3 class="pe-title pe-title--large pe-title--secondary">Secondary Color Large UI Section Headings</h3>
 {{/demo}}
 
@@ -168,7 +168,7 @@ Note these are not related to form element labels (use the HTML `label` element 
 {{#demo}}
 <div class="pe-label">Default UI Text</div>
 <div class="pe-label pe-label--secondary">Secondary UI Text</div>
-<div class="pe-label pe-label--bold">Bold UI Text</div>
+<div class="pe-label pe-bold">Bold UI Text</div>
 {{/demo}}
 
 ### Sizes
