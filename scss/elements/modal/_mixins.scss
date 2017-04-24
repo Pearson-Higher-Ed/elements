@@ -1,0 +1,270 @@
+
+@mixin modalStyles(){
+  html, body, h2, p {
+    margin : 0;
+  }
+
+  .ReactModal__Body--open {
+    overflow : hidden;
+  }
+
+  .ReactModal__Content{
+    outline : none;
+  }
+
+  .modalContent{
+    background-color : $pe-color-white;
+    margin-left      : auto;
+    margin-right     : auto;
+  }
+
+  .modalOverlay{
+    background-color : rgba(25, 25, 25, 0.6);
+    position         : fixed;
+    overflow         : hidden;
+    height           : 100%;
+    padding-top      : 60px;
+    padding-bottom   : 60px;
+    border-radius    : 2px;
+    top              : 0;
+    left             : 0;
+    right            : 0;
+    bottom           : 0;
+  }
+
+  .modalBody_border{
+    border-top    : 1px solid $pe-color-concrete;
+    border-bottom : 1px solid $pe-color-concrete;
+  }
+
+
+
+    @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+
+
+      @if $breakpoint == 'xl' or $breakpoint == 'lg' {
+
+        @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)){
+
+          .modalHeader{
+            padding          : 40px 40px 20px 40px;
+            background-color : $pe-color-white;
+          }
+
+          .modalHeaderText{
+            color       : $pe-color-charcoal;
+            font-size   : 24px;
+            line-height : 28px;
+          }
+
+          .modalBody{
+            -ms-overflow-style : none;
+            overflow-y         : scroll;
+            max-height         : 425px;
+            font-size          : 14px;
+            line-height        : 22px;
+            padding            : 0px 40px 0px 40px;
+          }
+
+          .modalFooter {
+            width     : 100%;
+            padding   : 28px 40px 40px 40px;
+          }
+
+          .modalSave{
+            outline : none;
+            float   : right;
+          }
+
+          .modalCancel{
+            outline : none;
+          }
+
+          .modalClose{
+            width            : 40px;
+            height           : 40px;
+            float            : right;
+            margin           : -40px -40px 0px 0px;
+            text-decoration  : none;
+            color            : black;
+            outline          : none;
+            border           : none;
+            background-color : inherit;
+          }
+
+        };
+      };
+
+
+      @if $breakpoint == 'md' {
+
+        @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)) and (max-width:pe-responsive-get-breakpoint-value($breakpoint, max)){
+
+          .modalHeader{
+            padding          : 40px 40px 20px 40px;
+            background-color : $pe-color-white;
+          }
+
+          .modalHeaderText{
+            color       : $pe-color-charcoal;
+            font-size   : 24px;
+            line-height : 28px;
+          }
+
+          .modalBody{
+            -ms-overflow-style : none;
+            overflow-y         : scroll;
+            max-height         : 425px;
+            font-size          : 14px;
+            line-height        : 22px;
+            padding            : 0px 40px 0px 40px;
+          }
+
+          .modalFooter {
+            width     : 100%;
+            padding   : 28px 40px 40px 40px;
+          }
+
+          .modalSave{
+            outline : none;
+            float   : right;
+          }
+
+          .modalCancel{
+            outline : none;
+          }
+
+          .modalClose{
+            width            : 40px;
+            height           : 40px;
+            float            : right;
+            margin           : -40px -40px 0px 0px;
+            text-decoration  : none;
+            color            : black;
+            outline          : none;
+            border           : none;
+            background-color : inherit;
+          }
+
+        };
+      };
+
+      @if $breakpoint == 'sm' {
+
+        @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)) and (max-width:pe-responsive-get-breakpoint-value($breakpoint, max)){
+
+
+          .modalHeader{
+            padding          : 24px 24px 16px 24px;
+            background-color : $pe-color-white;
+          }
+
+          .modalHeaderText{
+            color       : $pe-color-charcoal;
+            font-size   : 20px;
+            line-height : 26px;
+          }
+
+          .modalBody{
+            -ms-overflow-style : none;
+            max-height         : 425px;
+            overflow-y         : scroll;
+            font-size          : 14px;
+            line-height        : 22px;
+            padding            : 0px 24px 0px 24px;
+          }
+
+          .modalFooter {
+            display   : flex;
+            width     : 100%;
+            padding   : 18px 20px 18px 20px;
+            flex-wrap : wrap;
+          }
+
+          .modalSave{
+            outline : none;
+            flex    : 1 0 auto;
+            margin  : 6px 4px 6px 4px;
+          }
+
+          .modalCancel{
+            outline : none;
+            flex    : 1 0 auto;
+            margin  : 6px 4px 6px 4px;
+          }
+
+          .modalClose{
+            width            : 40px;
+            height           : 40px;
+            float            : right;
+            margin           : -24px -24px 0px 0px;
+            text-decoration  : none;
+            color            : black;
+            outline          : none;
+            border           : none;
+            background-color : inherit;
+          }
+
+        };
+      }
+
+      @if $breakpoint == 'xs' {
+
+        @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)) and (max-width:pe-responsive-get-breakpoint-value($breakpoint, max)){
+
+          .modalHeader{
+            padding          : 24px 24px 16px 24px;
+            background-color : $pe-color-white;
+          }
+
+          .modalHeaderText{
+            color       : $pe-color-charcoal;
+            font-size   : 20px;
+            line-height : 26px;
+          }
+
+          .modalBody{
+            -ms-overflow-style : none;
+            overflow-y         : scroll;
+            max-height         : 425px;
+            font-size          : 14px;
+            line-height        : 22px;
+            padding            : 0px 24px 0px 24px;
+          }
+
+          .modalFooter {
+            display   : flex;
+            width     : 100%;
+            padding   : 18px 20px 18px 20px;
+            flex-wrap : wrap;
+          }
+
+          .modalSave{
+            outline : none;
+            flex    : 1 0 auto;
+            margin  : 6px 4px 6px 4px;
+          }
+
+          .modalCancel{
+            outline : none;
+            flex    : 1 0 auto;
+            margin  : 6px 4px 6px 4px;
+          }
+
+          .modalClose{
+            width            : 40px;
+            height           : 40px;
+            float            : right;
+            margin           : -24px -24px 0px 0px;
+            text-decoration  : none;
+            color            : black;
+            outline          : none;
+            border           : none;
+            background-color : inherit;
+          }
+
+        };
+      }
+
+    }
+}
