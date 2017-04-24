@@ -256,3 +256,56 @@
     $pe-btn-cta-hover-text
   );
 }
+
+
+//===========CTA-Turquoise=================================
+.pe-btn__cta_t {
+
+  @extend %btn;
+
+  @include pe-btn(
+    $pe-color-digital-marine-turquoise,
+    $pe-color-white,
+    #179599,
+    $pe-color-white
+  );
+}
+
+.pe-btn__cta_t--btn_small {
+
+  @extend %btn;
+  @extend %btn_small;
+
+  @include pe-btn(
+  $pe-color-digital-marine-turquoise,
+  $pe-color-white,
+  #179599,
+  $pe-color-white
+  );
+}
+
+.pe-btn__cta_t--btn_large {
+
+  @extend %btn;
+  @extend %btn_large;
+
+  @include pe-btn(
+  $pe-color-digital-marine-turquoise,
+  $pe-color-white,
+  #179599,
+  $pe-color-white
+  );
+}
+
+.pe-btn__cta_t--btn_xlarge {
+
+  @extend %btn;
+  @extend %btn_xlarge;
+
+  @include pe-btn(
+  $pe-color-digital-marine-turquoise,
+  $pe-color-white,
+  #179599,
+  $pe-color-white
+  );
+}

@@ -10,6 +10,7 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 <button class="pe-btn">Default</button>
 <button class="pe-btn__primary">Primary</button>
 <button class="pe-btn__cta">Call To Action</button>
+<button class="pe-btn__cta_t">Call To Action - Turquoise</button>
 {{/demo}}
 
 ## Elements
