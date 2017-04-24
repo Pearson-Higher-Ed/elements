@@ -3,10 +3,19 @@
 
 <script>
  function toggleModal(){
-   const portal = document.getElementsByClassName('ReactModalPortal')[0];
-   console.log(portal.style)
+   const portal = document.getElementsByClassName('modalPortal')[0];
+   const headerCloseButton = document.getElementsByClassName('modalClose')[0];
+   const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
+
    if(portal.style.display == "none"){
-     portal.style.display = "";
+      portal.style.display = "";
+
+      // apply Focus to close button on open...
+      headerCloseButton ? headerCloseButton.focus() : footerCloseButton.focus();
+
+      // set aria values...
+      modalContent.setAttribute('aria-labelledby', 'modalContent');
+
     }else {
       portal.style.display = "none";
     }

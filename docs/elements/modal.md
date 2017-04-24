@@ -14,7 +14,7 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
 {{/demo}}
 
 {{#demo}}
-<div class="ReactModalPortal">
+<div class="modalPortal">
   <div class="modalOverlay">
   <div class="ReactModal__Content pe-template__static-medium" tabindex="-1" role="dialog" aria-label="Modal" aria-labelledby="modalContent">
     <div id="modalContent" class="modalContent">
@@ -31,7 +31,7 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus.</p>
         </div>
         <div class="modalFooter">
-          <button class="modalCancel pe-btn--btn_large">Standard Button</button>
+          <button class="modalCancel pe-btn--btn_large"  onclick="toggleModal()">Standard Button</button>
           <button class="modalSave pe-btn__cta_t--btn_large">Standard Button</button>
         </div>
       </div>
@@ -46,22 +46,31 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
 
 {{#demo}}
 <script>
-   function toggleModal(){
-     const portal = document.getElementsByClassName('ReactModalPortal')[0];
-     console.log(portal.style)
-     if(portal.style.display == "none"){
-       portal.style.display = "";
-      }else {
-        portal.style.display = "none";
-      }
-   }
+ function toggleModal(){
+   const portal            = document.getElementsByClassName('modalPortal')[0];
+   const headerCloseButton = document.getElementsByClassName('modalClose')[0];
+   const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
 
-  // conditional borders on modalbody if scrollbar is present...
-  const modalBody     = document.getElementsByClassName('modalBody')[0];
-  modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+   if(portal.style.display == "none"){
+      portal.style.display = "";
 
-  window.onresize = (e) => {
-    modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
-  }
+      // apply Focus to close button on open...
+      headerCloseButton ? headerCloseButton.focus() : footerCloseButton.focus();
+
+      // set aria values...
+      modalContent.setAttribute('aria-labelledby', 'modalContent');
+
+    }else {
+      portal.style.display = "none";
+    }
+ }
+
+ // conditional borders on modalbody if scrollbar is present...
+ const modalBody     = document.getElementsByClassName('modalBody')[0];
+ modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+
+ window.onresize = (e) => {
+   modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+ }
 </script>
 {{/demo}}
