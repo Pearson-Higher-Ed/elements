@@ -4,7 +4,7 @@ title: Modal
 section: elements
 ---
 
-Modal interrupts the user with a message or request for certain actions with a block of content on top of the main view.  **This need Javascript to activiate some features.
+Modal interrupts the user with a message or request for certain actions with a block of content on top of the main view.  **This need Javascript to activate some features.
 
 
 This is impliemented as a React Component Based on 'react-modal' in [Compounds](https://pearson-higher-ed.github.io/compounds/#/)
