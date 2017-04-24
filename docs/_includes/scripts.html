@@ -11,4 +11,12 @@
       portal.style.display = "none";
     }
  }
+
+ // conditional borders on modalbody if scrollbar is present...
+ const modalBody     = document.getElementsByClassName('modalBody')[0];
+ modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+
+ window.onresize = (e) => {
+   modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+ }
 </script>
