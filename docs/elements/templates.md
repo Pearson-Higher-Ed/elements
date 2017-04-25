@@ -71,6 +71,30 @@ Responsive:
   </div>
 {{/demo}}
 
+## Three Column
+This template devotes 4 columns to a all content areas. At medium and smaller breakpoints the content areas stack.
+
+Dimensions:
+- Full 12 column width at all breakpoints
+
+Responsive:
+- Maintain full 12 column width
+
+#### Three Column
+{{#demo}}
+  <div class='pe-template__triple pe-template__triple-lg' style='background:magenta;'>
+    <div class="pe-template__triple--content">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class='pe-template__triple--content'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class='pe-template__triple--content'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+  </div>
+{{/demo}}
+
 ## Static Column
 The static column presents a single column of fixed width which is centered in the page. At smaller breakpoints it transitions to full width fluid behavior. This column comes in two different sizes (small at 480px and large at 800px) and is handy for presenting modals or small pieces of content like sign in forms.
 

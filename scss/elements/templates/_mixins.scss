@@ -8,6 +8,7 @@
   @include pe-template-static-small();
   @include pe-template-double();
   @include pe-template-spacing();
+  @include pe-template-triple();
 
 };
 
@@ -197,6 +198,53 @@
 
 };
 
+@mixin pe-template-triple() {
+
+  @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+
+    //Get container margin by breakpoint
+    $margin                       : map-get($pe-container-margin, $breakpoint);
+    $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
+
+    //Construct media query
+    @media(min-width:$current-breakpoint-value-get){
+      .pe-template__triple {
+        &.pe-template__triple-#{$breakpoint} {
+          :nth-child(n) {
+            padding-left: $margin;
+          }
+
+          :nth-child(3n-1) {
+            padding-left: $margin;
+            padding-right: $margin;
+          }
+
+          :nth-child(3n) {
+            padding-right: $margin;
+            padding-left: 0;
+          }
+          .pe-template__triple--content {
+            width: 33.333333%;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+
+  .pe-template__triple {
+    box-sizing   : border-box;
+    min-height   : $pe-columns-min-height;
+    margin-right : auto;
+    margin-left  : auto;
+
+    @include clearfix();
+
+    .pe-template__triple--content {
+      width: 100%;
+    }
+  }
+}
 
 @mixin pe-template-spacing(){
 
