@@ -42,7 +42,7 @@
         @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)){
 
           .modalHeader{
-            padding          : 40px 40px 20px 40px;
+            padding          : 40px 40px 10px 40px;
             background-color : $pe-color-white;
           }
 
@@ -59,10 +59,8 @@
             max-height         : 425px;
             font-size          : 14px;
             line-height        : 22px;
-            padding            : 0px 40px 0px 40px;
-            & p{
-              outline:none;
-            }
+            padding            : 10px 40px 14px 40px;
+            outline            : none;
           }
 
           .modalBody_border{
@@ -73,7 +71,7 @@
 
           .modalFooter {
             width     : 100%;
-            padding   : 28px 40px 40px 40px;
+            padding   : 14px 40px 40px 40px;
           }
 
           .modalSave{
@@ -106,7 +104,7 @@
         @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)) and (max-width:pe-responsive-get-breakpoint-value($breakpoint, max)){
 
           .modalHeader{
-            padding          : 40px 40px 20px 40px;
+            padding          : 40px 40px 10px 40px;
             background-color : $pe-color-white;
           }
 
@@ -123,10 +121,8 @@
             max-height         : 425px;
             font-size          : 14px;
             line-height        : 22px;
-            padding            : 0px 40px 0px 40px;
-            & p{
-              outline:none;
-            }
+            padding            : 10px 40px 14px 40px;
+            outline            : none;
           }
 
           .modalBody_border{
@@ -137,7 +133,7 @@
 
           .modalFooter {
             width     : 100%;
-            padding   : 28px 40px 40px 40px;
+            padding   : 14px 40px 40px 40px;
           }
 
           .modalSave{
@@ -170,7 +166,7 @@
 
 
           .modalHeader{
-            padding          : 24px 24px 16px 24px;
+            padding          : 24px 24px 8px 24px;
             background-color : $pe-color-white;
           }
 
@@ -187,10 +183,8 @@
             overflow-y         : scroll;
             font-size          : 14px;
             line-height        : 22px;
-            padding            : 0px 24px 0px 24px;
-            & p{
-              outline:none;
-            }
+            padding            : 8px 24px 9px 24px;
+            outline            : none;
           }
 
           .modalBody_border{
@@ -202,7 +196,7 @@
           .modalFooter {
             display   : flex;
             width     : 100%;
-            padding   : 18px 20px 18px 20px;
+            padding   : 9px 20px 18px 20px;
             flex-wrap : wrap;
           }
 
@@ -238,7 +232,7 @@
         @media(min-width:pe-responsive-get-breakpoint-value($breakpoint, min)) and (max-width:pe-responsive-get-breakpoint-value($breakpoint, max)){
 
           .modalHeader{
-            padding          : 24px 24px 16px 24px;
+            padding          : 24px 24px 8px 24px;
             background-color : $pe-color-white;
           }
 
@@ -255,10 +249,8 @@
             max-height         : 425px;
             font-size          : 14px;
             line-height        : 22px;
-            padding            : 0px 24px 0px 24px;
-            & p{
-              outline:none;
-            }
+            padding            : 8px 24px 9px 24px;
+            outline            : none;
           }
 
           .modalBody_border{
@@ -270,7 +262,7 @@
           .modalFooter {
             display   : flex;
             width     : 100%;
-            padding   : 18px 20px 18px 20px;
+            padding   : 9px 20px 18px 20px;
             flex-wrap : wrap;
           }
 
