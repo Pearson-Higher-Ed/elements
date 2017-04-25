@@ -32,11 +32,6 @@
     bottom           : 0;
   }
 
-  .modalBody_border{
-    border-top    : 1px solid $pe-color-concrete;
-    border-bottom : 1px solid $pe-color-concrete;
-  }
-
 
 
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
@@ -68,6 +63,12 @@
             & p{
               outline:none;
             }
+          }
+
+          .modalBody_border{
+            padding-top   : 20px;
+            border-top    : 1px solid $pe-color-concrete;
+            border-bottom : 1px solid $pe-color-concrete;
           }
 
           .modalFooter {
@@ -128,6 +129,12 @@
             }
           }
 
+          .modalBody_border{
+            padding-top   : 20px;
+            border-top    : 1px solid $pe-color-concrete;
+            border-bottom : 1px solid $pe-color-concrete;
+          }
+
           .modalFooter {
             width     : 100%;
             padding   : 28px 40px 40px 40px;
@@ -184,6 +191,12 @@
             & p{
               outline:none;
             }
+          }
+
+          .modalBody_border{
+            padding-top   : 16px;
+            border-top    : 1px solid $pe-color-concrete;
+            border-bottom : 1px solid $pe-color-concrete;
           }
 
           .modalFooter {
@@ -246,6 +259,12 @@
             & p{
               outline:none;
             }
+          }
+
+          .modalBody_border{
+            padding-top   : 16px;
+            border-top    : 1px solid $pe-color-concrete;
+            border-bottom : 1px solid $pe-color-concrete;
           }
 
           .modalFooter {
