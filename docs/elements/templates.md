@@ -72,7 +72,7 @@ Responsive:
 {{/demo}}
 
 ## Three Column
-This template devotes 4 columns to a all content areas. At medium and smaller breakpoints the content areas stack.
+This template devotes 4 columns to a all content areas. By default at medium and smaller breakpoints the content areas stack. Use class size to change the breakpoint. For example: `pe-template__triple-sm`
 
 Dimensions:
 - Full 12 column width at all breakpoints
@@ -82,7 +82,7 @@ Responsive:
 
 #### Three Column
 {{#demo}}
-  <div class='pe-template__triple pe-template__triple-lg' style='background:magenta;'>
+  <div class='pe-template__triple pe-template__triple-xl' style='background:magenta;'>
     <div class="pe-template__triple--content">
       <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
     </div>
