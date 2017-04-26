@@ -210,16 +210,16 @@
     @media(min-width:$current-breakpoint-value-get){
       .pe-template__triple {
         &.pe-template__triple-#{$breakpoint} {
-          :nth-child(n) {
+          >:nth-child(n) {
             padding-left: $margin;
           }
 
-          :nth-child(3n-1) {
+          >:nth-child(3n-1) {
             padding-left: $margin;
             padding-right: $margin;
           }
 
-          :nth-child(3n) {
+          >:nth-child(3n) {
             padding-right: $margin;
             padding-left: 0;
           }
