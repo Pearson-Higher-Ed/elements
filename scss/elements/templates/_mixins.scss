@@ -208,24 +208,23 @@
 
     //Construct media query
     @media(min-width:$current-breakpoint-value-get){
-      .pe-template__triple {
-        &.pe-template__triple-#{$breakpoint} {
-          >:nth-child(n) {
-            padding-left: $margin;
+      .pe-template__triple--content {
+        padding-left: $margin;
+        padding-right: $margin;
+      }
+
+      .pe-template__triple.pe-template__triple-#{$breakpoint} {
+        .pe-template__triple--content {
+          width: 33.333333%;
+          float: left;
+          padding-bottom: 0;
+
+          &:first-child {
+            padding-right: 0;
           }
 
-          >:nth-child(3n-1) {
-            padding-left: $margin;
-            padding-right: $margin;
-          }
-
-          >:nth-child(3n) {
-            padding-right: $margin;
+          &:last-child {
             padding-left: 0;
-          }
-          .pe-template__triple--content {
-            width: 33.333333%;
-            float: left;
           }
         }
       }
@@ -242,6 +241,11 @@
 
     .pe-template__triple--content {
       width: 100%;
+      padding-bottom: $pe-template__double-horizontal-margin-height;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 }
