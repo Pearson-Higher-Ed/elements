@@ -223,7 +223,7 @@
 
     .pe-template__triple--content {
       width: 100%;
-      padding-bottom: $pe-template__double-horizontal-margin-height; // TODO Look at paddding on xl
+      padding-bottom: $pe-template__double-horizontal-margin-height;
 
       &:last-child {
         padding-bottom: 0;
@@ -240,25 +240,6 @@
     //Get container margin by breakpoint
     $margin                       : map-get($pe-container-margin, $breakpoint);
     $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
-
-    // undo default large breakpoint for extra-large templates - todo padding/margin isn't right
-    @if $breakpoint == "xl" {
-      &.pe-template__triple-xl {
-        .pe-template__triple--content {
-          width: 100%;
-          padding-left: $margin;
-          padding-right: $margin;
-
-          &:first-child {
-            padding-right: $margin;
-          }
-
-          &:last-child {
-            padding-left: $margin;
-          }
-        }
-      }
-    }
 
     //Construct media query
     @media(min-width:$current-breakpoint-value-get){
