@@ -107,7 +107,7 @@
 @mixin pe-template-static-small(){
 
   .pe-template__static-small{
-    box-sizing    : border-box;
+    box-sizing   : border-box;
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
