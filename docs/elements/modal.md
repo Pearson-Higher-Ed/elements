@@ -51,8 +51,9 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
    const headerCloseButton = document.getElementsByClassName('modalClose')[0];
    const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
 
-   if(portal.style.display == "none"){
-      portal.style.display = "";
+   portal.style.display = (portal.style.display === "none") ? "" : "none";
+
+   if(portal.style.display === "none"){
 
       // apply Focus to close button on open...
       headerCloseButton ? headerCloseButton.focus() : footerCloseButton.focus();
@@ -60,9 +61,8 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
       // set aria values...
       modalContent.setAttribute('aria-labelledby', 'modalContent');
 
-    }else {
-      portal.style.display = "none";
     }
+    
  }
 
  // conditional borders on modalbody if scrollbar is present...
