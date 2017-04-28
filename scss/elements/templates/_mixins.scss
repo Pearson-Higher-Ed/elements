@@ -212,10 +212,6 @@
   }
 }
 
-@function halfMargin($margin) {
-  @return $margin /2
-}
-
 @mixin pe-template-triple() {
   .pe-template__triple {
     box-sizing   : border-box;
