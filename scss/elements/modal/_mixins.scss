@@ -56,7 +56,7 @@
           .modalBody{
             -ms-overflow-style : none;
             overflow-y         : scroll;
-            max-height         : 425px;
+            max-height         : calc(100vh - 120px);
             font-size          : 14px;
             line-height        : 22px;
             padding            : 10px 40px 14px 40px;
@@ -120,7 +120,7 @@
           .modalBody{
             -ms-overflow-style : none;
             overflow-y         : scroll;
-            max-height         : 425px;
+            max-height         : calc(100vh - 120px);
             font-size          : 14px;
             line-height        : 22px;
             padding            : 10px 40px 14px 40px;
@@ -183,7 +183,7 @@
 
           .modalBody{
             -ms-overflow-style : none;
-            max-height         : 425px;
+            max-height         : calc(100vh - 120px);
             overflow-y         : scroll;
             font-size          : 14px;
             line-height        : 22px;
