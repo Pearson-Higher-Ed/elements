@@ -212,6 +212,10 @@
   }
 }
 
+@function halfMargin($margin) {
+  @return $margin /2
+}
+
 @mixin pe-template-triple() {
   .pe-template__triple {
     box-sizing   : border-box;
@@ -251,6 +255,24 @@
       .pe-template__triple.pe-template__triple-#{$breakpoint} {
         .pe-template__triple--content {
           @include make-columns();
+        }
+      }
+    }
+
+    @each $current in map-keys($pe-responsive-breakpoints) {
+      @if (index(map-keys($pe-responsive-breakpoints), $current) >= index(map-keys($pe-responsive-breakpoints), $breakpoint)) {
+        $currentValue : get-breakpoint-value($current);
+        $currentMargin                       : map-get($pe-container-margin, $current);
+
+        @media(min-width:$currentValue){
+          .pe-template__triple.pe-template__triple-#{$breakpoint} {
+            .pe-template__triple--content {
+              &:nth-child(3n-1) {
+                padding-left: $currentMargin/2;
+                padding-right: $currentMargin/2;
+              }
+            }
+          }
         }
       }
     }
