@@ -3,12 +3,13 @@
 
 <script>
  function toggleModal(){
-   const portal = document.getElementsByClassName('modalPortal')[0];
+   const portal            = document.getElementsByClassName('modalPortal')[0];
    const headerCloseButton = document.getElementsByClassName('modalClose')[0];
    const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
 
-   if(portal.style.display == "none"){
-      portal.style.display = "";
+   portal.style.display = (portal.style.display === "none") ? "" : "none";
+
+   if(portal.style.display === ""){
 
       // apply Focus to close button on open...
       headerCloseButton ? headerCloseButton.focus() : footerCloseButton.focus();
@@ -16,16 +17,15 @@
       // set aria values...
       modalContent.setAttribute('aria-labelledby', 'modalContent');
 
-    }else {
-      portal.style.display = "none";
     }
+
  }
 
  // conditional borders on modalbody if scrollbar is present...
  const modalBody     = document.getElementsByClassName('modalBody')[0];
  modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
 
- window.onresize = (e) => {
+ window.onresize = () => {
    modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
  }
 </script>
