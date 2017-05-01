@@ -1,3 +1,18 @@
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.0...v1.9.1) (2017-04-25)
+
+
+### Bug Fixes
+
+* add reasonable positioning defaults to icons inside buttons ([0415660](https://github.com/Pearson-Higher-Ed/elements/commit/0415660))
+
+### Features
+
+* add edit icon to icons; add Van's fixes to help-outline and info-outline ([f62d987](https://github.com/Pearson-Higher-Ed/elements/commit/f62d987))
+* new class name (sorry I did make it boring) ([00e6eeb](https://github.com/Pearson-Higher-Ed/elements/commit/00e6eeb))
+
+
+
 <a name="1.9.0"></a>
 # [1.9.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.8.2...v1.9.0) (2017-04-14)
 
