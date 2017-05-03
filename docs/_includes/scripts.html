@@ -2,30 +2,34 @@
 
 
 <script>
- function toggleModal(){
-   const portal            = document.getElementsByClassName('modalPortal')[0];
+ function toggleModal(target){
+   const portal            = document.getElementById(target);
    const headerCloseButton = document.getElementsByClassName('modalClose')[0];
    const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
 
    portal.style.display = (portal.style.display === "none") ? "" : "none";
 
    if(portal.style.display === ""){
-
       // apply Focus to close button on open...
       headerCloseButton ? headerCloseButton.focus() : footerCloseButton.focus();
+      document.body.style = "overflow:hidden;"
+   }
 
-      // set aria values...
-      modalContent.setAttribute('aria-labelledby', 'modalContent');
-
-    }
+   if(portal.style.display === "none"){
+     document.body.style = ""
+   }
 
  }
 
  // conditional borders on modalbody if scrollbar is present...
  const modalBody     = document.getElementsByClassName('modalBody')[0];
- modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+ const modalBody2    = document.getElementsByClassName('modalBody')[1];
+
+ modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+ modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
 
  window.onresize = () => {
-   modalBody.className = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
+   modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+   modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
  }
 </script>

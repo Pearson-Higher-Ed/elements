@@ -4,7 +4,9 @@ title: Inputs
 section: elements
 ---
 
-An input is a field used to elicit a response from a user
+An input is a field used to elicit a response from a user.
+
+[Design and Redlines](http://pearson-higher-ed.github.io/design/c/inputs/)
 
 ## Inputs - Fancy (single line)
 
