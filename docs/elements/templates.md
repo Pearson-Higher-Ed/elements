@@ -7,7 +7,7 @@ section : elements
 A standard set of page structures for a variety of use cases.
 Templates provide a way of organizing and structuring the content of a page in a consistent and responsive way. There are a variety of templates available for everything from simple single column presentations to more complicated multi-column structures.
 
-[Design and Redlines](https://pearson-higher-ed.github.io/design/c/templates/)
+[Design and Redlines](https://pearson-higher-ed.github.io/design/c/templates/beta/)
 
 Several Presentation Strategies are available for organization of content within the layout areas provided by each templates.
 
@@ -35,11 +35,24 @@ Responsive:
   </div>
 {{/demo}}
 
+The simplest page template, it takes up the full 10 columns available at every breakpoint.
+
+Dimensions:
+- Full 10 column width at all breakpoints
+
+Responsive:
+- Maintain full 10 column width
+
+{{#demo}}
+  <div class='pe-template__single-10col' style='background:magenta;'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+{{/demo}}
+
 
 ## Two Column
 This template devotes 8 columns to a main content area and the remaining 4 to a sidebar which appears on either side. At medium and smaller breakpoints the content areas stack, with the option to put the sidebar above or below the main content area.
 
-** **Option to put sidebar above and below currently on hold**
 
 Dimensions:
 - Full 12 column width at all breakpoints
@@ -47,7 +60,7 @@ Dimensions:
 Responsive:
 - Maintain full 12 column width
 
-#### Two Column - (right)
+#### Two Column 4/8 - (right)
 {{#demo}}
   <div class='pe-template__double' style='background:magenta;'>
     <div class='pe-template__double--main'>
@@ -59,32 +72,64 @@ Responsive:
   </div>
 {{/demo}}
 
-#### Two Column - (left)
+#### Two Column 4/8 - (left)
 {{#demo}}
   <div class='pe-template__double' style='background:magenta;'>
     <div class="pe-template__double--sidebar">
       <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
     </div>
     <div class='pe-template__double--main'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+  </div>
+{{/demo}}
+
+#### Two Column 6/6 - (right)
+{{#demo}}
+  <div class='pe-template__double' style='background:magenta;'>
+    <div class='pe-template__double--main_half'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class="pe-template__double--sidebar_half">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
+    </div>
+  </div>
+{{/demo}}
+
+#### Two Column 6/6 - (left)
+{{#demo}}
+  <div class='pe-template__double' style='background:magenta;'>
+    <div class="pe-template__double--sidebar_half">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
+    </div>
+    <div class='pe-template__double--main_half'>
       <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
     </div>
   </div>
 {{/demo}}
 
 ## Static Column
-The static column presents a single column of fixed width which is centered in the page. At smaller breakpoints it transitions to full width fluid behavior. This column comes in two different sizes (small at 480px and large at 800px) and is handy for presenting modals or small pieces of content like sign in forms.
+The static column presents a single column of fixed width which is centered in the page. It comes in three different sizes (small at 440px, medium at 600px, and large at 800px) and is handy for presenting modals or small pieces of content like sign in forms.
 
 Dimensions:
 - The large size is 800px wide at large breakpoints and larger
-- The small size is 480px wide at medium breakpoints and larger
+- The medium size is 600px wide at md breakpoints and larger
+- The small size is 440px wide at medium breakpoints and larger
 
 Responsive:
-- Below the breakpoints mentioned above, both sizes become 10 grid columns wide and centered
+- Below the breakpoints mentioned above, small and large sizes become 10 grid columns wide and centered
 - Below the small breakpoint both sizes become the full 12 column width
 
 #### Static Column - (small)
 {{#demo}}
   <div class='pe-template__static-small'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+{{/demo}}
+
+#### Static Column - (medium)
+{{#demo}}
+  <div class='pe-template__static-medium'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
