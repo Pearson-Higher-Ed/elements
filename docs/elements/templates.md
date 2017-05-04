@@ -44,7 +44,7 @@ Responsive:
 - Maintain full 10 column width
 
 {{#demo}}
-  <div class='pe-template__single-10col' style='background:magenta;'>
+  <div class='pe-template__single-10-col' style='background:magenta;'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}

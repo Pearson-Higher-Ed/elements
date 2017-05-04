@@ -36,7 +36,7 @@
     };
   };
 
-  .pe-template__single-10col{
+  .pe-template__single-10-col{
     box-sizing   : border-box;
     min-height   : $pe-columns-min-height;
     margin-right : auto;
@@ -283,7 +283,7 @@
 
   .pe-template__double--main_half{
     @extend %pe-template__double--main;
-    
+
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
 
       //Get container margin by breakpoint
