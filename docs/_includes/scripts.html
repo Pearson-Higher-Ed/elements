@@ -19,17 +19,33 @@
      document.body.style = ""
    }
 
- }
+   // apply padding based on clientHeight...
+   const modalBody    = document.getElementsByClassName('modalBody')[0];
+   const modalBody2   = document.getElementsByClassName('modalBody')[1];
+   const modalContent = document.getElementsByClassName('modalContent')[0];
+   const modalOverlay = document.getElementsByClassName('modalOverlay')[0];
+   const header       = document.getElementsByClassName('modalHeader')[0];
+   const footer       = document.getElementsByClassName('modalFooter')[0];
 
- // conditional borders on modalbody if scrollbar is present...
- const modalBody     = document.getElementsByClassName('modalBody')[0];
- const modalBody2    = document.getElementsByClassName('modalBody')[1];
+   const windowHeight  = window.innerHeight;
+   const contentHeight = modalContent.offsetHeight;
+   const paddingHeight = (windowHeight - contentHeight) / 2;
+   const padding       = paddingHeight > 60 ? paddingHeight : 60;
+   const headerHeight  = header.getBoundingClientRect().height;
+   const footerHeight  = footer ? footer.getBoundingClientRect().height : 0;
 
- modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
- modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+   modalBody.style     = `max-height:${windowHeight - (headerHeight + footerHeight + 120)}px`;
+   modalBody2.style    = `max-height:${windowHeight - (headerHeight + 120)}px`;
+   modalOverlay.style  = `padding-top:${padding}px; padding-bottom:${padding}px;`;
 
- window.onresize = () => {
+   // conditional borders on modalbody if scrollbar is present...
    modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
    modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+
+   window.onresize = () => {
+     modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+     modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+   }
+
  }
 </script>

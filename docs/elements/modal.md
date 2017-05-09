@@ -59,7 +59,7 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
     </div>
       <div id="modalBody" class="modalBody" tabindex="0">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
         </p>
       </div>
     </div>
@@ -73,34 +73,51 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
 {{#demo}}
 <script>
  function toggleModal(target){
-   const portal            = document.getElementById(target);
-   const headerCloseButton = document.getElementsByClassName('modalClose')[0];
-   const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
+    const portal            = document.getElementById(target);
+    const headerCloseButton = document.getElementsByClassName('modalClose')[0];
+    const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
+    const modalBody         = document.getElementsByClassName('modalBody')[0];
+    const modalBody2        = document.getElementsByClassName('modalBody')[1];
+    const modalContent      = document.getElementsByClassName('modalContent')[0];
+    const modalOverlay      = document.getElementsByClassName('modalOverlay')[0];
+    const header            = document.getElementsByClassName('modalHeader')[0];
+    const footer            = document.getElementsByClassName('modalFooter')[0];
 
-   portal.style.display = (portal.style.display === "none") ? "" : "none";
+    // apply padding based on clientHeight...
+    const windowHeight  = window.innerHeight;
+    const contentHeight = modalContent.offsetHeight;
+    const paddingHeight = (windowHeight - contentHeight) / 2;
+    const padding       = paddingHeight > 60 ? paddingHeight : 60;
+    const headerHeight  = header.getBoundingClientRect().height;
+    const footerHeight  = footer.getBoundingClientRect().height;
 
-   if(portal.style.display === ""){
+    modalBody.style     = `max-height:${windowHeight - (headerHeight + footerHeight + 120)}px`
+    modalOverlay.style  = `padding-top:${padding}px; padding-bottom:${padding}px;`;
+
+    portal.style.display = (portal.style.display === "none") ? "" : "none";
+
+    if(portal.style.display === ""){
       // apply Focus to close button on open...
       headerCloseButton ? headerCloseButton.focus() : footerCloseButton.focus();
       document.body.style = "overflow:hidden;"
-   }
+    }
 
-   if(portal.style.display === "none"){
-     document.body.style = ""
-   }
+    if(portal.style.display === "none"){
+      document.body.style = ""
+    }
 
  }
 
  // conditional borders on modalbody if scrollbar is present...
- const modalBody     = document.getElementsByClassName('modalBody')[0];
- const modalBody2    = document.getElementsByClassName('modalBody')[1];
 
  modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
  modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
 
- window.onresize = () => {
+ window.onresize = (e) => {
    modalBody.className  = (modalBody.clientHeight < modalBody.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
    modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody';
  }
+
+
 </script>
 {{/demo}}
