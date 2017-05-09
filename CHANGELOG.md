@@ -1,3 +1,9 @@
+<a name="1.9.2"></a>
+## [1.9.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.1...v1.9.2) (2017-05-01)
+
+
+
+
 <a name="1.9.1"></a>
 ## [1.9.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.0...v1.9.1) (2017-04-25)
 
@@ -5,6 +11,7 @@
 ### Bug Fixes
 
 * add reasonable positioning defaults to icons inside buttons ([0415660](https://github.com/Pearson-Higher-Ed/elements/commit/0415660))
+* move dropdown styles to elements ([7ed2877](https://github.com/Pearson-Higher-Ed/elements/commit/7ed2877))
 
 ### Features
 
