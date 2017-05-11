@@ -14,6 +14,7 @@
     content          : "";
     display          : table;
     clear            : both;
+    border-radius    : 2px;
   }
 
   .modalOverlay{
@@ -37,7 +38,6 @@
 
           .modalHeader{
             padding          : 40px 40px 0px 40px;
-            background-color : $pe-color-white;
           }
 
           .modalHeaderText{
@@ -103,7 +103,6 @@
 
           .modalHeader{
             padding          : 40px 40px 0px 40px;
-            background-color : $pe-color-white;
           }
 
           .modalHeaderText{
@@ -169,7 +168,6 @@
 
           .modalHeader{
             padding          : 24px 24px 0px 24px;
-            background-color : $pe-color-white;
           }
 
           .modalHeaderText{
@@ -239,7 +237,6 @@
 
           .modalHeader{
             padding          : 24px 24px 0px 24px;
-            background-color : $pe-color-white;
           }
 
           .modalHeaderText{
