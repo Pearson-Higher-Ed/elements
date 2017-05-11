@@ -26,8 +26,7 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
   </div>
     <div id="modalBody" class="modalBody" tabindex="0">
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.piscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.
-      piscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. Quisque molestie mi tempus augue consequat porttitor. Proin eget odio sed mi facilisis elementum quis ac elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras scelerisque massa augue, ut efficitur eros dignissim in. Vivamus massa ex, dictum sit amet est at, facilisis venenatis risus. Nullam ipsum diam, ullamcorper ac aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo. aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.aliquet sed, sagittis vitae nisi. Curabitur molestie, nisi quis pellentesque interdum, dui sapien finibus justo, vel tempus dolor tortor eu leo.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id lorem tellus. Proin a lacus ipsum. Cras 
     </p>
     </div>
     <div class="modalFooter">
@@ -71,82 +70,83 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
 ### Javascript controlling the toggle:
 
 {{#demo}}
-<script>
+<script type="text/javascript">
 
-function heightCalc(){
+  function heightCalc(){
 
-  // apply padding based on clientHeight for first modal on the page...
-  const modalBody    = document.getElementsByClassName('modalBody')[0];
-  const modalContent = document.getElementsByClassName('modalContent')[0];
-  const modalOverlay = document.getElementsByClassName('modalOverlay')[0];
-  const header       = document.getElementsByClassName('modalHeader')[0];
-  const footer       = document.getElementsByClassName('modalFooter')[0];
+    // apply padding based on clientHeight for first modal on the page...
+    const modalBody    = document.getElementsByClassName('modalBody')[0];
+    const modalContent = document.getElementsByClassName('modalContent')[0];
+    const modalOverlay = document.getElementsByClassName('modalOverlay')[0];
+    const header       = document.getElementsByClassName('modalHeader')[0];
+    const footer       = document.getElementsByClassName('modalFooter')[0];
 
-  const windowHeight  = window.innerHeight;
-  const contentHeight = modalContent.offsetHeight;
-  const paddingHeight = (windowHeight - contentHeight) / 2;
-  const padding       = paddingHeight > 60 ? paddingHeight : 60;
-  const headerHeight  = header.getBoundingClientRect().height;
-  const footerHeight  = footer ? footer.getBoundingClientRect().height : 0;
+    const windowHeight  = window.innerHeight;
+    const contentHeight = modalContent.getBoundingClientRect().height;
+    const paddingHeight = (windowHeight - contentHeight) / 2;
+    const padding       = paddingHeight > 60 ? paddingHeight : 60;
+    const headerHeight  = header.getBoundingClientRect().height;
+    const footerHeight  = footer ? footer.getBoundingClientRect().height : 0;
+
+    // apply padding based on clientHeight for second modal on the page...
+    const modalBody2    = document.getElementsByClassName('modalBody')[1];
+    const modalOverlay2 = document.getElementsByClassName('modalOverlay')[1];
+    const header2       = document.getElementsByClassName('modalHeader')[1];
+    const modalContent2 = document.getElementsByClassName('modalContent')[1];
+
+    const contentHeight2 = modalContent2.getBoundingClientRect().height;
+    const paddingHeight2 = (windowHeight - contentHeight2) / 2;
+    const padding2       = paddingHeight2 > 60 ? paddingHeight2 : 60;
+    const headerHeight2  = header2.getBoundingClientRect().height;
+
+    // calculate body max...
+    modalBody.style.maxHeight        = `${windowHeight - (headerHeight + footerHeight + 120)}px`;
+    modalOverlay.style.paddingTop    = `${padding}px`;
+    modalOverlay.style.paddingBottom = `${padding}px`;
+
+    modalBody2.style.maxHeight       = `${windowHeight - (headerHeight2 + 120)}px`;
+    modalOverlay2.style.paddingTop   = `${padding2}px`;
+    modalOverlay.style.paddingBottom = `${padding2}px`;
+
+    // conditional borders on modalbody if scrollbar is present...
+    modalBody.className  = (modalBody.clientHeight  < modalBody.scrollHeight)  ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+    modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+
+  }
 
 
-  // apply padding based on clientHeight for second modal on the page...
-  const modalBody2    = document.getElementsByClassName('modalBody')[1];
-  const modalOverlay2 = document.getElementsByClassName('modalOverlay')[1];
-  const header2       = document.getElementsByClassName('modalHeader')[1];
-  const modalContent2 = document.getElementsByClassName('modalContent')[1];
+   function toggleModal(target){
 
-  const contentHeight2 = modalContent2.offsetHeight;
-  const paddingHeight2 = (windowHeight - contentHeight2) / 2;
-  const padding2       = paddingHeight2 > 60 ? paddingHeight2 : 60;
-  const headerHeight2  = header2.getBoundingClientRect().height;
+     const portal            = document.getElementById(target);
+     const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
+     const headerCloseButton = document.getElementsByClassName('modalClose')[1];
 
-  // calculate body max...
-  modalBody.style     = `max-height:${windowHeight - (headerHeight + footerHeight + 120)}px`;
-  modalOverlay.style  = `padding-top:${padding}px; padding-bottom:${padding}px;`;
+     // toggle modal...
+     portal.style.display = portal.style.display === "none" ? "" : "none";
 
-  modalBody2.style    = `max-height:${windowHeight - (headerHeight2 + 120)}px`;
-  modalOverlay2.style = `padding-top:${padding2}px; padding-bottom:${padding2}px;`;
+     //*****MODAL OPEN**************
+     if(portal.style.display === ""){
 
-  // conditional borders on modalbody if scrollbar is present...
-  modalBody.className  = (modalBody.clientHeight  < modalBody.scrollHeight)  ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
-  modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+      // calulate max-height for modalBody
+      // and apply conditional scrollbars....
+      heightCalc();
 
-}
+      // detect ESC KeyPress...
+      document.addEventListener("keyup", e => e.keyCode == 27 ? portal.style.display = "none" : null);
 
+      // apply focus to close button...
+      headerCloseButton ? headerCloseButton.focus() : null;
+      footerCloseButton ? footerCloseButton.focus() : null;
 
- function toggleModal(target){
+      // if open stop page underneath from scrolling...
+      document.body.style = "overflow:hidden;";
 
-   const portal             = document.getElementById(target);
-   const headerCloseButton  = document.getElementsByClassName('modalClose')[0];
-   const footerCloseButton  = document.getElementsByClassName('modalCancel')[0];
-   const headerCloseButton2 = document.getElementsByClassName('modalClose')[1];
+     }
 
-   // toggle modal...
-   portal.style.display = portal.style.display === "none" ? "" : "none";
+     //*****MODAL CLOSED**************
+     portal.style.display === "none" ? document.body.style = "" : null;
 
-   //*****MODAL OPEN**************
-   if(portal.style.display === ""){
-
-    // calulate max-height for modalBody
-    // and apply conditional scrollbars....
-    heightCalc();
-
-    // detect ESC KeyPress...
-    document.addEventListener("keyup", e => e.keyCode == 27 ? portal.style.display = "none" : null);
-
-    // apply focus to close button...
-    headerCloseButton  ? headerCloseButton.focus()  : footerCloseButton.focus();
-    headerCloseButton2 ? headerCloseButton2.focus() : null;
-
-    // if open stop page underneath from scrolling...
-    document.body.style = "overflow:hidden;";
    }
-
-   //*****MODAL CLOSED**************
-   portal.style.display === "none" ? document.body.style = "" : null;
-
- }
 
 
 </script>
