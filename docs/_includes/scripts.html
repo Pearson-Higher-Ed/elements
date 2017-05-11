@@ -63,7 +63,7 @@ function heightCalc(){
     heightCalc();
 
     // detect ESC KeyPress...
-    document.addEventListener("keyup", e => e.keyCode == 27 ? toggleModal(target) : null);
+    document.addEventListener("keyup", e => e.keyCode == 27 ? portal.style.display = "none" : null);
 
     // apply focus to close button...
     headerCloseButton  ? headerCloseButton.focus()  : footerCloseButton.focus();
