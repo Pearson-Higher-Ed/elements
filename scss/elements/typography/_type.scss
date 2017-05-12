@@ -124,7 +124,8 @@ html {
 	@include font-size($pe-font-size-large, $pe-line-height-large);
 }
 
-.pe-label--bold {
+.pe-label--bold,
+.pe-bold {
 	font-weight: $pe-label-bold;
 }
 

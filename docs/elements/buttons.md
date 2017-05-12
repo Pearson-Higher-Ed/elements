@@ -101,3 +101,92 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 {{/demo}}
+
+
+## Icon alignment inside buttons
+
+{{#demo}}
+<p>With size-18 icon:</p>
+<button type="button" class="pe-btn--btn_small">
+  Small with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-18">
+    <use xlink:href="#calendar-18"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn--btn_large">
+  Large with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-18">
+    <use xlink:href="#calendar-18"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn--btn_large pe-btn__cta">
+  CTA large with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-18">
+    <use xlink:href="#calendar-18"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn--btn_xlarge">
+  xLarge with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-18">
+    <use xlink:href="#calendar-18"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn__primary--btn_xlarge">
+  Primary xLarge with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-18">
+    <use xlink:href="#calendar-18"></use>
+  </svg>
+</button>
+
+<p>With size-24 icon:</p>
+<button type="button" class="pe-btn--btn_small">
+  Small with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-24">
+    <use xlink:href="#calendar-24"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn--btn_large">
+  Large with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-24">
+    <use xlink:href="#calendar-24"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn--btn_large pe-btn__cta">
+  CTA large with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-24">
+    <use xlink:href="#calendar-24"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn--btn_xlarge">
+  xLarge with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-24">
+    <use xlink:href="#calendar-24"></use>
+  </svg>
+</button>
+<button type="button" class="pe-btn__primary--btn_xlarge">
+  Primary xLarge with icon 
+  <svg aria-hidden="true"
+       focusable="false"
+       class="pe-icon--calendar-24">
+    <use xlink:href="#calendar-24"></use>
+  </svg>
+</button>
+{{/demo}}

@@ -1,13 +1,111 @@
+<a name="1.9.3"></a>
+## [1.9.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.2...v1.9.3) (2017-05-10)
+
+
+
+
+<a name="1.9.2"></a>
+## [1.9.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.1...v1.9.2) (2017-05-01)
+
+
+### Bug Fixes
+
+* fixing merge conflicts ([a5f5cb4](https://github.com/Pearson-Higher-Ed/elements/commit/a5f5cb4))
+* nth child class to only affect its direct child ([03320b1](https://github.com/Pearson-Higher-Ed/elements/commit/03320b1))
+* paddings on diff screen sizes ([8e3a853](https://github.com/Pearson-Higher-Ed/elements/commit/8e3a853))
+* removing unused code ([338503f](https://github.com/Pearson-Higher-Ed/elements/commit/338503f))
+
+### Features
+
+* adding padding to the content areas and updating templates.md ([72e9ccd](https://github.com/Pearson-Higher-Ed/elements/commit/72e9ccd))
+* adding three column template ([86f70e3](https://github.com/Pearson-Higher-Ed/elements/commit/86f70e3))
+* each content area to be of same width for diff screen size ([10f3802](https://github.com/Pearson-Higher-Ed/elements/commit/10f3802))
+* trying to add a default feature of breaking at lg size ([18e84b1](https://github.com/Pearson-Higher-Ed/elements/commit/18e84b1))
+
+
+
+<a name="1.9.1"></a>
+## [1.9.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.0...v1.9.1) (2017-04-25)
+
+
+### Bug Fixes
+
+* add reasonable positioning defaults to icons inside buttons ([0415660](https://github.com/Pearson-Higher-Ed/elements/commit/0415660))
+* move dropdown styles to elements ([7ed2877](https://github.com/Pearson-Higher-Ed/elements/commit/7ed2877))
+
+### Features
+
+* add edit icon to icons; add Van's fixes to help-outline and info-outline ([f62d987](https://github.com/Pearson-Higher-Ed/elements/commit/f62d987))
+* new class name (sorry I did make it boring) ([00e6eeb](https://github.com/Pearson-Higher-Ed/elements/commit/00e6eeb))
+
+
+
+<a name="1.9.0"></a>
+# [1.9.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.8.2...v1.9.0) (2017-04-14)
+
+
+
+
+<a name="1.8.2"></a>
+## [1.8.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.8.1...v1.8.2) (2017-04-13)
+
+
+### Bug Fixes
+
+* basic margin-top ([ac64463](https://github.com/Pearson-Higher-Ed/elements/commit/ac64463))
+* basic readonly attribute ([0e5a160](https://github.com/Pearson-Higher-Ed/elements/commit/0e5a160))
+* checkbox z-index ([e4a4f27](https://github.com/Pearson-Higher-Ed/elements/commit/e4a4f27))
+* font-face url path to relative to fix default-src policy error ([bd01196](https://github.com/Pearson-Higher-Ed/elements/commit/bd01196))
+* fonts warnings ([ac51461](https://github.com/Pearson-Higher-Ed/elements/commit/ac51461))
+* make images path relative ([34d44a9](https://github.com/Pearson-Higher-Ed/elements/commit/34d44a9))
+* make images path relative ([6e31b8c](https://github.com/Pearson-Higher-Ed/elements/commit/6e31b8c))
+* margin top basic select readonly ([2319c2e](https://github.com/Pearson-Higher-Ed/elements/commit/2319c2e))
+* padding on fancy select ([022c48a](https://github.com/Pearson-Higher-Ed/elements/commit/022c48a))
+* revert image path ([24e718d](https://github.com/Pearson-Higher-Ed/elements/commit/24e718d))
+
+### Features
+
+* new icons (small dropdowns, small chevrons, sort, ellipsis); adjusted radios/che ([a199776](https://github.com/Pearson-Higher-Ed/elements/commit/a199776))
+
+
+
 <a name="1.8.1"></a>
-## [1.8.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.3...v1.8.1) (2017-03-27)
+## [1.8.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.8.0...v1.8.1) (2017-03-27)
+
+
+
+
+<a name="1.8.0"></a>
+# [1.8.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.6...v1.8.0) (2017-03-24)
+
+
+
+
+<a name="1.7.6"></a>
+## [1.7.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.5...v1.7.6) (2017-03-22)
+
+
+### Bug Fixes
+
+* reduce redundant imports. ([37b78f5](https://github.com/Pearson-Higher-Ed/elements/commit/37b78f5))
+* remove commented import commands. ([638a66a](https://github.com/Pearson-Higher-Ed/elements/commit/638a66a))
+
+
+
+<a name="1.7.5"></a>
+## [1.7.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.4...v1.7.5) (2017-03-17)
+
+
+
+
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.7.3...v1.7.4) (2017-03-17)
 
 
 ### Bug Fixes
 
 * link error message with aria-describedby; change error message to natural block  ([42b3e33](https://github.com/Pearson-Higher-Ed/elements/commit/42b3e33))
 * make list-items reflect the same line-height as body copy ([ea265d9](https://github.com/Pearson-Higher-Ed/elements/commit/ea265d9))
-* reduce redundant imports. ([37b78f5](https://github.com/Pearson-Higher-Ed/elements/commit/37b78f5))
-* remove commented import commands. ([638a66a](https://github.com/Pearson-Higher-Ed/elements/commit/638a66a))
 
 
 
