@@ -1,8 +1,5 @@
 
 @mixin modalStyles(){
-  html, body, h2, p {
-    margin : 0;
-  }
 
   .ReactModal__Body--open {
     overflow : hidden;
