@@ -108,46 +108,6 @@ Responsive:
   </div>
 {{/demo}}
 
-#### Three Column 4/4/4
-{{#demo}}
-  <div class='pe-template__triple-xs'  style="background:magenta">
-    <div class="pe-template__triple_content-xs"><p style="background:cyan">one</p></div>
-    <div class="pe-template__triple_content-xs"><p style="background:cyan">two</p></div>
-    <div class="pe-template__triple_content-xs"><p style="background:cyan">three</p></div>
-  </div>
-{{/demo}}
-
-{{#demo}}
-  <div class='pe-template__triple-sm'  style="background:magenta">
-    <div class="pe-template__triple_content-sm"><p style="background:cyan">one</p></div>
-    <div class="pe-template__triple_content-sm"><p style="background:cyan">two</p></div>
-    <div class="pe-template__triple_content-sm"><p style="background:cyan">three</p></div>
-  </div>
-{{/demo}}
-
-{{#demo}}
-  <div class='pe-template__triple-md'  style="background:magenta">
-    <div class="pe-template__triple_content-md"><p style="background:cyan">one</p></div>
-    <div class="pe-template__triple_content-md"><p style="background:cyan">two</p></div>
-    <div class="pe-template__triple_content-md"><p style="background:cyan">three</p></div>
-  </div>
-{{/demo}}
-
-{{#demo}}
-  <div class='pe-template__triple-lg'  style="background:magenta">
-    <div class="pe-template__triple_content-lg"><p style="background:cyan">one</p></div>
-    <div class="pe-template__triple_content-lg"><p style="background:cyan">two</p></div>
-    <div class="pe-template__triple_content-lg"><p style="background:cyan">three</p></div>
-  </div>
-{{/demo}}
-
-{{#demo}}
-  <div class='pe-template__triple-xl'  style="background:magenta">
-    <div class="pe-template__triple_content-xl"><p style="background:cyan">one</p></div>
-    <div class="pe-template__triple_content-xl"><p style="background:cyan">two</p></div>
-    <div class="pe-template__triple_content-xl"><p style="background:cyan">three</p></div>
-  </div>
-{{/demo}}
 
 ## Static Column
 The static column presents a single column of fixed width which is centered in the page. It comes in three different sizes (small at 440px, medium at 600px, and large at 800px) and is handy for presenting modals or small pieces of content like sign in forms.

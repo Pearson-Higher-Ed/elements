@@ -7,7 +7,6 @@
   @include pe-template-static-small();
   @include pe-template-single();
   @include pe-template-double();
-  @include pe-template-triple();
   @include pe-template-spacing();
   @include pe-template-static-medium();
 };
@@ -335,50 +334,6 @@
   }
 
 };
-
-@mixin pe-template-triple(){
-
-  @each $breakpoint in map-keys($pe-responsive-breakpoints) {
-
-    .pe-template__triple-#{$breakpoint}{
-      box-sizing   : border-box;
-      min-height   : $pe-columns-min-height;
-      margin-right : auto;
-      margin-left  : auto;
-
-      @include clearfix();
-
-      //Get container margin by breakpoint
-      $margin                       : map-get($pe-container-margin, $breakpoint);
-      $current-breakpoint-value-get : pe-responsive-get-breakpoint-value($breakpoint, min);
-
-      //Construct media query
-      @media(min-width:$current-breakpoint-value-get){
-
-
-        @each $currentBreakpoint in map-keys($pe-responsive-breakpoints) {
-
-          //Get the other breakpoint values for comparison...
-          $other-breakpoint-value-get : pe-responsive-get-breakpoint-value($currentBreakpoint, min);
-
-          .pe-template__triple_content-#{$currentBreakpoint}{
-            @if $current-breakpoint-value-get < $other-breakpoint-value-get {
-              padding-right : $margin;
-              padding-left  : $margin;
-              width         : percentage(4 / $pe-columns);
-            }
-            @if $current-breakpoint-value-get > $other-breakpoint-value-get  {
-              padding-right : $margin;
-              padding-left  : $margin;
-              width         : 100%;
-            }
-          }
-        };
-
-      };
-    };
-  };
-}
 
 
 @mixin pe-template-spacing(){
