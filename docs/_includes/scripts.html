@@ -3,67 +3,65 @@
 
 <script type="text/javascript">
 
-  function heightCalc(){
+  function heightCalc() {
+    var modalContent = document.getElementsByClassName('modalContent')[0];
+    var modalOverlay = document.getElementsByClassName('modalOverlay')[0];
+    var modalBody = document.getElementsByClassName('modalBody')[0];
+    var header = document.getElementsByClassName('modalHeader')[0];
+    var footer = document.getElementsByClassName('modalFooter')[0];
 
-    // apply padding based on clientHeight for first modal on the page...
-    const modalBody    = document.getElementsByClassName('modalBody')[0];
-    const modalContent = document.getElementsByClassName('modalContent')[0];
-    const modalOverlay = document.getElementsByClassName('modalOverlay')[0];
-    const header       = document.getElementsByClassName('modalHeader')[0];
-    const footer       = document.getElementsByClassName('modalFooter')[0];
-
-    const windowHeight  = window.innerHeight;
-    const contentHeight = modalContent.getBoundingClientRect().height;
-    const paddingHeight = (windowHeight - contentHeight) / 2;
-    const padding       = paddingHeight > 60 ? paddingHeight : 60;
-    const headerHeight  = header.getBoundingClientRect().height;
-    const footerHeight  = footer ? footer.getBoundingClientRect().height : 0;
+    var windowHeight = window.innerHeight;
+    var contentHeight = modalContent.getBoundingClientRect().height;
+    var paddingHeight = (windowHeight - contentHeight) / 2;
+    var padding = paddingHeight > 60 ? paddingHeight : 60;
+    var headerHeight = header.getBoundingClientRect().height;
+    var footerHeight = footer ? footer.getBoundingClientRect().height : 0;
 
     // apply padding based on clientHeight for second modal on the page...
-    const modalBody2    = document.getElementsByClassName('modalBody')[1];
-    const modalOverlay2 = document.getElementsByClassName('modalOverlay')[1];
-    const header2       = document.getElementsByClassName('modalHeader')[1];
-    const modalContent2 = document.getElementsByClassName('modalContent')[1];
+    var modalBody2 = document.getElementsByClassName('modalBody')[1];
+    var modalOverlay2 = document.getElementsByClassName('modalOverlay')[1];
+    var header2 = document.getElementsByClassName('modalHeader')[1];
+    var modalContent2 = document.getElementsByClassName('modalContent')[1];
 
-    const contentHeight2 = modalContent2.getBoundingClientRect().height;
-    const paddingHeight2 = (windowHeight - contentHeight2) / 2;
-    const padding2       = paddingHeight2 > 60 ? paddingHeight2 : 60;
-    const headerHeight2  = header2.getBoundingClientRect().height;
+    var contentHeight2 = modalContent2.getBoundingClientRect().height;
+    var paddingHeight2 = (windowHeight - contentHeight2) / 2;
+    var padding2 = paddingHeight2 > 60 ? paddingHeight2 : 60;
+    var headerHeight2 = header2.getBoundingClientRect().height;
 
     // calculate body max...
-    modalBody.style.maxHeight        = `${windowHeight - (headerHeight + footerHeight + 120)}px`;
-    modalOverlay.style.paddingTop    = `${padding}px`;
-    modalOverlay.style.paddingBottom = `${padding}px`;
+    modalBody.style.maxHeight = windowHeight - (headerHeight + footerHeight + 120) + "px";
+    modalOverlay.style.paddingTop = padding + "px";
+    modalOverlay.style.paddingBottom = padding + "px";
 
-    modalBody2.style.maxHeight       = `${windowHeight - (headerHeight2 + 120)}px`;
-    modalOverlay2.style.paddingTop   = `${padding2}px`;
-    modalOverlay.style.paddingBottom = `${padding2}px`;
+    modalBody2.style.maxHeight = windowHeight - (headerHeight2 + 120) + "px";
+    modalOverlay2.style.paddingTop = padding2 + "px";
+    modalOverlay.style.paddingBottom = padding2 + "px";
 
     // conditional borders on modalbody if scrollbar is present...
-    modalBody.className  = (modalBody.clientHeight  < modalBody.scrollHeight)  ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
-    modalBody2.className = (modalBody2.clientHeight < modalBody2.scrollHeight) ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
-
+    modalBody.className = modalBody.clientHeight < modalBody.scrollHeight ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
+    modalBody2.className = modalBody2.clientHeight < modalBody2.scrollHeight ? 'modalBody modalBody_border' : 'modalBody modalBody_border_normal';
   }
 
+  function toggleModal(target) {
 
-   function toggleModal(target){
+    var portal = document.getElementById(target);
+    var footerCloseButton = document.getElementsByClassName('modalCancel')[0];
+    var headerCloseButton = document.getElementsByClassName('modalClose')[1];
 
-     const portal            = document.getElementById(target);
-     const footerCloseButton = document.getElementsByClassName('modalCancel')[0];
-     const headerCloseButton = document.getElementsByClassName('modalClose')[1];
+    // toggle modal...
+    portal.style.display = portal.style.display === "none" ? "" : "none";
 
-     // toggle modal...
-     portal.style.display = portal.style.display === "none" ? "" : "none";
-
-     //*****MODAL OPEN**************
-     if(portal.style.display === ""){
+    //*****MODAL OPEN**************
+    if (portal.style.display === "") {
 
       // calulate max-height for modalBody
       // and apply conditional scrollbars....
       heightCalc();
 
       // detect ESC KeyPress...
-      document.addEventListener("keyup", e => e.keyCode == 27 ? portal.style.display = "none" : null);
+      document.addEventListener("keyup", function (e) {
+        e.keyCode == 27 ? portal.style.display = "none" : null;
+      });
 
       // apply focus to close button...
       headerCloseButton ? headerCloseButton.focus() : null;
@@ -71,13 +69,11 @@
 
       // if open stop page underneath from scrolling...
       document.body.style = "overflow:hidden;";
+    }
 
-     }
-
-     //*****MODAL CLOSED**************
-     portal.style.display === "none" ? document.body.style = "" : null;
-
-   }
+    //*****MODAL CLOSED**************
+    portal.style.display === "none" ? document.body.style = "" : null;
+  }
 
 
 </script>
