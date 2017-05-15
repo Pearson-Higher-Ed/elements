@@ -1,6 +1,26 @@
+<a name="1.9.3"></a>
+## [1.9.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.2...v1.9.3) (2017-05-10)
+
+
+
+
 <a name="1.9.2"></a>
 ## [1.9.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.1...v1.9.2) (2017-05-01)
 
+
+### Bug Fixes
+
+* fixing merge conflicts ([a5f5cb4](https://github.com/Pearson-Higher-Ed/elements/commit/a5f5cb4))
+* nth child class to only affect its direct child ([03320b1](https://github.com/Pearson-Higher-Ed/elements/commit/03320b1))
+* paddings on diff screen sizes ([8e3a853](https://github.com/Pearson-Higher-Ed/elements/commit/8e3a853))
+* removing unused code ([338503f](https://github.com/Pearson-Higher-Ed/elements/commit/338503f))
+
+### Features
+
+* adding padding to the content areas and updating templates.md ([72e9ccd](https://github.com/Pearson-Higher-Ed/elements/commit/72e9ccd))
+* adding three column template ([86f70e3](https://github.com/Pearson-Higher-Ed/elements/commit/86f70e3))
+* each content area to be of same width for diff screen size ([10f3802](https://github.com/Pearson-Higher-Ed/elements/commit/10f3802))
+* trying to add a default feature of breaking at lg size ([18e84b1](https://github.com/Pearson-Higher-Ed/elements/commit/18e84b1))
 
 
 
