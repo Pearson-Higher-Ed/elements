@@ -103,11 +103,32 @@ Responsive:
       <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
     </div>
     <div class='pe-template__double--main_half'>
+
+## Three Column
+This template devotes 4 columns to all content areas. To use add class `pe-template__triple pe-template__triple-[size]`. See below code for example. Using -md would mean that you want the columns to stack when the width is <768px. By default (using just ` pe-template__triple`) the columns stack at lg screen size or <1024px.
+
+Note:
+- Class size xl does not work
+
+Dimensions:
+- Full 12 column width at all breakpoints
+
+Responsive:
+- Maintain full 12 column width
+
+{{#demo}}
+  <div class='pe-template__triple pe-template__triple-md' style='background:magenta;'>
+    <div class="pe-template__triple--content">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class='pe-template__triple--content'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class='pe-template__triple--content'>
       <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
     </div>
   </div>
 {{/demo}}
-
 
 ## Static Column
 The static column presents a single column of fixed width which is centered in the page. It comes in three different sizes (small at 440px, medium at 600px, and large at 800px) and is handy for presenting modals or small pieces of content like sign in forms.
