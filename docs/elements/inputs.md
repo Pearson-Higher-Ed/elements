@@ -82,7 +82,7 @@ The `aria-invalid` attribute should only be set to true *after validation*, not 
 
 ## Inputs - Basic (single line - focus)
 
-This is just showing that, on focus, the label should turn blue. This needs JavaScript to do so is not naturally included in Elements css.
+This is just showing that, on focus, the label should turn blue. This needs JavaScript to show, and is not naturally included in Elements css.
 
 {{#demo}}
   <label class="pe-textLabelInput__label--label_focus" for="anotherInput">Label</label>
