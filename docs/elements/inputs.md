@@ -115,7 +115,7 @@ This is just showing that, on focus, the label should turn blue. This needs Java
 
 {{#demo}}
   <label for="PasswordInputFancy" class="pe-textLabelInput__label">Set a Password</label>
-  <input type="password" id="PasswordInputFancy"class="pe-textInput" aria-describedby="password_hint">
+  <input type="password" id="PasswordInputFancy" class="pe-textInput" aria-describedby="password_hint">
   <span class="pe-input_underline"></span>
   <button type="button" id="showbutton-PasswordInputFancy" class="pe-textInput__showButton">show<span class="pe-sr-only"> password</span></button>
   <span id="password_hint" class="pe-input--info_message">Password must contain 1 uppercase letter, 1 lowercase letter, the Fibonacci sequence, a solution to the healthcare crisis, and a copy of your DNA.</span>
@@ -189,7 +189,7 @@ Consider the usefulness (or not) of a readonly password input.
 
  {{#demo}}
   <label for="PasswordInputBasicReadOnly" class="pe-textLabelInput__label">Password</label>
-  <input type="password" id="PasswordInputBasicReadOnly" value="**********" disabled readonly="" class="pe-textInput--input_readonly">
+  <input type="password" id="PasswordInputBasicReadOnly" value="zomgwtfbbq" readonly class="pe-textInput--input_readonly">
   <button type="button" id="showbutton-PasswordInputBasicReadOnly" class="pe-textInput__showButton">show</button>
  {{/demo}}
 
