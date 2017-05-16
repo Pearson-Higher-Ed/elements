@@ -9,8 +9,8 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 {{#demo}}
 <button class="pe-btn">Default</button>
 <button class="pe-btn__primary">Primary</button>
+<button class="pe-btn__primary_t">Primary - Turquoise</button>
 <button class="pe-btn__cta">Call To Action</button>
-<button class="pe-btn__cta_t">Call To Action - Turquoise</button>
 {{/demo}}
 
 ## Elements
@@ -108,7 +108,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 {{#demo}}
 <p>With size-18 icon:</p>
 <button type="button" class="pe-btn--btn_small">
-  Small with icon 
+  Small with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -116,7 +116,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn--btn_large">
-  Large with icon 
+  Large with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -124,7 +124,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn--btn_large pe-btn__cta">
-  CTA large with icon 
+  CTA large with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -132,7 +132,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn--btn_xlarge">
-  xLarge with icon 
+  xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -140,7 +140,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn__primary--btn_xlarge">
-  Primary xLarge with icon 
+  Primary xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -150,7 +150,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 
 <p>With size-24 icon:</p>
 <button type="button" class="pe-btn--btn_small">
-  Small with icon 
+  Small with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
@@ -158,7 +158,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn--btn_large">
-  Large with icon 
+  Large with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
@@ -166,7 +166,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn--btn_large pe-btn__cta">
-  CTA large with icon 
+  CTA large with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
@@ -174,7 +174,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn--btn_xlarge">
-  xLarge with icon 
+  xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
@@ -182,7 +182,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
   </svg>
 </button>
 <button type="button" class="pe-btn__primary--btn_xlarge">
-  Primary xLarge with icon 
+  Primary xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">

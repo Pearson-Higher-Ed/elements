@@ -259,7 +259,7 @@
 
 
 //===========CTA-Turquoise=================================
-.pe-btn__cta_t {
+.pe-btn__primary_t {
 
   @extend %btn;
 
@@ -271,7 +271,7 @@
   );
 }
 
-.pe-btn__cta_t--btn_small {
+.pe-btn__primary_t--btn_small {
 
   @extend %btn;
   @extend %btn_small;
@@ -284,7 +284,7 @@
   );
 }
 
-.pe-btn__cta_t--btn_large {
+.pe-btn__primary_t--btn_large {
 
   @extend %btn;
   @extend %btn_large;
@@ -297,7 +297,7 @@
   );
 }
 
-.pe-btn__cta_t--btn_xlarge {
+.pe-btn__primary_t--btn_xlarge {
 
   @extend %btn;
   @extend %btn_xlarge;

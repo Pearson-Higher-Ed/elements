@@ -15,7 +15,7 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
 
 ### Modal With Footer:
 {{#demo}}
-  <button class="pe-btn__cta_t--btn_xlarge" onclick="toggleModal('modalPortalWithFooter')">ToggleModal With Footer</button>
+  <button class="pe-btn__primary_t--btn_xlarge" onclick="toggleModal('modalPortalWithFooter')">ToggleModal With Footer</button>
 {{/demo}}
 {{#demo}}
 <div id="modalPortalWithFooter" class="modalPortal" style="display:none;">
@@ -31,7 +31,7 @@ This is impliemented as a React Component Based on 'react-modal' in [Compounds](
     </div>
     <div class="modalFooter">
     <button class="modalCancel pe-btn--btn_large" >Standard Button</button>
-    <button class="modalSave pe-btn__cta_t--btn_large">Standard Button</button>
+    <button class="modalSave pe-btn__primary_t--btn_large">Standard Button</button>
     </div>
   </div>
   </div>
