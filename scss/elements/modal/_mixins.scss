@@ -24,6 +24,9 @@
     z-index          : 1001;
   }
 
+  h2.modalHeaderText{
+    margin : 0px;
+  }
 
 
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
@@ -41,10 +44,6 @@
             color         : $pe-color-charcoal;
             font-size     : 24px;
             line-height   : 28px;
-          }
-
-          h2.modalHeaderText{
-            margin : 0px;
           }
 
           .modalBody{
@@ -112,10 +111,6 @@
             margin-bottom : 0px;
           }
 
-          h2.modalHeaderText{
-            margin : 0px;
-          }
-
           .modalBody{
             -ms-overflow-style : none;
             overflow-y         : scroll;
@@ -179,10 +174,6 @@
             font-size     : 20px;
             line-height   : 26px;
             margin-bottom : 0px;
-          }
-
-          h2.modalHeaderText{
-            margin : 0px;
           }
 
           .modalBody{
@@ -252,10 +243,6 @@
             font-size     : 20px;
             line-height   : 26px;
             margin-bottom : 0px;
-          }
-
-          h2.modalHeaderText{
-            margin : 0px;
           }
 
           .modalBody{
