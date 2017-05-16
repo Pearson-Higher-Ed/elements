@@ -94,9 +94,9 @@
         @if $current-breakpoint-value-get == get-breakpoint-value("xs"){
           width : $pe-template__static-large-width;
         };
-        @if $current-breakpoint-value-get < get-breakpoint-value($breakpoint){
-          width : 100%;
-        };
+        // @if $current-breakpoint-value-get < get-breakpoint-value($breakpoint){
+        //   width : 100%;
+        // };
 
       };
     };
