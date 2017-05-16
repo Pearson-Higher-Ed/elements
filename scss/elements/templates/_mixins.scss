@@ -2,15 +2,13 @@
 
 
 @mixin generate-templates(){
-
-  @include pe-template-static-large();
   @include pe-template-static-small();
+  @include pe-template-static-medium();
+  @include pe-template-static-large();
   @include pe-template-single();
   @include pe-template-double();
   @include pe-template-spacing();
-  @include pe-template-static-medium();
   @include pe-template-triple();
-
 };
 
 
