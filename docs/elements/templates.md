@@ -162,7 +162,7 @@ Responsive:
 
 #### Static Column - (large)
 {{#demo}}
-  <div class='pe-template__static-large'>
+  <div class='pe-template__static__md--large'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}

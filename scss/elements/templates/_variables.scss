@@ -13,13 +13,18 @@ $pe-static-template-medium-width-breakpoints : (
   md : 768px
 );
 
+$pe-template__static-small-width  : 440px;
+$pe-template__static-medium-width : 600px;
+$pe-template__static-large-width  : 800px;
+
+
+
+
 $pe-template__static-small-xs-width               : percentage(12 / $pe-columns);
 $pe-template__static-small-sm-width               : percentage(10 / $pe-columns);
 $pe-template__static-small-lg_and_xl_and_md-width : 480px;
 
 $pe-template__static-medium-xs-width               : percentage(12 / $pe-columns);
-$pe-template__static-medium-sm-width               : 440px;
-$pe-template__static-medium-md_and_lg_and_xl-width : 600px;
 
 $pe-template__static-large-xs-width        : percentage(12 / $pe-columns);
 $pe-template__static-large-md_and_sm-width : percentage(10 / $pe-columns);
