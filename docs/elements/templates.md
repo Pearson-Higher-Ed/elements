@@ -142,27 +142,24 @@ Dimensions:
 - The medium size is 600px wide at md breakpoints and larger
 - The small size is 440px wide at medium breakpoints and larger
 
-Responsive:
-- Below the breakpoints mentioned above, small and large sizes become 10 grid columns wide and centered
-- Below the small breakpoint both sizes become the full 12 column width
 
 #### Static Column - (small)
 {{#demo}}
-  <div class='pe-template__static-small'>
+  <div class='pe-template_static_small--sm'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
 
 #### Static Column - (medium)
 {{#demo}}
-  <div class='pe-template__static-medium'>
+  <div class='pe-template_static_medium--sm'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
 
 #### Static Column - (large)
 {{#demo}}
-  <div class='pe-template__static__md--large'>
+  <div class='pe-template_static_large--sm'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
