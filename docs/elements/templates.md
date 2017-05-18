@@ -30,7 +30,7 @@ Responsive:
 - Maintain full 12 column width
 
 {{#demo}}
-  <div class='pe-template__single' style='background:magenta;'>
+  <div class='pe-template__single--sm' style='background:magenta;'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
@@ -44,7 +44,7 @@ Responsive:
 - Maintain full 10 column width
 
 {{#demo}}
-  <div class='pe-template__single-10-col' style='background:magenta;'>
+  <div class='pe-template__single-10-col--sm' style='background:magenta;'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}

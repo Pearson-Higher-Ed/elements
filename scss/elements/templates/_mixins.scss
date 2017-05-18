@@ -14,15 +14,15 @@
 
 @mixin pe-template-single(){
 
-  .pe-template__single{
-    box-sizing   : border-box;
-    min-height   : $pe-columns-min-height;
-    margin-right : auto;
-    margin-left  : auto;
-
-    @include clearfix();
-
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+
+      .pe-template__single--#{$breakpoint}{
+        box-sizing   : border-box;
+        min-height   : $pe-columns-min-height;
+        margin-right : auto;
+        margin-left  : auto;
+
+        @include clearfix();
 
       //Get container margin by breakpoint
       $margin                       : map-get($pe-container-margin, $breakpoint);
@@ -30,21 +30,40 @@
 
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
-        padding-right : $margin;
-        padding-left  : $margin;
+        @if $current-breakpoint-value-get == get-breakpoint-value("xl") {
+          padding-right : $margin;
+          padding-left  : $margin;
+        };
+        @if $current-breakpoint-value-get == get-breakpoint-value("lg") {
+          padding-right : $margin;
+          padding-left  : $margin;
+        }
+        @if $current-breakpoint-value-get == get-breakpoint-value("md") {
+          padding-right : $margin;
+          padding-left  : $margin;
+        }
+        @if $current-breakpoint-value-get == get-breakpoint-value("sm"){
+          padding-right : $margin;
+          padding-left  : $margin;
+        };
+        @if $current-breakpoint-value-get == get-breakpoint-value("xs"){
+          padding-right : $margin;
+          padding-left  : $margin;
+        };
       };
     };
   };
 
-  .pe-template__single-10-col{
-    box-sizing   : border-box;
-    min-height   : $pe-columns-min-height;
-    margin-right : auto;
-    margin-left  : auto;
-
-    @include clearfix();
 
     @each $breakpoint in map-keys($pe-responsive-breakpoints) {
+
+      .pe-template__single-10-col--#{$breakpoint}{
+        box-sizing   : border-box;
+        min-height   : $pe-columns-min-height;
+        margin-right : auto;
+        margin-left  : auto;
+
+        @include clearfix();
 
       //Get container margin by breakpoint
       $margin                       : map-get($pe-container-margin, $breakpoint);
@@ -52,9 +71,31 @@
 
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
-        width         : $pe-template__single-10col-width;
-        padding-right : $margin;
-        padding-left  : $margin;
+        @if $current-breakpoint-value-get == get-breakpoint-value("xl") {
+          width         : $pe-template__single-10col-width;
+          padding-right : $margin;
+          padding-left  : $margin;
+        };
+        @if $current-breakpoint-value-get == get-breakpoint-value("lg") {
+          width         : $pe-template__single-10col-width;
+          padding-right : $margin;
+          padding-left  : $margin;
+        }
+        @if $current-breakpoint-value-get == get-breakpoint-value("md") {
+          width         : $pe-template__single-10col-width;
+          padding-right : $margin;
+          padding-left  : $margin;
+        }
+        @if $current-breakpoint-value-get == get-breakpoint-value("sm"){
+          width         : $pe-template__single-10col-width;
+          padding-right : $margin;
+          padding-left  : $margin;
+        };
+        @if $current-breakpoint-value-get == get-breakpoint-value("xs"){
+          width         : $pe-template__single-10col-width;
+          padding-right : $margin;
+          padding-left  : $margin;
+        };
       };
     };
   };
@@ -94,9 +135,6 @@
         @if $current-breakpoint-value-get == get-breakpoint-value("xs"){
           width : $pe-template__static-large-width;
         };
-        // @if $current-breakpoint-value-get < get-breakpoint-value($breakpoint){
-        //   width : 100%;
-        // };
 
       };
     };
@@ -137,9 +175,6 @@
         @if $current-breakpoint-value-get == get-breakpoint-value("xs"){
           width : $pe-template__static-medium-width;
         };
-        // @if $current-breakpoint-value-get < get-breakpoint-value($breakpoint){
-        //   width : 100%;
-        // };
 
       };
     };
@@ -179,9 +214,6 @@
         @if $current-breakpoint-value-get == get-breakpoint-value("xs"){
           width : $pe-template__static-small-width;
         };
-        // @if $current-breakpoint-value-get < get-breakpoint-value($breakpoint){
-        //   width : 100%;
-        // };
 
       };
     };
@@ -200,6 +232,7 @@
 
       //Construct media query
       @media(min-width:$current-breakpoint-value-get){
+        
         @if $breakpoint == "xs" or $breakpoint == "sm" or $breakpoint == "md"{
           padding-bottom : $pe-template__double-horizontal-margin-height;
         };
@@ -207,6 +240,7 @@
           padding-right  : 0px;
           padding-bottom : 0px;
         };
+
       };
     };
   };
