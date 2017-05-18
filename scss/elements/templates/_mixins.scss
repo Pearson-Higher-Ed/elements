@@ -6,6 +6,7 @@
   @include pe-template-single();
   @include pe-template-static-large();
   @include pe-template-static-small();
+  @include pe-template-static-medium();
   @include pe-template-double();
   @include pe-template-spacing();
   @include pe-template-triple();
@@ -73,10 +74,41 @@
 
 };
 
+@mixin pe-template-static-medium(){
+  .pe-template__static-medium{
+  box-sizing   : border-box;
+  min-height   : $pe-columns-min-height;
+  margin-right : auto;
+  margin-left  : auto;
+
+  @include clearfix();
+
+  @each $breakpoint in map-keys($pe-static-template-medium-width-breakpoints) {
+
+    //Get container margin by breakpoint
+    $margin                       : map-get($pe-static-template-medium-width-breakpoints, $breakpoint);
+    $current-breakpoint-value-get : get-breakpoint-value($breakpoint);
+
+    //Construct media query
+    @media(min-width:$current-breakpoint-value-get){
+      @if $breakpoint == "lg" or $breakpoint == "xl" or $breakpoint == "md" {
+        width : $pe-template__static-medium-md_and_lg_and_xl-width;
+      };
+      @if $breakpoint == "sm"{
+        width : $pe-template__static-medium-sm-width
+      };
+      @if $breakpoint == "xs"{
+        width : $pe-template__static-medium-xs-width
+      };
+    };
+  };
+};
+};
+
 @mixin pe-template-static-small(){
 
   .pe-template__static-small{
-    box-sizing    : border-box;
+    box-sizing   : border-box;
     min-height   : $pe-columns-min-height;
     margin-right : auto;
     margin-left  : auto;
