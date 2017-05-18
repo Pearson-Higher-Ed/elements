@@ -9,7 +9,6 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 {{#demo}}
 <button class="pe-btn">Default</button>
 <button class="pe-btn__primary">Primary</button>
-<button class="pe-btn__primary_t">Primary - Turquoise</button>
 <button class="pe-btn__cta">Call To Action</button>
 {{/demo}}
 
@@ -38,11 +37,10 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 
 ## Disabled
 
-Buttons can be disabled when an action is not available to the user for the current context. Call to action has no disabled state.
+Buttons can be disabled when an action is not available to the user for the current context. Primary and call to action buttons have no disabled state.
 
 {{#demo}}
 <button class="pe-btn" disabled>Default</button>
-<button class="pe-btn__primary" disabled>Primary</button>
 {{/demo}}
 
 For elements that do not support the `disabled` attribute, use `pe-btn--disabled` and `aria-disabled`.
@@ -57,9 +55,7 @@ Buttons can be made smaller or larger.
 
 {{#demo}}
 <button class="pe-btn--btn_small">Small</button>
-<button class="pe-btn--btn_large">Large</button>
-<button class="pe-btn--btn_large pe-btn__cta">CTA Large</button>
-<button class="pe-btn--btn_xlarge">xLarge</button>
+<button class="pe-btn__cta--btn_large">CTA Large</button>
 <button class="pe-btn__primary--btn_xlarge">Primary xLarge</button>
 {{/demo}}
 
@@ -115,24 +111,8 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
     <use xlink:href="#calendar-18"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large">
-  Large with icon
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-18">
-    <use xlink:href="#calendar-18"></use>
-  </svg>
-</button>
 <button type="button" class="pe-btn--btn_large pe-btn__cta">
   CTA large with icon
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-18">
-    <use xlink:href="#calendar-18"></use>
-  </svg>
-</button>
-<button type="button" class="pe-btn--btn_xlarge">
-  xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -157,24 +137,8 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
     <use xlink:href="#calendar-24"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large">
-  Large with icon
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-24">
-    <use xlink:href="#calendar-24"></use>
-  </svg>
-</button>
 <button type="button" class="pe-btn--btn_large pe-btn__cta">
   CTA large with icon
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-24">
-    <use xlink:href="#calendar-24"></use>
-  </svg>
-</button>
-<button type="button" class="pe-btn--btn_xlarge">
-  xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
