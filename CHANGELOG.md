@@ -1,6 +1,41 @@
+<a name="1.10.2"></a>
+## [1.10.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.10.0...v1.10.2) (2017-05-19)
+
+
+### Bug Fixes
+
+* move h2 padding fix outside of mediaquery ([9a54737](https://github.com/Pearson-Higher-Ed/elements/commit/9a54737))
+* remove default margin on h2 in header ([3b2bf9f](https://github.com/Pearson-Higher-Ed/elements/commit/3b2bf9f))
+* remove outline: none on focusable elements ([f3288a1](https://github.com/Pearson-Higher-Ed/elements/commit/f3288a1))
+
+
+
+<a name="1.10.0"></a>
+# [1.10.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.3...v1.10.0) (2017-05-16)
+
+
+### Bug Fixes
+
+* add 2px border radius ([0ddcc8b](https://github.com/Pearson-Higher-Ed/elements/commit/0ddcc8b))
+* breaking typo ([7c48cb3](https://github.com/Pearson-Higher-Ed/elements/commit/7c48cb3))
+* esc to close modal ([b16da57](https://github.com/Pearson-Higher-Ed/elements/commit/b16da57))
+* ie flex bug ([5ddc3e7](https://github.com/Pearson-Higher-Ed/elements/commit/5ddc3e7))
+* padding issues ([e4722d4](https://github.com/Pearson-Higher-Ed/elements/commit/e4722d4))
+* style for safari bug ([b5ffc74](https://github.com/Pearson-Higher-Ed/elements/commit/b5ffc74))
+
+### Features
+
+* added two optional classes; updated documentation ([6fa29d1](https://github.com/Pearson-Higher-Ed/elements/commit/6fa29d1))
+
+
+
 <a name="1.9.3"></a>
 ## [1.9.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.2...v1.9.3) (2017-05-10)
 
+
+### Bug Fixes
+
+* overlay z-index ([c68dc0d](https://github.com/Pearson-Higher-Ed/elements/commit/c68dc0d))
 
 
 
@@ -10,8 +45,10 @@
 
 ### Bug Fixes
 
+* docs... == to ===, eliminate else ([d3ac102](https://github.com/Pearson-Higher-Ed/elements/commit/d3ac102))
 * fixing merge conflicts ([a5f5cb4](https://github.com/Pearson-Higher-Ed/elements/commit/a5f5cb4))
 * nth child class to only affect its direct child ([03320b1](https://github.com/Pearson-Higher-Ed/elements/commit/03320b1))
+* padding tweak ([269c73b](https://github.com/Pearson-Higher-Ed/elements/commit/269c73b))
 * paddings on diff screen sizes ([8e3a853](https://github.com/Pearson-Higher-Ed/elements/commit/8e3a853))
 * removing unused code ([338503f](https://github.com/Pearson-Higher-Ed/elements/commit/338503f))
 

@@ -6,6 +6,8 @@ section: elements
 
 An input is a field used to save a response from a user.
 
+[Design and Redlines](http://pearson-higher-ed.github.io/design/c/inputs/)
+
 ## Labels
 All inputs must have direct labels, even when the visual design such as the field being physically close to other text can give some users a good idea of what to fill in. Labels need to be programmatically associated with the inputs, by having a `for` attribute which matches the input's (unique to the page!) `id` attribute.
 

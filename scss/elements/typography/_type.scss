@@ -3,16 +3,14 @@
 @import './mixins';
 @import '../../base/mixins';
 
-html {
+html, .pe-base-fontsize {
    font-size: pxToRem($pe-font-size-base, 16px);
  }
- body {
+ body, .pe-fontstack  {
    font-family: $pe-font-family-sans;
  }
 
 // Body copy (as a class, from utilities)
-//
-
 .pe-copy {
 	@include font-size($pe-font-size-base, $pe-line-height-copy);
 	color: $pe-font-color-base;
