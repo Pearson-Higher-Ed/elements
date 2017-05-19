@@ -1,5 +1,17 @@
+<a name="1.10.1"></a>
+## [1.10.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.10.0...v1.10.1) (2017-05-19)
+
+
+### Bug Fixes
+
+* move h2 padding fix outside of mediaquery ([9a54737](https://github.com/Pearson-Higher-Ed/elements/commit/9a54737))
+* remove default margin on h2 in header ([3b2bf9f](https://github.com/Pearson-Higher-Ed/elements/commit/3b2bf9f))
+* remove outline: none on focusable elements ([f3288a1](https://github.com/Pearson-Higher-Ed/elements/commit/f3288a1))
+
+
+
 <a name="1.10.0"></a>
-# [1.10.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.2...v1.10.0) (2017-05-16)
+# [1.10.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.3...v1.10.0) (2017-05-16)
 
 
 ### Bug Fixes
@@ -8,9 +20,22 @@
 * breaking typo ([7c48cb3](https://github.com/Pearson-Higher-Ed/elements/commit/7c48cb3))
 * esc to close modal ([b16da57](https://github.com/Pearson-Higher-Ed/elements/commit/b16da57))
 * ie flex bug ([5ddc3e7](https://github.com/Pearson-Higher-Ed/elements/commit/5ddc3e7))
-* overlay z-index ([c68dc0d](https://github.com/Pearson-Higher-Ed/elements/commit/c68dc0d))
 * padding issues ([e4722d4](https://github.com/Pearson-Higher-Ed/elements/commit/e4722d4))
 * style for safari bug ([b5ffc74](https://github.com/Pearson-Higher-Ed/elements/commit/b5ffc74))
+
+### Features
+
+* added two optional classes; updated documentation ([6fa29d1](https://github.com/Pearson-Higher-Ed/elements/commit/6fa29d1))
+
+
+
+<a name="1.9.3"></a>
+## [1.9.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.9.2...v1.9.3) (2017-05-10)
+
+
+### Bug Fixes
+
+* overlay z-index ([c68dc0d](https://github.com/Pearson-Higher-Ed/elements/commit/c68dc0d))
 
 
 
