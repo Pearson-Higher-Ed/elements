@@ -103,7 +103,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 
 {{#demo}}
 <p>With size-18 icon:</p>
-<button type="button" class="pe-btn--btn_small">
+<button type="button" class="pe-btn--btn_small" aria-label="Start date">
   Small with icon
   <svg aria-hidden="true"
        focusable="false"
@@ -111,7 +111,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
     <use xlink:href="#calendar-18"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large pe-btn__cta">
+<button type="button" class="pe-btn--btn_large pe-btn__cta" aria-label="End date">
   CTA large with icon
   <svg aria-hidden="true"
        focusable="false"
@@ -119,7 +119,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
     <use xlink:href="#calendar-18"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn__primary--btn_xlarge">
+<button type="button" class="pe-btn__primary--btn_xlarge" aria-label="Start date">
   Primary xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
@@ -129,7 +129,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 </button>
 
 <p>With size-24 icon:</p>
-<button type="button" class="pe-btn--btn_small">
+<button type="button" class="pe-btn--btn_small" aria-label="End date">
   Small with icon
   <svg aria-hidden="true"
        focusable="false"
@@ -137,7 +137,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
     <use xlink:href="#calendar-24"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large pe-btn__cta">
+<button type="button" class="pe-btn--btn_large pe-btn__cta" aria-label="Start date">
   CTA large with icon
   <svg aria-hidden="true"
        focusable="false"
@@ -145,7 +145,7 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
     <use xlink:href="#calendar-24"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn__primary--btn_xlarge">
+<button type="button" class="pe-btn__primary--btn_xlarge" aria-label="End date">
   Primary xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
