@@ -37,7 +37,8 @@ $docs-colors: (
   strawberry-red: $pe-color-strawberry-red,
   digital-grass-green: $pe-color-digital-grass-green,
   hot-pink: $pe-color-hot-pink,
-  digital-marine-turquoise: $pe-color-digital-marine-turquoise
+  digital-marine-turquoise: $pe-color-digital-marine-turquoise,
+  brackish-turquoise: $pe-color-brackish-turquoise
 );
 
 @each $name, $color in $docs-colors {
