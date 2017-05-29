@@ -6,11 +6,9 @@ section: elements
 
 Modal interrupts the user with a message or request for certain actions with a block of content on top of the main view.
 This is impliemented as a React Component Based on 'react-modal' in [Compounds](https://pearson-higher-ed.github.io/compounds/#/)
-**This need Javascript to activate some features.
+**This needs Javascript to activate some features, such as trapping focus.**
 
 [Design and Redlines](http://pearson-higher-ed.github.io/design/c/modal/beta/)
-
-
 
 
 ### Modal With Footer:
