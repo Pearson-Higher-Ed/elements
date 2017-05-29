@@ -4,7 +4,9 @@ title: Icons
 section: elements
 ---
 
-[Design and redlines](http://pearson-higher-ed.github.io/design/c/icons/) however note that the class naming described on this page is not correct. Icons are SVGs which get their fill colors from their parent element's color. To change an icon color, set its parent element `color` attribute to the color you wish. If the icon needs to be a different color than the text in the parent, wrap a new element around the SVG (&lt;span&gt; is usually best) and set the desired color on that.
+[Design and redlines](http://pearson-higher-ed.github.io/design/c/icons/)
+
+Note that the class naming scheme described in the linked design page is not correct. Icons are SVGs which get their fill colors from their parent element's color. To change an icon color, set its parent element `color` attribute to the color you wish. If the icon needs to be a different color than the text in the parent, wrap a new element around the SVG (&lt;span&gt; is usually best) and set the desired color on that.
 
 In the examples below, the color is set inline using the `style` attribute. However in production we recommend using a regular CSS sheet.
 
@@ -1228,7 +1230,7 @@ The icons above are called from a single larger SVG sprite, using the `<use>` ta
 
 The sprite is invisible on the page, however it is currently around 84kb large. Consumers of the SDK need to choose whether they want to
 
-* manually include the sprite at the top of their pages as simply an SVG tag (view source of this page)
+* manually include the sprite at the top of their pages as simply an SVG tag (view source of this page) or
 * use JavaScript to dynamically call add the sprite to the page
 
 The advantage of the second method is that this treats the sprite file like any other external file: cachable. Adding 84kb to each page load (the first option) may affect users on slower connections, however it ensures the page never loads with a moment where icons don't appear.
