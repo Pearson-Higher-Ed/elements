@@ -5,7 +5,7 @@ section: elements
 permalink: /elements/typography/
 ---
 
-Elements typography uses Open Sans fonts, and sets line-heights, font-weights, font-styles,colors, and margins on text elements.
+Elements typography uses Open Sans fonts, and sets line-heights, font-weights, font-styles, colors, and margins on text elements.
 
 [Design and redlines](http://pearson-higher-ed.github.io/design/c/typography/)
 
