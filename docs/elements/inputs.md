@@ -15,7 +15,7 @@ Wrapping a label around an input (which avoids the need for using `for` and `id`
 
 ### Required vs Optional fields
 
-In addition to stating the field's required-ness in the label, the input itself can have either a `required` attribute (this may trigger a browser's built-in error messaging) or `aria-required`. These are boolean attributes. Some developers prefer using `aria-required` as it tells users of assistive technology (AT) that the field is required without triggering the browser's default error messages.
+In addition to stating the field's required-ness in the label, the input itself can have either a `required` attribute (this may trigger a browser's built-in error messaging) or `aria-required`. These are boolean attributes. Some developers prefer using `aria-required` as it tells users of assistive technology (AT) that the field is required without triggering the browser's default error messages. You should not use both of these attributes on the same input.
 
 ## Placeholders 
 
@@ -40,8 +40,8 @@ The `aria-invalid` attribute should only be set to true *after validation*, not 
 
 ## Readonly and disabled states
 
-An input in a readonly state is focusable, and any value inside it is selectable and copyable. Inside a form, the value in a readonly field is sent with other fields to the backend script.
-A disabled input is not focusable and its values are not accessible to users. Disabled controls and inputs are not required to pass color contrast minimums. Screen reader users can find and read disabled controls, but no users can tab to them. Values in disabled fields are not sent to a form's backend script.
+An input in a readonly state is focusable, and any value inside it is selectable and copyable. Inside a form, the value in a readonly field is sent with other fields to the backend script when the form is submitted.
+A disabled input is not focusable and its values are not accessible to users. Disabled controls and inputs are not required to pass color contrast minimums. Screen reader users can find and read disabled controls, but no users can tab to them. Values in disabled fields are **not** sent to a form's backend script when the form is submitted.
 
 
 ## Single line text inputs
@@ -248,7 +248,7 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 
 ### Basic select (error)
 
-Please note an error state on a select is generally not recommended, as it suggests a mismatch between desired infomation (user input) and input type. Consider a different input type if users are capable of selecting a "wrong" selection.
+Please note an error state on a select is generally not recommended, as it suggests a mismatch between desired information (user input) and input type. Consider a different input type if users are capable of making a "wrong" selection.
 
 {{#demo}}
 <label class="pe-textLabelInput__label--label_error" for="fout">Error label</label>
@@ -290,7 +290,7 @@ Please note an error state on a select is generally not recommended, as it sugge
 
 ### Basic select (readOnly)
 
-Selects don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript. Reconsider using something other than a select input if you need to show one in a readonly state.
+Selects don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript. Reconsider using a select input if you need to show one in a readonly state.
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="readonly_zomg">Readonly label</label>
@@ -363,7 +363,7 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
 
 ### Fancy Select (readonly)
 
-Selects don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript. Reconsider using something other than a select input if you need to show one in a readonly state.
+Selects don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript. Reconsider using a select input if you need to show one in a readonly state.
 
 {{#demo}}
 <label for="select_readonly" class="pe-textLabelInput__label">Select Label:</label>
@@ -380,7 +380,7 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
    </div>
 {{/demo}}
 
-## Multiple Line Text\Textarea
+## Multiple Line Text/Textarea
 
 Textareas are inputs that allow users to add multiple lines of text. Other elements such as divs can be used to create multiple-line text inputs using the `contenteditable` attribute (usually for rich-text editors) along with scripting to allow all users to use the div with keyboard, touch, or speech input.
 
@@ -400,14 +400,14 @@ Textareas are inputs that allow users to add multiple lines of text. Other eleme
 <p id="vlaai_error" class="pe-input--error_message">Too much truck</p>
 {{/demo}}
 
-### Multiple Line text (disabled)
+### Multiple Line Text (disabled)
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="nope">Multi-line label</label>
 <textarea class="pe-multiLineText--disabled" id="nope" cols="30" rows="5" disabled> </textarea>
 {{/demo}}
 
-### Multiple Line text (readonly)
+### Multiple Line Text (readonly)
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="andale">Multi-line label</label>
