@@ -30,7 +30,7 @@ Responsive:
 - Maintain full 12 column width
 
 {{#demo}}
-  <div class='pe-template__single--sm' style='background:magenta;'>
+  <div class='pe-template__single' style='background:magenta;'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
@@ -44,7 +44,7 @@ Responsive:
 - Maintain full 10 column width
 
 {{#demo}}
-  <div class='pe-template__single-10-col--sm' style='background:magenta;'>
+  <div class='pe-template__single-10-col' style='background:magenta;'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
@@ -145,21 +145,21 @@ Dimensions:
 
 #### Static Column - (small)
 {{#demo}}
-  <div class='pe-template_static_small--sm'>
+  <div class='pe-template_static_small'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
 
 #### Static Column - (medium)
 {{#demo}}
-  <div class='pe-template_static_medium--sm'>
+  <div class='pe-template_static_medium'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
 
 #### Static Column - (large)
 {{#demo}}
-  <div class='pe-template_static_large--sm'>
+  <div class='pe-template_static_large'>
     <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
   </div>
 {{/demo}}
