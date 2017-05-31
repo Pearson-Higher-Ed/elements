@@ -37,11 +37,10 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 
 ## Disabled
 
-Buttons can be disabled when an action is not available to the user for the current context. Call to action has no disabled state.
+Buttons can be disabled when an action is not available to the user for the current context. Primary and call to action buttons have no disabled state.
 
 {{#demo}}
 <button class="pe-btn" disabled>Default</button>
-<button class="pe-btn__primary" disabled>Primary</button>
 {{/demo}}
 
 For elements that do not support the `disabled` attribute, use `pe-btn--disabled` and `aria-disabled`.
@@ -56,9 +55,7 @@ Buttons can be made smaller or larger.
 
 {{#demo}}
 <button class="pe-btn--btn_small">Small</button>
-<button class="pe-btn--btn_large">Large</button>
-<button class="pe-btn--btn_large pe-btn__cta">CTA Large</button>
-<button class="pe-btn--btn_xlarge">xLarge</button>
+<button class="pe-btn__cta--btn_large">CTA Large</button>
 <button class="pe-btn__primary--btn_xlarge">Primary xLarge</button>
 {{/demo}}
 
@@ -106,40 +103,24 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 
 {{#demo}}
 <p>With size-18 icon:</p>
-<button type="button" class="pe-btn--btn_small">
-  Small with icon 
+<button type="button" class="pe-btn--btn_small" aria-label="Start date">
+  Small with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
     <use xlink:href="#calendar-18"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large">
-  Large with icon 
+<button type="button" class="pe-btn--btn_large pe-btn__cta" aria-label="End date">
+  CTA large with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
     <use xlink:href="#calendar-18"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large pe-btn__cta">
-  CTA large with icon 
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-18">
-    <use xlink:href="#calendar-18"></use>
-  </svg>
-</button>
-<button type="button" class="pe-btn--btn_xlarge">
-  xLarge with icon 
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-18">
-    <use xlink:href="#calendar-18"></use>
-  </svg>
-</button>
-<button type="button" class="pe-btn__primary--btn_xlarge">
-  Primary xLarge with icon 
+<button type="button" class="pe-btn__primary--btn_xlarge" aria-label="Start date">
+  Primary xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-18">
@@ -148,40 +129,24 @@ Keep in mind that with just a loose icon, the context needs to make it clear to 
 </button>
 
 <p>With size-24 icon:</p>
-<button type="button" class="pe-btn--btn_small">
-  Small with icon 
+<button type="button" class="pe-btn--btn_small" aria-label="End date">
+  Small with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
     <use xlink:href="#calendar-24"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large">
-  Large with icon 
+<button type="button" class="pe-btn--btn_large pe-btn__cta" aria-label="Start date">
+  CTA large with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">
     <use xlink:href="#calendar-24"></use>
   </svg>
 </button>
-<button type="button" class="pe-btn--btn_large pe-btn__cta">
-  CTA large with icon 
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-24">
-    <use xlink:href="#calendar-24"></use>
-  </svg>
-</button>
-<button type="button" class="pe-btn--btn_xlarge">
-  xLarge with icon 
-  <svg aria-hidden="true"
-       focusable="false"
-       class="pe-icon--calendar-24">
-    <use xlink:href="#calendar-24"></use>
-  </svg>
-</button>
-<button type="button" class="pe-btn__primary--btn_xlarge">
-  Primary xLarge with icon 
+<button type="button" class="pe-btn__primary--btn_xlarge" aria-label="End date">
+  Primary xLarge with icon
   <svg aria-hidden="true"
        focusable="false"
        class="pe-icon--calendar-24">

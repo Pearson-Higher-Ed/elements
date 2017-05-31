@@ -2,23 +2,17 @@
 @import 'mixins';
 
 
-%btn{
-  border-radius  : $pe-btn-standard-border-radius;
+%btn {
+  border-radius  : $pe-btn-border-radius;
   border         : none;
   display        : inline-block;
   vertical-align : middle;
   cursor         : pointer;
-  font-size      : $pe-btn-standard-font-size;
-  height         : $pe-btn-standard-height;
-  line-height    : $pe-btn-standard-height;
-  padding        : $pe-btn-standard-padding;
-}
-
-%btn_small {
-  height      : $pe-btn-small-height;
-  font-size   : $pe-btn-small-font-size;
-  line-height : $pe-btn-small-height;
-  padding     : $pe-btn-small-padding;
+  font-size      : $pe-btn-small-font-size;
+  height         : $pe-btn-small-height;
+  line-height    : $pe-btn-small-height;
+  padding        : $pe-btn-small-padding;
+  font-weight    : 600;
 }
 
 %btn_large {
@@ -28,9 +22,7 @@
   padding     : $pe-btn-large-padding;
 }
 
-
-
-%btn_xlarge{
+%btn_xlarge {
   height      : $pe-btn-xlarge-height;
   font-size   : $pe-btn-xlarge-font-size;
   line-height : $pe-btn-xlarge-height;
@@ -86,6 +78,7 @@
 .pe-btn {
 
   @extend %btn;
+  border: $pe-btn-default-border;
 
   @include pe-btn(
     $pe-btn-default-bg,
@@ -101,7 +94,7 @@
 .pe-btn--btn_small {
 
   @extend %btn;
-  @extend %btn_small;
+  border: $pe-btn-default-border;
 
   @include pe-btn(
     $pe-btn-default-bg,
@@ -118,6 +111,7 @@
 
   @extend %btn;
   @extend %btn_large;
+  border: $pe-btn-default-border;
 
   @include pe-btn(
     $pe-btn-default-bg,
@@ -134,6 +128,7 @@
 
   @extend %btn;
   @extend %btn_xlarge;
+  border: $pe-btn-default-border;
 
   @include pe-btn(
     $pe-btn-default-bg,
@@ -152,27 +147,22 @@
   @extend %btn;
 
   @include pe-btn(
-    $pe-btn-primary-bg,
-    $pe-btn-primary-text,
-    $pe-btn-primary-hover-bg,
-    $pe-btn-primary-hover-text,
-    $pe-btn-primary-disabled-bg,
-    $pe-btn-primary-disabled-text
+    $pe-color-digital-marine-turquoise,
+    $pe-color-white,
+    $pe-color-brackish-turquoise,
+    $pe-color-white
   );
 }
 
 .pe-btn__primary--btn_small {
 
   @extend %btn;
-  @extend %btn_small;
 
   @include pe-btn(
-    $pe-btn-primary-bg,
-    $pe-btn-primary-text,
-    $pe-btn-primary-hover-bg,
-    $pe-btn-primary-hover-text,
-    $pe-btn-primary-disabled-bg,
-    $pe-btn-primary-disabled-text
+  $pe-color-digital-marine-turquoise,
+  $pe-color-white,
+  $pe-color-brackish-turquoise,
+  $pe-color-white
   );
 }
 
@@ -182,28 +172,26 @@
   @extend %btn_large;
 
   @include pe-btn(
-    $pe-btn-primary-bg,
-    $pe-btn-primary-text,
-    $pe-btn-primary-hover-bg,
-    $pe-btn-primary-hover-text,
-    $pe-btn-primary-disabled-bg,
-    $pe-btn-primary-disabled-text
+  $pe-color-digital-marine-turquoise,
+  $pe-color-white,
+  $pe-color-brackish-turquoise,
+  $pe-color-white
   );
 }
+
 .pe-btn__primary--btn_xlarge {
 
   @extend %btn;
   @extend %btn_xlarge;
 
   @include pe-btn(
-    $pe-btn-primary-bg,
-    $pe-btn-primary-text,
-    $pe-btn-primary-hover-bg,
-    $pe-btn-primary-hover-text,
-    $pe-btn-primary-disabled-bg,
-    $pe-btn-primary-disabled-text
+  $pe-color-digital-marine-turquoise,
+  $pe-color-white,
+  $pe-color-brackish-turquoise,
+  $pe-color-white
   );
 }
+
 
 //===========CTA=================================
 .pe-btn__cta {
@@ -221,7 +209,6 @@
 .pe-btn__cta--btn_small {
 
   @extend %btn;
-  @extend %btn_small;
 
   @include pe-btn(
     $pe-btn-cta-bg,
