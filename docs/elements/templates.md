@@ -35,6 +35,20 @@ Responsive:
   </div>
 {{/demo}}
 
+The simplest page template, it takes up the full 10 columns available at every breakpoint.
+
+Dimensions:
+- Full 10 column width at all breakpoints
+
+Responsive:
+- Maintain full 10 column width
+
+{{#demo}}
+  <div class='pe-template__single-10-col' style='background:magenta;'>
+    <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+  </div>
+{{/demo}}
+
 
 ## Two Column
 This template devotes 8 columns to a main content area and the remaining 4 to a sidebar which appears on either side. At medium and smaller breakpoints the content areas stack, with the option to put the sidebar above or below the main content area.
@@ -47,7 +61,7 @@ Dimensions:
 Responsive:
 - Maintain full 12 column width
 
-#### Two Column - (right)
+#### Two Column 4/8 - (right)
 {{#demo}}
   <div class='pe-template__double' style='background:magenta;'>
     <div class='pe-template__double--main'>
@@ -59,7 +73,7 @@ Responsive:
   </div>
 {{/demo}}
 
-#### Two Column - (left)
+#### Two Column4/8 - (left)
 {{#demo}}
   <div class='pe-template__double' style='background:magenta;'>
     <div class="pe-template__double--sidebar">
@@ -70,9 +84,22 @@ Responsive:
     </div>
   </div>
 {{/demo}}
+
+#### Two Column 6/6 - (right)
+{{#demo}}
+  <div class='pe-template__double' style='background:magenta;'>
+    <div class='pe-template__double--main_half'>
+      <h6 style='background:cyan;text-align:center;height:40px;'>Content Area</h6>
+    </div>
+    <div class="pe-template__double--sidebar_half">
+      <h6 style='background:cyan;text-align:center;height:40px;'>Sidebar Area</h6>
+    </div>
+  </div>
+{{/demo}}
+
 
 ## Three Column
-This template devotes 4 columns to all content areas. To use add class `pe-template__triple pe-template__triple-[size]`. See below code for example. Using -md would mean that you want the columns to stack when the width is <768px. By default (using just ` pe-template__triple`) the columns stack at lg screen size or <1024px.
+This template devotes 4 columns to all content areas. To use add class `pe-template__triple pe-template__triple-[size]`. See below code for example. Using -md would mean that you want the columns to stack when the width is < 768px. By default (using just ` pe-template__triple`) the columns stack at lg screen size or < 1024px.
 
 Note:
 - Class size xl does not work
