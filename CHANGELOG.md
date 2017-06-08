@@ -1,3 +1,13 @@
+<a name="1.13.0"></a>
+# [1.13.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.12.0...v1.13.0) (2017-06-08)
+
+
+### Features
+
+* add 10col and 6/6 double ([048f8c9](https://github.com/Pearson-Higher-Ed/elements/commit/048f8c9))
+
+
+
 <a name="1.12.0"></a>
 # [1.12.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.11.1...v1.12.0) (2017-06-02)
 
