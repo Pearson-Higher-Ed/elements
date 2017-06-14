@@ -1,5 +1,5 @@
-<a name="1.13.0"></a>
-# [1.13.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.12.0...v1.13.0) (2017-06-08)
+<a name="1.13.1"></a>
+## [1.13.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.12.0...v1.13.1) (2017-06-14)
 
 
 ### Features
