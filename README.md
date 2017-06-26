@@ -15,19 +15,24 @@ The installation provides both the dist version with CSS, and the original sourc
 To comment out any SCSS file so it's not added to your rendered elements.css, open `/scss/elements.scss` and use JavaScript-style commenting. Example:
 
 ```
-    // base variables
     @import 'base/variables';
 
-    // base HTML tags
     //@import 'base/html-tags';
 
-    // typography
     @import 'elements/typography/font-face';
 ```
 
 The above would prevent the `_html-tags.scss` styles from being transpiled into the `elements.css` file.
 
-NOTE: if desired, Elements SDK ships with a version that does not include any styling on plain HTML tags.  Simply include the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files or add the `/scss/elementsNoPlain.scss` file to the project.
+
+### Classes-only styling
+
+If desired, Elements SDK ships with a version that does not include any styling on plain HTML tags.  Simply include the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files, or add the `/scss/elementsNoPlain.scss` file to the project.
+
+When using the ElementsNoPlain stylesheet, the (r)em-based sizing of page elements will differ from pages using the `elements.css` unless you are able to set the class `the class `pe-base-fontsize` on the html, body, or first main container of the page. To get the Open Sans font stack, use the `pe-fontstack` class. Basic chunks of text (or their containers) can use the `pe-copy` class to regulate font-size, line-height, and text color.
+
+Using various Elements classes without the base settings for font-size, font-family, line-hieght and color will leave you with results that differ from other pages styled by `elements.css` (and that may be what you want).
+
 
 ### Important: Fonts and Icons
 
