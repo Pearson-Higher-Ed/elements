@@ -100,14 +100,14 @@ List of Elements with their current respective design version:
 
 | Element | Current Design Version |
 |---------|------------------------|
-| Typography | v2.0.0-beta.8 |
-| Colors | v2.0.0-beta.6 |
-| Icons | v2.0.0-beta.4 |
-| Buttons | v2.0.0-beta.4 |
-| Inputs | v2.0.0-beta.3 |
+| Typography | v2.0.0 |
+| Color | v2.1.0 |
+| Icons | v2.1.0 |
+| Buttons | v2.1.2 |
+| Inputs | v2.0.1 |
 | Grid | v1.0.0 |
 | Presentation Strategies | v1.0.0 |
-| Templates | v2.0.0-beta.1 |
+| Templates | v2.0.0-beta.2 |
 | Responsive Utilities (Breakpoints) | v1.0.0 |
 | Forms | v1.0.0-beta.3 |
 
