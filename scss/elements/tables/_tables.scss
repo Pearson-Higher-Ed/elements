@@ -1,0 +1,77 @@
+@import 'variables';
+@import '../../base/mixins';
+
+/* "table-caption" can be either the caption element OR
+   a heading (h1, h2 etc) */
+
+/* for headings, toolbars etc */
+.pe-table-caption+.pe-table,
+.pe-table-toolbar+.pe-table,
+.pe-table+.pe-table-toolbar, 
+.pe-table+.pe-table-caption {
+  margin-top: 28px;
+}
+/* for actual <captions> */
+.pe-table caption {
+  margin-bottom: 28px;
+}
+.pe-table.pe-caption--bottom {
+  caption-side: bottom;
+  caption {
+    margin: 28px 0 0;
+  }
+}
+
+.pe-table thead, .pe-table tbody {
+  border: 1px solid $pe-table-border-color;/*alto, #d9d9d9*/
+  border-left: 0;
+  border-right: 0;
+}
+.pe-table th, .pe-table td {
+  @include font-size($pe-font-size-base, $pe-line-height-copy);
+  color: $pe-table-text-color;/*charcoal, #252525*/
+  padding: $pe-table-paddings;/*16px 20px*/
+  vertical-align: top;
+} 
+    .pe-table thead th {
+      font-weight: $pe-label-bold;
+      vertical-align: middle;
+    }
+
+/* selectables */
+.pe-table .selected th,
+.pe-table .selected td {
+  background-color: $pe-table-rowselect; /*digital ice blue, #d6ebe8*/
+  border: 1px solid $pe-table-rowselect-border; /*digital marine turquoise, #19a6a4*/
+  border-left: 0;
+  border-right: 0;
+}
+
+/* hovers */
+
+/* .pe-table--active-headers means
+   headings are clickable (sorting) */
+.pe-table tbody tr:hover th,
+.pe-table tbody tr:hover td,
+.pe-table.pe-table--active-headers thead th:hover {
+  background-color: $pe-table-rowhover; /*moonlight, #e9e9e9*/
+  cursor: pointer;
+}
+.pe-table .pe-table--selectable tbody th:hover,
+.pe-table .pe-table--selectable td:hover {
+  border: 1px solid $pe-table-rowhover-selected-border; /*digital pearson blue, #047a9c*/
+}
+
+/* alignments */
+/* left is default, only use to override */
+.pe-table .pe-table__left {
+  text-align: left;
+}
+.pe-table .pe-table__right {
+  text-align: right;
+}
+.pe-table .pe-table__center {
+  text-align: center;
+}
+
+
