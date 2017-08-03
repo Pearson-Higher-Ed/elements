@@ -1092,6 +1092,22 @@ The available icons includes the following:
   <li>
     <svg aria-hidden="true"
          focusable="false"
+         class="pe-icon--sort-18">
+      <use xlink:href="#sort-18"></use>
+    </svg>
+    sort-18
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
+         class="pe-icon--sort-24">
+      <use xlink:href="#sort-24"></use>
+    </svg>
+    sort-24
+  </li>
+  <li>
+    <svg aria-hidden="true"
+         focusable="false"
          class="pe-icon--sort-down-18">
       <use xlink:href="#sort-down-18"></use>
     </svg>
