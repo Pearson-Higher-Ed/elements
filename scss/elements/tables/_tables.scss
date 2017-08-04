@@ -26,6 +26,7 @@
   border: 1px solid $pe-table-border-color;/*alto, #d9d9d9*/
   border-left: 0;
   border-right: 0;
+  background-color: $pe-color-white;
 }
 .pe-table th, .pe-table td {
   @include font-size($pe-font-size-base, $pe-line-height-copy);
@@ -37,15 +38,63 @@
       font-weight: $pe-label-bold;
       vertical-align: middle;
     }
+    .pe-table td p {
+      margin-bottom: 0;
+    }
 
 /* selectables */
 .pe-table .selected th,
 .pe-table .selected td {
   background-color: $pe-table-rowselect; /*digital ice blue, #d6ebe8*/
-  border: 1px solid $pe-table-rowselect-border; /*digital marine turquoise, #19a6a4*/
-  border-left: 0;
-  border-right: 0;
 }
+/* pseudo-elements because collapsed borders hide the top one
+   and whenever coloured rows touch */
+.pe-table .selected th,
+.pe-table .selected td {
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    border-top: 1px solid $pe-table-rowselect-border; /* digital marine turquoise, 19a6a4*/
+  }
+  &:after {
+    top: auto;
+    bottom: -1px;
+  }
+}
+
+/* checkbox */
+.pe-table--selectable tbody tr td:first-child {
+  width: 1px;
+  padding-right: 0;
+
+  .pe-checkbox {
+    min-width: 20px;
+    margin-right: -1px;
+
+    /* so checkboxes can be clicked w/o JS */
+    label {
+      min-height: 18px;
+      padding-left: 18px;
+    }
+  }
+}
+
+/* sortables */
+.pe-table th[aria-sort] span,
+.pe-table th button {
+  vertical-align: top;
+}
+  .pe-table th span {
+    line-height: 23px;
+  }
+  .pe-table th button {
+    color: $pe-color-medium-gray; /* #6a7070; */
+  }
 
 /* hovers */
 
@@ -53,16 +102,34 @@
    headings are clickable (sorting) */
 .pe-table tbody tr:hover th,
 .pe-table tbody tr:hover td,
-.pe-table.pe-table--active-headers thead th:hover {
+.pe-table--active-headers thead th[aria-sort]:hover {
   background-color: $pe-table-rowhover; /*moonlight, #e9e9e9*/
   cursor: pointer;
+
+  button {
+    color: $pe-table-text-color; 
+  }
 }
-.pe-table .pe-table--selectable tbody th:hover,
-.pe-table .pe-table--selectable td:hover {
-  border: 1px solid $pe-table-rowhover-selected-border; /*digital pearson blue, #047a9c*/
+
+.pe-table--selectable tbody tr:hover th,
+.pe-table--selectable tbody tr:hover td {
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 100%;
+    border-top: 1px solid $pe-table-rowhover-selected-border;
+  }
+  &:after {
+    top: 100%;
+  }
 }
 
 /* alignments */
+
 /* left is default, only use to override */
 .pe-table .pe-table__left {
   text-align: left;
@@ -73,5 +140,4 @@
 .pe-table .pe-table__center {
   text-align: center;
 }
-
 
