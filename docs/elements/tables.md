@@ -109,7 +109,7 @@ You can change the alignments of the data. Here the caption is at the bottom of 
 Selectable-row tables require Javascript for full styling, so this example has a script to show the styles, however this script is not included in Elements.
 
 Note the first table header is not visible (the top left cell looks empty), however in accordance with accessibility, this cell has text naming the column.
-The checkbox is named using <code>aria-labelledby</code> pointing to both the hidden column name and the name of the row item (using <code>id</code>s). For letting the checkbox remain clickable, there is still a label element, however the accessible-name of the checkbox is overridden by the aria-labellebdbys.
+The checkbox is named using <code>aria-labelledby</code> pointing to both the hidden column name and the name of the row item (using <code>id</code>s). For letting the checkbox remain clickable, there is still a label element, however the accessible name from the label is overridden by the aria-labellebdbys.
 
 {{#demo}}
 <table class="pe-table pe-table--selectable">
