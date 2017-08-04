@@ -244,7 +244,7 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
 {{/demo}}
 
 <script>
-  (function() {
+  +function() {
     var tables=document.querySelectorAll('.pe-table--selectable');
 
     for (i=0,l=tables.length;i<l;i++) {
@@ -268,7 +268,7 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
         }
       });
     }
-  }());
+  }();
   
   function selectToggle(tr, input) {
     if (input.checked) {
@@ -283,7 +283,7 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
 
 ## Sortable columns
 
-Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons.
+Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons. These tables also require JavaScript to do anything. No JavaScript is present on this page for demonstration. 
 
 {{#demo}}
 <h3 class="pe-table-caption">Sort Supervillains From Best To Worst</h3>
