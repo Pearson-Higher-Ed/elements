@@ -62,7 +62,7 @@ All tables will have:
 
 ## Alignments
 
-You can change the alignments of the data. Here the caption is at the bottom of the table and aligned left. The Party column is centered. The deaths columns is right-aligned.
+You can change the alignments of the data. Here the caption is at the bottom of the table and aligned left. The Team column is centered. The value columns is right-aligned.
 
 {{#demo}}
 <table class="pe-table pe-caption--bottom">
