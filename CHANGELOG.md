@@ -1,3 +1,20 @@
+<a name="1.13.3"></a>
+## [1.13.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.1...v1.13.3) (2017-07-12)
+
+
+### Bug Fixes
+
+* htmltags link colors ([890dd55](https://github.com/Pearson-Higher-Ed/elements/commit/890dd55))
+* update missing link button color ([96c2423](https://github.com/Pearson-Higher-Ed/elements/commit/96c2423))
+
+
+
+<a name="1.13.1"></a>
+## [1.13.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.0...v1.13.1) (2017-06-14)
+
+
+
+
 <a name="1.13.0"></a>
 # [1.13.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.12.0...v1.13.0) (2017-06-08)
 
@@ -42,6 +59,7 @@
 
 ### Bug Fixes
 
+* move Dropdown styles back to Compounds ([07e375c](https://github.com/Pearson-Higher-Ed/elements/commit/07e375c))
 * move h2 padding fix outside of mediaquery ([9a54737](https://github.com/Pearson-Higher-Ed/elements/commit/9a54737))
 * remove default margin on h2 in header ([3b2bf9f](https://github.com/Pearson-Higher-Ed/elements/commit/3b2bf9f))
 * remove outline: none on focusable elements ([f3288a1](https://github.com/Pearson-Higher-Ed/elements/commit/f3288a1))
