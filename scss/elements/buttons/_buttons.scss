@@ -142,43 +142,6 @@
 }
 
 //===========Primary=================================
-.pe-btn__primary {
-
-  @extend %btn;
-
-  @include pe-btn(
-    $pe-color-digital-marine-turquoise,
-    $pe-color-white,
-    $pe-color-brackish-turquoise,
-    $pe-color-white
-  );
-}
-
-.pe-btn__primary--btn_small {
-
-  @extend %btn;
-
-  @include pe-btn(
-  $pe-color-digital-marine-turquoise,
-  $pe-color-white,
-  $pe-color-brackish-turquoise,
-  $pe-color-white
-  );
-}
-
-.pe-btn__primary--btn_large {
-
-  @extend %btn;
-  @extend %btn_large;
-
-  @include pe-btn(
-  $pe-color-digital-marine-turquoise,
-  $pe-color-white,
-  $pe-color-brackish-turquoise,
-  $pe-color-white
-  );
-}
-
 .pe-btn__primary--btn_xlarge {
 
   @extend %btn;
@@ -190,6 +153,8 @@
   $pe-color-brackish-turquoise,
   $pe-color-white
   );
+  font-weight    : 700;
+  
 }
 
 
