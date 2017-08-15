@@ -29,7 +29,8 @@
   background-color: $pe-color-white;
 }
 .pe-table th, .pe-table td {
-  @include font-size($pe-font-size-base, $pe-line-height-copy);
+  font-size: 1rem;
+  line-height: 1.286rem;
   color: $pe-table-text-color;/*charcoal, #252525*/
   padding: $pe-table-paddings;/*16px 20px*/
   vertical-align: top;
