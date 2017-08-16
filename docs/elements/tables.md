@@ -15,6 +15,14 @@ All tables will have:
 * a &lt;thead&gt; element with table headers
 * column and (possible) row headers are &lt;th&gt; elements and have a <code>scope</code> attribute
 
+### Captions and toolbars
+
+Any captions or toolbars, above or below tables, have a distance of 28px from the table. To ensure this, use the following class names:
+
+If you're using an actual table <code>&lt;caption&gt;</code> tag in our `pe-table` table, the caption will be on top and already have the correct distance. For bottom captions, give the table the class `pe-caption--bottom` and its caption will do the right thing.
+
+For actual separate elements (such as a heading tag instead of a caption tag, or a toolbar meant as table filtering controls), those elements need to be directly before or after the table in the code and use either class: `pe-table-toolbar` or 'pe-table-caption`. The only reason there are 2 class names is because we plan pe-table-toolbars to have additional styles when a toolbar component is created.
+
 {{#demo}}
 <table class="pe-table">
   <caption>Presidential Superheroes</caption>
@@ -63,6 +71,10 @@ All tables will have:
 ## Alignments
 
 You can change the alignments of the data. Here the caption is at the bottom of the table and aligned left. The Team column is centered. The value column is right-aligned.
+
+Left align class name (default, this is only needed to override): `pe-table__left`
+Right align class name: `pe-table__right`
+Center align class name: `pe-table__center`
 
 {{#demo}}
 <table class="pe-table pe-caption--bottom">
