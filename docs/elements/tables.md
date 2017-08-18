@@ -128,7 +128,13 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
   <caption class="pe-table__left">The Best Comics (sorry no Smurfs)</caption>
   <thead>
     <tr>
-      <th scope="col" id="comic_select" class="pe-sr-only">Select</th>
+      <th scope="col">
+        <div class="pe-checkbox" id="comic_select">
+          <input type="checkbox" id="comic_select_0">
+          <label for="comic_select_0">Select</label>
+          <span> &#8211; </span>
+        </div>
+      </th>
       <th scope="col">Comic</th>
       <th scope="col">Main characters</th>
       <th scope="col">Country of Origin</th>
@@ -261,7 +267,8 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
 
     for (i=0,l=tables.length;i<l;i++) {
       var table=tables[i],
-          trs=[].slice.call(table.getElementsByTagName('TR'));
+          tbody=table.getElementsByTagName('tbody')[0],
+          trs=[].slice.call(tbody.getElementsByTagName('TR'));
 
       trs.forEach(function(tr) {
         var thisTR=tr,

@@ -132,3 +132,10 @@
   text-align: center;
 }
 
+/* temp styles for temp tristate checkbox */
+input[type="checkbox"] ~ span {
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+}
