@@ -8,8 +8,8 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 
 {{#demo}}
 <button class="pe-btn">Default</button>
-<button class="pe-btn__primary">Primary</button>
 <button class="pe-btn__cta">Call To Action</button>
+<button class="pe-btn__primary--btn_xlarge">Primary</button>
 {{/demo}}
 
 ## Elements
@@ -19,7 +19,7 @@ Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<inpu
 {{#demo}}
 <div class="pe-btn" tabindex="0" role="button">Div</div>
 <a href="#void" class="pe-btn" role="button">Link</a>
-<a href="#void" class="pe-btn__primary--btn_large" role="button">Large Primary Link</a>
+<a href="#void" class="pe-btn__primary--btn_xlarge" role="button">Large Primary Link</a>
 <button type="button" class="pe-btn">Button</button>
 <input class="pe-btn" type="submit" value="Submit">
 <button type="button" class="pe-link">Button</button>
