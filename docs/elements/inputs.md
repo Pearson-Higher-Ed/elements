@@ -6,12 +6,16 @@ section: elements
 
 An input is a field used to save a response from a user.
 
-[Design and Redlines](http://pearson-higher-ed.github.io/design/c/inputs/)
+[Design and redlines](http://pearson-higher-ed.github.io/design/c/inputs/)
 
 ## Labels
-All inputs must have direct labels, even when the visual design such as the field being physically close to other text can give some users a good idea of what to fill in. Labels need to be programmatically associated with the inputs, by having a `for` attribute which matches the input's (unique to the page!) `id` attribute.
+All inputs must have direct labels, even when the visual design has the field physically close to other text which can give some users a good idea of what to fill in. Labels need to be programmatically associated with the inputs, by having a `for` attribute which matches the input's (unique to the page!) `id` attribute.
 
 Wrapping a label around an input (which avoids the need for using `for` and `id` pairing) is legal and valid HTML. However there are some assistive tech which are buggy with this setup and have been for many years (differing browsers and AT have had problems at different times). For this reason, ElementsSDK encourages separate labels with programmatic association (`for` and `id` matching attributes).
+
+### Required vs Optional fields
+
+In addition to stating the field's required-ness in the label, the input itself can have either a `required` attribute (this may trigger a browser's built-in error messaging) or `aria-required`. These are boolean attributes. Some developers prefer using `aria-required` as it tells users of assistive technology (AT) that the field is required without triggering the browser's default error messages. You should not use both of these attributes on the same input.
 
 ## Placeholders 
 
@@ -19,7 +23,7 @@ Placeholders are shown here so consuming teams can see what they look like in th
 
 ## Error states
 
-When someone has made an error, that error state should be clear and obvious, as well as what exactly the problem is. For some assistive tech users, we can programmatically associate an error message with its input using `aria-describedby`, and we can set the input's state with `aria-invalid`.
+When someone has made an error, the error state should be clear and obvious, as well as what exactly the problem is. For some assistive tech users, we can programmatically associate an error message with its input using `aria-describedby`, and we can set the input's state with `aria-invalid`.
 
 `aria-describedby`'s value is the id of the element with the message you want to link. `aria-invalid` can either be used as a boolean, or it can have a type as a value (`aria-invalid="spelling"` for example).
 
@@ -34,7 +38,15 @@ When there is no error state, any of these techniques will work:
 
 The `aria-invalid` attribute should only be set to true *after validation*, not before.
 
-## Inputs - Fancy (single line)
+## Readonly and disabled states
+
+An input in a readonly state is focusable, and any value inside it is selectable and copyable. Inside a form, the value in a readonly field is sent with other fields to the backend script when the form is submitted.
+A disabled input is not focusable and its values are not accessible to users. Disabled controls and inputs are not required to pass color contrast minimums. Screen reader users can find and read disabled controls, but no users can tab to them. Values in disabled fields are **not** sent to a form's backend script when the form is submitted.
+
+
+## Single line text inputs
+
+### Fancy
 
 {{#demo}}
  <label class="pe-textLabelInput__label" for="name1">First Name</label>
@@ -42,7 +54,9 @@ The `aria-invalid` attribute should only be set to true *after validation*, not 
  <span class="pe-input_underline"></span>
 {{/demo}}
 
-## Inputs - Fancy (single line - focus)
+### Fancy (focus)
+
+This is just showing that when the input has focus, the label should turn blue. This needs JavaScript to show, and is not naturally included in Elements css.
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label_focus" for="name1_again">First Name</label>
@@ -50,7 +64,7 @@ The `aria-invalid` attribute should only be set to true *after validation*, not 
  <span class="pe-input_underline"></span>
 {{/demo}}
 
-## Inputs - Fancy (single line - error)
+### Fancy (error)
 
 {{#demo}}
  <label class="pe-textLabelInput__label--label_error" for="name2">First Name</label>
@@ -59,14 +73,14 @@ The `aria-invalid` attribute should only be set to true *after validation*, not 
  <span id="someError" class="pe-input--error_message">this is an error message</span>
 {{/demo}}
 
-## Inputs - Fancy (single line - disabled)
+### Fancy (disabled)
 
 {{#demo}}
- <label class="pe-textLabelInput__label--label-disabled" for="name3">First Name</label>
+ <label class="pe-textLabelInput__label" for="name3">First Name</label>
  <input type="text" class="pe-textInput" id="name3" value="The Donald" disabled>
 {{/demo}}
 
-## Inputs (single line - read only)
+### Fancy (readonly)
 
 {{#demo}}
  <label class="pe-textLabelInput__label" for="name4">First Name</label>
@@ -74,24 +88,26 @@ The `aria-invalid` attribute should only be set to true *after validation*, not 
 {{/demo}}
 
 
-## Inputs - Basic (single line)
+## Non-fancy Inputs
+
+### Basic single line input
 
 {{#demo}}
   <label class="pe-textLabelInput__label" for="anInput">Label</label>
   <input type="text" class="pe-textInput--basic" id="anInput" aria-describedby="someHint">
- <span id="someHint" class="pe-input--info_message">this is an info message</span>
+  <span id="someHint" class="pe-input--info_message">this is an info message</span>
 {{/demo}}
 
-## Inputs - Basic (single line - focus)
+### Basic (focus)
 
-This is just showing that, on focus, the label should turn blue. This needs JavaScript to show, and is not naturally included in Elements css.
+This is just showing that when the input has focus, the label should turn blue. This needs JavaScript to show, and is not naturally included in Elements css.
 
 {{#demo}}
   <label class="pe-textLabelInput__label--label_focus" for="anotherInput">Label</label>
   <input type="text" class="pe-textInput--basic" id="anotherInput" placeholder="Example placeholder">
 {{/demo}}
 
-## Inputs - Basic (single line - error)
+### Basic (error)
 
 {{#demo}}
   <label class="pe-textLabelInput__label--label_error" for="emailz">Email address</label>
@@ -99,21 +115,23 @@ This is just showing that, on focus, the label should turn blue. This needs Java
   <p id="no_tld_error" class="pe-input--error_message">This address looks like it's missing the TLD.</p>
 {{/demo}}
 
-## Inputs - Basic (single line - disabled)
+### Basic (disabled)
 
 {{#demo}}
-  <label class="pe-textLabelInput__label--label-disabled" for="x">Label</label>
+  <label class="pe-textLabelInput__label" for="x">Label</label>
   <input type="text" class="pe-textInput--basic" id="x" disabled value="some pre-filled value">
 {{/demo}}
 
-## Inputs - Basic (single line - readonly)
+### Basic (readonly)
 
 {{#demo}}
   <label class="pe-textLabelInput__label" for="y">Label</label>
   <input type="text" class="pe-textInput--input_readonly" id="y" value="read only" readonly>
 {{/demo}}
 
-## Inputs - Fancy (password)
+## Password inputs
+
+### Fancy password 
 
 {{#demo}}
   <label for="PasswordInputFancy" class="pe-textLabelInput__label">Set a Password</label>
@@ -122,81 +140,80 @@ This is just showing that, on focus, the label should turn blue. This needs Java
   <button type="button" id="showbutton-PasswordInputFancy" class="pe-textInput__showButton">show<span class="pe-sr-only"> password</span></button>
   <span id="password_hint" class="pe-input--info_message">Password must contain 1 uppercase letter, 1 lowercase letter, the Fibonacci sequence, a solution to the healthcare crisis, and a copy of your DNA.</span>
 {{/demo}}
-** this needs javascript to action show/hide function, and label focus --
+
+** This needs JavaScript to action show/hide function, and label focus **
  <a href="https://github.com/Pearson-Higher-Ed/compounds/src/PasswordInput">https://github.com/Pearson-Higher-Ed/compounds/src/TextInput</a>
 
- ## Inputs (password) - Fancy (error)
+### Fancy password (error)
 
- {{#demo}}
-   <label for="PasswordInputFancyError" class="pe-textLabelInput__label--label_error">Set a Password</label>
-   <input type="password" id="PasswordInputFancyError" class="pe-textInput--input_error" aria-describedby="password_error2 password_hint2" aria-invalid="true">
-   <span class="pe-inputError_underline"></span>
-   <button type="button" id="showbutton-PasswordInputFancyError" class="pe-textInput__showButton--error">show</button>
+{{#demo}}
+  <label for="PasswordInputFancyError" class="pe-textLabelInput__label--label_error">Set a Password</label>
+  <input type="password" id="PasswordInputFancyError" class="pe-textInput--input_error" aria-describedby="password_error2 password_hint2" aria-invalid="true">
+  <span class="pe-inputError_underline"></span>
+  <button type="button" id="showbutton-PasswordInputFancyError" class="pe-textInput__showButton--error">show</button>
   <span id="password_hint2" class="pe-input--info_message">This is an info message</span>
   <span id="password_error2" class="pe-input--error_message">This is an error message</span>
- {{/demo}}
+{{/demo}}
 
- ## Inputs (password) - Fancy (readonly)
+### Fancy password (readonly)
 
 Consider the usefulness (or not) of a readonly password input.
 
- {{#demo}}
+{{#demo}}
   <label for="PasswordInputFancyReadOnly" class="pe-textLabelInput__label">Your chosen password</label>
-  <input type="password" id="PasswordInputFancyReadOnly" readonly class="pe-textInput--input_readonly" aria-describedby="password_hint3" value="*********">
+  <input type="password" id="PasswordInputFancyReadOnly" readonly class="pe-textInput--input_readonly" aria-describedby="password_hint3" value="c0rrecthorse_batteryStaple">
+  <span class=""></span>
   <button type="button" id="showbutton-PasswordInputFancyReadOnly" class="pe-textInput__showButton">show</button>
   <span id="password_hint3" class="pe-input--info_message">This is an info message</span>
- {{/demo}}
+{{/demo}}
 
- ## Inputs (password) - Fancy (disabled)
+### Fancy password (disabled)
 
- {{#demo}}
-  <label for="PasswordInputFancyDisabled" class="pe-textLabelInput__label--label-disabled">Choose a password</label>
+{{#demo}}
+  <label for="PasswordInputFancyDisabled" class="pe-textLabelInput__label">Choose a password</label>
   <input type="password" id="PasswordInputFancyDisabled" disabled class="pe-textInput">
   <span class=""></span>
   <button type="button" id="showbutton-PasswordInputFancyDisabled" disabled class="pe-textInput__showButton--disabled">show</button>
- {{/demo}}
+{{/demo}}
 
- ## Inputs (password) - Basic
+### Basic password
 
- {{#demo}}
+{{#demo}}
   <label for="PasswordInputBasic" class="pe-textLabelInput__label">Password: </label>
   <input type="password" id="PasswordInputBasic" placeholder="not your pet's first name" class="pe-textInput--basic">
-  <span class=""></span>
   <button type="button" id="showbutton-PasswordInputBasic" class="pe-textInput__showButton-basic">show</button>
   <span id="pw_hint" class="pe-input--info_message">This is an info message</span>
   <span id="pw_error" class="pe-input--error_message"></span>
- {{/demo}}
+{{/demo}}
 
- ## Inputs (password) - Basic (error)
+### Basic password (error)
 
- {{#demo}}
+{{#demo}}
   <label for="PasswordInputBasicError" class="pe-textLabelInput__label--label_error">Password: </label>
   <input type="password" id="PasswordInputBasicError" value="star wars" class="pe-textInput--basic_error" aria-invalid="true" aria-describedby="pw_error2 pw_hint2">
-  <span class=""></span>
   <button type="button" id="showbutton-PasswordInputBasicError" class="pe-textInput__showButton-basic">show</button>
   <span id="pw_hint2" class="pe-input--info_message">"star wars" is a terrible password. So is "12345" and "1a2b3c4d" and "password". Don't use these.</span>
   <span id="pw_error2" class="pe-input--error_message">Srsly. Choose something more secure.</span>
- {{/demo}}
+{{/demo}}
 
- ## Inputs (password) - Basic (disabled)
+### Basic password (disabled)
 
- {{#demo}}
-  <label for="PasswordInputBasicDisabled" class="pe-textLabelInput__label--label-disabled">Password</label>
-  <input type="password" id="PasswordInputBasicDisabled" value="***********" disabled class="pe-textInput--basic">
-  <span class=""></span>
+{{#demo}}
+  <label for="PasswordInputBasicDisabled" class="pe-textLabelInput__label">Password</label>
+  <input type="password" id="PasswordInputBasicDisabled" value="c0rrecthorse_batteryStaple" disabled class="pe-textInput--basic">
   <button type="button" id="showbutton-PasswordInputBasicDisabled" disabled class="pe-textInput__showButton-basic--disabled">show</button>
- {{/demo}}
+{{/demo}}
 
- ## Inputs (password) - Basic (readonly)
+### Basic password (readonly)
 
- {{#demo}}
+{{#demo}}
   <label for="PasswordInputBasicReadOnly" class="pe-textLabelInput__label">Password</label>
   <input type="password" id="PasswordInputBasicReadOnly" value="zomgwtfbbq" readonly class="pe-textInput--input_readonly">
   <button type="button" id="showbutton-PasswordInputBasicReadOnly" class="pe-textInput__showButton">show</button>
- {{/demo}}
+{{/demo}}
 
 
-## Select Inputs - Basic
+## Select Inputs
 
 Select dropdowns are generally meant for times when a user needs to make a single choice from among many options. People can choose more than one option if the `mutliple` attribute is added, however checkboxes are much more user-friendly for multiple selections.
 
@@ -204,7 +221,13 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 
 - When there is more than 1 option that could be selected, use checkboxes instead.
 
-**Note:** A separate label should be present and visible for the select box. We do not recommend using one of the options to display a question: browsers differ on how they truncate options before the user focuses on selects.
+- A separate label should be present and visible for the select box. We do not recommend using one of the options to display a question: browsers differ on how they truncate options before the user focuses on selects.
+
+
+**Note:** The examples of selects on the [design site](http://pearson-higher-ed.github.io/design/c/inputs/) show checkmarks in the dropdown portion. This is not part of Elements, but comes from the OS (checkmarks are added by Mac OS).
+<img src="https://raw.githubusercontent.com/Pearson-Higher-Ed/docs/master/select_screenshots.png" alt="A series of screenshots showing the Elements selects on various browsers on Ubuntu and Windows. None has any checkmarks visible." width="90%">
+
+### Basic select
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="send_message">Send message to</label>
@@ -223,7 +246,9 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 </div>
 {{/demo}}
 
-## Select Inputs - Basic (error)
+### Basic select (error)
+
+Please note an error state on a select is generally not recommended, as it suggests a mismatch between desired information (user input) and input type. Consider a different input type if users are capable of making a "wrong" selection.
 
 {{#demo}}
 <label class="pe-textLabelInput__label--label_error" for="fout">Error label</label>
@@ -244,10 +269,10 @@ Select dropdowns are generally meant for times when a user needs to make a singl
 
 {{/demo}}
 
-## Select Inputs - Basic (disabled)
+### Basic select (disabled)
 
 {{#demo}}
-<label class="pe-textLabelInput__label--label-disabled" for="disabled_select">Disabled label</label>
+<label class="pe-textLabelInput__label" for="disabled_select">Disabled label</label>
 <div class="pe-select-container-disabled">
   <select class="pe-select-container-disabled" id="disabled_select" disabled>
     <option value="uno">One</option>
@@ -261,12 +286,11 @@ Select dropdowns are generally meant for times when a user needs to make a singl
   <use xlink:href="#dropdown-open-18"></use>
   </svg>
 </div>
-
 {{/demo}}
 
-## Select Inputs - Basic (readOnly)
+### Basic select (readOnly)
 
-Select's don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript.
+Selects don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript. Reconsider using a select input if you need to show one in a readonly state.
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="readonly_zomg">Readonly label</label>
@@ -281,10 +305,9 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
   </svg>
 </div>
 <p id="readonly_hint" class="pe-input--info_message">Only valid with coupon</p>
-
 {{/demo}}
 
-## Select Inputs - fancy
+### Fancy select
 
 {{#demo}}
 <label for="select_fancy" class="pe-textLabelInput__label">Select Label:</label>
@@ -303,7 +326,7 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
 {{/demo}}
 
 
-## Select Inputs - fancy (error)
+### Fancy select (error)
 
 {{#demo}}
 <label for="select_fancy_error" class="pe-textLabelInput__label--label_error">Select Label:</label>
@@ -321,10 +344,10 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
    <span id="fancy_error" class="pe-input--error_message">This is an error message</span>
 {{/demo}}
 
-## Select Inputs - fancy (disabled)
+### Fancy select (disabled)
 
 {{#demo}}
-<label for="select_disabled" class="pe-textLabelInput__label--label-disabled">Select Label:</label>
+<label for="select_disabled" class="pe-textLabelInput__label">Select Label:</label>
    <div class="pe-select-container-fancy-disabled">
       <select id="select_disabled" disabled class="pe-selectInput-fancy-disabled">
          <option>ipad</option>
@@ -338,7 +361,9 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
    </div>
 {{/demo}}
 
-## Select Inputs - fancy (readonly)
+### Fancy Select (readonly)
+
+Selects don't have a readonly state. To fake it, you would have to remove all the other options with JavaScript. Reconsider using a select input if you need to show one in a readonly state.
 
 {{#demo}}
 <label for="select_readonly" class="pe-textLabelInput__label">Select Label:</label>
@@ -355,8 +380,9 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
    </div>
 {{/demo}}
 
+## Multiple Line Text/Textarea
 
-## Multiple Line text
+Textareas are inputs that allow users to add multiple lines of text. Other elements such as divs can be used to create multiple-line text inputs using the `contenteditable` attribute (usually for rich-text editors) along with scripting to allow all users to use the div with keyboard, touch, or speech input.
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="multi_vlaai">Multi-line label</label>
@@ -365,7 +391,7 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
 </textarea>
 {{/demo}}
 
-## Multiple Line text - error
+### Multiple Line Text (error)
 
 {{#demo}}
 <label class="pe-textLabelInput__label--label_error" for="vlaai_fout">Multi-line label</label>
@@ -374,14 +400,14 @@ Select's don't have a readonly state. To fake it, you would have to remove all t
 <p id="vlaai_error" class="pe-input--error_message">Too much truck</p>
 {{/demo}}
 
-## Multiple Line text - disabled
+### Multiple Line Text (disabled)
 
 {{#demo}}
-<label class="pe-textLabelInput__label--label-disabled" for="nope">Multi-line label</label>
+<label class="pe-textLabelInput__label" for="nope">Multi-line label</label>
 <textarea class="pe-multiLineText--disabled" id="nope" cols="30" rows="5" disabled> </textarea>
 {{/demo}}
 
-## Multiple Line text - readOnly
+### Multiple Line Text (readonly)
 
 {{#demo}}
 <label class="pe-textLabelInput__label" for="andale">Multi-line label</label>
@@ -395,7 +421,7 @@ The canteen only sells apple products. Apples, apple juice, apple flapjacks, tof
 We faked the moon landings. Did it in 2008, then brainwashed you all to believe it happened in 1969, just because we could. If anyone finds out I've leaked this information, I'll be killed. But no one will ever, ever read this.</textarea>
 {{/demo}}
 
-## Inputs (checkbox)
+## Checkbox
 
 Checkboxes are for times when the user needs to make one or more binary choices about a related item.
 
@@ -403,7 +429,7 @@ Checkboxes are for times when the user needs to make one or more binary choices 
 
 - When there is more than one option but only one can be selected, use a radio button instead.
 
-Unselected
+### Unselected
 {{#demo}}
     <div class="pe-checkbox">
       <input type="checkbox"  id="checkboxInput" value="1" />
@@ -418,7 +444,7 @@ Unselected
     </div>
 {{/demo}}
 
-Selected
+### Selected
 {{#demo}}
  <div class="pe-checkbox">
    <input type="checkbox" id="checkboxInput2" value="1" checked/>
@@ -434,8 +460,10 @@ Selected
 {{/demo}}
 
 
-Unselected Focus
-(close your eyes and imagine the border is blue, or tab to this to see its focussed state)
+### Unselected (focus)
+
+(close your eyes and imagine the border is blue, or tab to this to see its focused state)
+
 {{#demo}}
     <div class="pe-checkbox">
       <input type="checkbox" id="checkboxInput3"/>
@@ -450,8 +478,10 @@ Unselected Focus
     </div>
 {{/demo}}
 
-Selected Focus
+### Selected (focus)
+
 (imagine more blue here)
+
 {{#demo}}
     <div class="pe-checkbox">
       <input type="checkbox" id="checkboxInput4" checked/>
@@ -466,7 +496,7 @@ Selected Focus
     </div>
 {{/demo}}
 
-Disabled Selected
+### Disabled Selected
 {{#demo}}
     <div class="pe-checkbox">
       <input type="checkbox" id="checkboxInput5" checked disabled/>
@@ -481,7 +511,7 @@ Disabled Selected
     </div>
 {{/demo}}
 
-Disabled Unselected
+### Disabled Unselected
 {{#demo}}
     <div class="pe-checkbox">
       <input type="checkbox" id="checkboxInput6" disabled/>
@@ -496,7 +526,7 @@ Disabled Unselected
     </div>
 {{/demo}}
 
-## Inputs (radio buttons)
+## Radio button
 
 Radio buttons are for times when the user needs to make a single choice among many options. Unlike a select box, all options are available and visible to all users at once.
 
@@ -649,8 +679,6 @@ There can be times when a developer cannot have a fieldset+legend but must for s
 
 If the developer doesn't even have the freedom to wrap the radio buttons, `aria-describedby` can be used directly as well:
 
-
-
 {{#demo}}
 <h2 id="cookiemonster2">Cookies</h2>
 <div class="pe-radio">
@@ -684,34 +712,34 @@ If the developer doesn't even have the freedom to wrap the radio buttons, `aria-
 <fieldset class="pe-fieldset">
    <legend class="pe-legend">These are radio buttons</legend>
    <div class="pe-radio">
-      <input type="radio" id="radiocheck-radiobutton2-tea-0" name="radiobutton2" value="tea"><label for="radiocheck-radiobutton2-tea-0">tea</label>
+      <input type="radio" id="radiocheck-radiobutton2-tea-0" name="radiobutton2" value="tea"> <label for="radiocheck-radiobutton2-tea-0">tea</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--radio-dot">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#new-notification-9"></use>
+            <use xlink:href="#new-notification-9"></use>
          </svg>
       </span>
    </div>
    <div class="pe-radio">
-      <input type="radio" id="radiocheck-radiobutton2-coffee-1" name="radiobutton2" value="coffee"><label for="radiocheck-radiobutton2-coffee-1">coffee</label>
+      <input type="radio" id="radiocheck-radiobutton2-coffee-1" name="radiobutton2" value="coffee"> <label for="radiocheck-radiobutton2-coffee-1">coffee</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--radio-dot">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#new-notification-9"></use>
+            <use xlink:href="#new-notification-9"></use>
          </svg>
       </span>
    </div>
    <div class="pe-radio">
-      <input type="radio" id="radiocheck-radiobutton2-soda-2" name="radiobutton2" value="soda"><label for="radiocheck-radiobutton2-soda-2">soda</label>
+      <input type="radio" id="radiocheck-radiobutton2-soda-2" name="radiobutton2" value="soda"> <label for="radiocheck-radiobutton2-soda-2">soda</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--radio-dot">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#new-notification-9"></use>
+            <use xlink:href="#new-notification-9"></use>
          </svg>
       </span>
    </div>
    <div class="pe-radio">
-      <input type="radio" id="radiocheck-radiobutton2-water-3" name="radiobutton2" value="water"><label for="radiocheck-radiobutton2-water-3">water</label>
+      <input type="radio" id="radiocheck-radiobutton2-water-3" name="radiobutton2" value="water"> <label for="radiocheck-radiobutton2-water-3">water</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--radio-dot">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#new-notification-9"></use>
+            <use xlink:href="#new-notification-9"></use>
          </svg>
       </span>
    </div>
@@ -724,34 +752,34 @@ If the developer doesn't even have the freedom to wrap the radio buttons, `aria-
 <fieldset class="pe-fieldset">
    <legend class="pe-legend">These are checkboxes</legend>
    <div class="pe-checkbox">
-      <input type="checkbox" id="radiocheck-checkbox1-tea-0" name="checkbox1" value="tea"><label for="radiocheck-checkbox1-tea-0">tea</label>
+      <input type="checkbox" id="radiocheck-checkbox1-tea-0" name="checkbox1" value="tea"> <label for="radiocheck-checkbox1-tea-0">tea</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--check-sm-18">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
          </svg>
       </span>
    </div>
    <div class="pe-checkbox">
-      <input type="checkbox" id="radiocheck-checkbox1-coffee-1" name="checkbox1" value="coffee" disabled=""><label for="radiocheck-checkbox1-coffee-1">coffee</label>
+      <input type="checkbox" id="radiocheck-checkbox1-coffee-1" name="checkbox1" value="coffee" disabled> <label for="radiocheck-checkbox1-coffee-1">coffee</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--check-sm-18">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
          </svg>
       </span>
    </div>
    <div class="pe-checkbox">
-      <input type="checkbox" id="radiocheck-checkbox1-soda-2" name="checkbox1" value="soda"><label for="radiocheck-checkbox1-soda-2">soda</label>
+      <input type="checkbox" id="radiocheck-checkbox1-soda-2" name="checkbox1" value="soda"> <label for="radiocheck-checkbox1-soda-2">soda</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--check-sm-18">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
          </svg>
       </span>
    </div>
    <div class="pe-checkbox">
-      <input type="checkbox" id="radiocheck-checkbox1-water-3" name="checkbox1" value="water" disabled=""><label for="radiocheck-checkbox1-water-3">water</label>
+      <input type="checkbox" id="radiocheck-checkbox1-water-3" name="checkbox1" value="water" disabled><label for="radiocheck-checkbox1-water-3">water</label>
       <span>
          <svg aria-hidden="true" focusable="false" class="pe-icon--check-sm-18">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#check-sm-18"></use>
+            <use xlink:href="#check-sm-18"></use>
          </svg>
       </span>
    </div>

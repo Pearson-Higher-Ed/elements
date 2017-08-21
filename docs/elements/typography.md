@@ -4,6 +4,11 @@ title: Typography
 section: elements
 permalink: /elements/typography/
 ---
+
+Elements typography uses Open Sans fonts, and sets line-heights, font-weights, font-styles, colors, and margins on text elements.
+
+[Design and redlines](http://pearson-higher-ed.github.io/design/c/typography/)
+
 ## Headings
 
 Content headings, used to delineate the outline of a page. If there is a need to have a subheading, use a `header` element, with a `p.subtitle` to hold the subtitle, as illustrated below.

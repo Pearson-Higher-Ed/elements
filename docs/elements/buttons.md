@@ -6,6 +6,8 @@ section: elements
 
 Use a button to represent a user action&#8212; specifically, pressing it should perform an action on a page or document, rather than navigating a user elsewhere. These button styles are generally intended for content buttons rather than UI buttons. See below for <a href="#uibuttons">UI buttons</a>.
 
+[Design and redlines](http://pearson-higher-ed.github.io/design/c/buttons/)
+
 {{#demo}}
 <button class="pe-btn">Default</button>
 <button class="pe-btn__cta">Call To Action</button>
