@@ -1,11 +1,29 @@
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.4...v1.14.0) (2017-08-18)
+
+
+
+
+<a name="1.13.4"></a>
+## [1.13.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.3...v1.13.4) (2017-08-18)
+
+
+
+
 <a name="1.13.3"></a>
-## [1.13.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.1...v1.13.3) (2017-07-12)
+## [1.13.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.2...v1.13.3) (2017-07-12)
 
 
 ### Bug Fixes
 
 * htmltags link colors ([890dd55](https://github.com/Pearson-Higher-Ed/elements/commit/890dd55))
 * update missing link button color ([96c2423](https://github.com/Pearson-Higher-Ed/elements/commit/96c2423))
+
+
+
+<a name="1.13.2"></a>
+## [1.13.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.1...v1.13.2) (2017-06-26)
+
 
 
 
