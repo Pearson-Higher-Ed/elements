@@ -266,12 +266,14 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
 
 Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons. These tables also require JavaScript to do anything. No JavaScript is present on this page for demonstration. 
 
+While there are multiple sortable (or sorted) columns in this fake example, on a real table, only one table header may have the `aria-sort` attribute on it at any time. If the table is presented to the user as sortable but no columns are pre-sorted, it's okay to have `aria-sort="none"` on one of the columns. Once a column has been clicked to sort, that column header has `aria-sort` attribute with the value of what kind of sort was done, and no other column headers have the attribute at all anymore (even if they happen not to lose their sorted-ness).
+
 {{#demo}}
 <h3 class="pe-table-caption">Sort Supervillains From Best To Worst</h3>
 <table class="pe-table pe-table--active-headers">
   <thead>
     <tr>
-      <th scope="col" aria-sort="ascending">
+      <th scope="col" aria-sort="ascending" class="pe-table__sortable">
         <span>Name</span>
         <button type="button" class="pe-icon--btn">
           <svg role="img"
@@ -286,7 +288,7 @@ Tables with sortable columns will have controls for sorting in the table headers
       <th scope="col">
         Country
       </th>
-      <th scope="col" class="pe-table__center" aria-sort="none">
+      <th scope="col" class="pe-table__center" class="pe-table__sortable">
         <span>Team</span>
         <button type="button" class="pe-icon--btn">
           <svg role="img"
@@ -298,7 +300,7 @@ Tables with sortable columns will have controls for sorting in the table headers
           </svg>
         </button>
       </th>
-      <th scope="col" class="pe-table__right" aria-sort="descending">
+      <th scope="col" class="pe-table__right" class="pe-table__sortable">
         <span>Net Worth (in bazillions)</span>
         <button type="button" class="pe-icon--btn">
           <svg role="img"
@@ -358,7 +360,7 @@ Here, you didn't realise but while the Prez numbers go up, the sort is "descendi
         </div>
       </th>
       <th scope="col">Name</th>
-      <th scope="col" aria-sort="descending">
+      <th scope="col" aria-sort="descending" class="pe-table__sortable">
         <span>Prez number</span>
         <button type="button" class="pe-icon--btn">
           <svg role="img"
