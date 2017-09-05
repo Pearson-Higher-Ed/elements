@@ -288,7 +288,7 @@ While there are multiple sortable (or sorted) columns in this fake example, on a
       <th scope="col">
         Country
       </th>
-      <th scope="col" class="pe-table__center" class="pe-table__sortable">
+      <th scope="col" class="pe-table__center pe-table__sortable">
         <span>Team</span>
         <button type="button" class="pe-icon--btn">
           <svg role="img"
@@ -300,7 +300,7 @@ While there are multiple sortable (or sorted) columns in this fake example, on a
           </svg>
         </button>
       </th>
-      <th scope="col" class="pe-table__right" class="pe-table__sortable">
+      <th scope="col" class="pe-table__right pe-table__sortable">
         <span>Net Worth (in bazillions)</span>
         <button type="button" class="pe-icon--btn">
           <svg role="img"
