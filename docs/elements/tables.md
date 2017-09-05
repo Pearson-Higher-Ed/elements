@@ -261,44 +261,6 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
 </table>
 {{/demo}}
 
-<script>
-  +function() {
-    var tables=document.querySelectorAll('.pe-table--selectable');
-
-    for (i=0,l=tables.length;i<l;i++) {
-      var table=tables[i],
-          tbody=table.getElementsByTagName('tbody')[0],
-          trs=[].slice.call(tbody.getElementsByTagName('TR'));
-
-      trs.forEach(function(tr) {
-        var thisTR=tr,
-            input=tr.getElementsByTagName('INPUT')[0];
-        if (input && input.type=='checkbox') {
-          if (input.checked) {
-            tr.classList.add('selected');
-          }
-          tr.addEventListener('click', function(e) {
-            var thisTR=this; 
-            if (e.target.nodeName!=='INPUT' && e.target.nodeName!=='LABEL') {
-              input.click();
-            }
-            selectToggle(thisTR,input);
-          }, false);
-        }
-      });
-    }
-  }();
-  
-  function selectToggle(tr, input) {
-    if (input.checked) {
-      tr.classList.add('selected');
-    }
-    else {
-      tr.classList.remove('selected');
-    }
-  }
-  
-</script>
 
 ## Sortable columns
 
@@ -378,3 +340,186 @@ Tables with sortable columns will have controls for sorting in the table headers
   </tbody>
 </table>
 {{/demo}}
+
+### Sortable-selectable example
+
+Here, you didn't realise but while the Prez numbers go up, the sort is "descending" because it's being sorted by time in milliseconds!! (Pets cat, dismisses minions, laughs evilly.)
+
+{{#demo}}
+<table class="pe-table pe-table--selectable pe-table--active-headers">
+  <caption>The Bestus Presidents</caption>
+  <thead>
+    <tr>
+      <th scope="col">
+        <div class="pe-checkbox" id="prez_select">
+          <input type="checkbox" id="prez_select_0">
+          <label for="prez_select_0">Select</label>
+          <span> &#8211; </span>
+        </div>
+      </th>
+      <th scope="col">Name</th>
+      <th scope="col" aria-sort="descending">
+        <span>Prez number</span>
+        <button type="button" class="pe-icon--btn">
+          <svg role="img"
+               focusable="false"
+               aria-labelledby="sort1"
+               class="pe-icon--sort-doqn-18">
+            <title id="sort1">Sorted descending</title>
+            <use xlink:href="#sort-down-18"></use>
+          </svg>
+        </button>
+      </th>
+      <th scope="col">Party name</th>
+    </tr>   
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="pe-checkbox">
+          <input type="checkbox" id="p1" aria-labelledby="prez_select sel_quinc">
+          <label for="p1"> </label>
+          <span>
+            <svg aria-hidden="true"
+                 focusable="false"
+                 class="pe-icon--check-sm-18">
+              <use xlink:href="#check-sm-18"></use>
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td id="sel_quinc">Quincy (His Rotundedness)</td>
+      <td class="pe-table__center">6</td>
+      <td>Democratic-Republican</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="pe-checkbox">
+          <input type="checkbox" id="p2" aria-labelledby="prez_select sel_mallard">
+          <label for="p2"> </label>
+          <span>
+            <svg aria-hidden="true"
+                 focusable="false"
+                 class="pe-icon--check-sm-18">
+              <use xlink:href="#check-sm-18"></use>
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td id="sel_mallard">Mallard Fillmore</td>
+      <td class="pe-table__center">13</td>
+      <td>Whig/Know-Nothing</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="pe-checkbox">
+          <input type="checkbox" id="p3" aria-labelledby="prez_select sel_garfunkel">
+          <label for="p3"> </label>
+          <span>
+            <svg aria-hidden="true"
+                 focusable="false"
+                 class="pe-icon--check-sm-18">
+              <use xlink:href="#check-sm-18"></use>
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td id="sel_garfunkel">Garfield</td>
+      <td class="pe-table__center">20</td>
+      <td>Republican</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="pe-checkbox">
+          <input type="checkbox" id="p4" aria-labelledby="prez_select sel_grover">
+          <label for="p4"> </label>
+          <span>
+            <svg aria-hidden="true"
+                 focusable="false"
+                 class="pe-icon--check-sm-18">
+              <use xlink:href="#check-sm-18"></use>
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td id="sel_grover">Grover</td>
+      <td class="pe-table__center">22/24</td>
+      <td>Democratic</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="pe-checkbox">
+          <input type="checkbox" id="p5" aria-labelledby="prez_select sel_scal">
+          <label for="p5"> </label>
+          <span>
+            <svg aria-hidden="true"
+                 focusable="false"
+                 class="pe-icon--check-sm-18">
+              <use xlink:href="#check-sm-18"></use>
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td id="sel_scal">Silent Cal</td>
+      <td class="pe-table__center">30</td>
+      <td>Republican</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="pe-checkbox">
+          <input type="checkbox" id="p6" aria-labelledby="prez_select sel_nix">
+          <label for="p6"> </label>
+          <span>
+            <svg aria-hidden="true"
+                 focusable="false"
+                 class="pe-icon--check-sm-18">
+              <use xlink:href="#check-sm-18"></use>
+            </svg>
+          </span>
+        </div>
+      </td>
+      <td id="sel_nix">Nixon Always Wins!</td>
+      <td class="pe-table__center">37</td>
+      <td>Republican</td>
+    </tr>
+  </tbody>
+</table>
+{{/demo}}
+
+<script>
+  +function() {
+    var tables=document.querySelectorAll('.pe-table--selectable');
+
+    for (i=0,l=tables.length;i<l;i++) {
+      var table=tables[i],
+          tbody=table.getElementsByTagName('tbody')[0],
+          trs=[].slice.call(tbody.getElementsByTagName('TR'));
+
+      trs.forEach(function(tr) {
+        var thisTR=tr,
+            input=tr.getElementsByTagName('INPUT')[0];
+        if (input && input.type=='checkbox') {
+          if (input.checked) {
+            tr.classList.add('selected');
+          }
+          tr.addEventListener('click', function(e) {
+            var thisTR=this; 
+            if (e.target.nodeName!=='INPUT' && e.target.nodeName!=='LABEL') {
+              input.click();
+            }
+            selectToggle(thisTR,input);
+          }, false);
+        }
+      });
+    }
+  }();
+  
+  function selectToggle(tr, input) {
+    if (input.checked) {
+      tr.classList.add('selected');
+    }
+    else {
+      tr.classList.remove('selected');
+    }
+  }
+</script>
