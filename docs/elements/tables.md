@@ -21,7 +21,7 @@ Any captions or toolbars, above or below tables, have a distance of 28px from th
 
 If you're using an actual table <code>&lt;caption&gt;</code> tag in our `pe-table` table, the caption will be on top and already have the correct distance. For bottom captions, give the table the class `pe-caption--bottom` and its caption will do the right thing.
 
-For actual separate elements (such as a heading tag instead of a caption tag, or a toolbar meant as table filtering controls), those elements need to be directly before or after the table in the code and use either class: `pe-table-toolbar` or 'pe-table-caption`. The only reason there are 2 class names is because we plan pe-table-toolbars to have additional styles when a toolbar component is created.
+For actual separate elements (such as a heading tag instead of a caption tag, or a toolbar meant as table filtering controls), those elements need to be directly before or after the table in the code and use either class: `pe-table-toolbar` or `pe-table-caption`. The only reason there are 2 class names is because we plan pe-table-toolbars to have additional styles when a toolbar component is created.
 
 {{#demo}}
 <table class="pe-table">
@@ -278,7 +278,7 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
             tr.classList.add('selected');
           }
           tr.addEventListener('click', function(e) {
-            var thisTR=this; 
+            var thisTR=this;
             if (e.target.nodeName!=='INPUT' && e.target.nodeName!=='LABEL') {
               input.click();
             }
@@ -288,7 +288,7 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
       });
     }
   }();
-  
+
   function selectToggle(tr, input) {
     if (input.checked) {
       tr.classList.add('selected');
@@ -297,12 +297,12 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
       tr.classList.remove('selected');
     }
   }
-  
+
 </script>
 
 ## Sortable columns
 
-Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons. These tables also require JavaScript to do anything. No JavaScript is present on this page for demonstration. 
+Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons. These tables also require JavaScript to do anything. No JavaScript is present on this page for demonstration.
 
 {{#demo}}
 <h3 class="pe-table-caption">Sort Supervillains From Best To Worst</h3>

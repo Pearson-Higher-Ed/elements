@@ -1,7 +1,7 @@
 # Pearson Elements
 [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
-To see individual Elements components in action, please visit https://pearson-elements-v1.surge.sh/elements/ or http://pearson-higher-ed.github.io/elements/elements/ on Github.
+To see individual Elements components in action, please visit http://pearson-higher-ed.github.io/elements/elements/ on Github.
 
 
 ## Consuming this SDK
