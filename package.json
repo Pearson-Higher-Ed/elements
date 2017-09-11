@@ -22,7 +22,7 @@
     "pearson-sdk"
   ],
   "author": "Pearson Design Accelerator",
-  "license": "MIT",
+  "license": "PEARSON PROPRIETARY AND CONFIDENTIAL INFORMATION SUBJECT TO NDA",
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "babel-core": "~6.4.0",
