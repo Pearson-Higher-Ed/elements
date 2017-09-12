@@ -17,7 +17,7 @@ Wrapping a label around an input (which avoids the need for using `for` and `id`
 
 In addition to stating the field's required-ness in the label, the input itself can have either a `required` attribute (this may trigger a browser's built-in error messaging) or `aria-required`. These are boolean attributes. Some developers prefer using `aria-required` as it tells users of assistive technology (AT) that the field is required without triggering the browser's default error messages. You should not use both of these attributes on the same input.
 
-## Placeholders 
+## Placeholders
 
 Placeholders are shown here so consuming teams can see what they look like in the current Elements design. However, they are generally not recommended. If they are merely repeating what the label says, they are little more than distractions and may fool end-users into thinking the inputs are already filled in (see <a href="https://www.nngroup.com/articles/form-design-placeholders/">nngroup research</a>). If the placeholder offers useful hints (such as the desired formatting of data), consider adding this as info text under the input and linked using `aria-describedby`, or adding it to the label (see <a href="https://www.digitalgov.gov/2014/11/24/placeholder-text-think-outside-the-box/">placing hints outside inputs</a>).
 
@@ -28,9 +28,9 @@ When someone has made an error, the error state should be clear and obvious, as 
 `aria-describedby`'s value is the id of the element with the message you want to link. `aria-invalid` can either be used as a boolean, or it can have a type as a value (`aria-invalid="spelling"` for example).
 
 Be aware: hiding an error message that is present in the DOM using `display: none` or `visibility: hidden` will still have that error message read out to screen reader users when they focus on the input, even when the input is not in an error state.
-The message or the input's `aria-describedby` link to the message cannot be present in the DOM until there *is* an error state. 
+The message or the input's `aria-describedby` link to the message cannot be present in the DOM until there *is* an error state.
 
-When there is no error state, any of these techniques will work: 
+When there is no error state, any of these techniques will work:
 * leave the error message absent (empty element) until the input is shown invalid
 * don't have the error element present at all (appears when there's an error state)
 * don't have the error element have the matching id
@@ -131,7 +131,7 @@ This is just showing that when the input has focus, the label should turn blue. 
 
 ## Password inputs
 
-### Fancy password 
+### Fancy password
 
 {{#demo}}
   <label for="PasswordInputFancy" class="pe-textLabelInput__label">Set a Password</label>
@@ -240,8 +240,8 @@ Select dropdowns are generally meant for times when a user needs to make a singl
   </select>
   <svg aria-hidden="true"
     focusable="false"
-    class="pe-icon--dropdown-open-18">
-  <use xlink:href="#dropdown-open-18"></use>
+    class="pe-icon--dropdown-open-sm-24">
+  <use xlink:href="#dropdown-open-sm-24"></use>
   </svg>
 </div>
 {{/demo}}
@@ -261,8 +261,8 @@ Please note an error state on a select is generally not recommended, as it sugge
   </select>
   <svg aria-hidden="true"
     focusable="false"
-    class="pe-icon--dropdown-open-18">
-  <use xlink:href="#dropdown-open-18"></use>
+    class="pe-icon--dropdown-open-sm-24">
+  <use xlink:href="#dropdown-open-sm-24"></use>
   </svg>
 </div>
 <p id="select_error" class="pe-input--error_message">error message</p>
@@ -282,8 +282,8 @@ Please note an error state on a select is generally not recommended, as it sugge
   </select>
   <svg aria-hidden="true"
     focusable="false"
-    class="pe-icon--dropdown-open-18">
-  <use xlink:href="#dropdown-open-18"></use>
+    class="pe-icon--dropdown-open-sm-24">
+  <use xlink:href="#dropdown-open-sm-24"></use>
   </svg>
 </div>
 {{/demo}}
@@ -300,8 +300,8 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
   </select>
   <svg aria-hidden="true"
     focusable="false"
-    class="pe-icon--dropdown-open-18">
-  <use xlink:href="#dropdown-open-18"></use>
+    class="pe-icon--dropdown-open-sm-24">
+  <use xlink:href="#dropdown-open-sm-24"></use>
   </svg>
 </div>
 <p id="readonly_hint" class="pe-input--info_message">Only valid with coupon</p>
@@ -318,8 +318,8 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
          <option>iphone</option>
       </select>
       <span class="pe-input_underline"></span>
-      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-18">
-         <use xlink:href="#dropdown-open-18"></use>
+      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-sm-24">
+         <use xlink:href="#dropdown-open-sm-24"></use>
       </svg>
    </div>
    <span id="hinty_mchint" class="pe-input--info_message">This is an info message</span>
@@ -337,8 +337,8 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
          <option>iphone</option>
       </select>
       <span class="pe-inputError_underline"></span>
-      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-18">
-         <use xlink:href="#dropdown-open-18"></use>
+      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-sm-24">
+         <use xlink:href="#dropdown-open-sm-24"></use>
       </svg>
    </div>
    <span id="fancy_error" class="pe-input--error_message">This is an error message</span>
@@ -355,8 +355,8 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
          <option>iphone</option>
       </select>
       <span class=""></span>
-      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-18">
-         <use xlink:href="#dropdown-open-18"></use>
+      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-sm-24">
+         <use xlink:href="#dropdown-open-sm-24"></use>
       </svg>
    </div>
 {{/demo}}
@@ -374,8 +374,8 @@ Selects don't have a readonly state. To fake it, you would have to remove all th
          <option>iphone</option>
       </select>
       <span class=""></span>
-      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-18">
-         <use xlink:href="#dropdown-open-18"></use>
+      <svg focusable="false" aria-hidden="true" class="pe-icon--dropdown-open-sm-24">
+         <use xlink:href="#dropdown-open-sm-24"></use>
       </svg>
    </div>
 {{/demo}}
