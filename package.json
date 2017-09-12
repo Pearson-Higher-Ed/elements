@@ -14,6 +14,7 @@
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "gh-pages": "node ./npm_scripts/gh-pages.js",
+    "deploy-ci": "node ./npm_scripts/deploy-ci.sh",
     "release": "node ./npm_scripts/release.js",
     "version": "npm run gen-changelog && git add CHANGELOG.md"
   },
