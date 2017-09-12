@@ -1,3 +1,26 @@
+<a name="1.14.7"></a>
+## [1.14.7](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.6...v1.14.7) (2017-09-12)
+
+
+
+
+<a name="1.14.6"></a>
+## [1.14.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.5...v1.14.6) (2017-09-12)
+
+
+
+
+<a name="1.14.5"></a>
+## [1.14.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.4...v1.14.5) (2017-09-12)
+
+
+### Bug Fixes
+
+* Revert deploy script ([96ea34f](https://github.com/Pearson-Higher-Ed/elements/commit/96ea34f))
+* Revert deploy script ([1d45334](https://github.com/Pearson-Higher-Ed/elements/commit/1d45334))
+
+
+
 <a name="1.14.4"></a>
 ## [1.14.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.3...v1.14.4) (2017-09-11)
 
