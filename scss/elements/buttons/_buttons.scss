@@ -91,6 +91,20 @@
 
 }
 
+.btn-square-right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-square-both {
+  border-radius: 0;
+}
+
+.btn-square-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .pe-btn--btn_small {
 
   @extend %btn;
