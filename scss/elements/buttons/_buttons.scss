@@ -92,17 +92,17 @@
 }
 
 .btn-square-right {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: $pe-btn-square-border-radius; 
+  border-bottom-right-radius: $pe-btn-square-border-radius;
 }
 
 .btn-square-both {
-  border-radius: 0;
+  border-radius: $pe-btn-square-border-radius;
 }
 
 .btn-square-left {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: $pe-btn-square-border-radius;
+  border-bottom-left-radius: $pe-btn-square-border-radius;
 }
 
 .pe-btn--btn_small {
