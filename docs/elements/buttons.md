@@ -16,13 +16,17 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 
 ## Button groups
 
-Button groups can be used in situations where several actions are closely related or you need to conserve space. <code>btn-square-right</code>, <code>btn-square-left</code> and <code>btn-square-both</code> are available to use in these situations which will remove the rounded edges of the connected sides.
+Button groups can be used in situations where several actions are closely related or you need to conserve space. <code>pe-btngroup</code> can be used to wrap the buttons you would like grouped together.
 
 {{#demo}}
-<button class="pe-btn btn-square-right">First</button><button class="pe-btn btn-square-left">Second</button>
+<div class="pe-btngroup">
+  <button class="pe-btn">First</button><button class="pe-btn">Second</button>
+</div>
 {{/demo}}
 {{#demo}}
-<button class="pe-btn btn-square-right">First</button><button class="pe-btn btn-square-both">Second</button><button class="pe-btn btn-square-left">Third</button>
+<div class="pe-btngroup">
+  <button class="pe-btn">First</button><button class="pe-btn">Second</button><button class="pe-btn">Third</button>
+</div>
 {{/demo}}
 
 ## Elements
