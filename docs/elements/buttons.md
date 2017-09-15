@@ -14,6 +14,21 @@ Use a button to represent a user action&#8212; specifically, pressing it should 
 <button class="pe-btn__primary--btn_xlarge">Primary</button>
 {{/demo}}
 
+## Button groups
+
+Button groups can be used in situations where several actions are closely related or you need to conserve space. <code>pe-btngroup</code> can be used to wrap the buttons you would like grouped together.
+
+{{#demo}}
+<div class="pe-btngroup">
+  <button class="pe-btn">First</button><button class="pe-btn">Second</button>
+</div>
+{{/demo}}
+{{#demo}}
+<div class="pe-btngroup">
+  <button class="pe-btn">First</button><button class="pe-btn">Second</button><button class="pe-btn">Third</button>
+</div>
+{{/demo}}
+
 ## Elements
 
 Button classes can be used with `<div>`, `<span>`, `<a>`, `<button>`, and `<input>` elements. But try very hard not to use button styles on divs, spans, or links.
