@@ -1,6 +1,6 @@
 {
   "name": "pearson-elements",
-  "version": "1.14.2",
+  "version": "1.14.9",
   "description": "CSS building blocks for Pearson web user experiences.",
   "main": "./dist/css/elements.css",
   "repository": {
@@ -14,8 +14,7 @@
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./npm_scripts/gen-changelog.js",
     "gh-pages": "node ./npm_scripts/gh-pages.js",
-    "deploy-ci": "./npm_scripts/deploy-ci.sh",
-    "deploy-wip": "node ./npm_scripts/deploy-wip.js",
+    "deploy-ci": "node ./npm_scripts/deploy-ci.sh",
     "release": "node ./npm_scripts/release.js",
     "version": "npm run gen-changelog && git add CHANGELOG.md"
   },
@@ -24,7 +23,7 @@
     "pearson-sdk"
   ],
   "author": "Pearson Design Accelerator",
-  "license": "MIT",
+  "license": "PEARSON PROPRIETARY AND CONFIDENTIAL INFORMATION SUBJECT TO NDA",
   "devDependencies": {
     "autoprefixer": "^6.1.0",
     "babel-core": "~6.4.0",

@@ -21,7 +21,7 @@ Any captions or toolbars, above or below tables, have a distance of 28px from th
 
 If you're using an actual table <code>&lt;caption&gt;</code> tag in our `pe-table` table, the caption will be on top and already have the correct distance. For bottom captions, give the table the class `pe-caption--bottom` and its caption will do the right thing.
 
-For actual separate elements (such as a heading tag instead of a caption tag, or a toolbar meant as table filtering controls), those elements need to be directly before or after the table in the code and use either class: `pe-table-toolbar` or 'pe-table-caption`. The only reason there are 2 class names is because we plan pe-table-toolbars to have additional styles when a toolbar component is created.
+For actual separate elements (such as a heading tag instead of a caption tag, or a toolbar meant as table filtering controls), those elements need to be directly before or after the table in the code and use either class: `pe-table-toolbar` or `pe-table-caption`. The only reason there are 2 class names is because we plan pe-table-toolbars to have additional styles when a toolbar component is created.
 
 {{#demo}}
 <table class="pe-table">
@@ -261,10 +261,9 @@ The checkbox is named using <code>aria-labelledby</code> pointing to both the hi
 </table>
 {{/demo}}
 
-
 ## Sortable columns
 
-Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons. These tables also require JavaScript to do anything. No JavaScript is present on this page for demonstration. 
+Tables with sortable columns will have controls for sorting in the table headers, represented by the sorting icons. These tables also require JavaScript to do anything. No JavaScript is present on this page for demonstration.
 
 While there are multiple sortable (or sorted) columns in this fake example, on a real table, only one table header may have the `aria-sort` attribute on it at any time. If the table is presented to the user as sortable but no columns are pre-sorted, it's okay to have `aria-sort="none"` on one of the columns. Once a column has been clicked to sort, that column header has `aria-sort` attribute with the value of what kind of sort was done, and no other column headers have the attribute at all anymore (even if they happen not to lose their sorted-ness).
 

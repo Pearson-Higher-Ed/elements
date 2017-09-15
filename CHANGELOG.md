@@ -1,5 +1,56 @@
+<a name="1.14.7"></a>
+## [1.14.7](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.6...v1.14.7) (2017-09-12)
+
+
+
+
+<a name="1.14.6"></a>
+## [1.14.6](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.5...v1.14.6) (2017-09-12)
+
+
+
+
+<a name="1.14.5"></a>
+## [1.14.5](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.4...v1.14.5) (2017-09-12)
+
+
+### Bug Fixes
+
+* Revert deploy script ([96ea34f](https://github.com/Pearson-Higher-Ed/elements/commit/96ea34f))
+* Revert deploy script ([1d45334](https://github.com/Pearson-Higher-Ed/elements/commit/1d45334))
+
+
+
+<a name="1.14.4"></a>
+## [1.14.4](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.3...v1.14.4) (2017-09-11)
+
+
+### Bug Fixes
+
+* Revert button color, remove surge scripts ([0bdf154](https://github.com/Pearson-Higher-Ed/elements/commit/0bdf154))
+
+
+
+<a name="1.14.3"></a>
+## [1.14.3](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.2...v1.14.3) (2017-09-07)
+
+
+
+
 <a name="1.14.2"></a>
-## [1.14.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.4...v1.14.2) (2017-08-30)
+## [1.14.2](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.1...v1.14.2) (2017-08-30)
+
+
+
+
+<a name="1.14.1"></a>
+## [1.14.1](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.0...v1.14.1) (2017-08-21)
+
+
+
+
+<a name="1.14.0"></a>
+# [1.14.0](https://github.com/Pearson-Higher-Ed/elements/compare/v1.13.4...v1.14.0) (2017-08-18)
 
 
 
