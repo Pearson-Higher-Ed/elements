@@ -11,7 +11,7 @@ An input is a field used to save a response from a user.
 ## Labels
 All inputs must have direct labels, even when the visual design has the field physically close to other text which can give some users a good idea of what to fill in. Labels need to be programmatically associated with the inputs, by having a `for` attribute which matches the input's (unique to the page!) `id` attribute.
 
-Wrapping a label around an input (which avoids the need for using `for` and `id` pairing) is legal and valid HTML. However there are some assistive tech which are buggy with this setup and have been for many years (differing browsers and AT have had problems at different times). For this reason, ElementsSDK encourages separate labels with programmatic association (`for` and `id` matching attributes).
+Wrapping a label around an input (which avoids the need for using `for` and `id` pairing) is legal and valid HTML. However there are some assistive tech which are buggy with this setup and have been for many years (differing browsers and AT have had problems at different times). For this reason, Elements encourages separate labels with programmatic association (`for` and `id` matching attributes).
 
 ### Required vs Optional fields
 

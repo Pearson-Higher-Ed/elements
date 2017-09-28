@@ -3,13 +3,13 @@ layout: docs.html
 title: Getting started with Elements
 ---
 
-## Consuming this SDK
+## Consuming Elements 
 
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
     npm install --save pearson-elements
 
-The installation provides both the dist version with CSS, and the original source [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets.  This allows the option for the consuming app to include the SDK as a static asset or as part of a build process.
+The installation provides both the dist version with CSS, and the original source [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets.  This allows the option for the consuming app to include Elements as a static asset or as part of a build process.
 
 To comment out any SCSS file so it's not added to your rendered elements.css, open `/scss/elements.scss` and use JavaScript-style commenting. Example:
 
@@ -26,11 +26,11 @@ To comment out any SCSS file so it's not added to your rendered elements.css, op
 
 The above would prevent the `_html-tags.scss` styles from being transpiled into the `elements.css` file.
 
-NOTE: if desired, Elements SDK ships with a version that does not include any styling on plain HTML tags.  Simply include the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files or add the `/scss/elementsNoPlain.scss` file to the project.
+NOTE: if desired, Elements ships with a version that does not include any styling on plain HTML tags.  Simply include the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files or add the `/scss/elementsNoPlain.scss` file to the project.
 
 ### Important: Fonts and Icons
 
-The Elements SDK looks for the /fonts and /icons folders at the root of your served application. Copy the npm-installed /fonts and /icons to the correct location in your web server, and ensure your application is set up to allow the font files to download correctly and not filter out the response header Content Type (i.e. 'application/x-font-ttf') so the fonts may be rendered in the browser.
+Elements looks for the /fonts and /icons folders at the root of your served application. Copy the npm-installed /fonts and /icons to the correct location in your web server, and ensure your application is set up to allow the font files to download correctly and not filter out the response header Content Type (i.e. 'application/x-font-ttf') so the fonts may be rendered in the browser.
 
 #### Internet Explorer
 
