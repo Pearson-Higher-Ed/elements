@@ -4,8 +4,9 @@ node_js:
 - 6
 - 4.2
 script:
-- chmod 777 ./shell_scripts/run_tests.sh
-- "./shell_scripts/run_tests.sh"
+- chmod 777 ./node_modules/@pearson-components/npm-scripts/shell_scripts/run_selenium_ci_tests.sh
+- export TEST_GROUP=desktop-ci
+- ./node_modules/@pearson-components/npm-scripts/shell_scripts/run_selenium_ci_tests.sh
 after_success:
 - npm run deploy-ci
 deploy:
