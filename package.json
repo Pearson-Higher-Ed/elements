@@ -13,7 +13,7 @@
     "build": "gulp build",
     "build-docs": "gulp build-docs",
     "gen-changelog": "node ./node_modules/@pearson-components/npm-scripts/npm_scripts/gen-changelog.js",
-    "gh-pages": "node ./node_modules/@pearson-components/npm-scripts/npm_scripts/gh-pages.js",
+    "gh-pages": "node ./npm_scripts/gh-pages.js",
     "deploy-ci": "node ./npm_scripts/deploy-ci.sh",
     "release": "node ./node_modules/@pearson-components/npm-scripts/npm_scripts/release.js",
     "version": "node ./node_modules/@pearson-components/npm-scripts/npm_scripts/version.js"
