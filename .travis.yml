@@ -5,7 +5,7 @@ node_js:
 - 4.2
 script:
 - chmod 777 ./node_modules/@pearson-components/npm-scripts/shell_scripts/run_selenium_ci_tests.sh
-- export TEST_GROUP=desktop-regression
+- export TEST_GROUP=desktop-ci
 - ./node_modules/@pearson-components/npm-scripts/shell_scripts/run_selenium_ci_tests.sh
 after_success:
 - npm run deploy-ci

@@ -1,3 +1,10 @@
+<a name="1.14.20"></a>
+## [1.14.20](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.19...v1.14.20) (2017-11-01)
+
+### Bug Fixes
+
+* Update color hex value ([5686b3](https://github.com/Pearson-Higher-Ed/elements/commit/5686b3))
+
 <a name="1.14.17"></a>
 ## [1.14.17](https://github.com/Pearson-Higher-Ed/elements/compare/v1.14.10...v1.14.17) (2017-11-01)
 
@@ -880,6 +887,3 @@
 * **typography:** add link base styles ([0ecee6f](https://github.com/Pearson-Higher-Ed/elements/commit/0ecee6f))
 * **typography:** add unstyled and inline lists ([c08b676](https://github.com/Pearson-Higher-Ed/elements/commit/c08b676))
 * **typography:** base styles for body copy (<p>) ([39bd55e](https://github.com/Pearson-Higher-Ed/elements/commit/39bd55e))
-
-
-
