@@ -2,18 +2,18 @@
 This repo is no longer undergoing active development and is in the process of being deprecated.  All future development should be done in the [Elements-SDK](https://github.com/Pearson-Higher-Ed/elements-sdk) repo.
 
 # Pearson Elements
-[![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v0)](https://travis-ci.org/Pearson-Higher-Ed/elements)
+[![Build Status](https://travis-ci.org/Pearson-Higher-Ed/elements.svg?branch=v1)](https://travis-ci.org/Pearson-Higher-Ed/elements)
 
 To see individual Elements components in action, please visit http://pearson-higher-ed.github.io/elements/elements/ on Github.
 
 
-## Consuming this SDK
+## Consuming Elements
 
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
     npm install --save pearson-elements
 
-The installation provides both the dist version with CSS, and the original source [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets.  This allows the option for the consuming app to include the SDK as a static asset or as part of a build process.
+The installation provides both the dist version with CSS, and the original source [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html), with required assets.  This allows the option for the consuming app to include the styles framework as a static asset or as part of a build process.
 
 To comment out any SCSS file so it's not added to your rendered elements.css, open `/scss/elements.scss` and use JavaScript-style commenting. Example:
 
@@ -30,7 +30,7 @@ The above would prevent the `_html-tags.scss` styles from being transpiled into 
 
 ### Classes-only styling
 
-If desired, Elements SDK ships with a version that does not include any styling on plain HTML tags.  Simply include the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files, or add the `/scss/elementsNoPlain.scss` file to the project.
+If desired, Elements ships with a version that does not include any styling on plain HTML tags.  Simply include the `dist/css/elementsNoPlain.css` or `dist/css/elementsNoPlain.min.css` files, or add the `/scss/elementsNoPlain.scss` file to the project.
 
 When using the ElementsNoPlain stylesheet, the (r)em-based sizing of page elements will differ from pages using the `elements.css` unless you are able to set the class `the class `pe-base-fontsize` on the html, body, or first main container of the page. To get the Open Sans font stack, use the `pe-fontstack` class. Basic chunks of text (or their containers) can use the `pe-copy` class to regulate font-size, line-height, and text color.
 
@@ -39,11 +39,11 @@ Using various Elements classes without the base settings for font-size, font-fam
 
 ### Important: Fonts and Icons
 
-The Elements SDK looks for the /fonts and /icons folders at the root of your served application. Copy the npm-installed /fonts and /icons to the correct location in your web server, and ensure your application is set up to allow the font files to download correctly and not filter out the response header Content Type (i.e. 'application/x-font-ttf') so the fonts may be rendered in the browser.
+Elements looks for the /fonts and /icons folders at the root of your served application. Copy the npm-installed /fonts and /icons to the correct location in your web server, and ensure your application is set up to allow the font files to download correctly and not filter out the response header Content Type (i.e. 'application/x-font-ttf') so the fonts may be rendered in the browser.
 
 #### Internet Explorer
 
-Some caching headers will prevent Internet Explorer from showing font files after a refresh. The culprits are `Cache-control: no-store` and on https `Pragma: no-cache`.
+Some caching headers will prevent Internet Explorer from showing font files after a refresh. The culprits are `Cache-control: no-store` and on https `Pragma: no-cache`. Using the Vary header can also stop older IE from caching.
 
 #### Icons
 
