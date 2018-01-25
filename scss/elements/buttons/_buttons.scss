@@ -69,6 +69,7 @@
   }
 
   &:disabled {
+    cursor: default;
     color: $pe-color-medium-gray;
     text-decoration: none;
   }
