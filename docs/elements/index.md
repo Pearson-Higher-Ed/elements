@@ -2,8 +2,12 @@
 layout: docs.html
 title: Getting started with Elements
 ---
+## Deprecated
 
-## Consuming Elements 
+**This repository is no longer undergoing active development and is in the process of being deprecated.**
+All future development is being done in the [ElementsSDK](https://github.com/Pearson-Higher-Ed/elements-sdk) repository.
+
+## Consuming Elements
 
 We recommend that you install Elements in your project using [npm](https://npmjs.org):
 
