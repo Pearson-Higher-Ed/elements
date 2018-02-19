@@ -1,6 +1,6 @@
 {
   "name": "pearson-elements",
-  "version": "1.14.20",
+  "version": "1.14.21",
   "description": "**DEPRECATED** CSS building blocks for Pearson web user experiences.",
   "main": "./dist/css/elements.css",
   "repository": {
